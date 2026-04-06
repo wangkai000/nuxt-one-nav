@@ -9,16 +9,20 @@
     @mouseleave="$event.currentTarget.style.boxShadow = '0 1px 2px rgba(0,0,0,0.04)'"
   >
     <!-- 图标 -->
-    <div class="w-14 h-14 rounded-xl bg-gray-50 dark:bg-gray-800/50 flex items-center justify-center mb-3 overflow-hidden">
+    <div class="w-14 h-14 rounded-xl bg-gray-50 dark:bg-gray-800/50 flex items-center justify-center mb-3 overflow-hidden relative">
+      <!-- 占位符背景 -->
+      <div class="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 animate-pulse" />
       <img
         v-if="!iconErrorMap[item.id]"
         :src="getIconUrl(item)"
         :alt="item.title"
-        class="w-9 h-9 object-contain"
+        class="w-9 h-9 object-contain relative z-10 opacity-0 transition-opacity duration-300"
         loading="lazy"
+        decoding="async"
         @error="onIconError(item.id)"
+        @load="onIconLoad"
       />
-      <Icon v-else :name="getFallbackIcon(item)" class="w-7 h-7 text-gray-400" />
+      <Icon v-else :name="getFallbackIcon(item)" class="w-7 h-7 text-gray-400 relative z-10" />
     </div>
 
     <!-- 标题 -->
@@ -41,9 +45,16 @@ const props = defineProps<{ item: NavItem }>()
 
 // 每个卡片独立的图标错误状态
 const iconErrorMap = reactive<Record<string, boolean>>({})
+const iconLoadedMap = reactive<Record<string, boolean>>({})
 
 const onIconError = (id: string) => {
   iconErrorMap[id] = true
+}
+
+const onIconLoad = (e: Event) => {
+  // 图片加载完成后，隐藏占位符的动画
+  const img = e.target as HTMLImageElement
+  img.style.opacity = '1'
 }
 
 // 从网址提取域名获取 favicon
