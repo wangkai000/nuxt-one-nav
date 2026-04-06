@@ -52,13 +52,7 @@ export default defineEventHandler((event) => {
 
   // 返回完整数据
   return {
-    meta: {
-      name: 'MyNuxtNav 导航数据',
-      version: '1.0.0',
-      lastUpdated: new Date().toISOString().split('T')[0],
-      totalSites: navData.length,
-      totalCategories: categories.length
-    },
+    meta: navDataJson.meta,
     categories: categories,
     sites: navData
   }
