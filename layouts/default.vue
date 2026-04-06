@@ -53,6 +53,36 @@
           </template>
         </el-menu>
       </div>
+
+      <!-- 底部菜单：网站提交、友情链接、关于 -->
+      <div class="absolute bottom-16 left-0 right-0 px-4">
+        <div class="border-t border-gray-200 dark:border-gray-800 pt-2">
+          <div class="space-y-1">
+            <div
+              @click="openSubmit"
+              class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer text-gray-700 dark:text-gray-300"
+            >
+              <Icon icon="fluent-emoji:plus" class="w-5 h-5 mr-3" />
+              <span>网站提交</span>
+            </div>
+            <div
+              @click="openFriends"
+              class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer text-gray-700 dark:text-gray-300"
+            >
+              <Icon icon="fluent-emoji:handshake" class="w-5 h-5 mr-3" />
+              <span>友情链接</span>
+            </div>
+            <div
+              @click="openAbout"
+              class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer text-gray-700 dark:text-gray-300"
+            >
+              <Icon icon="fluent-emoji:information" class="w-5 h-5 mr-3" />
+              <span>关于导航</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- 底部主题切换 -->
       <div class="absolute bottom-4 left-0 right-0 px-4 flex items-center justify-center gap-4">
         <span
@@ -114,6 +144,24 @@ const handleMenuSelect = (index: string) => {
       }
     }, 100)
   }
+}
+
+// 打开网站提交
+const openSubmit = () => {
+  mobileMenuVisible.value = false
+  ElMessage.info('网站提交功能开发中...')
+}
+
+// 打开友情链接
+const openFriends = () => {
+  mobileMenuVisible.value = false
+  ElMessage.info('友情链接功能开发中...')
+}
+
+// 打开关于
+const openAbout = () => {
+  mobileMenuVisible.value = false
+  ElMessage.info('关于导航功能开发中...')
 }
 </script>
 

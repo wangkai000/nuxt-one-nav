@@ -63,6 +63,34 @@
         </el-menu>
       </el-scrollbar>
 
+      <!-- 底部菜单：网站提交、友情链接、关于 -->
+      <div class="border-t border-gray-200 dark:border-gray-800 py-2">
+        <el-menu
+          :collapse="collapsed"
+          :collapse-transition="false"
+          class="bg-transparent border-r-0"
+        >
+          <el-menu-item @click="openSubmit">
+            <Icon icon="fluent-emoji:plus" class="w-5 h-5 mr-3" />
+            <template #title>
+              <span>网站提交</span>
+            </template>
+          </el-menu-item>
+          <el-menu-item @click="openFriends">
+            <Icon icon="fluent-emoji:handshake" class="w-5 h-5 mr-3" />
+            <template #title>
+              <span>友情链接</span>
+            </template>
+          </el-menu-item>
+          <el-menu-item @click="openAbout">
+            <Icon icon="fluent-emoji:information" class="w-5 h-5 mr-3" />
+            <template #title>
+              <span>关于导航</span>
+            </template>
+          </el-menu-item>
+        </el-menu>
+      </div>
+
       <!-- 底部：折叠按钮 + 主题切换 -->
       <div class="border-t border-gray-200 dark:border-gray-800 p-2 flex items-center justify-center gap-2">
         <span
@@ -110,6 +138,22 @@ const handleSelect = (index: string) => {
   if (element) {
     element.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
+}
+
+// 打开网站提交
+const openSubmit = () => {
+  // 可以跳转到提交页面或打开对话框
+  ElMessage.info('网站提交功能开发中...')
+}
+
+// 打开友情链接
+const openFriends = () => {
+  ElMessage.info('友情链接功能开发中...')
+}
+
+// 打开关于
+const openAbout = () => {
+  ElMessage.info('关于导航功能开发中...')
 }
 </script>
 
