@@ -4,16 +4,17 @@
 
 ## ✨ 特性
 
-- 🎨 **精美 UI** - 渐变背景、毛玻璃效果、精致阴影
+- 🎨 **精美 UI** - Element Plus 组件 + Tailwind CSS 样式
 - 🌓 **深色模式** - 自动/手动切换，完整适配
-- 🔍 **实时搜索** - 按名称、描述、标签过滤，支持 ⌘K/Ctrl+K 快捷键
-- 📱 **响应式** - 完美适配桌面端和移动端
+- 🔍 **实时搜索** - 顶部栏搜索框，支持 ⌘K/Ctrl+K 快捷键
+- 📱 **响应式** - Element Plus 断点系统，完美适配多端
 - ⚡ **SSG** - 静态生成，部署简单，访问飞快
+- 🧭 **侧边栏菜单** - Element Plus Menu 组件，支持二级分类
 - 🎯 **快捷键** - ⌘K 快速聚焦搜索，Esc 清空
 - 💎 **细节打磨** - hover 动画、渐变边框、徽章标记
-- 🎨 **彩色图标** - 使用 Iconify 彩色图标，视觉更丰富
+- 🎨 **彩色图标** - Iconify 彩色图标，视觉更丰富
 - 🚀 **返回顶部** - 滚动后显示返回顶部按钮
-- ⏳ **加载动画** - 页面加载时显示优雅加载效果
+- ⏳ **加载动画** - Nuxt 加载指示器 + Element Plus 加载状态
 - 🔗 **外链支持** - GitHub、Gitee 快速访问
 
 ## 技术栈
@@ -168,6 +169,37 @@ one-nav-ssg/
   ]
 }
 ```
+
+## Element Plus 组件使用
+
+本项目大量使用 Element Plus 组件：
+
+| 组件 | 用途 | 位置 |
+|------|------|------|
+| `el-container` | 页面布局容器 | `layouts/default.vue` |
+| `el-header` | 顶部栏 | `layouts/default.vue` |
+| `el-aside` | 侧边栏 | `components/layout/Sidebar.vue` |
+| `el-main` | 主内容区 | `layouts/default.vue` |
+| `el-menu` | 导航菜单 | `components/layout/Sidebar.vue` |
+| `el-sub-menu` | 二级菜单 | `components/layout/Sidebar.vue` |
+| `el-menu-item` | 菜单项 | `components/layout/Sidebar.vue` |
+| `el-drawer` | 移动端抽屉菜单 | `layouts/default.vue` |
+| `el-button` | 按钮 | `components/layout/AppHeader.vue` |
+| `el-input` | 搜索输入框 | 顶部栏搜索 |
+| `el-scrollbar` | 滚动条 | `components/layout/Sidebar.vue` |
+
+### 主题定制
+
+Element Plus 主题通过 `nuxt.config.ts` 配置：
+
+```typescript
+elementPlus: {
+  themes: ['dark'],
+  defaultLocale: 'zh-cn'
+}
+```
+
+暗色模式通过 `@nuxtjs/color-mode` 自动切换。
 
 ## 部署
 
