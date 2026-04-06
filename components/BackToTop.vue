@@ -16,24 +16,48 @@ import { Icon } from '@iconify/vue'
 
 const showBackToTop = ref(false)
 
+// 获取滚动容器
+const getScrollContainer = () => {
+  // 优先查找 el-main 容器
+  const elMain = document.querySelector('.el-main')
+  if (elMain) return elMain
+  return window
+}
+
 // 监听滚动
 const handleScroll = () => {
+  const container = getScrollContainer()
+  let scrollTop = 0
+
+  if (container === window) {
+    scrollTop = window.scrollY
+  } else {
+    scrollTop = (container as Element).scrollTop
+  }
+
   // 滚动超过 300px 显示按钮
-  showBackToTop.value = window.scrollY > 300
+  showBackToTop.value = scrollTop > 300
 }
 
 // 返回顶部
 const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' })
+  const container = getScrollContainer()
+
+  if (container === window) {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  } else {
+    container.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 }
 
 onMounted(() => {
-  window.addEventListener('scroll', handleScroll, { passive: true })
+  const container = getScrollContainer()
+  container.addEventListener('scroll', handleScroll, { passive: true })
   handleScroll() // 初始检查
-})
 
-onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll)
+  onUnmounted(() => {
+    container.removeEventListener('scroll', handleScroll)
+  })
 })
 </script>
 
