@@ -1,5 +1,4 @@
 # My Nuxt Nav
-
 [中文](./README.md)
 
 A static navigation site based on **Nuxt 3 + TypeScript + Element Plus + Tailwind CSS**, faithfully replicating the One Nav template's UI style.

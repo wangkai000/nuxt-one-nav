@@ -88,7 +88,7 @@
       <!-- GitHub & Gitee 链接 -->
       <div class="flex items-center gap-2">
         <a
-          href="https://github.com"
+          href="https://github.com/wangkai000/nuxt-one-nav"
           target="_blank"
           rel="noopener noreferrer"
           class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
