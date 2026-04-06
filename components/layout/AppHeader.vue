@@ -67,6 +67,28 @@
           </button>
         </div>
       </div>
+
+      <!-- GitHub & Gitee 链接 -->
+      <div class="flex items-center gap-2">
+        <a
+          href="https://github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          title="GitHub"
+        >
+          <Icon icon="logos:github-icon" class="w-5 h-5" />
+        </a>
+        <a
+          href="https://gitee.com/wangkai000/my-nuxt-nav"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          title="Gitee"
+        >
+          <Icon icon="logos:gitee" class="w-5 h-5" />
+        </a>
+      </div>
     </div>
   </el-header>
 </template>
