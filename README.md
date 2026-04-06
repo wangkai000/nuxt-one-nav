@@ -18,14 +18,17 @@
 
 ## 技术栈
 
-| 技术 | 用途 |
-|------|------|
-| Nuxt 3 | 框架 (App Router + SSG) |
-| TypeScript | 类型安全 |
-| Tailwind CSS | 样式系统 |
-| Element Plus | UI 组件库 |
-| Iconify | 彩色图标库 |
-| @nuxtjs/color-mode | 主题切换 |
+| 技术 | 用途 | 版本 |
+|------|------|------|
+| [Nuxt 3](https://nuxt.com) | 全栈框架 (App Router + SSG) | ^3.x |
+| [Vue 3](https://vuejs.org) | 渐进式 JavaScript 框架 | ^3.x |
+| [TypeScript](https://www.typescriptlang.org) | 类型安全 | ^5.x |
+| [Tailwind CSS](https://tailwindcss.com) | 原子化 CSS 框架 | ^3.x |
+| [Element Plus](https://element-plus.org) | Vue 3 组件库 | ^2.x |
+| [Iconify](https://iconify.design) | 统一图标框架 | ^1.x |
+| [@iconify/vue](https://iconify.design/docs/icon-components/vue) | Vue 图标组件 | ^4.x |
+| [@nuxtjs/color-mode](https://color-mode.nuxtjs.org) | 深色模式支持 | ^3.x |
+| [Vite](https://vitejs.dev) | 构建工具 | ^5.x |
 
 ## 快速开始
 
