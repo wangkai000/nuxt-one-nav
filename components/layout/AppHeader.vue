@@ -10,7 +10,7 @@
         @click="toggleMobileMenu"
         class="xl:hidden w-9 h-9 flex items-center justify-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
       >
-        <Icon icon="fluent-emoji:hamburger" class="w-5 h-5" />
+        <Icon icon="mdi:menu" class="w-5 h-5 text-gray-600 dark:text-gray-400" />
       </button>
 
       <!-- Logo（仅移动端显示） -->
@@ -44,7 +44,7 @@
     <!-- 右侧 -->
     <div class="flex items-center gap-3">
       <!-- 搜索框（美化版） -->
-      <div class="hidden sm:flex items-center">
+      <div class="flex items-center">
         <div class="relative group">
           <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
             <Icon icon="fluent-emoji:magnifying-glass-tilted-left" class="w-4 h-4 group-focus-within:scale-110 transition-transform" />
