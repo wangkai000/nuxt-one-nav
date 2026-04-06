@@ -64,24 +64,38 @@ npm run preview
 
 ```
 one-nav-ssg/
-├── components/          # 组件
-│   ├── common/         # 通用组件
-│   ├── layout/         # 布局 (Header, Footer, Sidebar)
-│   └── nav/           # 导航 (NavCard, NavGrid, SearchBar, BackToTop)
-├── composables/        # 组合式函数
-│   ├── useSearch.ts   # 搜索逻辑
-│   └── useTheme.ts    # 主题逻辑
-├── data/              # 数据
-│   └── nav-data.ts    # 导航数据 (200+ 网站资源)
-├── layouts/           # 页面布局
-├── pages/             # 页面路由
-├── plugins/           # 插件
-├── public/            # 静态资源
-├── types/             # TypeScript 类型
-├── assets/            # 样式资源
-├── nuxt.config.ts     # Nuxt 配置
-├── tailwind.config.js # Tailwind 配置
-└── tsconfig.json      # TS 配置
+├── components/              # 组件
+│   ├── common/             # 通用组件
+│   ├── layout/             # 布局组件
+│   │   ├── AppHeader.vue   # 顶部导航栏
+│   │   ├── AppFooter.vue   # 底部页脚
+│   │   └── Sidebar.vue     # 侧边栏菜单
+│   ├── nav/                # 导航组件
+│   │   ├── NavCard.vue     # 网站卡片
+│   │   ├── NavGrid.vue     # 网格布局
+│   │   └── SearchBar.vue   # 搜索栏
+│   ├── BackToTop.vue       # 返回顶部按钮
+│   └── LoadingIndicator.vue # 加载指示器
+├── composables/            # 组合式函数
+│   ├── useSearch.ts       # 搜索逻辑
+│   └── useTheme.ts        # 主题逻辑
+├── data/                  # 数据
+│   └── nav-data.ts        # 导航数据 (200+ 网站资源)
+├── layouts/               # 页面布局
+│   └── default.vue        # 默认布局 (含移动端抽屉)
+├── pages/                 # 页面路由
+│   └── index.vue          # 首页
+├── plugins/               # 插件
+├── public/                # 静态资源
+├── types/                 # TypeScript 类型
+│   └── nav.ts             # 导航类型定义
+├── assets/                # 样式资源
+│   └── css/
+│       └── main.css       # 全局样式
+├── app.vue                # 应用入口
+├── nuxt.config.ts         # Nuxt 配置
+├── tailwind.config.js     # Tailwind 配置
+└── tsconfig.json          # TS 配置
 ```
 
 ## 数据分类
