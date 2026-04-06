@@ -1825,7 +1825,7 @@ export const navData: NavItem[] = [
 
 // 分类定义
 export const categories: Category[] = [
-  { id: 'all', name: '全部', icon: 'mdi:apps', defaultOpened: true },
+  // { id: 'all', name: '全部', icon: 'mdi:apps', defaultOpened: true },
   {
     id: 'ai',
     name: 'AI 工具',
