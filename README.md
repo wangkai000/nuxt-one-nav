@@ -262,7 +262,7 @@ MIT
 - [Tailwind CSS](https://tailwindcss.com)
 - [Element Plus](https://element-plus.org)
 - [Iconify](https://iconify.design)
-- [One Nav](https://onenav.top)
+- [One Nav](https://www.iotheme.cn)
 
 ---
 
