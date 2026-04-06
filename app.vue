@@ -13,7 +13,16 @@
 // Element Plus 暗色模式支持
 const colorMode = useColorMode()
 
-// 监听颜色模式变化，同步到 Element Plus（只需要 dark class）
+// 客户端挂载后同步 Element Plus 暗色模式
+onMounted(() => {
+  if (colorMode.value === 'dark') {
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+  }
+})
+
+// 监听颜色模式变化，同步到 Element Plus
 watch(
   () => colorMode.value,
   (mode) => {
@@ -22,7 +31,6 @@ watch(
     } else {
       document.documentElement.classList.remove('dark')
     }
-  },
-  { immediate: true }
+  }
 )
 </script>
