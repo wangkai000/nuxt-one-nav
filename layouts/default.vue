@@ -30,12 +30,12 @@
         >
           <template v-for="cat in categories" :key="cat.id">
             <el-menu-item v-if="cat.id === 'all'" :index="cat.id">
-              <el-icon><component :is="getIcon(cat.icon)" /></el-icon>
+              <Icon :icon="cat.icon" class="w-5 h-5 mr-2" />
               <span>{{ cat.name }}</span>
             </el-menu-item>
             <el-sub-menu v-else-if="cat.children && cat.children.length > 0" :index="cat.id">
               <template #title>
-                <el-icon><component :is="getIcon(cat.icon)" /></el-icon>
+                <Icon :icon="cat.icon" class="w-5 h-5 mr-2" />
                 <span>{{ cat.name }}</span>
               </template>
               <el-menu-item
@@ -43,12 +43,12 @@
                 :key="child.id"
                 :index="child.id"
               >
-                <el-icon><component :is="getIcon(child.icon)" /></el-icon>
+                <Icon :icon="child.icon" class="w-5 h-5 mr-2" />
                 <span>{{ child.name }}</span>
               </el-menu-item>
             </el-sub-menu>
             <el-menu-item v-else :index="cat.id">
-              <el-icon><component :is="getIcon(cat.icon)" /></el-icon>
+              <Icon :icon="cat.icon" class="w-5 h-5 mr-2" />
               <span>{{ cat.name }}</span>
             </el-menu-item>
           </template>
@@ -58,9 +58,9 @@
       <div class="absolute bottom-4 left-0 right-0 px-4 flex items-center justify-center gap-4">
         <span
           @click="toggleTheme"
-          class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer text-gray-500"
+          class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer"
         >
-          <el-icon size="20"><component :is="getIcon(isDark ? 'mdi:weather-sunny' : 'mdi:weather-night')" /></el-icon>
+          <Icon :icon="isDark ? 'fluent-emoji:sun' : 'fluent-emoji:crescent-moon'" class="w-6 h-6" />
         </span>
       </div>
     </el-drawer>
@@ -86,8 +86,8 @@
 </template>
 
 <script setup lang="ts">
+import { Icon } from '@iconify/vue'
 import { categories } from '~/data/nav-data'
-import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 
 const { activeCategory, selectCategory } = useSearch()
 const mobileMenuVisible = ref(false)
@@ -96,39 +96,6 @@ const colorMode = useColorMode()
 const isDark = computed(() => colorMode.value === 'dark')
 const toggleTheme = () => {
   colorMode.preference = isDark.value ? 'light' : 'dark'
-}
-
-const iconNameMap: Record<string, string> = {
-  'mdi:apps': 'Apps',
-  'mdi:robot-happy-outline': 'Robot',
-  'mdi:chat-processing-outline': 'ChatDotRound',
-  'mdi:image-outline': 'Picture',
-  'mdi:magnify': 'Search',
-  'mdi:code-braces': 'Code',
-  'mdi:git': 'Branch',
-  'mdi:cloud-upload-outline': 'Upload',
-  'mdi:tools': 'Tools',
-  'mdi:palette-outline': 'Brush',
-  'mdi:pencil-outline': 'Edit',
-  'mdi:folder-image': 'Folder',
-  'mdi:rocket-launch-outline': 'Rocket',
-  'mdi:file-document-outline': 'Document',
-  'mdi:checkbox-marked-outline': 'Finished',
-  'mdi:wrench-outline': 'Wrench',
-  'mdi:toolbox-outline': 'Tools',
-  'mdi:code-tags': 'Code',
-  'mdi:book-open-page-variant-outline': 'Reading',
-  'mdi:book-outline': 'Notebook',
-  'mdi:play-circle-outline': 'VideoPlay',
-  'mdi:youtube': 'VideoCamera',
-  'mdi:music-note': 'Headset',
-  'mdi:weather-sunny': 'Sunny',
-  'mdi:weather-night': 'Moon',
-}
-
-const getIcon = (icon: string) => {
-  const name = iconNameMap[icon] || 'Folder'
-  return (ElementPlusIconsVue as any)[name] || ElementPlusIconsVue.Folder
 }
 
 const handleMenuSelect = (index: string) => {
@@ -152,7 +119,10 @@ const handleMenuSelect = (index: string) => {
 :deep(.el-drawer) {
   height: 100vh !important;
 }
-</style>
 
-<script setup lang="ts">
-</script>
+:deep(.el-menu-item),
+:deep(.el-sub-menu__title) {
+  display: flex;
+  align-items: center;
+}
+</style>
