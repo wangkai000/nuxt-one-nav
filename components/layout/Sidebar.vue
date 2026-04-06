@@ -30,7 +30,7 @@
           <template v-for="cat in categories" :key="cat.id">
             <!-- 全部 -->
             <el-menu-item v-if="cat.id === 'all'" :index="cat.id">
-              <el-icon><component :is="getIcon(cat.icon)" /></el-icon>
+              <Icon :icon="cat.icon" class="w-5 h-5 mr-3" />
               <template #title>
                 <span>{{ cat.name }}</span>
               </template>
@@ -39,7 +39,7 @@
             <!-- 有子分类的父分类 -->
             <el-sub-menu v-else-if="cat.children && cat.children.length > 0" :index="cat.id">
               <template #title>
-                <el-icon><component :is="getIcon(cat.icon)" /></el-icon>
+                <Icon :icon="cat.icon" class="w-5 h-5 mr-3" />
                 <span>{{ cat.name }}</span>
               </template>
               <el-menu-item
@@ -47,14 +47,14 @@
                 :key="child.id"
                 :index="child.id"
               >
-                <el-icon><component :is="getIcon(child.icon)" /></el-icon>
+                <Icon :icon="child.icon" class="w-5 h-5 mr-3" />
                 <span>{{ child.name }}</span>
               </el-menu-item>
             </el-sub-menu>
 
             <!-- 没有子分类的分类 -->
             <el-menu-item v-else :index="cat.id">
-              <el-icon><component :is="getIcon(cat.icon)" /></el-icon>
+              <Icon :icon="cat.icon" class="w-5 h-5 mr-3" />
               <template #title>
                 <span>{{ cat.name }}</span>
               </template>
@@ -69,13 +69,13 @@
           @click="collapsed = !collapsed"
           class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer text-gray-500"
         >
-          <el-icon size="18"><component :is="getIcon(collapsed ? 'mdi:chevron-double-right' : 'mdi:chevron-double-left')" /></el-icon>
+          <Icon :icon="collapsed ? 'mdi:chevron-double-right' : 'mdi:chevron-double-left'" class="w-5 h-5" />
         </span>
         <span
           @click="toggleTheme"
           class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer text-gray-500"
         >
-          <el-icon size="18"><component :is="getIcon(isDark ? 'mdi:weather-sunny' : 'mdi:weather-night')" /></el-icon>
+          <Icon :icon="isDark ? 'mdi:weather-sunny' : 'mdi:weather-night'" class="w-5 h-5" />
         </span>
       </div>
     </el-aside>
@@ -83,9 +83,8 @@
 </template>
 
 <script setup lang="ts">
-import { nextTick } from 'vue'
+import { Icon } from '@iconify/vue'
 import { categories } from '~/data/nav-data'
-import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 
 const { activeCategory, selectCategory } = useSearch()
 const collapsed = useState<boolean>('sidebar-collapsed', () => false)
@@ -95,72 +94,6 @@ const colorMode = useColorMode()
 const isDark = computed(() => colorMode.value === 'dark')
 const toggleTheme = () => {
   colorMode.preference = isDark.value ? 'light' : 'dark'
-}
-
-// 将 mdi:xxx 或 simple-icons:xxx 转换为 Element Plus 图标组件名
-const iconNameMap: Record<string, string> = {
-  // mdi 图标映射到 Element Plus
-  'mdi:apps': 'Apps',
-  'mdi:robot-happy-outline': 'Robot',
-  'mdi:chat-processing-outline': 'ChatDotRound',
-  'mdi:image-outline': 'Picture',
-  'mdi:magnify': 'Search',
-  'mdi:code-braces': 'Code',
-  'mdi:git': 'Branch',
-  'mdi:cloud-upload-outline': 'Upload',
-  'mdi:tools': 'Tools',
-  'mdi:palette-outline': 'Brush',
-  'mdi:pencil-outline': 'Edit',
-  'mdi:folder-image': 'Folder',
-  'mdi:rocket-launch-outline': 'Rocket',
-  'mdi:file-document-outline': 'Document',
-  'mdi:checkbox-marked-outline': 'Finished',
-  'mdi:wrench-outline': 'Wrench',
-  'mdi:toolbox-outline': 'Tools',
-  'mdi:code-tags': 'Code',
-  'mdi:book-open-page-variant-outline': 'Reading',
-  'mdi:book-outline': 'Notebook',
-  'mdi:play-circle-outline': 'VideoPlay',
-  'mdi:youtube': 'VideoCamera',
-  'mdi:music-note': 'Headset',
-  'mdi:unfold-more-horizontal': 'FullScreen',
-  'mdi:unfold-less-horizontal': 'FullScreen',
-  'mdi:weather-sunny': 'Sunny',
-  'mdi:weather-night': 'Moon',
-  'mdi:chevron-double-right': 'DArrowRight',
-  'mdi:chevron-double-left': 'DArrowLeft',
-  'mdi:brain': 'MagicStick',
-  'mdi:robot-love-outline': 'Bot',
-  'mdi:lightning-bolt': 'Lightning',
-  'mdi:flash-outline': 'Flash',
-  'mdi:pencil-ruler': 'Relation',
-  'mdi:image-size-select-small': 'PicLeft',
-  'mdi:regex': 'SetUp',
-  'mdi:palette-swatch-outline': 'Color',
-  'mdi:folder-outline': 'Folder',
-  'mdi:cube-outline': 'Box',
-  'mdi:puzzle-outline': 'Grid',
-  'mdi:gamepad-variant-outline': 'VideoGame',
-  'mdi:folder-open-outline': 'FolderOpened',
-  'mdi:gamepad-square-outline': 'Joystick',
-  'mdi:account-group-outline': 'UserFilled',
-  'mdi:school-outline': 'School',
-  'mdi:compass-outline': 'Compass',
-  'mdi:vuejs': 'CircleCheck',
-  'mdi:react': 'Refresh',
-  'mdi:wallet-outline': 'Wallet',
-  'mdi:hammer-wrench': 'SetUp',
-  'mdi:code-tags': 'Collection',
-  'mdi:file-code-outline': 'Document',
-  'mdi:code-string': 'Edit',
-  'mdi:nodejs': 'Cpu',
-  'mdi:flash': 'Lightning',
-  // simple-icons 用默认图标
-}
-
-const getIcon = (icon: string) => {
-  const name = iconNameMap[icon] || 'Folder'
-  return (ElementPlusIconsVue as any)[name] || ElementPlusIconsVue.Folder
 }
 
 // 处理菜单选择
@@ -193,6 +126,8 @@ const handleSelect = (index: string) => {
 ::deep(.el-sub-menu__title) {
   height: 48px;
   line-height: 48px;
+  display: flex;
+  align-items: center;
 }
 
 ::deep(.el-sub-menu .el-menu-item) {
