@@ -148,6 +148,9 @@ const iconNameMap: Record<string, string> = {
   'mdi:compass-outline': 'Compass',
   'mdi:vuejs': 'CircleCheck',
   'mdi:react': 'Refresh',
+  'mdi:wallet-outline': 'Wallet',
+  'mdi:hammer-wrench': 'SetUp',
+  'mdi:code-tags': 'Collection',
   // simple-icons 用默认图标
 }
 
