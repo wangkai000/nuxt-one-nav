@@ -186,7 +186,6 @@ const openAbout = () => {
 ::deep(.el-menu--collapse) .el-sub-menu__title .iconify {
   margin: 0 !important;
 }
-}
 
 ::deep(.el-sub-menu .el-menu-item) {
   height: 44px;
