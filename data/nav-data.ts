@@ -1,7 +1,8 @@
 import type { NavItem, Category } from '~/types/nav'
 
-// 从 resources.ts 转换的数据
+// 从 resources.ts 转换的完整数据
 export const navData: NavItem[] = [
+  // AI 工具 (tags包含'AI')
   {
     id: 'faxianai',
     title: '发现AI',
@@ -35,7 +36,7 @@ export const navData: NavItem[] = [
   {
     id: 'aigc',
     title: 'AIGC工具导航',
-    description: 'AIGC导航，一个全网分类最全，收录最全的生成式人工智能工具导航平台，分类包括AI写作、AI绘画、AI视频、AI办公、AI数字人、AI设计、AI语音、AI音乐、AI论文、AI简历、AI智能体、文本转语音等AI工具。',
+    description: 'AIGC导航，一个全网分类最全，收录最全的生成式人工智能工具导航平台。',
     url: 'https://www.aigc.cn/',
     icon: 'https://www.aigc.cn/wp-content/uploads/2025/06/aigc-icon.png',
     tags: ['AI', '导航'],
@@ -45,18 +46,78 @@ export const navData: NavItem[] = [
   {
     id: 'coderutil',
     title: '智能工具导航',
-    description: '智能工具导航，国内外热门ai工具集导航。智能工具导航,国内外热门ai工具集导航,ai工具,ai导航,智能对话,文生图,文生视频,AIGC,AiAgent,智能bot。',
+    description: '智能工具导航，国内外热门ai工具集导航。',
     url: 'https://www.coderutil.com',
     icon: 'https://www.coderutil.com/favicon.ico',
     tags: ['AI', '导航'],
     category: 'ai',
     order: 5,
   },
+  {
+    id: 'aitop100',
+    title: 'AITOP100大赛平台',
+    description: 'AITOP100大赛平台专注人工智能工具导航与AI赛事资讯',
+    url: 'https://www.aitop100.cn',
+    icon: 'https://www.aitop100.cn/favicon.ico',
+    tags: ['AI', '导航'],
+    category: 'ai',
+    order: 6,
+  },
+  {
+    id: 'youmind',
+    title: 'YouMind - AI 创作智能体',
+    description: 'YouMind 是一个创新的创作智能体，利用生成式 AI 的力量将多样化的材料转化为富有灵感的创作。',
+    url: 'https://youmind.com/',
+    icon: 'https://youmind.com/static/assets/favicon.ico',
+    tags: ['AI', '资源'],
+    category: 'ai',
+    order: 7,
+  },
+  {
+    id: 'holopix',
+    title: 'HoloPix',
+    description: 'HoloPix - AI驱动的3D照片与视频创作平台',
+    url: 'https://www.holopix.cn/',
+    icon: 'https://www.holopix.cn/favicon.ico',
+    tags: ['AI', '游戏', '设计', '独立开发'],
+    category: 'ai',
+    order: 8,
+  },
+  {
+    id: 'biling',
+    title: '笔灵AI',
+    description: 'AI智能写作工具，帮助快速生成各类文档、文章和内容',
+    url: 'https://ibiling.cn/',
+    icon: 'https://ibiling.cn/favicon.ico',
+    tags: ['AI', '写作'],
+    category: 'ai',
+    order: 9,
+  },
+  {
+    id: 'wawaxiezuo',
+    title: '蛙蛙写作',
+    description: 'AI小说写作助手，帮助创作者提升写作效率与灵感',
+    url: 'https://www.wawaxiezuo.com/',
+    icon: 'https://www.wawaxiezuo.com/favicon.ico',
+    tags: ['AI', '写作'],
+    category: 'ai',
+    order: 10,
+  },
+  {
+    id: 'taptap-maker',
+    title: 'TapTap AI Maker',
+    description: 'TapTap 制造 是一款专为游戏爱好者打造的 零门槛 AI 游戏创作智能体。对话即创作，完成即发布。',
+    url: 'https://maker.taptap.cn/',
+    icon: 'https://maker.taptap.cn/taptap-maker-logo.svg',
+    tags: ['AI', '游戏', '开发', '游戏开发引擎'],
+    category: 'ai',
+    order: 11,
+  },
   // Web3.0
   {
     id: 'panews',
     title: 'PANews数据导航',
-    description: 'PANews 数据导航是区块链和 Web3.0 领域的重要工具，为用户提供了丰富的链上数据及各类相关资源，助力其在区块链领域的探索与投资决策。',
+    description: 'PANews 数据导航是区块链和 Web3.0 领域的重要工具，为用户提供了丰富的链上数据及各类相关资源。',
     url: 'https://www.panewslab.com',
     icon: 'https://image.panewslab.com/images/favicon.ico',
     tags: ['Web3.0'],
@@ -76,7 +137,7 @@ export const navData: NavItem[] = [
   {
     id: 'openbuild',
     title: 'OpenBuild',
-    description: 'OpenBuild 是一个专注于 Web3 开发者生态的开源社区，致力于连接 Web2 与 Web3 技术领域，帮助开发者过渡到去中心化网络，并提供工具、资源及商业机会',
+    description: 'OpenBuild 是一个专注于 Web3 开发者生态的开源社区，致力于连接 Web2 与 Web3 技术领域。',
     url: 'https://openbuild.xyz/',
     icon: 'https://openbuild.xyz/favicon.ico',
     tags: ['Web3.0'],
@@ -86,7 +147,7 @@ export const navData: NavItem[] = [
   {
     id: 'techflow',
     title: '深潮techflow',
-    description: '深潮 TechFlow 是华语世界最具特色的区块链与加密货币深度媒体平台，以前沿洞察、内容质量与行业连接力著称。',
+    description: '深潮 TechFlow 是华语世界最具特色的区块链与加密货币深度媒体平台。',
     url: 'https://www.techflowpost.com/',
     icon: 'https://upload.techflowpost.com/upload/images/20230331/2023033111502613443948.png',
     tags: ['Web3.0'],
@@ -113,11 +174,151 @@ export const navData: NavItem[] = [
     category: 'web3',
     order: 6,
   },
+  {
+    id: 'blockbeats',
+    title: 'Block beats',
+    description: '律动BlockBeats, 专业的Crypto、Web3及NFT研究机构及资讯平台。',
+    url: 'https://www.theblockbeats.info/',
+    icon: 'https://image.blockbeats.cn/icon/favicon.ico',
+    tags: ['Web3.0'],
+    category: 'web3',
+    order: 7,
+  },
+  {
+    id: 'cryptobubbles',
+    title: 'Crypto Bubbles',
+    description: 'Crypto Bubbles是一款专注于加密货币市场数据可视化的工具。',
+    url: 'https://cryptobubbles.net',
+    icon: 'https://cryptobubbles.net/favicon.ico',
+    tags: ['Web3.0'],
+    category: 'web3',
+    order: 8,
+  },
+  {
+    id: 'learnblockchain',
+    title: '登链社区 - Web3 开发者社区',
+    description: '专业的中文区块链技术博客,技术问答社区,区块链视频,系统区块链技术的最佳网站。',
+    url: 'https://learnblockchain.cn/',
+    icon: 'https://learnblockchain.cn/favicon.ico',
+    tags: ['Web3.0'],
+    category: 'web3',
+    order: 9,
+  },
+  {
+    id: 'coinnavs',
+    title: '区块链网址导航',
+    description: '这里收录了全世界最优质区块链以及各类钱包和交易所网址。',
+    url: 'https://www.coinnavs.com/',
+    icon: 'https://www.coinnavs.com/wp-content/uploads/2024/05/1c0fc288cf6678d-32x32.png',
+    tags: ['Web3.0'],
+    category: 'web3',
+    order: 10,
+  },
+  {
+    id: 'foresightnews',
+    title: 'Foresight News',
+    description: 'FN精选 - Foresight News',
+    url: 'https://foresightnews.pro',
+    icon: 'https://foresightnews.pro/favicon.ico',
+    tags: ['Web3.0'],
+    category: 'web3',
+    order: 11,
+  },
+  {
+    id: 'chaincatcher',
+    title: '链捕手ChainCatcher',
+    description: '链捕手ChainCatcher — 专业的区块链技术研究与资讯平台。',
+    url: 'https://www.chaincatcher.com',
+    icon: 'https://www.chaincatcher.com/favicon.ico',
+    tags: ['Web3.0'],
+    category: 'web3',
+    order: 12,
+  },
+  {
+    id: 'odaily',
+    title: '星球日报',
+    description: 'Odaily星球日报',
+    url: 'https://www.odaily.news/',
+    icon: 'https://www.odaily.news/favicon.ico',
+    tags: ['Web3.0'],
+    category: 'web3',
+    order: 13,
+  },
+  {
+    id: 'decrypt',
+    title: 'Decrypt',
+    description: 'Decrypt: AI, Bitcoin, Culture, Gaming, and Crypto News。',
+    url: 'https://decrypt.co/',
+    icon: 'https://decrypt.co/favicon.ico',
+    tags: ['Web3.0'],
+    category: 'web3',
+    order: 14,
+  },
+  {
+    id: 'coindesk',
+    title: 'CoinDesk',
+    description: '加密货币与区块链领域权威综合平台。',
+    url: 'https://www.coindesk.com',
+    icon: 'https://www.coindesk.com/favicon.ico',
+    tags: ['Web3.0'],
+    category: 'web3',
+    order: 15,
+  },
+  {
+    id: 'bankless',
+    title: 'Bankless',
+    description: '帮助用户了解并融入去中心化金融世界，摆脱传统银行体系束缚。',
+    url: 'https://www.bankless.com',
+    icon: 'https://www.bankless.com/favicon.ico',
+    tags: ['Web3.0'],
+    category: 'web3',
+    order: 16,
+  },
+  {
+    id: 'pcweb3',
+    title: 'Pcweb3',
+    description: 'WEB3目录大全 | web3.0软件应用工具箱',
+    url: 'https://www.pcweb3.com/',
+    icon: 'https://www.pcweb3.com/favicon.ico',
+    tags: ['Web3.0'],
+    category: 'web3',
+    order: 17,
+  },
+  {
+    id: 'remote3',
+    title: 'Remote3',
+    description: 'WEB3行业求职网站',
+    url: 'https://www.remote3.co',
+    icon: 'https://www.remote3.co/favicon.ico',
+    tags: ['Web3.0'],
+    category: 'web3',
+    order: 18,
+  },
+  {
+    id: 'conflux',
+    title: 'Conflux Network',
+    description: 'Conflux 是一个高性能的 Layer 1 区块链公链，专注于为 Web3 提供可靠、高效的基础设施。',
+    url: 'https://confluxnetwork.org/',
+    icon: 'https://confluxnetwork.org/favicon.ico',
+    tags: ['Web3.0'],
+    category: 'web3',
+    order: 19,
+  },
+  {
+    id: 'polyomarket',
+    title: 'Polyomarket',
+    description: '一个基于区块链的事件预测市场平台。',
+    url: 'https://polyomarket.com/',
+    icon: 'https://polyomarket.com/favicon.ico',
+    tags: ['Web3.0', '预测市场'],
+    category: 'web3',
+    order: 20,
+  },
   // UI组件库
   {
     id: 'uiverse',
     title: 'Uiverse UI',
-    description: 'uiverse.io是一个开源UI组件库平台，由社区驱动，提供大量可直接复用的UI组件，包括按钮、卡片、加载动画、表单控件等',
+    description: 'uiverse.io是一个开源UI组件库平台，由社区驱动，提供大量可直接复用的UI组件。',
     url: 'https://uiverse.io/',
     icon: 'https://uiverse.io/android-chrome-512x512.png',
     tags: ['UI组件库'],
@@ -127,7 +328,7 @@ export const navData: NavItem[] = [
   {
     id: 'inspira',
     title: 'Inspira UI',
-    description: 'Inspira UI 是 Vue3 生态中兼具「设计美学」与「技术深度」的革新者。其动态交互能力与模块化架构，特别适合追求视觉创新且需高效开发的团队。',
+    description: 'Inspira UI 是 Vue3 生态中兼具「设计美学」与「技术深度」的革新者。',
     url: 'https://inspira-ui.com/',
     icon: 'https://uiverse.io/android-chrome-512x512.png',
     tags: ['UI组件库'],
@@ -147,7 +348,7 @@ export const navData: NavItem[] = [
   {
     id: 'headlessui',
     title: 'Headless UI',
-    description: 'Headless UI 代表了现代UI开发的新范式，将交互逻辑与视觉表现分离，让开发者既能获得完整的组件功能，又能保持100%的设计控制权。',
+    description: 'Headless UI 代表了现代UI开发的新范式，将交互逻辑与视觉表现分离。',
     url: 'https://headlessui.com/',
     icon: 'https://headlessui.com/favicon.ico',
     tags: ['UI组件库'],
@@ -167,21 +368,51 @@ export const navData: NavItem[] = [
   {
     id: '21st',
     title: '21st.dev',
-    description: 'Discover, share, and craft UI components 一个为提供高质量 UI 组件与设计资源的平台，很多代码完全也可以直接复制使用。',
+    description: 'Discover, share, and craft UI components 一个为提供高质量 UI 组件与设计资源的平台。',
     url: 'https://21st.dev',
     icon: 'https://21st.dev/favicon.ico',
     tags: ['UI组件库'],
     category: 'ui-lib',
     order: 6,
   },
+  {
+    id: 'magicui',
+    title: 'Magic UI',
+    description: '一个很酷的UI库',
+    url: 'https://magicui.design/',
+    icon: 'https://magicui.design/favicon.ico',
+    tags: ['UI组件库'],
+    category: 'ui-lib',
+    order: 7,
+  },
+  {
+    id: '8bitui',
+    title: '8bitUI',
+    description: '一个像素UI库',
+    url: 'https://www.8bitcn.com/',
+    icon: 'https://www.8bitcn.com/favicon.ico',
+    tags: ['UI组件库'],
+    category: 'ui-lib',
+    order: 8,
+  },
+  {
+    id: 'pxlkit',
+    title: 'PXLKit',
+    description: 'PXLKit 是一个像素 UI 组件库',
+    url: 'https://pxlkit.xyz/',
+    icon: 'https://pxlkit.xyz/favicon.svg',
+    tags: ['UI组件库', '像素'],
+    category: 'ui-lib',
+    order: 9,
+  },
   // 游戏开发引擎
   {
     id: 'cocos',
     title: 'cocos游戏引擎',
-    description: 'Cocos 凭借开源免费策略、极致轻量化（尤其适合移动端及 IoT）和中国开发者生态，成为全球化通用引擎标杆。',
+    description: 'Cocos 凭借开源免费策略、极致轻量化和中国开发者生态，成为全球化通用引擎标杆。',
     url: 'https://www.cocos.com/',
     icon: 'https://www.cocos.com/favicon.ico',
-    tags: ['游戏开发引擎'],
+    tags: ['游戏开发引擎', '游戏'],
     category: 'game-engine',
     order: 1,
   },
@@ -208,7 +439,7 @@ export const navData: NavItem[] = [
   {
     id: 'renpy',
     title: 'Ren\'Py',
-    description: 'Ren\'Py 凭借 低门槛脚本+Python可扩展性 的双层设计，成为视觉小说开发的首选引擎。',
+    description: 'Ren\'Py 凭借低门槛脚本+Python可扩展性的双层设计，成为视觉小说开发的首选引擎。',
     url: 'https://www.renpy.org/',
     icon: 'https://www.renpy.org/static/favicon.ico',
     tags: ['游戏开发引擎'],
@@ -218,7 +449,7 @@ export const navData: NavItem[] = [
   {
     id: 'gamemaker',
     title: 'GameMaker',
-    description: 'GameMaker 凭借 "低门槛 + 高性能 2D 开发" 成为独立游戏黄金标准，尤其适合混合类型 2D 游戏。',
+    description: 'GameMaker 凭借低门槛+高性能2D开发成为独立游戏黄金标准。',
     url: 'https://gamemaker.io',
     icon: 'https://gamemaker.io/next/images/icons/favicon-32x32.png',
     tags: ['游戏开发引擎'],
@@ -228,12 +459,42 @@ export const navData: NavItem[] = [
   {
     id: 'rpgmaker',
     title: 'RPG Maker',
-    description: 'RPG Maker既是工具，更是创作者生态的基石——从提供免费试用到技术资源整合，从插件开发到作品分发，它降低了RPG开发的门槛。',
+    description: 'RPG Maker既是工具，更是创作者生态的基石。',
     url: 'https://www.rpgmakerweb.com/',
     icon: 'https://src.onlinedown.net/d/file/p/2019-01-18/bfa8537ccd4e24a88c58b02dfe4cf6b0.jpg',
     tags: ['游戏开发引擎'],
     category: 'game-engine',
     order: 6,
+  },
+  {
+    id: 'gamecreator',
+    title: 'GameCreator',
+    description: '支持可视化编程与TypeScript的游戏制作工具',
+    url: 'https://www.gamecreator.com.cn/',
+    icon: 'https://www.gamecreator.com.cn/gclogo.ico',
+    tags: ['游戏开发引擎'],
+    category: 'game-engine',
+    order: 7,
+  },
+  {
+    id: 'spark',
+    title: '星火编辑器',
+    description: '最好的UGC游戏引擎，在TapTap和Steam上线超500款游戏。',
+    url: 'http://fc.spark.xd.com',
+    icon: 'http://fc.spark.xd.com/images/favicon.png',
+    tags: ['游戏开发引擎'],
+    category: 'game-engine',
+    order: 8,
+  },
+  {
+    id: 'gdevelop',
+    title: 'GDevelop',
+    description: 'GDevelop 是唯一具有直观、高效零代码方法的开源引擎。',
+    url: 'https://gdevelop.io',
+    icon: 'https://gdevelop.io/favicons/favicon-16x16.png',
+    tags: ['游戏开发引擎'],
+    category: 'game-engine',
+    order: 9,
   },
   // 工具
   {
@@ -276,11 +537,21 @@ export const navData: NavItem[] = [
     category: 'tools',
     order: 4,
   },
-  // 资源
+  {
+    id: 'limgx',
+    title: 'LimgX',
+    description: '免费在线图片压缩与格式转换工具。本地处理保护隐私，支持JPG、PNG、WebP格式转换。',
+    url: 'https://limgx.com/',
+    icon: 'https://limgx.com/favicon.ico',
+    tags: ['Tool', '图片'],
+    category: 'tools',
+    order: 5,
+  },
+  // 资源导航
   {
     id: 'ossnav',
     title: '开源精选',
-    description: '开源精选是一款专注于收录优质开源工具的导航网站，开源精选只收集每个软件工具类目中完全免费且超好用的开源软件。',
+    description: '开源精选是一款专注于收录优质开源工具的导航网站。',
     url: 'https://www.ossnav.com',
     icon: 'https://www.ossnav.com/wp-content/uploads/2024/11/1732557264-open-64.png',
     tags: ['开源', '导航'],
@@ -290,7 +561,7 @@ export const navData: NavItem[] = [
   {
     id: 'tbox',
     title: 'Tbox导航',
-    description: 'Tbox导航是一个集合大量优质在线工具的导航网站,包括实用工具、影音工具、图片工具、编程工具、网络资源等几十种分类。',
+    description: 'Tbox导航是一个集合大量优质在线工具的导航网站。',
     url: 'https://www.tboxn.com/',
     icon: 'https://tboxn.com/wp-content/uploads/2022/03/cropped-tboxlogo512.png',
     tags: ['Tool', '导航'],
@@ -300,7 +571,7 @@ export const navData: NavItem[] = [
   {
     id: 'awwwards',
     title: 'Awwwards',
-    description: 'Awwwards 是一个专注于评选和展示全球顶尖网页设计的国际平台，被誉为"网页设计界的奥斯卡"',
+    description: 'Awwwards 是一个专注于评选和展示全球顶尖网页设计的国际平台，被誉为网页设计界的奥斯卡。',
     url: 'https://www.awwwards.com/',
     icon: 'https://assets.awwwards.com/assets/images/favicon-safari.svg',
     tags: ['资源'],
@@ -310,7 +581,7 @@ export const navData: NavItem[] = [
   {
     id: 'dribbble',
     title: 'Dribbble',
-    description: 'Dribbble 是一个以篮球元素为特色，采用邀请制，专注于 UI/UX 设计等领域，鼓励设计师展示作品、分享创意并进行互动交流的全球性设计社区',
+    description: 'Dribbble 是一个以篮球元素为特色，采用邀请制，专注于 UI/UX 设计等领域的全球性设计社区。',
     url: 'https://dribbble.com/',
     icon: 'https://cdn.dribbble.com/assets/dribbble-vector-ball-c75e531ccee3110d0ee5ae951fd1d0a65d2ff25d3c0577757ea7e8d8e3e75db4.svg',
     tags: ['资源', '社区', '设计'],
@@ -380,7 +651,7 @@ export const navData: NavItem[] = [
   {
     id: 'topindie',
     title: 'TopIndie.dev',
-    description: 'TopIndie.dev 是独立开发者发现、展示和探索创新项目（从应用程序到开源工具）的中心。',
+    description: 'TopIndie.dev 是独立开发者发现、展示和探索创新项目的中心。',
     url: 'https://topindie.dev/',
     icon: 'https://topindie.dev/assets/image/favicon.ico',
     tags: ['资源', '独立开发'],
@@ -410,7 +681,7 @@ export const navData: NavItem[] = [
   {
     id: 'bgrdh',
     title: '办公人导航',
-    description: '办公人导航是一个实用的办公生活导航网站,致力于分享优质的网站网址及软件资源等内容。',
+    description: '办公人导航是一个实用的办公生活导航网站。',
     url: 'https://www.bgrdh.com/',
     icon: 'https://www.bgrdh.com/wp-content/uploads/2022/11/20221119185003612150.png',
     tags: ['导航', '资源'],
@@ -427,11 +698,91 @@ export const navData: NavItem[] = [
     category: 'resources',
     order: 15,
   },
-  // 游戏/社区
+  {
+    id: 'baipiao',
+    title: '白嫖站',
+    description: '白嫖资源 | 收录全网免费好用资源。',
+    url: 'https://baipiao.top/',
+    icon: 'https://baipiao.top/favicon.ico',
+    tags: ['导航'],
+    category: 'resources',
+    order: 16,
+  },
+  {
+    id: 'mobbin',
+    title: 'Mobbin',
+    description: '发现真实世界的设计灵感，收藏1400多个App设计灵感的网站。',
+    url: 'https://mobbin.com',
+    icon: 'https://mobbin.com/favicon.ico',
+    tags: ['资源', '社区', '设计'],
+    category: 'resources',
+    order: 17,
+  },
+  {
+    id: 'refero',
+    title: 'Refero',
+    description: '设计研究指南,最大的网页和iOS UI UX设计灵感库。',
+    url: 'https://refero.design/',
+    icon: 'https://refero.design/favicon.ico',
+    tags: ['资源', '社区', '设计'],
+    category: 'resources',
+    order: 18,
+  },
+  {
+    id: 'creght',
+    title: 'Creght',
+    description: '一款设计师友好的建站工具',
+    url: 'https://www.creght.com/',
+    icon: 'https://fsu.creght.com/project/mVnidfGADfS/lZLMxdMuGEY__logo_(1).png?w=768&fmt=webp',
+    tags: ['资源', '建站', '设计'],
+    category: 'resources',
+    order: 19,
+  },
+  {
+    id: 'iconfinder',
+    title: 'Iconfinder',
+    description: '专业的icon素材网站，为你的设计提供灵感。',
+    url: 'https://www.iconfinder.com/',
+    icon: 'https://www.iconfinder.com/favicon.ico',
+    tags: ['资源', '图标', '设计'],
+    category: 'resources',
+    order: 20,
+  },
+  {
+    id: 'sketchfab',
+    title: 'Sketchfab',
+    description: '高品质的模型素材网站，为你的设计提供丰富的素材。',
+    url: 'https://sketchfab.com/',
+    icon: 'https://sketchfab.com/favicon.ico',
+    tags: ['资源', '设计'],
+    category: 'resources',
+    order: 21,
+  },
+  {
+    id: 'makemepulse',
+    title: 'MakemePulse',
+    description: '每个设计师都应该看20次+的的网站',
+    url: 'https://www.makemepulse.com/',
+    icon: 'https://www.makemepulse.com/favicon.ico',
+    tags: ['设计', '资源'],
+    category: 'resources',
+    order: 22,
+  },
+  {
+    id: 'mek',
+    title: 'MEK.txt',
+    description: 'MEK.txt Mek Gallery 是一个复古风格的资源分享网站',
+    url: 'https://www.mek.gallery/',
+    icon: 'https://framerusercontent.com/images/GgGZEpdp0k0EuePiSwgr1d2jRtA.svg',
+    tags: ['像素', '资源'],
+    category: 'resources',
+    order: 23,
+  },
+  // 游戏社区
   {
     id: 'itch',
     title: 'Itch.io',
-    description: '创立于2013年，由程序员兼游戏爱好者 Leaf Corcoran 创建，旨在打破传统平台（如Steam）的高门槛限制，为独立开发者提供无审核上架、自由定价和页面设计的开放空间。',
+    description: '创立于2013年，为独立开发者提供无审核上架、自由定价和页面设计的开放空间。',
     url: 'https://itch.io/',
     icon: 'https://static.itch.io/images/logo-black-new.svg',
     tags: ['独立开发', '社区', '游戏'],
@@ -441,7 +792,7 @@ export const navData: NavItem[] = [
   {
     id: 'indienova',
     title: '独立精神 | indienova 独立游戏',
-    description: 'Indienova 以 技术赋能+文化沉淀 的双轨模式，成为中国独立游戏领域的"生态基石"。',
+    description: 'Indienova 以技术赋能+文化沉淀的双轨模式，成为中国独立游戏领域的生态基石。',
     url: 'https://indienova.com/',
     icon: 'https://static.indienova.com/assets/images/logos/indienova_new@2x.png',
     tags: ['社区', '游戏'],
@@ -458,11 +809,51 @@ export const navData: NavItem[] = [
     category: 'games',
     order: 3,
   },
-  // 社区
+  {
+    id: 'retro-games',
+    title: 'retro-games',
+    description: '复古游戏怀旧平台',
+    url: 'https://www.retrogames.onl',
+    icon: 'https://www.retrogames.onl/favicon.ico',
+    tags: ['游戏'],
+    category: 'games',
+    order: 4,
+  },
+  {
+    id: 'retrogames',
+    title: 'RetroGames',
+    description: '复古游戏怀旧平台',
+    url: 'https://retro-games.org/',
+    icon: 'https://retro-games.org/favicon.ico',
+    tags: ['游戏'],
+    category: 'games',
+    order: 5,
+  },
+  {
+    id: 'gameuidatabase',
+    title: 'Game UI Database',
+    description: '专注于游戏UI设计的数据库，提供丰富的设计资源。',
+    url: 'https://www.gameuidatabase.com/',
+    icon: 'https://www.gameuidatabase.com/favicon.ico',
+    tags: ['游戏', 'UI', '设计'],
+    category: 'games',
+    order: 6,
+  },
+  {
+    id: 'interfaceingame',
+    title: 'Interface in Game',
+    description: '专为GUI设计师准备的网站，提供最新的设计趋势和技巧。',
+    url: 'https://interfaceingame.com/',
+    icon: 'https://interfaceingame.com/favicon.ico',
+    tags: ['游戏', 'GUI', '设计'],
+    category: 'games',
+    order: 7,
+  },
+  // 开发者社区
   {
     id: 'producthunt',
     title: 'Product hunt',
-    description: 'Product Hunt 是一个全球领先的产品发现平台,于2013年由Ryan Howard创立,旨在帮助用户发现和分享最新的科技产品、创业公司和创新项目。',
+    description: 'Product Hunt 是一个全球领先的产品发现平台。',
     url: 'https://www.producthunt.com/',
     icon: 'https://www.producthunt.com/favicon.ico',
     tags: ['社区', '独立开发'],
@@ -479,6 +870,46 @@ export const navData: NavItem[] = [
     category: 'community',
     order: 2,
   },
+  {
+    id: 'kanxue',
+    title: '看雪论坛',
+    description: '专注于软件安全技术交流，为安全技术爱好者提供了技术交流平台和资源。',
+    url: 'https://www.kanxue.com/',
+    icon: 'https://www.kanxue.com/view/img/favicon.ico',
+    tags: ['网络安全', '社区'],
+    category: 'community',
+    order: 3,
+  },
+  {
+    id: 'hackforums',
+    title: 'Hack Forums',
+    description: '是一个知名的网络安全技术论坛，适合黑白客群体和开发人员。',
+    url: 'https://hackforums.net/',
+    icon: 'https://www.hackforums.net/view/img/favicon.ico',
+    tags: ['网络安全', '社区'],
+    category: 'community',
+    order: 4,
+  },
+  {
+    id: 'behance',
+    title: 'Behance',
+    description: '全球著名的设计社区，展示设计师的创意作品',
+    url: 'https://www.behance.net/',
+    icon: 'https://www.behance.net/favicon.ico',
+    tags: ['设计', '社区'],
+    category: 'community',
+    order: 5,
+  },
+  {
+    id: 'uichina',
+    title: 'UI中国',
+    description: '国内知名设计师社区，提供UI设计、交互设计、用户体验等专业设计资源。',
+    url: 'https://www.ui.cn/',
+    icon: 'https://www.ui.cn/favicon.ico',
+    tags: ['设计', 'UI', '社区'],
+    category: 'community',
+    order: 6,
+  },
   // 学习
   {
     id: 'julebu',
@@ -492,7 +923,7 @@ export const navData: NavItem[] = [
   },
 ]
 
-// 根据新数据调整分类
+// 分类定义
 export const categories: Category[] = [
   { id: 'all', name: '全部', icon: 'mdi:apps', defaultOpened: true },
   {
@@ -500,9 +931,6 @@ export const categories: Category[] = [
     name: 'AI 工具',
     icon: 'mdi:robot-happy-outline',
     defaultOpened: true,
-    children: [
-      { id: 'ai-nav', name: 'AI导航', icon: 'mdi:compass-outline' },
-    ]
   },
   {
     id: 'web3',
@@ -514,10 +942,6 @@ export const categories: Category[] = [
     id: 'ui-lib',
     name: 'UI组件库',
     icon: 'mdi:puzzle-outline',
-    children: [
-      { id: 'ui-lib-vue', name: 'Vue组件', icon: 'mdi:vuejs' },
-      { id: 'ui-lib-react', name: 'React组件', icon: 'mdi:react' },
-    ]
   },
   {
     id: 'game-engine',
@@ -551,56 +975,26 @@ export const categories: Category[] = [
   },
 ]
 
-/** 为每个分类计算网站数量（支持层级） */
+/** 为每个分类计算网站数量 */
 export function getCategoriesWithCount(items: NavItem[] = navData): Category[] {
   return categories.map(cat => {
-    let count = 0
-    if (cat.id === 'all') {
-      count = items.length
-    } else {
-      count = items.filter(i => i.category === cat.id).length
-    }
-
-    const childrenWithCount = cat.children?.map(child => ({
-      ...child,
-      count: items.filter(i => i.category === child.id).length
-    }))
+    const count = cat.id === 'all'
+      ? items.length
+      : items.filter(i => i.category === cat.id).length
 
     return {
       ...cat,
       count,
-      children: childrenWithCount
     }
   })
 }
 
 /** 获取所有叶子节点分类 */
 export function getLeafCategories(): Category[] {
-  const result: Category[] = []
-
-  for (const cat of categories) {
-    if (cat.children && cat.children.length > 0) {
-      result.push(...cat.children.map(child => ({
-        ...child,
-        parentId: cat.id,
-        parentName: cat.name
-      })))
-    } else {
-      result.push(cat)
-    }
-  }
-
-  return result
+  return categories.filter(cat => cat.id !== 'all')
 }
 
 /** 根据分类 ID 获取分类信息 */
 export function getCategoryById(id: string): Category | undefined {
-  for (const cat of categories) {
-    if (cat.id === id) return cat
-    if (cat.children) {
-      const child = cat.children.find(c => c.id === id)
-      if (child) return { ...child, parentId: cat.id, parentName: cat.name }
-    }
-  }
-  return undefined
+  return categories.find(cat => cat.id === id)
 }
