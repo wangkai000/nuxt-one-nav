@@ -30,7 +30,7 @@
           <template v-for="cat in categories" :key="cat.id">
             <!-- 全部 -->
             <el-menu-item v-if="cat.id === 'all'" :index="cat.id">
-              <Icon :icon="cat.icon" class="w-5 h-5 mr-3" />
+              <Icon :icon="cat.icon" style="width: 20px; height: 20px; min-width: 20px; min-height: 20px; margin-right: 12px;" />
               <template #title>
                 <span>{{ cat.name }}</span>
               </template>
@@ -39,7 +39,7 @@
             <!-- 有子分类的父分类 -->
             <el-sub-menu v-else-if="cat.children && cat.children.length > 0" :index="cat.id">
               <template #title>
-                <Icon :icon="cat.icon" class="w-5 h-5 mr-3" />
+                <Icon :icon="cat.icon" style="width: 20px; height: 20px; min-width: 20px; min-height: 20px; margin-right: 12px;" />
                 <span>{{ cat.name }}</span>
               </template>
               <el-menu-item
@@ -47,14 +47,14 @@
                 :key="child.id"
                 :index="child.id"
               >
-                <Icon :icon="child.icon" class="w-4 h-4 mr-3" />
+                <Icon :icon="child.icon" style="width: 16px; height: 16px; min-width: 16px; min-height: 16px; margin-right: 12px;" />
                 <span>{{ child.name }}</span>
               </el-menu-item>
             </el-sub-menu>
 
             <!-- 没有子分类的分类 -->
             <el-menu-item v-else :index="cat.id">
-              <Icon :icon="cat.icon" class="w-5 h-5 mr-3" />
+              <Icon :icon="cat.icon" style="width: 20px; height: 20px; min-width: 20px; min-height: 20px; margin-right: 12px;" />
               <template #title>
                 <span>{{ cat.name }}</span>
               </template>
@@ -71,19 +71,19 @@
           class="bg-transparent border-r-0"
         >
           <el-menu-item index="submit" @click="openSubmit">
-            <Icon icon="fluent-emoji:plus" class="w-5 h-5 mr-3" />
+            <Icon icon="fluent-emoji:plus" style="width: 20px; height: 20px; min-width: 20px; min-height: 20px; margin-right: 12px;" />
             <template #title>
               <span>网站提交</span>
             </template>
           </el-menu-item>
           <el-menu-item index="friends" @click="openFriends">
-            <Icon icon="fluent-emoji:handshake" class="w-5 h-5 mr-3" />
+            <Icon icon="fluent-emoji:handshake" style="width: 20px; height: 20px; min-width: 20px; min-height: 20px; margin-right: 12px;" />
             <template #title>
               <span>友情链接</span>
             </template>
           </el-menu-item>
           <el-menu-item index="about" @click="openAbout">
-            <Icon icon="fluent-emoji:information" class="w-5 h-5 mr-3" />
+            <Icon icon="fluent-emoji:information" style="width: 20px; height: 20px; min-width: 20px; min-height: 20px; margin-right: 12px;" />
             <template #title>
               <span>关于导航</span>
             </template>
@@ -178,19 +178,53 @@ const openAbout = () => {
   line-height: 48px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 /* 收起状态下图标居中 */
 ::deep(.el-menu--collapse) .el-menu-item,
 ::deep(.el-menu--collapse) .el-sub-menu__title {
   padding: 0 !important;
-  justify-content: center;
+  justify-content: center !important;
 }
 
 ::deep(.el-menu--collapse) .el-menu-item .iconify,
 ::deep(.el-menu--collapse) .el-sub-menu__title .iconify {
   margin: 0 !important;
+}
+
+/* 固定图标大小 - 所有状态下保持 20px */
+::deep(.el-menu-item) .iconify,
+::deep(.el-sub-menu__title) .iconify,
+::deep(.el-menu--collapse) .el-menu-item .iconify,
+::deep(.el-menu--collapse) .el-sub-menu__title .iconify {
+  width: 20px !important;
+  height: 20px !important;
+  min-width: 20px !important;
+  min-height: 20px !important;
+  max-width: 20px !important;
+  max-height: 20px !important;
+  flex-shrink: 0 !important;
+  font-size: 20px !important;
+}
+
+/* 针对收起状态的强制样式 */
+::deep(.el-menu--collapse .el-menu-item .iconify),
+::deep(.el-menu--collapse .el-sub-menu__title .iconify) {
+  width: 20px !important;
+  height: 20px !important;
+  min-width: 20px !important;
+  min-height: 20px !important;
+  max-width: 20px !important;
+  max-height: 20px !important;
+}
+
+/* 子菜单中的图标稍微小一点 */
+::deep(.el-sub-menu .el-menu-item) .iconify {
+  width: 16px !important;
+  height: 16px !important;
+  min-width: 16px !important;
+  min-height: 16px !important;
 }
 
 ::deep(.el-sub-menu .el-menu-item) {
