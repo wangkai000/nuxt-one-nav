@@ -80,6 +80,9 @@
         <!-- 底部 -->
         <AppFooter />
       </el-main>
+
+      <!-- 返回顶部按钮 -->
+      <BackToTop />
     </el-container>
   </el-container>
 </template>
