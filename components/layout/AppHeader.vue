@@ -77,7 +77,11 @@
           class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
           title="GitHub"
         >
-          <Icon icon="logos:github-icon" class="w-5 h-5" />
+          <Icon icon="logos:github-icon" class="w-5 h-5">
+            <template #default>
+              <span class="text-xs font-medium">Git</span>
+            </template>
+          </Icon>
         </a>
         <a
           href="https://gitee.com/wangkai000/my-nuxt-nav"
@@ -86,7 +90,11 @@
           class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
           title="Gitee"
         >
-          <Icon icon="logos:gitee" class="w-5 h-5" />
+          <Icon icon="logos:gitee" class="w-5 h-5">
+            <template #default>
+              <span class="text-xs font-medium text-red-500">Gitee</span>
+            </template>
+          </Icon>
         </a>
       </div>
     </div>
