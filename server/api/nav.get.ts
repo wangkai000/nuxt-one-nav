@@ -1,10 +1,25 @@
 // 导航数据 API
-// 提供 JSON 格式的导航数据，可用于外部调用
+// 从 JSON 文件读取数据，提供 API 接口
 
-import { navData, categories, categoryMap } from '../data/nav-data'
+import navDataJson from '../../data/nav-data.json'
+import type { NavItem, Category } from '~/types/nav'
+
+// 类型转换
+const navData: NavItem[] = navDataJson.sites as NavItem[]
+const categories: Category[] = navDataJson.categories as Category[]
 
 export default defineEventHandler((event) => {
   const query = getQuery(event)
+
+  // 只返回 sites 数据
+  if (query.data === 'sites') {
+    return navData
+  }
+
+  // 只返回 categories 数据
+  if (query.data === 'categories') {
+    return categories
+  }
 
   // 支持按分类筛选
   if (query.category) {
