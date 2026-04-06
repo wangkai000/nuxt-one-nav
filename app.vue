@@ -1,24 +1,7 @@
 <template>
   <div>
-    <!-- 全局加载遮罩 -->
-    <Transition name="fade">
-      <div
-        v-if="isLoading"
-        class="fixed inset-0 z-[9999] flex items-center justify-center bg-white dark:bg-[#16162a]"
-      >
-        <div class="flex flex-col items-center gap-4">
-          <!-- 加载动画 -->
-          <div class="relative">
-            <div class="w-16 h-16 rounded-full border-4 border-gray-200 dark:border-gray-700"></div>
-            <div class="absolute inset-0 w-16 h-16 rounded-full border-4 border-blue-500 border-t-transparent animate-spin"></div>
-          </div>
-          <!-- 加载文字 -->
-          <p class="text-gray-600 dark:text-gray-400 text-sm font-medium animate-pulse">
-            {{ loadingText }}
-          </p>
-        </div>
-      </div>
-    </Transition>
+    <!-- 全局加载指示器 -->
+    <LoadingIndicator />
 
     <NuxtLayout>
       <NuxtPage />
@@ -42,64 +25,4 @@ watch(
   },
   { immediate: true }
 )
-
-// 加载状态
-const isLoading = ref(true)
-const loadingText = ref('Loading...')
-const minLoadingTime = 300 // 最小显示时间，避免闪烁
-const startTime = ref(Date.now())
-
-// 隐藏加载动画
-const hideLoading = () => {
-  const elapsed = Date.now() - startTime.value
-  const remaining = Math.max(0, minLoadingTime - elapsed)
-
-  setTimeout(() => {
-    isLoading.value = false
-  }, remaining)
-}
-
-// 页面加载完成后隐藏加载动画
-onMounted(() => {
-  startTime.value = Date.now()
-
-  // 等待页面完全加载
-  if (document.readyState === 'complete') {
-    hideLoading()
-  } else {
-    window.addEventListener('load', hideLoading)
-  }
-})
-
-// 路由切换时显示加载动画
-const router = useRouter()
-
-router.beforeEach(() => {
-  isLoading.value = true
-  startTime.value = Date.now()
-})
-
-router.afterEach(() => {
-  // 等待下一个 tick，让页面有时间开始渲染
-  nextTick(() => {
-    // 使用 requestIdleCallback 或 setTimeout 等待页面渲染完成
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(() => hideLoading(), { timeout: 1000 })
-    } else {
-      setTimeout(hideLoading, 300)
-    }
-  })
-})
 </script>
-
-<style scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-</style>
