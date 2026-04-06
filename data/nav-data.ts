@@ -1042,6 +1042,16 @@ export const navData: NavItem[] = [
     category: 'web3-ui',
     order: 12,
   },
+  {
+    id: 'antd-web3',
+    title: 'Ant Design Web3',
+    description: 'Ant Design Web3 是 Ant Design 的 Web3 组件库，提供高质量的 Web3 UI 组件。',
+    url: 'https://web3.ant.design/',
+    icon: 'https://web3.ant.design/favicon.ico',
+    tags: ['Web3', 'UI库', 'React', 'Ant Design'],
+    category: 'web3-ui',
+    order: 13,
+  },
   // 前端框架 - React 生态
   {
     id: 'react',
@@ -1830,7 +1840,7 @@ export const categories: Category[] = [
   },
   {
     id: 'web3-ui',
-    name: 'Web3 UI库',
+    name: 'Web3库',
     icon: 'logos:metamask-icon',
     defaultOpened: true,
   },
