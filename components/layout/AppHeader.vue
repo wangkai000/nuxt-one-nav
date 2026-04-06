@@ -13,15 +13,14 @@
         <Icon icon="mdi:menu" class="w-5 h-5 text-gray-600 dark:text-gray-400" />
       </button>
 
-      <!-- Logo（仅移动端显示） -->
-      <NuxtLink to="/" class="xl:hidden flex items-center gap-2">
-        <div class="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
-          <svg class="w-3.5 h-3.5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <!-- Logo（仅移动端显示图标，不显示文字） -->
+      <NuxtLink to="/" class="xl:hidden flex items-center">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+          <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
             <circle cx="12" cy="12" r="10"/>
             <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
           </svg>
         </div>
-        <span class="text-base font-bold text-gray-900 dark:text-white">MyNuxtNav</span>
       </NuxtLink>
 
       <!-- 桌面端导航 -->
