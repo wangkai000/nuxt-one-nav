@@ -46,30 +46,49 @@ watch(
 // 加载状态
 const isLoading = ref(true)
 const loadingText = ref('Loading...')
+const minLoadingTime = 300 // 最小显示时间，避免闪烁
+const startTime = ref(Date.now())
+
+// 隐藏加载动画
+const hideLoading = () => {
+  const elapsed = Date.now() - startTime.value
+  const remaining = Math.max(0, minLoadingTime - elapsed)
+
+  setTimeout(() => {
+    isLoading.value = false
+  }, remaining)
+}
 
 // 页面加载完成后隐藏加载动画
 onMounted(() => {
-  // 模拟加载时间，确保资源加载完成
-  const timer = setTimeout(() => {
-    isLoading.value = false
-  }, 800)
+  startTime.value = Date.now()
 
-  onUnmounted(() => {
-    clearTimeout(timer)
-  })
+  // 等待页面完全加载
+  if (document.readyState === 'complete') {
+    hideLoading()
+  } else {
+    window.addEventListener('load', hideLoading)
+  }
 })
 
 // 路由切换时显示加载动画
 const router = useRouter()
+
 router.beforeEach(() => {
   isLoading.value = true
+  startTime.value = Date.now()
 })
 
 router.afterEach(() => {
-  // 延迟隐藏，让页面有时间渲染
-  setTimeout(() => {
-    isLoading.value = false
-  }, 300)
+  // 等待下一个 tick，让页面有时间开始渲染
+  nextTick(() => {
+    // 使用 requestIdleCallback 或 setTimeout 等待页面渲染完成
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(() => hideLoading(), { timeout: 1000 })
+    } else {
+      setTimeout(hideLoading, 300)
+    }
+  })
 })
 </script>
 
