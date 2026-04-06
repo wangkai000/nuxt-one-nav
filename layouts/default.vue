@@ -12,7 +12,7 @@
       class="!bg-white dark:!bg-[#16162a]"
       :z-index="2000"
     >
-      <template #title>
+      <template #header>
         <div class="flex items-center gap-2">
           <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
             <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">

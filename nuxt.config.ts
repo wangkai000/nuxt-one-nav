@@ -1,66 +1,131 @@
+// Nuxt 3 配置文件
+// 文档: https://nuxt.com.cn/docs/configuration/configuration-reference
+
 export default defineNuxtConfig({
+  // 兼容日期，用于确保 Nuxt 版本兼容性
   compatibilityDate: '2024-11-01',
+
+  // 关闭 Nuxt DevTools（生产环境建议关闭）
   devtools: { enabled: false },
 
+  // ========== 样式配置 ==========
   css: [
+    // 全局 CSS 文件
     '~/assets/css/main.css',
+    // Element Plus 暗色模式 CSS 变量
     'element-plus/theme-chalk/dark/css-vars.css'
   ],
 
+  // ========== Nuxt 模块 ==========
+  // 模块会自动导入并配置第三方库
   modules: [
-    '@element-plus/nuxt',
-    '@nuxtjs/color-mode'
+    '@element-plus/nuxt',      // Element Plus Vue 3 组件库
+    '@nuxtjs/color-mode'      // 暗色模式支持
   ],
 
-  // Element Plus 配置
+  // ========== Element Plus 配置 ==========
   elementPlus: {
+    // 使用 CSS 导入方式（替代 SCSS）
     importStyle: 'css'
   },
 
-  // transpile 依赖
+  // ========== 构建配置 ==========
   build: {
+    // 需要在客户端转译的依赖（避免 SSR 问题）
     transpile: ['@iconify/vue']
   },
 
-  // 组件自动导入配置
+  // ========== 组件自动导入 ==========
+  // 配置 components 目录下的组件自动导入
   components: [
     {
       path: '~/components',
-      pathPrefix: false,  // 不使用路径前缀，如 Sidebar 而不是 LayoutSidebar
+      // true: 组件名为 LayoutSidebar（带路径前缀）
+      // false: 组件名为 Sidebar（不带路径前缀）
+      pathPrefix: false
     }
   ],
 
+  // ========== 暗色模式配置 ==========
   colorMode: {
+    // 暗色 class 后缀（空字符串表示直接使用 'dark'）
     classSuffix: '',
+    // 默认颜色模式: 'system' | 'light' | 'dark'
     preference: 'system',
+    // 系统不支持时的备用模式
     fallback: 'light'
   },
 
+  // ========== PostCSS 配置 ==========
   postcss: {
     plugins: {
-      tailwindcss: {},
-      autoprefixer: {}
+      tailwindcss: {},    // Tailwind CSS
+      autoprefixer: {}   // 自动添加浏览器前缀
     }
   },
 
+  // ========== 应用全局配置 ==========
   app: {
     head: {
-      title: 'MyNuxtNav - 发现精彩网站',
+      // HTML 标题
+      title: '天渺studio - 资源导航',
+
+      // HTML 标签属性
       htmlAttrs: { lang: 'zh-CN' },
+
+      // Meta 标签（SEO 和社交分享）
       meta: [
-        { name: 'description', content: '精心挑选的高质量网站导航，助你高效工作与生活' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+        // 基础 SEO
+        { name: 'description', content: '天渺工作室的资源导航，天渺studio的资源导航。精心挑选的高质量网站导航，助你高效工作与生活。' },
+        { name: 'keywords', content: '资源导航,网站导航,天渺studio,天渺工作室,导航站点,实用工具,开发资源' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'author', content: '天渺studio' },
+        { name: 'robots', content: 'index, follow' },
+
+        // Open Graph（Facebook/微信等社交平台分享）
+        { property: 'og:title', content: '天渺studio - 资源导航' },
+        { property: 'og:description', content: '天渺工作室的资源导航，天渺studio的资源导航。精心挑选的高质量网站导航，助你高效工作与生活。' },
+        { property: 'og:url', content: 'https://tianmiao.site' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:image', content: 'https://s21.ax1x.com/2024/12/22/pAXtJat.jpg' },
+
+        // Twitter Card（Twitter 分享）
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:title', content: '天渺studio - 资源导航' },
+        { name: 'twitter:description', content: '天渺工作室的资源导航，天渺studio的资源导航。精心挑选的高质量网站导航，助你高效工作与生活。' },
+        { name: 'twitter:image', content: 'https://s21.ax1x.com/2024/12/22/pAXtJat.jpg' }
       ],
+
+      // Link 标签（引入外部资源）
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }
+        // 网站 Favicon
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        // RSS 订阅
+        { rel: 'alternate', type: 'application/rss+xml', title: '天渺studio RSS', href: 'https://blog.tianmiao.site/feed.xml' },
+        // 作者链接
+        { rel: 'author', href: 'https://tianmiao.site' }
       ]
     }
   },
 
-  // 修复：CSR 模式不需要 prerender
-  ssr: false,
+  // ========== SSR 配置 ==========
+  // true:  启用 SSR（用于 SSG 静态生成 nuxt generate）
+  // false: CSR 模式（仅客户端渲染 nuxt build）
+  // 注意: nuxt generate 必须启用 SSR 才能预渲染页面
+  ssr: true,
 
+  // ========== TypeScript 配置 ==========
   typescript: {
+    // 启用严格类型检查
     strict: true
+  },
+
+  // ========== Nitro 服务器配置 ==========
+  // 仅在 SSR/SSG 模式下生效
+  nitro: {
+    prerender: {
+      // 预渲染失败时不中断构建（可能有一些 SSR 警告但仍生成静态文件）
+      failOnError: false
+    }
   }
 })

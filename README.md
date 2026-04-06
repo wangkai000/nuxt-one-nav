@@ -1,6 +1,8 @@
-# My Nuxt Nav导航站点
+# My Nuxt Nav 导航站点
 
 一个基于 **Nuxt 3 + TypeScript + Element Plus +Tailwind CSS** 的静态导航站点，高保真（尽量😂）复刻 One Nav 模板（老版本）的 UI 风格。
+
+[English](./README_en.md)
 
 ## ✨ 特性
 

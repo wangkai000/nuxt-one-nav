@@ -70,19 +70,19 @@
           :collapse-transition="false"
           class="bg-transparent border-r-0"
         >
-          <el-menu-item @click="openSubmit">
+          <el-menu-item index="submit" @click="openSubmit">
             <Icon icon="fluent-emoji:plus" class="w-5 h-5 mr-3" />
             <template #title>
               <span>网站提交</span>
             </template>
           </el-menu-item>
-          <el-menu-item @click="openFriends">
+          <el-menu-item index="friends" @click="openFriends">
             <Icon icon="fluent-emoji:handshake" class="w-5 h-5 mr-3" />
             <template #title>
               <span>友情链接</span>
             </template>
           </el-menu-item>
-          <el-menu-item @click="openAbout">
+          <el-menu-item index="about" @click="openAbout">
             <Icon icon="fluent-emoji:information" class="w-5 h-5 mr-3" />
             <template #title>
               <span>关于导航</span>

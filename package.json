@@ -2,13 +2,20 @@
   "name": "one-nav-ssg",
   "version": "1.0.0",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "prepare": "nuxt prepare"
+    "prepare": "nuxt prepare",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.json",
+    "lint:fix": "eslint . --fix --ext .vue,.js,.ts,.jsx,.tsx,.json",
+    "format": "prettier --write \"**/*.{vue,js,ts,jsx,tsx,css,scss,json,md}\"",
+    "format:check": "prettier --check \"**/*.{vue,js,ts,jsx,tsx,css,scss,json,md}\"",
+    "typecheck": "nuxt typecheck",
+    "clean": "rm -rf .nuxt .output dist node_modules/.cache"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
@@ -24,7 +31,15 @@
     "vue-router": "^4.4.0"
   },
   "devDependencies": {
+    "@nuxt/eslint": "^0.6.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
     "autoprefixer": "^10.4.19",
+    "eslint": "^9.0.0",
+    "eslint-plugin-vue": "^9.30.0",
+    "prettier": "^3.3.0",
+    "stylelint": "^16.8.0",
+    "stylelint-config-standard": "^36.0.1",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.0"
   }
