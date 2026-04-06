@@ -10,6 +10,7 @@
       :show-close="false"
       size="280px"
       class="!bg-white dark:!bg-[#16162a]"
+      :z-index="2000"
     >
       <template #title>
         <div class="flex items-center gap-2">
@@ -22,42 +23,46 @@
           <span class="text-base font-bold text-gray-900 dark:text-white">MyNuxtNav</span>
         </div>
       </template>
-      <div class="px-2">
-        <el-menu
-          :default-active="activeCategory"
-          class="border-r-0"
-          @select="handleMenuSelect"
-        >
-          <template v-for="cat in categories" :key="cat.id">
-            <!-- 跳过 "全部" 分类 -->
-            <template v-if="cat.id !== 'all'">
-            <el-sub-menu v-if="cat.children && cat.children.length > 0" :index="cat.id">
-              <template #title>
+
+      <!-- 抽屉内容区域 -->
+      <div class="h-full flex flex-col">
+        <!-- 分类菜单 -->
+        <div class="flex-1 overflow-y-auto px-2">
+          <el-menu
+            :default-active="activeCategory"
+            class="border-r-0"
+            @select="handleMenuSelect"
+          >
+            <template v-for="cat in categories" :key="cat.id">
+              <!-- 跳过 "全部" 分类 -->
+              <template v-if="cat.id !== 'all'">
+              <el-sub-menu v-if="cat.children && cat.children.length > 0" :index="cat.id">
+                <template #title>
+                  <Icon :icon="cat.icon" class="w-5 h-5 mr-2" />
+                  <span>{{ cat.name }}</span>
+                </template>
+                <el-menu-item
+                  v-for="child in cat.children"
+                  :key="child.id"
+                  :index="child.id"
+                >
+                  <Icon :icon="child.icon" class="w-5 h-5 mr-2" />
+                  <span>{{ child.name }}</span>
+                </el-menu-item>
+              </el-sub-menu>
+              <el-menu-item v-else :index="cat.id">
                 <Icon :icon="cat.icon" class="w-5 h-5 mr-2" />
                 <span>{{ cat.name }}</span>
-              </template>
-              <el-menu-item
-                v-for="child in cat.children"
-                :key="child.id"
-                :index="child.id"
-              >
-                <Icon :icon="child.icon" class="w-5 h-5 mr-2" />
-                <span>{{ child.name }}</span>
               </el-menu-item>
-            </el-sub-menu>
-            <el-menu-item v-else :index="cat.id">
-              <Icon :icon="cat.icon" class="w-5 h-5 mr-2" />
-              <span>{{ cat.name }}</span>
-            </el-menu-item>
+              </template>
             </template>
-          </template>
-        </el-menu>
-      </div>
+          </el-menu>
+        </div>
 
-      <!-- 底部菜单：网站提交、友情链接、关于 -->
-      <div class="absolute bottom-16 left-0 right-0 px-4">
-        <div class="border-t border-gray-200 dark:border-gray-800 pt-2">
-          <div class="space-y-1">
+        <!-- 底部区域 -->
+        <div class="flex-shrink-0 border-t border-gray-200 dark:border-gray-800 pt-2 pb-4 px-4">
+          <!-- 底部菜单：网站提交、友情链接、关于 -->
+          <div class="space-y-1 mb-3">
             <div
               @click="openSubmit"
               class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer text-gray-700 dark:text-gray-300"
@@ -80,17 +85,17 @@
               <span>关于导航</span>
             </div>
           </div>
-        </div>
-      </div>
 
-      <!-- 底部主题切换 -->
-      <div class="absolute bottom-4 left-0 right-0 px-4 flex items-center justify-center gap-4">
-        <span
-          @click="toggleTheme"
-          class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer"
-        >
-          <Icon :icon="isDark ? 'fluent-emoji:sun' : 'fluent-emoji:crescent-moon'" class="w-6 h-6" />
-        </span>
+          <!-- 主题切换 -->
+          <div class="flex items-center justify-center pt-2 border-t border-gray-200 dark:border-gray-800">
+            <span
+              @click="toggleTheme"
+              class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer"
+            >
+              <Icon :icon="isDark ? 'fluent-emoji:sun' : 'fluent-emoji:crescent-moon'" class="w-6 h-6" />
+            </span>
+          </div>
+        </div>
       </div>
     </el-drawer>
 
