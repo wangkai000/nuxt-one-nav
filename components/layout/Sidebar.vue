@@ -151,6 +151,10 @@ const iconNameMap: Record<string, string> = {
   'mdi:wallet-outline': 'Wallet',
   'mdi:hammer-wrench': 'SetUp',
   'mdi:code-tags': 'Collection',
+  'mdi:file-code-outline': 'Document',
+  'mdi:code-string': 'Edit',
+  'mdi:nodejs': 'Cpu',
+  'mdi:flash': 'Lightning',
   // simple-icons 用默认图标
 }
 
