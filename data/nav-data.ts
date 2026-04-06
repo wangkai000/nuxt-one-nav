@@ -1366,7 +1366,7 @@ export const navData: NavItem[] = [
     category: 'build-tools',
     order: 7,
   },
-  // CSS 框架
+  // CSS 框架（纯 CSS，无组件）
   {
     id: 'tailwind',
     title: 'Tailwind CSS',
@@ -1383,9 +1383,9 @@ export const navData: NavItem[] = [
     description: 'Bootstrap 是最流行的 HTML、CSS 和 JS 框架，用于开发响应式网站。',
     url: 'https://getbootstrap.com/',
     icon: 'https://getbootstrap.com/favicon.ico',
-    tags: ['CSS框架', '组件库'],
-    category: 'css-framework',
-    order: 2,
+    tags: ['UI组件库', 'CSS框架', '响应式'],
+    category: 'ui-lib',
+    order: 10,
   },
   {
     id: 'bulma',
@@ -1395,7 +1395,7 @@ export const navData: NavItem[] = [
     icon: 'https://bulma.io/favicon.ico',
     tags: ['CSS框架', 'Flexbox'],
     category: 'css-framework',
-    order: 3,
+    order: 2,
   },
   {
     id: 'chakra-ui',
@@ -1403,9 +1403,9 @@ export const navData: NavItem[] = [
     description: 'Chakra UI 是 React 的简单、模块化且可访问的组件库。',
     url: 'https://chakra-ui.com/',
     icon: 'https://chakra-ui.com/favicon.ico',
-    tags: ['CSS框架', 'React', '组件库'],
-    category: 'css-framework',
-    order: 4,
+    tags: ['UI组件库', 'React', '组件库'],
+    category: 'ui-lib',
+    order: 11,
   },
   {
     id: 'mantine',
@@ -1413,9 +1413,9 @@ export const navData: NavItem[] = [
     description: 'Mantine 是功能齐全的 React 组件库，提供 100+ 个组件。',
     url: 'https://mantine.dev/',
     icon: 'https://mantine.dev/favicon.ico',
-    tags: ['CSS框架', 'React', '组件库'],
-    category: 'css-framework',
-    order: 5,
+    tags: ['UI组件库', 'React', '组件库'],
+    category: 'ui-lib',
+    order: 12,
   },
   {
     id: 'antd',
@@ -1423,9 +1423,9 @@ export const navData: NavItem[] = [
     description: 'Ant Design 是企业级 UI 设计语言和 React 组件库。',
     url: 'https://ant.design/',
     icon: 'https://ant.design/favicon.ico',
-    tags: ['CSS框架', 'React', '企业级'],
-    category: 'css-framework',
-    order: 6,
+    tags: ['UI组件库', 'React', '企业级'],
+    category: 'ui-lib',
+    order: 13,
   },
   {
     id: 'element-plus',
@@ -1433,9 +1433,9 @@ export const navData: NavItem[] = [
     description: 'Element Plus 是基于 Vue 3 的组件库，适合构建桌面端应用。',
     url: 'https://element-plus.org/',
     icon: 'https://element-plus.org/favicon.ico',
-    tags: ['CSS框架', 'Vue', '组件库'],
-    category: 'css-framework',
-    order: 7,
+    tags: ['UI组件库', 'Vue', '组件库'],
+    category: 'ui-lib',
+    order: 14,
   },
   {
     id: 'shadcn',
@@ -1443,9 +1443,9 @@ export const navData: NavItem[] = [
     description: 'shadcn/ui 是可复制粘贴的组件集合，基于 Tailwind CSS。',
     url: 'https://ui.shadcn.com/',
     icon: 'https://ui.shadcn.com/favicon.ico',
-    tags: ['CSS框架', 'React', 'Tailwind'],
-    category: 'css-framework',
-    order: 8,
+    tags: ['UI组件库', 'React', 'Tailwind'],
+    category: 'ui-lib',
+    order: 15,
   },
   // Node.js 框架
   {
@@ -1846,13 +1846,13 @@ export const categories: Category[] = [
   },
   {
     id: 'smart-contract-framework',
-    name: '合约框架',
+    name: 'Web3合约框架',
     icon: 'logos:solidity',
     defaultOpened: true,
   },
   {
     id: 'smart-contract-lang',
-    name: '合约语言',
+    name: 'Web3合约语言',
     icon: 'vscode-icons:file-type-solidity',
     defaultOpened: true,
   },
