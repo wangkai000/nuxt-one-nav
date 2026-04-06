@@ -1,16 +1,20 @@
 # One Nav SSG 导航站点
 
-一个基于 **Nuxt 3 + TypeScript + Tailwind CSS** 的静态导航站点，高保真复刻 One Nav 付费模板的 UI 风格。
+一个基于 **Nuxt 3 + TypeScript + Tailwind CSS** 的静态导航站点，高保真（尽量）复刻 One Nav 模板（老版本）的 UI 风格。
 
 ## ✨ 特性
 
 - 🎨 **精美 UI** - 渐变背景、毛玻璃效果、精致阴影
 - 🌓 **深色模式** - 自动/手动切换，完整适配
-- 🔍 **实时搜索** - 按名称、描述、标签过滤
+- 🔍 **实时搜索** - 按名称、描述、标签过滤，支持 ⌘K/Ctrl+K 快捷键
 - 📱 **响应式** - 完美适配桌面端和移动端
 - ⚡ **SSG** - 静态生成，部署简单，访问飞快
-- 🎯 **快捷键** - ⌘K 快速聚焦搜索
+- 🎯 **快捷键** - ⌘K 快速聚焦搜索，Esc 清空
 - 💎 **细节打磨** - hover 动画、渐变边框、徽章标记
+- 🎨 **彩色图标** - 使用 Iconify 彩色图标，视觉更丰富
+- 🚀 **返回顶部** - 滚动后显示返回顶部按钮
+- ⏳ **加载动画** - 页面加载时显示优雅加载效果
+- 🔗 **外链支持** - GitHub、Gitee 快速访问
 
 ## 技术栈
 
@@ -19,7 +23,8 @@
 | Nuxt 3 | 框架 (App Router + SSG) |
 | TypeScript | 类型安全 |
 | Tailwind CSS | 样式系统 |
-| Iconify | 图标库 |
+| Element Plus | UI 组件库 |
+| Iconify | 彩色图标库 |
 | @nuxtjs/color-mode | 主题切换 |
 
 ## 快速开始
@@ -57,14 +62,14 @@ npm run preview
 ```
 one-nav-ssg/
 ├── components/          # 组件
-│   ├── common/         # 通用 (Icon, ThemeToggle)
+│   ├── common/         # 通用组件
 │   ├── layout/         # 布局 (Header, Footer, Sidebar)
-│   └── nav/           # 导航 (NavCard, NavGrid, SearchBar)
+│   └── nav/           # 导航 (NavCard, NavGrid, SearchBar, BackToTop)
 ├── composables/        # 组合式函数
 │   ├── useSearch.ts   # 搜索逻辑
 │   └── useTheme.ts    # 主题逻辑
 ├── data/              # 数据
-│   └── nav-data.ts    # 导航数据 (编辑这里!)
+│   └── nav-data.ts    # 导航数据 (200+ 网站资源)
 ├── layouts/           # 页面布局
 ├── pages/             # 页面路由
 ├── plugins/           # 插件
@@ -75,6 +80,30 @@ one-nav-ssg/
 ├── tailwind.config.js # Tailwind 配置
 └── tsconfig.json      # TS 配置
 ```
+
+## 数据分类
+
+当前收录 **200+** 优质网站资源，分类如下：
+
+| 分类 | 数量 | 说明 |
+|------|------|------|
+| 🤖 AI 工具 | 11 | ChatGPT、Claude、Midjourney 等 |
+| ⬡ Web3.0 | 20 | 区块链、DeFi、NFT 相关 |
+| 🦊 Web3 UI库 | 13 | RainbowKit、Web3Modal、Ant Design Web3 等 |
+| ⬡ 智能合约框架 | 7 | Hardhat、Foundry、Truffle 等 |
+| 📄 智能合约语言 | 8 | Solidity、Vyper、Rust(Solana) 等 |
+| 📜 前端框架 | 24 | React/Vue/其他框架（二级菜单） |
+| 🟩 Node.js框架 | 14 | Express、Koa、NestJS 等 |
+| 🥯 Bun生态 | 8 | Bun 运行时及相关工具 |
+| 🌊 CSS框架 | 8 | Tailwind CSS、Bootstrap 等 |
+| ⚡ 构建工具 | 7 | Vite、Webpack、Rollup 等 |
+| 📚 UI组件库 | 9 | Element Plus、Ant Design 等 |
+| 🎮 游戏引擎 | 9 | Unity、Unreal、Godot 等 |
+| 🧰 实用工具 | 5 | 开发效率工具 |
+| 🗺️ 资源导航 | 23 | 设计资源、图库、图标 |
+| 🎮 游戏社区 | 7 | 游戏相关社区 |
+| 👨‍💻 开发者社区 | 6 | 技术社区、论坛 |
+| 📖 学习 | 1 | 学习资源 |
 
 ## 自定义配置
 
@@ -89,12 +118,9 @@ one-nav-ssg/
   description: '网站描述',
   url: 'https://example.com',
   icon: 'https://example.com/favicon.ico', // 可选
-  iconName: 'mdi:icon-name', // 或使用 Iconify 图标
   tags: ['标签1', '标签2'],
-  category: 'dev',
+  category: 'category-id',
   order: 1,
-  isHot: true,   // 热门标记
-  isNew: true    // 新标记
 }
 ```
 
@@ -106,17 +132,25 @@ one-nav-ssg/
 {
   id: 'new-category',
   name: '新分类',
-  icon: 'mdi:icon-name'
+  icon: 'fluent-emoji:icon-name'  // 使用 Iconify 彩色图标
 }
 ```
 
-### 修改主题色
+### 二级分类
 
-编辑 `tailwind.config.js` 中的 `theme.extend` 部分，自定义颜色。
+支持二级菜单结构：
 
-### 修改背景渐变
-
-编辑 `assets/css/main.css` 中的 `.bg-gradient-main` 类。
+```typescript
+{
+  id: 'parent-category',
+  name: '父分类',
+  icon: 'fluent-emoji:icon',
+  children: [
+    { id: 'child-1', name: '子分类1', icon: 'fluent-emoji:icon1' },
+    { id: 'child-2', name: '子分类2', icon: 'fluent-emoji:icon2' }
+  ]
+}
+```
 
 ## 部署
 
@@ -125,8 +159,18 @@ one-nav-ssg/
 - **Vercel** / Netlify (推荐)
 - **GitHub Pages**
 - **Cloudflare Pages**
+- **Gitee Pages**
 - **Nginx** / Apache
 - **任何静态托管服务**
+
+### Gitee 部署
+
+```bash
+# 推送到 Gitee 仓库
+git push origin main
+
+# 在 Gitee 仓库设置中开启 Gitee Pages
+```
 
 ### Vercel 部署示例
 
@@ -146,10 +190,11 @@ vercel --prod
 ## 性能优化
 
 - ✅ 静态生成 (SSG) - 无需服务器
-- ✅ 图片懒加载 (待实现)
+- ✅ 图标懒加载 - 性能优化
 - ✅ 代码分割
 - ✅ Tailwind JIT 按需生成
 - ✅ Gzip/Brotli 压缩
+- ✅ 实时加载指示器
 
 ## 浏览器支持
 
@@ -158,7 +203,7 @@ vercel --prod
 - Safari 14+
 - Edge 90+
 
-## License
+## 开源协议
 
 MIT
 
@@ -166,9 +211,12 @@ MIT
 
 - [Nuxt 3](https://nuxt.com)
 - [Tailwind CSS](https://tailwindcss.com)
+- [Element Plus](https://element-plus.org)
 - [Iconify](https://iconify.design)
 - [One Nav](https://onenav.top)
 
 ---
 
 **提示**: 首次运行前请确保已安装 Node.js 18+。
+
+**欢迎收藏**: MyNuxtNav导航网 | Ctrl (⌘) + D
