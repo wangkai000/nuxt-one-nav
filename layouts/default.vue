@@ -29,11 +29,9 @@
           @select="handleMenuSelect"
         >
           <template v-for="cat in categories" :key="cat.id">
-            <el-menu-item v-if="cat.id === 'all'" :index="cat.id">
-              <Icon :icon="cat.icon" class="w-5 h-5 mr-2" />
-              <span>{{ cat.name }}</span>
-            </el-menu-item>
-            <el-sub-menu v-else-if="cat.children && cat.children.length > 0" :index="cat.id">
+            <!-- 跳过 "全部" 分类 -->
+            <template v-if="cat.id !== 'all'">
+            <el-sub-menu v-if="cat.children && cat.children.length > 0" :index="cat.id">
               <template #title>
                 <Icon :icon="cat.icon" class="w-5 h-5 mr-2" />
                 <span>{{ cat.name }}</span>
@@ -51,6 +49,7 @@
               <Icon :icon="cat.icon" class="w-5 h-5 mr-2" />
               <span>{{ cat.name }}</span>
             </el-menu-item>
+            </template>
           </template>
         </el-menu>
       </div>

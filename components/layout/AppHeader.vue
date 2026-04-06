@@ -30,10 +30,16 @@
           <Icon icon="fluent-emoji:house" class="w-4 h-4 mr-1" />
           首页
         </el-button>
-        <el-button text>
+        <a
+          href="https://tianmiao.site/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="el-button el-button--text"
+          style="text-decoration: none;"
+        >
           <Icon icon="fluent-emoji:technologist" class="w-4 h-4 mr-1" />
           作者
-        </el-button>
+        </a>
         <el-button text>
           <Icon icon="fluent-emoji:gear" class="w-4 h-4 mr-1" />
           配置
@@ -52,8 +58,8 @@
           <input
             v-model="searchInput"
             type="text"
-            placeholder="搜索导航... (⌘K)"
-            class="w-40 lg:w-56 h-9 pl-9 pr-4 text-sm rounded-full border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50 text-gray-900 dark:text-gray-100 placeholder:text-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
+            placeholder="搜索导航"
+            class="w-36 lg:w-50 h-9 pl-9 pr-4 text-sm rounded-full border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50 text-gray-900 dark:text-gray-100 placeholder:text-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
             @input="handleInput"
             @keydown="handleKeydown"
           />
