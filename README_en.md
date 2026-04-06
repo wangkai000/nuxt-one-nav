@@ -1,5 +1,18 @@
-# My Nuxt Nav
-[中文](./README.md)
+<h1 align="center">My Nuxt Nav</h1>
+
+<p align="center">
+  <style>
+    .lang-tabs { display: inline-flex; border: 1px solid #d1d5db; border-radius: 8px; overflow: hidden; font-family: sans-serif; }
+    .lang-tabs a { padding: 6px 16px; text-decoration: none; color: #6b7280; background: #f3f4f6; font-size: 14px; border-right: 1px solid #d1d5db; transition: all 0.2s; }
+    .lang-tabs a:last-child { border-right: none; }
+    .lang-tabs a:hover { background: #e5e7eb; }
+    .lang-tabs a.active { background: #3b82f6; color: white; font-weight: 500; }
+  </style>
+  <span class="lang-tabs">
+    <a href="./README.md">中文</a>
+    <a class="active">English</a>
+  </span>
+</p>
 
 A static navigation site based on **Nuxt 3 + TypeScript + Element Plus + Tailwind CSS**, faithfully replicating the One Nav template's UI style.
 
