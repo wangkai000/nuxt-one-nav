@@ -30,7 +30,7 @@
           <template v-for="cat in categories" :key="cat.id">
             <!-- 全部 -->
             <el-menu-item v-if="cat.id === 'all'" :index="cat.id">
-              <Icon :icon="cat.icon" class="w-5 h-5 mr-3" />
+              <Icon :icon="cat.icon" class="w-6 h-6" />
               <template #title>
                 <span>{{ cat.name }}</span>
               </template>
@@ -39,7 +39,7 @@
             <!-- 有子分类的父分类 -->
             <el-sub-menu v-else-if="cat.children && cat.children.length > 0" :index="cat.id">
               <template #title>
-                <Icon :icon="cat.icon" class="w-5 h-5 mr-3" />
+                <Icon :icon="cat.icon" class="w-6 h-6" />
                 <span>{{ cat.name }}</span>
               </template>
               <el-menu-item
@@ -47,14 +47,14 @@
                 :key="child.id"
                 :index="child.id"
               >
-                <Icon :icon="child.icon" class="w-5 h-5 mr-3" />
+                <Icon :icon="child.icon" class="w-5 h-5 mr-2" />
                 <span>{{ child.name }}</span>
               </el-menu-item>
             </el-sub-menu>
 
             <!-- 没有子分类的分类 -->
             <el-menu-item v-else :index="cat.id">
-              <Icon :icon="cat.icon" class="w-5 h-5 mr-3" />
+              <Icon :icon="cat.icon" class="w-6 h-6" />
               <template #title>
                 <span>{{ cat.name }}</span>
               </template>
@@ -172,6 +172,20 @@ const openAbout = () => {
   line-height: 48px;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+/* 收起状态下图标居中 */
+::deep(.el-menu--collapse) .el-menu-item,
+::deep(.el-menu--collapse) .el-sub-menu__title {
+  padding: 0 !important;
+  justify-content: center;
+}
+
+::deep(.el-menu--collapse) .el-menu-item .iconify,
+::deep(.el-menu--collapse) .el-sub-menu__title .iconify {
+  margin: 0 !important;
+}
 }
 
 ::deep(.el-sub-menu .el-menu-item) {
