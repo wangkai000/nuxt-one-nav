@@ -10,7 +10,7 @@
         @click="toggleMobileMenu"
         class="xl:hidden w-9 h-9 flex items-center justify-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
       >
-        <Icon icon="mdi:menu" class="w-5 h-5" />
+        <Icon icon="fluent-emoji:hamburger" class="w-5 h-5" />
       </button>
 
       <!-- Logo（仅移动端显示） -->
@@ -27,15 +27,15 @@
       <!-- 桌面端导航 -->
       <nav class="hidden xl:flex items-center gap-1">
         <el-button text @click="scrollToTop">
-          <Icon icon="mdi:home-outline" class="w-4 h-4 mr-1" />
+          <Icon icon="fluent-emoji:house" class="w-4 h-4 mr-1" />
           首页
         </el-button>
         <el-button text>
-          <Icon icon="mdi:account-outline" class="w-4 h-4 mr-1" />
+          <Icon icon="fluent-emoji:technologist" class="w-4 h-4 mr-1" />
           作者
         </el-button>
         <el-button text>
-          <Icon icon="mdi:cog-outline" class="w-4 h-4 mr-1" />
+          <Icon icon="fluent-emoji:gear" class="w-4 h-4 mr-1" />
           配置
         </el-button>
       </nav>
@@ -47,7 +47,7 @@
       <div class="hidden sm:flex items-center">
         <div class="relative group">
           <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-            <Icon icon="mdi:magnify" class="w-4 h-4 text-gray-400 group-focus-within:text-blue-500 transition-colors" />
+            <Icon icon="fluent-emoji:magnifying-glass-tilted-left" class="w-4 h-4 group-focus-within:scale-110 transition-transform" />
           </div>
           <input
             v-model="searchInput"
@@ -61,9 +61,9 @@
           <button
             v-if="searchInput"
             @click="clear(); searchInput = ''"
-            class="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
+            class="absolute inset-y-0 right-0 pr-3 flex items-center"
           >
-            <Icon icon="mdi:close" class="w-4 h-4" />
+            <Icon icon="fluent-emoji:cross-mark" class="w-4 h-4" />
           </button>
         </div>
       </div>
