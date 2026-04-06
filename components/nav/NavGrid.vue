@@ -77,19 +77,34 @@ const categoriesWithItems = computed(() => {
   return categories
     .filter(cat => cat.id !== 'all')
     .map(cat => {
-      // 获取该分类下的所有网站
-      const items = navData.filter(item => item.category === cat.id)
+      // 获取该分类下的所有网站（包括子分类的网站）
+      let items: NavItem[] = []
 
-      // 为每个子分类分配网站（目前所有网站的 category 都是父分类ID，所以子分类显示所有父分类的网站）
-      const childrenWithItems = cat.children?.map(child => ({
-        ...child,
-        items: items.sort((a, b) => a.order - b.order)
-      }))
+      if (cat.children && cat.children.length > 0) {
+        // 有子分类：获取所有子分类的网站
+        const childIds = cat.children.map(child => child.id)
+        items = navData.filter(item => childIds.includes(item.category))
 
-      return {
-        ...cat,
-        items: items.sort((a, b) => a.order - b.order),
-        children: childrenWithItems
+        // 为每个子分类分配对应的网站
+        const childrenWithItems = cat.children.map(child => ({
+          ...child,
+          items: navData.filter(item => item.category === child.id).sort((a, b) => a.order - b.order)
+        })).filter(child => child.items.length > 0)
+
+        return {
+          ...cat,
+          items: items.sort((a, b) => a.order - b.order),
+          children: childrenWithItems
+        }
+      } else {
+        // 没有子分类：直接匹配该分类的网站
+        items = navData.filter(item => item.category === cat.id)
+
+        return {
+          ...cat,
+          items: items.sort((a, b) => a.order - b.order),
+          children: undefined
+        }
       }
     })
     .filter(cat => cat.items.length > 0) // 只保留有网站的分类
