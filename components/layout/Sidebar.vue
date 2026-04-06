@@ -138,6 +138,16 @@ const iconNameMap: Record<string, string> = {
   'mdi:regex': 'SetUp',
   'mdi:palette-swatch-outline': 'Color',
   'mdi:folder-outline': 'Folder',
+  'mdi:cube-outline': 'Box',
+  'mdi:puzzle-outline': 'Grid',
+  'mdi:gamepad-variant-outline': 'VideoGame',
+  'mdi:folder-open-outline': 'FolderOpened',
+  'mdi:gamepad-square-outline': 'Joystick',
+  'mdi:account-group-outline': 'UserFilled',
+  'mdi:school-outline': 'School',
+  'mdi:compass-outline': 'Compass',
+  'mdi:vuejs': 'CircleCheck',
+  'mdi:react': 'Refresh',
   // simple-icons 用默认图标
 }
 
