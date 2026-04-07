@@ -13,22 +13,26 @@ export default defineNuxtConfig({
     // 关键 CSS - 优先加载，防止 FOUC
     '~/assets/css/critical.css',
     // 全局 CSS 文件
-    '~/assets/css/main.css',
-    // Element Plus 暗色模式 CSS 变量
-    'element-plus/theme-chalk/dark/css-vars.css'
+    '~/assets/css/main.css'
+    // Element Plus 样式由 @element-plus/nuxt 模块自动处理
   ],
 
   // ========== Nuxt 模块 ==========
   // 模块会自动导入并配置第三方库
   modules: [
     '@element-plus/nuxt',      // Element Plus Vue 3 组件库
-    '@nuxtjs/color-mode',      // 暗色模式支持
-    '@vite-pwa/nuxt'           // PWA 支持
+    '@nuxtjs/color-mode'       // 暗色模式支持
+    // '@vite-pwa/nuxt'         // PWA 支持 - 暂时禁用以解决 SSG 问题
   ],
 
   // ========== PWA 配置 ==========
   pwa: {
     registerType: 'autoUpdate',
+    // SSG 模式下禁用 PWA 相关客户端功能
+    devOptions: {
+      enabled: false,
+      type: 'module'
+    },
     manifest: {
       name: '天渺studio - 资源导航',
       short_name: '天渺导航',
@@ -54,28 +58,12 @@ export default defineNuxtConfig({
     },
     workbox: {
       navigateFallback: '/',
-      globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
-      runtimeCaching: [
-        {
-          urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
-          handler: 'CacheFirst',
-          options: {
-            cacheName: 'google-fonts-cache',
-            expiration: {
-              maxEntries: 10,
-              maxAgeSeconds: 60 * 60 * 24 * 365 // 1年
-            }
-          }
-        }
-      ]
+      globPatterns: ['**/*.{js,css,html,png,svg,ico}']
     },
+    // 禁用需要客户端的功能
     client: {
-      installPrompt: true,
-      periodicSyncForUpdates: 20
-    },
-    devOptions: {
-      enabled: true,
-      type: 'module'
+      installPrompt: false,
+      periodicSyncForUpdates: 0
     }
   },
 
@@ -158,6 +146,7 @@ export default defineNuxtConfig({
       link: [
         // 网站 Favicon
         { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
         { rel: 'apple-touch-icon', href: '/favicon-192x192.png' },
         // RSS 订阅
         { rel: 'alternate', type: 'application/rss+xml', title: '天渺studio RSS', href: 'https://blog.tianmiao.site/feed.xml' },
@@ -178,13 +167,6 @@ export default defineNuxtConfig({
           `,
           type: 'text/css'
         }
-      ],
-
-      // 预加载关键资源
-      link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
-        { rel: 'alternate', type: 'application/rss+xml', title: '天渺studio RSS', href: 'https://blog.tianmiao.site/feed.xml' },
-        { rel: 'author', href: 'https://tianmiao.site' }
       ]
     }
   },

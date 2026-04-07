@@ -124,16 +124,10 @@
 
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
-import type { Category } from '~/types/nav'
+import { categories } from '~/data/nav-data'
 
 const { activeCategory, selectCategory } = useSearch()
 const mobileMenuVisible = ref(false)
-
-// 从 API 获取分类数据
-const { data: categories } = await useFetch<Category[]>('/api/nav?data=categories', {
-  key: 'nav-categories',
-  default: () => []
-})
 
 const colorMode = useColorMode()
 const isDark = computed(() => colorMode.value === 'dark')
