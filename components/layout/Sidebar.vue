@@ -105,15 +105,13 @@ const collapsed = useState<boolean>('sidebar-collapsed', () => false)
 const handleSelect = (index: string) => {
   selectCategory(index)
 
-  if (index === 'all') {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-    return
-  }
-
   // 查找目标元素并滚动
   const element = document.getElementById(`category-${index}`)
   if (element) {
     element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  } else {
+    // 如果找不到对应元素（比如首页），滚动到顶部
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 }
 

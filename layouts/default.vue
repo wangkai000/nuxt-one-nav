@@ -34,8 +34,7 @@
             @select="handleMenuSelect"
           >
             <template v-for="cat in categories" :key="cat.id">
-              <!-- 跳过 "全部" 分类 -->
-              <template v-if="cat.id !== 'all'">
+              <!-- 有子分类的父分类 -->
               <el-sub-menu v-if="cat.children && cat.children.length > 0" :index="cat.id">
                 <template #title>
                   <Icon :icon="cat.icon" class="w-5 h-5 mr-2" />
@@ -50,11 +49,11 @@
                   <span>{{ child.name }}</span>
                 </el-menu-item>
               </el-sub-menu>
+              <!-- 没有子分类的分类（包括站长推荐） -->
               <el-menu-item v-else :index="cat.id">
                 <Icon :icon="cat.icon" class="w-5 h-5 mr-2" />
                 <span>{{ cat.name }}</span>
               </el-menu-item>
-              </template>
             </template>
           </el-menu>
         </div>
@@ -128,17 +127,15 @@ const toggleTheme = () => {
 const handleMenuSelect = (index: string) => {
   selectCategory(index)
   mobileMenuVisible.value = false
-  if (index === 'all') {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  } else {
-    // 等待抽屉关闭后滚动
-    setTimeout(() => {
-      const element = document.getElementById(`category-${index}`)
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      }
-    }, 100)
-  }
+  // 等待抽屉关闭后滚动
+  setTimeout(() => {
+    const element = document.getElementById(`category-${index}`)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }, 100)
 }
 
 // 打开网站提交
