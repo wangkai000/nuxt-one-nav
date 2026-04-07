@@ -1,0 +1,75 @@
+/* 关键 CSS - 防止 FOUC 闪烁 */
+/* 这段 CSS 会被内联到 HTML <head> 中，确保优先加载 */
+
+/* 基础样式 - 立即应用 */
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f7;
+  color: #374151;
+}
+
+/* 暗色模式基础 */
+html.dark body {
+  background-color: #1a1a2e;
+  color: #d1d5db;
+}
+
+/* 隐藏未渲染内容 */
+[v-cloak] {
+  display: none !important;
+}
+
+/* 初始加载遮罩 */
+#initial-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f5f5f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.3s ease;
+}
+
+html.dark #initial-loader {
+  background: #1a1a2e;
+}
+
+#initial-loader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 布局基础 - 防止布局抖动 */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.flex-1 { flex: 1 1 0%; }
+.h-screen { height: 100vh; }
+.w-full { width: 100%; }
+
+/* 文字基础 */
+.text-center { text-align: center; }
+.font-bold { font-weight: 700; }
+.text-gray-900 { color: #111827; }
+.text-gray-700 { color: #374151; }
+html.dark .text-gray-900 { color: #f9fafb; }
+html.dark .text-gray-700 { color: #d1d5db; }
+
+/* 背景基础 */
+.bg-white { background-color: #ffffff; }
+.bg-gray-50 { background-color: #f9fafb; }
+html.dark .bg-white { background-color: #16162a; }
+html.dark .bg-gray-50 { background-color: #1a1a2e; }

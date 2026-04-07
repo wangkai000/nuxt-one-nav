@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
+  // 添加 important 配置确保 Tailwind 样式优先级
+  important: true,
   content: [
     './components/**/*.{vue,js}',
     './layouts/**/*.vue',

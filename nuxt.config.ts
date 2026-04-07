@@ -10,6 +10,8 @@ export default defineNuxtConfig({
 
   // ========== 样式配置 ==========
   css: [
+    // 关键 CSS - 优先加载，防止 FOUC
+    '~/assets/css/critical.css',
     // 全局 CSS 文件
     '~/assets/css/main.css',
     // Element Plus 暗色模式 CSS 变量
@@ -20,8 +22,62 @@ export default defineNuxtConfig({
   // 模块会自动导入并配置第三方库
   modules: [
     '@element-plus/nuxt',      // Element Plus Vue 3 组件库
-    '@nuxtjs/color-mode'      // 暗色模式支持
+    '@nuxtjs/color-mode',      // 暗色模式支持
+    '@vite-pwa/nuxt'           // PWA 支持
   ],
+
+  // ========== PWA 配置 ==========
+  pwa: {
+    registerType: 'autoUpdate',
+    manifest: {
+      name: '天渺studio - 资源导航',
+      short_name: '天渺导航',
+      description: '天渺工作室的资源导航，精心挑选的高质量网站导航',
+      theme_color: '#3b82f6',
+      background_color: '#f5f5f7',
+      display: 'standalone',
+      orientation: 'portrait',
+      scope: '/',
+      start_url: '/',
+      icons: [
+        {
+          src: '/favicon-192x192.png',
+          sizes: '192x192',
+          type: 'image/png'
+        },
+        {
+          src: '/favicon-512x512.png',
+          sizes: '512x512',
+          type: 'image/png'
+        }
+      ]
+    },
+    workbox: {
+      navigateFallback: '/',
+      globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
+      runtimeCaching: [
+        {
+          urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'google-fonts-cache',
+            expiration: {
+              maxEntries: 10,
+              maxAgeSeconds: 60 * 60 * 24 * 365 // 1年
+            }
+          }
+        }
+      ]
+    },
+    client: {
+      installPrompt: true,
+      periodicSyncForUpdates: 20
+    },
+    devOptions: {
+      enabled: true,
+      type: 'module'
+    }
+  },
 
   // ========== Element Plus 配置 ==========
   elementPlus: {
@@ -32,7 +88,9 @@ export default defineNuxtConfig({
   // ========== 构建配置 ==========
   build: {
     // 需要在客户端转译的依赖（避免 SSR 问题）
-    transpile: ['@iconify/vue']
+    transpile: ['@iconify/vue'],
+    // 提取 CSS 到单独文件，确保优先加载
+    extractCSS: true
   },
 
   // ========== 组件自动导入 ==========
@@ -99,10 +157,33 @@ export default defineNuxtConfig({
       // Link 标签（引入外部资源）
       link: [
         // 网站 Favicon
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+        { rel: 'apple-touch-icon', href: '/favicon-192x192.png' },
         // RSS 订阅
         { rel: 'alternate', type: 'application/rss+xml', title: '天渺studio RSS', href: 'https://blog.tianmiao.site/feed.xml' },
         // 作者链接
+        { rel: 'author', href: 'https://tianmiao.site' }
+      ],
+
+      // 关键 CSS 内联 - 防止 FOUC
+      style: [
+        {
+          children: `
+            /* 关键 CSS - 防止页面闪烁 */
+            html { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+            body { margin: 0; background-color: #f5f5f7; }
+            .dark body { background-color: #1a1a2e; }
+            /* 隐藏未渲染内容 */
+            [v-cloak] { display: none !important; }
+          `,
+          type: 'text/css'
+        }
+      ],
+
+      // 预加载关键资源
+      link: [
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        { rel: 'alternate', type: 'application/rss+xml', title: '天渺studio RSS', href: 'https://blog.tianmiao.site/feed.xml' },
         { rel: 'author', href: 'https://tianmiao.site' }
       ]
     }
