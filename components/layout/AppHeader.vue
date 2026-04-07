@@ -36,7 +36,7 @@
           </svg>
         </el-button>
 
-        <el-button text @click="scrollToTop">
+        <el-button text @click="refreshPage">
           <Icon icon="fluent-emoji:house" class="w-4 h-4 mr-1" />
           首页
         </el-button>
@@ -140,6 +140,10 @@ const toggleSidebar = () => {
 
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
+const refreshPage = () => {
+  window.location.reload()
 }
 
 const toggleMobileMenu = () => {

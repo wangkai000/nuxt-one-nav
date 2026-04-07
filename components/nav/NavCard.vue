@@ -10,29 +10,26 @@
   >
     <!-- 图标 -->
     <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800/50 dark:to-gray-700/50 flex items-center justify-center mb-3 overflow-hidden relative">
-      <!-- 加载中的占位符 -->
+      <!-- 兜底图标 - 始终显示，直到图片加载成功 -->
       <div
-        v-if="!iconLoadedMap[item.id] && !iconErrorMap[item.id]"
-        class="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 animate-pulse"
-      />
+        v-if="!iconLoadedMap[item.id]"
+        class="absolute inset-0 flex items-center justify-center z-10"
+      >
+        <Icon :icon="getFallbackIcon(item)" class="w-8 h-8" />
+      </div>
 
-      <!-- 图片图标 -->
+      <!-- 图片图标 - 加载成功后显示 -->
       <img
         v-if="!iconErrorMap[item.id]"
         :src="getIconUrl(item)"
         :alt="item.title"
-        class="w-9 h-9 object-contain relative z-10 transition-opacity duration-300"
+        class="w-9 h-9 object-contain absolute z-20 transition-opacity duration-300"
         :class="{ 'opacity-0': !iconLoadedMap[item.id], 'opacity-100': iconLoadedMap[item.id] }"
         loading="lazy"
         decoding="async"
         @error="onIconError(item.id)"
         @load="onIconLoad(item.id)"
       />
-
-      <!-- 兜底图标 -->
-      <div v-else class="relative z-10 flex items-center justify-center">
-        <Icon :icon="getFallbackIcon(item)" class="w-8 h-8" />
-      </div>
     </div>
 
     <!-- 标题 -->

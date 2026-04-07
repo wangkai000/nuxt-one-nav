@@ -73,7 +73,12 @@ const leafCategories = computed(() => getLeafCategories())
 
 // 按分类分组的网站
 const categoriesWithItems = computed(() => {
-  return categories
+  // 获取"站长推荐"分类
+  const featuredCategory = categories.find(cat => cat.id === 'all')
+  const featuredItemsList = featuredCategory ? navData.filter(item => item.category === 'all').sort((a, b) => a.order - b.order) : []
+
+  // 获取其他分类
+  const otherCategories = categories
     .filter(cat => cat.id !== 'all')
     .map(cat => {
       let items: NavItem[] = []
@@ -106,6 +111,20 @@ const categoriesWithItems = computed(() => {
       }
     })
     .filter(cat => cat.items.length > 0)
+
+  // 如果有站长推荐站点，将其作为第一个分类
+  if (featuredItemsList.length > 0 && featuredCategory) {
+    return [
+      {
+        ...featuredCategory,
+        items: featuredItemsList,
+        children: undefined
+      },
+      ...otherCategories
+    ]
+  }
+
+  return otherCategories
 })
 
 // 实际用于筛选的分类ID

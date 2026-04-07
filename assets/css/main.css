@@ -52,3 +52,56 @@ body {
   border-radius: 1rem;
   border: 1px solid rgba(99, 102, 241, 0.15);
 }
+
+/* ─── Element Plus 菜单深色模式覆盖 ─── */
+/* 覆盖 Element Plus 默认的深色菜单背景色，使用项目主题色 #16162a */
+.dark .el-menu--dark,
+.dark .el-menu {
+  background-color: #16162a !important;
+}
+
+.dark .el-menu--dark .el-menu-item,
+.dark .el-menu--dark .el-sub-menu__title,
+.dark .el-menu .el-menu-item,
+.dark .el-menu .el-sub-menu__title {
+  color: #d1d5db;
+}
+
+.dark .el-menu--dark .el-menu-item:hover,
+.dark .el-menu--dark .el-sub-menu__title:hover,
+.dark .el-menu .el-menu-item:hover,
+.dark .el-menu .el-sub-menu__title:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark .el-menu--dark .el-menu-item.is-active,
+.dark .el-menu .el-menu-item.is-active {
+  color: #3b82f6 !important;
+  background-color: rgba(59, 130, 246, 0.15) !important;
+}
+
+.dark .el-sub-menu .el-menu {
+  background-color: #16162a !important;
+}
+
+/* 覆盖 Element Plus drawer 抽屉深色模式 */
+.dark .el-drawer {
+  background-color: #16162a !important;
+}
+
+/* 覆盖 Element Plus sub-menu 弹出菜单 */
+.dark .el-menu--horizontal .el-menu--popup,
+.dark .el-menu--vertical .el-menu--popup {
+  background-color: #16162a !important;
+}
+
+.dark .el-menu--horizontal .el-menu--popup .el-menu-item,
+.dark .el-menu--vertical .el-menu--popup .el-menu-item {
+  color: #d1d5db;
+  background-color: #16162a !important;
+}
+
+.dark .el-menu--horizontal .el-menu--popup .el-menu-item:hover,
+.dark .el-menu--vertical .el-menu--popup .el-menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}

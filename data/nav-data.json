@@ -4,14 +4,14 @@
     "version": "1.0.0",
     "lastUpdated": "2026-04-06",
     "description": "基于 Nuxt 3 的导航站数据",
-    "totalSites": 180,
-    "totalCategories": 17
+    "totalSites": 212,
+    "totalCategories": 20
   },
   "categories": [
     {
       "id": "all",
-      "name": "全部",
-      "icon": "mdi:apps",
+      "name": "站长推荐",
+      "icon": "fluent-emoji:star",
       "defaultOpened": true
     },
     {
@@ -59,6 +59,28 @@
       "id": "nodejs",
       "name": "Node.js框架",
       "icon": "logos:nodejs-icon",
+      "defaultOpened": true,
+      "children": [
+        { "id": "nodejs-web", "name": "Web框架", "icon": "logos:nodejs-icon" },
+        { "id": "nodejs-threads", "name": "多线程/并发", "icon": "logos:nodejs-icon" }
+      ]
+    },
+    {
+      "id": "go-ecosystem",
+      "name": "Go生态",
+      "icon": "logos:go",
+      "defaultOpened": true
+    },
+    {
+      "id": "mobile",
+      "name": "移动开发",
+      "icon": "fluent-emoji:mobile-phone",
+      "defaultOpened": true
+    },
+    {
+      "id": "desktop",
+      "name": "桌面应用",
+      "icon": "fluent-emoji:laptop",
       "defaultOpened": true
     },
     {
@@ -104,11 +126,26 @@
     },
     {
       "id": "community",
-      "name": "开发者社区",
+      "name": "开发者&设计师社区",
       "icon": "fluent-emoji:people-hugging"
     }
   ],
   "sites": [
+    {
+      "id": "tianmiao",
+      "title": "天渺studio",
+      "description": "天渺工作室的小站&日志记录",
+      "url": "https://tianmiao.site",
+      "icon": "https://s21.ax1x.com/2024/12/22/pAXtJat.jpg",
+      "avatar": "https://s21.ax1x.com/2024/12/22/pAXtJat.jpg",
+      "RSS": "https://blog.tianmiao.site/feed.xml",
+      "tags": [
+        "个人博客",
+        "日志"
+      ],
+      "category": "all",
+      "order": 1
+    },
     {
       "id": "faxianai",
       "title": "发现AI",
@@ -1054,9 +1091,9 @@
     {
       "id": "makemepulse",
       "title": "MakemePulse",
-      "description": "每个设计师都应该看20次+的的网站",
-      "url": "https://www.makemepulse.com/",
-      "icon": "https://www.makemepulse.com/favicon.ico",
+      "description": "MakeMePulse 2019 创意网站合集，汇聚全球顶尖网页设计作品，每个都是艺术品级别的视觉盛宴。",
+      "url": "https://2019.makemepulse.com/",
+      "icon": "https://2019.makemepulse.com/favicon.ico",
       "tags": [
         "设计",
         "资源"
@@ -1990,7 +2027,7 @@
         "后端框架",
         "Web"
       ],
-      "category": "nodejs",
+      "category": "nodejs-web",
       "order": 1
     },
     {
@@ -2004,7 +2041,7 @@
         "后端框架",
         "Web"
       ],
-      "category": "nodejs",
+      "category": "nodejs-web",
       "order": 2
     },
     {
@@ -2018,7 +2055,7 @@
         "后端框架",
         "高性能"
       ],
-      "category": "nodejs",
+      "category": "nodejs-web",
       "order": 3
     },
     {
@@ -2033,7 +2070,7 @@
         "TypeScript",
         "企业级"
       ],
-      "category": "nodejs",
+      "category": "nodejs-web",
       "order": 4
     },
     {
@@ -2048,7 +2085,7 @@
         "高性能",
         "TypeScript"
       ],
-      "category": "nodejs",
+      "category": "nodejs-web",
       "order": 5
     },
     {
@@ -2063,7 +2100,7 @@
         "高性能",
         "TypeScript"
       ],
-      "category": "nodejs",
+      "category": "nodejs-web",
       "order": 6
     },
     {
@@ -2078,98 +2115,10 @@
         "MVC",
         "全栈"
       ],
-      "category": "nodejs",
+      "category": "nodejs-web",
       "order": 7
     },
-    {
-      "id": "sails",
-      "title": "Sails.js",
-      "description": "Sails.js 是实时的 MVC Web 应用框架，基于 Express 和 Socket.io。",
-      "url": "https://sailsjs.com/",
-      "icon": "https://sailsjs.com/favicon.ico",
-      "tags": [
-        "Node.js",
-        "后端框架",
-        "实时",
-        "MVC"
-      ],
-      "category": "nodejs",
-      "order": 8
-    },
-    {
-      "id": "feathers",
-      "title": "Feathers",
-      "description": "Feathers 是用于创建 REST 和实时 API 的轻量级框架。",
-      "url": "https://feathersjs.com/",
-      "icon": "https://feathersjs.com/favicon.ico",
-      "tags": [
-        "Node.js",
-        "后端框架",
-        "实时",
-        "API"
-      ],
-      "category": "nodejs",
-      "order": 9
-    },
-    {
-      "id": "loopback",
-      "title": "LoopBack",
-      "description": "LoopBack 是高度可扩展的 Node.js 和 TypeScript 框架，用于构建 API。",
-      "url": "https://loopback.io/",
-      "icon": "https://loopback.io/favicon.ico",
-      "tags": [
-        "Node.js",
-        "后端框架",
-        "API",
-        "企业级"
-      ],
-      "category": "nodejs",
-      "order": 10
-    },
-    {
-      "id": "meteor",
-      "title": "Meteor",
-      "description": "Meteor 是用于构建现代 Web 和移动应用的开源平台。",
-      "url": "https://www.meteor.com/",
-      "icon": "https://www.meteor.com/favicon.ico",
-      "tags": [
-        "Node.js",
-        "全栈框架",
-        "实时"
-      ],
-      "category": "nodejs",
-      "order": 11
-    },
-    {
-      "id": "redwood",
-      "title": "RedwoodJS",
-      "description": "RedwoodJS 是用于构建和部署全栈 Web 应用的开源框架。",
-      "url": "https://redwoodjs.com/",
-      "icon": "https://redwoodjs.com/favicon.ico",
-      "tags": [
-        "Node.js",
-        "全栈框架",
-        "React",
-        "GraphQL"
-      ],
-      "category": "nodejs",
-      "order": 12
-    },
-    {
-      "id": "blitz",
-      "title": "Blitz.js",
-      "description": "Blitz.js 是基于 Next.js 的全栈 React 框架，无 API 层。",
-      "url": "https://blitzjs.com/",
-      "icon": "https://blitzjs.com/favicon.ico",
-      "tags": [
-        "Node.js",
-        "全栈框架",
-        "React",
-        "Next.js"
-      ],
-      "category": "nodejs",
-      "order": 13
-    },
+
     {
       "id": "trpc",
       "title": "tRPC",
@@ -2182,8 +2131,83 @@
         "TypeScript",
         "全栈"
       ],
-      "category": "nodejs",
-      "order": 14
+      "category": "nodejs-web",
+      "order": 8
+    },
+    {
+      "id": "piscina",
+      "title": "Piscina",
+      "description": "Piscina.js 是高性能的 Node.js 线程池库，轻松实现 CPU 密集型任务的并行处理，最大化 CPU 利用率。",
+      "url": "https://piscinajs.dev/",
+      "icon": "https://piscinajs.dev/favicon.ico",
+      "tags": [
+        "Node.js",
+        "多线程",
+        "线程池",
+        "性能优化"
+      ],
+      "category": "nodejs-threads",
+      "order": 1
+    },
+    {
+      "id": "workerpool",
+      "title": "workerpool",
+      "description": "workerpool 是一个轻量级的 Node.js 线程池实现，用于在 worker 线程中执行耗时的计算任务。",
+      "url": "https://www.npmjs.com/package/workerpool",
+      "icon": "https://www.npmjs.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "多线程",
+        "线程池",
+        "Worker"
+      ],
+      "category": "nodejs-threads",
+      "order": 2
+    },
+    {
+      "id": "threads.js",
+      "title": "threads.js",
+      "description": "threads.js 是 Node.js 和浏览器的多线程库，简化了 Web Workers 和 Worker Threads 的使用。",
+      "url": "https://threads.js.org/",
+      "icon": "https://threads.js.org/favicon.ico",
+      "tags": [
+        "Node.js",
+        "多线程",
+        "Web Workers",
+        "并发"
+      ],
+      "category": "nodejs-threads",
+      "order": 3
+    },
+    {
+      "id": "tinypool",
+      "title": "tinypool",
+      "description": "tinypool 是 Node.js 的轻量级通用线程池，基于 worker_threads 构建，支持任务队列和并行执行。",
+      "url": "https://github.com/piscinajs/tinypool",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "多线程",
+        "线程池",
+        "轻量级"
+      ],
+      "category": "nodejs-threads",
+      "order": 4
+    },
+    {
+      "id": "wa-sqlite",
+      "title": "wa-sqlite",
+      "description": "wa-sqlite 是高性能的 SQLite 编译版本，支持 WebAssembly 和 Web Workers，可在浏览器中高效运行。",
+      "url": "https://wa-sqlite.github.io/",
+      "icon": "https://wa-sqlite.github.io/favicon.ico",
+      "tags": [
+        "SQLite",
+        "WebAssembly",
+        "Web Workers",
+        "数据库"
+      ],
+      "category": "nodejs-threads",
+      "order": 5
     },
     {
       "id": "bun",
@@ -2243,60 +2267,184 @@
       "order": 4
     },
     {
-      "id": "elysia-bun",
-      "title": "Elysia",
-      "description": "Elysia 是符合人体工程学的 Bun Web 框架，专注于类型安全和性能。",
-      "url": "https://elysiajs.com/",
-      "icon": "https://elysiajs.com/favicon.ico",
+      "id": "golang",
+      "title": "Go",
+      "description": "Go 是 Google 开发的开源编程语言，以简洁、高效、并发支持著称。",
+      "url": "https://go.dev/",
+      "icon": "https://go.dev/favicon.ico",
       "tags": [
-        "Bun",
-        "Web框架",
-        "TypeScript"
+        "Go",
+        "编程语言",
+        "Google",
+        "并发"
       ],
-      "category": "bun-ecosystem",
+      "category": "go-ecosystem",
+      "order": 1
+    },
+    {
+      "id": "gin",
+      "title": "Gin",
+      "description": "Gin 是最流行的 Go Web 框架，以高性能和轻量级著称，支持中间件和路由分组。",
+      "url": "https://gin-gonic.com/",
+      "icon": "https://gin-gonic.com/favicon.ico",
+      "tags": [
+        "Go",
+        "Web框架",
+        "高性能",
+        "REST API"
+      ],
+      "category": "go-ecosystem",
+      "order": 2
+    },
+    {
+      "id": "gorm",
+      "title": "GORM",
+      "description": "GORM 是 Go 生态最流行的 ORM 库，支持关联、事务、钩子等高级功能。",
+      "url": "https://gorm.io/",
+      "icon": "https://gorm.io/favicon.ico",
+      "tags": [
+        "Go",
+        "ORM",
+        "数据库",
+        "SQL"
+      ],
+      "category": "go-ecosystem",
+      "order": 3
+    },
+    {
+      "id": "echo",
+      "title": "Echo",
+      "description": "Echo 是高性能、简洁的 Go Web 框架，优化了路由和中间件性能。",
+      "url": "https://echo.labstack.com/",
+      "icon": "https://echo.labstack.com/favicon.ico",
+      "tags": [
+        "Go",
+        "Web框架",
+        "高性能",
+        "轻量级"
+      ],
+      "category": "go-ecosystem",
+      "order": 4
+    },
+    {
+      "id": "fiber",
+      "title": "Fiber",
+      "description": "Fiber 是受 Express 启发的 Go Web 框架，以极致性能和低内存占用著称。",
+      "url": "https://gofiber.io/",
+      "icon": "https://gofiber.io/favicon.ico",
+      "tags": [
+        "Go",
+        "Web框架",
+        "高性能",
+        "Express风格"
+      ],
+      "category": "go-ecosystem",
       "order": 5
     },
     {
-      "id": "hono-bun",
-      "title": "Hono",
-      "description": "Hono 支持 Bun 运行时，提供极致性能。",
-      "url": "https://hono.dev/",
-      "icon": "https://hono.dev/favicon.ico",
+      "id": "chi",
+      "title": "Chi",
+      "description": "Chi 是轻量级的 Go HTTP router，支持中间件和上下文传递，兼容 net/http。",
+      "url": "https://go-chi.io/",
+      "icon": "https://go-chi.io/favicon.ico",
       "tags": [
-        "Bun",
-        "Web框架",
-        "边缘计算"
+        "Go",
+        "Router",
+        "HTTP",
+        "轻量级"
       ],
-      "category": "bun-ecosystem",
+      "category": "go-ecosystem",
       "order": 6
     },
     {
-      "id": "bunrest",
-      "title": "Bunrest",
-      "description": "Bunrest 是 Express 风格的 Bun Web 框架。",
-      "url": "https://github.com/lau1944/bunrest",
-      "icon": "https://github.com/favicon.ico",
+      "id": "buffalo",
+      "title": "Buffalo",
+      "description": "Buffalo 是 Go 全栈 Web 开发框架，提供从前端到后端的完整解决方案。",
+      "url": "https://gobuffalo.io/",
+      "icon": "https://gobuffalo.io/favicon.ico",
       "tags": [
-        "Bun",
+        "Go",
+        "全栈",
         "Web框架",
-        "Express风格"
+        "MVC"
       ],
-      "category": "bun-ecosystem",
+      "category": "go-ecosystem",
       "order": 7
     },
     {
-      "id": "zap",
-      "title": "Zap",
-      "description": "Zap 是用于 Bun 的超快速日志库。",
-      "url": "https://github.com/oven-sh/bun/tree/main/packages/bun-types#zap",
+      "id": "go-zap",
+      "title": "zap",
+      "description": "zap 是 Uber 开源的高性能 Go 日志库，比标准库快 10 倍。",
+      "url": "https://github.com/uber-go/zap",
       "icon": "https://github.com/favicon.ico",
       "tags": [
-        "Bun",
+        "Go",
         "日志",
-        "性能"
+        "性能",
+        "Uber"
       ],
-      "category": "bun-ecosystem",
+      "category": "go-ecosystem",
       "order": 8
+    },
+    {
+      "id": "golang-cli",
+      "title": "Cobra",
+      "description": "Cobra 是 Go 最流行的 CLI 应用框架，被 Docker、Kubernetes 等项目使用。",
+      "url": "https://cobra.dev/",
+      "icon": "https://cobra.dev/favicon.ico",
+      "tags": [
+        "Go",
+        "CLI",
+        "命令行",
+        "Docker"
+      ],
+      "category": "go-ecosystem",
+      "order": 9
+    },
+    {
+      "id": "go-redis",
+      "title": "go-redis",
+      "description": "go-redis 是 Go 最流行的 Redis 客户端，支持连接池、管道、事务等。",
+      "url": "https://redis.uptrace.dev/",
+      "icon": "https://redis.uptrace.dev/favicon.ico",
+      "tags": [
+        "Go",
+        "Redis",
+        "缓存",
+        "客户端"
+      ],
+      "category": "go-ecosystem",
+      "order": 10
+    },
+    {
+      "id": "grpc",
+      "title": "gRPC",
+      "description": "gRPC 是 Google 开源的高性能 RPC 框架，支持多语言和 Protocol Buffers。",
+      "url": "https://grpc.io/",
+      "icon": "https://grpc.io/favicon.ico",
+      "tags": [
+        "Go",
+        "RPC",
+        "Google",
+        "Protocol Buffers"
+      ],
+      "category": "go-ecosystem",
+      "order": 11
+    },
+    {
+      "id": "wg-go",
+      "title": "Wanderlost",
+      "description": "Wanderlost 是 2025 年新发布的 Go 泛型工具库，提供类型安全的集合操作。",
+      "url": "https://github.com/wanderlost/wanderlost",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "Go",
+        "泛型",
+        "工具库",
+        "2025"
+      ],
+      "category": "go-ecosystem",
+      "order": 12
     },
     {
       "id": "hardhat",
@@ -2514,6 +2662,216 @@
       ],
       "category": "smart-contract-lang",
       "order": 8
+    },
+    {
+      "id": "flutter",
+      "title": "Flutter",
+      "description": "Flutter 是 Google 开源的跨平台 UI 框架，使用 Dart 语言，一套代码同时构建 iOS 和 Android 应用。",
+      "url": "https://flutter.dev/",
+      "icon": "https://flutter.dev/favicon.ico",
+      "tags": [
+        "移动开发",
+        "跨平台",
+        "UI框架",
+        "Google"
+      ],
+      "category": "mobile",
+      "order": 1
+    },
+    {
+      "id": "react-native",
+      "title": "React Native",
+      "description": "React Native 是 Facebook 开源的跨平台移动开发框架，使用 JavaScript/TypeScript 构建原生应用。",
+      "url": "https://reactnative.dev/",
+      "icon": "https://reactnative.dev/favicon.ico",
+      "tags": [
+        "移动开发",
+        "跨平台",
+        "React",
+        "JavaScript"
+      ],
+      "category": "mobile",
+      "order": 2
+    },
+    {
+      "id": "uni-app",
+      "title": "uni-app",
+      "description": "uni-app 是 DCloud 推出的跨平台开发框架，使用 Vue.js 语法，一套代码编译到 iOS、Android、H5 等平台。",
+      "url": "https://uniapp.dcloud.net.cn/",
+      "icon": "https://uniapp.dcloud.net.cn/favicon.ico",
+      "tags": [
+        "移动开发",
+        "跨平台",
+        "Vue",
+        "微信小程序"
+      ],
+      "category": "mobile",
+      "order": 3
+    },
+    {
+      "id": "capacitor",
+      "title": "Capacitor",
+      "description": "Capacitor 是 Ionic 团队开源的跨平台原生容器，使用 Web 技术构建 iOS、Android 和桌面应用。",
+      "url": "https://capacitorjs.com/",
+      "icon": "https://capacitorjs.com/favicon.ico",
+      "tags": [
+        "移动开发",
+        "跨平台",
+        "Web技术",
+        "原生容器"
+      ],
+      "category": "mobile",
+      "order": 4
+    },
+    {
+      "id": "ionic",
+      "title": "Ionic",
+      "description": "Ionic 是强大的跨平台移动开发框架，基于 Web Components，提供美观的 UI 组件。",
+      "url": "https://ionicframework.com/",
+      "icon": "https://ionicframework.com/favicon.ico",
+      "tags": [
+        "移动开发",
+        "跨平台",
+        "Web Components",
+        "UI框架"
+      ],
+      "category": "mobile",
+      "order": 5
+    },
+    {
+      "id": "expo",
+      "title": "Expo",
+      "description": "Expo 是 React Native 开发工具链，提供开发、构建、部署一站式服务，简化 RN 开发流程。",
+      "url": "https://expo.dev/",
+      "icon": "https://expo.dev/favicon.ico",
+      "tags": [
+        "React Native",
+        "开发工具",
+        "移动开发",
+        "TypeScript"
+      ],
+      "category": "mobile",
+      "order": 6
+    },
+    {
+      "id": "native-script",
+      "title": "NativeScript",
+      "description": "NativeScript 是开源的跨平台框架，使用 Angular、Vue 或 TypeScript 构建原生 iOS 和 Android 应用。",
+      "url": "https://nativescript.org/",
+      "icon": "https://nativescript.org/favicon.ico",
+      "tags": [
+        "移动开发",
+        "跨平台",
+        "Angular",
+        "Vue"
+      ],
+      "category": "mobile",
+      "order": 7
+    },
+    {
+      "id": "taro",
+      "title": "Taro",
+      "description": "Taro 是京东开源的跨平台开发框架，使用 React/Vue 语法，一套代码编译到微信小程序、H5、React Native 等多端。",
+      "url": "https://taro.jd.com/",
+      "icon": "https://taro.jd.com/favicon.ico",
+      "tags": [
+        "移动开发",
+        "跨平台",
+        "React",
+        "微信小程序"
+      ],
+      "category": "mobile",
+      "order": 8
+    },
+    {
+      "id": "electron",
+      "title": "Electron",
+      "description": "Electron 是 GitHub 开源的跨平台桌面应用框架，使用 Web 技术（HTML/CSS/JS）构建 Windows、macOS、Linux 应用。",
+      "url": "https://electronjs.org/",
+      "icon": "https://electronjs.org/favicon.ico",
+      "tags": [
+        "桌面应用",
+        "跨平台",
+        "Web技术",
+        "GitHub"
+      ],
+      "category": "desktop",
+      "order": 1
+    },
+    {
+      "id": "tauri",
+      "title": "Tauri",
+      "description": "Tauri 是 Rust 编写的轻量级跨平台应用框架，比 Electron 更小更快，支持 Windows、macOS、Linux、移动端。",
+      "url": "https://tauri.app/",
+      "icon": "https://tauri.app/favicon.ico",
+      "tags": [
+        "桌面应用",
+        "跨平台",
+        "Rust",
+        "轻量级"
+      ],
+      "category": "desktop",
+      "order": 2
+    },
+    {
+      "id": "neutralino",
+      "title": "Neutralino",
+      "description": "Neutralino 是轻量级跨平台桌面应用框架，体积仅 1MB 左右，使用系统 WebView 渲染。",
+      "url": "https://neutralino.js.org/",
+      "icon": "https://neutralino.js.org/favicon.ico",
+      "tags": [
+        "桌面应用",
+        "跨平台",
+        "轻量级",
+        "Web技术"
+      ],
+      "category": "desktop",
+      "order": 3
+    },
+    {
+      "id": "nwjs",
+      "title": "NW.js",
+      "description": "NW.js 是基于 Chromium 和 Node.js 的跨平台桌面应用框架，直接调用 Node.js 模块，支持系统 API。",
+      "url": "https://nwjs.io/",
+      "icon": "https://nwjs.io/favicon.ico",
+      "tags": [
+        "桌面应用",
+        "跨平台",
+        "Chromium",
+        "Node.js"
+      ],
+      "category": "desktop",
+      "order": 4
+    },
+    {
+      "id": "pywebview",
+      "title": "pywebview",
+      "description": "pywebview 是轻量级跨平台桌面应用框架，使用 Python 后端和 Web 前端构建原生 GUI 应用。",
+      "url": "https://pywebview.flowrl.com/",
+      "icon": "https://pywebview.flowrl.com/favicon.ico",
+      "tags": [
+        "桌面应用",
+        "Python",
+        "跨平台",
+        "GUI"
+      ],
+      "category": "desktop",
+      "order": 5
+    },
+    {
+      "id": "quasar",
+      "title": "Quasar",
+      "description": "Quasar 是基于 Vue.js 的跨平台框架，一套代码同时构建 SPA、PWA、桌面应用和移动端应用。",
+      "url": "https://quasar.dev/",
+      "icon": "https://quasar.dev/favicon.ico",
+      "tags": [
+        "跨平台",
+        "Vue",
+        "桌面应用",
+        "移动应用"
+      ],
+      "category": "desktop",
+      "order": 6
     }
   ]
 }

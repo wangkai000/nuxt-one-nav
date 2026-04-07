@@ -37,7 +37,7 @@
             </el-menu-item>
 
             <!-- 有子分类的父分类 -->
-            <el-sub-menu v-else-if="cat.children && cat.children.length > 0" :index="cat.id">
+            <el-sub-menu v-else-if="cat.children && cat.children.length > 0" :index="cat.id" @click="handleSubMenuClick(cat.id)">
               <template #title>
                 <Icon :icon="cat.icon" style="width: 20px; height: 20px; min-width: 20px; min-height: 20px; margin-right: 12px;" />
                 <span>{{ cat.name }}</span>
@@ -109,6 +109,17 @@ const handleSelect = (index: string) => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
     return
   }
+
+  // 查找目标元素并滚动
+  const element = document.getElementById(`category-${index}`)
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+}
+
+// 处理子菜单点击（父分类）
+const handleSubMenuClick = (index: string) => {
+  selectCategory(index)
 
   // 查找目标元素并滚动
   const element = document.getElementById(`category-${index}`)
