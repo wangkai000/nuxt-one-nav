@@ -62,7 +62,7 @@
         <!-- 底部区域 -->
         <div class="flex-shrink-0 border-t border-gray-200 dark:border-gray-800 pt-2 pb-4 px-4">
           <!-- 底部菜单：网站提交、友情链接、关于 -->
-          <div class="space-y-1 mb-3">
+          <div class="space-y-1">
             <div
               @click="openSubmit"
               class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer text-gray-700 dark:text-gray-300"
@@ -85,16 +85,6 @@
               <span>关于导航</span>
             </div>
           </div>
-
-          <!-- 主题切换 -->
-          <div class="flex items-center justify-center pt-2 border-t border-gray-200 dark:border-gray-800">
-            <span
-              @click="toggleTheme"
-              class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer"
-            >
-              <Icon :icon="isDark ? 'fluent-emoji:sun' : 'fluent-emoji:crescent-moon'" class="w-6 h-6" />
-            </span>
-          </div>
         </div>
       </div>
     </el-drawer>
@@ -116,8 +106,8 @@
         <AppFooter />
       </el-main>
 
-      <!-- 返回顶部按钮 -->
-      <BackToTop />
+      <!-- 浮动操作按钮：深色模式切换 + 返回顶部 -->
+      <FloatingActions />
     </el-container>
   </el-container>
 </template>

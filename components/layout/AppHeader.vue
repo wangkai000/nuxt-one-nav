@@ -25,6 +25,17 @@
 
       <!-- 桌面端导航 -->
       <nav class="hidden xl:flex items-center gap-1">
+        <!-- 收缩/展开侧边栏按钮 -->
+        <el-button text @click="toggleSidebar" :title="collapsed ? '展开侧边栏' : '收起侧边栏'">
+          <!-- 使用更简洁的折叠图标 -->
+          <svg v-if="collapsed" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg v-else class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M4 6h16M4 12h10M4 18h16" />
+          </svg>
+        </el-button>
+
         <el-button text @click="scrollToTop">
           <Icon icon="fluent-emoji:house" class="w-4 h-4 mr-1" />
           首页
@@ -118,6 +129,14 @@ import { Icon } from '@iconify/vue'
 
 const emit = defineEmits(['toggle-mobile-menu'])
 const { query, setQuery, clear } = useSearch()
+
+// 侧边栏折叠状态
+const collapsed = useState<boolean>('sidebar-collapsed', () => false)
+
+// 切换侧边栏
+const toggleSidebar = () => {
+  collapsed.value = !collapsed.value
+}
 
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' })

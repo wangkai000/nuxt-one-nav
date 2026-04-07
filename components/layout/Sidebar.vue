@@ -90,22 +90,6 @@
           </el-menu-item>
         </el-menu>
       </div>
-
-      <!-- 底部：折叠按钮 + 主题切换 -->
-      <div class="border-t border-gray-200 dark:border-gray-800 p-2 flex items-center justify-center gap-2">
-        <span
-          @click="collapsed = !collapsed"
-          class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer"
-        >
-          <Icon :icon="collapsed ? 'fluent-emoji:right-arrow' : 'fluent-emoji:left-arrow'" class="w-5 h-5" />
-        </span>
-        <span
-          @click="toggleTheme"
-          class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer"
-        >
-          <Icon :icon="isDark ? 'fluent-emoji:sun' : 'fluent-emoji:crescent-moon'" class="w-5 h-5" />
-        </span>
-      </div>
     </el-aside>
   </div>
 </template>
@@ -116,13 +100,6 @@ import { categories } from '~/data/nav-data'
 
 const { activeCategory, selectCategory } = useSearch()
 const collapsed = useState<boolean>('sidebar-collapsed', () => false)
-
-// 主题切换
-const colorMode = useColorMode()
-const isDark = computed(() => colorMode.value === 'dark')
-const toggleTheme = () => {
-  colorMode.preference = isDark.value ? 'light' : 'dark'
-}
 
 // 处理菜单选择
 const handleSelect = (index: string) => {
