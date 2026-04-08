@@ -77,9 +77,9 @@ const categoriesWithItems = computed(() => {
   const featuredCategory = categories.find(cat => cat.id === 'all')
   const featuredItemsList = featuredCategory ? navData.filter(item => item.category === 'all').sort((a, b) => a.order - b.order) : []
 
-  // 获取其他分类
+  // 获取其他分类（排除友情链度分类，因为它有单独的展示区域）
   const otherCategories = categories
-    .filter(cat => cat.id !== 'all')
+    .filter(cat => cat.id !== 'all' && cat.id !== 'friendship-links')
     .map(cat => {
       let items: NavItem[] = []
 

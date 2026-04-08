@@ -125,6 +125,16 @@ const toggleTheme = () => {
 }
 
 const handleMenuSelect = (index: string) => {
+  const route = useRoute()
+
+  // 如果不在首页，先跳转回首页
+  if (route.path !== '/') {
+    selectCategory(index)
+    mobileMenuVisible.value = false
+    navigateTo('/')
+    return
+  }
+
   selectCategory(index)
   mobileMenuVisible.value = false
   // 等待抽屉关闭后滚动
@@ -147,13 +157,21 @@ const openSubmit = () => {
 // 打开友情链接
 const openFriends = () => {
   mobileMenuVisible.value = false
-  ElMessage.info('友情链接功能开发中...')
+  // 滚动到页面底部的友情链接区域
+  setTimeout(() => {
+    const element = document.getElementById('friendship-links')
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    } else {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
+    }
+  }, 100)
 }
 
 // 打开关于
 const openAbout = () => {
   mobileMenuVisible.value = false
-  ElMessage.info('关于导航功能开发中...')
+  navigateTo('/about')
 }
 </script>
 

@@ -20,6 +20,9 @@
 
     <!-- 导航网格 -->
     <NavGrid />
+
+    <!-- 友情链接 -->
+    <FriendshipLinks />
   </div>
 </template>
 

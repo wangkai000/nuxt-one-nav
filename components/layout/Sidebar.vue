@@ -7,7 +7,7 @@
     >
       <!-- Logo 区域 -->
       <div class="h-14 flex items-center justify-center border-b border-gray-200 dark:border-gray-800">
-        <NuxtLink to="/" class="flex items-center gap-2">
+        <a href="/" class="flex items-center gap-2">
           <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center flex-shrink-0">
             <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <circle cx="12" cy="12" r="10"/>
@@ -15,7 +15,7 @@
             </svg>
           </div>
           <span v-show="!collapsed" class="text-base font-bold text-gray-900 dark:text-white">MyNuxtNav</span>
-        </NuxtLink>
+        </a>
       </div>
 
       <!-- 导航菜单 -->
@@ -103,6 +103,15 @@ const collapsed = useState<boolean>('sidebar-collapsed', () => false)
 
 // 处理菜单选择
 const handleSelect = (index: string) => {
+  const route = useRoute()
+
+  // 如果不在首页，先跳转回首页
+  if (route.path !== '/') {
+    selectCategory(index)
+    navigateTo('/')
+    return
+  }
+
   selectCategory(index)
 
   // 查找目标元素并滚动
@@ -129,17 +138,24 @@ const handleSubMenuClick = (index: string) => {
 // 打开网站提交
 const openSubmit = () => {
   // 可以跳转到提交页面或打开对话框
-  ElMessage.info('网站提交功能开发中...')
+  ElMessage.info('这只是一个资源导航站的模板而已...')
 }
 
 // 打开友情链接
 const openFriends = () => {
-  ElMessage.info('友情链接功能开发中...')
+  // 滚动到页面底部的友情链接区域
+  const element = document.getElementById('friendship-links')
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  } else {
+    // 如果找不到，滚动到页面底部
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
+  }
 }
 
 // 打开关于
 const openAbout = () => {
-  ElMessage.info('关于导航功能开发中...')
+  navigateTo('/about')
 }
 </script>
 
