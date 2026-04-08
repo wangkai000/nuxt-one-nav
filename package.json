@@ -6,7 +6,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "generate": "nuxt generate && node -e \"const fs=require('fs');['.output/public/favicon.svg','.output/public/favicon.jpg'].forEach(f=>{try{fs.rmSync(f)}catch{}});\"",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "prepare": "nuxt prepare",

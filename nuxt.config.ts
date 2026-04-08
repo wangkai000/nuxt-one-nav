@@ -21,18 +21,15 @@ export default defineNuxtConfig({
   // 模块会自动导入并配置第三方库
   modules: [
     '@element-plus/nuxt',      // Element Plus Vue 3 组件库
-    '@nuxtjs/color-mode'       // 暗色模式支持
-    // '@vite-pwa/nuxt'         // PWA 支持 - 暂时禁用以解决 SSG 问题
+    '@nuxtjs/color-mode',      // 暗色模式支持
+    '@vite-pwa/nuxt'          // PWA 支持
   ],
 
   // ========== PWA 配置 ==========
   pwa: {
+    // SSG 静态站点用 generateSW 策略
+    strategies: 'generateSW',
     registerType: 'autoUpdate',
-    // SSG 模式下禁用 PWA 相关客户端功能
-    devOptions: {
-      enabled: false,
-      type: 'module'
-    },
     manifest: {
       name: '天渺studio - 资源导航',
       short_name: '天渺导航',
@@ -57,13 +54,57 @@ export default defineNuxtConfig({
       ]
     },
     workbox: {
+      // SSG 模式：导航全部回落到 index.html
       navigateFallback: '/',
-      globPatterns: ['**/*.{js,css,html,png,svg,ico}']
+      // 静态资源走缓存优先策略（CDN/静态托管友好）
+      runtimeCaching: [
+        {
+          // JS/CSS 走 StaleWhileRevalidate（缓存可用时即时响应，同时后台更新）
+          urlPattern: /^https?:\/\/.*\.(js|css)$/,
+          handler: 'StaleWhileRevalidate',
+          options: {
+            cacheName: 'static-js-css',
+            expiration: { maxEntries: 50, maxAgeSeconds: 60 * 60 * 24 * 30 }
+          }
+        },
+        {
+          // 图片走 CacheFirst（图片不常变，充分利用缓存）
+          urlPattern: /^https?:\/\/.*\.(png|jpg|jpeg|gif|svg|webp|ico)$/,
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'static-images',
+            expiration: { maxEntries: 200, maxAgeSeconds: 60 * 60 * 24 * 30 }
+          }
+        },
+        {
+          // 字体走 CacheFirst
+          urlPattern: /^https?:\/\/.*\.(woff|woff2|ttf|otf|eot)$/,
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'static-fonts',
+            expiration: { maxEntries: 20, maxAgeSeconds: 60 * 60 * 24 * 365 }
+          }
+        },
+        {
+          // 外部 API/数据走 NetworkFirst（确保拿到最新内容）
+          urlPattern: /^https?:\/\/api\//,
+          handler: 'NetworkFirst',
+          options: {
+            cacheName: 'api-cache',
+            networkTimeoutSeconds: 10,
+            expiration: { maxEntries: 50, maxAgeSeconds: 60 * 5 }
+          }
+        }
+      ]
     },
-    // 禁用需要客户端的功能
+    // 开发环境关闭 PWA（避免干扰开发体验）
+    devOptions: {
+      enabled: false,
+      type: 'module'
+    },
+    // 客户端行为配置
     client: {
-      installPrompt: false,
-      periodicSyncForUpdates: 0
+      installPrompt: true
     }
   },
 
@@ -190,5 +231,7 @@ export default defineNuxtConfig({
       // 预渲染失败时不中断构建（可能有一些 SSR 警告但仍生成静态文件）
       failOnError: false
     }
-  }
+  },
+
+
 })
