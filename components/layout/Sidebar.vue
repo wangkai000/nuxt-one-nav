@@ -37,7 +37,7 @@
             </el-menu-item>
 
             <!-- 有子分类的父分类 -->
-            <el-sub-menu v-else-if="cat.children && cat.children.length > 0" :index="cat.id" @click="handleSubMenuClick(cat.id)">
+            <el-sub-menu v-else-if="cat.children && cat.children.length > 0" :index="cat.id">
               <template #title>
                 <Icon :icon="cat.icon" style="width: 20px; height: 20px; min-width: 20px; min-height: 20px; margin-right: 12px;" />
                 <span>{{ cat.name }}</span>
@@ -102,37 +102,37 @@ const { activeCategory, selectCategory } = useSearch()
 const collapsed = useState<boolean>('sidebar-collapsed', () => false)
 
 // 处理菜单选择
-const handleSelect = (index: string) => {
+const handleSelect = async (index: string) => {
   const route = useRoute()
 
   // 如果不在首页，先跳转回首页
   if (route.path !== '/') {
     selectCategory(index)
-    navigateTo('/')
+    await navigateTo('/')
+    // 等待页面渲染完成后滚动
+    nextTick(() => {
+      const element = document.getElementById(`category-${index}`)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      }
+    })
     return
   }
 
   selectCategory(index)
 
   // 查找目标元素并滚动
-  const element = document.getElementById(`category-${index}`)
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  } else {
-    // 如果找不到对应元素（比如首页），滚动到顶部
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
-}
-
-// 处理子菜单点击（父分类）
-const handleSubMenuClick = (index: string) => {
-  selectCategory(index)
-
-  // 查找目标元素并滚动
-  const element = document.getElementById(`category-${index}`)
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  }
+  nextTick(() => {
+    const element = document.getElementById(`category-${index}`)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    } else {
+      // 如果找不到对应元素（比如首页），滚动到顶部
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  })
 }
 
 // 打开网站提交

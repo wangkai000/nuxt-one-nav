@@ -124,28 +124,37 @@ const toggleTheme = () => {
   colorMode.preference = isDark.value ? 'light' : 'dark'
 }
 
-const handleMenuSelect = (index: string) => {
+const handleMenuSelect = async (index: string) => {
   const route = useRoute()
 
   // 如果不在首页，先跳转回首页
   if (route.path !== '/') {
     selectCategory(index)
     mobileMenuVisible.value = false
-    navigateTo('/')
+    await navigateTo('/')
+    // 等待页面渲染完成后滚动
+    nextTick(() => {
+      const element = document.getElementById(`category-${index}`)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      }
+    })
     return
   }
 
   selectCategory(index)
   mobileMenuVisible.value = false
   // 等待抽屉关闭后滚动
-  setTimeout(() => {
+  nextTick(() => {
     const element = document.getElementById(`category-${index}`)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' })
     } else {
       window.scrollTo({ top: 0, behavior: 'smooth' })
     }
-  }, 100)
+  })
 }
 
 // 打开网站提交

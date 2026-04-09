@@ -52,7 +52,11 @@
       "children": [
         { "id": "frontend-react", "name": "React生态", "icon": "logos:react" },
         { "id": "frontend-vue", "name": "Vue生态", "icon": "logos:vue" },
-        { "id": "frontend-other", "name": "其他框架", "icon": "logos:svelte-icon" }
+        { "id": "frontend-other", "name": "其他框架", "icon": "logos:svelte-icon" },
+        { "id": "ui-lib", "name": "UI组件库", "icon": "logos:storybook-icon" },
+        { "id": "css-framework", "name": "CSS框架", "icon": "logos:tailwindcss-icon" },
+        { "id": "build-tools", "name": "构建工具", "icon": "logos:vitejs" },
+        { "id": "webgl-3d", "name": "WebGL 3D", "icon": "logos:threejs" }
       ]
     },
     {
@@ -2017,6 +2021,51 @@
       "order": 15
     },
     {
+      "id": "threejs",
+      "title": "Three.js",
+      "description": "Three.js 是最流行的 WebGL 3D 图形库，提供丰富的 3D 渲染功能和便捷的 API。",
+      "url": "https://threejs.org/",
+      "icon": "https://threejs.org/favicon.ico",
+      "tags": [
+        "WebGL",
+        "3D",
+        "图形",
+        "渲染"
+      ],
+      "category": "webgl-3d",
+      "order": 1
+    },
+    {
+      "id": "babylonjs",
+      "title": "Babylon.js",
+      "description": "Babylon.js 是功能强大的 WebGL 3D 引擎，提供游戏级渲染能力和完整的工具链。",
+      "url": "https://www.babylonjs.com/",
+      "icon": "https://www.babylonjs.com/favicon.ico",
+      "tags": [
+        "WebGL",
+        "3D",
+        "图形",
+        "游戏引擎"
+      ],
+      "category": "webgl-3d",
+      "order": 2
+    },
+    {
+      "id": "pixijs",
+      "title": "PixiJS",
+      "description": "PixiJS 是快速的 2D WebGL 渲染引擎，适用于游戏、交互式媒体和可视化。",
+      "url": "https://pixijs.com/",
+      "icon": "https://pixijs.com/favicon.ico",
+      "tags": [
+        "WebGL",
+        "2D",
+        "图形",
+        "渲染"
+      ],
+      "category": "webgl-3d",
+      "order": 3
+    },
+    {
       "id": "express",
       "title": "Express.js",
       "description": "Express 是快速、开放、极简的 Node.js Web 框架，是最流行的 Node.js 框架。",
@@ -2087,21 +2136,6 @@
       ],
       "category": "nodejs-web",
       "order": 5
-    },
-    {
-      "id": "elysia",
-      "title": "Elysia",
-      "description": "Elysia 是符合人体工程学的 Bun Web 框架，专注于类型安全和性能。",
-      "url": "https://elysiajs.com/",
-      "icon": "https://elysiajs.com/favicon.ico",
-      "tags": [
-        "Node.js",
-        "Bun",
-        "高性能",
-        "TypeScript"
-      ],
-      "category": "nodejs-web",
-      "order": 6
     },
     {
       "id": "adonisjs",
@@ -2265,6 +2299,21 @@
       ],
       "category": "bun-ecosystem",
       "order": 4
+    },
+    {
+      "id": "elysia",
+      "title": "Elysia",
+      "description": "Elysia 是符合人体工程学的 Bun Web 框架，专注于类型安全和性能。",
+      "url": "https://elysiajs.com/",
+      "icon": "https://elysiajs.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "Bun",
+        "高性能",
+        "TypeScript"
+      ],
+      "category": "bun-ecosystem",
+      "order": 6
     },
     {
       "id": "golang",
