@@ -5,6 +5,11 @@ export default defineNuxtConfig({
   // 兼容日期，用于确保 Nuxt 版本兼容性
   compatibilityDate: '2024-11-01',
 
+  // Nuxt 4 兼容模式
+  future: {
+    compatibilityVersion: 4
+  },
+
   // 关闭 Nuxt DevTools（生产环境建议关闭）
   devtools: { enabled: false },
 
