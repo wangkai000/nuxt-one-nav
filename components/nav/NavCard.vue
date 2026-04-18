@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div
     class="group flex flex-col items-center text-center p-4 bg-white dark:bg-[#1e1e3a] rounded-lg border border-gray-200 dark:border-gray-800 cursor-pointer transition-all duration-200 hover:-translate-y-1"
     style="box-shadow: 0 1px 2px rgba(0,0,0,0.04);"
@@ -10,7 +10,7 @@
     <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800/50 dark:to-gray-700/50 flex items-center justify-center mb-3 overflow-hidden relative">
       <!-- 兜底图标 - 始终显示，直到图片加载成功 -->
       <div
-        v-if="!iconLoadedMap[item.id]"
+        v-if="!iconLoaded"
         class="absolute inset-0 flex items-center justify-center z-10"
       >
         <Icon :icon="getFallbackIcon(item)" class="w-8 h-8" />
@@ -18,15 +18,15 @@
 
       <!-- 图片图标 - 加载成功后显示 -->
       <img
-        v-if="!iconErrorMap[item.id]"
+        v-if="!iconError"
         :src="getIconUrl(item)"
         :alt="item.title"
         class="w-9 h-9 object-contain absolute z-20 transition-opacity duration-300"
-        :class="{ 'opacity-0': !iconLoadedMap[item.id], 'opacity-100': iconLoadedMap[item.id] }"
+        :class="{ 'opacity-0': !iconLoaded, 'opacity-100': iconLoaded }"
         loading="lazy"
         decoding="async"
-        @error="onIconError(item.id)"
-        @load="onIconLoad(item.id)"
+        @error="iconError = true"
+        @load="iconLoaded = true"
       />
     </div>
 
@@ -55,17 +55,9 @@ const goToDetail = () => {
   window.open(`/detail/${props.item.id}`, '_blank')
 }
 
-// 每个卡片独立的图标状态
-const iconErrorMap = reactive<Record<string, boolean>>({})
-const iconLoadedMap = reactive<Record<string, boolean>>({})
-
-const onIconError = (id: string) => {
-  iconErrorMap[id] = true
-}
-
-const onIconLoad = (id: string) => {
-  iconLoadedMap[id] = true
-}
+// 图标加载状态（组件内部局部 ref，不需要 reactive Map）
+const iconLoaded = ref(false)
+const iconError = ref(false)
 
 // 从网址提取域名获取 favicon
 const getFaviconFromUrl = (url: string): string => {
@@ -79,11 +71,9 @@ const getFaviconFromUrl = (url: string): string => {
 
 // 获取图标 URL：优先用 item.icon，否则从 URL 生成
 const getIconUrl = (item: NavItem): string => {
-  // 已有 icon 且不是 simple-icons/mdi/fluent-emoji 格式
   if (item.icon && !item.icon.startsWith('simple-icons:') && !item.icon.startsWith('mdi:') && !item.icon.startsWith('fluent-emoji:') && !item.icon.startsWith('logos:')) {
     return item.icon
   }
-  // 从 URL 获取 favicon
   return getFaviconFromUrl(item.url)
 }
 
@@ -147,23 +137,16 @@ const domainIconMap: Record<string, string> = {
 
 // 获取兜底图标
 const getFallbackIcon = (item: NavItem): string => {
-  // 1. 优先使用 item.iconName
   if (item.iconName) return item.iconName
-
-  // 2. 根据分类获取图标
   if (item.category && categoryIconMap[item.category]) {
     return categoryIconMap[item.category]
   }
-
-  // 3. 根据域名获取图标
   const url = item.url.toLowerCase()
   for (const [domain, icon] of Object.entries(domainIconMap)) {
     if (url.includes(domain)) {
       return icon
     }
   }
-
-  // 4. 根据标签获取图标
   if (item.tags) {
     const tags = item.tags.map(t => t.toLowerCase())
     if (tags.some(t => ['vue', 'vuejs'].includes(t))) return 'logos:vue'
@@ -182,8 +165,6 @@ const getFallbackIcon = (item: NavItem): string => {
     if (tags.some(t => ['web3', 'blockchain'].includes(t))) return 'logos:ethereum'
     if (tags.some(t => ['ai', 'gpt', 'llm'].includes(t))) return 'fluent-emoji:robot'
   }
-
-  // 5. 默认图标
   return 'fluent-emoji:globe-with-meridians'
 }
 </script>
