@@ -1,10 +1,8 @@
 <template>
-  <a
-    :href="item.url"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="group flex flex-col items-center text-center p-4 bg-white dark:bg-[#1e1e3a] rounded-lg border border-gray-200 dark:border-gray-800 transition-all duration-200 hover:-translate-y-1"
+  <div
+    class="group flex flex-col items-center text-center p-4 bg-white dark:bg-[#1e1e3a] rounded-lg border border-gray-200 dark:border-gray-800 cursor-pointer transition-all duration-200 hover:-translate-y-1"
     style="box-shadow: 0 1px 2px rgba(0,0,0,0.04);"
+    @click="goToDetail"
     @mouseenter="$event.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.08)'"
     @mouseleave="$event.currentTarget.style.boxShadow = '0 1px 2px rgba(0,0,0,0.04)'"
   >
@@ -41,7 +39,7 @@
     <p class="text-xs text-gray-500 dark:text-gray-400 line-clamp-2 leading-relaxed">
       {{ item.description }}
     </p>
-  </a>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -49,6 +47,13 @@ import { Icon } from '@iconify/vue'
 import type { NavItem } from '~/types/nav'
 
 const props = defineProps<{ item: NavItem }>()
+
+const router = useRouter()
+
+// 在新标签页打开详情页
+const goToDetail = () => {
+  window.open(`/detail/${props.item.id}`, '_blank')
+}
 
 // 每个卡片独立的图标状态
 const iconErrorMap = reactive<Record<string, boolean>>({})

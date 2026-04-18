@@ -82,7 +82,7 @@
     </el-drawer>
 
     <!-- 主内容区 -->
-    <el-container class="flex flex-col bg-gradient-to-br from-blue-100/90 via-indigo-100/80 to-purple-100/90 dark:from-[#1e293b]/95 dark:via-[#312e81]/85 dark:to-[#1e1b4b]/95">
+    <el-container class="flex flex-col grid-bg">
       <!-- 顶部栏 -->
       <el-header class="!h-14 !p-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-[#16162a]">
         <AppHeader @toggle-mobile-menu="mobileMenuVisible = true" />

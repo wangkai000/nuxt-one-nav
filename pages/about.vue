@@ -1,12 +1,13 @@
 <template>
   <div class="max-w-screen-2xl mx-auto">
-    <!-- Hero 区域 -->
+    <!-- Hero 背景图片区域 -->
     <div class="relative mb-8 overflow-hidden rounded-2xl">
-      <div class="absolute inset-0 hero-gradient dark:hero-gradient-dark">
-        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-purple-500/10 to-pink-500/20 dark:from-blue-600/30 dark:via-purple-600/20 dark:to-pink-600/30"></div>
-      </div>
+      <!-- 背景图片 -->
+      <div class="absolute inset-0 hero-wallpaper"></div>
+
+      <!-- 内容 -->
       <div class="relative px-8 py-12 md:py-16">
-        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">
+        <h1 class="inline px-4 py-2 rounded-lg bg-white/90 dark:bg-[#1a1a2e]/90 text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
           关于 MyNuxtNav
         </h1>
       </div>

@@ -226,6 +226,20 @@
 - [Anthropic SDK for JS](https://github.com/anthropics/anthropic-sdk-typescript) - Anthropic 官方 TypeScript SDK，用于调用 Claude API。 | icon: https://github.com/favicon.ico | tags: AI, SDK, Claude, TypeScript
 - [LangGraph.js](https://github.com/langchain-ai/langgraphjs) - LangGraph 的 JavaScript 版本，用于构建有状态的 AI 应用。 | icon: https://github.com/favicon.ico | tags: AI, 框架, 工作流, Agent
 
+## WebGIS 地图
+> id: frontend-webgis | icon: fluent-emoji:world-map
+
+- [Leaflet](https://leafletjs.com/) - Leaflet 是最流行的开源 JavaScript 地图库，轻量易用，支持移动端，被 GitHub、Flickr 等大厂使用。 | icon: https://leafletjs.com/favicon.ico | tags: WebGIS, 地图, 开源, 轻量级
+- [Mapbox GL JS](https://www.mapbox.com/mapbox-gljs) - Mapbox GL JS 是强大的矢量地图渲染库，支持自定义样式、3D 地形和实时数据可视化。 | icon: https://www.mapbox.com/favicon.ico | tags: WebGIS, 地图, 矢量, 3D
+- [OpenLayers](https://openlayers.org/) - OpenLayers 是功能强大的 WebGIS 库，支持 OGC 标准、WMS/WFS 服务，适合企业级 GIS 应用。 | icon: https://openlayers.org/favicon.ico | tags: WebGIS, 地图, OGC, 企业级
+- [Cesium](https://cesium.com/platform/cesiumjs/) - Cesium 是世界领先的 3D 地球和地图平台，支持时间动态数据、地形和建筑物可视化。 | icon: https://cesium.com/favicon.ico | tags: WebGIS, 3D, 地球, 可视化
+- [MapLibre GL JS](https://maplibre.org/maplibre-gl-js/docs/) - MapLibre GL JS 是 Mapbox GL JS 的开源分支，免费且功能完整，无需 API Key。 | icon: https://maplibre.org/favicon.ico | tags: WebGIS, 地图, 开源, 矢量
+- [Deck.gl](https://deck.gl/) - Deck.gl 是 Uber 开源的地理空间数据可视化库，支持大规模数据渲染和 3D 可视化。 | icon: https://deck.gl/favicon.ico | tags: WebGIS, 可视化, 3D, 大数据
+- [Turf.js](https://turfjs.org/) - Turf.js 是地理空间分析库，提供空间运算、坐标转换、距离计算等功能。 | icon: https://turfjs.org/favicon.ico | tags: WebGIS, 空间分析, 地理计算
+- [ArcGIS API for JavaScript](https://developers.arcgis.com/javascript/latest/) - ArcGIS API 是 ESRI 官方 JavaScript API，提供完整的 GIS 功能和地图服务。 | icon: https://developers.arcgis.com/favicon.ico | tags: WebGIS, ArcGIS, 企业级, ESRI
+- [高德地图 JS API](https://lbs.amap.com/api/javascript-api-v2/summary) - 高德地图 JavaScript API 是国内主流地图服务，支持 2D/3D 地图、路径规划等功能。 | icon: https://lbs.amap.com/favicon.ico | tags: WebGIS, 地图, 国内, 高德
+- [百度地图 JS API](https://lbsyun.baidu.com/index.php?title=jspopularGL) - 百度地图 JavaScript API 提供地图展示、定位、路径规划等服务，支持 WebGL 渲染。 | icon: https://lbsyun.baidu.com/favicon.ico | tags: WebGIS, 地图, 国内, 百度
+
 # Node.js框架
 > id: nodejs | icon: logos:nodejs-icon
 
