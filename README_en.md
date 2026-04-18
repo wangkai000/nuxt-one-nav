@@ -2,7 +2,7 @@
 
 [中文](./README.md) | [English](./README_en.md)
 
-A pure static navigation site built with **Nuxt 3 + TypeScript + Element Plus + Tailwind CSS**. Data is managed in Markdown format and automatically generates offline JSON during build - no database required.
+A pure static navigation site built with **Nuxt 4 + TypeScript + Element Plus + Tailwind CSS**. Data is managed in Markdown format and automatically generates offline JSON during build - no database required.
 
 ## ✨ Features
 
@@ -19,6 +19,8 @@ A pure static navigation site built with **Nuxt 3 + TypeScript + Element Plus + 
 - 🔗 **Site Detail Page** — Click card to view details in new tab
 
 ## 🚀 Quick Start
+
+**Node.js >= 22.13.0**
 
 ```bash
 # 1. Install dependencies
@@ -160,7 +162,7 @@ Currently featuring **250+** website resources across **14** main categories:
 
 | Technology | Purpose | Version |
 |------------|---------|---------|
-| [Nuxt 3](https://nuxt.com) | Full-stack Framework (SSG) | ^3.14 |
+| [Nuxt 4](https://nuxt.com) | Full-stack Framework (SSG) | ^3.14 |
 | [Vue 3](https://vuejs.org) | Progressive JavaScript Framework | ^3.5 |
 | [TypeScript](https://www.typescriptlang.org) | Type Safety | ^5.x |
 | [Element Plus](https://element-plus.org) | Vue 3 Component Library | ^2.9 |
@@ -199,7 +201,7 @@ MIT
 
 ## 🙏 Acknowledgments
 
-- [Nuxt 3](https://nuxt.com) · [Tailwind CSS](https://tailwindcss.com) · [Element Plus](https://element-plus.org) · [Iconify](https://iconify.design) · [One Nav](https://www.iotheme.cn)
+- [Nuxt 4](https://nuxt.com) · [Tailwind CSS](https://tailwindcss.com) · [Element Plus](https://element-plus.org) · [Iconify](https://iconify.design) · [One Nav](https://www.iotheme.cn)
 
 ---
 
