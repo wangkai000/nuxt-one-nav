@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <div
     class="group flex flex-col items-center text-center p-4 bg-white dark:bg-[#1e1e3a] rounded-lg border border-gray-200 dark:border-gray-800 cursor-pointer transition-all duration-200 hover:-translate-y-1"
     style="box-shadow: 0 1px 2px rgba(0,0,0,0.04);"

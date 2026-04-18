@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <div class="space-y-8">
     <!-- 鎼滅储鏃舵樉绀烘墍鏈夌粨鏋滐紙涓嶅垎缁勶級 -->
     <template v-if="query.trim()">
