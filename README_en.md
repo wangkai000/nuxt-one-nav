@@ -20,6 +20,8 @@ A pure static navigation site built with **Nuxt 4 + TypeScript + Element Plus + 
 
 ## 🚀 Quick Start
 
+**Node.js >= 22.13.0**
+
 ```bash
 # 1. Install dependencies
 npm install
