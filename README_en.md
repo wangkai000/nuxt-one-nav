@@ -1,137 +1,85 @@
-﻿# MyNuxtNav
+# MyNuxtNav Navigation Site
+
 [中文](./README.md) | [English](./README_en.md)
 
-A static navigation site built with **Nuxt 3 + TypeScript + Element Plus + Tailwind CSS**, faithfully replicating the One Nav UI style. Navigation data is managed in Markdown and auto-generated to JSON at build time.
+A pure static navigation site built with **Nuxt 3 + TypeScript + Element Plus + Tailwind CSS**. Data is managed in Markdown format and automatically generates offline JSON during build - no database required.
 
 ## ✨ Features
 
 - 🎨 **Beautiful UI** — Element Plus components + Tailwind CSS styling
 - 🌓 **Dark Mode** — Auto/manual toggle with full adaptation
-- 🔍 **Real-time Search** — Top bar search with ⌘K / Ctrl+K shortcuts
-- 📱 **Responsive** — Desktop & mobile with drawer menu on small screens
-- ⚡ **SSG** — Static generation, easy deployment, blazing fast
-- 🧭 **Sidebar Menu** — Two-level category support
+- 🔍 **Real-time Search** — Top bar search with ⌘K / Ctrl+K shortcut
+- 📱 **Responsive** — Perfectly adapted for desktop and mobile
+- ⚡ **Pure SSG** — No server-side required after build, easy deployment, lightning fast
+- 🧭 **Sidebar Menu** — Supports second-level subcategories with clear hierarchy
 - 🎯 **Keyboard Shortcuts** — ⌘K to focus search, Esc to clear
-- 💎 **Fine Details** — Hover animations, gradient borders, badge markers
-- 🎨 **Colorful Icons** — Iconify icons + smart tech-stack icon matching
-- 🚀 **Back to Top** — Scroll-triggered back-to-top button
-- ⏳ **Loading Animation** — Nuxt + Element Plus loading states
-- 📝 **Markdown Data Source** — Manage nav data in MD, auto-parsed at build
-- 🔗 **External Links** — Quick access to GitHub & Gitee
+- 💎 **Polished Details** — Hover animations, gradient backgrounds, badge markers
+- 🎨 **Colorful Icons** — Iconify colorful icons + smart tech stack matching
+- 📝 **Markdown Data Source** — Manage navigation data in Markdown, Git-friendly
+- 🔗 **Site Detail Page** — Click card to view details in new tab
 
-## Tech Stack
-
-| Technology | Purpose | Version |
-|------------|---------|---------|
-| [Nuxt 3](https://nuxt.com) | Full-stack framework (App Router + SSG) | ^3.14 |
-| [Vue 3](https://vuejs.org) | Progressive JavaScript framework | ^3.5 |
-| [TypeScript](https://www.typescriptlang.org) | Type safety | ^5.x |
-| [Element Plus](https://element-plus.org) | Vue 3 component library | ^2.9 |
-| [Tailwind CSS](https://tailwindcss.com) | Atomic CSS framework | ^3.x |
-| [Iconify](https://iconify.design) | Unified icon framework | ^4.1 |
-| [@nuxtjs/color-mode](https://color-mode.nuxtjs.org) | Dark mode support | ^3.5 |
-| [Vite](https://vitejs.dev) | Build tool | ^6.x |
-
-## Quick Start
+## 🚀 Quick Start
 
 ```bash
+# 1. Install dependencies
 npm install
+
+# 2. Development mode
 npm run dev          # http://localhost:3000
-npm run generate     # SSG with auto MD → JSON parsing
-npm run preview      # Preview build output
+
+# 3. Generate static files (auto executes MD → JSON parsing)
+npm run generate
+
+# 4. Preview build result
+npm run preview
 ```
 
-## Project Structure
+## 📦 SSG Static Build
 
-```
-one-nav-ssg/
-├── components/
-│   ├── common/              # Common components
-│   ├── layout/
-│   │   ├── AppHeader.vue    # Top navigation bar
-│   │   ├── AppFooter.vue    # Footer
-│   │   └── Sidebar.vue      # Sidebar menu (two-level categories)
-│   ├── nav/
-│   │   ├── NavCard.vue      # Website card (smart icon matching)
-│   │   ├── NavGrid.vue      # Grid layout + filtering
-│   │   └── SearchBar.vue    # Search bar
-│   ├── BackToTop.vue
-│   └── LoadingIndicator.vue
-├── composables/
-│   ├── useSearch.ts         # Search logic
-│   └── useTheme.ts          # Theme logic
-├── data/
-│   ├── nav-data.md          # ⭐ Data source (Markdown, single source of truth)
-│   ├── nav-data.ts          # Data reader (imports from generated JSON)
-│   └── nav-data.generated.json  # Build artifact, do not edit
-├── scripts/
-│   └── build-nav-data.mjs   # Build-time MD → JSON parser
-├── server/api/
-│   └── nav.get.ts           # Nav data API (search, category filter)
-├── types/
-│   └── nav.ts               # TypeScript type definitions
-├── pages/
-│   ├── index.vue            # Home (Hero + NavGrid)
-│   └── about.vue            # About page
-├── layouts/
-│   └── default.vue          # Default layout (mobile drawer)
-├── nuxt.config.ts           # Nuxt config (with build:before hook)
-├── app.vue                  # App entry
-└── package.json
+This project is a **pure SSG (Static Site Generation)** project. After build, it generates pure HTML/CSS/JS files without requiring a Node.js server.
+
+### Build Command
+
+```bash
+# Complete build process:
+# 1. Parse data/nav-data.md → data/nav-data.generated.json
+# 2. Generate static pages to .output/public/
+npm run generate
 ```
 
-## Data Categories
+After build, the `.output/public/` directory contains all static files and can be deployed to:
+- **Vercel** / **Netlify** (recommended, auto deploy)
+- **GitHub Pages** / **Cloudflare Pages** / **Gitee Pages**
+- **Nginx** / Apache
+- Any static hosting service
 
-Featuring **276** websites across **20** categories:
+## 📝 How to Add New Resources
 
-| Category | Count | Description |
-|----------|-------|-------------|
-| Featured | 1 | Editor's picks |
-| AI Tools | 11 | ChatGPT, Claude, Midjourney, etc. |
-| Web3.0 | 20 | Blockchain, DeFi, NFT related |
-| Web3 Libraries | 13 | Ethers.js, Web3.js, etc. |
-| Web3 Contract Frameworks | 7 | Hardhat, Foundry, Truffle, etc. |
-| Web3 Contract Languages | 8 | Solidity, Vyper, Rust(Solana), etc. |
-| Frontend Frameworks | 75 | React/Vue/Angular/Svelte (7 sub-categories) |
-| Node.js Frameworks | 12 | Express, Koa, NestJS (2 sub-categories) |
-| Go Ecosystem | 12 | Gin, Echo, Fiber, etc. |
-| Mobile Development | 8 | Flutter, React Native, etc. |
-| Desktop Apps | 6 | Electron, Tauri, etc. |
-| Bun Ecosystem | 5 | Bun runtime & related tools |
-| CSS Frameworks | 8 | Tailwind CSS, Bootstrap, etc. |
-| Build Tools | 28 | Vite, Webpack, Rollup, esbuild, etc. |
-| UI Component Libraries | 60 | Element Plus, Ant Design, shadcn, etc. |
-| Game Engines | 9 | Unity, Unreal, Godot, etc. |
-| Utilities | 5 | Developer efficiency tools |
-| Resources | 23 | Design resources, image libraries, icons |
-| Gaming Communities | 7 | Gaming related communities |
-| Developer & Designer Communities | 6 | Tech communities, forums |
+All navigation data is maintained in `data/nav-data.md` using Markdown syntax:
 
-## Managing Navigation Data
-
-All data lives in `data/nav-data.md` using Markdown syntax.
-
-### Adding a Website
+### Add Website
 
 ```markdown
-- [Website Name](https://example.com) - Description | icon: https://favicon.ico | tags: react, typescript
+- [Website Name](https://example.com) - Website description | icon: https://favicon.ico | tags: react, typescript
 ```
 
-### Adding a Category
+### Add Primary Category
 
 ```markdown
-# New Category
-> id: new-category | icon: fluent-emoji:rocket
+# Category Name
+> id: category-id | icon: fluent-emoji:rocket
+
+- [Website](https://example.com) - Description
 ```
 
-### Sub-Categories
+### Add Secondary Subcategory
 
 ```markdown
 # Parent Category
-> id: parent
+> id: parent-id | icon: fluent-emoji:folder
 
-## Sub Category
-> id: child-1 | icon: fluent-emoji:star
+## Subcategory Name
+> id: child-id | icon: fluent-emoji:star
 
 - [Website](https://example.com) - Description
 ```
@@ -140,45 +88,119 @@ All data lives in `data/nav-data.md` using Markdown syntax.
 
 | Field | Required | Description |
 |-------|----------|-------------|
-| `title` | ✅ | Website title |
-| `url` | ✅ | Website URL |
-| `description` | ❌ | Website description |
-| `icon` | ❌ | Icon URL (auto-matched from tags if omitted) |
-| `tags` | ❌ | Comma-separated tags for search & icon matching |
-| `hot` | ❌ | Mark as trending |
-| `new` | ❌ | Mark as new |
+| Title | ✅ | `[Website Name](url)` |
+| URL | ✅ | Website link |
+| Description | ✅ | Text after `-` |
+| icon | ❌ | Icon URL or Iconify icon name (auto-matched if empty) |
+| tags | ❌ | Tags (comma-separated), used for search and icon matching |
 
-## Build Pipeline
+## 🎨 How to Switch Icons
+
+### Method 1: Use Iconify Icons (Recommended)
+
+```markdown
+- [Vue.js](https://vuejs.org/) - Progressive JavaScript Framework | icon: logos:vue | tags: vue, framework
+```
+
+### Method 2: Use Website Favicon
+
+```markdown
+- [GitHub](https://github.com/) - Code hosting platform | icon: https://github.com/favicon.ico | tags: git, hosting
+```
+
+### Method 3: Auto-match (Leave Empty)
+
+```markdown
+- [React](https://react.dev/) - Declarative UI library | tags: react, javascript
+```
+
+The system will automatically match the corresponding tech stack icon based on `tags`.
+
+## 🌟 Why Use Iconify Icon Library
+
+This project uses [Iconify](https://iconify.design) as the icon solution with the following advantages:
+
+| Feature | Description |
+|---------|-------------|
+| 🎨 **Colorful Icons** | Supports `logos:`, `fluent-emoji:` and other colorful icon sets, more beautiful than monochrome |
+| 📦 **Massive Icons** | 200,000+ icons covering all mainstream tech stacks and brand logos |
+| ⚡ **On-demand Loading** | Only loads used icons, no performance impact |
+| 🔍 **Easy to Find** | [Icônes](https://icones.js.org) provides visual icon search |
+| 💡 **Smart Matching** | Auto-matches best icon based on URL and tags |
+
+### Common Icon Sets
+
+| Icon Set | Prefix | Examples |
+|----------|--------|----------|
+| Tech Logos | `logos:` | `logos:vue`, `logos:react`, `logos:typescript` |
+| Colorful Emoji | `fluent-emoji:` | `fluent-emoji:rocket`, `fluent-emoji:robot` |
+| Material Design | `mdi:` | `mdi:home`, `mdi:github` |
+| Simple Icons | `simple-icons:` | `simple-icons:github`, `simple-icons:nuxt` |
+
+### Finding Icons
+
+Visit [Icônes](https://icones.js.org) to search for icons, then copy the icon name to use.
+
+## 📊 Project Data
+
+Currently featuring **250+** website resources across **14** main categories:
+
+| Category | Description |
+|----------|-------------|
+| AI Tools | AI Navigation, Writing, Dev Frameworks, Local Runtime, API, Coding Assistants, Visual Platforms |
+| Web3.0 | Blockchain, DeFi, NFT, Smart Contracts |
+| Frontend Ecosystem | React/Vue/Angular/Svelte, Build Tools, WebGL 3D, AI Dev Libraries, WebGIS Maps |
+| Node.js Frameworks | Web Frameworks, Multithreading/Concurrency, Database ORM |
+| Go Ecosystem | Gin, Echo, Fiber and other mainstream frameworks |
+| Mobile Development | Flutter, React Native, uni-app, etc. |
+| Desktop Apps | Electron, Tauri |
+| More... | Game Engines, Utilities, Resources, Developer Communities |
+
+## 🛠 Tech Stack
+
+| Technology | Purpose | Version |
+|------------|---------|---------|
+| [Nuxt 3](https://nuxt.com) | Full-stack Framework (SSG) | ^3.14 |
+| [Vue 3](https://vuejs.org) | Progressive JavaScript Framework | ^3.5 |
+| [TypeScript](https://www.typescriptlang.org) | Type Safety | ^5.x |
+| [Element Plus](https://element-plus.org) | Vue 3 Component Library | ^2.9 |
+| [Tailwind CSS](https://tailwindcss.com) | Atomic CSS Framework | ^3.x |
+| [Iconify](https://iconify.design) | Unified Icon Framework | ^4.1 |
+
+## 📁 Project Structure
 
 ```
-nav-data.md ──(build:before hook)──> scripts/build-nav-data.mjs ──> nav-data.generated.json ──> SSG output
+one-nav-ssg/
+├── data/
+│   ├── nav-data.md              # ⭐ Navigation data source (single source of truth)
+│   ├── nav-data.ts              # Data reading layer
+│   └── nav-data.generated.json  # Build artifact (do not edit manually)
+├── scripts/
+│   └── build-nav-data.mjs       # Build-time MD → JSON parser
+├── pages/
+│   ├── index.vue                # Home page
+│   ├── about.vue                # About page
+│   └── detail/[id].vue          # Site detail page
+├── components/
+│   ├── layout/                  # Layout components
+│   ├── nav/                     # Navigation components
+│   └── common/                  # Common components
+├── nuxt.config.ts               # Nuxt configuration
+└── app.vue                      # App entry
 ```
 
-1. Edit `data/nav-data.md`
-2. Run `npm run generate` (auto-triggers parser)
-3. Parser generates `data/nav-data.generated.json`
-4. Nuxt reads JSON and produces SSG build
-
-## Deployment
-
-After `npm run generate`, deploy `.output/public/` to:
-
-- **Vercel** / **Netlify** (recommended, auto-deploy)
-- **GitHub Pages** / **Cloudflare Pages** / **Gitee Pages**
-- **Nginx** / Apache / any static hosting
-
-## Browser Support
+## 🌐 Browser Support
 
 Chrome 90+ / Firefox 88+ / Safari 14+ / Edge 90+
 
-## License
+## 📄 License
 
 MIT
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
 - [Nuxt 3](https://nuxt.com) · [Tailwind CSS](https://tailwindcss.com) · [Element Plus](https://element-plus.org) · [Iconify](https://iconify.design) · [One Nav](https://www.iotheme.cn)
 
 ---
 
-**Requires**: Node.js 18+
+**Requirements**: Node.js 18+

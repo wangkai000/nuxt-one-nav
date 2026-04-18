@@ -35,32 +35,22 @@
 // 控制初始加载遮罩
 const isLoaded = ref(false)
 
-// Fallback 定时器，防止 hydration 失败导致遮罩一直显示
-let fallbackTimer: ReturnType<typeof setTimeout> | null = null
+// 使用 Nuxt 的 page:finish 钩子监听页面加载完成
+const nuxtApp = useNuxtApp()
 
-onMounted(() => {
-  // DOM 加载完成后隐藏遮罩
-  nextTick(() => {
-    setTimeout(() => {
-      isLoaded.value = true
-    }, 800) // 最小显示 800ms，避免闪烁
-  })
+nuxtApp.hook('page:finish', () => {
+  // 页面加载完成后隐藏遮罩
+  isLoaded.value = true
 })
 
 // Fallback: 如果 5 秒后仍未加载完成，强制隐藏遮罩
 onMounted(() => {
-  fallbackTimer = setTimeout(() => {
+  setTimeout(() => {
     if (!isLoaded.value) {
       isLoaded.value = true
-      console.warn('SSR hydration 可能失败，已强制隐藏加载遮罩')
+      console.warn('页面加载超时，已强制隐藏加载遮罩')
     }
   }, 5000)
-})
-
-onUnmounted(() => {
-  if (fallbackTimer) {
-    clearTimeout(fallbackTimer)
-  }
 })
 
 // Element Plus 暗色模式支持
