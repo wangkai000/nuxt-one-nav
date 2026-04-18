@@ -1,7 +1,7 @@
 // 导航数据 API
 // 从 JSON 文件读取数据，提供 API 接口
 
-import navDataJson from '../../data/nav-data.json'
+import navDataJson from '../../data/nav-data.generated.json'
 import type { NavItem, Category } from '~/types/nav'
 
 // 类型转换

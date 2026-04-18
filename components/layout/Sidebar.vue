@@ -76,12 +76,6 @@
               <span>网站提交</span>
             </template>
           </el-menu-item>
-          <el-menu-item index="friends" @click="openFriends">
-            <Icon icon="fluent-emoji:handshake" style="width: 20px; height: 20px; min-width: 20px; min-height: 20px; margin-right: 12px;" />
-            <template #title>
-              <span>友情链接</span>
-            </template>
-          </el-menu-item>
           <el-menu-item index="about" @click="openAbout">
             <Icon icon="fluent-emoji:information" style="width: 20px; height: 20px; min-width: 20px; min-height: 20px; margin-right: 12px;" />
             <template #title>
@@ -137,20 +131,7 @@ const handleSelect = async (index: string) => {
 
 // 打开网站提交
 const openSubmit = () => {
-  // 可以跳转到提交页面或打开对话框
-  ElMessage.info('这只是一个资源导航站的模板而已...')
-}
-
-// 打开友情链接
-const openFriends = () => {
-  // 滚动到页面底部的友情链接区域
-  const element = document.getElementById('friendship-links')
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  } else {
-    // 如果找不到，滚动到页面底部
-    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
-  }
+  window.open('https://github.com/wangkai000/nuxt-one-nav/issues', '_blank')
 }
 
 // 打开关于

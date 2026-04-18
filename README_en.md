@@ -1,257 +1,175 @@
-# My Nuxt Nav
+﻿# MyNuxtNav
 [中文](./README.md) | [English](./README_en.md)
 
-A static navigation site based on **Nuxt 3 + TypeScript + Element Plus + Tailwind CSS**, faithfully replicating the One Nav template's UI style.
+A static navigation site built with **Nuxt 3 + TypeScript + Element Plus + Tailwind CSS**, faithfully replicating the One Nav UI style. Navigation data is managed in Markdown and auto-generated to JSON at build time.
 
 ## ✨ Features
 
-- 🎨 **Beautiful UI** - Element Plus components + Tailwind CSS styling
-- 🌓 **Dark Mode** - Auto/manual toggle with full adaptation
-- 🔍 **Real-time Search** - Top bar search box with ⌘K/Ctrl+K shortcuts
-- 📱 **Responsive** - Element Plus breakpoint system for perfect multi-device support
-- ⚡ **SSG** - Static generation, easy deployment, blazing fast access
-- 🧭 **Sidebar Menu** - Element Plus Menu component with two-level categories
-- 🎯 **Keyboard Shortcuts** - ⌘K to focus search, Esc to clear
-- 💎 **Fine Details** - Hover animations, gradient borders, badge markers
-- 🎨 **Colorful Icons** - Iconify colored icons for richer visuals
-- 🚀 **Back to Top** - Shows back-to-top button after scrolling
-- ⏳ **Loading Animation** - Nuxt loading indicator + Element Plus loading states
-- 🔗 **External Links** - Quick access to GitHub and Gitee
+- 🎨 **Beautiful UI** — Element Plus components + Tailwind CSS styling
+- 🌓 **Dark Mode** — Auto/manual toggle with full adaptation
+- 🔍 **Real-time Search** — Top bar search with ⌘K / Ctrl+K shortcuts
+- 📱 **Responsive** — Desktop & mobile with drawer menu on small screens
+- ⚡ **SSG** — Static generation, easy deployment, blazing fast
+- 🧭 **Sidebar Menu** — Two-level category support
+- 🎯 **Keyboard Shortcuts** — ⌘K to focus search, Esc to clear
+- 💎 **Fine Details** — Hover animations, gradient borders, badge markers
+- 🎨 **Colorful Icons** — Iconify icons + smart tech-stack icon matching
+- 🚀 **Back to Top** — Scroll-triggered back-to-top button
+- ⏳ **Loading Animation** — Nuxt + Element Plus loading states
+- 📝 **Markdown Data Source** — Manage nav data in MD, auto-parsed at build
+- 🔗 **External Links** — Quick access to GitHub & Gitee
 
 ## Tech Stack
 
 | Technology | Purpose | Version |
 |------------|---------|---------|
-| [Nuxt 3](https://nuxt.com) | Full-stack framework (App Router + SSG) | ^3.x |
-| [Vue 3](https://vuejs.org) | Progressive JavaScript framework | ^3.x |
+| [Nuxt 3](https://nuxt.com) | Full-stack framework (App Router + SSG) | ^3.14 |
+| [Vue 3](https://vuejs.org) | Progressive JavaScript framework | ^3.5 |
 | [TypeScript](https://www.typescriptlang.org) | Type safety | ^5.x |
+| [Element Plus](https://element-plus.org) | Vue 3 component library | ^2.9 |
 | [Tailwind CSS](https://tailwindcss.com) | Atomic CSS framework | ^3.x |
-| [Element Plus](https://element-plus.org) | Vue 3 component library | ^2.x |
-| [Iconify](https://iconify.design) | Unified icon framework | ^1.x |
-| [@iconify/vue](https://iconify.design/docs/icon-components/vue) | Vue icon component | ^4.x |
-| [@nuxtjs/color-mode](https://color-mode.nuxtjs.org) | Dark mode support | ^3.x |
-| [Vite](https://vitejs.dev) | Build tool | ^5.x |
+| [Iconify](https://iconify.design) | Unified icon framework | ^4.1 |
+| [@nuxtjs/color-mode](https://color-mode.nuxtjs.org) | Dark mode support | ^3.5 |
+| [Vite](https://vitejs.dev) | Build tool | ^6.x |
 
 ## Quick Start
 
-### 1. Install Dependencies
-
 ```bash
-cd one-nav-ssg
 npm install
-```
-
-### 2. Development Mode
-
-```bash
-npm run dev
-```
-
-Visit http://localhost:3000
-
-### 3. Build and Preview
-
-```bash
-# Build production version
-npm run build
-
-# Generate static files
-npm run generate
-
-# Preview generated result
-npm run preview
+npm run dev          # http://localhost:3000
+npm run generate     # SSG with auto MD → JSON parsing
+npm run preview      # Preview build output
 ```
 
 ## Project Structure
 
 ```
 one-nav-ssg/
-├── components/              # Components
-│   ├── common/             # Common components
-│   ├── layout/             # Layout components
-│   │   ├── AppHeader.vue   # Top navigation bar
-│   │   ├── AppFooter.vue   # Footer
-│   │   └── Sidebar.vue     # Sidebar menu
-│   ├── nav/                # Navigation components
-│   │   ├── NavCard.vue     # Website card
-│   │   ├── NavGrid.vue     # Grid layout
+├── components/
+│   ├── common/              # Common components
+│   ├── layout/
+│   │   ├── AppHeader.vue    # Top navigation bar
+│   │   ├── AppFooter.vue    # Footer
+│   │   └── Sidebar.vue      # Sidebar menu (two-level categories)
+│   ├── nav/
+│   │   ├── NavCard.vue      # Website card (smart icon matching)
+│   │   ├── NavGrid.vue      # Grid layout + filtering
 │   │   └── SearchBar.vue    # Search bar
-│   ├── BackToTop.vue       # Back to top button
-│   └── LoadingIndicator.vue # Loading indicator
-├── composables/            # Composables
-│   ├── useSearch.ts       # Search logic
-│   └── useTheme.ts        # Theme logic
-├── data/                  # Data
-│   └── nav-data.ts        # Navigation data (200+ website resources)
-├── layouts/               # Page layouts
-│   └── default.vue        # Default layout (with mobile drawer)
-├── pages/                 # Page routes
-│   └── index.vue          # Home page
-├── plugins/               # Plugins
-├── public/                # Static assets
-├── types/                 # TypeScript types
-│   └── nav.ts             # Navigation type definitions
-├── assets/                # Style assets
-│   └── css/
-│       └── main.css       # Global styles
-├── app.vue                # App entry
-├── nuxt.config.ts         # Nuxt config
-├── tailwind.config.js     # Tailwind config
-└── tsconfig.json          # TS config
+│   ├── BackToTop.vue
+│   └── LoadingIndicator.vue
+├── composables/
+│   ├── useSearch.ts         # Search logic
+│   └── useTheme.ts          # Theme logic
+├── data/
+│   ├── nav-data.md          # ⭐ Data source (Markdown, single source of truth)
+│   ├── nav-data.ts          # Data reader (imports from generated JSON)
+│   └── nav-data.generated.json  # Build artifact, do not edit
+├── scripts/
+│   └── build-nav-data.mjs   # Build-time MD → JSON parser
+├── server/api/
+│   └── nav.get.ts           # Nav data API (search, category filter)
+├── types/
+│   └── nav.ts               # TypeScript type definitions
+├── pages/
+│   ├── index.vue            # Home (Hero + NavGrid)
+│   └── about.vue            # About page
+├── layouts/
+│   └── default.vue          # Default layout (mobile drawer)
+├── nuxt.config.ts           # Nuxt config (with build:before hook)
+├── app.vue                  # App entry
+└── package.json
 ```
 
 ## Data Categories
 
-Currently featuring **200+** quality website resources, categorized as follows:
+Featuring **276** websites across **20** categories:
 
 | Category | Count | Description |
 |----------|-------|-------------|
-| 🤖 AI Tools | 11 | ChatGPT, Claude, Midjourney, etc. |
-| ⬡ Web3.0 | 20 | Blockchain, DeFi, NFT related |
-| 🦊 Web3 UI Libraries | 13 | RainbowKit, Web3Modal, Ant Design Web3, etc. |
-| ⬡ Smart Contract Frameworks | 7 | Hardhat, Foundry, Truffle, etc. |
-| 📄 Smart Contract Languages | 8 | Solidity, Vyper, Rust(Solana), etc. |
-| 📜 Frontend Frameworks | 24 | React/Vue/other frameworks (two-level menu) |
-| 🟩 Node.js Frameworks | 14 | Express, Koa, NestJS, etc. |
-| 🥯 Bun Ecosystem | 8 | Bun runtime and related tools |
-| 🌊 CSS Frameworks | 8 | Tailwind CSS, Bootstrap, etc. |
-| ⚡ Build Tools | 7 | Vite, Webpack, Rollup, etc. |
-| 📚 UI Component Libraries | 9 | Element Plus, Ant Design, etc. |
-| 🎮 Game Engines | 9 | Unity, Unreal, Godot, etc. |
-| 🧰 Utilities | 5 | Development efficiency tools |
-| 🗺️ Resource Navigation | 23 | Design resources, image libraries, icons |
-| 🎮 Gaming Communities | 7 | Gaming related communities |
-| 👨‍💻 Developer Communities | 6 | Tech communities, forums |
-| 📖 Learning | 1 | Learning resources |
+| Featured | 1 | Editor's picks |
+| AI Tools | 11 | ChatGPT, Claude, Midjourney, etc. |
+| Web3.0 | 20 | Blockchain, DeFi, NFT related |
+| Web3 Libraries | 13 | Ethers.js, Web3.js, etc. |
+| Web3 Contract Frameworks | 7 | Hardhat, Foundry, Truffle, etc. |
+| Web3 Contract Languages | 8 | Solidity, Vyper, Rust(Solana), etc. |
+| Frontend Frameworks | 75 | React/Vue/Angular/Svelte (7 sub-categories) |
+| Node.js Frameworks | 12 | Express, Koa, NestJS (2 sub-categories) |
+| Go Ecosystem | 12 | Gin, Echo, Fiber, etc. |
+| Mobile Development | 8 | Flutter, React Native, etc. |
+| Desktop Apps | 6 | Electron, Tauri, etc. |
+| Bun Ecosystem | 5 | Bun runtime & related tools |
+| CSS Frameworks | 8 | Tailwind CSS, Bootstrap, etc. |
+| Build Tools | 28 | Vite, Webpack, Rollup, esbuild, etc. |
+| UI Component Libraries | 60 | Element Plus, Ant Design, shadcn, etc. |
+| Game Engines | 9 | Unity, Unreal, Godot, etc. |
+| Utilities | 5 | Developer efficiency tools |
+| Resources | 23 | Design resources, image libraries, icons |
+| Gaming Communities | 7 | Gaming related communities |
+| Developer & Designer Communities | 6 | Tech communities, forums |
 
-## Customization
+## Managing Navigation Data
+
+All data lives in `data/nav-data.md` using Markdown syntax.
 
 ### Adding a Website
 
-Edit `data/nav-data.ts`:
-
-```typescript
-{
-  id: 'unique-id',
-  title: 'Website Name',
-  description: 'Website description',
-  url: 'https://example.com',
-  icon: 'https://example.com/favicon.ico', // Optional
-  tags: ['tag1', 'tag2'],
-  category: 'category-id',
-  order: 1,
-}
+```markdown
+- [Website Name](https://example.com) - Description | icon: https://favicon.ico | tags: react, typescript
 ```
 
 ### Adding a Category
 
-Edit the `categories` array in `data/nav-data.ts`:
-
-```typescript
-{
-  id: 'new-category',
-  name: 'New Category',
-  icon: 'fluent-emoji:icon-name'  // Use Iconify colored icons
-}
+```markdown
+# New Category
+> id: new-category | icon: fluent-emoji:rocket
 ```
 
-### Two-Level Categories
+### Sub-Categories
 
-Two-level menu structure is supported:
+```markdown
+# Parent Category
+> id: parent
 
-```typescript
-{
-  id: 'parent-category',
-  name: 'Parent Category',
-  icon: 'fluent-emoji:icon',
-  children: [
-    { id: 'child-1', name: 'Child 1', icon: 'fluent-emoji:icon1' },
-    { id: 'child-2', name: 'Child 2', icon: 'fluent-emoji:icon2' }
-  ]
-}
+## Sub Category
+> id: child-1 | icon: fluent-emoji:star
+
+- [Website](https://example.com) - Description
 ```
 
-## Element Plus Components
+### Field Reference
 
-This project extensively uses Element Plus components:
+| Field | Required | Description |
+|-------|----------|-------------|
+| `title` | ✅ | Website title |
+| `url` | ✅ | Website URL |
+| `description` | ❌ | Website description |
+| `icon` | ❌ | Icon URL (auto-matched from tags if omitted) |
+| `tags` | ❌ | Comma-separated tags for search & icon matching |
+| `hot` | ❌ | Mark as trending |
+| `new` | ❌ | Mark as new |
 
-| Component | Purpose | Location |
-|-----------|---------|----------|
-| `el-container` | Page layout container | `layouts/default.vue` |
-| `el-header` | Top bar | `layouts/default.vue` |
-| `el-aside` | Sidebar | `components/layout/Sidebar.vue` |
-| `el-main` | Main content area | `layouts/default.vue` |
-| `el-menu` | Navigation menu | `components/layout/Sidebar.vue` |
-| `el-sub-menu` | Two-level menu | `components/layout/Sidebar.vue` |
-| `el-menu-item` | Menu item | `components/layout/Sidebar.vue` |
-| `el-drawer` | Mobile drawer menu | `layouts/default.vue` |
-| `el-button` | Button | `components/layout/AppHeader.vue` |
-| `el-input` | Search input | Top bar search |
-| `el-scrollbar` | Scrollbar | `components/layout/Sidebar.vue` |
+## Build Pipeline
 
-### Theme Customization
-
-Element Plus theme is configured via `nuxt.config.ts`:
-
-```typescript
-elementPlus: {
-  themes: ['dark'],
-  defaultLocale: 'zh-cn'
-}
+```
+nav-data.md ──(build:before hook)──> scripts/build-nav-data.mjs ──> nav-data.generated.json ──> SSG output
 ```
 
-Dark mode is automatically switched via `@nuxtjs/color-mode`.
+1. Edit `data/nav-data.md`
+2. Run `npm run generate` (auto-triggers parser)
+3. Parser generates `data/nav-data.generated.json`
+4. Nuxt reads JSON and produces SSG build
 
 ## Deployment
 
-After generating static files, the `dist/` directory can be directly deployed to:
+After `npm run generate`, deploy `.output/public/` to:
 
-- **Vercel** / Netlify (Recommended)
-- **GitHub Pages**
-- **Cloudflare Pages**
-- **Gitee Pages**
-- **Nginx** / Apache
-- **Any static hosting service**
-
-### Gitee Deployment
-
-```bash
-# Push to Gitee repository
-git push origin main
-
-# Enable Gitee Pages in repository settings
-```
-
-### Vercel Deployment Example
-
-```bash
-# 1. Install Vercel CLI
-npm i -g vercel
-
-# 2. Login
-vercel login
-
-# 3. Deploy
-vercel --prod
-```
-
-Or simply push code to GitHub and connect Vercel for automatic deployment.
-
-## Performance Optimization
-
-- ✅ Static Generation (SSG) - No server required
-- ✅ Lazy icon loading - Performance optimization
-- ✅ Code splitting
-- ✅ Tailwind JIT on-demand generation
-- ✅ Gzip/Brotli compression
-- ✅ Real-time loading indicator
+- **Vercel** / **Netlify** (recommended, auto-deploy)
+- **GitHub Pages** / **Cloudflare Pages** / **Gitee Pages**
+- **Nginx** / Apache / any static hosting
 
 ## Browser Support
 
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
+Chrome 90+ / Firefox 88+ / Safari 14+ / Edge 90+
 
 ## License
 
@@ -259,14 +177,8 @@ MIT
 
 ## Acknowledgments
 
-- [Nuxt 3](https://nuxt.com)
-- [Tailwind CSS](https://tailwindcss.com)
-- [Element Plus](https://element-plus.org)
-- [Iconify](https://iconify.design)
-- [One Nav](https://www.iotheme.cn)
+- [Nuxt 3](https://nuxt.com) · [Tailwind CSS](https://tailwindcss.com) · [Element Plus](https://element-plus.org) · [Iconify](https://iconify.design) · [One Nav](https://www.iotheme.cn)
 
 ---
 
-**Note**: Please ensure Node.js 18+ is installed before running for the first time.
-
-**Feel free to bookmark**: MyNuxtNav | Ctrl (⌘) + D
+**Requires**: Node.js 18+

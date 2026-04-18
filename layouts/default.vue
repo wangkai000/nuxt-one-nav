@@ -60,7 +60,7 @@
 
         <!-- 底部区域 -->
         <div class="flex-shrink-0 border-t border-gray-200 dark:border-gray-800 pt-2 pb-4 px-4">
-          <!-- 底部菜单：网站提交、友情链接、关于 -->
+          <!-- 底部菜单 -->
           <div class="space-y-1">
             <div
               @click="openSubmit"
@@ -68,13 +68,6 @@
             >
               <Icon icon="fluent-emoji:plus" class="w-5 h-5 mr-3" />
               <span>网站提交</span>
-            </div>
-            <div
-              @click="openFriends"
-              class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer text-gray-700 dark:text-gray-300"
-            >
-              <Icon icon="fluent-emoji:handshake" class="w-5 h-5 mr-3" />
-              <span>友情链接</span>
             </div>
             <div
               @click="openAbout"
@@ -160,21 +153,7 @@ const handleMenuSelect = async (index: string) => {
 // 打开网站提交
 const openSubmit = () => {
   mobileMenuVisible.value = false
-  ElMessage.info('网站提交功能开发中...')
-}
-
-// 打开友情链接
-const openFriends = () => {
-  mobileMenuVisible.value = false
-  // 滚动到页面底部的友情链接区域
-  setTimeout(() => {
-    const element = document.getElementById('friendship-links')
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    } else {
-      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
-    }
-  }, 100)
+  window.open('https://github.com/wangkai000/nuxt-one-nav/issues', '_blank')
 }
 
 // 打开关于

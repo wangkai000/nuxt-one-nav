@@ -39,6 +39,17 @@ body {
   background-color: #16162a;
 }
 
+/* ─── Hero 背景图片（深色模式自动切换）─── */
+.hero-wallpaper {
+  background-image: url('/images/light.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.dark .hero-wallpaper {
+  background-image: url('/images/night.jpg');
+}
+
 /* ─── Hero 极光背景 ─── */
 .hero-gradient {
   background: linear-gradient(135deg, rgba(239, 246, 255, 0.95) 0%, rgba(199, 210, 254, 0.85) 50%, rgba(221, 214, 254, 0.9) 100%);

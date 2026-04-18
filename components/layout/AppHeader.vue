@@ -50,10 +50,7 @@
           <Icon icon="fluent-emoji:technologist" class="w-4 h-4 mr-1" />
           作者
         </a>
-        <el-button text>
-          <Icon icon="fluent-emoji:gear" class="w-4 h-4 mr-1" />
-          配置
-        </el-button>
+
       </nav>
     </div>
 

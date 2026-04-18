@@ -224,6 +224,16 @@ export default defineNuxtConfig({
     strict: true
   },
 
+  // ========== 构建钩子：MD → JSON ==========
+  hooks: {
+    'build:before'() {
+      const { execSync } = require('child_process')
+      const { resolve } = require('path')
+      const script = resolve(__dirname, 'scripts/build-nav-data.mjs')
+      execSync(`node "${script}"`, { stdio: 'inherit' })
+    }
+  },
+
   // ========== Nitro 服务器配置 ==========
   // 仅在 SSR/SSG 模式下生效
   nitro: {

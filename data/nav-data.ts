@@ -1,5 +1,6 @@
 import type { NavItem, Category } from '~/types/nav'
-import navDataRaw from './nav-data.json'
+// 从构建期生成的 JSON 读取数据（由 scripts/build-nav-data.mjs 从 nav-data.md 生成）
+import navDataRaw from './nav-data.generated.json'
 
 export type { NavItem, Category }
 

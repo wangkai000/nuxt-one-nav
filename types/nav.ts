@@ -22,8 +22,6 @@ export interface Category {
   count?: number
   bookmarks?: Bookmark[]
   children?: Category[]  // 二级子分类
-  /** 是否默认展开（仅一级分类有效） */
-  defaultOpened?: boolean
 }
 
 export interface Bookmark {
