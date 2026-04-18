@@ -62,6 +62,10 @@
 - [Stable Diffusion](https://stability.ai/) - Stable Diffusion 是开源的 AI 图像生成模型，支持本地部署和自定义训练。 | icon: https://stability.ai/favicon.ico | tags: AI, 图像, 开源, 模型
 - [Runway](https://runwayml.com/) - Runway 是 AI 视频生成平台，支持文本生成视频、图像动画化等功能。 | icon: https://runwayml.com/favicon.ico | tags: AI, 视频, 内容生成
 - [Suno](https://suno.ai/) - Suno 是 AI 音乐生成平台，通过文字描述生成完整歌曲。 | icon: https://suno.ai/favicon.ico | tags: AI, 音乐, 内容生成
+- [ComfyUI](https://github.com/comfyanonymous/ComfyUI) - ComfyUI 是最流行的节点式 Stable Diffusion 工作流引擎，支持自定义节点扩展，社区工作流生态丰富。 | icon: https://raw.githubusercontent.com/comfyanonymous/ComfyUI/master/web/assets/favicon.ico | tags: AI, ComfyUI, 工作流, Stable Diffusion
+- [ComfyUI工作流合集 - Comfyworkflows](https://comfyworkflows.com/) - ComfyUI 工作流社区，海量用户分享的 ComfyUI 工作流模板，支持搜索和分类浏览。 | icon: https://comfyworkflows.com/favicon.ico | tags: AI, ComfyUI, 工作流, 社区
+- [OpenArt ComfyUI Workflows](https://openart.ai/workflows) - OpenArt 提供大量精选 ComfyUI 工作流，可直接在线运行或下载，适合各水平用户。 | icon: https://openart.ai/favicon.ico | tags: AI, ComfyUI, 工作流, 在线运行
+- [Civitai](https://civitai.com/) - Civitai 是最大的 AI 模型和工作流分享社区，提供海量 Stable Diffusion 模型、LoRA 和 ComfyUI 工作流。 | icon: https://civitai.com/favicon.ico | tags: AI, 模型, 工作流, 社区, Stable Diffusion
 
 # Web3
 > id: web3 | icon: logos:ethereum
