@@ -25,7 +25,7 @@ const result = {
     name: 'MyNuxtNav 导航数据',
     version: '2.0.0',
     lastUpdated: new Date().toISOString().split('T')[0],
-    description: '基于 Nuxt 3 的导航站数据（Markdown 数据源）',
+    description: '基于 Nuxt 4 的导航站数据（Markdown 数据源）',
     totalSites: sites.length,
     totalCategories: categories.length
   },
