@@ -1,4 +1,4 @@
-// Nuxt 3 配置文件
+// Nuxt 4 配置文件
 // 文档: https://nuxt.com.cn/docs/configuration/configuration-reference
 
 export default defineNuxtConfig({

@@ -1,8 +1,8 @@
-# MyNuxtNav 导航站
+﻿# MyNuxtNav 导航站
 
 [中文](./README.md) | [English](./README_en.md)
 
-基于 **Nuxt 3 + TypeScript + Element Plus + Tailwind CSS** 的纯静态导航站。数据源使用 Markdown 格式管理，构建时自动生成离线 JSON，无需数据库。
+基于 **Nuxt 4 + TypeScript + Element Plus + Tailwind CSS** 的纯静态导航站。数据源使用 Markdown 格式管理，构建时自动生成离线 JSON，无需数据库。
 
 ## ✨ 特性
 
@@ -160,7 +160,7 @@ npm run generate
 
 | 技术 | 用途 | 版本 |
 |------|------|------|
-| [Nuxt 3](https://nuxt.com) | 全栈框架 (SSG) | ^3.14 |
+| [Nuxt 4](https://nuxt.com) | 全栈框架 (SSG) | ^3.14 |
 | [Vue 3](https://vuejs.org) | 渐进式 JavaScript 框架 | ^3.5 |
 | [TypeScript](https://www.typescriptlang.org) | 类型安全 | ^5.x |
 | [Element Plus](https://element-plus.org) | Vue 3 组件库 | ^2.9 |
@@ -199,7 +199,7 @@ MIT
 
 ## 🙏 致谢
 
-- [Nuxt 3](https://nuxt.com) · [Tailwind CSS](https://tailwindcss.com) · [Element Plus](https://element-plus.org) · [Iconify](https://iconify.design) · [One Nav](https://www.iotheme.cn)
+- [Nuxt 4](https://nuxt.com) · [Tailwind CSS](https://tailwindcss.com) · [Element Plus](https://element-plus.org) · [Iconify](https://iconify.design) · [One Nav](https://www.iotheme.cn)
 
 ---
 

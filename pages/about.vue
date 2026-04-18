@@ -37,7 +37,7 @@
             </li>
             <li class="flex items-start gap-3">
               <span class="text-blue-500 mt-1">•</span>
-              <span>基于 Nuxt 3 构建，体验流畅</span>
+              <span>基于 Nuxt 4 构建，体验流畅</span>
             </li>
           </ul>
         </div>
