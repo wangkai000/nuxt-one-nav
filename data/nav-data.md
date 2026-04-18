@@ -211,10 +211,6 @@
 
 - [Three.js](https://threejs.org/) - Three.js 是最流行的 WebGL 3D 图形库，提供丰富的 3D 渲染功能和便捷的 API。 | icon: https://threejs.org/favicon.ico | tags: WebGL, 3D, 图形, 渲染
 - [Babylon.js](https://www.babylonjs.com/) - Babylon.js 是功能强大的 WebGL 3D 引擎，提供游戏级渲染能力和完整的工具链。 | icon: https://www.babylonjs.com/favicon.ico | tags: WebGL, 3D, 图形, 游戏引擎
-- [PixiJS](https://pixijs.com/) - PixiJS 是快速的 2D WebGL 渲染引擎，适用于游戏、交互式媒体和可视化。 | icon: https://pixijs.com/favicon.ico | tags: WebGL, 2D, 图形, 渲染
-- [Phaser](https://phaser.io/) - Phaser 是快速、免费的 HTML5 2D 游戏框架，适合制作跨平台网页游戏。 | icon: https://phaser.io/favicon.ico | tags: WebGL, 2D, 游戏引擎, HTML5
-- [Cocos Creator](https://www.cocos.com/creator) - Cocos Creator 是一站式游戏开发平台，支持 2D/3D 游戏发布到多平台。 | icon: https://www.cocos.com/favicon.ico | tags: 游戏引擎, 2D, 3D, 跨平台
-- [Godot Engine](https://godotengine.org/) - Godot 是开源的 2D/3D 游戏引擎，轻量且功能完整。 | icon: https://godotengine.org/favicon.ico | tags: 游戏引擎, 开源, 2D, 3D
 
 ## AI开发库
 > id: frontend-ai | icon: fluent-emoji:robot
@@ -374,6 +370,9 @@
 - [GameCreator](https://gamecreator.cn/) - 支持可视化编程与 TypeScript 的游戏制作工具。 | icon: https://gamecreator.cn/favicon.ico | tags: 游戏引擎, 可视化, TypeScript
 - [星火编辑器](https://www.spark-editor.com/) - 最好的 UGC 游戏引擎，在 TapTap 和 Steam 上线超 500 款游戏。 | icon: https://www.spark-editor.com/favicon.ico | tags: 游戏引擎, UGC, TapTap
 - [GDevelop](https://gdevelop.io/) - GDevelop 是唯一具有直观、高效零代码方法的开源引擎。 | icon: https://gdevelop.io/favicon.ico | tags: 游戏引擎, 开源, 零代码
+- [PixiJS](https://pixijs.com/) - PixiJS 是快速的 2D WebGL 渲染引擎，适用于游戏、交互式媒体和可视化。 | icon: https://pixijs.com/favicon.ico | tags: WebGL, 2D, 图形, 渲染
+- [Phaser](https://phaser.io/) - Phaser 是快速、免费的 HTML5 2D 游戏框架，适合制作跨平台网页游戏。 | icon: https://phaser.io/favicon.ico | tags: WebGL, 2D, 游戏引擎, HTML5
+- [Godot Engine](https://godotengine.org/) - Godot 是开源的 2D/3D 游戏引擎，轻量且功能完整。 | icon: https://godotengine.org/favicon.ico | tags: 游戏引擎, 开源, 2D, 3D
 
 # 游戏社区
 > id: games | icon: fluent-emoji:joystick
