@@ -64,20 +64,13 @@
           </div>
           <input
             v-model="searchInput"
-            type="text"
+            type="search"
             placeholder="搜索导航"
             class="w-36 lg:w-46 h-9 pl-9 pr-4 text-sm rounded-full border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50 text-gray-900 dark:text-gray-100 placeholder:text-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
             @input="handleInput"
+            @search="handleSearchClear"
             @keydown="handleKeydown"
           />
-          <!-- 清空按钮 -->
-          <button
-            v-if="searchInput"
-            @click="clear(); searchInput = ''"
-            class="absolute inset-y-0 right-0 pr-3 flex items-center"
-          >
-            <Icon icon="fluent-emoji:cross-mark" class="w-4 h-4" />
-          </button>
         </div>
       </div>
 
@@ -160,6 +153,12 @@ const handleInput = (e: Event) => {
   const value = (e.target as HTMLInputElement).value
   searchInput.value = value
   setQuery(value)
+}
+
+// 浏览器原生 search input 清除事件
+const handleSearchClear = () => {
+  searchInput.value = ''
+  clear()
 }
 
 // 处理键盘事件
