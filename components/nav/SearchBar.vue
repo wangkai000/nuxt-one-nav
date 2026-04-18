@@ -24,12 +24,14 @@
 
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
+import { useDebounceFn } from '@vueuse/core'
 
 const { setQuery } = useSearch()
 const inputRef = ref<HTMLInputElement | null>(null)
 const localQuery = ref('')
 
-const onInput = () => setQuery(localQuery.value)
+const debouncedSearch = useDebounceFn((val: string) => setQuery(val), 300)
+const onInput = () => debouncedSearch(localQuery.value)
 const clearSearch = () => {
   localQuery.value = ''
   setQuery('')
