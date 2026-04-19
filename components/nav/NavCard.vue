@@ -1,10 +1,7 @@
 <template>
   <div
-    class="group flex flex-col items-center text-center p-4 bg-white dark:bg-[#1e1e3a] rounded-lg border border-gray-200 dark:border-gray-800 cursor-pointer transition-all duration-200 hover:-translate-y-1"
-    style="box-shadow: 0 1px 2px rgba(0,0,0,0.04);"
+    class="group flex flex-col items-center text-center p-4 bg-white dark:bg-[#1e1e3a] rounded-lg border border-gray-200 dark:border-gray-800 cursor-pointer shadow-sm hover:shadow-md transition-all duration-200 hover:-translate-y-1"
     @click="goToDetail"
-    @mouseenter="$event.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.08)'"
-    @mouseleave="$event.currentTarget.style.boxShadow = '0 1px 2px rgba(0,0,0,0.04)'"
   >
     <!-- 图标 -->
     <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800/50 dark:to-gray-700/50 flex items-center justify-center mb-3 overflow-hidden relative">

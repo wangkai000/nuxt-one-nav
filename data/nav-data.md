@@ -358,7 +358,6 @@
 - [Refero](https://refero.design/) - 设计研究指南,最大的网页和iOS UI UX设计灵感库。 | icon: https://refero.design/favicon.ico | tags: 资源, 社区, 设计
 - [Creght](https://www.creght.com/) - 一款设计师友好的建站工具 | icon: https://fsu.creght.com/project/mVnidfGADfS/lZLMxdMuGEY__logo_(1).png?w=768&fmt=webp | tags: 资源, 建站, 设计
 - [Iconfinder](https://www.iconfinder.com/) - 专业的icon素材网站，为你的设计提供灵感。 | icon: https://www.iconfinder.com/favicon.ico | tags: 资源, 图标, 设计
-- [Sketchfab](https://sketchfab.com/) - 高品质的模型素材网站，为你的设计提供丰富的素材。 | icon: https://sketchfab.com/favicon.ico | tags: 资源, 设计
 - [MakemePulse](https://2019.makemepulse.com/) - MakeMePulse 2019 创意网站合集，汇聚全球顶尖网页设计作品，每个都是艺术品级别的视觉盛宴。 | icon: https://2019.makemepulse.com/favicon.ico | tags: 设计, 资源
 - [MEK.txt](https://www.mek.gallery/) - MEK.txt Mek Gallery 是一个复古风格的资源分享网站 | icon: https://framerusercontent.com/images/GgGZEpdp0k0EuePiSwgr1d2jRtA.svg | tags: 像素, 资源
 
@@ -377,6 +376,21 @@
 - [PixiJS](https://pixijs.com/) - PixiJS 是快速的 2D WebGL 渲染引擎，适用于游戏、交互式媒体和可视化。 | icon: https://pixijs.com/favicon.ico | tags: WebGL, 2D, 图形, 渲染
 - [Phaser](https://phaser.io/) - Phaser 是快速、免费的 HTML5 2D 游戏框架，适合制作跨平台网页游戏。 | icon: https://phaser.io/favicon.ico | tags: WebGL, 2D, 游戏引擎, HTML5
 - [Godot Engine](https://godotengine.org/) - Godot 是开源的 2D/3D 游戏引擎，轻量且功能完整。 | icon: https://godotengine.org/favicon.ico | tags: 游戏引擎, 开源, 2D, 3D
+
+# 3D 建模
+> id: 3d-modeling | icon: fluent-emoji:artist-palette
+
+- [Blender](https://www.blender.org/) - Blender 是开源的 3D 创作套件，支持建模、雕刻、动画、渲染、视频编辑等完整工作流。 | icon: https://www.blender.org/wp-content/themes/btheme/assets/images/favicon/favicon-32x32.png | tags: 3D建模, 开源, 动画, 渲染
+- [Sketchfab](https://sketchfab.com/) - Sketchfab 是全球领先的 3D 模型在线发布与协作平台，支持 glTF/WebGL 实时预览和嵌入分享。 | icon: https://sketchfab.com/favicon.ico | tags: 3D模型, 在线平台, 协作, WebGL
+- [51建模网](https://www.51jianmo.com/) - 国内专业的 3D 模型素材下载平台，提供海量高质量 3D 模型资源。 | icon: https://www.51jianmo.com/favicon.ico | tags: 3D模型, 素材, 国内
+- [Cinema 4D](https://www.maxon.net/en/cinema-4d) - Cinema 4D 是专业的 3D 建模、动画和渲染软件，以易用性和强大的 MoGraph 模块著称。 | icon: https://www.maxon.net/favicon.ico | tags: 3D建模, 动画, 渲染, 视觉设计
+- [Spline](https://spline.design/) - Spline 是基于 Web 的 3D 设计工具，零门槛创建交互式 3D 场景，支持导出为 React/Vue 组件。 | icon: https://spline.design/favicon.ico | tags: 3D设计, Web, 低代码, 交互式
+- [Three.js Editor](https://threejs.org/editor/) - Three.js 官方在线编辑器，可直接在浏览器中创建和编辑 3D 场景、调整材质和灯光。 | icon: https://threejs.org/favicon.ico | tags: WebGL, 3D, 在线编辑器, Three.js
+- [PlayCanvas](https://playcanvas.com/) - PlayCanvas 是基于 WebGL 的开源 3D 游戏引擎和编辑器，支持实时协作和一键发布。 | icon: https://playcanvas.com/favicon.ico | tags: WebGL, 3D, 游戏引擎, 在线编辑器
+- [SketchUp](https://www.sketchup.com/) - SketchUp 是直观易用的 3D 建模工具，广泛用于建筑、室内设计和城市规划。 | icon: https://www.sketchup.com/favicon.ico | tags: 3D建模, 建筑, 室内设计
+- [Maya](https://www.autodesk.com/products/maya) - Maya 是 Autodesk 旗舰级 3D 动画和建模软件，影视和游戏行业的工业标准工具。 | icon: https://www.autodesk.com/favicon.ico | tags: 3D建模, 动画, 影视, 工业标准
+- [Blocks](https://www.with.in/products/blocks) - VR Blocks 是 Google 的 VR 3D 建模工具，在虚拟现实中用手势直观创建 3D 模型。 | icon: https://www.with.in/favicon.ico | tags: VR, 3D建模, Google
+- [Vectary](https://www.vectary.com/) - Vectary 是基于浏览器的 3D 设计平台，支持 AR 预览和交互式 3D 场景嵌入网页。 | icon: https://www.vectary.com/favicon.ico | tags: 3D设计, AR, Web, 低代码
 
 # 游戏社区
 > id: games | icon: fluent-emoji:joystick
