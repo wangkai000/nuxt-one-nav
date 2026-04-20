@@ -114,7 +114,7 @@
         </div>
 
         <!-- 相关推荐 -->
-        <div v-if="relatedItems.length > 0">
+        <div v-if="relatedItems.length > 0" class="bg-white dark:bg-[#1e1e3a] rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm">
           <div class="flex items-center gap-3 mb-4">
             <Icon :icon="categoryIcon" class="w-5 h-5 text-gray-400" />
             <h2 class="text-base font-bold text-gray-900 dark:text-white">同分类推荐</h2>
