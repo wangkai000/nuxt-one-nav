@@ -9,7 +9,7 @@
           class="flex items-center gap-1 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
         >
           <Icon icon="mdi:arrow-left" class="w-4 h-4" />
-          <span>导航首页</span>
+          <span>导航首页11</span>
         </button>
         <Icon icon="mdi:chevron-right" class="w-4 h-4 text-gray-300 dark:text-gray-600" />
         <button
