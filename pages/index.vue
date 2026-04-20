@@ -23,7 +23,7 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'MyNuxtNav - 发现精彩网站',
+  title: '渺途导航 - 发现精彩网站',
   meta: [{ name: 'description', content: '精心挑选的高质量网站导航' }]
 })
 </script>

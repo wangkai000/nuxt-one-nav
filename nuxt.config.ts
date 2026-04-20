@@ -160,7 +160,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       // HTML 标题
-      title: '天渺studio - 资源导航',
+      title: '渺途导航 - 发现精彩网站',
 
       // HTML 标签属性
       htmlAttrs: { lang: 'zh-CN' },
@@ -168,23 +168,23 @@ export default defineNuxtConfig({
       // Meta 标签（SEO 和社交分享）
       meta: [
         // 基础 SEO
-        { name: 'description', content: '天渺工作室的资源导航，天渺studio的资源导航。精心挑选的高质量网站导航，助你高效工作与生活。' },
-        { name: 'keywords', content: '资源导航,网站导航,天渺studio,天渺工作室,导航站点,实用工具,开发资源' },
+        { name: 'description', content: '渺途导航，精心挑选的高质量网站导航，助你高效工作与生活。' },
+        { name: 'keywords', content: '资源导航,网站导航,渺途导航,导航站点,实用工具,开发资源,AI工具' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'author', content: '天渺studio' },
         { name: 'robots', content: 'index, follow' },
 
         // Open Graph（Facebook/微信等社交平台分享）
-        { property: 'og:title', content: '天渺studio - 资源导航' },
-        { property: 'og:description', content: '天渺工作室的资源导航，天渺studio的资源导航。精心挑选的高质量网站导航，助你高效工作与生活。' },
+        { property: 'og:title', content: '渺途导航 - 发现精彩网站' },
+        { property: 'og:description', content: '渺途导航，精心挑选的高质量网站导航，助你高效工作与生活。' },
         { property: 'og:url', content: 'https://tianmiao.site' },
         { property: 'og:type', content: 'website' },
         { property: 'og:image', content: 'https://s21.ax1x.com/2024/12/22/pAXtJat.jpg' },
 
         // Twitter Card（Twitter 分享）
         { name: 'twitter:card', content: 'summary' },
-        { name: 'twitter:title', content: '天渺studio - 资源导航' },
-        { name: 'twitter:description', content: '天渺工作室的资源导航，天渺studio的资源导航。精心挑选的高质量网站导航，助你高效工作与生活。' },
+        { name: 'twitter:title', content: '渺途导航 - 发现精彩网站' },
+        { name: 'twitter:description', content: '渺途导航，精心挑选的高质量网站导航，助你高效工作与生活。' },
         { name: 'twitter:image', content: 'https://s21.ax1x.com/2024/12/22/pAXtJat.jpg' }
       ],
 

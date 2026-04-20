@@ -22,7 +22,7 @@ const { categories, sites } = parseNavMd(md)
 
 const result = {
   meta: {
-    name: 'MyNuxtNav 导航数据',
+    name: '渺途导航 导航数据',
     version: '2.0.0',
     lastUpdated: new Date().toISOString().split('T')[0],
     description: '基于 Nuxt 4 的导航站数据（Markdown 数据源）',

@@ -1,4 +1,4 @@
-# MyNuxtNav Navigation Site
+# Miaotu Navigation Site
 
 [中文](./README.md) | [English](./README_en.md)
 

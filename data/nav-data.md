@@ -1,4 +1,4 @@
-# MyNavSSG 导航数据
+# 渺途导航 导航数据
 
 > 由 nav-data.generated.json 自动生成
 
@@ -21,6 +21,7 @@
 - [AIGC工具导航](https://www.aigc.cn/) - AIGC导航，一个全网分类最全，收录最全的生成式人工智能工具导航平台。 | icon: https://www.aigc.cn/wp-content/uploads/2025/06/aigc-icon.png | tags: AI, 导航
 - [智能工具导航](https://www.coderutil.com) - 智能工具导航，国内外热门ai工具集导航。 | icon: https://www.coderutil.com/favicon.ico | tags: AI, 导航
 - [AITOP100大赛平台](https://www.aitop100.cn) - AITOP100大赛平台专注人工智能工具导航与AI赛事资讯 | icon: https://www.aitop100.cn/favicon.ico | tags: AI, 导航
+- [非猪AI导航](https://feizhuke.com/) - 为你收集整理推荐超过3万+国内外人工智能网址导航网站，文字写作、图片、音频、视频、代码等各种高效工具，让你遍览人工智能服务，先人一步，畅享未来！飞起来！ | icon: https://feizhuke.com/zhulogo1.png | tags: AI, 导航
 - [Hugging Face](https://huggingface.co/) - Hugging Face 是 AI 社区平台，提供模型、数据集和 Spaces 托管。 | icon: https://huggingface.co/favicon.ico | tags: AI, 社区, 模型, 数据集
 
 ## AI写作
@@ -28,7 +29,7 @@
 
 - [YouMind - AI 创作智能体](https://youmind.com/) - YouMind 是一个创新的创作智能体，利用生成式 AI 的力量将多样化的材料转化为富有灵感的创作。 | icon: https://youmind.com/static/assets/favicon.ico | tags: AI, 资源
 - [笔灵AI](https://ibiling.cn/) - AI智能写作工具，帮助快速生成各类文档、文章和内容 | icon: https://ibiling.cn/favicon.ico | tags: AI, 写作
-- [蛙蛙写作](https://www.wawaxiezuo.com/) - AI小说写作助手，帮助创作者提升写作效率与灵感 | icon: https://www.wawaxiezuo.com/favicon.ico | tags: AI, 写作
+- [蛙蛙写作](https://wawawriter.com/) - AI小说写作助手，帮助创作者提升写作效率与灵感 | icon: https://wawawriter.com/app/favicon.ico | tags: AI, 写作
 
 ## AI开发框架
 > id: ai-framework | icon: fluent-emoji:building-construction
