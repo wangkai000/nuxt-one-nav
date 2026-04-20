@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-[#f2f4f7] dark:bg-[#1a1a2e]">
+  <div class="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-100 dark:from-[#1a1a2e] dark:via-[#1e1e3a] dark:to-[#1a1a2e]">
     <div class="max-w-5xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
 
       <!-- 面包屑导航 -->
@@ -44,7 +44,8 @@
         <div class="max-w-2xl mx-auto space-y-5 mb-8">
 
           <!-- 卡片：图标 + 标题 -->
-          <div class="bg-white dark:bg-[#1e1e3a] rounded-2xl border border-gray-200 dark:border-gray-800 p-6">
+          <div class="bg-white dark:bg-[#1e1e3a] rounded-2xl border border-gray-200 dark:border-gray-800 p-6 relative overflow-hidden shadow-sm">
+            <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
             <div class="flex items-start gap-4">
               <!-- 大图标 -->
               <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800/50 dark:to-gray-700/50 flex items-center justify-center flex-shrink-0 overflow-hidden relative shadow-sm">
@@ -70,7 +71,7 @@
 
           <!-- 标签 -->
           <div v-if="navItem.tags && navItem.tags.length > 0"
-            class="bg-white dark:bg-[#1e1e3a] rounded-2xl border border-gray-200 dark:border-gray-800 p-5">
+            class="bg-white dark:bg-[#1e1e3a] rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm hover:shadow-md transition-shadow duration-300">
             <div class="flex flex-wrap gap-2">
               <span
                 v-for="tag in navItem.tags"
