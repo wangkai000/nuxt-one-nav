@@ -19,7 +19,7 @@
 
     <!-- 正常浏览时按分类分组（始终显示全部） -->
     <template v-else>
-      <div v-for="cat in categoriesWithItems" :key="cat.id" :id="`category-${cat.id}`" class="scroll-mt-20">
+      <div v-for="cat in categoriesWithItems" :key="cat.id" :id="`category-${cat.id}`" class="scroll-mt-20" style="content-visibility: auto; contain-intrinsic-size: 1px; contain: layout style paint;">
         <!-- 分类标题 -->
         <div class="flex items-center gap-3 mb-4">
           <Icon :name="getIconName(cat.icon)" class="w-5 h-5 text-gray-400" />

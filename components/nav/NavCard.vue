@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group flex flex-col items-center text-center p-4 bg-white dark:bg-[#1e1e3a] rounded-lg border border-gray-200 dark:border-gray-800 cursor-pointer shadow-sm hover:shadow-md transition-all duration-200 hover:-translate-y-1"
+    class="group flex flex-col items-center text-center p-4 bg-white dark:bg-[#1e1e3a] rounded-lg border border-gray-200 dark:border-gray-800 cursor-pointer shadow-sm hover:shadow-md transition-all duration-200 hover:will-change-transform hover:-translate-y-1"
     @click="goToDetail"
   >
     <!-- 图标 -->
@@ -41,6 +41,7 @@
 
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
+import { shallowRef } from 'vue'
 import type { NavItem } from '~/types/nav'
 
 const props = defineProps<{ item: NavItem }>()
@@ -53,8 +54,8 @@ const goToDetail = () => {
 }
 
 // 图标加载状态（组件内部局部 ref，不需要 reactive Map）
-const iconLoaded = ref(false)
-const iconError = ref(false)
+const iconLoaded = shallowRef(false)
+const iconError = shallowRef(false)
 
 // 从网址提取域名获取 favicon
 const getFaviconFromUrl = (url: string): string => {
@@ -165,3 +166,12 @@ const getFallbackIcon = (item: NavItem): string => {
   return 'fluent-emoji:globe-with-meridians'
 }
 </script>
+
+
+<style scoped>
+/* will-change 优化：提前告知浏览器 transform 会变化 */
+.hover\:will-change-transform {
+  will-change: transform;
+  transform: translateZ(0);
+}
+</style>
