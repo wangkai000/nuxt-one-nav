@@ -22,6 +22,7 @@
 - [智能工具导航](https://www.coderutil.com) - 智能工具导航，国内外热门ai工具集导航。 | icon: https://www.coderutil.com/favicon.ico | tags: AI, 导航
 - [AITOP100大赛平台](https://www.aitop100.cn) - AITOP100大赛平台专注人工智能工具导航与AI赛事资讯 | icon: https://www.aitop100.cn/favicon.ico | tags: AI, 导航
 - [Hugging Face](https://huggingface.co/) - Hugging Face 是 AI 社区平台，提供模型、数据集和 Spaces 托管。 | icon: https://huggingface.co/favicon.ico | tags: AI, 社区, 模型, 数据集
+- [AIHub](https://www.aihub.cn/) - AIHub 收录了国内外 1600+ 优质 AI 工具，覆盖多个分类，帮助用户快速找到合适的 AI 产品。 | icon: https://www.aihub.cn/favicon.ico | tags: AI, 导航
 
 ## AI写作
 > id: ai-writing | icon: fluent-emoji:pen
@@ -66,6 +67,11 @@
 - [ComfyUI工作流合集 - Comfyworkflows](https://comfyworkflows.com/) - ComfyUI 工作流社区，海量用户分享的 ComfyUI 工作流模板，支持搜索和分类浏览。 | icon: https://comfyworkflows.com/favicon.ico | tags: AI, ComfyUI, 工作流, 社区
 - [OpenArt ComfyUI Workflows](https://openart.ai/workflows) - OpenArt 提供大量精选 ComfyUI 工作流，可直接在线运行或下载，适合各水平用户。 | icon: https://openart.ai/favicon.ico | tags: AI, ComfyUI, 工作流, 在线运行
 - [Civitai](https://civitai.com/) - Civitai 是最大的 AI 模型和工作流分享社区，提供海量 Stable Diffusion 模型、LoRA 和 ComfyUI 工作流。 | icon: https://civitai.com/favicon.ico | tags: AI, 模型, 工作流, 社区, Stable Diffusion
+
+## AI助手/Agent
+> id: ai-agent | icon: fluent-emoji:robot
+
+- [Hermes Agent](https://hermes-agent.nousresearch.com/) - Hermes Agent 是一个随你成长的智能助手，提供丰富的功能和自动化工具，包括持久记忆、文件感知上下文、浏览器自动化和语音对话。 | icon: https://hermes-agent.nousresearch.com/icon.png | tags: AI, 助手, Agent, 自动化
 
 # Web3
 > id: web3 | icon: logos:ethereum
