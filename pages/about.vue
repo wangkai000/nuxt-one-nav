@@ -8,7 +8,7 @@
       <!-- 内容 -->
       <div class="relative px-8 py-12 md:py-16">
         <h1 class="inline px-4 py-2 rounded-lg bg-white/90 dark:bg-[#1a1a2e]/90 text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-          关于渺途导航
+          关于星途导航
         </h1>
       </div>
     </div>
@@ -53,7 +53,7 @@
 
 <script setup lang="ts">
 useHead({
-  title: '关于 - 渺途导航',
-  meta: [{ name: 'description', content: '关于渺途导航 - 发现精彩网站' }]
+  title: '关于 - 星途导航',
+  meta: [{ name: 'description', content: '关于星途导航 - 发现精彩网站' }]
 })
 </script>

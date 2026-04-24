@@ -376,6 +376,6 @@ const fallbackIcon = computed(() => {
 
 // ─── SEO ───────────────────────────────────────────────
 useHead({
-  title: computed(() => navItem.value ? `${navItem.value.title} - 渺途导航` : '未找到'),
+  title: computed(() => navItem.value ? `${navItem.value.title} - 星途导航` : '未找到'),
 })
 </script>

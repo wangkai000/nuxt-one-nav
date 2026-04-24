@@ -11,7 +11,7 @@
               <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" class="logo-polygon"/>
             </svg>
           </div>
-          <div class="logo-text">渺途导航</div>
+          <div class="logo-text">星途导航</div>
         </div>
         <!-- 进度条 -->
         <div class="progress-bar">

@@ -1,4 +1,4 @@
-# 渺途导航 导航数据
+# 星途导航 导航数据
 
 > 由 nav-data.generated.json 自动生成
 

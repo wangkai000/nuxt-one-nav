@@ -1,4 +1,4 @@
-﻿# 渺途导航
+﻿# 星途导航
 
 [中文](./README.md) | [English](./README_en.md)
 

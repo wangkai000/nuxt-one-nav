@@ -20,7 +20,7 @@
               <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
             </svg>
           </div>
-          <span class="text-base font-bold text-gray-900 dark:text-white">渺途导航</span>
+          <span class="text-base font-bold text-gray-900 dark:text-white">星途导航</span>
         </div>
       </template>
 
