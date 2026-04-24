@@ -14,7 +14,7 @@
               <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
             </svg>
           </div>
-          <span v-show="!collapsed" class="text-base font-bold text-gray-900 dark:text-white">MyNuxtNav</span>
+          <span v-show="!collapsed" class="text-base font-bold text-gray-900 dark:text-white">星途导航</span>
         </a>
       </div>
 

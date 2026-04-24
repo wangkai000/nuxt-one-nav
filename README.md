@@ -1,4 +1,4 @@
-﻿# MyNuxtNav 导航站
+﻿# 星途导航
 
 [中文](./README.md) | [English](./README_en.md)
 

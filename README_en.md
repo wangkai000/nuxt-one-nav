@@ -1,4 +1,4 @@
-# MyNuxtNav Navigation Site
+# Xingtong Navigation Site
 
 [中文](./README.md) | [English](./README_en.md)
 

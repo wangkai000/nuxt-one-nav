@@ -1,6 +1,8 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-100 dark:from-[#1a1a2e] dark:via-[#1e1e3a] dark:to-[#1a1a2e]">
+  <div class="min-h-screen  from-gray-50 via-white to-gray-100 dark:from-[#1a1a2e] dark:via-[#1e1e3a] dark:to-[#1a1a2e]">
     <div class="max-w-5xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+      <!-- 主内容卡片 -->
+      <div class="bg-white/80 dark:bg-[#1e1e3a]/80 backdrop-blur-sm rounded-3xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-6 sm:p-8">
 
       <!-- 面包屑导航 -->
       <nav class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6">
@@ -44,7 +46,7 @@
         <div class="max-w-2xl mx-auto space-y-5 mb-8">
 
           <!-- 卡片：图标 + 标题 -->
-          <div class="bg-white dark:bg-[#1e1e3a] rounded-2xl border border-gray-200 dark:border-gray-800 p-6 relative overflow-hidden shadow-sm">
+          <div class="bg-white dark:bg-[#252547] rounded-2xl border border-gray-200 dark:border-gray-800 p-6 relative overflow-hidden shadow-sm">
             <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
             <div class="flex items-start gap-4">
               <!-- 大图标 -->
@@ -71,7 +73,7 @@
 
           <!-- 标签 -->
           <div v-if="navItem.tags && navItem.tags.length > 0"
-            class="bg-white dark:bg-[#1e1e3a] rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm hover:shadow-md transition-shadow duration-300">
+            class="bg-white dark:bg-[#252547] rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm hover:shadow-md transition-shadow duration-300">
             <div class="flex flex-wrap gap-2">
               <span
                 v-for="tag in navItem.tags"
@@ -84,7 +86,7 @@
           </div>
 
           <!-- 快捷操作 -->
-          <div class="bg-white dark:bg-[#1e1e3a] rounded-2xl border border-gray-200 dark:border-gray-800 p-5 space-y-3">
+          <div class="bg-white dark:bg-[#252547] rounded-2xl border border-gray-200 dark:border-gray-800 p-5 space-y-3">
             <!-- 访问官网 -->
             <a
               :href="navItem.url"
@@ -114,13 +116,13 @@
         </div>
 
         <!-- 相关推荐 -->
-        <div v-if="relatedItems.length > 0" class="bg-white dark:bg-[#1e1e3a] rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm">
+        <div v-if="relatedItems.length > 0" class="bg-white dark:bg-[#252547] rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm">
           <div class="flex items-center gap-3 mb-4">
             <Icon :icon="categoryIcon" class="w-5 h-5 text-gray-400" />
             <h2 class="text-base font-bold text-gray-900 dark:text-white">同分类推荐</h2>
             <span class="text-sm text-gray-500">({{ relatedItems.length }})</span>
           </div>
-          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
             <div
               v-for="item in relatedItems"
               :key="item.id"
@@ -151,9 +153,10 @@
         </div>
 
         <!-- 底部留白 -->
-        <div class="h-12"></div>
+        <div class="h-8"></div>
 
       </template>
+      </div>
     </div>
   </div>
 </template>
@@ -373,6 +376,6 @@ const fallbackIcon = computed(() => {
 
 // ─── SEO ───────────────────────────────────────────────
 useHead({
-  title: computed(() => navItem.value ? `${navItem.value.title} - MyNuxtNav` : '未找到'),
+  title: computed(() => navItem.value ? `${navItem.value.title} - 星途导航` : '未找到'),
 })
 </script>

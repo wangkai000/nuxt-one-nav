@@ -76,7 +76,7 @@
 
       <!-- 收藏提示（仅桌面端显示） -->
       <div class="hidden lg:flex items-center text-xs text-gray-500 dark:text-gray-400 mr-2">
-        <span>欢迎收藏 MyNuxtNav导航网</span>
+        <span>欢迎收藏星途导航</span>
         <span class="mx-1 text-gray-300">|</span>
         <kbd class="px-1.5 py-0.5 bg-gray-100 dark:bg-gray-800 rounded text-gray-600 dark:text-gray-300 font-mono">Ctrl</kbd>
         <span class="mx-1">(</span>

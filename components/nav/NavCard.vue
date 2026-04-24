@@ -48,9 +48,9 @@ const props = defineProps<{ item: NavItem }>()
 
 const router = useRouter()
 
-// 跳转到详情页（原地跳转）
+// 在新标签页打开详情页
 const goToDetail = () => {
-  navigateTo(`/detail/${props.item.id}`)
+  window.open(`/detail/${props.item.id}`, '_blank')
 }
 
 // 图标加载状态（组件内部局部 ref，不需要 reactive Map）
