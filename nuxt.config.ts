@@ -36,9 +36,9 @@ export default defineNuxtConfig({
     strategies: 'generateSW',
     registerType: 'autoUpdate',
     manifest: {
-      name: '天渺studio - 资源导航',
-      short_name: '天渺导航',
-      description: '天渺工作室的资源导航，精心挑选的高质量网站导航',
+      name: '星途导航',
+      short_name: '星途导航',
+      description: '星途导航，精心挑选的高质量网站导航，助你高效工作与生活',
       theme_color: '#3b82f6',
       background_color: '#f5f5f7',
       display: 'standalone',
@@ -195,7 +195,7 @@ export default defineNuxtConfig({
         // { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
         { rel: 'apple-touch-icon', href: '/favicon-192x192.png' },
         // RSS 订阅
-        { rel: 'alternate', type: 'application/rss+xml', title: '天渺studio RSS', href: 'https://blog.tianmiao.site/feed.xml' },
+        { rel: 'alternate', type: 'application/rss+xml', title: '星途导航 RSS', href: 'https://blog.tianmiao.site/feed.xml' },
         // 作者链接
         { rel: 'author', href: 'https://tianmiao.site' }
       ],
