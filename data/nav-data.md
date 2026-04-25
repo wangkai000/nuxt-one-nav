@@ -47,13 +47,12 @@
 - [Open WebUI](https://openwebui.com/) - Open WebUI 是开源自托管的 AI 聊天界面，兼容 Ollama 和 OpenAI API。 | icon: https://openwebui.com/favicon.ico | tags: AI, 开源, 聊天, 自托管
 - [LocalGPT](https://github.com/PromtEngineer/localGPT) - LocalGPT 是完全本地化的 RAG 应用，使用 LlamaIndex 和 LangChain。 | icon: https://github.com/favicon.ico | tags: AI, 开源, RAG, 本地
 - [PrivateGPT](https://github.com/zylon-ai/private-gpt) - PrivateGPT 是私有化的文档问答系统，支持本地 LLM。 | icon: https://github.com/favicon.ico | tags: AI, 开源, RAG, 私有化
+- [llama.cpp](https://github.com/ggerganov/llama.cpp) - llama.cpp 是纯 C/C++ 实现的 LLM 推理引擎，支持量化模型高效运行，无需 GPU。 | icon: https://github.com/favicon.ico | tags: AI, 本地模型, LLM, 推理, 量化
 
 ## AI可视化平台
 > id: ai-visual | icon: fluent-emoji:artist-palette
 
 - [Dify](https://dify.ai/) - Dify 是开源的 LLM 应用开发平台，可视化构建 AI 应用。 | icon: https://dify.ai/favicon.ico | tags: AI, 开源, 平台, 可视化
-- [Flowise](https://flowiseai.com/) - Flowise 是可视化构建 LLM 应用的工具，基于 LangChain。 | icon: https://flowiseai.com/favicon.ico | tags: AI, 开源, 可视化, LangChain
-- [LangFlow](https://langflow.org/) - LangFlow 是 LangChain 的可视化开发工具，拖拽式构建 AI 应用。 | icon: https://langflow.org/favicon.ico | tags: AI, 开源, 可视化, LangChain
 
 ## AI内容生成
 > id: ai-content | icon: fluent-emoji:artist
