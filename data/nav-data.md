@@ -53,6 +53,7 @@
 > id: ai-visual | icon: fluent-emoji:artist-palette
 
 - [Dify](https://dify.ai/) - Dify 是开源的 LLM 应用开发平台，可视化构建 AI 应用。 | icon: https://dify.ai/favicon.ico | tags: AI, 开源, 平台, 可视化
+- [n8n](https://n8n.io/) - n8n 是开源的工作流自动化平台，支持可视化创建自动化工作流，集成 400+ 服务。 | icon: https://n8n.io/favicon.ico | tags: AI, 开源, 工作流, 自动化, 无代码
 
 ## AI内容生成
 > id: ai-content | icon: fluent-emoji:artist
