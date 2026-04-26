@@ -14,10 +14,9 @@ body {
 }
 
 /* ─── 暗色模式切换过渡（U11）─── */
-*,
-*::before,
-*::after {
-  transition: background-color 0.3s ease, color 0.2s ease, border-color 0.3s ease;
+/* 只作用于 html 根元素，避免 * 通配符导致数百个卡片同时动画卡顿 */
+html {
+  transition: background-color 0.3s ease;
 }
 
 /* ─── 滚动条 ─── */
