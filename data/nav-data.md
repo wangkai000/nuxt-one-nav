@@ -361,6 +361,7 @@
 - [办公人导航](https://www.bgrdh.com/) - 办公人导航是一个实用的办公生活导航网站。 | icon: https://www.bgrdh.com/wp-content/uploads/2022/11/20221119185003612150.png | tags: 导航, 资源
 - [fuun.fun](https://fuun.fun/) - 奇趣网站收藏家 | icon: https://fuun.fun/favicon.ico | tags: 资源, 娱乐
 - [白嫖站](https://baipiao.top/) - 白嫖资源 | icon: https://baipiao.top/favicon.ico | tags: 导航
+- [Loot Drop](https://www.loot-drop.io/) - Loot Drop 是失败创业案例库，收录 1100+ 倒闭公司案例分析与重建计划，从失败中学习创业。 | icon: https://www.loot-drop.io/favicon.ico | tags: 创业, 案例库, 资源, 独立开发
 - [Mobbin](https://mobbin.com) - 发现真实世界的设计灵感，收藏1400多个App设计灵感的网站。 | icon: https://mobbin.com/favicon.ico | tags: 资源, 社区, 设计
 - [Refero](https://refero.design/) - 设计研究指南,最大的网页和iOS UI UX设计灵感库。 | icon: https://refero.design/favicon.ico | tags: 资源, 社区, 设计
 - [Creght](https://www.creght.com/) - 一款设计师友好的建站工具 | icon: https://fsu.creght.com/project/mVnidfGADfS/lZLMxdMuGEY__logo_(1).png?w=768&fmt=webp | tags: 资源, 建站, 设计
@@ -409,7 +410,6 @@
 - [RetroGames](https://retro-games.org/) - 复古游戏怀旧平台 | icon: https://retro-games.org/favicon.ico | tags: 游戏
 - [Game UI Database](https://www.gameuidatabase.com/) - 专注于游戏UI设计的数据库，提供丰富的设计资源。 | icon: https://www.gameuidatabase.com/favicon.ico | tags: 游戏, UI, 设计
 - [Interface in Game](https://interfaceingame.com/) - 专为GUI设计师准备的网站，提供最新的设计趋势和技巧。 | icon: https://interfaceingame.com/favicon.ico | tags: 游戏, GUI, 设计
-
 # 开发者&设计师社区
 > id: community | icon: fluent-emoji:people-hugging
 
