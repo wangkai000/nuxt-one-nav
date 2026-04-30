@@ -40,6 +40,12 @@
 - [LlamaIndex](https://www.llamaindex.ai/) - LlamaIndex 是数据框架，用于构建 LLM 应用，支持数据连接、索引和查询。 | icon: https://www.llamaindex.ai/favicon.ico | tags: AI, 框架, RAG, 数据
 - [Transformers](https://github.com/huggingface/transformers) - Hugging Face Transformers 是最流行的预训练模型库，支持 PyTorch、TensorFlow、JAX。 | icon: https://github.com/favicon.ico | tags: AI, 库, PyTorch, 深度学习
 
+## AI Skill
+> id: ai-skill | icon: fluent-emoji:flexed-biceps
+
+- [Superpowers](https://github.com/obra/superpowers) - Superpowers 是 AI 编程助手的技能框架，为 Claude Code、Cursor 等提供 TDD、代码审查、子代理驱动的系统化开发流程。 | icon: https://github.com/favicon.ico | tags: AI, 开发, 框架, TDD, 开源
+
+
 ## AI本地运行
 > id: ai-local | icon: mdi:desktop-classic
 
@@ -73,6 +79,7 @@
 > id: ai-agent | icon: fluent-emoji:robot
 
 - [Hermes Agent](https://hermes-agent.nousresearch.com/) - Hermes Agent 是一个随你成长的智能助手，提供丰富的功能和自动化工具，包括持久记忆、文件感知上下文、浏览器自动化和语音对话。 | icon: https://hermes-agent.nousresearch.com/icon.png | tags: AI, 助手, Agent, 自动化
+- [OpenCode](https://github.com/anomalyco/opencode) - OpenCode 是开源 AI 编码助手，支持多代理模式（build/plan）、LSP 智能提示，兼容 Claude/OpenAI/本地模型。 | icon: https://github.com/favicon.ico | tags: AI, 编程, 开源, 编码助手
 
 # Web3
 > id: web3 | icon: logos:ethereum
@@ -328,9 +335,6 @@
 > id: bun-ecosystem | icon: logos:bun
 
 - [Bun](https://bun.sh/) - Bun 是快速的 JavaScript 运行时、打包器、测试运行器和包管理器。 | icon: https://bun.sh/favicon.ico | tags: Bun, 运行时, 打包器, JavaScript
-- [Bun Test](https://bun.sh/docs/cli/test) - Bun 内置的测试运行器，支持 Jest 风格的 API。 | icon: https://bun.sh/favicon.ico | tags: Bun, 测试, JavaScript
-- [Bun SQLite](https://bun.sh/docs/api/sqlite) - Bun 内置的高性能 SQLite3 驱动，支持原生绑定。 | icon: https://bun.sh/favicon.ico | tags: Bun, 数据库, SQLite
-- [Bun FFI](https://bun.sh/docs/api/ffi) - Bun 的外函数接口，用于调用原生代码。 | icon: https://bun.sh/favicon.ico | tags: Bun, FFI, 原生代码
 - [Elysia](https://elysiajs.com/) - Elysia 是符合人体工程学的 Bun Web 框架，专注于类型安全和性能。 | icon: https://elysiajs.com/favicon.ico | tags: Node.js, Bun, 高性能, TypeScript
 
 # 实用工具
