@@ -239,6 +239,7 @@
 - [OpenAI Node.js SDK](https://github.com/openai/openai-node) - OpenAI 官方 Node.js SDK，用于调用 GPT、DALL·E 等 API。 | icon: https://github.com/favicon.ico | tags: AI, SDK, OpenAI, Node.js
 - [Anthropic SDK for JS](https://github.com/anthropics/anthropic-sdk-typescript) - Anthropic 官方 TypeScript SDK，用于调用 Claude API。 | icon: https://github.com/favicon.ico | tags: AI, SDK, Claude, TypeScript
 - [LangGraph.js](https://github.com/langchain-ai/langgraphjs) - LangGraph 的 JavaScript 版本，用于构建有状态的 AI 应用。 | icon: https://github.com/favicon.ico | tags: AI, 框架, 工作流, Agent
+- [ml5.js](https://ml5js.org/) - ml5.js 是基于 TensorFlow.js 的友好机器学习库，提供简洁 API 实现图像分类、姿态检测、文本生成等 AI 功能，面向创意编码和初学者。 | icon: https://ml5js.org/favicon.ico | tags: AI, 浏览器, 机器学习, TensorFlow.js, 创意编码
 
 ## WebGIS 地图
 > id: frontend-webgis | icon: fluent-emoji:world-map
