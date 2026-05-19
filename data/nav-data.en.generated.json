@@ -1,0 +1,1283 @@
+{
+  "meta": {
+    "name": "StarNav Navigation Data",
+    "version": "2.0.0",
+    "lastUpdated": "2026-05-19",
+    "description": "Navigation data for Nuxt 4 site (Markdown data source)",
+    "totalSites": 85,
+    "totalCategories": 3
+  },
+  "categories": [
+    {
+      "id": "all",
+      "name": "Featured",
+      "icon": "fluent-emoji:star",
+      "count": 1
+    },
+    {
+      "id": "ai",
+      "name": "AI Tools",
+      "icon": "fluent-emoji:robot",
+      "children": [
+        {
+          "id": "ai-nav",
+          "name": "AI Navigation",
+          "icon": "fluent-emoji:compass",
+          "count": 9
+        },
+        {
+          "id": "ai-writing",
+          "name": "AI Writing",
+          "icon": "fluent-emoji:pen",
+          "count": 3
+        },
+        {
+          "id": "ai-framework",
+          "name": "AI Frameworks",
+          "icon": "fluent-emoji:building-construction",
+          "count": 4
+        },
+        {
+          "id": "ai-skill",
+          "name": "AI Skills",
+          "icon": "fluent-emoji:flexed-biceps",
+          "count": 1
+        },
+        {
+          "id": "ai-local",
+          "name": "Local AI",
+          "icon": "mdi:desktop-classic",
+          "count": 5
+        },
+        {
+          "id": "ai-visual",
+          "name": "AI Visualization",
+          "icon": "fluent-emoji:artist-palette",
+          "count": 2
+        },
+        {
+          "id": "ai-content",
+          "name": "AI Content Generation",
+          "icon": "fluent-emoji:artist",
+          "count": 10
+        },
+        {
+          "id": "ai-agent",
+          "name": "AI Agents",
+          "icon": "fluent-emoji:robot",
+          "count": 2
+        }
+      ],
+      "count": 36
+    },
+    {
+      "id": "web3",
+      "name": "Web3",
+      "icon": "logos:ethereum",
+      "children": [
+        {
+          "id": "web3-info",
+          "name": "Web3 News",
+          "icon": "logos:ethereum",
+          "count": 20
+        },
+        {
+          "id": "web3-lib",
+          "name": "Web3 Libraries",
+          "icon": "logos:metamask-icon",
+          "count": 13
+        },
+        {
+          "id": "web3-framework",
+          "name": "Web3 Contract Frameworks",
+          "icon": "logos:solidity",
+          "count": 7
+        },
+        {
+          "id": "web3-lang",
+          "name": "Web3 Languages",
+          "icon": "vscode-icons:file-type-solidity",
+          "count": 8
+        }
+      ],
+      "count": 48
+    }
+  ],
+  "sites": [
+    {
+      "id": "tianmiao-studio",
+      "title": "Tianmiao Studio",
+      "description": "Tianmiao Studio's personal site & blog",
+      "url": "https://tianmiao.site",
+      "icon": "https://s21.ax1x.com/2024/12/22/pAXtJat.jpg",
+      "tags": [
+        "personal blog",
+        "blog"
+      ],
+      "category": "all",
+      "order": 1
+    },
+    {
+      "id": "discover-ai",
+      "title": "Discover AI",
+      "description": "Covers NLP, image recognition, data analysis and more, with industry trend reports + tutorials, clean UI with precise search.",
+      "url": "https://www.faxianai.com/",
+      "icon": "https://www.faxianai.com/favicon.ico",
+      "tags": [
+        "AI",
+        "navigation"
+      ],
+      "category": "ai-nav",
+      "order": 2
+    },
+    {
+      "id": "toolify-ai",
+      "title": "Toolify.ai",
+      "description": "World's largest AI tool library (18,000+ tools), with smart recommendations and user ratings, auto-updated for freshness.",
+      "url": "https://www.toolify.ai/",
+      "icon": "https://www.toolify.ai/favicon.ico",
+      "tags": [
+        "AI",
+        "navigation"
+      ],
+      "category": "ai-nav",
+      "order": 3
+    },
+    {
+      "id": "ai-tool-collection",
+      "title": "AI Tool Collection",
+      "description": "A great AI tool collection website",
+      "url": "https://ai-bot.cn/",
+      "icon": "https://ai-bot.cn/wp-content/uploads/2023/03/ai-bot-square-logo.png",
+      "tags": [
+        "AI",
+        "navigation"
+      ],
+      "category": "ai-nav",
+      "order": 4
+    },
+    {
+      "id": "aigc-navigation",
+      "title": "AIGC Navigation",
+      "description": "AIGC Navigation, the most comprehensive generative AI tool navigation platform.",
+      "url": "https://www.aigc.cn/",
+      "icon": "https://www.aigc.cn/wp-content/uploads/2025/06/aigc-icon.png",
+      "tags": [
+        "AI",
+        "navigation"
+      ],
+      "category": "ai-nav",
+      "order": 5
+    },
+    {
+      "id": "smart-tool-navigation",
+      "title": "Smart Tool Navigation",
+      "description": "Smart tool navigation, popular AI tools collection.",
+      "url": "https://www.coderutil.com",
+      "icon": "https://www.coderutil.com/favicon.ico",
+      "tags": [
+        "AI",
+        "navigation"
+      ],
+      "category": "ai-nav",
+      "order": 6
+    },
+    {
+      "id": "aitop100",
+      "title": "AITOP100",
+      "description": "AI tool navigation and AI competition news platform",
+      "url": "https://www.aitop100.cn",
+      "icon": "https://www.aitop100.cn/favicon.ico",
+      "tags": [
+        "AI",
+        "navigation"
+      ],
+      "category": "ai-nav",
+      "order": 7
+    },
+    {
+      "id": "feizhu-ai",
+      "title": "Feizhu AI",
+      "description": "Collects 30,000+ AI websites worldwide, covering writing, image, audio, video, code tools.",
+      "url": "https://feizhuke.com/",
+      "icon": "https://feizhuke.com/zhulogo1.png",
+      "tags": [
+        "AI",
+        "navigation"
+      ],
+      "category": "ai-nav",
+      "order": 8
+    },
+    {
+      "id": "hugging-face",
+      "title": "Hugging Face",
+      "description": "AI community platform providing models, datasets and Spaces hosting.",
+      "url": "https://huggingface.co/",
+      "icon": "https://huggingface.co/favicon.ico",
+      "tags": [
+        "AI",
+        "community",
+        "models",
+        "datasets"
+      ],
+      "category": "ai-nav",
+      "order": 9
+    },
+    {
+      "id": "aihub",
+      "title": "AIHub",
+      "description": "AIHub collects 1600+ quality AI tools, covering multiple categories.",
+      "url": "https://www.aihub.cn/",
+      "icon": "https://www.aihub.cn/favicon.ico",
+      "tags": [
+        "AI",
+        "navigation"
+      ],
+      "category": "ai-nav",
+      "order": 10
+    },
+    {
+      "id": "youmind",
+      "title": "YouMind",
+      "description": "Innovative creation agent using generative AI to transform diverse materials into inspired creations.",
+      "url": "https://youmind.com/",
+      "icon": "https://youmind.com/static/assets/favicon.ico",
+      "tags": [
+        "AI",
+        "resources"
+      ],
+      "category": "ai-writing",
+      "order": 11
+    },
+    {
+      "id": "biling-ai",
+      "title": "Biling AI",
+      "description": "AI smart writing tool for quick document and content generation",
+      "url": "https://ibiling.cn/",
+      "icon": "https://ibiling.cn/favicon.ico",
+      "tags": [
+        "AI",
+        "writing"
+      ],
+      "category": "ai-writing",
+      "order": 12
+    },
+    {
+      "id": "wawa-writer",
+      "title": "Wawa Writer",
+      "description": "AI novel writing assistant to boost creativity and efficiency",
+      "url": "https://wawawriter.com/",
+      "icon": "https://wawawriter.com/app/favicon.ico",
+      "tags": [
+        "AI",
+        "writing"
+      ],
+      "category": "ai-writing",
+      "order": 13
+    },
+    {
+      "id": "langchain",
+      "title": "LangChain",
+      "description": "Leading framework for building AI apps, supporting Python and JavaScript with chain calls, memory, agents.",
+      "url": "https://www.langchain.com/",
+      "icon": "https://www.langchain.com/favicon.ico",
+      "tags": [
+        "AI",
+        "framework",
+        "Python",
+        "JavaScript",
+        "LLM"
+      ],
+      "category": "ai-framework",
+      "order": 14
+    },
+    {
+      "id": "langgraph",
+      "title": "LangGraph",
+      "description": "Graph workflow framework for stateful, multi-role AI applications.",
+      "url": "https://langchain-ai.github.io/langgraph/",
+      "icon": "https://langchain-ai.github.io/langgraph/favicon.ico",
+      "tags": [
+        "AI",
+        "framework",
+        "workflow",
+        "Agent"
+      ],
+      "category": "ai-framework",
+      "order": 15
+    },
+    {
+      "id": "llamaindex",
+      "title": "LlamaIndex",
+      "description": "Data framework for building LLM apps, supporting data connection, indexing and querying.",
+      "url": "https://www.llamaindex.ai/",
+      "icon": "https://www.llamaindex.ai/favicon.ico",
+      "tags": [
+        "AI",
+        "framework",
+        "RAG",
+        "data"
+      ],
+      "category": "ai-framework",
+      "order": 16
+    },
+    {
+      "id": "transformers",
+      "title": "Transformers",
+      "description": "Most popular pre-trained model library, supporting PyTorch, TensorFlow, JAX.",
+      "url": "https://github.com/huggingface/transformers",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "AI",
+        "library",
+        "PyTorch",
+        "deep learning"
+      ],
+      "category": "ai-framework",
+      "order": 17
+    },
+    {
+      "id": "superpowers",
+      "title": "Superpowers",
+      "description": "AI programming assistant skill framework for Claude Code, Cursor with TDD and code review.",
+      "url": "https://github.com/obra/superpowers",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "AI",
+        "development",
+        "framework",
+        "TDD",
+        "open source"
+      ],
+      "category": "ai-skill",
+      "order": 18
+    },
+    {
+      "id": "ollama",
+      "title": "Ollama",
+      "description": "Local LLM runtime tool, supporting Llama, Mistral, Gemma with one-click deployment.",
+      "url": "https://ollama.com/",
+      "icon": "https://ollama.com/favicon.ico",
+      "tags": [
+        "AI",
+        "local model",
+        "LLM"
+      ],
+      "category": "ai-local",
+      "order": 19
+    },
+    {
+      "id": "open-webui",
+      "title": "Open WebUI",
+      "description": "Open source self-hosted AI chat interface, compatible with Ollama and OpenAI API.",
+      "url": "https://openwebui.com/",
+      "icon": "https://openwebui.com/favicon.ico",
+      "tags": [
+        "AI",
+        "open source",
+        "chat",
+        "self-hosted"
+      ],
+      "category": "ai-local",
+      "order": 20
+    },
+    {
+      "id": "localgpt",
+      "title": "LocalGPT",
+      "description": "Fully localized RAG app using LlamaIndex and LangChain.",
+      "url": "https://github.com/PromtEngineer/localGPT",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "AI",
+        "open source",
+        "RAG",
+        "local"
+      ],
+      "category": "ai-local",
+      "order": 21
+    },
+    {
+      "id": "privategpt",
+      "title": "PrivateGPT",
+      "description": "Private document Q&A system supporting local LLM.",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "AI",
+        "open source",
+        "RAG",
+        "private"
+      ],
+      "category": "ai-local",
+      "order": 22
+    },
+    {
+      "id": "llama-cpp",
+      "title": "llama.cpp",
+      "description": "Pure C/C++ LLM inference engine supporting quantized models without GPU.",
+      "url": "https://github.com/ggerganov/llama.cpp",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "AI",
+        "local model",
+        "LLM",
+        "inference",
+        "quantization"
+      ],
+      "category": "ai-local",
+      "order": 23
+    },
+    {
+      "id": "dify",
+      "title": "Dify",
+      "description": "Open source LLM app development platform with visual AI app building.",
+      "url": "https://dify.ai/",
+      "icon": "https://dify.ai/favicon.ico",
+      "tags": [
+        "AI",
+        "open source",
+        "platform",
+        "visualization"
+      ],
+      "category": "ai-visual",
+      "order": 24
+    },
+    {
+      "id": "n8n",
+      "title": "n8n",
+      "description": "Open source workflow automation platform with 400+ service integrations.",
+      "url": "https://n8n.io/",
+      "icon": "https://n8n.io/favicon.ico",
+      "tags": [
+        "AI",
+        "open source",
+        "workflow",
+        "automation",
+        "no-code"
+      ],
+      "category": "ai-visual",
+      "order": 25
+    },
+    {
+      "id": "holopix",
+      "title": "HoloPix",
+      "description": "AI-powered 3D photo and video creation platform",
+      "url": "https://www.holopix.cn/",
+      "icon": "https://www.holopix.cn/favicon.ico",
+      "tags": [
+        "AI",
+        "image",
+        "video",
+        "3D",
+        "content generation"
+      ],
+      "category": "ai-content",
+      "order": 26
+    },
+    {
+      "id": "taptap-ai-maker",
+      "title": "TapTap AI Maker",
+      "description": "Zero-threshold AI game creation agent for game enthusiasts.",
+      "url": "https://maker.taptap.cn/",
+      "icon": "https://maker.taptap.cn/taptap-maker-logo.svg",
+      "tags": [
+        "AI",
+        "game",
+        "development",
+        "game engine"
+      ],
+      "category": "ai-content",
+      "order": 27
+    },
+    {
+      "id": "midjourney",
+      "title": "Midjourney",
+      "description": "Top-tier AI image generation tool creating artworks from text descriptions.",
+      "url": "https://www.midjourney.com/",
+      "icon": "https://www.midjourney.com/favicon.ico",
+      "tags": [
+        "AI",
+        "image",
+        "art",
+        "content generation"
+      ],
+      "category": "ai-content",
+      "order": 28
+    },
+    {
+      "id": "stable-diffusion",
+      "title": "Stable Diffusion",
+      "description": "Open source AI image generation model supporting local deployment and custom training.",
+      "url": "https://stability.ai/",
+      "icon": "https://stability.ai/favicon.ico",
+      "tags": [
+        "AI",
+        "image",
+        "open source",
+        "model"
+      ],
+      "category": "ai-content",
+      "order": 29
+    },
+    {
+      "id": "runway",
+      "title": "Runway",
+      "description": "AI video generation platform supporting text-to-video and image animation.",
+      "url": "https://runwayml.com/",
+      "icon": "https://runwayml.com/favicon.ico",
+      "tags": [
+        "AI",
+        "video",
+        "content generation"
+      ],
+      "category": "ai-content",
+      "order": 30
+    },
+    {
+      "id": "suno",
+      "title": "Suno",
+      "description": "AI music generation platform creating full songs from text descriptions.",
+      "url": "https://suno.ai/",
+      "icon": "https://suno.ai/favicon.ico",
+      "tags": [
+        "AI",
+        "music",
+        "content generation"
+      ],
+      "category": "ai-content",
+      "order": 31
+    },
+    {
+      "id": "comfyui",
+      "title": "ComfyUI",
+      "description": "Most popular node-based Stable Diffusion workflow engine with custom node extensions.",
+      "url": "https://github.com/comfyanonymous/ComfyUI",
+      "icon": "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/master/web/assets/favicon.ico",
+      "tags": [
+        "AI",
+        "ComfyUI",
+        "workflow",
+        "Stable Diffusion"
+      ],
+      "category": "ai-content",
+      "order": 32
+    },
+    {
+      "id": "comfyworkflows",
+      "title": "Comfyworkflows",
+      "description": "ComfyUI workflow community with massive user-shared templates.",
+      "url": "https://comfyworkflows.com/",
+      "icon": "https://comfyworkflows.com/favicon.ico",
+      "tags": [
+        "AI",
+        "ComfyUI",
+        "workflow",
+        "community"
+      ],
+      "category": "ai-content",
+      "order": 33
+    },
+    {
+      "id": "openart-workflows",
+      "title": "OpenArt Workflows",
+      "description": "Curated ComfyUI workflows for online running or download.",
+      "url": "https://openart.ai/workflows",
+      "icon": "https://openart.ai/favicon.ico",
+      "tags": [
+        "AI",
+        "ComfyUI",
+        "workflow",
+        "online"
+      ],
+      "category": "ai-content",
+      "order": 34
+    },
+    {
+      "id": "civitai",
+      "title": "Civitai",
+      "description": "Largest AI model and workflow sharing community for Stable Diffusion models and LoRA.",
+      "url": "https://civitai.com/",
+      "icon": "https://civitai.com/favicon.ico",
+      "tags": [
+        "AI",
+        "model",
+        "workflow",
+        "community",
+        "Stable Diffusion"
+      ],
+      "category": "ai-content",
+      "order": 35
+    },
+    {
+      "id": "hermes-agent",
+      "title": "Hermes Agent",
+      "description": "Growing smart assistant with persistent memory, file-aware context, browser automation and voice chat.",
+      "url": "https://hermes-agent.nousresearch.com/",
+      "icon": "https://hermes-agent.nousresearch.com/icon.png",
+      "tags": [
+        "AI",
+        "assistant",
+        "Agent",
+        "automation"
+      ],
+      "category": "ai-agent",
+      "order": 36
+    },
+    {
+      "id": "opencode",
+      "title": "OpenCode",
+      "description": "Open source AI coding assistant with multi-agent mode and LSP smart hints.",
+      "url": "https://github.com/anomalyco/opencode",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "AI",
+        "programming",
+        "open source",
+        "coding assistant"
+      ],
+      "category": "ai-agent",
+      "order": 37
+    },
+    {
+      "id": "panews",
+      "title": "PANews",
+      "description": "Blockchain and Web3 data navigation with rich on-chain data and resources.",
+      "url": "https://www.panewslab.com",
+      "icon": "https://image.panewslab.com/images/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 38
+    },
+    {
+      "id": "web3-navigation",
+      "title": "Web3 Navigation",
+      "description": "Web3 resource collection platform",
+      "url": "https://www.d1dns.com/",
+      "icon": "https://www.d1dns.com/assets/images/favicon.png",
+      "tags": [
+        "Web3.0",
+        "navigation"
+      ],
+      "category": "web3-info",
+      "order": 39
+    },
+    {
+      "id": "openbuild",
+      "title": "OpenBuild",
+      "description": "Web3 developer ecosystem open source community connecting Web2 and Web3.",
+      "url": "https://openbuild.xyz/",
+      "icon": "https://openbuild.xyz/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 40
+    },
+    {
+      "id": "techflow",
+      "title": "TechFlow",
+      "description": "Chinese blockchain and crypto deep media platform.",
+      "url": "https://www.techflowpost.com/",
+      "icon": "https://upload.techflowpost.com/upload/images/20230331/2023033111502613443948.png",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 41
+    },
+    {
+      "id": "dejob",
+      "title": "Dejob",
+      "description": "Build your Web3 career",
+      "url": "https://dejob.top/",
+      "icon": "https://dejob.top/logo.svg",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 42
+    },
+    {
+      "id": "web3-career",
+      "title": "Web3 Career",
+      "description": "Web3 Career",
+      "url": "https://web3.career/",
+      "icon": "https://web3.career/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 43
+    },
+    {
+      "id": "blockbeats",
+      "title": "BlockBeats",
+      "description": "Professional Crypto, Web3 and NFT research and news platform.",
+      "url": "https://www.theblockbeats.info/",
+      "icon": "https://image.blockbeats.cn/icon/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 44
+    },
+    {
+      "id": "crypto-bubbles",
+      "title": "Crypto Bubbles",
+      "description": "Crypto market data visualization tool.",
+      "url": "https://cryptobubbles.net",
+      "icon": "https://cryptobubbles.net/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 45
+    },
+    {
+      "id": "登链社区",
+      "title": "登链社区",
+      "description": "Chinese blockchain technology blog and Q&A community.",
+      "url": "https://learnblockchain.cn/",
+      "icon": "https://learnblockchain.cn/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 46
+    },
+    {
+      "id": "coinnavs",
+      "title": "CoinNavs",
+      "description": "Global blockchain, wallet and exchange URL collection.",
+      "url": "https://www.coinnavs.com/",
+      "icon": "https://www.coinnavs.com/wp-content/uploads/2024/05/1c0fc288cf6678d-32x32.png",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 47
+    },
+    {
+      "id": "foresight-news",
+      "title": "Foresight News",
+      "description": "FN Select - Foresight News",
+      "url": "https://foresightnews.pro",
+      "icon": "https://foresightnews.pro/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 48
+    },
+    {
+      "id": "chaincatcher",
+      "title": "ChainCatcher",
+      "description": "Professional blockchain technology research and news platform.",
+      "url": "https://www.chaincatcher.com",
+      "icon": "https://www.chaincatcher.com/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 49
+    },
+    {
+      "id": "odaily",
+      "title": "Odaily",
+      "description": "Odaily Planet Daily",
+      "url": "https://www.odaily.news/",
+      "icon": "https://www.odaily.news/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 50
+    },
+    {
+      "id": "decrypt",
+      "title": "Decrypt",
+      "description": "AI, Bitcoin, Culture, Gaming, and Crypto News.",
+      "url": "https://decrypt.co/",
+      "icon": "https://decrypt.co/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 51
+    },
+    {
+      "id": "coindesk",
+      "title": "CoinDesk",
+      "description": "Authoritative crypto and blockchain comprehensive platform.",
+      "url": "https://www.coindesk.com",
+      "icon": "https://www.coindesk.com/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 52
+    },
+    {
+      "id": "bankless",
+      "title": "Bankless",
+      "description": "Helping users understand and integrate into decentralized finance.",
+      "url": "https://www.bankless.com",
+      "icon": "https://www.bankless.com/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 53
+    },
+    {
+      "id": "pcweb3",
+      "title": "Pcweb3",
+      "description": "WEB3 Directory",
+      "url": "https://www.pcweb3.com/",
+      "icon": "https://www.pcweb3.com/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 54
+    },
+    {
+      "id": "remote3",
+      "title": "Remote3",
+      "description": "WEB3 industry job board",
+      "url": "https://www.remote3.co",
+      "icon": "https://www.remote3.co/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 55
+    },
+    {
+      "id": "conflux-network",
+      "title": "Conflux Network",
+      "description": "High-performance Layer 1 blockchain public chain.",
+      "url": "https://confluxnetwork.org/",
+      "icon": "https://confluxnetwork.org/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 56
+    },
+    {
+      "id": "polyomarket",
+      "title": "Polyomarket",
+      "description": "Blockchain-based event prediction market platform.",
+      "url": "https://polyomarket.com/",
+      "icon": "https://polyomarket.com/favicon.ico",
+      "tags": [
+        "Web3.0",
+        "prediction market"
+      ],
+      "category": "web3-info",
+      "order": 57
+    },
+    {
+      "id": "rainbowkit",
+      "title": "RainbowKit",
+      "description": "Best way to connect wallets, focused on UX and DX.",
+      "url": "https://www.rainbowkit.com/",
+      "icon": "https://www.rainbowkit.com/favicon.ico",
+      "tags": [
+        "Web3",
+        "UI library",
+        "React"
+      ],
+      "category": "web3-lib",
+      "order": 58
+    },
+    {
+      "id": "connectkit",
+      "title": "ConnectKit",
+      "description": "Elegant React component library for wallet connection.",
+      "url": "https://docs.family.co/connectkit",
+      "icon": "https://docs.family.co/favicon.ico",
+      "tags": [
+        "Web3",
+        "UI library",
+        "React"
+      ],
+      "category": "web3-lib",
+      "order": 59
+    },
+    {
+      "id": "web3modal",
+      "title": "Web3Modal",
+      "description": "Simple and powerful Web3 wallet connection library.",
+      "url": "https://web3modal.com/",
+      "icon": "https://web3modal.com/favicon.ico",
+      "tags": [
+        "Web3",
+        "UI library"
+      ],
+      "category": "web3-lib",
+      "order": 60
+    },
+    {
+      "id": "thirdweb",
+      "title": "ThirdWeb",
+      "description": "Complete Web3 development toolkit including smart contract deployment and NFT minting.",
+      "url": "https://thirdweb.com/",
+      "icon": "https://thirdweb.com/favicon.ico",
+      "tags": [
+        "Web3",
+        "UI library",
+        "dev tools"
+      ],
+      "category": "web3-lib",
+      "order": 61
+    },
+    {
+      "id": "alchemy-ui",
+      "title": "Alchemy UI",
+      "description": "Web3 development tools and API supporting NFT, DeFi apps.",
+      "url": "https://www.alchemy.com/",
+      "icon": "https://www.alchemy.com/favicon.ico",
+      "tags": [
+        "Web3",
+        "UI library",
+        "API"
+      ],
+      "category": "web3-lib",
+      "order": 62
+    },
+    {
+      "id": "moralis",
+      "title": "Moralis",
+      "description": "Ultimate Web3 development platform with real-time blockchain data.",
+      "url": "https://moralis.io/",
+      "icon": "https://moralis.io/favicon.ico",
+      "tags": [
+        "Web3",
+        "UI library",
+        "backend"
+      ],
+      "category": "web3-lib",
+      "order": 63
+    },
+    {
+      "id": "wagmi",
+      "title": "Wagmi",
+      "description": "React Hooks for Ethereum blockchain interaction.",
+      "url": "https://wagmi.sh/",
+      "icon": "https://wagmi.sh/favicon.ico",
+      "tags": [
+        "Web3",
+        "React",
+        "Hooks"
+      ],
+      "category": "web3-lib",
+      "order": 64
+    },
+    {
+      "id": "viem",
+      "title": "Viem",
+      "description": "Type-safe Ethereum interface for EVM chain interaction.",
+      "url": "https://viem.sh/",
+      "icon": "https://viem.sh/favicon.ico",
+      "tags": [
+        "Web3",
+        "TypeScript",
+        "library"
+      ],
+      "category": "web3-lib",
+      "order": 65
+    },
+    {
+      "id": "ethers-js",
+      "title": "Ethers.js",
+      "description": "Complete and compact Ethereum library for blockchain interaction.",
+      "url": "https://ethers.org/",
+      "icon": "https://ethers.org/favicon.ico",
+      "tags": [
+        "Web3",
+        "JavaScript",
+        "library"
+      ],
+      "category": "web3-lib",
+      "order": 66
+    },
+    {
+      "id": "web3-js",
+      "title": "Web3.js",
+      "description": "Ethereum JavaScript API for Ethereum node communication.",
+      "url": "https://web3js.org/",
+      "icon": "https://web3js.org/favicon.ico",
+      "tags": [
+        "Web3",
+        "JavaScript",
+        "library"
+      ],
+      "category": "web3-lib",
+      "order": 67
+    },
+    {
+      "id": "usedapp",
+      "title": "useDApp",
+      "description": "React framework for building Ethereum DApps.",
+      "url": "https://usedapp.io/",
+      "icon": "https://usedapp.io/favicon.ico",
+      "tags": [
+        "Web3",
+        "React",
+        "framework"
+      ],
+      "category": "web3-lib",
+      "order": 68
+    },
+    {
+      "id": "particle-network",
+      "title": "Particle Network",
+      "description": "Complete Web3 infrastructure providing wallet-as-a-service.",
+      "url": "https://particle.network/",
+      "icon": "https://particle.network/favicon.ico",
+      "tags": [
+        "Web3",
+        "wallet",
+        "infrastructure"
+      ],
+      "category": "web3-lib",
+      "order": 69
+    },
+    {
+      "id": "ant-design-web3",
+      "title": "Ant Design Web3",
+      "description": "Ant Design's Web3 component library with high-quality UI components.",
+      "url": "https://web3.ant.design/",
+      "icon": "https://web3.ant.design/favicon.ico",
+      "tags": [
+        "Web3",
+        "UI library",
+        "React",
+        "Ant Design"
+      ],
+      "category": "web3-lib",
+      "order": 70
+    },
+    {
+      "id": "hardhat",
+      "title": "Hardhat",
+      "description": "Ethereum development environment for compiling, deploying, testing and debugging smart contracts.",
+      "url": "https://hardhat.org/",
+      "icon": "https://hardhat.org/favicon.ico",
+      "tags": [
+        "smart contract",
+        "Ethereum",
+        "dev tools"
+      ],
+      "category": "web3-framework",
+      "order": 71
+    },
+    {
+      "id": "foundry",
+      "title": "Foundry",
+      "description": "Fast, portable and modular toolkit for Ethereum development.",
+      "url": "https://book.getfoundry.sh/",
+      "icon": "https://book.getfoundry.sh/favicon.ico",
+      "tags": [
+        "smart contract",
+        "Ethereum",
+        "Rust",
+        "testing"
+      ],
+      "category": "web3-framework",
+      "order": 72
+    },
+    {
+      "id": "truffle",
+      "title": "Truffle",
+      "description": "Smart contract development framework, testing framework and asset pipeline.",
+      "url": "https://trufflesuite.com/",
+      "icon": "https://trufflesuite.com/favicon.ico",
+      "tags": [
+        "smart contract",
+        "Ethereum",
+        "dev framework"
+      ],
+      "category": "web3-framework",
+      "order": 73
+    },
+    {
+      "id": "brownie",
+      "title": "Brownie",
+      "description": "Python-based Ethereum smart contract development and testing framework.",
+      "url": "https://eth-brownie.readthedocs.io/",
+      "icon": "https://eth-brownie.readthedocs.io/favicon.ico",
+      "tags": [
+        "smart contract",
+        "Ethereum",
+        "Python"
+      ],
+      "category": "web3-framework",
+      "order": 74
+    },
+    {
+      "id": "apeworx",
+      "title": "ApeWorX",
+      "description": "Python framework for Ethereum smart contract development, testing and deployment.",
+      "url": "https://docs.apeworx.io/",
+      "icon": "https://docs.apeworx.io/favicon.ico",
+      "tags": [
+        "smart contract",
+        "Ethereum",
+        "Python"
+      ],
+      "category": "web3-framework",
+      "order": 75
+    },
+    {
+      "id": "anchor",
+      "title": "Anchor",
+      "description": "Solana Sealevel runtime framework for fast, secure smart contract development.",
+      "url": "https://www.anchor-lang.com/",
+      "icon": "https://www.anchor-lang.com/favicon.ico",
+      "tags": [
+        "smart contract",
+        "Solana",
+        "Rust"
+      ],
+      "category": "web3-framework",
+      "order": 76
+    },
+    {
+      "id": "cairo",
+      "title": "Cairo",
+      "description": "StarkNet smart contract language and framework for provable computation.",
+      "url": "https://www.cairo-lang.org/",
+      "icon": "https://www.cairo-lang.org/favicon.ico",
+      "tags": [
+        "smart contract",
+        "StarkNet",
+        "language"
+      ],
+      "category": "web3-framework",
+      "order": 77
+    },
+    {
+      "id": "solidity",
+      "title": "Solidity",
+      "description": "Object-oriented high-level language for writing smart contracts, Ethereum's main language.",
+      "url": "https://soliditylang.org/",
+      "icon": "https://soliditylang.org/favicon.ico",
+      "tags": [
+        "smart contract",
+        "language",
+        "Ethereum"
+      ],
+      "category": "web3-lang",
+      "order": 78
+    },
+    {
+      "id": "vyper",
+      "title": "Vyper",
+      "description": "Contract-oriented Pythonic programming language for EVM.",
+      "url": "https://vyper.readthedocs.io/",
+      "icon": "https://vyper.readthedocs.io/favicon.ico",
+      "tags": [
+        "smart contract",
+        "language",
+        "Ethereum",
+        "Python"
+      ],
+      "category": "web3-lang",
+      "order": 79
+    },
+    {
+      "id": "rust-solana",
+      "title": "Rust (Solana)",
+      "description": "Solana blockchain's main development language for high-performance smart contracts.",
+      "url": "https://www.rust-lang.org/",
+      "icon": "https://www.rust-lang.org/favicon.ico",
+      "tags": [
+        "smart contract",
+        "language",
+        "Solana",
+        "Rust"
+      ],
+      "category": "web3-lang",
+      "order": 80
+    },
+    {
+      "id": "move",
+      "title": "Move",
+      "description": "Smart contract language for Diem blockchain, now used by Aptos and Sui.",
+      "url": "https://move-language.github.io/move/",
+      "icon": "https://move-language.github.io/move/favicon.ico",
+      "tags": [
+        "smart contract",
+        "language",
+        "Aptos",
+        "Sui"
+      ],
+      "category": "web3-lang",
+      "order": 81
+    },
+    {
+      "id": "cairo-lang",
+      "title": "Cairo Lang",
+      "description": "Turing-complete language for writing provable StarkNet contracts.",
+      "url": "https://cairo-lang.org/",
+      "icon": "https://cairo-lang.org/favicon.ico",
+      "tags": [
+        "smart contract",
+        "language",
+        "StarkNet"
+      ],
+      "category": "web3-lang",
+      "order": 82
+    },
+    {
+      "id": "fe",
+      "title": "Fe",
+      "description": "Ethereum high-level smart contract language inspired by Rust and Python.",
+      "url": "https://fe-lang.org/",
+      "icon": "https://fe-lang.org/favicon.ico",
+      "tags": [
+        "smart contract",
+        "language",
+        "Ethereum",
+        "Rust"
+      ],
+      "category": "web3-lang",
+      "order": 83
+    },
+    {
+      "id": "yul",
+      "title": "Yul",
+      "description": "Solidity's intermediate language for optimization and direct EVM control.",
+      "url": "https://docs.soliditylang.org/en/latest/yul.html",
+      "icon": "https://soliditylang.org/favicon.ico",
+      "tags": [
+        "smart contract",
+        "language",
+        "Ethereum",
+        "low-level"
+      ],
+      "category": "web3-lang",
+      "order": 84
+    },
+    {
+      "id": "huff",
+      "title": "Huff",
+      "description": "Low-level language for writing highly optimized EVM assembly.",
+      "url": "https://docs.huff.sh/",
+      "icon": "https://docs.huff.sh/favicon.ico",
+      "tags": [
+        "smart contract",
+        "language",
+        "Ethereum",
+        "assembly"
+      ],
+      "category": "web3-lang",
+      "order": 85
+    }
+  ]
+}

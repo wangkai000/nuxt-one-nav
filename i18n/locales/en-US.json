@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "home": "Home",
+    "author": "Author",
+    "search": "Search",
+    "searchPlaceholder": "Search navigation...",
+    "bookmark": "Bookmark StarNav",
+    "shortcut": "Shortcut",
+    "submit": "Submit Site",
+    "about": "About",
+    "categories": "Categories",
+    "sites": " sites",
+    "expand": "Expand Sidebar",
+    "collapse": "Collapse Sidebar"
+  },
+  "footer": {
+    "copyright": "StarNav",
+    "slogan": "Carefully curated high-quality website navigation",
+    "madeWith": "Made with",
+    "and": "and",
+    "built": "Built with"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "lang": {
+    "zh": "中文",
+    "en": "English",
+    "switch": "Switch Language"
+  },
+  "loading": {
+    "text": "Loading..."
+  },
+  "actions": {
+    "backToTop": "Back to Top",
+    "refresh": "Refresh"
+  }
+}

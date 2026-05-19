@@ -1,14 +1,59 @@
 import type { NavItem, Category } from '~/types/nav'
-// 从构建期生成的 JSON 读取数据（由 scripts/build-nav-data.mjs 从 nav-data.md 生成）
-import navDataRaw from './nav-data.generated.json'
 
 export type { NavItem, Category }
 
-// 从 nav-data.json 中导出网站数据
-export const navData: NavItem[] = navDataRaw.sites as NavItem[]
+// 根据当前语言获取对应的数据
+const getLocale = () => {
+  if (process.client) {
+    // 客户端：从 URL 或 cookie 获取
+    const path = window.location.pathname
+    if (path.startsWith('/en')) return 'en'
+    return 'zh'
+  }
+  // 服务端：默认中文
+  return 'zh'
+}
 
-// 从 nav-data.json 中导出分类数据
-export const categories: Category[] = navDataRaw.categories as Category[]
+// 动态导入对应语言的数据
+const loadNavData = async () => {
+  const locale = getLocale()
+  try {
+    if (locale === 'en') {
+      const module = await import('./nav-data.en.generated.json')
+      return module.default || module
+    }
+  } catch (e) {
+    console.warn('Failed to load English data, falling back to Chinese')
+  }
+  // 默认加载中文
+  const module = await import('./nav-data.zh.generated.json')
+  return module.default || module
+}
+
+// 数据缓存
+let dataCache: { navData: NavItem[], categories: Category[] } | null = null
+
+// 初始化数据
+export const initNavData = async () => {
+  if (dataCache) return dataCache
+
+  const data = await loadNavData()
+  dataCache = {
+    navData: data.sites as NavItem[],
+    categories: data.categories as Category[]
+  }
+  return dataCache
+}
+
+// 导出数据（需要在 initNavData 后使用）
+export let navData: NavItem[] = []
+export let categories: Category[] = []
+
+// 设置数据（由 app.vue 调用）
+export const setNavData = (data: { navData: NavItem[], categories: Category[] }) => {
+  navData = data.navData
+  categories = data.categories
+}
 
 // 获取所有叶子节点分类（没有子分类的分类）
 export const getLeafCategories = (): Category[] => {
@@ -17,11 +62,9 @@ export const getLeafCategories = (): Category[] => {
 
 // 根据 ID 获取分类
 export const getCategoryById = (id: string): Category | undefined => {
-  // 先在一级分类中查找
   const found = categories.find(cat => cat.id === id)
   if (found) return found
 
-  // 在二级分类中查找
   for (const cat of categories) {
     if (cat.children) {
       const child = cat.children.find(c => c.id === id)

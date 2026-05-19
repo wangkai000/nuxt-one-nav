@@ -18,7 +18,7 @@
           <div class="progress-fill"></div>
         </div>
         <!-- 加载文字 -->
-        <div class="loading-text">加载中...</div>
+        <div class="loading-text">{{ $t('loading.text') }}</div>
       </div>
     </div>
 
@@ -52,6 +52,11 @@ onMounted(() => {
     }
   }, 5000)
 })
+
+// 初始化导航数据（根据当前语言）
+const { initNavData, setNavData } = await import('~/data/nav-data')
+const data = await initNavData()
+setNavData(data)
 
 // Element Plus 暗色模式支持
 const colorMode = useColorMode()

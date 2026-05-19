@@ -5,7 +5,7 @@
       <button
         @click="toggleTheme"
         class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 flex items-center justify-center hover:shadow-xl hover:-translate-y-1 transition-all duration-200"
-        :title="isDark ? '切换到浅色模式' : '切换到深色模式'"
+        :title="isDark ? $t('theme.light') : $t('theme.dark')"
       >
         <!-- 新的图标：使用更现代的太阳/月亮切换图标 -->
         <svg v-if="isDark" class="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -31,7 +31,7 @@
         v-if="showBackToTop"
         @click="scrollToTop"
         class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 flex items-center justify-center hover:shadow-xl hover:-translate-y-1 transition-all duration-200"
-        title="返回顶部"
+        :title="$t('actions.backToTop')"
       >
         <!-- 新的返回顶部图标：更简洁的箭头 -->
         <svg class="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">

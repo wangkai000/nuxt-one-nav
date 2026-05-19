@@ -1,5 +1,5 @@
 /**
- * 构建期脚本：将 nav-data.md 解析为 nav-data.generated.json
+ * 构建期脚本：将 nav-data.{lang}.md 解析为 nav-data.{lang}.generated.json
  * 用法：node scripts/build-nav-data.mjs
  * 由 nuxt.config.ts 的 build:before hook 自动调用
  */
@@ -9,32 +9,50 @@ import { fileURLToPath } from 'url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const rootDir = resolve(__dirname, '..')
-const mdPath = resolve(rootDir, 'data', 'nav-data.md')
-const outPath = resolve(rootDir, 'data', 'nav-data.generated.json')
 
-if (!existsSync(mdPath)) {
-  console.error('[build-nav-data] ERROR: data/nav-data.md not found')
+// 支持的语言列表
+const languages = [
+  { code: 'zh', file: 'nav-data.zh.md', out: 'nav-data.zh.generated.json' },
+  { code: 'en', file: 'nav-data.en.md', out: 'nav-data.en.generated.json' }
+]
+
+let hasError = false
+
+for (const lang of languages) {
+  const mdPath = resolve(rootDir, 'data', lang.file)
+  const outPath = resolve(rootDir, 'data', lang.out)
+
+  if (!existsSync(mdPath)) {
+    console.error(`[build-nav-data] ERROR: ${lang.file} not found`)
+    hasError = true
+    continue
+  }
+
+  const md = readFileSync(mdPath, 'utf-8')
+  const { categories, sites } = parseNavMd(md)
+
+  const result = {
+    meta: {
+      name: lang.code === 'zh' ? '星途导航 导航数据' : 'StarNav Navigation Data',
+      version: '2.0.0',
+      lastUpdated: new Date().toISOString().split('T')[0],
+      description: lang.code === 'zh'
+        ? '基于 Nuxt 4 的导航站数据（Markdown 数据源）'
+        : 'Navigation data for Nuxt 4 site (Markdown data source)',
+      totalSites: sites.length,
+      totalCategories: categories.length
+    },
+    categories,
+    sites
+  }
+
+  writeFileSync(outPath, JSON.stringify(result, null, 2), 'utf-8')
+  console.log(`[build-nav-data] OK [${lang.code}]: ${sites.length} sites, ${categories.length} categories -> ${outPath}`)
+}
+
+if (hasError) {
   process.exit(1)
 }
-
-const md = readFileSync(mdPath, 'utf-8')
-const { categories, sites } = parseNavMd(md)
-
-const result = {
-  meta: {
-    name: '星途导航 导航数据',
-    version: '2.0.0',
-    lastUpdated: new Date().toISOString().split('T')[0],
-    description: '基于 Nuxt 4 的导航站数据（Markdown 数据源）',
-    totalSites: sites.length,
-    totalCategories: categories.length
-  },
-  categories,
-  sites
-}
-
-writeFileSync(outPath, JSON.stringify(result, null, 2), 'utf-8')
-console.log(`[build-nav-data] OK: ${sites.length} sites, ${categories.length} categories -> ${outPath}`)
 
 // ==================== 解析器 ====================
 
