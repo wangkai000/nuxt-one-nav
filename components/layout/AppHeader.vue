@@ -99,13 +99,13 @@
             <el-dropdown-menu>
               <el-dropdown-item command="zh" :disabled="locale === 'zh'">
                 <span class="flex items-center gap-2">
-                  <span class="text-sm">🇨🇳</span>
+                  <span class="text-sm"></span>
                   <span>{{ $t('lang.zh') }}</span>
                 </span>
               </el-dropdown-item>
               <el-dropdown-item command="en" :disabled="locale === 'en'">
                 <span class="flex items-center gap-2">
-                  <span class="text-sm">🇺🇸</span>
+                  <span class="text-sm"></span>
                   <span>{{ $t('lang.en') }}</span>
                 </span>
               </el-dropdown-item>
