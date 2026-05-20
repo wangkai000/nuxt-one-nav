@@ -9,7 +9,7 @@
       <div
         v-for="i in skeletonRows"
         :key="i"
-        class="h-40 rounded-lg bg-gray-100/60 dark:bg-gray-800/40 animate-pulse"
+        class="h-40 rounded-lg bg-gray-100/60 dark:bg-gray-800/40"
       />
     </div>
   </div>

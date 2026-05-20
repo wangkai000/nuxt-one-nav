@@ -81,19 +81,7 @@ html.dark {
   background: linear-gradient(135deg, #1e293b 0%, #312e81 50%, #1e1b4b 100%);
 }
 
-/* ─── Hero 极光背景 ─── */
-.hero-gradient {
-  background: linear-gradient(135deg, rgba(239, 246, 255, 0.95) 0%, rgba(199, 210, 254, 0.85) 50%, rgba(221, 214, 254, 0.9) 100%);
-  backdrop-filter: blur(8px);
-  border-radius: 1rem;
-  border: 1px solid rgba(99, 102, 241, 0.08);
-}
-.hero-gradient-dark {
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(49, 46, 129, 0.8) 50%, rgba(15, 10, 30, 0.9) 100%);
-  backdrop-filter: blur(8px);
-  border-radius: 1rem;
-  border: 1px solid rgba(99, 102, 241, 0.15);
-}
+
 
 /* ─── Element Plus 菜单深色模式覆盖 ─── */
 /* 覆盖 Element Plus 默认的深色菜单背景色，使用项目主题色 #16162a */

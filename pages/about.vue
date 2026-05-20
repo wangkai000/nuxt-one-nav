@@ -14,7 +14,7 @@
     </div>
 
     <!-- 关于内容 -->
-    <div class="bg-white/60 dark:bg-[#1e293b]/60 backdrop-blur-sm rounded-2xl border border-gray-200 dark:border-gray-800 p-8">
+    <div class="bg-white/60 dark:bg-[#1e293b]/60 backdrop-blur-[2px] rounded-2xl border border-gray-200 dark:border-gray-800 p-8">
       <div class="max-w-2xl mx-auto space-y-6 text-gray-700 dark:text-gray-300">
         <p class="text-lg leading-relaxed">
           {{ $t('footer.slogan') }}

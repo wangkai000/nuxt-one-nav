@@ -121,6 +121,7 @@
 
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
+import { useDebounceFn } from '@vueuse/core'
 
 const { locale, setLocale } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
@@ -163,11 +164,16 @@ watch(() => query.value, (newQuery) => {
   searchInput.value = newQuery
 }, { immediate: true })
 
+// 300ms 防抖搜索，避免每次按键都触发 267 条数据的筛选和重新渲染
+const debouncedSearch = useDebounceFn((value: string) => {
+  setQuery(value)
+}, 300)
+
 // 处理输入
 const handleInput = (e: Event) => {
   const value = (e.target as HTMLInputElement).value
   searchInput.value = value
-  setQuery(value)
+  debouncedSearch(value)
 }
 
 // 浏览器原生 search input 清除事件
