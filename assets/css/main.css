@@ -13,10 +13,14 @@ body {
   @apply text-gray-700 dark:text-gray-300;
 }
 
-/* ─── 暗色模式切换过渡（U11）─── */
-/* 只作用于 html 根元素，避免 * 通配符导致数百个卡片同时动画卡顿 */
+/* ─── 暗色模式切换过渡 ─── */
+/* 注意：不给 html 加 background-color transition，因为暗色切换会触发全局 repaint
+   并且 dark mode 切换是瞬间完成的，过渡动画肉眼几乎不可感知但渲染开销却不小 */
 html {
-  transition: background-color 0.3s ease;
+  color-scheme: light;
+}
+html.dark {
+  color-scheme: dark;
 }
 
 /* ─── 滚动条 ─── */
@@ -46,21 +50,34 @@ html {
 }
 
 /* ─── Hero 背景图片（深色模式自动切换）─── */
+/* 使用 background-attachment: fixed 避免滚动时持续 repaint */
 .hero-wallpaper {
   background-image: url('/images/light.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  will-change: transform; /* 将背景提升到合成层，减少重绘 */
 }
 .dark .hero-wallpaper {
   background-image: url('/images/night.jpg');
 }
 
 /* ─── 内容区域渐变背景 ─── */
+/* 使用 fixed 伪元素，让渐变更滚动无关，避免持续 repaint */
 .grid-bg {
-  background: linear-gradient(135deg, #e0f2fe 0%, #c7d2fe 50%, #e9d5ff 100%);
+  position: relative;
+  background: transparent !important;
 }
-.dark .grid-bg {
+.grid-bg::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(135deg, #e0f2fe 0%, #c7d2fe 50%, #e9d5ff 100%);
+  pointer-events: none;
+}
+.dark .grid-bg::before {
   background: linear-gradient(135deg, #1e293b 0%, #312e81 50%, #1e1b4b 100%);
 }
 
