@@ -17,9 +17,31 @@
       </div>
     </template>
 
-    <!-- 正常浏览时按分类分组（始终显示全部） -->
+    <!-- 正常浏览时按分类分组 -->
     <template v-else>
-      <div v-for="cat in categoriesWithItems" :key="cat.id" :id="`category-${cat.id}`" class="scroll-mt-20" style="content-visibility: auto; contain-intrinsic-size: 1px; contain: layout style paint;">
+      <!-- 站长推荐分类（内容少，不懒加载，直接渲染） -->
+      <div v-for="cat in featuredCategoryOnly" :key="cat.id" :id="`category-${cat.id}`" class="scroll-mt-20">
+        <div class="flex items-center gap-3 mb-4">
+          <Icon :name="getIconName(cat.icon)" class="w-5 h-5 text-gray-400" />
+          <h2 class="text-lg font-bold text-gray-900 dark:text-white">{{ cat.name }}</h2>
+          <span class="text-sm text-gray-500">({{ cat.items.length }})</span>
+          <div class="flex-1 h-px bg-gray-200 dark:bg-gray-800"></div>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
+          <NavCard v-for="item in cat.items" :key="item.id" :item="item" v-memo="[item.id, query]" />
+        </div>
+      </div>
+
+      <!-- 其他分类懒加载 -->
+      <LazyRender
+        v-for="cat in otherCategoriesOnly"
+        :key="cat.id"
+        :id="`category-${cat.id}`"
+        :item-count="cat.items.length"
+        columns="6"
+        rootClass="scroll-mt-20"
+        :force-visible="preloadedIds.has(cat.id)"
+      >
         <!-- 分类标题 -->
         <div class="flex items-center gap-3 mb-4">
           <Icon :name="getIconName(cat.icon)" class="w-5 h-5 text-gray-400" />
@@ -30,7 +52,7 @@
 
         <!-- 如果有子分类，分组显示 -->
         <div v-if="cat.children && cat.children.length > 0" class="space-y-6">
-          <div v-for="child in cat.children.filter(c => c.items && c.items.length > 0)" :key="child.id" :id="`category-${child.id}`" class="scroll-mt-20">
+          <div v-for="child in cat.children.filter(c => c.items && c.items.length > 0)" :key="child.id" class="scroll-mt-20">
             <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-3 ml-2 flex items-center gap-2">
               <Icon :name="getIconName(child.icon)" class="w-4 h-4" />
               {{ child.name }}
@@ -45,7 +67,7 @@
         <div v-else class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
           <NavCard v-for="item in cat.items" :key="item.id" :item="item" v-memo="[item.id, query]" />
         </div>
-      </div>
+      </LazyRender>
     </template>
   </div>
 </template>
@@ -72,6 +94,38 @@ const getIconName = (icon: string): string => {
 
 // 叶子节点分类（扁平化列表，用于移动端）
 const leafCategories = computed(() => getLeafCategories())
+
+// 站长推荐分类（首个，直接渲染不懒加载）
+const featuredCategoryOnly = computed(() =>
+  categoriesWithItems.value.filter(cat => cat.id === 'all')
+)
+
+// 其他分类（懒加载）
+const otherCategoriesOnly = computed(() =>
+  categoriesWithItems.value.filter(cat => cat.id !== 'all')
+)
+
+// 预加载状态：侧边栏点击分类时，强制加载对应的父分类区块
+const preloadedIds = ref<Set<string>>(new Set(['all']))
+
+// 监听侧边栏分类切换
+watch(activeCategory, (newCat) => {
+  if (!newCat || newCat === 'all') return
+  // 找到新选中分类所属的父分类ID
+  for (const cat of categoriesWithItems.value) {
+    if (cat.children && cat.children.length > 0) {
+      const childIds = cat.children.map(c => c.id)
+      if (childIds.includes(newCat)) {
+        preloadedIds.value = new Set([...preloadedIds.value, cat.id])
+        return
+      }
+    }
+    if (cat.id === newCat) {
+      preloadedIds.value = new Set([...preloadedIds.value, cat.id])
+      return
+    }
+  }
+})
 
 // 按分类分组的网站
 const categoriesWithItems = computed(() => {

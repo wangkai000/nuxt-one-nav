@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group flex flex-col items-center text-center p-4 bg-white dark:bg-[#1e1e3a] rounded-lg border border-gray-200 dark:border-gray-800 cursor-pointer shadow-sm hover:shadow-md transition-all duration-200 hover:will-change-transform hover:-translate-y-1"
+    class="group flex flex-col items-center text-center p-4 bg-white dark:bg-[#1e1e3a] rounded-lg border border-gray-200 dark:border-gray-800 cursor-pointer shadow-sm hover:shadow-md transition-all duration-200 hover:-translate-y-1"
     @click="goToDetail"
   >
     <!-- 图标 -->
@@ -167,11 +167,9 @@ const getFallbackIcon = (item: NavItem): string => {
 }
 </script>
 
-
 <style scoped>
-/* will-change 优化：提前告知浏览器 transform 会变化 */
-.hover\:will-change-transform {
+/* 仅在 hover 期间临时启用 GPU 合成层，用完即释放 */
+.group:hover {
   will-change: transform;
-  transform: translateZ(0);
 }
 </style>
