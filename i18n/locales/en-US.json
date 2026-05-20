@@ -64,7 +64,9 @@
     "feature3": "Dark Mode Support",
     "feature4": "Built with Nuxt 4",
     "contact": "Contact",
-    "contactDesc": "Contact for link exchange."
+    "contactDesc": "Contact for link exchange.",
+    "openSource": "Open Source",
+    "openSourceDesc": "This project is fully open source. Star and contributions are welcome."
   },
   "seo": {
     "title": "StarNav - Discover Great Websites",

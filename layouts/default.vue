@@ -173,6 +173,21 @@ const openAbout = () => {
 :deep(.el-menu-item),
 :deep(.el-sub-menu__title) {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  height: auto !important;
+  min-height: 44px;
+  line-height: 1.4 !important;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  white-space: normal !important;
+  word-break: break-word !important;
+}
+
+/* 菜单文本 span 也做换行 */
+:deep(.el-menu-item span),
+:deep(.el-sub-menu__title span) {
+  white-space: normal !important;
+  word-break: break-word !important;
+  line-height: 1.4 !important;
 }
 </style>

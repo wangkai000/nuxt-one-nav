@@ -46,6 +46,33 @@
           <h2 class="text-xl font-bold text-gray-900 dark:text-white">{{ $t('about.contact') }}</h2>
           <p>{{ $t('about.contactDesc') }}</p>
         </div>
+
+        <div class="border-t border-gray-200 dark:border-gray-700 pt-6 space-y-4">
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white">{{ $t('about.openSource') }}</h2>
+          <p>{{ $t('about.openSourceDesc') }}</p>
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="https://github.com/wangkai000/nuxt-one-nav"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 transition-colors"
+            >
+              <Icon icon="mdi:github" class="w-5 h-5" />
+              <span>GitHub</span>
+              <Icon icon="mdi:open-in-new" class="w-3.5 h-3.5 text-gray-400" />
+            </a>
+            <a
+              href="https://gitee.com/wangkai000/my-nuxt-nav"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 transition-colors"
+            >
+              <Icon icon="simple-icons:gitee" class="w-5 h-5 text-red-500 dark:text-red-400" />
+              <span>Gitee</span>
+              <Icon icon="mdi:open-in-new" class="w-3.5 h-3.5 text-gray-400" />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>

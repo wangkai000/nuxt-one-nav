@@ -114,30 +114,7 @@
         </el-dropdown>
       </div>
 
-      <!-- GitHub & Gitee 链接 -->
-      <div class="flex items-center gap-2">
-        <a
-          href="https://github.com/wangkai000/nuxt-one-nav"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-          title="GitHub"
-        >
-          <!-- 浅色模式用彩色图标，深色模式用白色图标 -->
-          <Icon icon="logos:github-icon" class="w-5 h-5 dark:hidden" />
-          <Icon icon="mdi:github" class="w-5 h-5 hidden dark:block text-white" />
-        </a>
-        <a
-          href="https://gitee.com/wangkai000/my-nuxt-nav"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-          title="Gitee"
-        >
-          <!-- Gitee 使用 MDI 图标，深色模式自动变色 -->
-          <Icon icon="simple-icons:gitee" class="w-5 h-5 text-red-500 dark:text-red-400" />
-        </a>
-      </div>
+      
     </div>
   </el-header>
 </template>

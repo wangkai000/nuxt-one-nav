@@ -211,4 +211,48 @@ const openAbout = () => {
   line-height: 44px;
   min-width: 180px;
 }
+
+/* ========== 菜单文字自动换行（解决中英文切换时文字被挤压裁切） ========== */
+
+/* 一级菜单和子菜单标题 - 允许文字换行 */
+::deep(.el-menu-item),
+::deep(.el-sub-menu__title) {
+  height: auto !important;
+  min-height: 48px;
+  line-height: 1.4 !important;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  white-space: normal !important;
+  word-break: break-word !important;
+}
+
+/* 收起状态下恢复单行居中 */
+::deep(.el-menu--collapse) .el-menu-item,
+::deep(.el-menu--collapse) .el-sub-menu__title {
+  height: 48px !important;
+  min-height: 48px;
+  line-height: 48px !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+}
+
+/* 子菜单项 - 多行换行 */
+::deep(.el-sub-menu .el-menu-item) {
+  height: auto !important;
+  min-height: 44px;
+  line-height: 1.4 !important;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  white-space: normal !important;
+  word-break: break-word !important;
+}
+
+/* 菜单标题中的 span（Element Plus 内部可能有 nowrap） */
+::deep(.el-menu-item span),
+::deep(.el-sub-menu__title span),
+::deep(.el-sub-menu .el-menu-item span) {
+  white-space: normal !important;
+  word-break: break-word !important;
+  line-height: 1.4 !important;
+}
 </style>

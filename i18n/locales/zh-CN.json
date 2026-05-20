@@ -64,7 +64,9 @@
     "feature3": "深色模式支持",
     "feature4": "基于 Nuxt 4 构建",
     "contact": "联系方式",
-    "contactDesc": "欢迎联系交换友链。"
+    "contactDesc": "欢迎联系交换友链。",
+    "openSource": "开源项目",
+    "openSourceDesc": "本项目完全开源，欢迎 Star 和贡献代码。"
   },
   "seo": {
     "title": "星途导航 - 发现精彩网站",
