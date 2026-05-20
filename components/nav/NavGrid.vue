@@ -4,7 +4,7 @@
     <template v-if="query.trim()">
       <div>
         <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
-          <span>搜索结果</span>
+          <span>{{ $t('nav.searchResults') }}</span>
           <span class="text-sm font-normal text-gray-500">({{ filteredItems.length }})</span>
         </h2>
         <div v-if="filteredItems.length > 0" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
@@ -12,7 +12,7 @@
         </div>
         <div v-else class="flex flex-col items-center justify-center py-16 text-gray-500">
           <Icon name="mdi:magnify" class="w-12 h-12 mb-3 opacity-50" />
-          <p>无数据</p>
+          <p>{{ $t('nav.noResults') }}</p>
         </div>
       </div>
     </template>
@@ -52,8 +52,10 @@
 
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
-import { navData, categories, getLeafCategories, getCategoryById } from '~/data/nav-data'
+import { useNavData } from '~/data/nav-data'
 import type { NavItem, Category } from '~/types/nav'
+
+const { navData, categories, getLeafCategories, getCategoryById } = useNavData()
 
 const { query, activeCategory } = useSearch()
 
@@ -74,11 +76,11 @@ const leafCategories = computed(() => getLeafCategories())
 // 按分类分组的网站
 const categoriesWithItems = computed(() => {
   // 获取"站长推荐"分类
-  const featuredCategory = categories.find(cat => cat.id === 'all')
-  const featuredItemsList = featuredCategory ? navData.filter(item => item.category === 'all').sort((a, b) => a.order - b.order) : []
+  const featuredCategory = categories.value.find(cat => cat.id === 'all')
+  const featuredItemsList = featuredCategory ? navData.value.filter(item => item.category === 'all').sort((a, b) => a.order - b.order) : []
 
   // 获取其他分类（排除友情链接分类，因为它有单独的展示区域）
-  const otherCategories = categories
+  const otherCategories = categories.value
     .filter(cat => cat.id !== 'all' && cat.id !== 'friendship-links')
     .map(cat => {
       let items: NavItem[] = []
@@ -86,12 +88,12 @@ const categoriesWithItems = computed(() => {
       if (cat.children && cat.children.length > 0) {
         // 有子分类：获取所有子分类的网站
         const childIds = cat.children.map(child => child.id)
-        items = navData.filter(item => childIds.includes(item.category))
+        items = navData.value.filter(item => childIds.includes(item.category))
 
         // 为每个子分类分配对应的网站
         const childrenWithItems = cat.children.map(child => ({
           ...child,
-          items: navData.filter(item => item.category === child.id).sort((a, b) => a.order - b.order)
+          items: navData.value.filter(item => item.category === child.id).sort((a, b) => a.order - b.order)
         })).filter(child => child.items.length > 0)
 
         return {
@@ -101,7 +103,7 @@ const categoriesWithItems = computed(() => {
         }
       } else {
         // 没有子分类：直接匹配该分类的网站
-        items = navData.filter(item => item.category === cat.id)
+        items = navData.value.filter(item => item.category === cat.id)
 
         return {
           ...cat,
@@ -138,7 +140,7 @@ const effectiveCategoryId = computed(() => {
 
 // 过滤后的网站（搜索时使用）
 const filteredItems = computed<NavItem[]>(() => {
-  let result = [...navData]
+  let result = [...navData.value]
 
   if (effectiveCategoryId.value !== 'all') {
     const selectedCat = getCategoryById(activeCategory.value)

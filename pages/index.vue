@@ -8,7 +8,7 @@
       <!-- 内容 -->
       <div class="relative px-8 py-12 md:py-16 flex flex-col items-start gap-3">
         <h1 class="inline px-4 py-2 rounded-lg bg-white/90 dark:bg-[#1a1a2e]/90 text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-          {{ $t('footer.slogan') }}
+          {{ $t('app.name') }}
         </h1>
         <p class="inline px-4 py-2 rounded-lg bg-white/80 dark:bg-[#1a1a2e]/80 text-gray-700 dark:text-gray-200 text-base md:text-lg">
           {{ $t('footer.slogan') }}
@@ -22,8 +22,9 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
 useHead({
-  title: '星途导航 - 发现精彩网站',
-  meta: [{ name: 'description', content: '精心挑选的高质量网站导航' }]
+  title: () => t('seo.title'),
+  meta: [{ name: 'description', content: () => t('seo.description') }]
 })
 </script>

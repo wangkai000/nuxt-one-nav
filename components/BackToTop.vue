@@ -4,7 +4,7 @@
       v-if="showBackToTop"
       @click="scrollToTop"
       class="fixed right-4 bottom-4 sm:right-6 sm:bottom-6 z-50 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 flex items-center justify-center hover:shadow-xl hover:-translate-y-1 transition-all duration-200"
-      title="返回顶部"
+      :title="$t('actions.backToTop')"
     >
       <Icon icon="fluent-emoji:up-arrow" class="w-5 h-5 sm:w-6 sm:h-6" />
     </button>

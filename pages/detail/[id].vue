@@ -11,7 +11,7 @@
           class="flex items-center gap-1 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
         >
           <Icon icon="mdi:arrow-left" class="w-4 h-4" />
-          <span>导航首页</span>
+          <span>{{ $t('detail.navHome') }}</span>
         </button>
         <Icon icon="mdi:chevron-right" class="w-4 h-4 text-gray-300 dark:text-gray-600" />
         <button
@@ -37,8 +37,8 @@
       <!-- 未找到 -->
       <div v-if="!navItem" class="flex flex-col items-center justify-center py-24 text-gray-500">
         <Icon icon="mdi:alert-circle-outline" class="w-16 h-16 mb-4 opacity-50" />
-        <p class="text-lg">未找到该网站</p>
-        <button @click="goBack" class="mt-4 text-blue-600 hover:underline">返回首页</button>
+        <p class="text-lg">{{ $t('detail.notFound') }}</p>
+        <button @click="goBack" class="mt-4 text-blue-600 hover:underline">{{ $t('detail.backHome') }}</button>
       </div>
 
       <template v-else>
@@ -95,7 +95,7 @@
               class="flex items-center justify-center gap-2 w-full px-5 py-3 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-semibold rounded-xl transition-colors shadow-sm"
             >
               <Icon icon="mdi:open-in-new" class="w-5 h-5" />
-              <span>访问官网</span>
+              <span>{{ $t('detail.visitSite') }}</span>
             </a>
 
             <!-- 链接复制 -->
@@ -104,7 +104,7 @@
               class="flex items-center justify-center gap-2 w-full px-5 py-2.5 border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-700 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium rounded-xl transition-colors"
             >
               <Icon :icon="urlCopied ? 'mdi:check' : 'mdi:content-copy'" class="w-4 h-4" />
-              <span class="text-sm">{{ urlCopied ? '已复制' : '复制链接' }}</span>
+              <span class="text-sm">{{ urlCopied ? $t('detail.copied') : $t('detail.copyLink') }}</span>
             </button>
 
             <!-- URL展示 -->
@@ -119,7 +119,7 @@
         <div v-if="relatedItems.length > 0" class="bg-white dark:bg-[#252547] rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm">
           <div class="flex items-center gap-3 mb-4">
             <Icon :icon="categoryIcon" class="w-5 h-5 text-gray-400" />
-            <h2 class="text-base font-bold text-gray-900 dark:text-white">同分类推荐</h2>
+            <h2 class="text-base font-bold text-gray-900 dark:text-white">{{ $t('detail.related') }}</h2>
             <span class="text-sm text-gray-500">({{ relatedItems.length }})</span>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
@@ -163,15 +163,18 @@
 
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
-import { navData, categories, getCategoryById } from '~/data/nav-data'
+import { useNavData } from '~/data/nav-data'
+import { categoryIconMap, domainIconMap, tagIconRules, getFallbackIcon } from '~/utils/icon-maps'
 import type { NavItem, Category } from '~/types/nav'
 
+const { navData, getCategoryById } = useNavData()
 const route = useRoute()
 const router = useRouter()
+const { t } = useI18n()
 
 // ─── 数据 ───────────────────────────────────────────────
 const itemId = computed(() => route.params.id as string)
-const navItem = computed(() => navData.find(item => item.id === itemId.value) as NavItem | undefined)
+const navItem = computed(() => navData.value.find(item => item.id === itemId.value) as NavItem | undefined)
 
 // ─── 分类信息 ───────────────────────────────────────────
 const categoryInfo = computed(() => {
@@ -199,13 +202,13 @@ const childCategory = computed<Category | null>(() => {
   return null
 })
 
-const categoryName = computed(() => categoryInfo.value?.name || '未分类')
+const categoryName = computed(() => categoryInfo.value?.name || t('detail.uncategorized'))
 const categoryIcon = computed(() => categoryInfo.value?.icon || 'mdi:folder-outline')
 
 // ─── 相关推荐（同分类）──────────────────────────────────
 const relatedItems = computed<NavItem[]>(() => {
   if (!navItem.value) return []
-  return navData
+  return navData.value
     .filter(item => item.category === navItem.value!.category && item.id !== navItem.value!.id)
     .slice(0, 10)
 })
@@ -245,50 +248,7 @@ const getRelatedIconUrl = (item: NavItem): string => {
 
 const getRelatedFallbackIcon = (item: NavItem): string => {
   if (item.iconName) return item.iconName
-  const cat = item.category
-  const catIconMap: Record<string, string> = {
-    'ai': 'mdi:robot',
-    'ai-nav': 'mdi:compass',
-    'ai-writing': 'mdi:pen',
-    'ai-framework': 'mdi:file-code',
-    'ai-local': 'mdi:desktop-classic',
-    'ai-visual': 'mdi:palette',
-    'ai-content': 'mdi:palette-swatch',
-    'ai-agent': 'mdi:robot',
-    'web3': 'mdi:ethereum',
-    'web3-info': 'mdi:information',
-    'web3-ui': 'mdi:metamask',
-    'web3-lib': 'mdi:wallet',
-    'web3-framework': 'mdi:file-code',
-    'web3-lang': 'mdi:language-solidity',
-    'frontend': 'mdi:language-javascript',
-    'frontend-react': 'mdi:react',
-    'frontend-vue': 'mdi:vuejs',
-    'frontend-other': 'mdi:svelte',
-    'frontend-ui-lib': 'mdi:storybook',
-    'frontend-css': 'mdi:tailwind',
-    'frontend-build': 'mdi:vite',
-    'frontend-webgl': 'mdi:cube',
-    'frontend-ai': 'mdi:robot',
-    'frontend-webgis': 'mdi:map-marker',
-    'nodejs': 'mdi:nodejs',
-    'nodejs-web': 'mdi:web',
-    'nodejs-threads': 'mdi:threads',
-    'nodejs-database': 'mdi:database',
-    'go-ecosystem': 'mdi:language-go',
-    'mobile': 'mdi:cellphone',
-    'desktop': 'mdi:laptop',
-    'bun-ecosystem': 'mdi:bun',
-    'tools': 'mdi:toolbox',
-    'resources': 'mdi:map',
-    'game-engines': 'mdi:gamepad-variant',
-    '3d-modeling': 'mdi:cube-outline',
-    'games': 'mdi:gamepad',
-    'community': 'mdi:account-group',
-    'learning': 'mdi:book-open-variant',
-  }
-  if (cat && catIconMap[cat]) return catIconMap[cat]
-  return 'mdi:globe'
+  return getFallbackIcon(item.category, item.url, item.tags)
 }
 
 // ─── 导航操作 ───────────────────────────────────────────
@@ -328,95 +288,14 @@ const copyUrl = async () => {
 }
 
 // ─── 兜底图标（主卡片用）────────────────────────────────
-const categoryIconMap: Record<string, string> = {
-  'ai': 'mdi:robot',
-  'ai-nav': 'mdi:compass',
-  'ai-writing': 'mdi:pen',
-  'ai-framework': 'mdi:file-code',
-  'ai-local': 'mdi:desktop-classic',
-  'ai-visual': 'mdi:palette',
-  'ai-content': 'mdi:palette-swatch',
-  'ai-agent': 'mdi:robot',
-  'web3': 'mdi:ethereum',
-  'web3-info': 'mdi:information',
-  'web3-ui': 'mdi:metamask',
-  'web3-lib': 'mdi:wallet',
-  'web3-framework': 'mdi:file-code',
-  'web3-lang': 'mdi:language-solidity',
-  'frontend': 'mdi:language-javascript',
-  'frontend-react': 'mdi:react',
-  'frontend-vue': 'mdi:vuejs',
-  'frontend-other': 'mdi:svelte',
-  'frontend-ui-lib': 'mdi:storybook',
-  'frontend-css': 'mdi:tailwind',
-  'frontend-build': 'mdi:vite',
-  'frontend-webgl': 'mdi:cube',
-  'frontend-ai': 'mdi:robot',
-  'frontend-webgis': 'mdi:map-marker',
-  'nodejs': 'mdi:nodejs',
-  'nodejs-web': 'mdi:web',
-  'nodejs-threads': 'mdi:threads',
-  'nodejs-database': 'mdi:database',
-  'go-ecosystem': 'mdi:language-go',
-  'mobile': 'mdi:cellphone',
-  'desktop': 'mdi:laptop',
-  'bun-ecosystem': 'mdi:bun',
-  'tools': 'mdi:toolbox',
-  'resources': 'mdi:map',
-  'game-engines': 'mdi:gamepad-variant',
-  '3d-modeling': 'mdi:cube-outline',
-  'games': 'mdi:gamepad',
-  'community': 'mdi:account-group',
-  'learning': 'mdi:book-open-variant',
-}
-
-const domainIconMap: Record<string, string> = {
-  'github': 'mdi:github',
-  'gitlab': 'mdi:gitlab',
-  'gitee': 'mdi:git',
-  'bilibili': 'mdi:bilibili',
-  'youtube': 'mdi:youtube',
-  'twitter': 'mdi:twitter',
-  'x.com': 'mdi:twitter',
-  'juejin': 'mdi:emoticon-outline',
-  'zhihu': 'mdi:zhihu',
-  'google': 'mdi:google',
-  'stackoverflow': 'mdi:stackoverflow',
-  'discord': 'mdi:discord',
-  'telegram': 'mdi:telegram',
-  'reddit': 'mdi:reddit',
-  'medium': 'mdi:medium',
-  'dev.to': 'mdi:dev-to',
-}
-
 const fallbackIcon = computed(() => {
   if (!navItem.value) return 'mdi:globe'
   if (navItem.value.iconName) return navItem.value.iconName
-  if (navItem.value.category && categoryIconMap[navItem.value.category]) return categoryIconMap[navItem.value.category]
-  const url = navItem.value.url.toLowerCase()
-  for (const [domain, icon] of Object.entries(domainIconMap)) {
-    if (url.includes(domain)) return icon
-  }
-  if (navItem.value.tags) {
-    const tags = navItem.value.tags.map(t => t.toLowerCase())
-    if (tags.some(t => ['vue', 'vuejs'].includes(t))) return 'mdi:vuejs'
-    if (tags.some(t => ['react'].includes(t))) return 'mdi:react'
-    if (tags.some(t => ['angular'].includes(t))) return 'mdi:angular'
-    if (tags.some(t => ['svelte'].includes(t))) return 'mdi:svelte'
-    if (tags.some(t => ['node', 'nodejs'].includes(t))) return 'mdi:nodejs'
-    if (tags.some(t => ['python'].includes(t))) return 'mdi:language-python'
-    if (tags.some(t => ['typescript', 'ts'].includes(t))) return 'mdi:language-typescript'
-    if (tags.some(t => ['javascript', 'js'].includes(t))) return 'mdi:language-javascript'
-    if (tags.some(t => ['rust'].includes(t))) return 'mdi:language-rust'
-    if (tags.some(t => ['go', 'golang'].includes(t))) return 'mdi:language-go'
-    if (tags.some(t => ['docker'].includes(t))) return 'mdi:docker'
-    if (tags.some(t => ['ai', 'gpt', 'llm'].includes(t))) return 'mdi:robot'
-  }
-  return 'mdi:globe'
+  return getFallbackIcon(navItem.value.category, navItem.value.url, navItem.value.tags)
 })
 
 // ─── SEO ───────────────────────────────────────────────
 useHead({
-  title: computed(() => navItem.value ? `${navItem.value.title} - 星途导航` : '未找到'),
+  title: computed(() => navItem.value ? t('detail.pageTitle', { title: navItem.value.title }) : t('detail.notFoundTitle')),
 })
 </script>

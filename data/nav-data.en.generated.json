@@ -2,10 +2,10 @@
   "meta": {
     "name": "StarNav Navigation Data",
     "version": "2.0.0",
-    "lastUpdated": "2026-05-19",
+    "lastUpdated": "2026-05-20",
     "description": "Navigation data for Nuxt 4 site (Markdown data source)",
-    "totalSites": 85,
-    "totalCategories": 3
+    "totalSites": 267,
+    "totalCategories": 15
   },
   "categories": [
     {
@@ -101,6 +101,154 @@
         }
       ],
       "count": 48
+    },
+    {
+      "id": "frontend",
+      "name": "Frontend Ecosystem",
+      "icon": "logos:javascript",
+      "children": [
+        {
+          "id": "frontend-react",
+          "name": "React Ecosystem",
+          "icon": "logos:react",
+          "count": 9
+        },
+        {
+          "id": "frontend-vue",
+          "name": "Vue Ecosystem",
+          "icon": "logos:vue",
+          "count": 5
+        },
+        {
+          "id": "frontend-other",
+          "name": "Other Frameworks",
+          "icon": "logos:svelte-icon",
+          "count": 10
+        },
+        {
+          "id": "frontend-ui-lib",
+          "name": "UI Component Libraries",
+          "icon": "logos:storybook-icon",
+          "count": 15
+        },
+        {
+          "id": "frontend-css",
+          "name": "CSS Frameworks",
+          "icon": "logos:tailwindcss-icon",
+          "count": 2
+        },
+        {
+          "id": "frontend-build",
+          "name": "Build Tools",
+          "icon": "logos:vitejs",
+          "count": 7
+        },
+        {
+          "id": "frontend-webgl",
+          "name": "WebGL 3D",
+          "icon": "logos:threejs",
+          "count": 2
+        },
+        {
+          "id": "frontend-ai",
+          "name": "AI Development Libraries",
+          "icon": "fluent-emoji:robot",
+          "count": 7
+        },
+        {
+          "id": "frontend-webgis",
+          "name": "WebGIS Maps",
+          "icon": "fluent-emoji:world-map",
+          "count": 10
+        }
+      ],
+      "count": 67
+    },
+    {
+      "id": "nodejs",
+      "name": "Node.js Frameworks",
+      "icon": "logos:nodejs-icon",
+      "children": [
+        {
+          "id": "nodejs-web",
+          "name": "Web Frameworks",
+          "icon": "logos:nodejs-icon",
+          "count": 7
+        },
+        {
+          "id": "nodejs-threads",
+          "name": "Multithreading / Concurrency",
+          "icon": "logos:nodejs-icon",
+          "count": 5
+        },
+        {
+          "id": "nodejs-database",
+          "name": "Database / ORM",
+          "icon": "mdi:database",
+          "count": 11
+        }
+      ],
+      "count": 23
+    },
+    {
+      "id": "go-ecosystem",
+      "name": "Go Ecosystem",
+      "icon": "logos:go",
+      "count": 12
+    },
+    {
+      "id": "mobile",
+      "name": "Mobile Development",
+      "icon": "fluent-emoji:mobile-phone",
+      "count": 8
+    },
+    {
+      "id": "desktop",
+      "name": "Desktop Applications",
+      "icon": "fluent-emoji:laptop",
+      "count": 6
+    },
+    {
+      "id": "bun-ecosystem",
+      "name": "Bun Ecosystem",
+      "icon": "logos:bun",
+      "count": 2
+    },
+    {
+      "id": "tools",
+      "name": "Utilities",
+      "icon": "fluent-emoji:toolbox",
+      "count": 5
+    },
+    {
+      "id": "resources",
+      "name": "Resource Navigation",
+      "icon": "fluent-emoji:world-map",
+      "count": 23
+    },
+    {
+      "id": "game-engines",
+      "name": "Game Engines",
+      "icon": "fluent-emoji:video-game",
+      "count": 12
+    },
+    {
+      "id": "3d-modeling",
+      "name": "3D Modeling",
+      "icon": "fluent-emoji:artist-palette",
+      "count": 11
+    },
+    {
+      "id": "games",
+      "name": "Game Community",
+      "icon": "fluent-emoji:joystick",
+      "count": 7
+    },
+    {
+      "id": "community",
+      "name": "Developer & Designer Community",
+      "icon": "fluent-emoji:people-hugging",
+      "count": 6
     }
   ],
   "sites": [
@@ -736,8 +884,8 @@
       "order": 45
     },
     {
-      "id": "登链社区",
-      "title": "登链社区",
+      "id": "learnblockchain",
+      "title": "LearnBlockchain",
       "description": "Chinese blockchain technology blog and Q&A community.",
       "url": "https://learnblockchain.cn/",
       "icon": "https://learnblockchain.cn/favicon.ico",
@@ -1278,6 +1426,2568 @@
       ],
       "category": "web3-lang",
       "order": 85
+    },
+    {
+      "id": "react",
+      "title": "React",
+      "description": "A JavaScript library for building user interfaces, developed by Facebook.",
+      "url": "https://react.dev/",
+      "icon": "https://react.dev/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "React",
+        "JavaScript"
+      ],
+      "category": "frontend-react",
+      "order": 86
+    },
+    {
+      "id": "next-js",
+      "title": "Next.js",
+      "description": "The React full-stack framework providing server-side rendering, static generation and more.",
+      "url": "https://nextjs.org/",
+      "icon": "https://nextjs.org/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "React",
+        "full-stack"
+      ],
+      "category": "frontend-react",
+      "order": 87
+    },
+    {
+      "id": "remix",
+      "title": "Remix",
+      "description": "A full-stack web framework focused on web standards and modern user experience.",
+      "url": "https://remix.run/",
+      "icon": "https://remix.run/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "React",
+        "full-stack"
+      ],
+      "category": "frontend-react",
+      "order": 88
+    },
+    {
+      "id": "gatsby",
+      "title": "Gatsby",
+      "description": "React static site generator focused on performance and SEO.",
+      "url": "https://www.gatsbyjs.com/",
+      "icon": "https://www.gatsbyjs.com/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "React",
+        "static site"
+      ],
+      "category": "frontend-react",
+      "order": 89
+    },
+    {
+      "id": "react-router",
+      "title": "React Router",
+      "description": "The standard routing library for React with declarative route definitions.",
+      "url": "https://reactrouter.com/",
+      "icon": "https://reactrouter.com/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "React",
+        "routing"
+      ],
+      "category": "frontend-react",
+      "order": 90
+    },
+    {
+      "id": "tanstack-query",
+      "title": "TanStack Query",
+      "description": "Powerful async state management library for React, Vue and more.",
+      "url": "https://tanstack.com/query",
+      "icon": "https://tanstack.com/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "React",
+        "state management"
+      ],
+      "category": "frontend-react",
+      "order": 91
+    },
+    {
+      "id": "zustand",
+      "title": "Zustand",
+      "description": "A small, fast and scalable state management solution.",
+      "url": "https://zustand-demo.pmnd.rs/",
+      "icon": "https://zustand-demo.pmnd.rs/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "React",
+        "state management"
+      ],
+      "category": "frontend-react",
+      "order": 92
+    },
+    {
+      "id": "jotai",
+      "title": "Jotai",
+      "description": "Atomic state management library for React based on the atomic design pattern.",
+      "url": "https://jotai.org/",
+      "icon": "https://jotai.org/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "React",
+        "state management"
+      ],
+      "category": "frontend-react",
+      "order": 93
+    },
+    {
+      "id": "recoil",
+      "title": "Recoil",
+      "description": "Facebook's React state management library for building high-performance applications.",
+      "url": "https://recoiljs.org/",
+      "icon": "https://recoiljs.org/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "React",
+        "state management"
+      ],
+      "category": "frontend-react",
+      "order": 94
+    },
+    {
+      "id": "vue-js",
+      "title": "Vue.js",
+      "description": "Progressive JavaScript framework that is easy to learn, easy to use, and performant.",
+      "url": "https://vuejs.org/",
+      "icon": "https://vuejs.org/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "Vue",
+        "JavaScript"
+      ],
+      "category": "frontend-vue",
+      "order": 95
+    },
+    {
+      "id": "nuxt",
+      "title": "Nuxt",
+      "description": "The Vue full-stack framework providing server-side rendering, static generation and more.",
+      "url": "https://nuxt.com/",
+      "icon": "https://nuxt.com/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "Vue",
+        "full-stack"
+      ],
+      "category": "frontend-vue",
+      "order": 96
+    },
+    {
+      "id": "pinia",
+      "title": "Pinia",
+      "description": "The official Vue state management library, type-safe and easy to use.",
+      "url": "https://pinia.vuejs.org/",
+      "icon": "https://pinia.vuejs.org/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "Vue",
+        "state management"
+      ],
+      "category": "frontend-vue",
+      "order": 97
+    },
+    {
+      "id": "vueuse",
+      "title": "VueUse",
+      "description": "A collection of Vue composition functions providing commonly used utilities.",
+      "url": "https://vueuse.org/",
+      "icon": "https://vueuse.org/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "Vue",
+        "utility library"
+      ],
+      "category": "frontend-vue",
+      "order": 98
+    },
+    {
+      "id": "vitepress",
+      "title": "VitePress",
+      "description": "Vue-powered static site generator, ideal for documentation and blogs.",
+      "url": "https://vitepress.dev/",
+      "icon": "https://vitepress.dev/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "Vue",
+        "static site"
+      ],
+      "category": "frontend-vue",
+      "order": 99
+    },
+    {
+      "id": "svelte",
+      "title": "Svelte",
+      "description": "A compile-time framework that compiles components into efficient JavaScript code.",
+      "url": "https://svelte.dev/",
+      "icon": "https://svelte.dev/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "compile-time",
+        "JavaScript"
+      ],
+      "category": "frontend-other",
+      "order": 100
+    },
+    {
+      "id": "sveltekit",
+      "title": "SvelteKit",
+      "description": "The Svelte full-stack framework providing server-side rendering and routing.",
+      "url": "https://kit.svelte.dev/",
+      "icon": "https://kit.svelte.dev/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "Svelte",
+        "full-stack"
+      ],
+      "category": "frontend-other",
+      "order": 101
+    },
+    {
+      "id": "angular",
+      "title": "Angular",
+      "description": "A complete frontend framework by Google, suited for large enterprise applications.",
+      "url": "https://angular.io/",
+      "icon": "https://angular.io/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "TypeScript",
+        "enterprise"
+      ],
+      "category": "frontend-other",
+      "order": 102
+    },
+    {
+      "id": "solidjs",
+      "title": "SolidJS",
+      "description": "A declarative, efficient and flexible JavaScript library, similar to React but without virtual DOM.",
+      "url": "https://www.solidjs.com/",
+      "icon": "https://www.solidjs.com/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "reactive",
+        "JavaScript"
+      ],
+      "category": "frontend-other",
+      "order": 103
+    },
+    {
+      "id": "preact",
+      "title": "Preact",
+      "description": "A lightweight alternative to React, only 3KB in size.",
+      "url": "https://preactjs.com/",
+      "icon": "https://preactjs.com/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "React",
+        "lightweight"
+      ],
+      "category": "frontend-other",
+      "order": 104
+    },
+    {
+      "id": "alpine-js",
+      "title": "Alpine.js",
+      "description": "A lightweight JavaScript framework, like the Tailwind of JavaScript.",
+      "url": "https://alpinejs.dev/",
+      "icon": "https://alpinejs.dev/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "lightweight",
+        "JavaScript"
+      ],
+      "category": "frontend-other",
+      "order": 105
+    },
+    {
+      "id": "lit",
+      "title": "Lit",
+      "description": "A lightweight Web Components library by Google.",
+      "url": "https://lit.dev/",
+      "icon": "https://lit.dev/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "Web Components"
+      ],
+      "category": "frontend-other",
+      "order": 106
+    },
+    {
+      "id": "astro",
+      "title": "Astro",
+      "description": "A content-driven static site generator supporting multiple frontend frameworks.",
+      "url": "https://astro.build/",
+      "icon": "https://astro.build/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "static site",
+        "multi-framework"
+      ],
+      "category": "frontend-other",
+      "order": 107
+    },
+    {
+      "id": "qwik",
+      "title": "Qwik",
+      "description": "A framework focused on instant loading, fast startup regardless of app size.",
+      "url": "https://qwik.dev/",
+      "icon": "https://qwik.dev/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "performance",
+        "instant loading"
+      ],
+      "category": "frontend-other",
+      "order": 108
+    },
+    {
+      "id": "fresh",
+      "title": "Fresh",
+      "description": "A Deno web framework based on Preact and Islands architecture.",
+      "url": "https://fresh.deno.dev/",
+      "icon": "https://fresh.deno.dev/favicon.ico",
+      "tags": [
+        "frontend framework",
+        "Deno",
+        "Preact"
+      ],
+      "category": "frontend-other",
+      "order": 109
+    },
+    {
+      "id": "uiverse-ui",
+      "title": "Uiverse UI",
+      "description": "An open-source UI component library platform driven by the community, offering a large number of reusable UI components.",
+      "url": "https://uiverse.io/",
+      "icon": "https://uiverse.io/android-chrome-512x512.png",
+      "tags": [
+        "UI component library"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 110
+    },
+    {
+      "id": "inspira-ui",
+      "title": "Inspira UI",
+      "description": "An innovator in the Vue 3 ecosystem combining design aesthetics with technical depth.",
+      "url": "https://inspira-ui.com/",
+      "icon": "https://uiverse.io/android-chrome-512x512.png",
+      "tags": [
+        "UI component library"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 111
+    },
+    {
+      "id": "pixel-ui",
+      "title": "Pixel-ui",
+      "description": "A Vue 3 pixel-style UI library built with CSS features.",
+      "url": "https://maomentai817.github.io/pixel-ui",
+      "icon": "https://maomentai817.github.io/pixel-ui/images/homelogo.png",
+      "tags": [
+        "UI component library"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 112
+    },
+    {
+      "id": "headless-ui",
+      "title": "Headless UI",
+      "description": "A new paradigm in modern UI development that separates interaction logic from visual presentation.",
+      "url": "https://headlessui.com/",
+      "icon": "https://headlessui.com/favicon.ico",
+      "tags": [
+        "UI component library"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 113
+    },
+    {
+      "id": "reactbits",
+      "title": "ReactBits",
+      "description": "A React animation UI component library.",
+      "url": "https://reactbits.dev/",
+      "icon": "https://reactbits.dev/favicon.ico",
+      "tags": [
+        "UI component library"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 114
+    },
+    {
+      "id": "21st-dev",
+      "title": "21st.dev",
+      "description": "Discover, share, and craft UI components — a platform for high-quality UI components and design resources.",
+      "url": "https://21st.dev",
+      "icon": "https://21st.dev/favicon.ico",
+      "tags": [
+        "UI component library"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 115
+    },
+    {
+      "id": "magic-ui",
+      "title": "Magic UI",
+      "description": "A cool UI library.",
+      "url": "https://magicui.design/",
+      "icon": "https://magicui.design/favicon.ico",
+      "tags": [
+        "UI component library"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 116
+    },
+    {
+      "id": "8bitui",
+      "title": "8bitUI",
+      "description": "A pixel UI library.",
+      "url": "https://www.8bitcn.com/",
+      "icon": "https://www.8bitcn.com/favicon.ico",
+      "tags": [
+        "UI component library"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 117
+    },
+    {
+      "id": "pxlkit",
+      "title": "PXLKit",
+      "description": "A pixel UI component library.",
+      "url": "https://pxlkit.xyz/",
+      "icon": "https://pxlkit.xyz/favicon.svg",
+      "tags": [
+        "UI component library",
+        "pixel"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 118
+    },
+    {
+      "id": "bootstrap",
+      "title": "Bootstrap",
+      "description": "The most popular HTML, CSS and JS framework for developing responsive websites.",
+      "url": "https://getbootstrap.com/",
+      "icon": "https://getbootstrap.com/favicon.ico",
+      "tags": [
+        "UI component library",
+        "CSS framework",
+        "responsive"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 119
+    },
+    {
+      "id": "chakra-ui",
+      "title": "Chakra UI",
+      "description": "A simple, modular and accessible component library for React.",
+      "url": "https://chakra-ui.com/",
+      "icon": "https://chakra-ui.com/favicon.ico",
+      "tags": [
+        "UI component library",
+        "React",
+        "component library"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 120
+    },
+    {
+      "id": "mantine",
+      "title": "Mantine",
+      "description": "A feature-rich React component library with 100+ components.",
+      "url": "https://mantine.dev/",
+      "icon": "https://mantine.dev/favicon.ico",
+      "tags": [
+        "UI component library",
+        "React",
+        "component library"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 121
+    },
+    {
+      "id": "ant-design",
+      "title": "Ant Design",
+      "description": "Enterprise-grade UI design language and React component library.",
+      "url": "https://ant.design/",
+      "icon": "https://ant.design/favicon.ico",
+      "tags": [
+        "UI component library",
+        "React",
+        "enterprise"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 122
+    },
+    {
+      "id": "element-plus",
+      "title": "Element Plus",
+      "description": "A Vue 3 based component library for building desktop applications.",
+      "url": "https://element-plus.org/",
+      "icon": "https://element-plus.org/favicon.ico",
+      "tags": [
+        "UI component library",
+        "Vue",
+        "component library"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 123
+    },
+    {
+      "id": "shadcnui",
+      "title": "shadcn/ui",
+      "description": "A collection of copy-paste components based on Tailwind CSS.",
+      "url": "https://ui.shadcn.com/",
+      "icon": "https://ui.shadcn.com/favicon.ico",
+      "tags": [
+        "UI component library",
+        "React",
+        "Tailwind"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 124
+    },
+    {
+      "id": "tailwind-css",
+      "title": "Tailwind CSS",
+      "description": "A utility-first CSS framework providing low-level utility classes.",
+      "url": "https://tailwindcss.com/",
+      "icon": "https://tailwindcss.com/favicon.ico",
+      "tags": [
+        "CSS framework",
+        "utility-first"
+      ],
+      "category": "frontend-css",
+      "order": 125
+    },
+    {
+      "id": "bulma",
+      "title": "Bulma",
+      "description": "A modern CSS framework based on Flexbox, requiring no JavaScript.",
+      "url": "https://bulma.io/",
+      "icon": "https://bulma.io/favicon.ico",
+      "tags": [
+        "CSS framework",
+        "Flexbox"
+      ],
+      "category": "frontend-css",
+      "order": 126
+    },
+    {
+      "id": "vite",
+      "title": "Vite",
+      "description": "Next-generation frontend build tool providing an extremely fast development experience.",
+      "url": "https://vitejs.dev/",
+      "icon": "https://vitejs.dev/favicon.ico",
+      "tags": [
+        "build tool",
+        "dev server"
+      ],
+      "category": "frontend-build",
+      "order": 127
+    },
+    {
+      "id": "webpack",
+      "title": "Webpack",
+      "description": "Static module bundler, the standard for modern frontend development.",
+      "url": "https://webpack.js.org/",
+      "icon": "https://webpack.js.org/favicon.ico",
+      "tags": [
+        "build tool",
+        "bundling"
+      ],
+      "category": "frontend-build",
+      "order": 128
+    },
+    {
+      "id": "rollup",
+      "title": "Rollup",
+      "description": "JavaScript module bundler suitable for library development.",
+      "url": "https://rollupjs.org/",
+      "icon": "https://rollupjs.org/favicon.ico",
+      "tags": [
+        "build tool",
+        "bundling"
+      ],
+      "category": "frontend-build",
+      "order": 129
+    },
+    {
+      "id": "esbuild",
+      "title": "esbuild",
+      "description": "Extremely fast JavaScript bundler, 10-100x faster than Webpack.",
+      "url": "https://esbuild.github.io/",
+      "icon": "https://esbuild.github.io/favicon.svg",
+      "tags": [
+        "build tool",
+        "bundling"
+      ],
+      "category": "frontend-build",
+      "order": 130
+    },
+    {
+      "id": "turbopack",
+      "title": "Turbopack",
+      "description": "Webpack's successor by Vercel, incredibly fast.",
+      "url": "https://turbo.build/pack",
+      "icon": "https://turbo.build/favicon.ico",
+      "tags": [
+        "build tool",
+        "bundling"
+      ],
+      "category": "frontend-build",
+      "order": 131
+    },
+    {
+      "id": "parcel",
+      "title": "Parcel",
+      "description": "Zero-config web application bundler, ready to use out of the box.",
+      "url": "https://parceljs.org/",
+      "icon": "https://parceljs.org/favicon.ico",
+      "tags": [
+        "build tool",
+        "bundling"
+      ],
+      "category": "frontend-build",
+      "order": 132
+    },
+    {
+      "id": "rspack",
+      "title": "Rspack",
+      "description": "High-performance Rust-based web build tool, compatible with the Webpack ecosystem.",
+      "url": "https://www.rspack.dev/",
+      "icon": "https://www.rspack.dev/favicon.ico",
+      "tags": [
+        "build tool",
+        "bundling",
+        "Rust"
+      ],
+      "category": "frontend-build",
+      "order": 133
+    },
+    {
+      "id": "three-js",
+      "title": "Three.js",
+      "description": "The most popular WebGL 3D graphics library, providing rich 3D rendering capabilities and a convenient API.",
+      "url": "https://threejs.org/",
+      "icon": "https://threejs.org/favicon.ico",
+      "tags": [
+        "WebGL",
+        "3D",
+        "graphics",
+        "rendering"
+      ],
+      "category": "frontend-webgl",
+      "order": 134
+    },
+    {
+      "id": "babylon-js",
+      "title": "Babylon.js",
+      "description": "A powerful WebGL 3D engine providing game-level rendering and a complete toolchain.",
+      "url": "https://www.babylonjs.com/",
+      "icon": "https://www.babylonjs.com/favicon.ico",
+      "tags": [
+        "WebGL",
+        "3D",
+        "graphics",
+        "game engine"
+      ],
+      "category": "frontend-webgl",
+      "order": 135
+    },
+    {
+      "id": "langchain-js",
+      "title": "LangChain.js",
+      "description": "The JavaScript/TypeScript version of LangChain for building AI applications.",
+      "url": "https://js.langchain.com/",
+      "icon": "https://js.langchain.com/favicon.ico",
+      "tags": [
+        "AI",
+        "framework",
+        "JavaScript",
+        "TypeScript",
+        "LLM"
+      ],
+      "category": "frontend-ai",
+      "order": 136
+    },
+    {
+      "id": "transformers-js",
+      "title": "Transformers.js",
+      "description": "Hugging Face's JavaScript library for running pre-trained models in the browser.",
+      "url": "https://huggingface.co/docs/transformers.js",
+      "icon": "https://huggingface.co/favicon.ico",
+      "tags": [
+        "AI",
+        "browser",
+        "model inference",
+        "Hugging Face"
+      ],
+      "category": "frontend-ai",
+      "order": 137
+    },
+    {
+      "id": "vercel-ai-sdk",
+      "title": "Vercel AI SDK",
+      "description": "A toolkit for building AI applications, supporting Next.js, React, Vue and more.",
+      "url": "https://sdk.vercel.ai/",
+      "icon": "https://sdk.vercel.ai/favicon.ico",
+      "tags": [
+        "AI",
+        "SDK",
+        "Next.js",
+        "Vercel"
+      ],
+      "category": "frontend-ai",
+      "order": 138
+    },
+    {
+      "id": "openai-node-js-sdk",
+      "title": "OpenAI Node.js SDK",
+      "description": "Official OpenAI Node.js SDK for calling GPT, DALL·E and other APIs.",
+      "url": "https://github.com/openai/openai-node",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "AI",
+        "SDK",
+        "OpenAI",
+        "Node.js"
+      ],
+      "category": "frontend-ai",
+      "order": 139
+    },
+    {
+      "id": "anthropic-sdk-for-js",
+      "title": "Anthropic SDK for JS",
+      "description": "Official Anthropic TypeScript SDK for calling the Claude API.",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "AI",
+        "SDK",
+        "Claude",
+        "TypeScript"
+      ],
+      "category": "frontend-ai",
+      "order": 140
+    },
+    {
+      "id": "langgraph-js",
+      "title": "LangGraph.js",
+      "description": "The JavaScript version of LangGraph for building stateful AI applications.",
+      "url": "https://github.com/langchain-ai/langgraphjs",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "AI",
+        "framework",
+        "workflow",
+        "Agent"
+      ],
+      "category": "frontend-ai",
+      "order": 141
+    },
+    {
+      "id": "ml5-js",
+      "title": "ml5.js",
+      "description": "A friendly machine learning library based on TensorFlow.js, providing simple APIs for image classification, pose detection, text generation and more, aimed at creative coding and beginners.",
+      "url": "https://ml5js.org/",
+      "icon": "https://ml5js.org/favicon.ico",
+      "tags": [
+        "AI",
+        "browser",
+        "machine learning",
+        "TensorFlow.js",
+        "creative coding"
+      ],
+      "category": "frontend-ai",
+      "order": 142
+    },
+    {
+      "id": "leaflet",
+      "title": "Leaflet",
+      "description": "The most popular open-source JavaScript map library, lightweight and easy to use with mobile support, used by GitHub, Flickr and more.",
+      "url": "https://leafletjs.com/",
+      "icon": "https://leafletjs.com/favicon.ico",
+      "tags": [
+        "WebGIS",
+        "map",
+        "open source",
+        "lightweight"
+      ],
+      "category": "frontend-webgis",
+      "order": 143
+    },
+    {
+      "id": "mapbox-gl-js",
+      "title": "Mapbox GL JS",
+      "description": "A powerful vector map rendering library supporting custom styles, 3D terrain and real-time data visualization.",
+      "url": "https://www.mapbox.com/mapbox-gljs",
+      "icon": "https://www.mapbox.com/favicon.ico",
+      "tags": [
+        "WebGIS",
+        "map",
+        "vector",
+        "3D"
+      ],
+      "category": "frontend-webgis",
+      "order": 144
+    },
+    {
+      "id": "openlayers",
+      "title": "OpenLayers",
+      "description": "A powerful WebGIS library supporting OGC standards, WMS/WFS services, suited for enterprise GIS applications.",
+      "url": "https://openlayers.org/",
+      "icon": "https://openlayers.org/favicon.ico",
+      "tags": [
+        "WebGIS",
+        "map",
+        "OGC",
+        "enterprise"
+      ],
+      "category": "frontend-webgis",
+      "order": 145
+    },
+    {
+      "id": "cesium",
+      "title": "Cesium",
+      "description": "The world's leading 3D globe and map platform, supporting time-dynamic data, terrain and building visualization.",
+      "url": "https://cesium.com/platform/cesiumjs/",
+      "icon": "https://cesium.com/favicon.ico",
+      "tags": [
+        "WebGIS",
+        "3D",
+        "globe",
+        "visualization"
+      ],
+      "category": "frontend-webgis",
+      "order": 146
+    },
+    {
+      "id": "maplibre-gl-js",
+      "title": "MapLibre GL JS",
+      "description": "An open-source fork of Mapbox GL JS, free and fully featured, no API Key required.",
+      "url": "https://maplibre.org/maplibre-gl-js/docs/",
+      "icon": "https://maplibre.org/favicon.ico",
+      "tags": [
+        "WebGIS",
+        "map",
+        "open source",
+        "vector"
+      ],
+      "category": "frontend-webgis",
+      "order": 147
+    },
+    {
+      "id": "deck-gl",
+      "title": "Deck.gl",
+      "description": "Uber's open-source geospatial data visualization library supporting large-scale data rendering and 3D visualization.",
+      "url": "https://deck.gl/",
+      "icon": "https://deck.gl/favicon.ico",
+      "tags": [
+        "WebGIS",
+        "visualization",
+        "3D",
+        "big data"
+      ],
+      "category": "frontend-webgis",
+      "order": 148
+    },
+    {
+      "id": "turf-js",
+      "title": "Turf.js",
+      "description": "A geospatial analysis library providing spatial operations, coordinate conversion, distance calculation and more.",
+      "url": "https://turfjs.org/",
+      "icon": "https://turfjs.org/favicon.ico",
+      "tags": [
+        "WebGIS",
+        "spatial analysis",
+        "geocomputation"
+      ],
+      "category": "frontend-webgis",
+      "order": 149
+    },
+    {
+      "id": "arcgis-api-for-javascript",
+      "title": "ArcGIS API for JavaScript",
+      "description": "ESRI's official JavaScript API providing complete GIS functionality and map services.",
+      "url": "https://developers.arcgis.com/javascript/latest/",
+      "icon": "https://developers.arcgis.com/favicon.ico",
+      "tags": [
+        "WebGIS",
+        "ArcGIS",
+        "enterprise",
+        "ESRI"
+      ],
+      "category": "frontend-webgis",
+      "order": 150
+    },
+    {
+      "id": "amap-js-api",
+      "title": "Amap JS API",
+      "description": "Amap (Gaode) JavaScript API, a mainstream map service in China supporting 2D/3D maps, route planning and more.",
+      "url": "https://lbs.amap.com/api/javascript-api-v2/summary",
+      "icon": "https://lbs.amap.com/favicon.ico",
+      "tags": [
+        "WebGIS",
+        "map",
+        "China",
+        "Amap"
+      ],
+      "category": "frontend-webgis",
+      "order": 151
+    },
+    {
+      "id": "baidu-maps-js-api",
+      "title": "Baidu Maps JS API",
+      "description": "Baidu Maps JavaScript API providing map display, positioning, route planning and other services with WebGL rendering.",
+      "url": "https://lbsyun.baidu.com/index.php?title=jspopularGL",
+      "icon": "https://lbsyun.baidu.com/favicon.ico",
+      "tags": [
+        "WebGIS",
+        "map",
+        "China",
+        "Baidu"
+      ],
+      "category": "frontend-webgis",
+      "order": 152
+    },
+    {
+      "id": "express-js",
+      "title": "Express.js",
+      "description": "Fast, unopinionated, minimalist web framework for Node.js, the most popular Node.js framework.",
+      "url": "https://expressjs.com/",
+      "icon": "https://expressjs.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "backend framework",
+        "web"
+      ],
+      "category": "nodejs-web",
+      "order": 153
+    },
+    {
+      "id": "koa",
+      "title": "Koa",
+      "description": "Next-generation web framework by the Express team, based on async/await.",
+      "url": "https://koajs.com/",
+      "icon": "https://koajs.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "backend framework",
+        "web"
+      ],
+      "category": "nodejs-web",
+      "order": 154
+    },
+    {
+      "id": "fastify",
+      "title": "Fastify",
+      "description": "Fast and low-overhead web framework focused on providing the best developer experience.",
+      "url": "https://www.fastify.io/",
+      "icon": "https://www.fastify.io/favicon.ico",
+      "tags": [
+        "Node.js",
+        "backend framework",
+        "high performance"
+      ],
+      "category": "nodejs-web",
+      "order": 155
+    },
+    {
+      "id": "nestjs",
+      "title": "NestJS",
+      "description": "A framework for building efficient, scalable Node.js server-side applications.",
+      "url": "https://nestjs.com/",
+      "icon": "https://nestjs.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "backend framework",
+        "TypeScript",
+        "enterprise"
+      ],
+      "category": "nodejs-web",
+      "order": 156
+    },
+    {
+      "id": "hono",
+      "title": "Hono",
+      "description": "An ultrafast web framework supporting Cloudflare Workers, Deno, Bun and other edge runtimes.",
+      "url": "https://hono.dev/",
+      "icon": "https://hono.dev/favicon.ico",
+      "tags": [
+        "Node.js",
+        "edge computing",
+        "high performance",
+        "TypeScript"
+      ],
+      "category": "nodejs-web",
+      "order": 157
+    },
+    {
+      "id": "adonisjs",
+      "title": "AdonisJS",
+      "description": "A fully-featured Node.js web framework inspired by Laravel.",
+      "url": "https://adonisjs.com/",
+      "icon": "https://adonisjs.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "backend framework",
+        "MVC",
+        "full-stack"
+      ],
+      "category": "nodejs-web",
+      "order": 158
+    },
+    {
+      "id": "trpc",
+      "title": "tRPC",
+      "description": "End-to-end type-safe API framework without code generation.",
+      "url": "https://trpc.io/",
+      "icon": "https://trpc.io/favicon.ico",
+      "tags": [
+        "Node.js",
+        "API",
+        "TypeScript",
+        "full-stack"
+      ],
+      "category": "nodejs-web",
+      "order": 159
+    },
+    {
+      "id": "piscina",
+      "title": "Piscina",
+      "description": "A high-performance Node.js thread pool library for easy parallel processing of CPU-intensive tasks, maximizing CPU utilization.",
+      "url": "https://piscinajs.dev/",
+      "icon": "https://piscinajs.dev/favicon.ico",
+      "tags": [
+        "Node.js",
+        "multithreading",
+        "thread pool",
+        "performance optimization"
+      ],
+      "category": "nodejs-threads",
+      "order": 160
+    },
+    {
+      "id": "workerpool",
+      "title": "workerpool",
+      "description": "A lightweight Node.js thread pool implementation for executing time-consuming computation tasks in worker threads.",
+      "url": "https://www.npmjs.com/package/workerpool",
+      "icon": "https://www.npmjs.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "multithreading",
+        "thread pool",
+        "Worker"
+      ],
+      "category": "nodejs-threads",
+      "order": 161
+    },
+    {
+      "id": "threads-js",
+      "title": "threads.js",
+      "description": "A multithreading library for Node.js and the browser, simplifying the use of Web Workers and Worker Threads.",
+      "url": "https://threads.js.org/",
+      "icon": "https://threads.js.org/favicon.ico",
+      "tags": [
+        "Node.js",
+        "multithreading",
+        "Web Workers",
+        "concurrency"
+      ],
+      "category": "nodejs-threads",
+      "order": 162
+    },
+    {
+      "id": "tinypool",
+      "title": "tinypool",
+      "description": "A lightweight general-purpose thread pool for Node.js, built on worker_threads, supporting task queues and parallel execution.",
+      "url": "https://github.com/piscinajs/tinypool",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "multithreading",
+        "thread pool",
+        "lightweight"
+      ],
+      "category": "nodejs-threads",
+      "order": 163
+    },
+    {
+      "id": "wa-sqlite",
+      "title": "wa-sqlite",
+      "description": "A high-performance SQLite build supporting WebAssembly and Web Workers for efficient browser execution.",
+      "url": "https://wa-sqlite.github.io/",
+      "icon": "https://wa-sqlite.github.io/favicon.ico",
+      "tags": [
+        "SQLite",
+        "WebAssembly",
+        "Web Workers",
+        "database"
+      ],
+      "category": "nodejs-threads",
+      "order": 164
+    },
+    {
+      "id": "prisma",
+      "title": "Prisma",
+      "description": "Next-generation Node.js/TypeScript ORM providing type-safe database access, supporting PostgreSQL, MySQL, SQLite and more.",
+      "url": "https://www.prisma.io/",
+      "icon": "https://www.prisma.io/favicon.ico",
+      "tags": [
+        "Node.js",
+        "ORM",
+        "TypeScript",
+        "database"
+      ],
+      "category": "nodejs-database",
+      "order": 165
+    },
+    {
+      "id": "typeorm",
+      "title": "TypeORM",
+      "description": "An ORM supporting TypeScript and JavaScript with Active Record and Data Mapper patterns.",
+      "url": "https://typeorm.io/",
+      "icon": "https://typeorm.io/favicon.ico",
+      "tags": [
+        "Node.js",
+        "ORM",
+        "TypeScript",
+        "database"
+      ],
+      "category": "nodejs-database",
+      "order": 166
+    },
+    {
+      "id": "drizzle-orm",
+      "title": "Drizzle ORM",
+      "description": "A lightweight, type-safe TypeScript ORM focused on performance and developer experience.",
+      "url": "https://orm.drizzle.team/",
+      "icon": "https://orm.drizzle.team/favicon.ico",
+      "tags": [
+        "Node.js",
+        "ORM",
+        "TypeScript",
+        "database"
+      ],
+      "category": "nodejs-database",
+      "order": 167
+    },
+    {
+      "id": "mikroorm",
+      "title": "MikroORM",
+      "description": "A TypeScript ORM based on Data Mapper and Unit of Work patterns, supporting MongoDB and SQL databases.",
+      "url": "https://mikro-orm.io/",
+      "icon": "https://mikro-orm.io/favicon.ico",
+      "tags": [
+        "Node.js",
+        "ORM",
+        "TypeScript",
+        "MongoDB"
+      ],
+      "category": "nodejs-database",
+      "order": 168
+    },
+    {
+      "id": "mongoose",
+      "title": "Mongoose",
+      "description": "MongoDB object modeling tool providing schema validation and type casting.",
+      "url": "https://mongoosejs.com/",
+      "icon": "https://mongoosejs.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "ODM",
+        "MongoDB",
+        "database"
+      ],
+      "category": "nodejs-database",
+      "order": 169
+    },
+    {
+      "id": "sequelize",
+      "title": "Sequelize",
+      "description": "Promise-based Node.js ORM supporting PostgreSQL, MySQL, MariaDB, SQLite and more.",
+      "url": "https://sequelize.org/",
+      "icon": "https://sequelize.org/favicon.ico",
+      "tags": [
+        "Node.js",
+        "ORM",
+        "database",
+        "SQL"
+      ],
+      "category": "nodejs-database",
+      "order": 170
+    },
+    {
+      "id": "knex-js",
+      "title": "Knex.js",
+      "description": "SQL query builder supporting chained calls and transactions, compatible with multiple databases.",
+      "url": "https://knexjs.org/",
+      "icon": "https://knexjs.org/favicon.ico",
+      "tags": [
+        "Node.js",
+        "SQL",
+        "query builder",
+        "database"
+      ],
+      "category": "nodejs-database",
+      "order": 171
+    },
+    {
+      "id": "better-sqlite3",
+      "title": "better-sqlite3",
+      "description": "High-performance SQLite3 binding with synchronous API design, faster than node-sqlite3.",
+      "url": "https://github.com/WiseLibs/better-sqlite3",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "SQLite",
+        "database",
+        "high performance"
+      ],
+      "category": "nodejs-database",
+      "order": 172
+    },
+    {
+      "id": "node-postgres",
+      "title": "node-postgres",
+      "description": "PostgreSQL Node.js client supporting connection pooling and prepared statements.",
+      "url": "https://node-postgres.com/",
+      "icon": "https://node-postgres.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "PostgreSQL",
+        "database",
+        "client"
+      ],
+      "category": "nodejs-database",
+      "order": 173
+    },
+    {
+      "id": "mysql2",
+      "title": "mysql2",
+      "description": "MySQL Node.js client supporting prepared statements and connection pooling, faster than the mysql module.",
+      "url": "https://github.com/sidorares/node-mysql2",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "MySQL",
+        "database",
+        "client"
+      ],
+      "category": "nodejs-database",
+      "order": 174
+    },
+    {
+      "id": "ioredis",
+      "title": "ioredis",
+      "description": "High-performance Redis client supporting cluster, sentinel, pipelining and Lua scripts.",
+      "url": "https://github.com/luin/ioredis",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "Redis",
+        "cache",
+        "client"
+      ],
+      "category": "nodejs-database",
+      "order": 175
+    },
+    {
+      "id": "go",
+      "title": "Go",
+      "description": "An open-source programming language developed by Google, known for simplicity, efficiency and concurrency support.",
+      "url": "https://go.dev/",
+      "icon": "https://go.dev/favicon.ico",
+      "tags": [
+        "Go",
+        "programming language",
+        "Google",
+        "concurrency"
+      ],
+      "category": "go-ecosystem",
+      "order": 176
+    },
+    {
+      "id": "gin",
+      "title": "Gin",
+      "description": "The most popular Go web framework, known for high performance and lightweight design, supporting middleware and route grouping.",
+      "url": "https://gin-gonic.com/",
+      "icon": "https://gin-gonic.com/favicon.ico",
+      "tags": [
+        "Go",
+        "web framework",
+        "high performance",
+        "REST API"
+      ],
+      "category": "go-ecosystem",
+      "order": 177
+    },
+    {
+      "id": "gorm",
+      "title": "GORM",
+      "description": "The most popular ORM library in the Go ecosystem, supporting associations, transactions, hooks and more.",
+      "url": "https://gorm.io/",
+      "icon": "https://gorm.io/favicon.ico",
+      "tags": [
+        "Go",
+        "ORM",
+        "database",
+        "SQL"
+      ],
+      "category": "go-ecosystem",
+      "order": 178
+    },
+    {
+      "id": "echo",
+      "title": "Echo",
+      "description": "A high-performance, minimalist Go web framework with optimized routing and middleware performance.",
+      "url": "https://echo.labstack.com/",
+      "icon": "https://echo.labstack.com/favicon.ico",
+      "tags": [
+        "Go",
+        "web framework",
+        "high performance",
+        "lightweight"
+      ],
+      "category": "go-ecosystem",
+      "order": 179
+    },
+    {
+      "id": "fiber",
+      "title": "Fiber",
+      "description": "An Express-inspired Go web framework known for extreme performance and low memory usage.",
+      "url": "https://gofiber.io/",
+      "icon": "https://gofiber.io/favicon.ico",
+      "tags": [
+        "Go",
+        "web framework",
+        "high performance",
+        "Express-style"
+      ],
+      "category": "go-ecosystem",
+      "order": 180
+    },
+    {
+      "id": "chi",
+      "title": "Chi",
+      "description": "A lightweight Go HTTP router supporting middleware and context passing, compatible with net/http.",
+      "url": "https://go-chi.io/",
+      "icon": "https://go-chi.io/favicon.ico",
+      "tags": [
+        "Go",
+        "router",
+        "HTTP",
+        "lightweight"
+      ],
+      "category": "go-ecosystem",
+      "order": 181
+    },
+    {
+      "id": "buffalo",
+      "title": "Buffalo",
+      "description": "A full-stack Go web development framework providing a complete solution from frontend to backend.",
+      "url": "https://gobuffalo.io/",
+      "icon": "https://gobuffalo.io/favicon.ico",
+      "tags": [
+        "Go",
+        "full-stack",
+        "web framework",
+        "MVC"
+      ],
+      "category": "go-ecosystem",
+      "order": 182
+    },
+    {
+      "id": "zap",
+      "title": "zap",
+      "description": "Uber's open-source high-performance Go logging library, 10x faster than the standard library.",
+      "url": "https://github.com/uber-go/zap",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "Go",
+        "logging",
+        "performance",
+        "Uber"
+      ],
+      "category": "go-ecosystem",
+      "order": 183
+    },
+    {
+      "id": "cobra",
+      "title": "Cobra",
+      "description": "The most popular CLI application framework for Go, used by Docker, Kubernetes and more.",
+      "url": "https://cobra.dev/",
+      "icon": "https://cobra.dev/favicon.ico",
+      "tags": [
+        "Go",
+        "CLI",
+        "command line",
+        "Docker"
+      ],
+      "category": "go-ecosystem",
+      "order": 184
+    },
+    {
+      "id": "go-redis",
+      "title": "go-redis",
+      "description": "The most popular Redis client for Go, supporting connection pooling, pipelining, transactions and more.",
+      "url": "https://redis.uptrace.dev/",
+      "icon": "https://redis.uptrace.dev/favicon.ico",
+      "tags": [
+        "Go",
+        "Redis",
+        "cache",
+        "client"
+      ],
+      "category": "go-ecosystem",
+      "order": 185
+    },
+    {
+      "id": "grpc",
+      "title": "gRPC",
+      "description": "Google's open-source high-performance RPC framework supporting multiple languages and Protocol Buffers.",
+      "url": "https://grpc.io/",
+      "icon": "https://grpc.io/favicon.ico",
+      "tags": [
+        "Go",
+        "RPC",
+        "Google",
+        "Protocol Buffers"
+      ],
+      "category": "go-ecosystem",
+      "order": 186
+    },
+    {
+      "id": "wanderlost",
+      "title": "Wanderlost",
+      "description": "A new Go generics utility library released in 2025, providing type-safe collection operations.",
+      "url": "https://github.com/wanderlost/wanderlost",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "Go",
+        "generics",
+        "utility library",
+        "2025"
+      ],
+      "category": "go-ecosystem",
+      "order": 187
+    },
+    {
+      "id": "flutter",
+      "title": "Flutter",
+      "description": "Google's open-source cross-platform UI framework using the Dart language, building iOS and Android apps from a single codebase.",
+      "url": "https://flutter.dev/",
+      "icon": "https://flutter.dev/favicon.ico",
+      "tags": [
+        "mobile development",
+        "cross-platform",
+        "UI framework",
+        "Google"
+      ],
+      "category": "mobile",
+      "order": 188
+    },
+    {
+      "id": "react-native",
+      "title": "React Native",
+      "description": "Facebook's open-source cross-platform mobile development framework using JavaScript/TypeScript to build native apps.",
+      "url": "https://reactnative.dev/",
+      "icon": "https://reactnative.dev/favicon.ico",
+      "tags": [
+        "mobile development",
+        "cross-platform",
+        "React",
+        "JavaScript"
+      ],
+      "category": "mobile",
+      "order": 189
+    },
+    {
+      "id": "uni-app",
+      "title": "uni-app",
+      "description": "DCloud's cross-platform development framework using Vue.js syntax, compiling one codebase to iOS, Android, H5 and more.",
+      "url": "https://uniapp.dcloud.net.cn/",
+      "icon": "https://uniapp.dcloud.net.cn/favicon.ico",
+      "tags": [
+        "mobile development",
+        "cross-platform",
+        "Vue",
+        "WeChat Mini Program"
+      ],
+      "category": "mobile",
+      "order": 190
+    },
+    {
+      "id": "capacitor",
+      "title": "Capacitor",
+      "description": "Ionic team's open-source cross-platform native container using web technologies to build iOS, Android and desktop apps.",
+      "url": "https://capacitorjs.com/",
+      "icon": "https://capacitorjs.com/favicon.ico",
+      "tags": [
+        "mobile development",
+        "cross-platform",
+        "web technology",
+        "native container"
+      ],
+      "category": "mobile",
+      "order": 191
+    },
+    {
+      "id": "ionic",
+      "title": "Ionic",
+      "description": "A powerful cross-platform mobile development framework based on Web Components, providing beautiful UI components.",
+      "url": "https://ionicframework.com/",
+      "icon": "https://ionicframework.com/favicon.ico",
+      "tags": [
+        "mobile development",
+        "cross-platform",
+        "Web Components",
+        "UI framework"
+      ],
+      "category": "mobile",
+      "order": 192
+    },
+    {
+      "id": "expo",
+      "title": "Expo",
+      "description": "React Native development toolchain providing an all-in-one service for development, building and deployment, simplifying the RN workflow.",
+      "url": "https://expo.dev/",
+      "icon": "https://expo.dev/favicon.ico",
+      "tags": [
+        "React Native",
+        "dev tools",
+        "mobile development",
+        "TypeScript"
+      ],
+      "category": "mobile",
+      "order": 193
+    },
+    {
+      "id": "nativescript",
+      "title": "NativeScript",
+      "description": "An open-source cross-platform framework using Angular, Vue or TypeScript to build native iOS and Android apps.",
+      "url": "https://nativescript.org/",
+      "icon": "https://nativescript.org/favicon.ico",
+      "tags": [
+        "mobile development",
+        "cross-platform",
+        "Angular",
+        "Vue"
+      ],
+      "category": "mobile",
+      "order": 194
+    },
+    {
+      "id": "taro",
+      "title": "Taro",
+      "description": "JD.com's open-source cross-platform development framework using React/Vue syntax, compiling one codebase to WeChat Mini Program, H5, React Native and more.",
+      "url": "https://taro.jd.com/",
+      "icon": "https://taro.jd.com/favicon.ico",
+      "tags": [
+        "mobile development",
+        "cross-platform",
+        "React",
+        "WeChat Mini Program"
+      ],
+      "category": "mobile",
+      "order": 195
+    },
+    {
+      "id": "electron",
+      "title": "Electron",
+      "description": "GitHub's open-source cross-platform desktop application framework using web technologies (HTML/CSS/JS) to build Windows, macOS and Linux apps.",
+      "url": "https://electronjs.org/",
+      "icon": "https://electronjs.org/favicon.ico",
+      "tags": [
+        "desktop application",
+        "cross-platform",
+        "web technology",
+        "GitHub"
+      ],
+      "category": "desktop",
+      "order": 196
+    },
+    {
+      "id": "tauri",
+      "title": "Tauri",
+      "description": "A lightweight cross-platform application framework written in Rust, smaller and faster than Electron, supporting Windows, macOS, Linux and mobile.",
+      "url": "https://tauri.app/",
+      "icon": "https://tauri.app/favicon.ico",
+      "tags": [
+        "desktop application",
+        "cross-platform",
+        "Rust",
+        "lightweight"
+      ],
+      "category": "desktop",
+      "order": 197
+    },
+    {
+      "id": "neutralino",
+      "title": "Neutralino",
+      "description": "A lightweight cross-platform desktop application framework, only about 1MB in size, using the system WebView for rendering.",
+      "url": "https://neutralino.js.org/",
+      "icon": "https://neutralino.js.org/favicon.ico",
+      "tags": [
+        "desktop application",
+        "cross-platform",
+        "lightweight",
+        "web technology"
+      ],
+      "category": "desktop",
+      "order": 198
+    },
+    {
+      "id": "nw-js",
+      "title": "NW.js",
+      "description": "A cross-platform desktop application framework based on Chromium and Node.js, directly calling Node.js modules with system API support.",
+      "url": "https://nwjs.io/",
+      "icon": "https://nwjs.io/favicon.ico",
+      "tags": [
+        "desktop application",
+        "cross-platform",
+        "Chromium",
+        "Node.js"
+      ],
+      "category": "desktop",
+      "order": 199
+    },
+    {
+      "id": "pywebview",
+      "title": "pywebview",
+      "description": "A lightweight cross-platform desktop application framework using a Python backend and web frontend to build native GUI apps.",
+      "url": "https://pywebview.flowrl.com/",
+      "icon": "https://pywebview.flowrl.com/favicon.ico",
+      "tags": [
+        "desktop application",
+        "Python",
+        "cross-platform",
+        "GUI"
+      ],
+      "category": "desktop",
+      "order": 200
+    },
+    {
+      "id": "quasar",
+      "title": "Quasar",
+      "description": "A Vue.js-based cross-platform framework that builds SPA, PWA, desktop and mobile apps from a single codebase.",
+      "url": "https://quasar.dev/",
+      "icon": "https://quasar.dev/favicon.ico",
+      "tags": [
+        "cross-platform",
+        "Vue",
+        "desktop application",
+        "mobile application"
+      ],
+      "category": "desktop",
+      "order": 201
+    },
+    {
+      "id": "bun",
+      "title": "Bun",
+      "description": "A fast JavaScript runtime, bundler, test runner and package manager.",
+      "url": "https://bun.sh/",
+      "icon": "https://bun.sh/favicon.ico",
+      "tags": [
+        "Bun",
+        "runtime",
+        "bundler",
+        "JavaScript"
+      ],
+      "category": "bun-ecosystem",
+      "order": 202
+    },
+    {
+      "id": "elysia",
+      "title": "Elysia",
+      "description": "An ergonomic Bun web framework focused on type safety and performance.",
+      "url": "https://elysiajs.com/",
+      "icon": "https://elysiajs.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "Bun",
+        "high performance",
+        "TypeScript"
+      ],
+      "category": "bun-ecosystem",
+      "order": 203
+    },
+    {
+      "id": "online-image-compress-tool-collection",
+      "title": "Online Image Compress (Tool Collection)",
+      "description": "docsmall.com is an online document processing tool designed and developed by INTERVAL.",
+      "url": "https://docsmall.com/image-compress",
+      "icon": "https://docsmall.com/_nuxt/icon-convert-to-jpg.Dca2FYe2.png",
+      "tags": [
+        "Tool",
+        "image"
+      ],
+      "category": "tools",
+      "order": 204
+    },
+    {
+      "id": "photopea",
+      "title": "Photopea",
+      "description": "This online Photoshop was developed by Czech programmer Ivan Kutskir in 2013 and has been evolving for over a decade.",
+      "url": "https://www.photopea.com/",
+      "icon": "https://www.photopea.com/promo/icon512.png",
+      "tags": [
+        "Tool"
+      ],
+      "category": "tools",
+      "order": 205
+    },
+    {
+      "id": "draw-io",
+      "title": "Draw.io",
+      "description": "An open-source free online diagram tool suitable for flowcharts, org charts, network topology diagrams and more.",
+      "url": "https://www.drawio.com/",
+      "icon": "https://www.drawio.com/favicon.ico",
+      "tags": [
+        "Tool"
+      ],
+      "category": "tools",
+      "order": 206
+    },
+    {
+      "id": "mnggiflab",
+      "title": "Mnggiflab",
+      "description": "MNGGIFLAB - Online GIF creation, video to GIF, GIF editing, GIF composition, GIF compression, screen recording to GIF.",
+      "url": "https://www.mnggiflab.com/",
+      "icon": "https://mnggiflab.com/img/logo/logo-icon.png",
+      "tags": [
+        "Tool",
+        "image"
+      ],
+      "category": "tools",
+      "order": 207
+    },
+    {
+      "id": "limgx",
+      "title": "LimgX",
+      "description": "Free online image compression and format conversion tool. Local processing protects privacy, supporting JPG, PNG, WebP format conversion.",
+      "url": "https://limgx.com/",
+      "icon": "https://limgx.com/favicon.ico",
+      "tags": [
+        "Tool",
+        "image"
+      ],
+      "category": "tools",
+      "order": 208
+    },
+    {
+      "id": "oss-nav",
+      "title": "OSS Nav",
+      "description": "A navigation website focused on curating quality open-source tools.",
+      "url": "https://www.ossnav.com",
+      "icon": "https://www.ossnav.com/wp-content/uploads/2024/11/1732557264-open-64.png",
+      "tags": [
+        "open source",
+        "navigation"
+      ],
+      "category": "resources",
+      "order": 209
+    },
+    {
+      "id": "tbox-navigation",
+      "title": "Tbox Navigation",
+      "description": "A navigation website aggregating a large collection of quality online tools.",
+      "url": "https://www.tboxn.com/",
+      "icon": "https://tboxn.com/wp-content/uploads/2022/03/cropped-tboxlogo512.png",
+      "tags": [
+        "Tool",
+        "navigation"
+      ],
+      "category": "resources",
+      "order": 210
+    },
+    {
+      "id": "awwwards",
+      "title": "Awwwards",
+      "description": "An international platform dedicated to selecting and showcasing the world's top web designs, regarded as the Oscars of web design.",
+      "url": "https://www.awwwards.com/",
+      "icon": "https://assets.awwwards.com/assets/images/favicon-safari.svg",
+      "tags": [
+        "resources"
+      ],
+      "category": "resources",
+      "order": 211
+    },
+    {
+      "id": "dribbble",
+      "title": "Dribbble",
+      "description": "A global design community featuring basketball elements, invitation-based, focused on UI/UX design and more.",
+      "url": "https://dribbble.com/",
+      "icon": "https://cdn.dribbble.com/assets/dribbble-vector-ball-c75e531ccee3110d0ee5ae951fd1d0a65d2ff25d3c0577757ea7e8d8e3e75db4.svg",
+      "tags": [
+        "resources",
+        "community",
+        "design"
+      ],
+      "category": "resources",
+      "order": 212
+    },
+    {
+      "id": "template0",
+      "title": "Template0",
+      "description": "A well-known website template site.",
+      "url": "https://template0.com/",
+      "icon": "https://template0.com/favicon.ico",
+      "tags": [
+        "resources"
+      ],
+      "category": "resources",
+      "order": 213
+    },
+    {
+      "id": "htmlrev",
+      "title": "HtmlRev",
+      "description": "Another well-known website template site.",
+      "url": "https://htmlrev.com/",
+      "icon": "https://htmlrev.com/images/favicon.png",
+      "tags": [
+        "resources"
+      ],
+      "category": "resources",
+      "order": 214
+    },
+    {
+      "id": "cssloaders",
+      "title": "CssLoaders",
+      "description": "A collection of CSS loader transition animations.",
+      "url": "https://css-loaders.com/",
+      "icon": "https://css-loaders.com/fav.png",
+      "tags": [
+        "resources"
+      ],
+      "category": "resources",
+      "order": 215
+    },
+    {
+      "id": "navnav",
+      "title": "Navnav",
+      "description": "A website collecting a large number of navigation bar effects.",
+      "url": "https://thuvien.org/navnav",
+      "icon": "https://thuvien.org/favicon.png",
+      "tags": [
+        "resources",
+        "navigation"
+      ],
+      "category": "resources",
+      "order": 216
+    },
+    {
+      "id": "a-template",
+      "title": "A Template",
+      "description": "Free Website Templates with A Template.",
+      "url": "https://atemplate.com/",
+      "icon": "https://atemplate.com/favicon.ico",
+      "tags": [
+        "resources"
+      ],
+      "category": "resources",
+      "order": 217
+    },
+    {
+      "id": "free-api",
+      "title": "Free API",
+      "description": "A resource collection site for free APIs, free interfaces and free services.",
+      "url": "https://api.aa1.cn/",
+      "icon": "https://api.aa1.cn/favicon.ico",
+      "tags": [
+        "resources"
+      ],
+      "category": "resources",
+      "order": 218
+    },
+    {
+      "id": "topindie-dev",
+      "title": "TopIndie.dev",
+      "description": "The hub for indie developers to discover, showcase and explore innovative projects.",
+      "url": "https://topindie.dev/",
+      "icon": "https://topindie.dev/assets/image/favicon.ico",
+      "tags": [
+        "resources",
+        "indie development"
+      ],
+      "category": "resources",
+      "order": 219
+    },
+    {
+      "id": "idea-harbor",
+      "title": "Idea Harbor",
+      "description": "A great collection platform for English product inspiration, perfect for indie developers seeking ideas.",
+      "url": "https://ideaharbor.xyz",
+      "icon": "https://ideaharbor.xyz/favicon.ico",
+      "tags": [
+        "resources",
+        "community"
+      ],
+      "category": "resources",
+      "order": 220
+    },
+    {
+      "id": "uisdc",
+      "title": "UISDC",
+      "description": "A professional designer platform in China, aggregating design tutorials, industry news and portfolio showcases.",
+      "url": "https://www.uisdc.com/",
+      "icon": "https://www.uisdc.com/favicon.ico",
+      "tags": [
+        "resources",
+        "community",
+        "design"
+      ],
+      "category": "resources",
+      "order": 221
+    },
+    {
+      "id": "office-navigation",
+      "title": "Office Navigation",
+      "description": "A practical office and life navigation website.",
+      "url": "https://www.bgrdh.com/",
+      "icon": "https://www.bgrdh.com/wp-content/uploads/2022/11/20221119185003612150.png",
+      "tags": [
+        "navigation",
+        "resources"
+      ],
+      "category": "resources",
+      "order": 222
+    },
+    {
+      "id": "fuun-fun",
+      "title": "fuun.fun",
+      "description": "Curator of fun and quirky websites.",
+      "url": "https://fuun.fun/",
+      "icon": "https://fuun.fun/favicon.ico",
+      "tags": [
+        "resources",
+        "entertainment"
+      ],
+      "category": "resources",
+      "order": 223
+    },
+    {
+      "id": "baipiao",
+      "title": "Baipiao",
+      "description": "Free resource collection.",
+      "url": "https://baipiao.top/",
+      "icon": "https://baipiao.top/favicon.ico",
+      "tags": [
+        "navigation"
+      ],
+      "category": "resources",
+      "order": 224
+    },
+    {
+      "id": "loot-drop",
+      "title": "Loot Drop",
+      "description": "A failed startup case library with 1100+ closed company case analyses and rebuilding plans, learning entrepreneurship from failure.",
+      "url": "https://www.loot-drop.io/",
+      "icon": "https://www.loot-drop.io/favicon.ico",
+      "tags": [
+        "entrepreneurship",
+        "case library",
+        "resources",
+        "indie development"
+      ],
+      "category": "resources",
+      "order": 225
+    },
+    {
+      "id": "mobbin",
+      "title": "Mobbin",
+      "description": "Discover real-world design inspiration, a website collecting 1400+ app design inspirations.",
+      "url": "https://mobbin.com",
+      "icon": "https://mobbin.com/favicon.ico",
+      "tags": [
+        "resources",
+        "community",
+        "design"
+      ],
+      "category": "resources",
+      "order": 226
+    },
+    {
+      "id": "refero",
+      "title": "Refero",
+      "description": "Design research guide, the largest web and iOS UI UX design inspiration library.",
+      "url": "https://refero.design/",
+      "icon": "https://refero.design/favicon.ico",
+      "tags": [
+        "resources",
+        "community",
+        "design"
+      ],
+      "category": "resources",
+      "order": 227
+    },
+    {
+      "id": "creght",
+      "title": "Creght",
+      "description": "A designer-friendly website builder tool.",
+      "url": "https://www.creght.com/",
+      "icon": "https://fsu.creght.com/project/mVnidfGADfS/lZLMxdMuGEY__logo_(1).png?w=768&fmt=webp",
+      "tags": [
+        "resources",
+        "website building",
+        "design"
+      ],
+      "category": "resources",
+      "order": 228
+    },
+    {
+      "id": "iconfinder",
+      "title": "Iconfinder",
+      "description": "A professional icon resource website providing inspiration for your designs.",
+      "url": "https://www.iconfinder.com/",
+      "icon": "https://www.iconfinder.com/favicon.ico",
+      "tags": [
+        "resources",
+        "icon",
+        "design"
+      ],
+      "category": "resources",
+      "order": 229
+    },
+    {
+      "id": "makemepulse",
+      "title": "MakemePulse",
+      "description": "MakeMePulse 2019 creative website collection, showcasing top global web design works, each a visual feast at the art level.",
+      "url": "https://2019.makemepulse.com/",
+      "icon": "https://2019.makemepulse.com/favicon.ico",
+      "tags": [
+        "design",
+        "resources"
+      ],
+      "category": "resources",
+      "order": 230
+    },
+    {
+      "id": "mek-txt",
+      "title": "MEK.txt",
+      "description": "MEK.txt Mek Gallery is a retro-style resource sharing website.",
+      "url": "https://www.mek.gallery/",
+      "icon": "https://framerusercontent.com/images/GgGZEpdp0k0EuePiSwgr1d2jRtA.svg",
+      "tags": [
+        "pixel",
+        "resources"
+      ],
+      "category": "resources",
+      "order": 231
+    },
+    {
+      "id": "cocos-creator",
+      "title": "Cocos Creator",
+      "description": "Cocos has become a globally recognized engine standard with its open-source free strategy, extreme lightweight design and Chinese developer ecosystem.",
+      "url": "https://www.cocos.com/creator",
+      "icon": "https://www.cocos.com/favicon.ico",
+      "tags": [
+        "game engine",
+        "2D",
+        "3D",
+        "cross-platform"
+      ],
+      "category": "game-engines",
+      "order": 232
+    },
+    {
+      "id": "lp-platform",
+      "title": "LP Platform",
+      "description": "An interesting text game platform, for those who still love text games.",
+      "url": "https://avgjs.dev/",
+      "icon": "https://avgjs.dev/favicon.ico",
+      "tags": [
+        "game engine",
+        "text game",
+        "AVG"
+      ],
+      "category": "game-engines",
+      "order": 233
+    },
+    {
+      "id": "adv-js",
+      "title": "ADV.js",
+      "description": "A forward-looking ADV text adventure game engine for the frontend.",
+      "url": "https://advjs.org/",
+      "icon": "https://advjs.org/favicon.ico",
+      "tags": [
+        "game engine",
+        "text game",
+        "AVG"
+      ],
+      "category": "game-engines",
+      "order": 234
+    },
+    {
+      "id": "renpy",
+      "title": "Ren'Py",
+      "description": "An open-source visual novel engine for creating interactive story games.",
+      "url": "https://www.renpy.org/",
+      "icon": "https://www.renpy.org/favicon.ico",
+      "tags": [
+        "game engine",
+        "visual novel",
+        "open source"
+      ],
+      "category": "game-engines",
+      "order": 235
+    },
+    {
+      "id": "gamemaker",
+      "title": "GameMaker",
+      "description": "GameMaker has become the gold standard for indie games with its low barrier to entry and high-performance 2D development.",
+      "url": "https://gamemaker.io/",
+      "icon": "https://gamemaker.io/favicon.ico",
+      "tags": [
+        "game engine",
+        "2D",
+        "indie game"
+      ],
+      "category": "game-engines",
+      "order": 236
+    },
+    {
+      "id": "rpg-maker",
+      "title": "RPG Maker",
+      "description": "RPG Maker is both a tool and the cornerstone of a creator ecosystem.",
+      "url": "https://www.rpgmakerweb.com/",
+      "icon": "https://www.rpgmakerweb.com/favicon.ico",
+      "tags": [
+        "game engine",
+        "RPG",
+        "indie game"
+      ],
+      "category": "game-engines",
+      "order": 237
+    },
+    {
+      "id": "gamecreator",
+      "title": "GameCreator",
+      "description": "A game creation tool supporting visual programming and TypeScript.",
+      "url": "https://gamecreator.cn/",
+      "icon": "https://gamecreator.cn/favicon.ico",
+      "tags": [
+        "game engine",
+        "visual programming",
+        "TypeScript"
+      ],
+      "category": "game-engines",
+      "order": 238
+    },
+    {
+      "id": "spark-editor",
+      "title": "Spark Editor",
+      "description": "The best UGC game engine with 500+ games launched on TapTap and Steam.",
+      "url": "https://www.spark-editor.com/",
+      "icon": "https://www.spark-editor.com/favicon.ico",
+      "tags": [
+        "game engine",
+        "UGC",
+        "TapTap"
+      ],
+      "category": "game-engines",
+      "order": 239
+    },
+    {
+      "id": "gdevelop",
+      "title": "GDevelop",
+      "description": "The only open-source engine with an intuitive and efficient no-code approach.",
+      "url": "https://gdevelop.io/",
+      "icon": "https://gdevelop.io/favicon.ico",
+      "tags": [
+        "game engine",
+        "open source",
+        "no-code"
+      ],
+      "category": "game-engines",
+      "order": 240
+    },
+    {
+      "id": "pixijs",
+      "title": "PixiJS",
+      "description": "A fast 2D WebGL rendering engine for games, interactive media and visualization.",
+      "url": "https://pixijs.com/",
+      "icon": "https://pixijs.com/favicon.ico",
+      "tags": [
+        "WebGL",
+        "2D",
+        "graphics",
+        "rendering"
+      ],
+      "category": "game-engines",
+      "order": 241
+    },
+    {
+      "id": "phaser",
+      "title": "Phaser",
+      "description": "A fast, free HTML5 2D game framework for making cross-platform web games.",
+      "url": "https://phaser.io/",
+      "icon": "https://phaser.io/favicon.ico",
+      "tags": [
+        "WebGL",
+        "2D",
+        "game engine",
+        "HTML5"
+      ],
+      "category": "game-engines",
+      "order": 242
+    },
+    {
+      "id": "godot-engine",
+      "title": "Godot Engine",
+      "description": "An open-source 2D/3D game engine that is lightweight yet fully featured.",
+      "url": "https://godotengine.org/",
+      "icon": "https://godotengine.org/favicon.ico",
+      "tags": [
+        "game engine",
+        "open source",
+        "2D",
+        "3D"
+      ],
+      "category": "game-engines",
+      "order": 243
+    },
+    {
+      "id": "blender",
+      "title": "Blender",
+      "description": "An open-source 3D creation suite supporting modeling, sculpting, animation, rendering, video editing and a complete workflow.",
+      "url": "https://www.blender.org/",
+      "icon": "https://www.blender.org/wp-content/themes/btheme/assets/images/favicon/favicon-32x32.png",
+      "tags": [
+        "3D modeling",
+        "open source",
+        "animation",
+        "rendering"
+      ],
+      "category": "3d-modeling",
+      "order": 244
+    },
+    {
+      "id": "sketchfab",
+      "title": "Sketchfab",
+      "description": "The world's leading 3D model online publishing and collaboration platform, supporting glTF/WebGL real-time preview and embed sharing.",
+      "url": "https://sketchfab.com/",
+      "icon": "https://sketchfab.com/favicon.ico",
+      "tags": [
+        "3D model",
+        "online platform",
+        "collaboration",
+        "WebGL"
+      ],
+      "category": "3d-modeling",
+      "order": 245
+    },
+    {
+      "id": "51-jianmo",
+      "title": "51 Jianmo",
+      "description": "A professional 3D model asset download platform in China, providing a massive collection of high-quality 3D model resources.",
+      "url": "https://www.51jianmo.com/",
+      "icon": "https://www.51jianmo.com/favicon.ico",
+      "tags": [
+        "3D model",
+        "assets",
+        "China"
+      ],
+      "category": "3d-modeling",
+      "order": 246
+    },
+    {
+      "id": "cinema-4d",
+      "title": "Cinema 4D",
+      "description": "Professional 3D modeling, animation and rendering software, known for its ease of use and powerful MoGraph module.",
+      "url": "https://www.maxon.net/en/cinema-4d",
+      "icon": "https://www.maxon.net/favicon.ico",
+      "tags": [
+        "3D modeling",
+        "animation",
+        "rendering",
+        "visual design"
+      ],
+      "category": "3d-modeling",
+      "order": 247
+    },
+    {
+      "id": "spline",
+      "title": "Spline",
+      "description": "A web-based 3D design tool for creating interactive 3D scenes with zero barrier, supporting export as React/Vue components.",
+      "url": "https://spline.design/",
+      "icon": "https://spline.design/favicon.ico",
+      "tags": [
+        "3D design",
+        "web",
+        "low-code",
+        "interactive"
+      ],
+      "category": "3d-modeling",
+      "order": 248
+    },
+    {
+      "id": "three-js-editor",
+      "title": "Three.js Editor",
+      "description": "The official Three.js online editor for creating and editing 3D scenes directly in the browser, adjusting materials and lighting.",
+      "url": "https://threejs.org/editor/",
+      "icon": "https://threejs.org/favicon.ico",
+      "tags": [
+        "WebGL",
+        "3D",
+        "online editor",
+        "Three.js"
+      ],
+      "category": "3d-modeling",
+      "order": 249
+    },
+    {
+      "id": "playcanvas",
+      "title": "PlayCanvas",
+      "description": "An open-source WebGL-based 3D game engine and editor supporting real-time collaboration and one-click publishing.",
+      "url": "https://playcanvas.com/",
+      "icon": "https://playcanvas.com/favicon.ico",
+      "tags": [
+        "WebGL",
+        "3D",
+        "game engine",
+        "online editor"
+      ],
+      "category": "3d-modeling",
+      "order": 250
+    },
+    {
+      "id": "sketchup",
+      "title": "SketchUp",
+      "description": "An intuitive and easy-to-use 3D modeling tool widely used in architecture, interior design and urban planning.",
+      "url": "https://www.sketchup.com/",
+      "icon": "https://www.sketchup.com/favicon.ico",
+      "tags": [
+        "3D modeling",
+        "architecture",
+        "interior design"
+      ],
+      "category": "3d-modeling",
+      "order": 251
+    },
+    {
+      "id": "maya",
+      "title": "Maya",
+      "description": "Autodesk's flagship 3D animation and modeling software, the industry standard for film and gaming.",
+      "url": "https://www.autodesk.com/products/maya",
+      "icon": "https://www.autodesk.com/favicon.ico",
+      "tags": [
+        "3D modeling",
+        "animation",
+        "film",
+        "industry standard"
+      ],
+      "category": "3d-modeling",
+      "order": 252
+    },
+    {
+      "id": "blocks",
+      "title": "Blocks",
+      "description": "Google's VR 3D modeling tool for intuitively creating 3D models with hand gestures in virtual reality.",
+      "url": "https://www.with.in/products/blocks",
+      "icon": "https://www.with.in/favicon.ico",
+      "tags": [
+        "VR",
+        "3D modeling",
+        "Google"
+      ],
+      "category": "3d-modeling",
+      "order": 253
+    },
+    {
+      "id": "vectary",
+      "title": "Vectary",
+      "description": "A browser-based 3D design platform supporting AR preview and interactive 3D scene embedding in web pages.",
+      "url": "https://www.vectary.com/",
+      "icon": "https://www.vectary.com/favicon.ico",
+      "tags": [
+        "3D design",
+        "AR",
+        "web",
+        "low-code"
+      ],
+      "category": "3d-modeling",
+      "order": 254
+    },
+    {
+      "id": "itch-io",
+      "title": "Itch.io",
+      "description": "Founded in 2013, providing indie developers with an open space for no-review publishing, flexible pricing and custom page design.",
+      "url": "https://itch.io/",
+      "icon": "https://static.itch.io/images/logo-black-new.svg",
+      "tags": [
+        "indie development",
+        "community",
+        "game"
+      ],
+      "category": "games",
+      "order": 255
+    },
+    {
+      "id": "indienova",
+      "title": "Indienova",
+      "description": "Indienova has become the ecological cornerstone of China's indie game scene with its dual-track model of technology empowerment and cultural cultivation.",
+      "url": "https://indienova.com/",
+      "icon": "https://static.indienova.com/assets/images/logos/indienova_new@2x.png",
+      "tags": [
+        "community",
+        "game"
+      ],
+      "category": "games",
+      "order": 256
+    },
+    {
+      "id": "game-dev-resources",
+      "title": "Game Dev Resources",
+      "description": "A curated collection of game development resources.",
+      "url": "https://jundagame.top/",
+      "icon": "https://jundagame.top/logo/jundajun.png",
+      "tags": [
+        "game",
+        "navigation"
+      ],
+      "category": "games",
+      "order": 257
+    },
+    {
+      "id": "retro-games",
+      "title": "retro-games",
+      "description": "Retro game nostalgia platform.",
+      "url": "https://www.retrogames.onl",
+      "icon": "https://www.retrogames.onl/favicon.ico",
+      "tags": [
+        "game"
+      ],
+      "category": "games",
+      "order": 258
+    },
+    {
+      "id": "retrogames",
+      "title": "RetroGames",
+      "description": "Retro game nostalgia platform.",
+      "url": "https://retro-games.org/",
+      "icon": "https://retro-games.org/favicon.ico",
+      "tags": [
+        "game"
+      ],
+      "category": "games",
+      "order": 259
+    },
+    {
+      "id": "game-ui-database",
+      "title": "Game UI Database",
+      "description": "A database focused on game UI design, providing rich design resources.",
+      "url": "https://www.gameuidatabase.com/",
+      "icon": "https://www.gameuidatabase.com/favicon.ico",
+      "tags": [
+        "game",
+        "UI",
+        "design"
+      ],
+      "category": "games",
+      "order": 260
+    },
+    {
+      "id": "interface-in-game",
+      "title": "Interface in Game",
+      "description": "A website for GUI designers, providing the latest design trends and techniques.",
+      "url": "https://interfaceingame.com/",
+      "icon": "https://interfaceingame.com/favicon.ico",
+      "tags": [
+        "game",
+        "GUI",
+        "design"
+      ],
+      "category": "games",
+      "order": 261
+    },
+    {
+      "id": "product-hunt",
+      "title": "Product Hunt",
+      "description": "Product Hunt is a leading global product discovery platform.",
+      "url": "https://www.producthunt.com/",
+      "icon": "https://www.producthunt.com/favicon.ico",
+      "tags": [
+        "community",
+        "indie development"
+      ],
+      "category": "community",
+      "order": 262
+    },
+    {
+      "id": "node-js-chinese",
+      "title": "Node.js Chinese",
+      "description": "Well-translated and organized documentation.",
+      "url": "https://dev.nodejs.cn/",
+      "icon": "https://dev.nodejs.cn/favicon.ico",
+      "tags": [
+        "community",
+        "documentation"
+      ],
+      "category": "community",
+      "order": 263
+    },
+    {
+      "id": "kanxue-forum",
+      "title": "Kanxue Forum",
+      "description": "Focused on software security technology exchange, providing a platform and resources for security technology enthusiasts.",
+      "url": "https://www.kanxue.com/",
+      "icon": "https://www.kanxue.com/view/img/favicon.ico",
+      "tags": [
+        "cybersecurity",
+        "community"
+      ],
+      "category": "community",
+      "order": 264
+    },
+    {
+      "id": "hack-forums",
+      "title": "Hack Forums",
+      "description": "A well-known cybersecurity technology forum for hackers and developers.",
+      "url": "https://hackforums.net/",
+      "icon": "https://www.hackforums.net/view/img/favicon.ico",
+      "tags": [
+        "cybersecurity",
+        "community"
+      ],
+      "category": "community",
+      "order": 265
+    },
+    {
+      "id": "behance",
+      "title": "Behance",
+      "description": "A world-renowned design community showcasing designers' creative works.",
+      "url": "https://www.behance.net/",
+      "icon": "https://www.behance.net/favicon.ico",
+      "tags": [
+        "design",
+        "community"
+      ],
+      "category": "community",
+      "order": 266
+    },
+    {
+      "id": "ui-china",
+      "title": "UI China",
+      "description": "A well-known designer community in China, providing professional design resources for UI design, interaction design and user experience.",
+      "url": "https://www.ui.cn/",
+      "icon": "https://www.ui.cn/favicon.ico",
+      "tags": [
+        "design",
+        "UI",
+        "community"
+      ],
+      "category": "community",
+      "order": 267
     }
   ]
 }

@@ -146,15 +146,16 @@
 import { Icon } from '@iconify/vue'
 
 const { locale, setLocale } = useI18n()
+const switchLocalePath = useSwitchLocalePath()
 
 const emit = defineEmits(['toggle-mobile-menu'])
 const { query, setQuery, clear } = useSearch()
 
 // 切换语言
-const handleLangChange = (lang: string) => {
-  setLocale(lang)
-  // 刷新页面以重新加载对应语言的导航数据
-  window.location.reload()
+const handleLangChange = async (lang: string) => {
+  await setLocale(lang)
+  // 使用 Nuxt navigateTo 跳转到对应语言路径，重新加载导航数据
+  navigateTo(switchLocalePath(lang))
 }
 
 // 侧边栏折叠状态
@@ -211,7 +212,7 @@ onMounted(() => {
   const handleGlobalKeydown = (e: KeyboardEvent) => {
     if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
       e.preventDefault()
-      const input = document.querySelector('input[placeholder*="搜索"]') as HTMLInputElement
+      const input = document.querySelector('input[placeholder]') as HTMLInputElement
       input?.focus()
     }
   }

@@ -2,7 +2,7 @@
   "meta": {
     "name": "星途导航 导航数据",
     "version": "2.0.0",
-    "lastUpdated": "2026-05-19",
+    "lastUpdated": "2026-05-20",
     "description": "基于 Nuxt 4 的导航站数据（Markdown 数据源）",
     "totalSites": 267,
     "totalCategories": 15

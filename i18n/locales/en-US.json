@@ -1,4 +1,7 @@
 {
+  "app": {
+    "name": "StarNav"
+  },
   "nav": {
     "home": "Home",
     "author": "Author",
@@ -11,7 +14,10 @@
     "categories": "Categories",
     "sites": " sites",
     "expand": "Expand Sidebar",
-    "collapse": "Collapse Sidebar"
+    "collapse": "Collapse Sidebar",
+    "friendshipLinks": "Friendship Links",
+    "searchResults": "Search Results",
+    "noResults": "No Results"
   },
   "footer": {
     "copyright": "StarNav",
@@ -23,7 +29,9 @@
   "theme": {
     "light": "Light",
     "dark": "Dark",
-    "system": "System"
+    "system": "System",
+    "switchToLight": "Switch to Light Mode",
+    "switchToDark": "Switch to Dark Mode"
   },
   "lang": {
     "zh": "中文",
@@ -36,5 +44,33 @@
   "actions": {
     "backToTop": "Back to Top",
     "refresh": "Refresh"
+  },
+  "detail": {
+    "navHome": "Home",
+    "notFound": "Site Not Found",
+    "backHome": "Back to Home",
+    "visitSite": "Visit Site",
+    "copied": "Copied",
+    "copyLink": "Copy Link",
+    "related": "Related Sites",
+    "uncategorized": "Uncategorized",
+    "pageTitle": "{title} - StarNav",
+    "notFoundTitle": "Not Found"
+  },
+  "about": {
+    "features": "Features",
+    "feature1": "Carefully curated high-quality website navigation",
+    "feature2": "Search & Filter",
+    "feature3": "Dark Mode Support",
+    "feature4": "Built with Nuxt 4",
+    "contact": "Contact",
+    "contactDesc": "Contact for link exchange."
+  },
+  "seo": {
+    "title": "StarNav - Discover Great Websites",
+    "description": "StarNav, carefully curated high-quality website navigation for efficient work and life",
+    "keywords": "web navigation,website directory,StarNav,useful tools,dev resources,AI tools",
+    "aboutTitle": "About - StarNav",
+    "aboutDescription": "About StarNav - Discover Great Websites"
   }
 }

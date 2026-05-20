@@ -11,7 +11,7 @@
               <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" class="logo-polygon"/>
             </svg>
           </div>
-          <div class="logo-text">星途导航</div>
+          <div class="logo-text">{{ $t('app.name') }}</div>
         </div>
         <!-- 进度条 -->
         <div class="progress-bar">
@@ -32,6 +32,7 @@
 </template>
 
 <script setup lang="ts">
+import { useNavData } from '~/data/nav-data'
 // 控制初始加载遮罩
 const isLoaded = ref(false)
 
@@ -54,9 +55,14 @@ onMounted(() => {
 })
 
 // 初始化导航数据（根据当前语言）
-const { initNavData, setNavData } = await import('~/data/nav-data')
-const data = await initNavData()
-setNavData(data)
+const { initNavData } = useNavData()
+const { locale: currentLocale } = useI18n()
+await initNavData(currentLocale.value)
+
+// 监听语言切换，重新加载导航数据
+watch(currentLocale, async (newLocale) => {
+  await initNavData(newLocale)
+})
 
 // Element Plus 暗色模式支持
 const colorMode = useColorMode()

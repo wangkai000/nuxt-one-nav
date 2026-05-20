@@ -49,7 +49,7 @@ export default defineNuxtConfig({
       }
     ],
     // 语言文件目录
-    langDir: 'i18n/locales/',
+    langDir: 'locales/',
     // 使用 vue-i18n 配置文件（使用相对项目根目录的路径）
     vueI18n: '~/i18n/config.ts',
     // 禁用优化翻译指令警告

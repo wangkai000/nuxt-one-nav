@@ -21,30 +21,30 @@
         </p>
 
         <div class="border-t border-gray-200 dark:border-gray-700 pt-6 space-y-4">
-          <h2 class="text-xl font-bold text-gray-900 dark:text-white">{{ $t('nav.about') }}</h2>
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white">{{ $t('about.features') }}</h2>
           <ul class="space-y-3">
             <li class="flex items-start gap-3">
               <span class="text-blue-500 mt-1">•</span>
-              <span>{{ $t('footer.slogan') }}</span>
+              <span>{{ $t('about.feature1') }}</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-blue-500 mt-1">•</span>
-              <span>Search & Filter</span>
+              <span>{{ $t('about.feature2') }}</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-blue-500 mt-1">•</span>
-              <span>Dark Mode Support</span>
+              <span>{{ $t('about.feature3') }}</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-blue-500 mt-1">•</span>
-              <span>Built with Nuxt 4</span>
+              <span>{{ $t('about.feature4') }}</span>
             </li>
           </ul>
         </div>
 
         <div class="border-t border-gray-200 dark:border-gray-700 pt-6 space-y-4">
-          <h2 class="text-xl font-bold text-gray-900 dark:text-white">Contact</h2>
-          <p>Contact for link exchange.</p>
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white">{{ $t('about.contact') }}</h2>
+          <p>{{ $t('about.contactDesc') }}</p>
         </div>
       </div>
     </div>
@@ -52,8 +52,9 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
 useHead({
-  title: '关于 - 星途导航',
-  meta: [{ name: 'description', content: '关于星途导航 - 发现精彩网站' }]
+  title: () => t('seo.aboutTitle'),
+  meta: [{ name: 'description', content: () => t('seo.aboutDescription') }]
 })
 </script>
