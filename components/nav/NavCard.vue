@@ -1,26 +1,26 @@
 <template>
   <div
+    ref="cardRef"
     class="group flex flex-col items-center text-center p-4 bg-white dark:bg-[#1e1e3a] rounded-lg border border-gray-200 dark:border-gray-800 cursor-pointer shadow-sm hover:shadow-md transition-all duration-200 hover:-translate-y-1"
     @click="goToDetail"
   >
     <!-- 图标 -->
     <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800/50 dark:to-gray-700/50 flex items-center justify-center mb-3 overflow-hidden relative">
-      <!-- 兜底图标 - 始终显示，直到图片加载成功 -->
+      <!-- 兜底图标 - 卡片进入视口前和图片加载前始终显示 -->
       <div
-        v-if="!iconLoaded"
+        v-if="!shouldLoad || !iconLoaded"
         class="absolute inset-0 flex items-center justify-center z-10"
       >
         <Icon :icon="getFallbackIcon(item)" class="w-8 h-8" />
       </div>
 
-      <!-- 图片图标 - 加载成功后显示 -->
+      <!-- 图片图标 - 仅当卡片进入视口后才渲染 img 标签，避免大量并发请求 -->
       <img
-        v-if="!iconError"
+        v-if="shouldLoad && !iconError"
         :src="getIconUrl(item)"
         :alt="item.title"
         class="w-9 h-9 object-contain absolute z-20 transition-opacity duration-300"
         :class="{ 'opacity-0': !iconLoaded, 'opacity-100': iconLoaded }"
-        loading="lazy"
         decoding="async"
         @error="iconError = true"
         @load="iconLoaded = true"
@@ -41,7 +41,7 @@
 
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
-import { shallowRef } from 'vue'
+import { shallowRef, ref, onMounted, onUnmounted } from 'vue'
 import type { NavItem } from '~/types/nav'
 
 const props = defineProps<{ item: NavItem }>()
@@ -53,9 +53,36 @@ const goToDetail = () => {
   window.open(`/detail/${props.item.id}`, '_blank')
 }
 
-// 图标加载状态（组件内部局部 ref，不需要 reactive Map）
+// ===== 卡片级图片懒加载 =====
+// 用 IntersectionObserver 控制 img 标签的渲染时机
+// 避免 267 张卡片同时发起 favicon 请求
+const cardRef = ref<HTMLElement>()
+const shouldLoad = ref(false)
+
+// 图标加载状态
 const iconLoaded = shallowRef(false)
 const iconError = shallowRef(false)
+
+let observer: IntersectionObserver | null = null
+
+onMounted(() => {
+  if (!cardRef.value) return
+  observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        shouldLoad.value = true
+        observer?.unobserve(entry.target)
+        observer?.disconnect()
+      }
+    },
+    { rootMargin: '200px' } // 提前 200px 开始加载，到视口时已缓存好
+  )
+  observer.observe(cardRef.value)
+})
+
+onUnmounted(() => {
+  observer?.disconnect()
+})
 
 // 从网址提取域名获取 favicon
 const getFaviconFromUrl = (url: string): string => {
