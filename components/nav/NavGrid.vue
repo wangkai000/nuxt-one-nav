@@ -1,7 +1,7 @@
 <template>
   <div class="space-y-8">
     <!-- 搜索时显示所有结果（不分组） -->
-    <template v-if="query.trim()">
+    <template v-if="query && query.trim()">
       <div>
         <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
           <span>{{ $t('nav.searchResults') }}</span>
@@ -33,7 +33,7 @@
       </div>
 
       <!-- 其他分类懒加载 -->
-      <LazyRender
+      <InViewRender
         v-for="cat in otherCategoriesOnly"
         :key="cat.id"
         :id="`category-${cat.id}`"
@@ -67,7 +67,7 @@
         <div v-else class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
           <NavCard v-for="item in cat.items" :key="item.id" :item="item" v-memo="[item.id, query]" />
         </div>
-      </LazyRender>
+      </InViewRender>
     </template>
   </div>
 </template>
@@ -220,15 +220,15 @@ const filteredItems = computed<NavItem[]>(() => {
     }
   }
 
-  const q = query.value.trim().toLowerCase()
+  const q = (query.value || '').trim().toLowerCase()
   if (q) {
     result = result.filter(item =>
-      item.title.toLowerCase().includes(q) ||
-      item.description.toLowerCase().includes(q) ||
-      item.tags?.some(tag => tag.toLowerCase().includes(q))
+      (item.title || '').toLowerCase().includes(q) ||
+      (item.description || '').toLowerCase().includes(q) ||
+      item.tags?.some(tag => (tag || '').toLowerCase().includes(q))
     )
   }
 
-  return result.sort((a, b) => a.order - b.order)
+  return result.sort((a, b) => (a.order || 0) - (b.order || 0))
 })
 </script>
