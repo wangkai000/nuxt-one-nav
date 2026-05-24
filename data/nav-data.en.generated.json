@@ -23,49 +23,57 @@
           "id": "ai-nav",
           "name": "AI Navigation",
           "icon": "fluent-emoji:compass",
-          "count": 9
+          "count": 9,
+          "parentId": "ai"
         },
         {
           "id": "ai-writing",
           "name": "AI Writing",
           "icon": "fluent-emoji:pen",
-          "count": 3
+          "count": 3,
+          "parentId": "ai"
         },
         {
           "id": "ai-framework",
           "name": "AI Frameworks",
           "icon": "fluent-emoji:building-construction",
-          "count": 4
+          "count": 4,
+          "parentId": "ai"
         },
         {
           "id": "ai-skill",
           "name": "AI Skills",
           "icon": "fluent-emoji:flexed-biceps",
-          "count": 1
+          "count": 1,
+          "parentId": "ai"
         },
         {
           "id": "ai-local",
           "name": "Local AI",
           "icon": "mdi:desktop-classic",
-          "count": 5
+          "count": 5,
+          "parentId": "ai"
         },
         {
           "id": "ai-visual",
           "name": "AI Visualization",
           "icon": "fluent-emoji:artist-palette",
-          "count": 2
+          "count": 2,
+          "parentId": "ai"
         },
         {
           "id": "ai-content",
           "name": "AI Content Generation",
           "icon": "fluent-emoji:artist",
-          "count": 10
+          "count": 10,
+          "parentId": "ai"
         },
         {
           "id": "ai-agent",
           "name": "AI Agents",
           "icon": "fluent-emoji:robot",
-          "count": 2
+          "count": 2,
+          "parentId": "ai"
         }
       ],
       "count": 36
@@ -79,25 +87,29 @@
           "id": "web3-info",
           "name": "Web3 News",
           "icon": "logos:ethereum",
-          "count": 20
+          "count": 20,
+          "parentId": "web3"
         },
         {
           "id": "web3-lib",
           "name": "Web3 Libraries",
           "icon": "logos:metamask-icon",
-          "count": 13
+          "count": 13,
+          "parentId": "web3"
         },
         {
           "id": "web3-framework",
           "name": "Web3 Contract Frameworks",
           "icon": "logos:solidity",
-          "count": 7
+          "count": 7,
+          "parentId": "web3"
         },
         {
           "id": "web3-lang",
           "name": "Web3 Languages",
           "icon": "vscode-icons:file-type-solidity",
-          "count": 8
+          "count": 8,
+          "parentId": "web3"
         }
       ],
       "count": 48
@@ -111,55 +123,64 @@
           "id": "frontend-react",
           "name": "React Ecosystem",
           "icon": "logos:react",
-          "count": 9
+          "count": 9,
+          "parentId": "frontend"
         },
         {
           "id": "frontend-vue",
           "name": "Vue Ecosystem",
           "icon": "logos:vue",
-          "count": 5
+          "count": 5,
+          "parentId": "frontend"
         },
         {
           "id": "frontend-other",
           "name": "Other Frameworks",
           "icon": "logos:svelte-icon",
-          "count": 10
+          "count": 10,
+          "parentId": "frontend"
         },
         {
           "id": "frontend-ui-lib",
           "name": "UI Component Libraries",
           "icon": "logos:storybook-icon",
-          "count": 15
+          "count": 15,
+          "parentId": "frontend"
         },
         {
           "id": "frontend-css",
           "name": "CSS Frameworks",
           "icon": "logos:tailwindcss-icon",
-          "count": 2
+          "count": 2,
+          "parentId": "frontend"
         },
         {
           "id": "frontend-build",
           "name": "Build Tools",
           "icon": "logos:vitejs",
-          "count": 7
+          "count": 7,
+          "parentId": "frontend"
         },
         {
           "id": "frontend-webgl",
           "name": "WebGL 3D",
           "icon": "logos:threejs",
-          "count": 2
+          "count": 2,
+          "parentId": "frontend"
         },
         {
           "id": "frontend-ai",
           "name": "AI Development Libraries",
           "icon": "fluent-emoji:robot",
-          "count": 7
+          "count": 7,
+          "parentId": "frontend"
         },
         {
           "id": "frontend-webgis",
           "name": "WebGIS Maps",
           "icon": "fluent-emoji:world-map",
-          "count": 10
+          "count": 10,
+          "parentId": "frontend"
         }
       ],
       "count": 67
@@ -173,19 +194,22 @@
           "id": "nodejs-web",
           "name": "Web Frameworks",
           "icon": "logos:nodejs-icon",
-          "count": 7
+          "count": 7,
+          "parentId": "nodejs"
         },
         {
           "id": "nodejs-threads",
           "name": "Multithreading / Concurrency",
           "icon": "logos:nodejs-icon",
-          "count": 5
+          "count": 5,
+          "parentId": "nodejs"
         },
         {
           "id": "nodejs-database",
           "name": "Database / ORM",
           "icon": "mdi:database",
-          "count": 11
+          "count": 11,
+          "parentId": "nodejs"
         }
       ],
       "count": 23

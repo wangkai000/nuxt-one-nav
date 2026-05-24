@@ -156,10 +156,11 @@ function parseNavMd(md) {
 }
 
 function pushCat(cat, categories, sites) {
-  // 为每个子分类计算站点数
+  // 为每个子分类计算站点数，并添加 parentId
   if (cat.children) {
     for (const child of cat.children) {
       child.count = sites.filter(s => s.category === child.id).length
+      child.parentId = cat.id
     }
     // 去掉空子分类
     cat.children = cat.children.filter(c => c.count > 0)

@@ -23,49 +23,57 @@
           "id": "ai-nav",
           "name": "AI导航",
           "icon": "fluent-emoji:compass",
-          "count": 9
+          "count": 9,
+          "parentId": "ai"
         },
         {
           "id": "ai-writing",
           "name": "AI写作",
           "icon": "fluent-emoji:pen",
-          "count": 3
+          "count": 3,
+          "parentId": "ai"
         },
         {
           "id": "ai-framework",
           "name": "AI开发框架",
           "icon": "fluent-emoji:building-construction",
-          "count": 4
+          "count": 4,
+          "parentId": "ai"
         },
         {
           "id": "ai-skill",
           "name": "AI Skill",
           "icon": "fluent-emoji:flexed-biceps",
-          "count": 1
+          "count": 1,
+          "parentId": "ai"
         },
         {
           "id": "ai-local",
           "name": "AI本地运行",
           "icon": "mdi:desktop-classic",
-          "count": 5
+          "count": 5,
+          "parentId": "ai"
         },
         {
           "id": "ai-visual",
           "name": "AI可视化平台",
           "icon": "fluent-emoji:artist-palette",
-          "count": 2
+          "count": 2,
+          "parentId": "ai"
         },
         {
           "id": "ai-content",
           "name": "AI内容生成",
           "icon": "fluent-emoji:artist",
-          "count": 10
+          "count": 10,
+          "parentId": "ai"
         },
         {
           "id": "ai-agent",
           "name": "AI助手/Agent",
           "icon": "fluent-emoji:robot",
-          "count": 2
+          "count": 2,
+          "parentId": "ai"
         }
       ],
       "count": 36
@@ -79,25 +87,29 @@
           "id": "web3-info",
           "name": "Web3资讯",
           "icon": "logos:ethereum",
-          "count": 20
+          "count": 20,
+          "parentId": "web3"
         },
         {
           "id": "web3-lib",
           "name": "Web3库",
           "icon": "logos:metamask-icon",
-          "count": 13
+          "count": 13,
+          "parentId": "web3"
         },
         {
           "id": "web3-framework",
           "name": "Web3合约框架",
           "icon": "logos:solidity",
-          "count": 7
+          "count": 7,
+          "parentId": "web3"
         },
         {
           "id": "web3-lang",
           "name": "Web3合约语言",
           "icon": "vscode-icons:file-type-solidity",
-          "count": 8
+          "count": 8,
+          "parentId": "web3"
         }
       ],
       "count": 48
@@ -111,55 +123,64 @@
           "id": "frontend-react",
           "name": "React生态",
           "icon": "logos:react",
-          "count": 9
+          "count": 9,
+          "parentId": "frontend"
         },
         {
           "id": "frontend-vue",
           "name": "Vue生态",
           "icon": "logos:vue",
-          "count": 5
+          "count": 5,
+          "parentId": "frontend"
         },
         {
           "id": "frontend-other",
           "name": "其他框架",
           "icon": "logos:svelte-icon",
-          "count": 10
+          "count": 10,
+          "parentId": "frontend"
         },
         {
           "id": "frontend-ui-lib",
           "name": "UI组件库",
           "icon": "logos:storybook-icon",
-          "count": 15
+          "count": 15,
+          "parentId": "frontend"
         },
         {
           "id": "frontend-css",
           "name": "CSS框架",
           "icon": "logos:tailwindcss-icon",
-          "count": 2
+          "count": 2,
+          "parentId": "frontend"
         },
         {
           "id": "frontend-build",
           "name": "构建工具",
           "icon": "logos:vitejs",
-          "count": 7
+          "count": 7,
+          "parentId": "frontend"
         },
         {
           "id": "frontend-webgl",
           "name": "WebGL 3D",
           "icon": "logos:threejs",
-          "count": 2
+          "count": 2,
+          "parentId": "frontend"
         },
         {
           "id": "frontend-ai",
           "name": "AI开发库",
           "icon": "fluent-emoji:robot",
-          "count": 7
+          "count": 7,
+          "parentId": "frontend"
         },
         {
           "id": "frontend-webgis",
           "name": "WebGIS 地图",
           "icon": "fluent-emoji:world-map",
-          "count": 10
+          "count": 10,
+          "parentId": "frontend"
         }
       ],
       "count": 67
@@ -173,19 +194,22 @@
           "id": "nodejs-web",
           "name": "Web框架",
           "icon": "logos:nodejs-icon",
-          "count": 7
+          "count": 7,
+          "parentId": "nodejs"
         },
         {
           "id": "nodejs-threads",
           "name": "多线程/并发",
           "icon": "logos:nodejs-icon",
-          "count": 5
+          "count": 5,
+          "parentId": "nodejs"
         },
         {
           "id": "nodejs-database",
           "name": "数据库/ORM",
           "icon": "mdi:database",
-          "count": 11
+          "count": 11,
+          "parentId": "nodejs"
         }
       ],
       "count": 23
@@ -205,49 +229,57 @@
           "id": "cloud-hosting",
           "name": "前端部署平台",
           "icon": "fluent-emoji:rocket",
-          "count": 8
+          "count": 8,
+          "parentId": "cloud"
         },
         {
           "id": "cloud-major",
           "name": "主流云服务商",
           "icon": "fluent-emoji:globe-showing-americas",
-          "count": 9
+          "count": 9,
+          "parentId": "cloud"
         },
         {
           "id": "cloud-serverless",
           "name": "Serverless / Edge Functions",
           "icon": "fluent-emoji:cloud-with-lightning",
-          "count": 7
+          "count": 7,
+          "parentId": "cloud"
         },
         {
           "id": "cloud-automation",
           "name": "工作流自动化",
           "icon": "fluent-emoji:repeat-button",
-          "count": 3
+          "count": 3,
+          "parentId": "cloud"
         },
         {
           "id": "cloud-baas",
           "name": "BaaS (后端即服务)",
           "icon": "fluent-emoji:floppy-disk",
-          "count": 3
+          "count": 3,
+          "parentId": "cloud"
         },
         {
           "id": "cloud-cdn",
           "name": "CDN & DNS & 域名",
           "icon": "fluent-emoji:globe-with-meridians",
-          "count": 5
+          "count": 5,
+          "parentId": "cloud"
         },
         {
           "id": "cloud-database",
           "name": "数据库服务",
           "icon": "fluent-emoji:floppy-disk",
-          "count": 7
+          "count": 7,
+          "parentId": "cloud"
         },
         {
           "id": "cloud-container",
           "name": "容器与 Kubernetes",
           "icon": "fluent-emoji:package",
-          "count": 9
+          "count": 9,
+          "parentId": "cloud"
         }
       ],
       "count": 51
