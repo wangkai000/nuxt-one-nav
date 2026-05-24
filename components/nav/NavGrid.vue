@@ -38,7 +38,7 @@
         :key="cat.id"
         :id="`category-${cat.id}`"
         :item-count="cat.items.length"
-        columns="6"
+        :columns="6"
         rootClass="scroll-mt-20"
         :force-visible="preloadedIds.has(cat.id)"
       >
