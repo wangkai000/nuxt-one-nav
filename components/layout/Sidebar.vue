@@ -97,6 +97,22 @@ const { categories } = useNavData()
 const { activeCategory, selectCategory } = useSearch()
 const collapsed = useState<boolean>('sidebar-collapsed', () => false)
 
+// 滚动到指定元素（带重试机制）
+const scrollToElement = (id: string, maxRetries = 5, delay = 100) => {
+  const tryScroll = (retriesLeft: number) => {
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      return true
+    }
+    if (retriesLeft > 0) {
+      setTimeout(() => tryScroll(retriesLeft - 1), delay)
+    }
+    return false
+  }
+  return tryScroll(maxRetries)
+}
+
 // 处理菜单选择
 const handleSelect = async (index: string) => {
   const route = useRoute()
@@ -107,24 +123,17 @@ const handleSelect = async (index: string) => {
     await navigateTo('/')
     // 等待页面渲染完成后滚动
     nextTick(() => {
-      const element = document.getElementById(`category-${index}`)
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      } else {
-        window.scrollTo({ top: 0, behavior: 'smooth' })
-      }
+      scrollToElement(`category-${index}`)
     })
     return
   }
 
   selectCategory(index)
 
-  // 查找目标元素并滚动
+  // 查找目标元素并滚动（带重试，处理懒加载延迟）
   nextTick(() => {
-    const element = document.getElementById(`category-${index}`)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    } else {
+    const found = scrollToElement(`category-${index}`)
+    if (!found) {
       // 如果找不到对应元素（比如首页），滚动到顶部
       window.scrollTo({ top: 0, behavior: 'smooth' })
     }

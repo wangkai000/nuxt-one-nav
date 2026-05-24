@@ -52,7 +52,7 @@
 
         <!-- 如果有子分类，分组显示 -->
         <div v-if="cat.children && cat.children.length > 0" class="space-y-6">
-          <div v-for="child in cat.children.filter(c => c.items && c.items.length > 0)" :key="child.id" class="scroll-mt-20">
+          <div v-for="child in cat.children.filter(c => c.items && c.items.length > 0)" :key="child.id" :id="`category-${child.id}`" class="scroll-mt-20">
             <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-3 ml-2 flex items-center gap-2">
               <Icon :name="getIconName(child.icon)" class="w-4 h-4" />
               {{ child.name }}
