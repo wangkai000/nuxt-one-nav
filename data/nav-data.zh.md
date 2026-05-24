@@ -9,6 +9,119 @@
 
 - [天渺studio](https://tianmiao.site) - 天渺工作室的小站&日志记录 | icon: https://s21.ax1x.com/2024/12/22/pAXtJat.jpg | tags: 个人博客, 日志
 
+# 云平台
+> id: cloud | icon: fluent-emoji:cloud
+
+## 前端部署平台
+> id: cloud-hosting | icon: fluent-emoji:rocket
+
+- [Vercel](https://vercel.com/) - Vercel 是全球领先的前端云平台，支持 Next.js、Nuxt、SvelteKit 等框架的零配置部署，全球边缘网络加速，CI/CD 集成开箱即用。 | icon: https://vercel.com/favicon.ico | tags: 云平台, 前端, 部署, Serverless, JAMstack
+- [Netlify](https://www.netlify.com/) - Netlify 是知名的 JAMstack 前端云平台，支持静态站点部署、Serverless Functions、表单处理和 A/B 测试，提供免费套餐。 | icon: https://www.netlify.com/favicon.ico | tags: 云平台, 前端, 部署, Serverless, JAMstack
+- [Cloudflare Pages](https://pages.cloudflare.com/) - Cloudflare Pages 是基于 Cloudflare 全球网络的 JAMstack 部署平台，与 Cloudflare Workers 无缝集成，极速全球分发。 | icon: https://pages.cloudflare.com/favicon.ico | tags: 云平台, 前端, 部署, CDN, Edge
+- [Surge](https://surge.sh/) - Surge 是极简的静态站点部署工具，通过命令行一键将项目部署到全球 CDN，无需配置。 | icon: https://surge.sh/favicon.ico | tags: 云平台, 前端, 部署, CLI, CDN
+- [Render](https://render.com/) - Render 是全栈云平台，支持静态站点、Serverless Functions、持久化服务和 Cron Jobs，提供免费套餐。 | icon: https://render.com/favicon.ico | tags: 云平台, 前端, 后端, Serverless, 部署
+- [Railway](https://railway.app/) - Railway 是现代开发者云平台，支持 Node.js、Python、Go 等语言的直接部署，按使用量计费，界面简洁。 | icon: https://railway.app/favicon.ico | tags: 云平台, 部署, Serverless, 数据库, 付费
+- [Fly.io](https://fly.io/) - Fly.io 是将应用部署到全球边缘节点的平台，支持 Docker 容器和多种语言，主打低延迟体验。 | icon: https://fly.io/favicon.ico | tags: 云平台, 边缘计算, Docker, 部署, 全球
+- [Zeabur](https://zeabur.com/) - Zeabur 是台湾开发者打造的云平台，支持一键部署全栈应用，中文界面友好，对亚洲用户访问速度快。 | icon: https://zeabur.com/favicon.ico | tags: 云平台, 部署, Serverless, 中文, 全栈
+- [Replit](https://replit.com/) - Replit 是浏览器内置开发+部署平台，支持 50+ 语言，一键部署网站和应用，配备 AI 编程助手。 | icon: https://replit.com/favicon.ico | tags: 云平台, IDE, 部署, Serverless, 在线开发
+
+## 主流云服务商
+> id: cloud-major | icon: fluent-emoji:globe-showing-americas
+
+- [AWS (Amazon Web Services)](https://aws.amazon.com/) - AWS 是全球最大的云服务平台，提供计算、存储、数据库、AI/ML 等 200+ 服务，生态最完善。 | icon: https://aws.amazon.com/favicon.ico | tags: 云平台, 云服务商, 基础设施, AWS
+- [Google Cloud Platform](https://cloud.google.com/) - Google Cloud 是 Google 的云服务平台，在 AI/ML、Kubernetes、大数据领域优势显著，BigQuery 和 TensorFlow 生态领先。 | icon: https://cloud.google.com/favicon.ico | tags: 云平台, 云服务商, AI, Kubernetes, GCP
+- [Microsoft Azure](https://azure.microsoft.com/) - Azure 是 Microsoft 的企业级云平台，与 Windows、Office 365、M365 深度集成，混合云能力业界领先。 | icon: https://azure.microsoft.com/favicon.ico | tags: 云平台, 云服务商, 企业级, 混合云, Microsoft
+- [腾讯云国际版](https://www.tencentcloud.com/) - 腾讯云国际版面向全球开发者，提供云服务器、CDN、游戏云、视频解决方案，亚太地区节点丰富。 | icon: https://www.tencentcloud.com/favicon.ico | tags: 云平台, 云服务商, 国内, 腾讯, 亚太
+- [阿里云国际版](https://www.alibabacloud.com/) - 阿里云国际版是全球第三大云服务商，提供弹性计算、数据库、存储、CDN 等服务，亚太和中东市场领先。 | icon: https://www.alibabacloud.com/favicon.ico | tags: 云平台, 云服务商, 国内, 阿里, 亚太
+- [DigitalOcean](https://www.digitalocean.com/) - DigitalOcean 是面向开发者和 SMB 的简单云平台，以高性价比和易用性著称，Droplets 云服务器广受欢迎。 | icon: https://www.digitalocean.com/favicon.ico | tags: 云平台, 云服务商, VPS, 开发者友好, 简单
+- [Linode (Akamai)](https://www.linode.com/) - Linode 现属于 Akamai，是老牌 VPS 云服务商，以稳定、高性能和出色文档著称，现加入 Akamai 边缘云网络。 | icon: https://www.linode.com/favicon.ico | tags: 云平台, 云服务商, VPS, Linux, Akamai
+- [Oracle Cloud](https://www.oracle.com/cloud/) - Oracle Cloud 提供强大的数据库和 SaaS 服务，Always Free 永久免费套餐性价比高，适合运行 Oracle 数据库工作负载。 | icon: https://www.oracle.com/favicon.ico | tags: 云平台, 云服务商, 数据库, Oracle, 免费套餐
+- [IBM Cloud](https://www.ibm.com/cloud) - IBM Cloud 依托 IBM 企业级技术积累，在混合云、AI (Watson) 和行业解决方案方面具有优势。 | icon: https://www.ibm.com/favicon.ico | tags: 云平台, 云服务商, 企业级, AI, 混合云
+- [Scaleway](https://www.scaleway.com/) - Scaleway 是欧洲云服务商，提供裸金属服务器、GPU 实例和 Serverless 产品，在欧洲市场口碑良好。 | icon: https://www.scaleway.com/favicon.ico | tags: 云平台, 云服务商, 欧洲, GPU, 裸金属
+- [Hetzner](https://www.hetzner.com/) - Hetzner 是德国老牌云服务商，以极高性价比的裸金属服务器著称，欧洲数据中心，网络质量优秀。 | icon: https://www.hetzner.com/favicon.ico | tags: 云平台, 云服务商, 德国, 裸金属, 高性价比
+- [Vultr](https://www.vultr.com/) - Vultr 是全球覆盖广泛的云平台，提供高性能 VPS、裸金属和 GPU 实例，计费灵活，按小时计费。 | icon: https://www.vultr.com/favicon.ico | tags: 云平台, 云服务商, VPS, 全球, 高性能
+- [UpCloud](https://upcloud.com/) - UpCloud 是一家芬兰云服务商，以 MaxIOPS 存储技术著称，提供高 IOPS 云服务器，性能优异。 | icon: https://upcloud.com/favicon.ico | tags: 云平台, 云服务商, VPS, 芬兰, 高性能
+- [Contabo](https://www.contabo.com/) - Contabo 是德国云服务商，提供极具竞争力的价格的大容量 VPS 和独立服务器，性价比极高。 | icon: https://www.contabo.com/favicon.ico | tags: 云平台, 云服务商, 德国, VPS, 高性价比
+
+## Serverless / Edge Functions
+> id: cloud-serverless | icon: fluent-emoji:lightning
+
+- [Cloudflare Workers](https://workers.cloudflare.com/) - Cloudflare Workers 是在 Cloudflare 边缘节点运行的 Serverless 平台，以超低延迟和全球分布著称，支持 V8 Isolates 技术。 | icon: https://workers.cloudflare.com/favicon.ico | tags: Serverless, 边缘计算, Cloudflare, 极速, 无服务器
+- [Vercel Functions](https://vercel.com/docs/functions) - Vercel Functions 是 Vercel 平台的 Serverless Functions，与 Next.js 和前端部署无缝集成，开箱即用。 | icon: https://vercel.com/favicon.ico | tags: Serverless, Vercel, 前端, 无服务器, 函数
+- [Netlify Functions](https://www.netlify.com/products/functions/) - Netlify Functions 是 Netlify 的 Serverless Functions 服务，支持 AWS Lambda 或 Netlify 自有 runtime。 | icon: https://www.netlify.com/favicon.ico | tags: Serverless, Netlify, 无服务器, Lambda, 函数
+- [AWS Lambda](https://aws.amazon.com/lambda/) - AWS Lambda 是 AWS 的开创性 Serverless 服务，按执行次数和时长计费，深度集成 AWS 生态。 | icon: https://aws.amazon.com/favicon.ico | tags: Serverless, AWS, 无服务器, Lambda, 函数
+- [Deno Deploy](https://deno.com/deploy) - Deno Deploy 是 Deno 的边缘部署平台，支持 TypeScript 原生运行，全球 KV 存储和队列服务。 | icon: https://deno.com/favicon.ico | tags: Serverless, 边缘计算, Deno, TypeScript, 无服务器
+- [Supabase Edge Functions](https://supabase.com/edge-functions) - Supabase Edge Functions 基于 Deno 构建，与 Supabase 数据库和认证无缝集成，支持 TypeScript。 | icon: https://supabase.com/favicon.ico | tags: Serverless, Supabase, Deno, 函数, 边缘
+- [Bun Deploy](https://bun.sh/) - Bun Deploy 是 Bun 运行时的边缘部署服务，支持 Bun/JavaScript/TypeScript，全球低延迟执行。 | icon: https://bun.sh/favicon.ico | tags: Serverless, Bun, 边缘计算, 极速, 无服务器
+- [Beginner](https://begin.com/) - Begin 是专为 Architect 编写的 Appflowy 部署平台，支持构建 serverless Architect 应用。 | icon: https://begin.com/favicon.ico | tags: Serverless, 部署, Node.js, 无服务器
+- [Azure Functions](https://azure.microsoft.com/products/functions) - Azure Functions 是 Microsoft 的 Serverless 服务，深度集成 Azure 服务，支持多种触发器和工作流编排。 | icon: https://azure.microsoft.com/favicon.ico | tags: Serverless, Azure, 无服务器, Microsoft, 函数
+- [Google Cloud Functions](https://cloud.google.com/functions) - Google Cloud Functions 是 GCP 的 Serverless 函数服务，支持 Node.js、Python、Go 等语言，与 GCP 生态深度集成。 | icon: https://cloud.google.com/favicon.ico | tags: Serverless, Google Cloud, 无服务器, 函数, GCP
+- [AWS Lambda@Edge](https://aws.amazon.com/lambda/edge/) - Lambda@Edge 是在 CloudFront 边缘节点运行的 Lambda 函数，用于自定义 CloudFront 请求/响应处理。 | icon: https://aws.amazon.com/favicon.ico | tags: Serverless, AWS, 边缘计算, Lambda, CDN
+
+## BaaS (后端即服务)
+> id: cloud-baas | icon: fluent-emoji:floppy-disk
+
+- [Firebase](https://firebase.google.com/) - Firebase 是 Google 的 BaaS 平台，提供实时数据库、认证、托管、Cloud Messaging 等服务，移动端开发首选。 | icon: https://firebase.google.com/favicon.ico | tags: BaaS, Google, 移动, 实时数据库, 认证
+- [Supabase](https://supabase.com/) - Supabase 是开源的 Firebase 替代品，基于 PostgreSQL，提供实时数据库、认证、存储、Edge Functions。 | icon: https://supabase.com/favicon.ico | tags: BaaS, 开源, PostgreSQL, 实时数据库, Firebase替代
+- [Parse](https://parseplatform.org/) - Parse 是开源的 BaaS 框架，支持自托管或使用 Parse Cloud，提供数据存储、用户认证、推送通知等。 | icon: https://parseplatform.org/favicon.ico | tags: BaaS, 开源, 自托管, 移动后端, Parse
+- [Back4App](https://www.back4app.com/) - Back4App 是基于 Parse 平台构建的 BaaS 服务，提供低代码后端，支持 GraphQL、实时数据库和 REST API。 | icon: https://www.back4app.com/favicon.ico | tags: BaaS, 低代码, Parse, GraphQL, 后端
+- [appwrite](https://appwrite.io/) - Appwrite 是开源的 BaaS 平台，提供数据库、用户认证、存储、云函数等服务的自托管方案。 | icon: https://appwrite.io/favicon.ico | tags: BaaS, 开源, 自托管, 认证, 数据库
+- [Nhost](https://nhost.io/) - Nhost 是开源的 BaaS，基于 Hasura GraphQL Engine + PostgreSQL + 自有认证，提供 GraphQL 和 REST API。 | icon: https://nhost.io/favicon.ico | tags: BaaS, 开源, GraphQL, PostgreSQL, 认证
+- [Convex](https://convex.dev/) - Convex 是面向 React/Vue 的 BaaS 平台，后端代码以 TypeScript 编写，实现端到端类型安全。 | icon: https://convex.dev/favicon.ico | tags: BaaS, 实时, TypeScript,  реактивный, 后端
+- [Stream](https://getstream.io/) - Stream 是专注于 Feed、聊天和视频的 BaaS 服务，提供即用的 UI 组件和 SDK。 | icon: https://getstream.io/favicon.ico | tags: BaaS, 实时, Feed, 聊天, 视频
+- [Pusher](https://pusher.com/) - Pusher 是实时通信 BaaS，提供 Channels 服务用于 WebSocket 推送、聊天和实时协作功能。 | icon: https://pusher.com/favicon.ico | tags: BaaS, 实时, WebSocket, 推送, 聊天
+- [Ably](https://ably.com/) - Ably 是全球分布式实时消息平台，提供低延迟、高可用的实时数据传递服务。 | icon: https://ably.com/favicon.ico | tags: BaaS, 实时, 消息, WebSocket, 推送
+- [PubNub](https://www.pubnub.com/) - PubNub 是面向大规模应用的实时通信和数据传递 BaaS，支持千万级并发连接。 | icon: https://www.pubnub.com/favicon.ico | tags: BaaS, 实时, 消息, 大规模, 推送
+- [OneSignal](https://onesignal.com/) - OneSignal 是专注于移动和 Web 推送通知的 BaaS，支持 Email、SMS、Push 等多渠道触达。 | icon: https://onesignal.com/favicon.ico | tags: BaaS, 推送通知, 移动, Web, 营销
+
+## CDN & DNS & 域名
+> id: cloud-cdn | icon: fluent-emoji:globe-with-meridians
+
+- [Cloudflare](https://www.cloudflare.com/) - Cloudflare 是全球最大的 CDN 和 DNS 服务商，提供 DDoS 防护、边缘计算、安全和性能优化服务。 | icon: https://www.cloudflare.com/favicon.ico | tags: CDN, DNS, DDoS防护, 边缘计算, 安全
+- [Fastly](https://www.fastly.com/) - Fastly 是高性能 CDN 和边缘计算平台，以实时配置推送和 VCL 可编程能力著称。 | icon: https://www.fastly.com/favicon.ico | tags: CDN, 边缘计算, 高性能, 可编程, VCL
+- [Akamai](https://www.akamai.com/) - Akamai 是全球最大 CDN 服务商，在企业级市场占主导地位，拥有最大带宽和覆盖范围。 | icon: https://www.akamai.com/favicon.ico | tags: CDN, 企业级, 全球, DNS, 安全
+- [BunnyCDN](https://bunny.net/) - BunnyCDN 是高性价比 CDN 服务商，提供 Storage、Optimizer、Firewall 等附加服务，价格透明。 | icon: https://bunny.net/favicon.ico | tags: CDN, 高性价比, 存储, 优化, 付费
+- [KeyCDN](https://www.keycdn.com/) - KeyCDN 是简单高效的 CDN 服务，按流量计费，实时配置推送，支持 HTTP/2 和 Brotli 压缩。 | icon: https://www.keycdn.com/favicon.ico | tags: CDN, 按流量, HTTP/2, 高性能, 简单
+- [StackPath](https://www.stackpath.com/) - StackPath 是面向开发者和企业的 CDN 和边缘计算平台，整合了 MaxCDN 和 StackPath 的 WAF、DNS 服务。 | icon: https://www.stackpath.com/favicon.ico | tags: CDN, 边缘计算, WAF, DNS, 安全
+- [Cloudflare Registrar](https://www.cloudflare.com/products/registrar/) - Cloudflare Registrar 是由 Cloudflare 提供的域名注册服务，域名隐私保护无额外收费，转入转出无隐藏费用。 | icon: https://www.cloudflare.com/favicon.ico | tags: 域名, DNS, Cloudflare, 隐私, 注册
+- [Namecheap](https://www.namecheap.com/) - Namecheap 是全球知名域名注册商，价格实惠，界面友好，隐私保护免费，支持一口价域名交易。 | icon: https://www.namecheap.com/favicon.ico | tags: 域名, 注册, 隐私, 交易, Namecheap
+- [Porkbun](https://porkbun.com/) - Porkbun 是以创意域名和超低价格著称的域名注册商，界面独特，WHOIS 隐私免费。 | icon: https://porkbun.com/favicon.ico | tags: 域名, 注册, 隐私, 低价格, 创意
+- [GoDaddy](https://www.godaddy.com/) - GoDaddy 是全球最大的域名注册商，提供域名交易、虚拟主机、企业邮箱等一站式服务。 | icon: https://www.godaddy.com/favicon.ico | tags: 域名, 注册, 主机, 企业邮箱, DNS
+- [Hover](https://www.hover.com/) - Hover 是简洁专注的域名注册商，界面清爽，无 upsell 骚扰，隐私保护默认开启。 | icon: https://www.hover.com/favicon.ico | tags: 域名, 注册, 隐私, 简洁, 无upsell
+- [DNSimple](https://dnsimple.com/) - DNSimple 是专注于域名和 DNS 服务的平台，提供域名注册、WHOIS 管理、DNS 记录管理等，API 友好。 | icon: https://dnsimple.com/favicon.ico | tags: DNS, 域名, API, 注册, 管理
+- [NS1](https://ns1.com/) - NS1 是企业级 DNS 服务商，以任意播网络和先进的数据过滤著称，提供 PagerDuty 集成和实时流量管理。 | icon: https://ns1.com/favicon.ico | tags: DNS, 企业级, 高可用, CDN, 监控
+
+## 数据库服务
+> id: cloud-database | icon: fluent-emoji:floppy-disk
+
+- [PlanetScale](https://planetscale.com/) - PlanetScale 是基于 MySQL 的无服务器数据库平台，提供分支、热重载和非阻塞 schema 变更能力。 | icon: https://planetscale.com/favicon.ico | tags: 数据库, MySQL, Serverless, 分支, Vitess
+- [Neon](https://neon.tech/) - Neon 是开源的 Serverless PostgreSQL 数据库，支持分支、 scale-to-zero 和自动缩放，按使用量计费。 | icon: https://neon.tech/favicon.ico | tags: 数据库, PostgreSQL, Serverless, 分支, 开源
+- [Turso](https://turso.tech/) - Turso 是基于 libSQL（SQLite 分支）的边缘数据库平台，支持嵌入式数据库和全球分布式部署。 | icon: https://turso.tech/favicon.ico | tags: 数据库, SQLite, 边缘计算, 嵌入式, 分布式
+- [MongoDB Atlas](https://www.mongodb.com/atlas) - MongoDB Atlas 是 MongoDB 官方云服务，提供完全托管的 MongoDB 数据库，支持全球多区域部署。 | icon: https://www.mongodb.com/favicon.ico | tags: 数据库, MongoDB, NoSQL, 云服务, 全球
+- [Redis Cloud](https://redis.com/redis-cloud/cloud-overview/) - Redis Cloud 是 Redis 官方云服务，提供完全托管的 Redis 缓存和数据库，支持多种云服务商。 | icon: https://redis.com/favicon.ico | tags: 数据库, Redis, 缓存, 云服务, 托管
+- [Upstash](https://upstash.com/) - Upstash 是面向 Serverless 的 Redis 和 Kafka 服务，按请求计费，支持 REST API，与 Vercel/Cloudflare 深度集成。 | icon: https://upstash.com/favicon.ico | tags: 数据库, Redis, Serverless, Kafka, 边缘计算
+- [CockroachDB Cloud](https://www.cockroachlabs.com/cockroachcloud/) - CockroachDB Cloud 是分布式 SQL 数据库云服务，兼容 PostgreSQL 协议，强一致性和无限水平扩展。 | icon: https://www.cockroachlabs.com/favicon.ico | tags: 数据库, 分布式, PostgreSQL, SQL, 云服务
+- [Fauna](https://fauna.com/) - Fauna 是灵活的 NoSQL 数据库服务，支持文档和关系模型，全球低延迟，无服务器架构。 | icon: https://fauna.com/favicon.ico | tags: 数据库, NoSQL, 无服务器, 全球, 灵活
+- [MongoDB Atlas Search](https://www.mongodb.com/atlas/search) - MongoDB Atlas Search 是内置于 Atlas 的全文搜索服务，无需独立的搜索集群，支持复杂搜索场景。 | icon: https://www.mongodb.com/favicon.ico | tags: 数据库, 搜索, MongoDB, Atlas, 全文搜索
+- [Typesense Cloud](https://cloud.typesense.org/) - Typesense Cloud 是 Typesense 的官方云托管服务，Typesense 是开源的闪电般快速的 typo-tolerant 搜索引擎。 | icon: https://cloud.typesense.org/favicon.ico | tags: 数据库, 搜索, 搜索引擎, 开源, 云服务
+- [Meilisearch](https://www.meilisearch.com/cloud) - Meilisearch Cloud 是 Meilisearch 的云服务，Meilisearch 是开源的极速全文搜索引擎， 开箱即用。 | icon: https://www.meilisearch.com/favicon.ico | tags: 数据库, 搜索, 搜索引擎, 开源, 云服务
+- [Algolia](https://www.algolia.com/) - Algolia 是成熟的搜索即服务平台，以极速和强大的相关性算法著称，提供完整的搜索即服务解决方案。 | icon: https://www.algolia.com/favicon.ico | tags: 数据库, 搜索, SaaS, API, 搜索即服务
+
+## 容器与 Kubernetes
+> id: cloud-container | icon: fluent-emoji:shipping-container
+
+- [Docker Hub](https://hub.docker.com/) - Docker Hub 是全球最大的容器镜像仓库，提供官方镜像、团队管理和自动化构建服务。 | icon: https://hub.docker.com/favicon.ico | tags: 容器, Docker, 镜像仓库, CI/CD, 镜像
+- [GitHub Container Registry](https://github.com/features/packages) - GitHub Container Registry 是 GitHub 的容器镜像托管服务，与 GitHub Actions 和仓库深度集成。 | icon: https://github.com/favicon.ico | tags: 容器, GitHub, 镜像仓库, CI/CD, 镜像
+- [Google Artifact Registry](https://cloud.google.com/artifact-registry) - GAR 是 Google Cloud 的镜像和构件存储服务，支持 Docker、Maven、npm 等多种格式，与 GKE 深度集成。 | icon: https://cloud.google.com/favicon.ico | tags: 容器, Google Cloud, 镜像仓库, CI/CD, 制品管理
+- [Amazon ECR](https://aws.amazon.com/ecr/) - Amazon ECR 是 AWS 的完全托管容器镜像注册服务，与 ECS 和 EKS 无缝集成，高可用。 | icon: https://aws.amazon.com/favicon.ico | tags: 容器, AWS, 镜像仓库, ECS, EKS
+- [DigitalOcean Container Registry](https://www.digitalocean.com/products/container-registry/) - DigitalOcean Container Registry 是在 DO 平台托管的私有容器镜像仓库，简单易用，按存储计费。 | icon: https://www.digitalocean.com/favicon.ico | tags: 容器, DigitalOcean, 镜像仓库, 私有, 简单
+- [CircleCI](https://circleci.com/) - CircleCI 是成熟的 CI/CD 平台，支持容器化构建和部署，与 GitHub/GitLab 集成，提供管即代码配置。 | icon: https://circleci.com/favicon.ico | tags: CI/CD, 容器, 自动化, 持续集成, 持续部署
+- [GitHub Actions](https://github.com/features/actions) - GitHub Actions 是 GitHub 的 CI/CD 和自动化平台，支持容器构建、云部署和自定义工作流。 | icon: https://github.com/features/actions/favicon.ico | tags: CI/CD, GitHub, 自动化, 容器, 持续集成
+- [GitLab CI/CD](https://docs.gitlab.com/ee/ci/) - GitLab CI/CD 是 GitLab 内置的 CI/CD 平台，与 GitLab 仓库、容器镜像仓库和 Kubernetes 深度集成。 | icon: https://about.gitlab.com/favicon.ico | tags: CI/CD, GitLab, 自动化, 容器, 持续集成
+- [Argo CD](https://argoproj.github.io/cd/) - Argo CD 是 Kubernetes 的声明式 GitOps 持续交付工具，以 Git 为单一真相来源实现自动化部署。 | icon: https://argoproj.github.io/favicon.ico | tags: Kubernetes, GitOps, 持续部署, 自动化, 容器
+- [Flux](https://fluxcd.io/) - Flux 是 CNCF 毕业项目，Kubernetes 原生的 GitOps 工具，与 Git 仓库同步集群状态。 | icon: https://fluxcd.io/favicon.ico | tags: Kubernetes, GitOps, 持续部署, 自动化, CNCF
+- [Rancher](https://www.rancher.com/) - Rancher 是 Kubernetes 管理平台，简化多集群部署和管理，提供直观的 Web UI。 | icon: https://www.rancher.com/favicon.ico | tags: Kubernetes, 管理, 平台, 多集群, Rancher
+
 # AI 工具
 > id: ai | icon: fluent-emoji:robot
 
