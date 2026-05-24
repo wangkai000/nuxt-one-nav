@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "lastUpdated": "2026-05-24",
     "description": "基于 Nuxt 4 的导航站数据（Markdown 数据源）",
-    "totalSites": 349,
+    "totalSites": 387,
     "totalCategories": 16
   },
   "categories": [
@@ -23,46 +23,52 @@
           "id": "cloud-hosting",
           "name": "前端部署平台",
           "icon": "fluent-emoji:rocket",
-          "count": 9
+          "count": 13
         },
         {
           "id": "cloud-major",
           "name": "主流云服务商",
           "icon": "fluent-emoji:globe-showing-americas",
-          "count": 14
+          "count": 21
         },
         {
           "id": "cloud-serverless",
           "name": "Serverless / Edge Functions",
           "icon": "fluent-emoji:lightning",
-          "count": 11
+          "count": 15
+        },
+        {
+          "id": "cloud-automation",
+          "name": "工作流自动化",
+          "icon": "fluent-emoji:repeat-button",
+          "count": 5
         },
         {
           "id": "cloud-baas",
           "name": "BaaS (后端即服务)",
           "icon": "fluent-emoji:floppy-disk",
-          "count": 12
+          "count": 18
         },
         {
           "id": "cloud-cdn",
           "name": "CDN & DNS & 域名",
           "icon": "fluent-emoji:globe-with-meridians",
-          "count": 13
+          "count": 17
         },
         {
           "id": "cloud-database",
           "name": "数据库服务",
           "icon": "fluent-emoji:floppy-disk",
-          "count": 12
+          "count": 16
         },
         {
           "id": "cloud-container",
           "name": "容器与 Kubernetes",
           "icon": "fluent-emoji:shipping-container",
-          "count": 11
+          "count": 15
         }
       ],
-      "count": 82
+      "count": 120
     },
     {
       "id": "ai",
@@ -460,6 +466,70 @@
       "order": 10
     },
     {
+      "id": "stackblitz",
+      "title": "StackBlitz",
+      "description": "StackBlitz 是浏览器内在线 IDE，基于 WebContainer 技术可直接在浏览器中运行 Node.js、Vite 等，无需本地环境。",
+      "url": "https://stackblitz.com/",
+      "icon": "https://stackblitz.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "IDE",
+        "在线",
+        "WebContainer",
+        "前端"
+      ],
+      "category": "cloud-hosting",
+      "order": 11
+    },
+    {
+      "id": "glitch",
+      "title": "Glitch",
+      "description": "Glitch 是面向 Web 开发者的在线 IDE 和托管平台，支持实时协作和即装即用的模板，适合快速原型开发。",
+      "url": "https://glitch.com/",
+      "icon": "https://glitch.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "IDE",
+        "在线",
+        "协作",
+        "原型"
+      ],
+      "category": "cloud-hosting",
+      "order": 12
+    },
+    {
+      "id": "codesandbox",
+      "title": "CodeSandbox",
+      "description": "CodeSandbox 是流行的在线 IDE，支持 React、Vue、Ng 等框架的即时预览，社区模板丰富。",
+      "url": "https://codesandbox.io/",
+      "icon": "https://codesandbox.io/favicon.ico",
+      "tags": [
+        "云平台",
+        "IDE",
+        "在线",
+        "前端",
+        "沙盒"
+      ],
+      "category": "cloud-hosting",
+      "order": 13
+    },
+    {
+      "id": "codepen",
+      "title": "CodePen",
+      "description": "CodePen 是全球最流行的前端代码 playground，支持 HTML/CSS/JS 即时预览，社区作品丰富。",
+      "url": "https://codepen.io/",
+      "icon": "https://codepen.io/favicon.ico",
+      "tags": [
+        "云平台",
+        "前端",
+        "Playground",
+        "CSS",
+        "HTML"
+      ],
+      "category": "cloud-hosting",
+      "order": 14
+    },
+    {
       "id": "aws-amazon-web-services",
       "title": "AWS (Amazon Web Services)",
       "description": "AWS 是全球最大的云服务平台，提供计算、存储、数据库、AI/ML 等 200+ 服务，生态最完善。",
@@ -472,7 +542,7 @@
         "AWS"
       ],
       "category": "cloud-major",
-      "order": 11
+      "order": 15
     },
     {
       "id": "google-cloud-platform",
@@ -488,7 +558,7 @@
         "GCP"
       ],
       "category": "cloud-major",
-      "order": 12
+      "order": 16
     },
     {
       "id": "microsoft-azure",
@@ -504,7 +574,7 @@
         "Microsoft"
       ],
       "category": "cloud-major",
-      "order": 13
+      "order": 17
     },
     {
       "id": "腾讯云国际版",
@@ -520,7 +590,7 @@
         "亚太"
       ],
       "category": "cloud-major",
-      "order": 14
+      "order": 18
     },
     {
       "id": "阿里云国际版",
@@ -536,7 +606,7 @@
         "亚太"
       ],
       "category": "cloud-major",
-      "order": 15
+      "order": 19
     },
     {
       "id": "digitalocean",
@@ -552,7 +622,7 @@
         "简单"
       ],
       "category": "cloud-major",
-      "order": 16
+      "order": 20
     },
     {
       "id": "linode-akamai",
@@ -568,7 +638,7 @@
         "Akamai"
       ],
       "category": "cloud-major",
-      "order": 17
+      "order": 21
     },
     {
       "id": "oracle-cloud",
@@ -584,7 +654,7 @@
         "免费套餐"
       ],
       "category": "cloud-major",
-      "order": 18
+      "order": 22
     },
     {
       "id": "ibm-cloud",
@@ -600,7 +670,7 @@
         "混合云"
       ],
       "category": "cloud-major",
-      "order": 19
+      "order": 23
     },
     {
       "id": "scaleway",
@@ -616,7 +686,7 @@
         "裸金属"
       ],
       "category": "cloud-major",
-      "order": 20
+      "order": 24
     },
     {
       "id": "hetzner",
@@ -632,7 +702,7 @@
         "高性价比"
       ],
       "category": "cloud-major",
-      "order": 21
+      "order": 25
     },
     {
       "id": "vultr",
@@ -648,7 +718,7 @@
         "高性能"
       ],
       "category": "cloud-major",
-      "order": 22
+      "order": 26
     },
     {
       "id": "upcloud",
@@ -664,7 +734,7 @@
         "高性能"
       ],
       "category": "cloud-major",
-      "order": 23
+      "order": 27
     },
     {
       "id": "contabo",
@@ -680,7 +750,125 @@
         "高性价比"
       ],
       "category": "cloud-major",
-      "order": 24
+      "order": 28
+    },
+    {
+      "id": "腾讯云开发-cloudbase",
+      "title": "腾讯云开发 CloudBase",
+      "description": "腾讯云开发（CloudBase）是面向小程序和 Web 应用的一站式 Serverless 云开发平台，提供云函数、数据库、存储等后端能力，与微信生态深度集成。",
+      "url": "https://cloud.tencent.com/product/tcb",
+      "icon": "https://cloud.tencent.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "云服务商",
+        "Serverless",
+        "小程序",
+        "微信",
+        "国内"
+      ],
+      "category": "cloud-major",
+      "order": 29
+    },
+    {
+      "id": "微信云开发",
+      "title": "微信云开发",
+      "description": "微信云开发是微信小程序官方提供的云开发服务，提供云函数、数据库和存储能力，无需自建服务器即可快速开发小程序。",
+      "url": "https://cloud.miniprogram.com/",
+      "icon": "https://developers.weixin.qq.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "小程序",
+        "Serverless",
+        "微信",
+        "云函数",
+        "国内"
+      ],
+      "category": "cloud-major",
+      "order": 30
+    },
+    {
+      "id": "百度智能云",
+      "title": "百度智能云",
+      "description": "百度智能云是百度旗下云服务平台，在 AI（文心一言、图像识别）、大数据、IoT 领域优势显著，提供丰富的 API 服务。",
+      "url": "https://cloud.baidu.com/",
+      "icon": "https://cloud.baidu.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "云服务商",
+        "AI",
+        "百度",
+        "国内"
+      ],
+      "category": "cloud-major",
+      "order": 31
+    },
+    {
+      "id": "华为云",
+      "title": "华为云",
+      "description": "华为云是华为公有云品牌，提供计算、存储、数据库、AI、容器等企业级云服务，鲲鹏芯片和鸿蒙生态深度集成。",
+      "url": "https://www.huaweicloud.com/",
+      "icon": "https://www.huaweicloud.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "云服务商",
+        "企业级",
+        "华为",
+        "混合云",
+        "国内"
+      ],
+      "category": "cloud-major",
+      "order": 32
+    },
+    {
+      "id": "字节跳动火山引擎",
+      "title": "字节跳动火山引擎",
+      "description": "火山引擎是字节跳动旗下云服务平台，提供大数据、视频云、智能推荐等能力，技术源于抖音和今日头条。",
+      "url": "https://www.volcengine.com/",
+      "icon": "https://www.volcengine.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "云服务商",
+        "字节跳动",
+        "视频",
+        "推荐算法",
+        "国内"
+      ],
+      "category": "cloud-major",
+      "order": 33
+    },
+    {
+      "id": "金山云",
+      "title": "金山云",
+      "description": "金山云是金山软件旗下云服务商，提供云服务器、存储、数据库等基础云服务，在游戏和视频领域有丰富经验。",
+      "url": "https://www.ksyun.com/",
+      "icon": "https://www.ksyun.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "云服务商",
+        "金山",
+        "游戏",
+        "视频",
+        "国内"
+      ],
+      "category": "cloud-major",
+      "order": 34
+    },
+    {
+      "id": "青云",
+      "title": "青云",
+      "description": "青云是具有完全自主可控技术的云服务商，提供公有云、私有云、混合云服务，以技术立身著称。",
+      "url": "https://www.qingcloud.com/",
+      "icon": "https://www.qingcloud.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "云服务商",
+        "私有云",
+        "混合云",
+        "自主可控",
+        "国内"
+      ],
+      "category": "cloud-major",
+      "order": 35
     },
     {
       "id": "cloudflare-workers",
@@ -696,7 +884,7 @@
         "无服务器"
       ],
       "category": "cloud-serverless",
-      "order": 25
+      "order": 36
     },
     {
       "id": "vercel-functions",
@@ -712,7 +900,7 @@
         "函数"
       ],
       "category": "cloud-serverless",
-      "order": 26
+      "order": 37
     },
     {
       "id": "netlify-functions",
@@ -728,7 +916,7 @@
         "函数"
       ],
       "category": "cloud-serverless",
-      "order": 27
+      "order": 38
     },
     {
       "id": "aws-lambda",
@@ -744,7 +932,7 @@
         "函数"
       ],
       "category": "cloud-serverless",
-      "order": 28
+      "order": 39
     },
     {
       "id": "deno-deploy",
@@ -760,7 +948,7 @@
         "无服务器"
       ],
       "category": "cloud-serverless",
-      "order": 29
+      "order": 40
     },
     {
       "id": "supabase-edge-functions",
@@ -776,7 +964,7 @@
         "边缘"
       ],
       "category": "cloud-serverless",
-      "order": 30
+      "order": 41
     },
     {
       "id": "bun-deploy",
@@ -792,7 +980,7 @@
         "无服务器"
       ],
       "category": "cloud-serverless",
-      "order": 31
+      "order": 42
     },
     {
       "id": "beginner",
@@ -807,7 +995,7 @@
         "无服务器"
       ],
       "category": "cloud-serverless",
-      "order": 32
+      "order": 43
     },
     {
       "id": "azure-functions",
@@ -823,7 +1011,7 @@
         "函数"
       ],
       "category": "cloud-serverless",
-      "order": 33
+      "order": 44
     },
     {
       "id": "google-cloud-functions",
@@ -839,7 +1027,7 @@
         "GCP"
       ],
       "category": "cloud-serverless",
-      "order": 34
+      "order": 45
     },
     {
       "id": "aws-lambdaedge",
@@ -855,7 +1043,152 @@
         "CDN"
       ],
       "category": "cloud-serverless",
-      "order": 35
+      "order": 46
+    },
+    {
+      "id": "阿里云函数计算-fc",
+      "title": "阿里云函数计算 FC",
+      "description": "阿里云函数计算（FC）是阿里云的 Serverless 计算服务，支持 Node.js、Python、PHP 等语言，与阿里云生态深度集成。",
+      "url": "https://www.aliyun.com/product/fc",
+      "icon": "https://www.aliyun.com/favicon.ico",
+      "tags": [
+        "Serverless",
+        "阿里云",
+        "无服务器",
+        "函数",
+        "国内"
+      ],
+      "category": "cloud-serverless",
+      "order": 47
+    },
+    {
+      "id": "腾讯云云函数-scf",
+      "title": "腾讯云云函数 SCF",
+      "description": "腾讯云云函数（SCF）是腾讯云的 Serverless 计算服务，支持在线编辑、触发器配置和微信生态集成。",
+      "url": "https://cloud.tencent.com/product/scf",
+      "icon": "https://cloud.tencent.com/favicon.ico",
+      "tags": [
+        "Serverless",
+        "腾讯云",
+        "无服务器",
+        "函数",
+        "国内"
+      ],
+      "category": "cloud-serverless",
+      "order": 48
+    },
+    {
+      "id": "华为云函数工作流-functiongraph",
+      "title": "华为云函数工作流 FunctionGraph",
+      "description": "华为云函数工作流（FunctionGraph）是华为云的 Serverless 函数编排服务，支持可视化流程编排和分布式任务协调。",
+      "url": "https://www.huaweicloud.com/product/functiongraph",
+      "icon": "https://www.huaweicloud.com/favicon.ico",
+      "tags": [
+        "Serverless",
+        "华为云",
+        "无服务器",
+        "函数编排",
+        "国内"
+      ],
+      "category": "cloud-serverless",
+      "order": 49
+    },
+    {
+      "id": "百度智能云函数计算-cfc",
+      "title": "百度智能云函数计算 CFC",
+      "description": "百度智能云函数计算（CFC）是百度云的 Serverless 函数服务，支持在线编辑、API 网关触发和百度 AI 能力集成。",
+      "url": "https://cloud.baidu.com/product/cfc",
+      "icon": "https://cloud.baidu.com/favicon.ico",
+      "tags": [
+        "Serverless",
+        "百度云",
+        "无服务器",
+        "函数",
+        "AI集成",
+        "国内"
+      ],
+      "category": "cloud-serverless",
+      "order": 50
+    },
+    {
+      "id": "zapier",
+      "title": "Zapier",
+      "description": "Zapier 是最流行的在线工作流自动化平台，连接 6000+ 应用，无需代码即可实现跨服务自动化，是个人效率神器。",
+      "url": "https://zapier.com/",
+      "icon": "https://zapier.com/favicon.ico",
+      "tags": [
+        "工作流自动化",
+        "无代码",
+        "SaaS集成",
+        "效率",
+        "自动化"
+      ],
+      "category": "cloud-automation",
+      "order": 51
+    },
+    {
+      "id": "make-formerly-integromat",
+      "title": "Make (formerly Integromat)",
+      "description": "Make 是强大的可视化工作流自动化平台，比 Zapier 更灵活，支持复杂的数据转换、迭代和并行任务编排。",
+      "url": "https://www.make.com/",
+      "icon": "https://www.make.com/favicon.ico",
+      "tags": [
+        "工作流自动化",
+        "无代码",
+        "自动化",
+        "可视化",
+        "集成"
+      ],
+      "category": "cloud-automation",
+      "order": 52
+    },
+    {
+      "id": "ifttt",
+      "title": "IFTTT",
+      "description": "IFTTT 是老牌自动化平台，以「如果这个、那么那个」逻辑连接物联网设备和 Web 服务，简洁易用。",
+      "url": "https://ifttt.com/",
+      "icon": "https://ifttt.com/favicon.ico",
+      "tags": [
+        "工作流自动化",
+        "物联网",
+        "Webhooks",
+        "自动化",
+        "IoT"
+      ],
+      "category": "cloud-automation",
+      "order": 53
+    },
+    {
+      "id": "pipedream",
+      "title": "Pipedream",
+      "description": "Pipedream 是面向开发者的自动化平台，支持编写 Node.js、Python、Go 代码处理事件流，深度集成 GitHub、Slack 等服务。",
+      "url": "https://pipedream.com/",
+      "icon": "https://pipedream.com/favicon.ico",
+      "tags": [
+        "工作流自动化",
+        "开发者",
+        "代码",
+        "Webhooks",
+        "集成"
+      ],
+      "category": "cloud-automation",
+      "order": 54
+    },
+    {
+      "id": "automate-io",
+      "title": "Automate.io",
+      "description": "Automate.io 是简单易用的业务自动化平台，连接 200+ SaaS 应用，适合非技术用户搭建自动化工作流。",
+      "url": "https://automate.io/",
+      "icon": "https://automate.io/favicon.ico",
+      "tags": [
+        "工作流自动化",
+        "无代码",
+        "业务自动化",
+        "SaaS集成",
+        "自动化"
+      ],
+      "category": "cloud-automation",
+      "order": 55
     },
     {
       "id": "firebase",
@@ -871,7 +1204,7 @@
         "认证"
       ],
       "category": "cloud-baas",
-      "order": 36
+      "order": 56
     },
     {
       "id": "supabase",
@@ -887,7 +1220,7 @@
         "Firebase替代"
       ],
       "category": "cloud-baas",
-      "order": 37
+      "order": 57
     },
     {
       "id": "parse",
@@ -903,7 +1236,7 @@
         "Parse"
       ],
       "category": "cloud-baas",
-      "order": 38
+      "order": 58
     },
     {
       "id": "back4app",
@@ -919,7 +1252,7 @@
         "后端"
       ],
       "category": "cloud-baas",
-      "order": 39
+      "order": 59
     },
     {
       "id": "appwrite",
@@ -935,7 +1268,7 @@
         "数据库"
       ],
       "category": "cloud-baas",
-      "order": 40
+      "order": 60
     },
     {
       "id": "nhost",
@@ -951,7 +1284,7 @@
         "认证"
       ],
       "category": "cloud-baas",
-      "order": 41
+      "order": 61
     },
     {
       "id": "convex",
@@ -967,7 +1300,7 @@
         "后端"
       ],
       "category": "cloud-baas",
-      "order": 42
+      "order": 62
     },
     {
       "id": "stream",
@@ -983,7 +1316,7 @@
         "视频"
       ],
       "category": "cloud-baas",
-      "order": 43
+      "order": 63
     },
     {
       "id": "pusher",
@@ -999,7 +1332,7 @@
         "聊天"
       ],
       "category": "cloud-baas",
-      "order": 44
+      "order": 64
     },
     {
       "id": "ably",
@@ -1015,7 +1348,7 @@
         "推送"
       ],
       "category": "cloud-baas",
-      "order": 45
+      "order": 65
     },
     {
       "id": "pubnub",
@@ -1031,7 +1364,7 @@
         "推送"
       ],
       "category": "cloud-baas",
-      "order": 46
+      "order": 66
     },
     {
       "id": "onesignal",
@@ -1047,7 +1380,104 @@
         "营销"
       ],
       "category": "cloud-baas",
-      "order": 47
+      "order": 67
+    },
+    {
+      "id": "airtable",
+      "title": "Airtable",
+      "description": "Airtable 是结合电子表格和数据库的 BaaS 平台，灵活可定制，支持视图、自动化和工作流，适合作为轻量级后台。",
+      "url": "https://airtable.com/",
+      "icon": "https://airtable.com/favicon.ico",
+      "tags": [
+        "BaaS",
+        "数据库",
+        "低代码",
+        "后台",
+        "在线表格"
+      ],
+      "category": "cloud-baas",
+      "order": 68
+    },
+    {
+      "id": "contentful",
+      "title": "Contentful",
+      "description": "Contentful 是头部 CMS 即服务平台，以 API 优先著称，支持多语言、webhook 和强大的内容分发，是内容密集型应用的理想选择。",
+      "url": "https://www.contentful.com/",
+      "icon": "https://www.contentful.com/favicon.ico",
+      "tags": [
+        "BaaS",
+        "CMS",
+        "内容管理",
+        "API优先",
+        "无头CMS"
+      ],
+      "category": "cloud-baas",
+      "order": 69
+    },
+    {
+      "id": "sanity",
+      "title": "Sanity",
+      "description": "Sanity 是结构化内容平台，以实时协作编辑器和自定义内容模型著称，数据存储在 Sanity 的托管数据库中。",
+      "url": "https://www.sanity.io/",
+      "icon": "https://www.sanity.io/favicon.ico",
+      "tags": [
+        "BaaS",
+        "CMS",
+        "内容管理",
+        "实时协作",
+        "无头CMS"
+      ],
+      "category": "cloud-baas",
+      "order": 70
+    },
+    {
+      "id": "strapi",
+      "title": "Strapi",
+      "description": "Strapi 是最流行的开源无头 CMS，支持自托管和云托管，提供 REST API 和 GraphQL API，插件生态丰富。",
+      "url": "https://strapi.io/",
+      "icon": "https://strapi.io/favicon.ico",
+      "tags": [
+        "BaaS",
+        "CMS",
+        "开源",
+        "无头CMS",
+        "API优先",
+        "自托管"
+      ],
+      "category": "cloud-baas",
+      "order": 71
+    },
+    {
+      "id": "prismic",
+      "title": "Prismic",
+      "description": "Prismic 是无头 CMS 平台，以 Slice Machine 定制内容模型著称，支持 Next.js、Nuxt 等框架的官方集成。",
+      "url": "https://prismic.io/",
+      "icon": "https://prismic.io/favicon.ico",
+      "tags": [
+        "BaaS",
+        "CMS",
+        "无头CMS",
+        "内容管理",
+        "Next.js"
+      ],
+      "category": "cloud-baas",
+      "order": 72
+    },
+    {
+      "id": "grafbase",
+      "title": "Grafbase",
+      "description": "Grafbase 是面向现代应用的 BaaS 后端平台，以 Edge-First GraphQL 著称，全球分布式，支持实时订阅和身份验证。",
+      "url": "https://grafbase.com/",
+      "icon": "https://grafbase.com/favicon.ico",
+      "tags": [
+        "BaaS",
+        "GraphQL",
+        "Serverless",
+        "边缘计算",
+        "API"
+      ],
+      "category": "cloud-baas",
+      "order": 73
     },
     {
       "id": "cloudflare",
@@ -1063,7 +1493,7 @@
         "安全"
       ],
       "category": "cloud-cdn",
-      "order": 48
+      "order": 74
     },
     {
       "id": "fastly",
@@ -1079,7 +1509,7 @@
         "VCL"
       ],
       "category": "cloud-cdn",
-      "order": 49
+      "order": 75
     },
     {
       "id": "akamai",
@@ -1095,7 +1525,7 @@
         "安全"
       ],
       "category": "cloud-cdn",
-      "order": 50
+      "order": 76
     },
     {
       "id": "bunnycdn",
@@ -1111,7 +1541,7 @@
         "付费"
       ],
       "category": "cloud-cdn",
-      "order": 51
+      "order": 77
     },
     {
       "id": "keycdn",
@@ -1127,7 +1557,7 @@
         "简单"
       ],
       "category": "cloud-cdn",
-      "order": 52
+      "order": 78
     },
     {
       "id": "stackpath",
@@ -1143,7 +1573,7 @@
         "安全"
       ],
       "category": "cloud-cdn",
-      "order": 53
+      "order": 79
     },
     {
       "id": "cloudflare-registrar",
@@ -1159,7 +1589,7 @@
         "注册"
       ],
       "category": "cloud-cdn",
-      "order": 54
+      "order": 80
     },
     {
       "id": "namecheap",
@@ -1175,7 +1605,7 @@
         "Namecheap"
       ],
       "category": "cloud-cdn",
-      "order": 55
+      "order": 81
     },
     {
       "id": "porkbun",
@@ -1191,7 +1621,7 @@
         "创意"
       ],
       "category": "cloud-cdn",
-      "order": 56
+      "order": 82
     },
     {
       "id": "godaddy",
@@ -1207,7 +1637,7 @@
         "DNS"
       ],
       "category": "cloud-cdn",
-      "order": 57
+      "order": 83
     },
     {
       "id": "hover",
@@ -1223,7 +1653,7 @@
         "无upsell"
       ],
       "category": "cloud-cdn",
-      "order": 58
+      "order": 84
     },
     {
       "id": "dnsimple",
@@ -1239,7 +1669,7 @@
         "管理"
       ],
       "category": "cloud-cdn",
-      "order": 59
+      "order": 85
     },
     {
       "id": "ns1",
@@ -1255,7 +1685,71 @@
         "监控"
       ],
       "category": "cloud-cdn",
-      "order": 60
+      "order": 86
+    },
+    {
+      "id": "腾讯云-cdn",
+      "title": "腾讯云 CDN",
+      "description": "腾讯云 CDN 覆盖全球 1500+ 加速节点，与腾讯云存储 COS、视频云、游戏加速等业务深度集成，亚太地区加速效果显著。",
+      "url": "https://cloud.tencent.com/product/cdn",
+      "icon": "https://cloud.tencent.com/favicon.ico",
+      "tags": [
+        "CDN",
+        "腾讯云",
+        "国内",
+        "加速",
+        "内容分发"
+      ],
+      "category": "cloud-cdn",
+      "order": 87
+    },
+    {
+      "id": "阿里云-cdn",
+      "title": "阿里云 CDN",
+      "description": "阿里云 CDN 依托阿里集团技术，提供全球 2500+ 节点覆盖，支持 HTTPS 加速、智能调度和图片处理服务。",
+      "url": "https://www.aliyun.com/product/cdn",
+      "icon": "https://www.aliyun.com/favicon.ico",
+      "tags": [
+        "CDN",
+        "阿里云",
+        "国内",
+        "加速",
+        "内容分发"
+      ],
+      "category": "cloud-cdn",
+      "order": 88
+    },
+    {
+      "id": "百度云加速",
+      "title": "百度云加速",
+      "description": "百度云加速提供网站加速和 SEO 优化服务，整合百度搜索算法优化，与百度站长工具深度集成。",
+      "url": "https://cloud.baidu.com/product/bad",
+      "icon": "https://cloud.baidu.com/favicon.ico",
+      "tags": [
+        "CDN",
+        "百度云",
+        "加速",
+        "SEO",
+        "国内"
+      ],
+      "category": "cloud-cdn",
+      "order": 89
+    },
+    {
+      "id": "华为云-cdn",
+      "title": "华为云 CDN",
+      "description": "华为云 CDN 全球节点覆盖，提供稳定高速的内容分发服务，深度整合华为云存储 OBS 和视频点播服务。",
+      "url": "https://www.huaweicloud.com/product/cdn",
+      "icon": "https://www.huaweicloud.com/favicon.ico",
+      "tags": [
+        "CDN",
+        "华为云",
+        "加速",
+        "内容分发",
+        "国内"
+      ],
+      "category": "cloud-cdn",
+      "order": 90
     },
     {
       "id": "planetscale",
@@ -1271,7 +1765,7 @@
         "Vitess"
       ],
       "category": "cloud-database",
-      "order": 61
+      "order": 91
     },
     {
       "id": "neon",
@@ -1287,7 +1781,7 @@
         "开源"
       ],
       "category": "cloud-database",
-      "order": 62
+      "order": 92
     },
     {
       "id": "turso",
@@ -1303,7 +1797,7 @@
         "分布式"
       ],
       "category": "cloud-database",
-      "order": 63
+      "order": 93
     },
     {
       "id": "mongodb-atlas",
@@ -1319,7 +1813,7 @@
         "全球"
       ],
       "category": "cloud-database",
-      "order": 64
+      "order": 94
     },
     {
       "id": "redis-cloud",
@@ -1335,7 +1829,7 @@
         "托管"
       ],
       "category": "cloud-database",
-      "order": 65
+      "order": 95
     },
     {
       "id": "upstash",
@@ -1351,7 +1845,7 @@
         "边缘计算"
       ],
       "category": "cloud-database",
-      "order": 66
+      "order": 96
     },
     {
       "id": "cockroachdb-cloud",
@@ -1367,7 +1861,7 @@
         "云服务"
       ],
       "category": "cloud-database",
-      "order": 67
+      "order": 97
     },
     {
       "id": "fauna",
@@ -1383,7 +1877,7 @@
         "灵活"
       ],
       "category": "cloud-database",
-      "order": 68
+      "order": 98
     },
     {
       "id": "mongodb-atlas-search",
@@ -1399,7 +1893,7 @@
         "全文搜索"
       ],
       "category": "cloud-database",
-      "order": 69
+      "order": 99
     },
     {
       "id": "typesense-cloud",
@@ -1415,7 +1909,7 @@
         "云服务"
       ],
       "category": "cloud-database",
-      "order": 70
+      "order": 100
     },
     {
       "id": "meilisearch",
@@ -1431,7 +1925,7 @@
         "云服务"
       ],
       "category": "cloud-database",
-      "order": 71
+      "order": 101
     },
     {
       "id": "algolia",
@@ -1447,7 +1941,75 @@
         "搜索即服务"
       ],
       "category": "cloud-database",
-      "order": 72
+      "order": 102
+    },
+    {
+      "id": "腾讯云数据库-cdb",
+      "title": "腾讯云数据库 CDB",
+      "description": "腾讯云数据库（CDB）提供 MySQL、PostgreSQL、MongoDB、Redis 等多种数据库引擎的完全托管服务，支持自动备份和读写分离。",
+      "url": "https://cloud.tencent.com/product/cdb",
+      "icon": "https://cloud.tencent.com/favicon.ico",
+      "tags": [
+        "数据库",
+        "腾讯云",
+        "MySQL",
+        "PostgreSQL",
+        "托管",
+        "国内"
+      ],
+      "category": "cloud-database",
+      "order": 103
+    },
+    {
+      "id": "阿里云云数据库-rds",
+      "title": "阿里云云数据库 RDS",
+      "description": "阿里云关系型数据库服务（RDS）提供 MySQL、SQL Server、PostgreSQL、PPAS 等引擎，支持自动备份和弹性伸缩。",
+      "url": "https://www.aliyun.com/product/rds",
+      "icon": "https://www.aliyun.com/favicon.ico",
+      "tags": [
+        "数据库",
+        "阿里云",
+        "MySQL",
+        "PostgreSQL",
+        "托管",
+        "国内"
+      ],
+      "category": "cloud-database",
+      "order": 104
+    },
+    {
+      "id": "华为云-gaussdb",
+      "title": "华为云 GaussDB",
+      "description": "华为云 GaussDB 是企业级分布式数据库，兼容 MySQL 和 PostgreSQL 协议，提供高性能、强一致和弹性伸缩能力。",
+      "url": "https://www.huaweicloud.com/product/gaussdb",
+      "icon": "https://www.huaweicloud.com/favicon.ico",
+      "tags": [
+        "数据库",
+        "华为云",
+        "分布式",
+        "托管",
+        "企业级",
+        "国内"
+      ],
+      "category": "cloud-database",
+      "order": 105
+    },
+    {
+      "id": "金山云关系型数据库-krds",
+      "title": "金山云关系型数据库 KRDS",
+      "description": "金山云关系型数据库（KRDS）提供 MySQL、PostgreSQL 等托管数据库服务，针对游戏和移动应用优化。",
+      "url": "https://www.ksyun.com/product/krds",
+      "icon": "https://www.ksyun.com/favicon.ico",
+      "tags": [
+        "数据库",
+        "金山云",
+        "MySQL",
+        "托管",
+        "游戏",
+        "国内"
+      ],
+      "category": "cloud-database",
+      "order": 106
     },
     {
       "id": "docker-hub",
@@ -1463,7 +2025,7 @@
         "镜像"
       ],
       "category": "cloud-container",
-      "order": 73
+      "order": 107
     },
     {
       "id": "github-container-registry",
@@ -1479,7 +2041,7 @@
         "镜像"
       ],
       "category": "cloud-container",
-      "order": 74
+      "order": 108
     },
     {
       "id": "google-artifact-registry",
@@ -1495,7 +2057,7 @@
         "制品管理"
       ],
       "category": "cloud-container",
-      "order": 75
+      "order": 109
     },
     {
       "id": "amazon-ecr",
@@ -1511,7 +2073,7 @@
         "EKS"
       ],
       "category": "cloud-container",
-      "order": 76
+      "order": 110
     },
     {
       "id": "digitalocean-container-registry",
@@ -1527,7 +2089,7 @@
         "简单"
       ],
       "category": "cloud-container",
-      "order": 77
+      "order": 111
     },
     {
       "id": "circleci",
@@ -1543,7 +2105,7 @@
         "持续部署"
       ],
       "category": "cloud-container",
-      "order": 78
+      "order": 112
     },
     {
       "id": "github-actions",
@@ -1559,7 +2121,7 @@
         "持续集成"
       ],
       "category": "cloud-container",
-      "order": 79
+      "order": 113
     },
     {
       "id": "gitlab-cicd",
@@ -1575,7 +2137,7 @@
         "持续集成"
       ],
       "category": "cloud-container",
-      "order": 80
+      "order": 114
     },
     {
       "id": "argo-cd",
@@ -1591,7 +2153,7 @@
         "容器"
       ],
       "category": "cloud-container",
-      "order": 81
+      "order": 115
     },
     {
       "id": "flux",
@@ -1607,7 +2169,7 @@
         "CNCF"
       ],
       "category": "cloud-container",
-      "order": 82
+      "order": 116
     },
     {
       "id": "rancher",
@@ -1623,7 +2185,75 @@
         "Rancher"
       ],
       "category": "cloud-container",
-      "order": 83
+      "order": 117
+    },
+    {
+      "id": "腾讯云容器服务-tke",
+      "title": "腾讯云容器服务 TKE",
+      "description": "腾讯云容器服务（TKE）是完全托管的 Kubernetes 服务，支持一键部署、弹性伸缩和灰度发布，与腾讯云生态深度集成。",
+      "url": "https://cloud.tencent.com/product/tke",
+      "icon": "https://cloud.tencent.com/favicon.ico",
+      "tags": [
+        "容器",
+        "Kubernetes",
+        "腾讯云",
+        "托管K8s",
+        "容器服务",
+        "国内"
+      ],
+      "category": "cloud-container",
+      "order": 118
+    },
+    {
+      "id": "阿里云容器服务-ack",
+      "title": "阿里云容器服务 ACK",
+      "description": "阿里云容器服务（ACK）是阿里云的完全托管 Kubernetes 服务，支持 Docker 容器管理、Auto Scaling 和日志监控。",
+      "url": "https://www.aliyun.com/product/ack",
+      "icon": "https://www.aliyun.com/favicon.ico",
+      "tags": [
+        "容器",
+        "Kubernetes",
+        "阿里云",
+        "托管K8s",
+        "容器服务",
+        "国内"
+      ],
+      "category": "cloud-container",
+      "order": 119
+    },
+    {
+      "id": "华为云云容器服务-cce",
+      "title": "华为云云容器服务 CCE",
+      "description": "华为云云容器实例（CCI）是 Serverless 容器服务，无需管理节点即可运行容器负载，秒级扩缩。",
+      "url": "https://www.huaweicloud.com/product/cce",
+      "icon": "https://www.huaweicloud.com/favicon.ico",
+      "tags": [
+        "容器",
+        "Kubernetes",
+        "华为云",
+        "Serverless容器",
+        "容器服务",
+        "国内"
+      ],
+      "category": "cloud-container",
+      "order": 120
+    },
+    {
+      "id": "字节跳动云容器服务-velinux",
+      "title": "字节跳动云容器服务 veLinux",
+      "description": "火山引擎 veLinux 是字节跳动开源的容器化 Linux 发行版，针对容器和 Kubernetes 优化，提供卓越的启动速度和资源利用率。",
+      "url": "https://www.volcengine.com/product/velinux",
+      "icon": "https://www.volcengine.com/favicon.ico",
+      "tags": [
+        "容器",
+        "Linux",
+        "字节跳动",
+        "优化",
+        "开源",
+        "国内"
+      ],
+      "category": "cloud-container",
+      "order": 121
     },
     {
       "id": "发现ai",
@@ -1636,7 +2266,7 @@
         "导航"
       ],
       "category": "ai-nav",
-      "order": 84
+      "order": 122
     },
     {
       "id": "toolify-ai",
@@ -1649,7 +2279,7 @@
         "导航"
       ],
       "category": "ai-nav",
-      "order": 85
+      "order": 123
     },
     {
       "id": "ai工具集",
@@ -1662,7 +2292,7 @@
         "导航"
       ],
       "category": "ai-nav",
-      "order": 86
+      "order": 124
     },
     {
       "id": "aigc工具导航",
@@ -1675,7 +2305,7 @@
         "导航"
       ],
       "category": "ai-nav",
-      "order": 87
+      "order": 125
     },
     {
       "id": "智能工具导航",
@@ -1688,7 +2318,7 @@
         "导航"
       ],
       "category": "ai-nav",
-      "order": 88
+      "order": 126
     },
     {
       "id": "aitop100大赛平台",
@@ -1701,7 +2331,7 @@
         "导航"
       ],
       "category": "ai-nav",
-      "order": 89
+      "order": 127
     },
     {
       "id": "非猪ai导航",
@@ -1714,7 +2344,7 @@
         "导航"
       ],
       "category": "ai-nav",
-      "order": 90
+      "order": 128
     },
     {
       "id": "hugging-face",
@@ -1729,7 +2359,7 @@
         "数据集"
       ],
       "category": "ai-nav",
-      "order": 91
+      "order": 129
     },
     {
       "id": "aihub",
@@ -1742,7 +2372,7 @@
         "导航"
       ],
       "category": "ai-nav",
-      "order": 92
+      "order": 130
     },
     {
       "id": "youmind-ai-创作智能体",
@@ -1755,7 +2385,7 @@
         "资源"
       ],
       "category": "ai-writing",
-      "order": 93
+      "order": 131
     },
     {
       "id": "笔灵ai",
@@ -1768,7 +2398,7 @@
         "写作"
       ],
       "category": "ai-writing",
-      "order": 94
+      "order": 132
     },
     {
       "id": "蛙蛙写作",
@@ -1781,7 +2411,7 @@
         "写作"
       ],
       "category": "ai-writing",
-      "order": 95
+      "order": 133
     },
     {
       "id": "langchain",
@@ -1797,7 +2427,7 @@
         "LLM"
       ],
       "category": "ai-framework",
-      "order": 96
+      "order": 134
     },
     {
       "id": "langgraph",
@@ -1812,7 +2442,7 @@
         "Agent"
       ],
       "category": "ai-framework",
-      "order": 97
+      "order": 135
     },
     {
       "id": "llamaindex",
@@ -1827,7 +2457,7 @@
         "数据"
       ],
       "category": "ai-framework",
-      "order": 98
+      "order": 136
     },
     {
       "id": "transformers",
@@ -1842,7 +2472,7 @@
         "深度学习"
       ],
       "category": "ai-framework",
-      "order": 99
+      "order": 137
     },
     {
       "id": "superpowers",
@@ -1858,7 +2488,7 @@
         "开源"
       ],
       "category": "ai-skill",
-      "order": 100
+      "order": 138
     },
     {
       "id": "ollama",
@@ -1872,7 +2502,7 @@
         "LLM"
       ],
       "category": "ai-local",
-      "order": 101
+      "order": 139
     },
     {
       "id": "open-webui",
@@ -1887,7 +2517,7 @@
         "自托管"
       ],
       "category": "ai-local",
-      "order": 102
+      "order": 140
     },
     {
       "id": "localgpt",
@@ -1902,7 +2532,7 @@
         "本地"
       ],
       "category": "ai-local",
-      "order": 103
+      "order": 141
     },
     {
       "id": "privategpt",
@@ -1917,7 +2547,7 @@
         "私有化"
       ],
       "category": "ai-local",
-      "order": 104
+      "order": 142
     },
     {
       "id": "llama-cpp",
@@ -1933,7 +2563,7 @@
         "量化"
       ],
       "category": "ai-local",
-      "order": 105
+      "order": 143
     },
     {
       "id": "dify",
@@ -1948,7 +2578,7 @@
         "可视化"
       ],
       "category": "ai-visual",
-      "order": 106
+      "order": 144
     },
     {
       "id": "n8n",
@@ -1964,7 +2594,7 @@
         "无代码"
       ],
       "category": "ai-visual",
-      "order": 107
+      "order": 145
     },
     {
       "id": "holopix",
@@ -1980,7 +2610,7 @@
         "内容生成"
       ],
       "category": "ai-content",
-      "order": 108
+      "order": 146
     },
     {
       "id": "taptap-ai-maker",
@@ -1995,7 +2625,7 @@
         "游戏开发引擎"
       ],
       "category": "ai-content",
-      "order": 109
+      "order": 147
     },
     {
       "id": "midjourney",
@@ -2010,7 +2640,7 @@
         "内容生成"
       ],
       "category": "ai-content",
-      "order": 110
+      "order": 148
     },
     {
       "id": "stable-diffusion",
@@ -2025,7 +2655,7 @@
         "模型"
       ],
       "category": "ai-content",
-      "order": 111
+      "order": 149
     },
     {
       "id": "runway",
@@ -2039,7 +2669,7 @@
         "内容生成"
       ],
       "category": "ai-content",
-      "order": 112
+      "order": 150
     },
     {
       "id": "suno",
@@ -2053,7 +2683,7 @@
         "内容生成"
       ],
       "category": "ai-content",
-      "order": 113
+      "order": 151
     },
     {
       "id": "comfyui",
@@ -2068,7 +2698,7 @@
         "Stable Diffusion"
       ],
       "category": "ai-content",
-      "order": 114
+      "order": 152
     },
     {
       "id": "comfyui工作流合集-comfyworkflows",
@@ -2083,7 +2713,7 @@
         "社区"
       ],
       "category": "ai-content",
-      "order": 115
+      "order": 153
     },
     {
       "id": "openart-comfyui-workflows",
@@ -2098,7 +2728,7 @@
         "在线运行"
       ],
       "category": "ai-content",
-      "order": 116
+      "order": 154
     },
     {
       "id": "civitai",
@@ -2114,7 +2744,7 @@
         "Stable Diffusion"
       ],
       "category": "ai-content",
-      "order": 117
+      "order": 155
     },
     {
       "id": "hermes-agent",
@@ -2129,7 +2759,7 @@
         "自动化"
       ],
       "category": "ai-agent",
-      "order": 118
+      "order": 156
     },
     {
       "id": "opencode",
@@ -2144,7 +2774,7 @@
         "编码助手"
       ],
       "category": "ai-agent",
-      "order": 119
+      "order": 157
     },
     {
       "id": "panews数据导航",
@@ -2156,7 +2786,7 @@
         "Web3.0"
       ],
       "category": "web3-info",
-      "order": 120
+      "order": 158
     },
     {
       "id": "web3导航",
@@ -2169,7 +2799,7 @@
         "导航"
       ],
       "category": "web3-info",
-      "order": 121
+      "order": 159
     },
     {
       "id": "openbuild",
@@ -2181,7 +2811,7 @@
         "Web3.0"
       ],
       "category": "web3-info",
-      "order": 122
+      "order": 160
     },
     {
       "id": "深潮techflow",
@@ -2193,7 +2823,7 @@
         "Web3.0"
       ],
       "category": "web3-info",
-      "order": 123
+      "order": 161
     },
     {
       "id": "dejob",
@@ -2205,7 +2835,7 @@
         "Web3.0"
       ],
       "category": "web3-info",
-      "order": 124
+      "order": 162
     },
     {
       "id": "web3-career",
@@ -2217,7 +2847,7 @@
         "Web3.0"
       ],
       "category": "web3-info",
-      "order": 125
+      "order": 163
     },
     {
       "id": "block-beats",
@@ -2229,7 +2859,7 @@
         "Web3.0"
       ],
       "category": "web3-info",
-      "order": 126
+      "order": 164
     },
     {
       "id": "crypto-bubbles",
@@ -2241,7 +2871,7 @@
         "Web3.0"
       ],
       "category": "web3-info",
-      "order": 127
+      "order": 165
     },
     {
       "id": "登链社区-web3-开发者社区",
@@ -2253,7 +2883,7 @@
         "Web3.0"
       ],
       "category": "web3-info",
-      "order": 128
+      "order": 166
     },
     {
       "id": "区块链网址导航",
@@ -2265,7 +2895,7 @@
         "Web3.0"
       ],
       "category": "web3-info",
-      "order": 129
+      "order": 167
     },
     {
       "id": "foresight-news",
@@ -2277,7 +2907,7 @@
         "Web3.0"
       ],
       "category": "web3-info",
-      "order": 130
+      "order": 168
     },
     {
       "id": "链捕手chaincatcher",
@@ -2289,7 +2919,7 @@
         "Web3.0"
       ],
       "category": "web3-info",
-      "order": 131
+      "order": 169
     },
     {
       "id": "星球日报",
@@ -2301,7 +2931,7 @@
         "Web3.0"
       ],
       "category": "web3-info",
-      "order": 132
+      "order": 170
     },
     {
       "id": "decrypt",
@@ -2313,7 +2943,7 @@
         "Web3.0"
       ],
       "category": "web3-info",
-      "order": 133
+      "order": 171
     },
     {
       "id": "coindesk",
@@ -2325,7 +2955,7 @@
         "Web3.0"
       ],
       "category": "web3-info",
-      "order": 134
+      "order": 172
     },
     {
       "id": "bankless",
@@ -2337,7 +2967,7 @@
         "Web3.0"
       ],
       "category": "web3-info",
-      "order": 135
+      "order": 173
     },
     {
       "id": "pcweb3",
@@ -2349,7 +2979,7 @@
         "Web3.0"
       ],
       "category": "web3-info",
-      "order": 136
+      "order": 174
     },
     {
       "id": "remote3",
@@ -2361,7 +2991,7 @@
         "Web3.0"
       ],
       "category": "web3-info",
-      "order": 137
+      "order": 175
     },
     {
       "id": "conflux-network",
@@ -2373,7 +3003,7 @@
         "Web3.0"
       ],
       "category": "web3-info",
-      "order": 138
+      "order": 176
     },
     {
       "id": "polyomarket",
@@ -2386,7 +3016,7 @@
         "预测市场"
       ],
       "category": "web3-info",
-      "order": 139
+      "order": 177
     },
     {
       "id": "rainbowkit",
@@ -2400,7 +3030,7 @@
         "React"
       ],
       "category": "web3-lib",
-      "order": 140
+      "order": 178
     },
     {
       "id": "connectkit",
@@ -2414,7 +3044,7 @@
         "React"
       ],
       "category": "web3-lib",
-      "order": 141
+      "order": 179
     },
     {
       "id": "web3modal",
@@ -2427,7 +3057,7 @@
         "UI库"
       ],
       "category": "web3-lib",
-      "order": 142
+      "order": 180
     },
     {
       "id": "thirdweb",
@@ -2441,7 +3071,7 @@
         "开发工具"
       ],
       "category": "web3-lib",
-      "order": 143
+      "order": 181
     },
     {
       "id": "alchemy-ui",
@@ -2455,7 +3085,7 @@
         "API"
       ],
       "category": "web3-lib",
-      "order": 144
+      "order": 182
     },
     {
       "id": "moralis",
@@ -2469,7 +3099,7 @@
         "后端"
       ],
       "category": "web3-lib",
-      "order": 145
+      "order": 183
     },
     {
       "id": "wagmi",
@@ -2483,7 +3113,7 @@
         "Hooks"
       ],
       "category": "web3-lib",
-      "order": 146
+      "order": 184
     },
     {
       "id": "viem",
@@ -2497,7 +3127,7 @@
         "库"
       ],
       "category": "web3-lib",
-      "order": 147
+      "order": 185
     },
     {
       "id": "ethers-js",
@@ -2511,7 +3141,7 @@
         "库"
       ],
       "category": "web3-lib",
-      "order": 148
+      "order": 186
     },
     {
       "id": "web3-js",
@@ -2525,7 +3155,7 @@
         "库"
       ],
       "category": "web3-lib",
-      "order": 149
+      "order": 187
     },
     {
       "id": "usedapp",
@@ -2539,7 +3169,7 @@
         "框架"
       ],
       "category": "web3-lib",
-      "order": 150
+      "order": 188
     },
     {
       "id": "particle-network",
@@ -2553,7 +3183,7 @@
         "基础设施"
       ],
       "category": "web3-lib",
-      "order": 151
+      "order": 189
     },
     {
       "id": "ant-design-web3",
@@ -2568,7 +3198,7 @@
         "Ant Design"
       ],
       "category": "web3-lib",
-      "order": 152
+      "order": 190
     },
     {
       "id": "hardhat",
@@ -2582,7 +3212,7 @@
         "开发工具"
       ],
       "category": "web3-framework",
-      "order": 153
+      "order": 191
     },
     {
       "id": "foundry",
@@ -2597,7 +3227,7 @@
         "测试"
       ],
       "category": "web3-framework",
-      "order": 154
+      "order": 192
     },
     {
       "id": "truffle",
@@ -2611,7 +3241,7 @@
         "开发框架"
       ],
       "category": "web3-framework",
-      "order": 155
+      "order": 193
     },
     {
       "id": "brownie",
@@ -2625,7 +3255,7 @@
         "Python"
       ],
       "category": "web3-framework",
-      "order": 156
+      "order": 194
     },
     {
       "id": "apeworx",
@@ -2639,7 +3269,7 @@
         "Python"
       ],
       "category": "web3-framework",
-      "order": 157
+      "order": 195
     },
     {
       "id": "anchor",
@@ -2653,7 +3283,7 @@
         "Rust"
       ],
       "category": "web3-framework",
-      "order": 158
+      "order": 196
     },
     {
       "id": "cairo",
@@ -2667,7 +3297,7 @@
         "语言"
       ],
       "category": "web3-framework",
-      "order": 159
+      "order": 197
     },
     {
       "id": "solidity",
@@ -2681,7 +3311,7 @@
         "以太坊"
       ],
       "category": "web3-lang",
-      "order": 160
+      "order": 198
     },
     {
       "id": "vyper",
@@ -2696,7 +3326,7 @@
         "Python"
       ],
       "category": "web3-lang",
-      "order": 161
+      "order": 199
     },
     {
       "id": "rust-solana",
@@ -2711,7 +3341,7 @@
         "Rust"
       ],
       "category": "web3-lang",
-      "order": 162
+      "order": 200
     },
     {
       "id": "move",
@@ -2726,7 +3356,7 @@
         "Sui"
       ],
       "category": "web3-lang",
-      "order": 163
+      "order": 201
     },
     {
       "id": "cairo-lang",
@@ -2740,7 +3370,7 @@
         "StarkNet"
       ],
       "category": "web3-lang",
-      "order": 164
+      "order": 202
     },
     {
       "id": "fe",
@@ -2755,7 +3385,7 @@
         "Rust"
       ],
       "category": "web3-lang",
-      "order": 165
+      "order": 203
     },
     {
       "id": "yul",
@@ -2770,7 +3400,7 @@
         "底层"
       ],
       "category": "web3-lang",
-      "order": 166
+      "order": 204
     },
     {
       "id": "huff",
@@ -2785,7 +3415,7 @@
         "汇编"
       ],
       "category": "web3-lang",
-      "order": 167
+      "order": 205
     },
     {
       "id": "react",
@@ -2799,7 +3429,7 @@
         "JavaScript"
       ],
       "category": "frontend-react",
-      "order": 168
+      "order": 206
     },
     {
       "id": "next-js",
@@ -2813,7 +3443,7 @@
         "全栈"
       ],
       "category": "frontend-react",
-      "order": 169
+      "order": 207
     },
     {
       "id": "remix",
@@ -2827,7 +3457,7 @@
         "全栈"
       ],
       "category": "frontend-react",
-      "order": 170
+      "order": 208
     },
     {
       "id": "gatsby",
@@ -2841,7 +3471,7 @@
         "静态站点"
       ],
       "category": "frontend-react",
-      "order": 171
+      "order": 209
     },
     {
       "id": "react-router",
@@ -2855,7 +3485,7 @@
         "路由"
       ],
       "category": "frontend-react",
-      "order": 172
+      "order": 210
     },
     {
       "id": "tanstack-query",
@@ -2869,7 +3499,7 @@
         "状态管理"
       ],
       "category": "frontend-react",
-      "order": 173
+      "order": 211
     },
     {
       "id": "zustand",
@@ -2883,7 +3513,7 @@
         "状态管理"
       ],
       "category": "frontend-react",
-      "order": 174
+      "order": 212
     },
     {
       "id": "jotai",
@@ -2897,7 +3527,7 @@
         "状态管理"
       ],
       "category": "frontend-react",
-      "order": 175
+      "order": 213
     },
     {
       "id": "recoil",
@@ -2911,7 +3541,7 @@
         "状态管理"
       ],
       "category": "frontend-react",
-      "order": 176
+      "order": 214
     },
     {
       "id": "vue-js",
@@ -2925,7 +3555,7 @@
         "JavaScript"
       ],
       "category": "frontend-vue",
-      "order": 177
+      "order": 215
     },
     {
       "id": "nuxt",
@@ -2939,7 +3569,7 @@
         "全栈"
       ],
       "category": "frontend-vue",
-      "order": 178
+      "order": 216
     },
     {
       "id": "pinia",
@@ -2953,7 +3583,7 @@
         "状态管理"
       ],
       "category": "frontend-vue",
-      "order": 179
+      "order": 217
     },
     {
       "id": "vueuse",
@@ -2967,7 +3597,7 @@
         "工具库"
       ],
       "category": "frontend-vue",
-      "order": 180
+      "order": 218
     },
     {
       "id": "vitepress",
@@ -2981,7 +3611,7 @@
         "静态站点"
       ],
       "category": "frontend-vue",
-      "order": 181
+      "order": 219
     },
     {
       "id": "svelte",
@@ -2995,7 +3625,7 @@
         "JavaScript"
       ],
       "category": "frontend-other",
-      "order": 182
+      "order": 220
     },
     {
       "id": "sveltekit",
@@ -3009,7 +3639,7 @@
         "全栈"
       ],
       "category": "frontend-other",
-      "order": 183
+      "order": 221
     },
     {
       "id": "angular",
@@ -3023,7 +3653,7 @@
         "企业级"
       ],
       "category": "frontend-other",
-      "order": 184
+      "order": 222
     },
     {
       "id": "solidjs",
@@ -3037,7 +3667,7 @@
         "JavaScript"
       ],
       "category": "frontend-other",
-      "order": 185
+      "order": 223
     },
     {
       "id": "preact",
@@ -3051,7 +3681,7 @@
         "轻量级"
       ],
       "category": "frontend-other",
-      "order": 186
+      "order": 224
     },
     {
       "id": "alpine-js",
@@ -3065,7 +3695,7 @@
         "JavaScript"
       ],
       "category": "frontend-other",
-      "order": 187
+      "order": 225
     },
     {
       "id": "lit",
@@ -3078,7 +3708,7 @@
         "Web Components"
       ],
       "category": "frontend-other",
-      "order": 188
+      "order": 226
     },
     {
       "id": "astro",
@@ -3092,7 +3722,7 @@
         "多框架"
       ],
       "category": "frontend-other",
-      "order": 189
+      "order": 227
     },
     {
       "id": "qwik",
@@ -3106,7 +3736,7 @@
         "即时加载"
       ],
       "category": "frontend-other",
-      "order": 190
+      "order": 228
     },
     {
       "id": "fresh",
@@ -3120,7 +3750,7 @@
         "Preact"
       ],
       "category": "frontend-other",
-      "order": 191
+      "order": 229
     },
     {
       "id": "uiverse-ui",
@@ -3132,7 +3762,7 @@
         "UI组件库"
       ],
       "category": "frontend-ui-lib",
-      "order": 192
+      "order": 230
     },
     {
       "id": "inspira-ui",
@@ -3144,7 +3774,7 @@
         "UI组件库"
       ],
       "category": "frontend-ui-lib",
-      "order": 193
+      "order": 231
     },
     {
       "id": "pixel-ui",
@@ -3156,7 +3786,7 @@
         "UI组件库"
       ],
       "category": "frontend-ui-lib",
-      "order": 194
+      "order": 232
     },
     {
       "id": "headless-ui",
@@ -3168,7 +3798,7 @@
         "UI组件库"
       ],
       "category": "frontend-ui-lib",
-      "order": 195
+      "order": 233
     },
     {
       "id": "reactbits",
@@ -3180,7 +3810,7 @@
         "UI组件库"
       ],
       "category": "frontend-ui-lib",
-      "order": 196
+      "order": 234
     },
     {
       "id": "21st-dev",
@@ -3192,7 +3822,7 @@
         "UI组件库"
       ],
       "category": "frontend-ui-lib",
-      "order": 197
+      "order": 235
     },
     {
       "id": "magic-ui",
@@ -3204,7 +3834,7 @@
         "UI组件库"
       ],
       "category": "frontend-ui-lib",
-      "order": 198
+      "order": 236
     },
     {
       "id": "8bitui",
@@ -3216,7 +3846,7 @@
         "UI组件库"
       ],
       "category": "frontend-ui-lib",
-      "order": 199
+      "order": 237
     },
     {
       "id": "pxlkit",
@@ -3229,7 +3859,7 @@
         "像素"
       ],
       "category": "frontend-ui-lib",
-      "order": 200
+      "order": 238
     },
     {
       "id": "bootstrap",
@@ -3243,7 +3873,7 @@
         "响应式"
       ],
       "category": "frontend-ui-lib",
-      "order": 201
+      "order": 239
     },
     {
       "id": "chakra-ui",
@@ -3257,7 +3887,7 @@
         "组件库"
       ],
       "category": "frontend-ui-lib",
-      "order": 202
+      "order": 240
     },
     {
       "id": "mantine",
@@ -3271,7 +3901,7 @@
         "组件库"
       ],
       "category": "frontend-ui-lib",
-      "order": 203
+      "order": 241
     },
     {
       "id": "ant-design",
@@ -3285,7 +3915,7 @@
         "企业级"
       ],
       "category": "frontend-ui-lib",
-      "order": 204
+      "order": 242
     },
     {
       "id": "element-plus",
@@ -3299,7 +3929,7 @@
         "组件库"
       ],
       "category": "frontend-ui-lib",
-      "order": 205
+      "order": 243
     },
     {
       "id": "shadcnui",
@@ -3313,7 +3943,7 @@
         "Tailwind"
       ],
       "category": "frontend-ui-lib",
-      "order": 206
+      "order": 244
     },
     {
       "id": "tailwind-css",
@@ -3326,7 +3956,7 @@
         "实用优先"
       ],
       "category": "frontend-css",
-      "order": 207
+      "order": 245
     },
     {
       "id": "bulma",
@@ -3339,7 +3969,7 @@
         "Flexbox"
       ],
       "category": "frontend-css",
-      "order": 208
+      "order": 246
     },
     {
       "id": "vite",
@@ -3352,7 +3982,7 @@
         "开发服务器"
       ],
       "category": "frontend-build",
-      "order": 209
+      "order": 247
     },
     {
       "id": "webpack",
@@ -3365,7 +3995,7 @@
         "打包"
       ],
       "category": "frontend-build",
-      "order": 210
+      "order": 248
     },
     {
       "id": "rollup",
@@ -3378,7 +4008,7 @@
         "打包"
       ],
       "category": "frontend-build",
-      "order": 211
+      "order": 249
     },
     {
       "id": "esbuild",
@@ -3391,7 +4021,7 @@
         "打包"
       ],
       "category": "frontend-build",
-      "order": 212
+      "order": 250
     },
     {
       "id": "turbopack",
@@ -3404,7 +4034,7 @@
         "打包"
       ],
       "category": "frontend-build",
-      "order": 213
+      "order": 251
     },
     {
       "id": "parcel",
@@ -3417,7 +4047,7 @@
         "打包"
       ],
       "category": "frontend-build",
-      "order": 214
+      "order": 252
     },
     {
       "id": "rspack",
@@ -3431,7 +4061,7 @@
         "Rust"
       ],
       "category": "frontend-build",
-      "order": 215
+      "order": 253
     },
     {
       "id": "three-js",
@@ -3446,7 +4076,7 @@
         "渲染"
       ],
       "category": "frontend-webgl",
-      "order": 216
+      "order": 254
     },
     {
       "id": "babylon-js",
@@ -3461,7 +4091,7 @@
         "游戏引擎"
       ],
       "category": "frontend-webgl",
-      "order": 217
+      "order": 255
     },
     {
       "id": "langchain-js",
@@ -3477,7 +4107,7 @@
         "LLM"
       ],
       "category": "frontend-ai",
-      "order": 218
+      "order": 256
     },
     {
       "id": "transformers-js",
@@ -3492,7 +4122,7 @@
         "Hugging Face"
       ],
       "category": "frontend-ai",
-      "order": 219
+      "order": 257
     },
     {
       "id": "vercel-ai-sdk",
@@ -3507,7 +4137,7 @@
         "Vercel"
       ],
       "category": "frontend-ai",
-      "order": 220
+      "order": 258
     },
     {
       "id": "openai-node-js-sdk",
@@ -3522,7 +4152,7 @@
         "Node.js"
       ],
       "category": "frontend-ai",
-      "order": 221
+      "order": 259
     },
     {
       "id": "anthropic-sdk-for-js",
@@ -3537,7 +4167,7 @@
         "TypeScript"
       ],
       "category": "frontend-ai",
-      "order": 222
+      "order": 260
     },
     {
       "id": "langgraph-js",
@@ -3552,7 +4182,7 @@
         "Agent"
       ],
       "category": "frontend-ai",
-      "order": 223
+      "order": 261
     },
     {
       "id": "ml5-js",
@@ -3568,7 +4198,7 @@
         "创意编码"
       ],
       "category": "frontend-ai",
-      "order": 224
+      "order": 262
     },
     {
       "id": "leaflet",
@@ -3583,7 +4213,7 @@
         "轻量级"
       ],
       "category": "frontend-webgis",
-      "order": 225
+      "order": 263
     },
     {
       "id": "mapbox-gl-js",
@@ -3598,7 +4228,7 @@
         "3D"
       ],
       "category": "frontend-webgis",
-      "order": 226
+      "order": 264
     },
     {
       "id": "openlayers",
@@ -3613,7 +4243,7 @@
         "企业级"
       ],
       "category": "frontend-webgis",
-      "order": 227
+      "order": 265
     },
     {
       "id": "cesium",
@@ -3628,7 +4258,7 @@
         "可视化"
       ],
       "category": "frontend-webgis",
-      "order": 228
+      "order": 266
     },
     {
       "id": "maplibre-gl-js",
@@ -3643,7 +4273,7 @@
         "矢量"
       ],
       "category": "frontend-webgis",
-      "order": 229
+      "order": 267
     },
     {
       "id": "deck-gl",
@@ -3658,7 +4288,7 @@
         "大数据"
       ],
       "category": "frontend-webgis",
-      "order": 230
+      "order": 268
     },
     {
       "id": "turf-js",
@@ -3672,7 +4302,7 @@
         "地理计算"
       ],
       "category": "frontend-webgis",
-      "order": 231
+      "order": 269
     },
     {
       "id": "arcgis-api-for-javascript",
@@ -3687,7 +4317,7 @@
         "ESRI"
       ],
       "category": "frontend-webgis",
-      "order": 232
+      "order": 270
     },
     {
       "id": "高德地图-js-api",
@@ -3702,7 +4332,7 @@
         "高德"
       ],
       "category": "frontend-webgis",
-      "order": 233
+      "order": 271
     },
     {
       "id": "百度地图-js-api",
@@ -3717,7 +4347,7 @@
         "百度"
       ],
       "category": "frontend-webgis",
-      "order": 234
+      "order": 272
     },
     {
       "id": "express-js",
@@ -3731,7 +4361,7 @@
         "Web"
       ],
       "category": "nodejs-web",
-      "order": 235
+      "order": 273
     },
     {
       "id": "koa",
@@ -3745,7 +4375,7 @@
         "Web"
       ],
       "category": "nodejs-web",
-      "order": 236
+      "order": 274
     },
     {
       "id": "fastify",
@@ -3759,7 +4389,7 @@
         "高性能"
       ],
       "category": "nodejs-web",
-      "order": 237
+      "order": 275
     },
     {
       "id": "nestjs",
@@ -3774,7 +4404,7 @@
         "企业级"
       ],
       "category": "nodejs-web",
-      "order": 238
+      "order": 276
     },
     {
       "id": "hono",
@@ -3789,7 +4419,7 @@
         "TypeScript"
       ],
       "category": "nodejs-web",
-      "order": 239
+      "order": 277
     },
     {
       "id": "adonisjs",
@@ -3804,7 +4434,7 @@
         "全栈"
       ],
       "category": "nodejs-web",
-      "order": 240
+      "order": 278
     },
     {
       "id": "trpc",
@@ -3819,7 +4449,7 @@
         "全栈"
       ],
       "category": "nodejs-web",
-      "order": 241
+      "order": 279
     },
     {
       "id": "piscina",
@@ -3834,7 +4464,7 @@
         "性能优化"
       ],
       "category": "nodejs-threads",
-      "order": 242
+      "order": 280
     },
     {
       "id": "workerpool",
@@ -3849,7 +4479,7 @@
         "Worker"
       ],
       "category": "nodejs-threads",
-      "order": 243
+      "order": 281
     },
     {
       "id": "threads-js",
@@ -3864,7 +4494,7 @@
         "并发"
       ],
       "category": "nodejs-threads",
-      "order": 244
+      "order": 282
     },
     {
       "id": "tinypool",
@@ -3879,7 +4509,7 @@
         "轻量级"
       ],
       "category": "nodejs-threads",
-      "order": 245
+      "order": 283
     },
     {
       "id": "wa-sqlite",
@@ -3894,7 +4524,7 @@
         "数据库"
       ],
       "category": "nodejs-threads",
-      "order": 246
+      "order": 284
     },
     {
       "id": "prisma",
@@ -3909,7 +4539,7 @@
         "数据库"
       ],
       "category": "nodejs-database",
-      "order": 247
+      "order": 285
     },
     {
       "id": "typeorm",
@@ -3924,7 +4554,7 @@
         "数据库"
       ],
       "category": "nodejs-database",
-      "order": 248
+      "order": 286
     },
     {
       "id": "drizzle-orm",
@@ -3939,7 +4569,7 @@
         "数据库"
       ],
       "category": "nodejs-database",
-      "order": 249
+      "order": 287
     },
     {
       "id": "mikroorm",
@@ -3954,7 +4584,7 @@
         "MongoDB"
       ],
       "category": "nodejs-database",
-      "order": 250
+      "order": 288
     },
     {
       "id": "mongoose",
@@ -3969,7 +4599,7 @@
         "数据库"
       ],
       "category": "nodejs-database",
-      "order": 251
+      "order": 289
     },
     {
       "id": "sequelize",
@@ -3984,7 +4614,7 @@
         "SQL"
       ],
       "category": "nodejs-database",
-      "order": 252
+      "order": 290
     },
     {
       "id": "knex-js",
@@ -3999,7 +4629,7 @@
         "数据库"
       ],
       "category": "nodejs-database",
-      "order": 253
+      "order": 291
     },
     {
       "id": "better-sqlite3",
@@ -4014,7 +4644,7 @@
         "高性能"
       ],
       "category": "nodejs-database",
-      "order": 254
+      "order": 292
     },
     {
       "id": "node-postgres",
@@ -4029,7 +4659,7 @@
         "客户端"
       ],
       "category": "nodejs-database",
-      "order": 255
+      "order": 293
     },
     {
       "id": "mysql2",
@@ -4044,7 +4674,7 @@
         "客户端"
       ],
       "category": "nodejs-database",
-      "order": 256
+      "order": 294
     },
     {
       "id": "ioredis",
@@ -4059,7 +4689,7 @@
         "客户端"
       ],
       "category": "nodejs-database",
-      "order": 257
+      "order": 295
     },
     {
       "id": "go",
@@ -4074,7 +4704,7 @@
         "并发"
       ],
       "category": "go-ecosystem",
-      "order": 258
+      "order": 296
     },
     {
       "id": "gin",
@@ -4089,7 +4719,7 @@
         "REST API"
       ],
       "category": "go-ecosystem",
-      "order": 259
+      "order": 297
     },
     {
       "id": "gorm",
@@ -4104,7 +4734,7 @@
         "SQL"
       ],
       "category": "go-ecosystem",
-      "order": 260
+      "order": 298
     },
     {
       "id": "echo",
@@ -4119,7 +4749,7 @@
         "轻量级"
       ],
       "category": "go-ecosystem",
-      "order": 261
+      "order": 299
     },
     {
       "id": "fiber",
@@ -4134,7 +4764,7 @@
         "Express风格"
       ],
       "category": "go-ecosystem",
-      "order": 262
+      "order": 300
     },
     {
       "id": "chi",
@@ -4149,7 +4779,7 @@
         "轻量级"
       ],
       "category": "go-ecosystem",
-      "order": 263
+      "order": 301
     },
     {
       "id": "buffalo",
@@ -4164,7 +4794,7 @@
         "MVC"
       ],
       "category": "go-ecosystem",
-      "order": 264
+      "order": 302
     },
     {
       "id": "zap",
@@ -4179,7 +4809,7 @@
         "Uber"
       ],
       "category": "go-ecosystem",
-      "order": 265
+      "order": 303
     },
     {
       "id": "cobra",
@@ -4194,7 +4824,7 @@
         "Docker"
       ],
       "category": "go-ecosystem",
-      "order": 266
+      "order": 304
     },
     {
       "id": "go-redis",
@@ -4209,7 +4839,7 @@
         "客户端"
       ],
       "category": "go-ecosystem",
-      "order": 267
+      "order": 305
     },
     {
       "id": "grpc",
@@ -4224,7 +4854,7 @@
         "Protocol Buffers"
       ],
       "category": "go-ecosystem",
-      "order": 268
+      "order": 306
     },
     {
       "id": "wanderlost",
@@ -4239,7 +4869,7 @@
         "2025"
       ],
       "category": "go-ecosystem",
-      "order": 269
+      "order": 307
     },
     {
       "id": "flutter",
@@ -4254,7 +4884,7 @@
         "Google"
       ],
       "category": "mobile",
-      "order": 270
+      "order": 308
     },
     {
       "id": "react-native",
@@ -4269,7 +4899,7 @@
         "JavaScript"
       ],
       "category": "mobile",
-      "order": 271
+      "order": 309
     },
     {
       "id": "uni-app",
@@ -4284,7 +4914,7 @@
         "微信小程序"
       ],
       "category": "mobile",
-      "order": 272
+      "order": 310
     },
     {
       "id": "capacitor",
@@ -4299,7 +4929,7 @@
         "原生容器"
       ],
       "category": "mobile",
-      "order": 273
+      "order": 311
     },
     {
       "id": "ionic",
@@ -4314,7 +4944,7 @@
         "UI框架"
       ],
       "category": "mobile",
-      "order": 274
+      "order": 312
     },
     {
       "id": "expo",
@@ -4329,7 +4959,7 @@
         "TypeScript"
       ],
       "category": "mobile",
-      "order": 275
+      "order": 313
     },
     {
       "id": "nativescript",
@@ -4344,7 +4974,7 @@
         "Vue"
       ],
       "category": "mobile",
-      "order": 276
+      "order": 314
     },
     {
       "id": "taro",
@@ -4359,7 +4989,7 @@
         "微信小程序"
       ],
       "category": "mobile",
-      "order": 277
+      "order": 315
     },
     {
       "id": "electron",
@@ -4374,7 +5004,7 @@
         "GitHub"
       ],
       "category": "desktop",
-      "order": 278
+      "order": 316
     },
     {
       "id": "tauri",
@@ -4389,7 +5019,7 @@
         "轻量级"
       ],
       "category": "desktop",
-      "order": 279
+      "order": 317
     },
     {
       "id": "neutralino",
@@ -4404,7 +5034,7 @@
         "Web技术"
       ],
       "category": "desktop",
-      "order": 280
+      "order": 318
     },
     {
       "id": "nw-js",
@@ -4419,7 +5049,7 @@
         "Node.js"
       ],
       "category": "desktop",
-      "order": 281
+      "order": 319
     },
     {
       "id": "pywebview",
@@ -4434,7 +5064,7 @@
         "GUI"
       ],
       "category": "desktop",
-      "order": 282
+      "order": 320
     },
     {
       "id": "quasar",
@@ -4449,7 +5079,7 @@
         "移动应用"
       ],
       "category": "desktop",
-      "order": 283
+      "order": 321
     },
     {
       "id": "bun",
@@ -4464,7 +5094,7 @@
         "JavaScript"
       ],
       "category": "bun-ecosystem",
-      "order": 284
+      "order": 322
     },
     {
       "id": "elysia",
@@ -4479,7 +5109,7 @@
         "TypeScript"
       ],
       "category": "bun-ecosystem",
-      "order": 285
+      "order": 323
     },
     {
       "id": "在线压缩图片工具整合",
@@ -4492,7 +5122,7 @@
         "图片"
       ],
       "category": "tools",
-      "order": 286
+      "order": 324
     },
     {
       "id": "photopea",
@@ -4504,7 +5134,7 @@
         "Tool"
       ],
       "category": "tools",
-      "order": 287
+      "order": 325
     },
     {
       "id": "draw-io",
@@ -4516,7 +5146,7 @@
         "Tool"
       ],
       "category": "tools",
-      "order": 288
+      "order": 326
     },
     {
       "id": "mnggiflab",
@@ -4529,7 +5159,7 @@
         "图片"
       ],
       "category": "tools",
-      "order": 289
+      "order": 327
     },
     {
       "id": "limgx",
@@ -4542,7 +5172,7 @@
         "图片"
       ],
       "category": "tools",
-      "order": 290
+      "order": 328
     },
     {
       "id": "开源精选",
@@ -4555,7 +5185,7 @@
         "导航"
       ],
       "category": "resources",
-      "order": 291
+      "order": 329
     },
     {
       "id": "tbox导航",
@@ -4568,7 +5198,7 @@
         "导航"
       ],
       "category": "resources",
-      "order": 292
+      "order": 330
     },
     {
       "id": "awwwards",
@@ -4580,7 +5210,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 293
+      "order": 331
     },
     {
       "id": "dribbble",
@@ -4594,7 +5224,7 @@
         "设计"
       ],
       "category": "resources",
-      "order": 294
+      "order": 332
     },
     {
       "id": "template0",
@@ -4606,7 +5236,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 295
+      "order": 333
     },
     {
       "id": "htmlrev",
@@ -4618,7 +5248,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 296
+      "order": 334
     },
     {
       "id": "cssloaders",
@@ -4630,7 +5260,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 297
+      "order": 335
     },
     {
       "id": "navnav",
@@ -4643,7 +5273,7 @@
         "导航"
       ],
       "category": "resources",
-      "order": 298
+      "order": 336
     },
     {
       "id": "a-template",
@@ -4655,7 +5285,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 299
+      "order": 337
     },
     {
       "id": "免费api",
@@ -4667,7 +5297,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 300
+      "order": 338
     },
     {
       "id": "topindie-dev",
@@ -4680,7 +5310,7 @@
         "独立开发"
       ],
       "category": "resources",
-      "order": 301
+      "order": 339
     },
     {
       "id": "idea-haber",
@@ -4693,7 +5323,7 @@
         "社区"
       ],
       "category": "resources",
-      "order": 302
+      "order": 340
     },
     {
       "id": "优设网",
@@ -4707,7 +5337,7 @@
         "设计"
       ],
       "category": "resources",
-      "order": 303
+      "order": 341
     },
     {
       "id": "办公人导航",
@@ -4720,7 +5350,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 304
+      "order": 342
     },
     {
       "id": "fuun-fun",
@@ -4733,7 +5363,7 @@
         "娱乐"
       ],
       "category": "resources",
-      "order": 305
+      "order": 343
     },
     {
       "id": "白嫖站",
@@ -4745,7 +5375,7 @@
         "导航"
       ],
       "category": "resources",
-      "order": 306
+      "order": 344
     },
     {
       "id": "loot-drop",
@@ -4760,7 +5390,7 @@
         "独立开发"
       ],
       "category": "resources",
-      "order": 307
+      "order": 345
     },
     {
       "id": "mobbin",
@@ -4774,7 +5404,7 @@
         "设计"
       ],
       "category": "resources",
-      "order": 308
+      "order": 346
     },
     {
       "id": "refero",
@@ -4788,7 +5418,7 @@
         "设计"
       ],
       "category": "resources",
-      "order": 309
+      "order": 347
     },
     {
       "id": "creght",
@@ -4802,7 +5432,7 @@
         "设计"
       ],
       "category": "resources",
-      "order": 310
+      "order": 348
     },
     {
       "id": "iconfinder",
@@ -4816,7 +5446,7 @@
         "设计"
       ],
       "category": "resources",
-      "order": 311
+      "order": 349
     },
     {
       "id": "makemepulse",
@@ -4829,7 +5459,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 312
+      "order": 350
     },
     {
       "id": "mek-txt",
@@ -4842,7 +5472,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 313
+      "order": 351
     },
     {
       "id": "cocos-creator",
@@ -4857,7 +5487,7 @@
         "跨平台"
       ],
       "category": "game-engines",
-      "order": 314
+      "order": 352
     },
     {
       "id": "lp平台",
@@ -4871,7 +5501,7 @@
         "AVG"
       ],
       "category": "game-engines",
-      "order": 315
+      "order": 353
     },
     {
       "id": "adv-js",
@@ -4885,7 +5515,7 @@
         "AVG"
       ],
       "category": "game-engines",
-      "order": 316
+      "order": 354
     },
     {
       "id": "renpy",
@@ -4899,7 +5529,7 @@
         "开源"
       ],
       "category": "game-engines",
-      "order": 317
+      "order": 355
     },
     {
       "id": "gamemaker",
@@ -4913,7 +5543,7 @@
         "独立游戏"
       ],
       "category": "game-engines",
-      "order": 318
+      "order": 356
     },
     {
       "id": "rpg-maker",
@@ -4927,7 +5557,7 @@
         "独立游戏"
       ],
       "category": "game-engines",
-      "order": 319
+      "order": 357
     },
     {
       "id": "gamecreator",
@@ -4941,7 +5571,7 @@
         "TypeScript"
       ],
       "category": "game-engines",
-      "order": 320
+      "order": 358
     },
     {
       "id": "星火编辑器",
@@ -4955,7 +5585,7 @@
         "TapTap"
       ],
       "category": "game-engines",
-      "order": 321
+      "order": 359
     },
     {
       "id": "gdevelop",
@@ -4969,7 +5599,7 @@
         "零代码"
       ],
       "category": "game-engines",
-      "order": 322
+      "order": 360
     },
     {
       "id": "pixijs",
@@ -4984,7 +5614,7 @@
         "渲染"
       ],
       "category": "game-engines",
-      "order": 323
+      "order": 361
     },
     {
       "id": "phaser",
@@ -4999,7 +5629,7 @@
         "HTML5"
       ],
       "category": "game-engines",
-      "order": 324
+      "order": 362
     },
     {
       "id": "godot-engine",
@@ -5014,7 +5644,7 @@
         "3D"
       ],
       "category": "game-engines",
-      "order": 325
+      "order": 363
     },
     {
       "id": "blender",
@@ -5029,7 +5659,7 @@
         "渲染"
       ],
       "category": "3d-modeling",
-      "order": 326
+      "order": 364
     },
     {
       "id": "sketchfab",
@@ -5044,7 +5674,7 @@
         "WebGL"
       ],
       "category": "3d-modeling",
-      "order": 327
+      "order": 365
     },
     {
       "id": "51建模网",
@@ -5058,7 +5688,7 @@
         "国内"
       ],
       "category": "3d-modeling",
-      "order": 328
+      "order": 366
     },
     {
       "id": "cinema-4d",
@@ -5073,7 +5703,7 @@
         "视觉设计"
       ],
       "category": "3d-modeling",
-      "order": 329
+      "order": 367
     },
     {
       "id": "spline",
@@ -5088,7 +5718,7 @@
         "交互式"
       ],
       "category": "3d-modeling",
-      "order": 330
+      "order": 368
     },
     {
       "id": "three-js-editor",
@@ -5103,7 +5733,7 @@
         "Three.js"
       ],
       "category": "3d-modeling",
-      "order": 331
+      "order": 369
     },
     {
       "id": "playcanvas",
@@ -5118,7 +5748,7 @@
         "在线编辑器"
       ],
       "category": "3d-modeling",
-      "order": 332
+      "order": 370
     },
     {
       "id": "sketchup",
@@ -5132,7 +5762,7 @@
         "室内设计"
       ],
       "category": "3d-modeling",
-      "order": 333
+      "order": 371
     },
     {
       "id": "maya",
@@ -5147,7 +5777,7 @@
         "工业标准"
       ],
       "category": "3d-modeling",
-      "order": 334
+      "order": 372
     },
     {
       "id": "blocks",
@@ -5161,7 +5791,7 @@
         "Google"
       ],
       "category": "3d-modeling",
-      "order": 335
+      "order": 373
     },
     {
       "id": "vectary",
@@ -5176,7 +5806,7 @@
         "低代码"
       ],
       "category": "3d-modeling",
-      "order": 336
+      "order": 374
     },
     {
       "id": "itch-io",
@@ -5190,7 +5820,7 @@
         "游戏"
       ],
       "category": "games",
-      "order": 337
+      "order": 375
     },
     {
       "id": "独立精神-indienova-独立游戏",
@@ -5203,7 +5833,7 @@
         "游戏"
       ],
       "category": "games",
-      "order": 338
+      "order": 376
     },
     {
       "id": "游戏开发资源整合集",
@@ -5216,7 +5846,7 @@
         "导航"
       ],
       "category": "games",
-      "order": 339
+      "order": 377
     },
     {
       "id": "retro-games",
@@ -5228,7 +5858,7 @@
         "游戏"
       ],
       "category": "games",
-      "order": 340
+      "order": 378
     },
     {
       "id": "retrogames",
@@ -5240,7 +5870,7 @@
         "游戏"
       ],
       "category": "games",
-      "order": 341
+      "order": 379
     },
     {
       "id": "game-ui-database",
@@ -5254,7 +5884,7 @@
         "设计"
       ],
       "category": "games",
-      "order": 342
+      "order": 380
     },
     {
       "id": "interface-in-game",
@@ -5268,7 +5898,7 @@
         "设计"
       ],
       "category": "games",
-      "order": 343
+      "order": 381
     },
     {
       "id": "product-hunt",
@@ -5281,7 +5911,7 @@
         "独立开发"
       ],
       "category": "community",
-      "order": 344
+      "order": 382
     },
     {
       "id": "nodejs中文网",
@@ -5294,7 +5924,7 @@
         "文档"
       ],
       "category": "community",
-      "order": 345
+      "order": 383
     },
     {
       "id": "看雪论坛",
@@ -5307,7 +5937,7 @@
         "社区"
       ],
       "category": "community",
-      "order": 346
+      "order": 384
     },
     {
       "id": "hack-forums",
@@ -5320,7 +5950,7 @@
         "社区"
       ],
       "category": "community",
-      "order": 347
+      "order": 385
     },
     {
       "id": "behance",
@@ -5333,7 +5963,7 @@
         "社区"
       ],
       "category": "community",
-      "order": 348
+      "order": 386
     },
     {
       "id": "ui中国",
@@ -5347,7 +5977,7 @@
         "社区"
       ],
       "category": "community",
-      "order": 349
+      "order": 387
     }
   ]
 }

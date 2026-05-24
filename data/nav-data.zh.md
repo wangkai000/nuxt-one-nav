@@ -24,6 +24,10 @@
 - [Fly.io](https://fly.io/) - Fly.io 是将应用部署到全球边缘节点的平台，支持 Docker 容器和多种语言，主打低延迟体验。 | icon: https://fly.io/favicon.ico | tags: 云平台, 边缘计算, Docker, 部署, 全球
 - [Zeabur](https://zeabur.com/) - Zeabur 是台湾开发者打造的云平台，支持一键部署全栈应用，中文界面友好，对亚洲用户访问速度快。 | icon: https://zeabur.com/favicon.ico | tags: 云平台, 部署, Serverless, 中文, 全栈
 - [Replit](https://replit.com/) - Replit 是浏览器内置开发+部署平台，支持 50+ 语言，一键部署网站和应用，配备 AI 编程助手。 | icon: https://replit.com/favicon.ico | tags: 云平台, IDE, 部署, Serverless, 在线开发
+- [StackBlitz](https://stackblitz.com/) - StackBlitz 是浏览器内在线 IDE，基于 WebContainer 技术可直接在浏览器中运行 Node.js、Vite 等，无需本地环境。 | icon: https://stackblitz.com/favicon.ico | tags: 云平台, IDE, 在线, WebContainer, 前端
+- [Glitch](https://glitch.com/) - Glitch 是面向 Web 开发者的在线 IDE 和托管平台，支持实时协作和即装即用的模板，适合快速原型开发。 | icon: https://glitch.com/favicon.ico | tags: 云平台, IDE, 在线, 协作, 原型
+- [CodeSandbox](https://codesandbox.io/) - CodeSandbox 是流行的在线 IDE，支持 React、Vue、Ng 等框架的即时预览，社区模板丰富。 | icon: https://codesandbox.io/favicon.ico | tags: 云平台, IDE, 在线, 前端, 沙盒
+- [CodePen](https://codepen.io/) - CodePen 是全球最流行的前端代码 playground，支持 HTML/CSS/JS 即时预览，社区作品丰富。 | icon: https://codepen.io/favicon.ico | tags: 云平台, 前端, Playground, CSS, HTML
 
 ## 主流云服务商
 > id: cloud-major | icon: fluent-emoji:globe-showing-americas
@@ -42,6 +46,13 @@
 - [Vultr](https://www.vultr.com/) - Vultr 是全球覆盖广泛的云平台，提供高性能 VPS、裸金属和 GPU 实例，计费灵活，按小时计费。 | icon: https://www.vultr.com/favicon.ico | tags: 云平台, 云服务商, VPS, 全球, 高性能
 - [UpCloud](https://upcloud.com/) - UpCloud 是一家芬兰云服务商，以 MaxIOPS 存储技术著称，提供高 IOPS 云服务器，性能优异。 | icon: https://upcloud.com/favicon.ico | tags: 云平台, 云服务商, VPS, 芬兰, 高性能
 - [Contabo](https://www.contabo.com/) - Contabo 是德国云服务商，提供极具竞争力的价格的大容量 VPS 和独立服务器，性价比极高。 | icon: https://www.contabo.com/favicon.ico | tags: 云平台, 云服务商, 德国, VPS, 高性价比
+- [腾讯云开发 CloudBase](https://cloud.tencent.com/product/tcb) - 腾讯云开发（CloudBase）是面向小程序和 Web 应用的一站式 Serverless 云开发平台，提供云函数、数据库、存储等后端能力，与微信生态深度集成。 | icon: https://cloud.tencent.com/favicon.ico | tags: 云平台, 云服务商, Serverless, 小程序, 微信, 国内
+- [微信云开发](https://cloud.miniprogram.com/) - 微信云开发是微信小程序官方提供的云开发服务，提供云函数、数据库和存储能力，无需自建服务器即可快速开发小程序。 | icon: https://developers.weixin.qq.com/favicon.ico | tags: 云平台, 小程序, Serverless, 微信, 云函数, 国内
+- [百度智能云](https://cloud.baidu.com/) - 百度智能云是百度旗下云服务平台，在 AI（文心一言、图像识别）、大数据、IoT 领域优势显著，提供丰富的 API 服务。 | icon: https://cloud.baidu.com/favicon.ico | tags: 云平台, 云服务商, AI, 百度, 国内
+- [华为云](https://www.huaweicloud.com/) - 华为云是华为公有云品牌，提供计算、存储、数据库、AI、容器等企业级云服务，鲲鹏芯片和鸿蒙生态深度集成。 | icon: https://www.huaweicloud.com/favicon.ico | tags: 云平台, 云服务商, 企业级, 华为, 混合云, 国内
+- [字节跳动火山引擎](https://www.volcengine.com/) - 火山引擎是字节跳动旗下云服务平台，提供大数据、视频云、智能推荐等能力，技术源于抖音和今日头条。 | icon: https://www.volcengine.com/favicon.ico | tags: 云平台, 云服务商, 字节跳动, 视频, 推荐算法, 国内
+- [金山云](https://www.ksyun.com/) - 金山云是金山软件旗下云服务商，提供云服务器、存储、数据库等基础云服务，在游戏和视频领域有丰富经验。 | icon: https://www.ksyun.com/favicon.ico | tags: 云平台, 云服务商, 金山, 游戏, 视频, 国内
+- [青云](https://www.qingcloud.com/) - 青云是具有完全自主可控技术的云服务商，提供公有云、私有云、混合云服务，以技术立身著称。 | icon: https://www.qingcloud.com/favicon.ico | tags: 云平台, 云服务商, 私有云, 混合云, 自主可控, 国内
 
 ## Serverless / Edge Functions
 > id: cloud-serverless | icon: fluent-emoji:lightning
@@ -57,6 +68,19 @@
 - [Azure Functions](https://azure.microsoft.com/products/functions) - Azure Functions 是 Microsoft 的 Serverless 服务，深度集成 Azure 服务，支持多种触发器和工作流编排。 | icon: https://azure.microsoft.com/favicon.ico | tags: Serverless, Azure, 无服务器, Microsoft, 函数
 - [Google Cloud Functions](https://cloud.google.com/functions) - Google Cloud Functions 是 GCP 的 Serverless 函数服务，支持 Node.js、Python、Go 等语言，与 GCP 生态深度集成。 | icon: https://cloud.google.com/favicon.ico | tags: Serverless, Google Cloud, 无服务器, 函数, GCP
 - [AWS Lambda@Edge](https://aws.amazon.com/lambda/edge/) - Lambda@Edge 是在 CloudFront 边缘节点运行的 Lambda 函数，用于自定义 CloudFront 请求/响应处理。 | icon: https://aws.amazon.com/favicon.ico | tags: Serverless, AWS, 边缘计算, Lambda, CDN
+- [阿里云函数计算 FC](https://www.aliyun.com/product/fc) - 阿里云函数计算（FC）是阿里云的 Serverless 计算服务，支持 Node.js、Python、PHP 等语言，与阿里云生态深度集成。 | icon: https://www.aliyun.com/favicon.ico | tags: Serverless, 阿里云, 无服务器, 函数, 国内
+- [腾讯云云函数 SCF](https://cloud.tencent.com/product/scf) - 腾讯云云函数（SCF）是腾讯云的 Serverless 计算服务，支持在线编辑、触发器配置和微信生态集成。 | icon: https://cloud.tencent.com/favicon.ico | tags: Serverless, 腾讯云, 无服务器, 函数, 国内
+- [华为云函数工作流 FunctionGraph](https://www.huaweicloud.com/product/functiongraph) - 华为云函数工作流（FunctionGraph）是华为云的 Serverless 函数编排服务，支持可视化流程编排和分布式任务协调。 | icon: https://www.huaweicloud.com/favicon.ico | tags: Serverless, 华为云, 无服务器, 函数编排, 国内
+- [百度智能云函数计算 CFC](https://cloud.baidu.com/product/cfc) - 百度智能云函数计算（CFC）是百度云的 Serverless 函数服务，支持在线编辑、API 网关触发和百度 AI 能力集成。 | icon: https://cloud.baidu.com/favicon.ico | tags: Serverless, 百度云, 无服务器, 函数, AI集成, 国内
+
+## 工作流自动化
+> id: cloud-automation | icon: fluent-emoji:repeat-button
+
+- [Zapier](https://zapier.com/) - Zapier 是最流行的在线工作流自动化平台，连接 6000+ 应用，无需代码即可实现跨服务自动化，是个人效率神器。 | icon: https://zapier.com/favicon.ico | tags: 工作流自动化, 无代码, SaaS集成, 效率, 自动化
+- [Make (formerly Integromat)](https://www.make.com/) - Make 是强大的可视化工作流自动化平台，比 Zapier 更灵活，支持复杂的数据转换、迭代和并行任务编排。 | icon: https://www.make.com/favicon.ico | tags: 工作流自动化, 无代码, 自动化, 可视化, 集成
+- [IFTTT](https://ifttt.com/) - IFTTT 是老牌自动化平台，以「如果这个、那么那个」逻辑连接物联网设备和 Web 服务，简洁易用。 | icon: https://ifttt.com/favicon.ico | tags: 工作流自动化, 物联网, Webhooks, 自动化, IoT
+- [Pipedream](https://pipedream.com/) - Pipedream 是面向开发者的自动化平台，支持编写 Node.js、Python、Go 代码处理事件流，深度集成 GitHub、Slack 等服务。 | icon: https://pipedream.com/favicon.ico | tags: 工作流自动化, 开发者, 代码, Webhooks, 集成
+- [Automate.io](https://automate.io/) - Automate.io 是简单易用的业务自动化平台，连接 200+ SaaS 应用，适合非技术用户搭建自动化工作流。 | icon: https://automate.io/favicon.ico | tags: 工作流自动化, 无代码, 业务自动化, SaaS集成, 自动化
 
 ## BaaS (后端即服务)
 > id: cloud-baas | icon: fluent-emoji:floppy-disk
@@ -73,6 +97,12 @@
 - [Ably](https://ably.com/) - Ably 是全球分布式实时消息平台，提供低延迟、高可用的实时数据传递服务。 | icon: https://ably.com/favicon.ico | tags: BaaS, 实时, 消息, WebSocket, 推送
 - [PubNub](https://www.pubnub.com/) - PubNub 是面向大规模应用的实时通信和数据传递 BaaS，支持千万级并发连接。 | icon: https://www.pubnub.com/favicon.ico | tags: BaaS, 实时, 消息, 大规模, 推送
 - [OneSignal](https://onesignal.com/) - OneSignal 是专注于移动和 Web 推送通知的 BaaS，支持 Email、SMS、Push 等多渠道触达。 | icon: https://onesignal.com/favicon.ico | tags: BaaS, 推送通知, 移动, Web, 营销
+- [Airtable](https://airtable.com/) - Airtable 是结合电子表格和数据库的 BaaS 平台，灵活可定制，支持视图、自动化和工作流，适合作为轻量级后台。 | icon: https://airtable.com/favicon.ico | tags: BaaS, 数据库, 低代码, 后台, 在线表格
+- [Contentful](https://www.contentful.com/) - Contentful 是头部 CMS 即服务平台，以 API 优先著称，支持多语言、webhook 和强大的内容分发，是内容密集型应用的理想选择。 | icon: https://www.contentful.com/favicon.ico | tags: BaaS, CMS, 内容管理, API优先, 无头CMS
+- [Sanity](https://www.sanity.io/) - Sanity 是结构化内容平台，以实时协作编辑器和自定义内容模型著称，数据存储在 Sanity 的托管数据库中。 | icon: https://www.sanity.io/favicon.ico | tags: BaaS, CMS, 内容管理, 实时协作, 无头CMS
+- [Strapi](https://strapi.io/) - Strapi 是最流行的开源无头 CMS，支持自托管和云托管，提供 REST API 和 GraphQL API，插件生态丰富。 | icon: https://strapi.io/favicon.ico | tags: BaaS, CMS, 开源, 无头CMS, API优先, 自托管
+- [Prismic](https://prismic.io/) - Prismic 是无头 CMS 平台，以 Slice Machine 定制内容模型著称，支持 Next.js、Nuxt 等框架的官方集成。 | icon: https://prismic.io/favicon.ico | tags: BaaS, CMS, 无头CMS, 内容管理, Next.js
+- [Grafbase](https://grafbase.com/) - Grafbase 是面向现代应用的 BaaS 后端平台，以 Edge-First GraphQL 著称，全球分布式，支持实时订阅和身份验证。 | icon: https://grafbase.com/favicon.ico | tags: BaaS, GraphQL, Serverless, 边缘计算, API
 
 ## CDN & DNS & 域名
 > id: cloud-cdn | icon: fluent-emoji:globe-with-meridians
@@ -90,6 +120,10 @@
 - [Hover](https://www.hover.com/) - Hover 是简洁专注的域名注册商，界面清爽，无 upsell 骚扰，隐私保护默认开启。 | icon: https://www.hover.com/favicon.ico | tags: 域名, 注册, 隐私, 简洁, 无upsell
 - [DNSimple](https://dnsimple.com/) - DNSimple 是专注于域名和 DNS 服务的平台，提供域名注册、WHOIS 管理、DNS 记录管理等，API 友好。 | icon: https://dnsimple.com/favicon.ico | tags: DNS, 域名, API, 注册, 管理
 - [NS1](https://ns1.com/) - NS1 是企业级 DNS 服务商，以任意播网络和先进的数据过滤著称，提供 PagerDuty 集成和实时流量管理。 | icon: https://ns1.com/favicon.ico | tags: DNS, 企业级, 高可用, CDN, 监控
+- [腾讯云 CDN](https://cloud.tencent.com/product/cdn) - 腾讯云 CDN 覆盖全球 1500+ 加速节点，与腾讯云存储 COS、视频云、游戏加速等业务深度集成，亚太地区加速效果显著。 | icon: https://cloud.tencent.com/favicon.ico | tags: CDN, 腾讯云, 国内, 加速, 内容分发
+- [阿里云 CDN](https://www.aliyun.com/product/cdn) - 阿里云 CDN 依托阿里集团技术，提供全球 2500+ 节点覆盖，支持 HTTPS 加速、智能调度和图片处理服务。 | icon: https://www.aliyun.com/favicon.ico | tags: CDN, 阿里云, 国内, 加速, 内容分发
+- [百度云加速](https://cloud.baidu.com/product/bad) - 百度云加速提供网站加速和 SEO 优化服务，整合百度搜索算法优化，与百度站长工具深度集成。 | icon: https://cloud.baidu.com/favicon.ico | tags: CDN, 百度云, 加速, SEO, 国内
+- [华为云 CDN](https://www.huaweicloud.com/product/cdn) - 华为云 CDN 全球节点覆盖，提供稳定高速的内容分发服务，深度整合华为云存储 OBS 和视频点播服务。 | icon: https://www.huaweicloud.com/favicon.ico | tags: CDN, 华为云, 加速, 内容分发, 国内
 
 ## 数据库服务
 > id: cloud-database | icon: fluent-emoji:floppy-disk
@@ -106,6 +140,10 @@
 - [Typesense Cloud](https://cloud.typesense.org/) - Typesense Cloud 是 Typesense 的官方云托管服务，Typesense 是开源的闪电般快速的 typo-tolerant 搜索引擎。 | icon: https://cloud.typesense.org/favicon.ico | tags: 数据库, 搜索, 搜索引擎, 开源, 云服务
 - [Meilisearch](https://www.meilisearch.com/cloud) - Meilisearch Cloud 是 Meilisearch 的云服务，Meilisearch 是开源的极速全文搜索引擎， 开箱即用。 | icon: https://www.meilisearch.com/favicon.ico | tags: 数据库, 搜索, 搜索引擎, 开源, 云服务
 - [Algolia](https://www.algolia.com/) - Algolia 是成熟的搜索即服务平台，以极速和强大的相关性算法著称，提供完整的搜索即服务解决方案。 | icon: https://www.algolia.com/favicon.ico | tags: 数据库, 搜索, SaaS, API, 搜索即服务
+- [腾讯云数据库 CDB](https://cloud.tencent.com/product/cdb) - 腾讯云数据库（CDB）提供 MySQL、PostgreSQL、MongoDB、Redis 等多种数据库引擎的完全托管服务，支持自动备份和读写分离。 | icon: https://cloud.tencent.com/favicon.ico | tags: 数据库, 腾讯云, MySQL, PostgreSQL, 托管, 国内
+- [阿里云云数据库 RDS](https://www.aliyun.com/product/rds) - 阿里云关系型数据库服务（RDS）提供 MySQL、SQL Server、PostgreSQL、PPAS 等引擎，支持自动备份和弹性伸缩。 | icon: https://www.aliyun.com/favicon.ico | tags: 数据库, 阿里云, MySQL, PostgreSQL, 托管, 国内
+- [华为云 GaussDB](https://www.huaweicloud.com/product/gaussdb) - 华为云 GaussDB 是企业级分布式数据库，兼容 MySQL 和 PostgreSQL 协议，提供高性能、强一致和弹性伸缩能力。 | icon: https://www.huaweicloud.com/favicon.ico | tags: 数据库, 华为云, 分布式, 托管, 企业级, 国内
+- [金山云关系型数据库 KRDS](https://www.ksyun.com/product/krds) - 金山云关系型数据库（KRDS）提供 MySQL、PostgreSQL 等托管数据库服务，针对游戏和移动应用优化。 | icon: https://www.ksyun.com/favicon.ico | tags: 数据库, 金山云, MySQL, 托管, 游戏, 国内
 
 ## 容器与 Kubernetes
 > id: cloud-container | icon: fluent-emoji:shipping-container
@@ -121,6 +159,10 @@
 - [Argo CD](https://argoproj.github.io/cd/) - Argo CD 是 Kubernetes 的声明式 GitOps 持续交付工具，以 Git 为单一真相来源实现自动化部署。 | icon: https://argoproj.github.io/favicon.ico | tags: Kubernetes, GitOps, 持续部署, 自动化, 容器
 - [Flux](https://fluxcd.io/) - Flux 是 CNCF 毕业项目，Kubernetes 原生的 GitOps 工具，与 Git 仓库同步集群状态。 | icon: https://fluxcd.io/favicon.ico | tags: Kubernetes, GitOps, 持续部署, 自动化, CNCF
 - [Rancher](https://www.rancher.com/) - Rancher 是 Kubernetes 管理平台，简化多集群部署和管理，提供直观的 Web UI。 | icon: https://www.rancher.com/favicon.ico | tags: Kubernetes, 管理, 平台, 多集群, Rancher
+- [腾讯云容器服务 TKE](https://cloud.tencent.com/product/tke) - 腾讯云容器服务（TKE）是完全托管的 Kubernetes 服务，支持一键部署、弹性伸缩和灰度发布，与腾讯云生态深度集成。 | icon: https://cloud.tencent.com/favicon.ico | tags: 容器, Kubernetes, 腾讯云, 托管K8s, 容器服务, 国内
+- [阿里云容器服务 ACK](https://www.aliyun.com/product/ack) - 阿里云容器服务（ACK）是阿里云的完全托管 Kubernetes 服务，支持 Docker 容器管理、Auto Scaling 和日志监控。 | icon: https://www.aliyun.com/favicon.ico | tags: 容器, Kubernetes, 阿里云, 托管K8s, 容器服务, 国内
+- [华为云云容器服务 CCE](https://www.huaweicloud.com/product/cce) - 华为云云容器实例（CCI）是 Serverless 容器服务，无需管理节点即可运行容器负载，秒级扩缩。 | icon: https://www.huaweicloud.com/favicon.ico | tags: 容器, Kubernetes, 华为云, Serverless容器, 容器服务, 国内
+- [字节跳动云容器服务 veLinux](https://www.volcengine.com/product/velinux) - 火山引擎 veLinux 是字节跳动开源的容器化 Linux 发行版，针对容器和 Kubernetes 优化，提供卓越的启动速度和资源利用率。 | icon: https://www.volcengine.com/favicon.ico | tags: 容器, Linux, 字节跳动, 优化, 开源, 国内
 
 # AI 工具
 > id: ai | icon: fluent-emoji:robot
