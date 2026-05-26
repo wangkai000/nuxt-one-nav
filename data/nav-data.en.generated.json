@@ -2,9 +2,9 @@
   "meta": {
     "name": "StarNav Navigation Data",
     "version": "2.0.0",
-    "lastUpdated": "2026-05-24",
+    "lastUpdated": "2026-05-26",
     "description": "Navigation data for Nuxt 4 site (Markdown data source)",
-    "totalSites": 267,
+    "totalSites": 279,
     "totalCategories": 15
   },
   "categories": [
@@ -210,9 +210,16 @@
           "icon": "mdi:database",
           "count": 11,
           "parentId": "nodejs"
+        },
+        {
+          "id": "nodejs-queue",
+          "name": "Message Queue / Communication",
+          "icon": "mdi:message-outline",
+          "count": 9,
+          "parentId": "nodejs"
         }
       ],
-      "count": 23
+      "count": 32
     },
     {
       "id": "go-ecosystem",
@@ -236,7 +243,16 @@
       "id": "bun-ecosystem",
       "name": "Bun Ecosystem",
       "icon": "logos:bun",
-      "count": 2
+      "children": [
+        {
+          "id": "bun-runtime",
+          "name": "Bun Runtime",
+          "icon": "logos:bun",
+          "count": 5,
+          "parentId": "bun-ecosystem"
+        }
+      ],
+      "count": 5
     },
     {
       "id": "tools",
@@ -2726,6 +2742,152 @@
       "order": 175
     },
     {
+      "id": "bullmq",
+      "title": "BullMQ",
+      "description": "The most popular Redis-backed message queue for Node.js, supporting delayed jobs, repeatable jobs, priority queues and workflow orchestration.",
+      "url": "https://bullmq.io/",
+      "icon": "https://bullmq.io/favicon.ico",
+      "tags": [
+        "Node.js",
+        "message queue",
+        "Redis",
+        "job scheduling",
+        "microservices"
+      ],
+      "category": "nodejs-queue",
+      "order": 176
+    },
+    {
+      "id": "rabbitmq",
+      "title": "RabbitMQ",
+      "description": "Open-source message broker supporting AMQP, MQTT, STOMP protocols and multiple messaging patterns, enterprise-grade MQ solution.",
+      "url": "https://www.rabbitmq.com/",
+      "icon": "https://www.rabbitmq.com/favicon.ico",
+      "tags": [
+        "message queue",
+        "RabbitMQ",
+        "AMQP",
+        "MQTT",
+        "enterprise",
+        "microservices"
+      ],
+      "category": "nodejs-queue",
+      "order": 177
+    },
+    {
+      "id": "apache-kafka",
+      "title": "Apache Kafka",
+      "description": "Apache open-source distributed event streaming platform, high-throughput, persistent, for real-time data pipelines and stream processing.",
+      "url": "https://kafka.apache.org/",
+      "icon": "https://kafka.apache.org/favicon.ico",
+      "tags": [
+        "message queue",
+        "Kafka",
+        "stream processing",
+        "event streaming",
+        "high throughput",
+        "distributed"
+      ],
+      "category": "nodejs-queue",
+      "order": 178
+    },
+    {
+      "id": "nats",
+      "title": "NATS",
+      "description": "High-performance cloud-native messaging system with ultra-low latency, supporting pub/sub, request/reply and JetStream persistence.",
+      "url": "https://nats.io/",
+      "icon": "https://nats.io/favicon.ico",
+      "tags": [
+        "message queue",
+        "NATS",
+        "cloud native",
+        "high performance",
+        "edge computing"
+      ],
+      "category": "nodejs-queue",
+      "order": 179
+    },
+    {
+      "id": "mqtt-js",
+      "title": "MQTT.js",
+      "description": "MQTT protocol client for Node.js, suitable for IoT devices and lightweight messaging.",
+      "url": "https://github.com/mqttjs/MQTT.js",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "MQTT",
+        "IoT",
+        "messaging"
+      ],
+      "category": "nodejs-queue",
+      "order": 180
+    },
+    {
+      "id": "socket-io",
+      "title": "Socket.io",
+      "description": "Real-time bidirectional communication library for Node.js, supporting WebSocket with long-polling fallback, for chat, collaboration, real-time notifications.",
+      "url": "https://socket.io/",
+      "icon": "https://socket.io/favicon.ico",
+      "tags": [
+        "Node.js",
+        "WebSocket",
+        "real-time",
+        "bidirectional",
+        "event-driven"
+      ],
+      "category": "nodejs-queue",
+      "order": 181
+    },
+    {
+      "id": "uwebsockets-js",
+      "title": "uWebSockets.js",
+      "description": "Ultra-high-performance WebSocket and HTTP server for Node.js, implemented in C++ with extremely low latency.",
+      "url": "https://github.com/uNetworking/uWebSockets.js",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "WebSocket",
+        "high performance",
+        "C++",
+        "real-time"
+      ],
+      "category": "nodejs-queue",
+      "order": 182
+    },
+    {
+      "id": "graphql-yoga",
+      "title": "GraphQL Yoga",
+      "description": "Cross-runtime GraphQL server framework supporting Node.js, Bun, Deno, Cloudflare Workers with subscriptions and SSE real-time capabilities.",
+      "url": "https://the-guild.dev/graphql/yoga-server",
+      "icon": "https://the-guild.dev/favicon.ico",
+      "tags": [
+        "Node.js",
+        "GraphQL",
+        "API",
+        "real-time",
+        "cross-runtime"
+      ],
+      "category": "nodejs-queue",
+      "order": 183
+    },
+    {
+      "id": "grpc-node",
+      "title": "gRPC-Node",
+      "description": "Google's high-performance RPC framework Node.js implementation, based on HTTP/2 and Protocol Buffers, ideal for microservice communication.",
+      "url": "https://grpc.io/docs/languages/node/",
+      "icon": "https://grpc.io/favicon.ico",
+      "tags": [
+        "Node.js",
+        "gRPC",
+        "RPC",
+        "HTTP2",
+        "microservices",
+        "Protocol Buffers"
+      ],
+      "category": "nodejs-queue",
+      "order": 184
+    },
+    {
       "id": "go",
       "title": "Go",
       "description": "An open-source programming language developed by Google, known for simplicity, efficiency and concurrency support.",
@@ -2738,7 +2900,7 @@
         "concurrency"
       ],
       "category": "go-ecosystem",
-      "order": 176
+      "order": 185
     },
     {
       "id": "gin",
@@ -2753,7 +2915,7 @@
         "REST API"
       ],
       "category": "go-ecosystem",
-      "order": 177
+      "order": 186
     },
     {
       "id": "gorm",
@@ -2768,7 +2930,7 @@
         "SQL"
       ],
       "category": "go-ecosystem",
-      "order": 178
+      "order": 187
     },
     {
       "id": "echo",
@@ -2783,7 +2945,7 @@
         "lightweight"
       ],
       "category": "go-ecosystem",
-      "order": 179
+      "order": 188
     },
     {
       "id": "fiber",
@@ -2798,7 +2960,7 @@
         "Express-style"
       ],
       "category": "go-ecosystem",
-      "order": 180
+      "order": 189
     },
     {
       "id": "chi",
@@ -2813,7 +2975,7 @@
         "lightweight"
       ],
       "category": "go-ecosystem",
-      "order": 181
+      "order": 190
     },
     {
       "id": "buffalo",
@@ -2828,7 +2990,7 @@
         "MVC"
       ],
       "category": "go-ecosystem",
-      "order": 182
+      "order": 191
     },
     {
       "id": "zap",
@@ -2843,7 +3005,7 @@
         "Uber"
       ],
       "category": "go-ecosystem",
-      "order": 183
+      "order": 192
     },
     {
       "id": "cobra",
@@ -2858,7 +3020,7 @@
         "Docker"
       ],
       "category": "go-ecosystem",
-      "order": 184
+      "order": 193
     },
     {
       "id": "go-redis",
@@ -2873,7 +3035,7 @@
         "client"
       ],
       "category": "go-ecosystem",
-      "order": 185
+      "order": 194
     },
     {
       "id": "grpc",
@@ -2888,7 +3050,7 @@
         "Protocol Buffers"
       ],
       "category": "go-ecosystem",
-      "order": 186
+      "order": 195
     },
     {
       "id": "wanderlost",
@@ -2903,7 +3065,7 @@
         "2025"
       ],
       "category": "go-ecosystem",
-      "order": 187
+      "order": 196
     },
     {
       "id": "flutter",
@@ -2918,7 +3080,7 @@
         "Google"
       ],
       "category": "mobile",
-      "order": 188
+      "order": 197
     },
     {
       "id": "react-native",
@@ -2933,7 +3095,7 @@
         "JavaScript"
       ],
       "category": "mobile",
-      "order": 189
+      "order": 198
     },
     {
       "id": "uni-app",
@@ -2948,7 +3110,7 @@
         "WeChat Mini Program"
       ],
       "category": "mobile",
-      "order": 190
+      "order": 199
     },
     {
       "id": "capacitor",
@@ -2963,7 +3125,7 @@
         "native container"
       ],
       "category": "mobile",
-      "order": 191
+      "order": 200
     },
     {
       "id": "ionic",
@@ -2978,7 +3140,7 @@
         "UI framework"
       ],
       "category": "mobile",
-      "order": 192
+      "order": 201
     },
     {
       "id": "expo",
@@ -2993,7 +3155,7 @@
         "TypeScript"
       ],
       "category": "mobile",
-      "order": 193
+      "order": 202
     },
     {
       "id": "nativescript",
@@ -3008,7 +3170,7 @@
         "Vue"
       ],
       "category": "mobile",
-      "order": 194
+      "order": 203
     },
     {
       "id": "taro",
@@ -3023,7 +3185,7 @@
         "WeChat Mini Program"
       ],
       "category": "mobile",
-      "order": 195
+      "order": 204
     },
     {
       "id": "electron",
@@ -3038,7 +3200,7 @@
         "GitHub"
       ],
       "category": "desktop",
-      "order": 196
+      "order": 205
     },
     {
       "id": "tauri",
@@ -3053,7 +3215,7 @@
         "lightweight"
       ],
       "category": "desktop",
-      "order": 197
+      "order": 206
     },
     {
       "id": "neutralino",
@@ -3068,7 +3230,7 @@
         "web technology"
       ],
       "category": "desktop",
-      "order": 198
+      "order": 207
     },
     {
       "id": "nw-js",
@@ -3083,7 +3245,7 @@
         "Node.js"
       ],
       "category": "desktop",
-      "order": 199
+      "order": 208
     },
     {
       "id": "pywebview",
@@ -3098,7 +3260,7 @@
         "GUI"
       ],
       "category": "desktop",
-      "order": 200
+      "order": 209
     },
     {
       "id": "quasar",
@@ -3113,7 +3275,7 @@
         "mobile application"
       ],
       "category": "desktop",
-      "order": 201
+      "order": 210
     },
     {
       "id": "bun",
@@ -3127,8 +3289,8 @@
         "bundler",
         "JavaScript"
       ],
-      "category": "bun-ecosystem",
-      "order": 202
+      "category": "bun-runtime",
+      "order": 211
     },
     {
       "id": "elysia",
@@ -3142,8 +3304,55 @@
         "high performance",
         "TypeScript"
       ],
-      "category": "bun-ecosystem",
-      "order": 203
+      "category": "bun-runtime",
+      "order": 212
+    },
+    {
+      "id": "hono",
+      "title": "Hono",
+      "description": "An ultrafast web framework supporting Cloudflare Workers, Deno, Bun and other edge runtimes.",
+      "url": "https://hono.dev/",
+      "icon": "https://hono.dev/favicon.ico",
+      "tags": [
+        "Node.js",
+        "edge computing",
+        "high performance",
+        "TypeScript",
+        "Bun"
+      ],
+      "category": "bun-runtime",
+      "order": 213
+    },
+    {
+      "id": "bun-sqlite",
+      "title": "Bun SQLite",
+      "description": "Bun's built-in SQLite support, zero-configuration high-performance SQLite database in the Bun runtime.",
+      "url": "https://bun.sh/docs/api/sqlite",
+      "icon": "https://bun.sh/favicon.ico",
+      "tags": [
+        "Bun",
+        "SQLite",
+        "database",
+        "built-in"
+      ],
+      "category": "bun-runtime",
+      "order": 214
+    },
+    {
+      "id": "bun-ffi",
+      "title": "Bun FFI",
+      "description": "High-throughput Rust/C++/Zig native extension development interface in Bun, no binding layer needed.",
+      "url": "https://bun.sh/docs/api/ffi",
+      "icon": "https://bun.sh/favicon.ico",
+      "tags": [
+        "Bun",
+        "FFI",
+        "Rust",
+        "C++",
+        "native extension"
+      ],
+      "category": "bun-runtime",
+      "order": 215
     },
     {
       "id": "online-image-compress-tool-collection",
@@ -3156,7 +3365,7 @@
         "image"
       ],
       "category": "tools",
-      "order": 204
+      "order": 216
     },
     {
       "id": "photopea",
@@ -3168,7 +3377,7 @@
         "Tool"
       ],
       "category": "tools",
-      "order": 205
+      "order": 217
     },
     {
       "id": "draw-io",
@@ -3180,7 +3389,7 @@
         "Tool"
       ],
       "category": "tools",
-      "order": 206
+      "order": 218
     },
     {
       "id": "mnggiflab",
@@ -3193,7 +3402,7 @@
         "image"
       ],
       "category": "tools",
-      "order": 207
+      "order": 219
     },
     {
       "id": "limgx",
@@ -3206,7 +3415,7 @@
         "image"
       ],
       "category": "tools",
-      "order": 208
+      "order": 220
     },
     {
       "id": "oss-nav",
@@ -3219,7 +3428,7 @@
         "navigation"
       ],
       "category": "resources",
-      "order": 209
+      "order": 221
     },
     {
       "id": "tbox-navigation",
@@ -3232,7 +3441,7 @@
         "navigation"
       ],
       "category": "resources",
-      "order": 210
+      "order": 222
     },
     {
       "id": "awwwards",
@@ -3244,7 +3453,7 @@
         "resources"
       ],
       "category": "resources",
-      "order": 211
+      "order": 223
     },
     {
       "id": "dribbble",
@@ -3258,7 +3467,7 @@
         "design"
       ],
       "category": "resources",
-      "order": 212
+      "order": 224
     },
     {
       "id": "template0",
@@ -3270,7 +3479,7 @@
         "resources"
       ],
       "category": "resources",
-      "order": 213
+      "order": 225
     },
     {
       "id": "htmlrev",
@@ -3282,7 +3491,7 @@
         "resources"
       ],
       "category": "resources",
-      "order": 214
+      "order": 226
     },
     {
       "id": "cssloaders",
@@ -3294,7 +3503,7 @@
         "resources"
       ],
       "category": "resources",
-      "order": 215
+      "order": 227
     },
     {
       "id": "navnav",
@@ -3307,7 +3516,7 @@
         "navigation"
       ],
       "category": "resources",
-      "order": 216
+      "order": 228
     },
     {
       "id": "a-template",
@@ -3319,7 +3528,7 @@
         "resources"
       ],
       "category": "resources",
-      "order": 217
+      "order": 229
     },
     {
       "id": "free-api",
@@ -3331,7 +3540,7 @@
         "resources"
       ],
       "category": "resources",
-      "order": 218
+      "order": 230
     },
     {
       "id": "topindie-dev",
@@ -3344,7 +3553,7 @@
         "indie development"
       ],
       "category": "resources",
-      "order": 219
+      "order": 231
     },
     {
       "id": "idea-harbor",
@@ -3357,7 +3566,7 @@
         "community"
       ],
       "category": "resources",
-      "order": 220
+      "order": 232
     },
     {
       "id": "uisdc",
@@ -3371,7 +3580,7 @@
         "design"
       ],
       "category": "resources",
-      "order": 221
+      "order": 233
     },
     {
       "id": "office-navigation",
@@ -3384,7 +3593,7 @@
         "resources"
       ],
       "category": "resources",
-      "order": 222
+      "order": 234
     },
     {
       "id": "fuun-fun",
@@ -3397,7 +3606,7 @@
         "entertainment"
       ],
       "category": "resources",
-      "order": 223
+      "order": 235
     },
     {
       "id": "baipiao",
@@ -3409,7 +3618,7 @@
         "navigation"
       ],
       "category": "resources",
-      "order": 224
+      "order": 236
     },
     {
       "id": "loot-drop",
@@ -3424,7 +3633,7 @@
         "indie development"
       ],
       "category": "resources",
-      "order": 225
+      "order": 237
     },
     {
       "id": "mobbin",
@@ -3438,7 +3647,7 @@
         "design"
       ],
       "category": "resources",
-      "order": 226
+      "order": 238
     },
     {
       "id": "refero",
@@ -3452,7 +3661,7 @@
         "design"
       ],
       "category": "resources",
-      "order": 227
+      "order": 239
     },
     {
       "id": "creght",
@@ -3466,7 +3675,7 @@
         "design"
       ],
       "category": "resources",
-      "order": 228
+      "order": 240
     },
     {
       "id": "iconfinder",
@@ -3480,7 +3689,7 @@
         "design"
       ],
       "category": "resources",
-      "order": 229
+      "order": 241
     },
     {
       "id": "makemepulse",
@@ -3493,7 +3702,7 @@
         "resources"
       ],
       "category": "resources",
-      "order": 230
+      "order": 242
     },
     {
       "id": "mek-txt",
@@ -3506,7 +3715,7 @@
         "resources"
       ],
       "category": "resources",
-      "order": 231
+      "order": 243
     },
     {
       "id": "cocos-creator",
@@ -3521,7 +3730,7 @@
         "cross-platform"
       ],
       "category": "game-engines",
-      "order": 232
+      "order": 244
     },
     {
       "id": "lp-platform",
@@ -3535,7 +3744,7 @@
         "AVG"
       ],
       "category": "game-engines",
-      "order": 233
+      "order": 245
     },
     {
       "id": "adv-js",
@@ -3549,7 +3758,7 @@
         "AVG"
       ],
       "category": "game-engines",
-      "order": 234
+      "order": 246
     },
     {
       "id": "renpy",
@@ -3563,7 +3772,7 @@
         "open source"
       ],
       "category": "game-engines",
-      "order": 235
+      "order": 247
     },
     {
       "id": "gamemaker",
@@ -3577,7 +3786,7 @@
         "indie game"
       ],
       "category": "game-engines",
-      "order": 236
+      "order": 248
     },
     {
       "id": "rpg-maker",
@@ -3591,7 +3800,7 @@
         "indie game"
       ],
       "category": "game-engines",
-      "order": 237
+      "order": 249
     },
     {
       "id": "gamecreator",
@@ -3605,7 +3814,7 @@
         "TypeScript"
       ],
       "category": "game-engines",
-      "order": 238
+      "order": 250
     },
     {
       "id": "spark-editor",
@@ -3619,7 +3828,7 @@
         "TapTap"
       ],
       "category": "game-engines",
-      "order": 239
+      "order": 251
     },
     {
       "id": "gdevelop",
@@ -3633,7 +3842,7 @@
         "no-code"
       ],
       "category": "game-engines",
-      "order": 240
+      "order": 252
     },
     {
       "id": "pixijs",
@@ -3648,7 +3857,7 @@
         "rendering"
       ],
       "category": "game-engines",
-      "order": 241
+      "order": 253
     },
     {
       "id": "phaser",
@@ -3663,7 +3872,7 @@
         "HTML5"
       ],
       "category": "game-engines",
-      "order": 242
+      "order": 254
     },
     {
       "id": "godot-engine",
@@ -3678,7 +3887,7 @@
         "3D"
       ],
       "category": "game-engines",
-      "order": 243
+      "order": 255
     },
     {
       "id": "blender",
@@ -3693,7 +3902,7 @@
         "rendering"
       ],
       "category": "3d-modeling",
-      "order": 244
+      "order": 256
     },
     {
       "id": "sketchfab",
@@ -3708,7 +3917,7 @@
         "WebGL"
       ],
       "category": "3d-modeling",
-      "order": 245
+      "order": 257
     },
     {
       "id": "51-jianmo",
@@ -3722,7 +3931,7 @@
         "China"
       ],
       "category": "3d-modeling",
-      "order": 246
+      "order": 258
     },
     {
       "id": "cinema-4d",
@@ -3737,7 +3946,7 @@
         "visual design"
       ],
       "category": "3d-modeling",
-      "order": 247
+      "order": 259
     },
     {
       "id": "spline",
@@ -3752,7 +3961,7 @@
         "interactive"
       ],
       "category": "3d-modeling",
-      "order": 248
+      "order": 260
     },
     {
       "id": "three-js-editor",
@@ -3767,7 +3976,7 @@
         "Three.js"
       ],
       "category": "3d-modeling",
-      "order": 249
+      "order": 261
     },
     {
       "id": "playcanvas",
@@ -3782,7 +3991,7 @@
         "online editor"
       ],
       "category": "3d-modeling",
-      "order": 250
+      "order": 262
     },
     {
       "id": "sketchup",
@@ -3796,7 +4005,7 @@
         "interior design"
       ],
       "category": "3d-modeling",
-      "order": 251
+      "order": 263
     },
     {
       "id": "maya",
@@ -3811,7 +4020,7 @@
         "industry standard"
       ],
       "category": "3d-modeling",
-      "order": 252
+      "order": 264
     },
     {
       "id": "blocks",
@@ -3825,7 +4034,7 @@
         "Google"
       ],
       "category": "3d-modeling",
-      "order": 253
+      "order": 265
     },
     {
       "id": "vectary",
@@ -3840,7 +4049,7 @@
         "low-code"
       ],
       "category": "3d-modeling",
-      "order": 254
+      "order": 266
     },
     {
       "id": "itch-io",
@@ -3854,7 +4063,7 @@
         "game"
       ],
       "category": "games",
-      "order": 255
+      "order": 267
     },
     {
       "id": "indienova",
@@ -3867,7 +4076,7 @@
         "game"
       ],
       "category": "games",
-      "order": 256
+      "order": 268
     },
     {
       "id": "game-dev-resources",
@@ -3880,7 +4089,7 @@
         "navigation"
       ],
       "category": "games",
-      "order": 257
+      "order": 269
     },
     {
       "id": "retro-games",
@@ -3892,7 +4101,7 @@
         "game"
       ],
       "category": "games",
-      "order": 258
+      "order": 270
     },
     {
       "id": "retrogames",
@@ -3904,7 +4113,7 @@
         "game"
       ],
       "category": "games",
-      "order": 259
+      "order": 271
     },
     {
       "id": "game-ui-database",
@@ -3918,7 +4127,7 @@
         "design"
       ],
       "category": "games",
-      "order": 260
+      "order": 272
     },
     {
       "id": "interface-in-game",
@@ -3932,7 +4141,7 @@
         "design"
       ],
       "category": "games",
-      "order": 261
+      "order": 273
     },
     {
       "id": "product-hunt",
@@ -3945,7 +4154,7 @@
         "indie development"
       ],
       "category": "community",
-      "order": 262
+      "order": 274
     },
     {
       "id": "node-js-chinese",
@@ -3958,7 +4167,7 @@
         "documentation"
       ],
       "category": "community",
-      "order": 263
+      "order": 275
     },
     {
       "id": "kanxue-forum",
@@ -3971,7 +4180,7 @@
         "community"
       ],
       "category": "community",
-      "order": 264
+      "order": 276
     },
     {
       "id": "hack-forums",
@@ -3984,7 +4193,7 @@
         "community"
       ],
       "category": "community",
-      "order": 265
+      "order": 277
     },
     {
       "id": "behance",
@@ -3997,7 +4206,7 @@
         "community"
       ],
       "category": "community",
-      "order": 266
+      "order": 278
     },
     {
       "id": "ui-china",
@@ -4011,7 +4220,7 @@
         "community"
       ],
       "category": "community",
-      "order": 267
+      "order": 279
     }
   ]
 }

@@ -293,6 +293,19 @@
 - [mysql2](https://github.com/sidorares/node-mysql2) - MySQL Node.js client supporting prepared statements and connection pooling, faster than the mysql module. | icon: https://github.com/favicon.ico | tags: Node.js, MySQL, database, client
 - [ioredis](https://github.com/luin/ioredis) - High-performance Redis client supporting cluster, sentinel, pipelining and Lua scripts. | icon: https://github.com/favicon.ico | tags: Node.js, Redis, cache, client
 
+## Message Queue / Communication
+> id: nodejs-queue | icon: mdi:message-outline
+
+- [BullMQ](https://bullmq.io/) - The most popular Redis-backed message queue for Node.js, supporting delayed jobs, repeatable jobs, priority queues and workflow orchestration. | icon: https://bullmq.io/favicon.ico | tags: Node.js, message queue, Redis, job scheduling, microservices
+- [RabbitMQ](https://www.rabbitmq.com/) - Open-source message broker supporting AMQP, MQTT, STOMP protocols and multiple messaging patterns, enterprise-grade MQ solution. | icon: https://www.rabbitmq.com/favicon.ico | tags: message queue, RabbitMQ, AMQP, MQTT, enterprise, microservices
+- [Apache Kafka](https://kafka.apache.org/) - Apache open-source distributed event streaming platform, high-throughput, persistent, for real-time data pipelines and stream processing. | icon: https://kafka.apache.org/favicon.ico | tags: message queue, Kafka, stream processing, event streaming, high throughput, distributed
+- [NATS](https://nats.io/) - High-performance cloud-native messaging system with ultra-low latency, supporting pub/sub, request/reply and JetStream persistence. | icon: https://nats.io/favicon.ico | tags: message queue, NATS, cloud native, high performance, edge computing
+- [MQTT.js](https://github.com/mqttjs/MQTT.js) - MQTT protocol client for Node.js, suitable for IoT devices and lightweight messaging. | icon: https://github.com/favicon.ico | tags: Node.js, MQTT, IoT, messaging
+- [Socket.io](https://socket.io/) - Real-time bidirectional communication library for Node.js, supporting WebSocket with long-polling fallback, for chat, collaboration, real-time notifications. | icon: https://socket.io/favicon.ico | tags: Node.js, WebSocket, real-time, bidirectional, event-driven
+- [uWebSockets.js](https://github.com/uNetworking/uWebSockets.js) - Ultra-high-performance WebSocket and HTTP server for Node.js, implemented in C++ with extremely low latency. | icon: https://github.com/favicon.ico | tags: Node.js, WebSocket, high performance, C++, real-time
+- [GraphQL Yoga](https://the-guild.dev/graphql/yoga-server) - Cross-runtime GraphQL server framework supporting Node.js, Bun, Deno, Cloudflare Workers with subscriptions and SSE real-time capabilities. | icon: https://the-guild.dev/favicon.ico | tags: Node.js, GraphQL, API, real-time, cross-runtime
+- [gRPC-Node](https://grpc.io/docs/languages/node/) - Google's high-performance RPC framework Node.js implementation, based on HTTP/2 and Protocol Buffers, ideal for microservice communication. | icon: https://grpc.io/favicon.ico | tags: Node.js, gRPC, RPC, HTTP2, microservices, Protocol Buffers
+
 # Go Ecosystem
 > id: go-ecosystem | icon: logos:go
 
@@ -334,8 +347,14 @@
 # Bun Ecosystem
 > id: bun-ecosystem | icon: logos:bun
 
+## Bun Runtime
+> id: bun-runtime | icon: logos:bun
+
 - [Bun](https://bun.sh/) - A fast JavaScript runtime, bundler, test runner and package manager. | icon: https://bun.sh/favicon.ico | tags: Bun, runtime, bundler, JavaScript
 - [Elysia](https://elysiajs.com/) - An ergonomic Bun web framework focused on type safety and performance. | icon: https://elysiajs.com/favicon.ico | tags: Node.js, Bun, high performance, TypeScript
+- [Hono](https://hono.dev/) - An ultrafast web framework supporting Cloudflare Workers, Deno, Bun and other edge runtimes. | icon: https://hono.dev/favicon.ico | tags: Node.js, edge computing, high performance, TypeScript, Bun
+- [Bun SQLite](https://bun.sh/docs/api/sqlite) - Bun's built-in SQLite support, zero-configuration high-performance SQLite database in the Bun runtime. | icon: https://bun.sh/favicon.ico | tags: Bun, SQLite, database, built-in
+- [Bun FFI](https://bun.sh/docs/api/ffi) - High-throughput Rust/C++/Zig native extension development interface in Bun, no binding layer needed. | icon: https://bun.sh/favicon.ico | tags: Bun, FFI, Rust, C++, native extension
 
 # Utilities
 > id: tools | icon: fluent-emoji:toolbox

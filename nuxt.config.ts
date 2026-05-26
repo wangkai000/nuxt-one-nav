@@ -84,9 +84,9 @@ export default defineNuxtConfig({
     strategies: 'generateSW',
     registerType: 'autoUpdate',
     manifest: {
-      name: '星途导航',
-      short_name: '星途导航',
-      description: '星途导航，精心挑选的高质量网站导航，助你高效工作与生活',
+      name: '基米导航',
+      short_name: '基米导航',
+      description: '基米导航，精选高质量网站导航，开发工具、AI 服务、云平台一站直达',
       theme_color: '#3b82f6',
       background_color: '#f5f5f7',
       display: 'standalone',
@@ -208,7 +208,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       // HTML 标题
-      title: '星途导航 - 发现精彩网站',
+      title: '基米导航 - Go 前后端 跨平台 Web3 AI 开发者资源导航',
 
       // HTML 标签属性（动态语言由 i18n 处理）
       htmlAttrs: {},
@@ -216,23 +216,26 @@ export default defineNuxtConfig({
       // Meta 标签（SEO 和社交分享）
       meta: [
         // 基础 SEO
-        { name: 'description', content: '星途导航，精心挑选的高质量网站导航，助你高效工作与生活。' },
-        { name: 'keywords', content: '资源导航,网站导航,星途导航,导航站点,实用工具,开发资源,AI工具' },
+        { name: 'description', content: '基米导航，精选开发者技术栈导航。Go、Node.js、Bun、Rust 后端生态，React、Vue、Angular 前端框架，uni-app、React Native、Flutter 跨平台开发，OpenAI、Stable Diffusion AI 平台，Web3 区块链、以太坊、Solana 开发工具，Docker、Kubernetes 云原生部署一站直达。' },
+        { name: 'keywords', content: '基米导航,开发者导航,Go,Node.js,Bun,Rust,React,Vue,Angular,uni-app,React Native,Flutter,AI导航,OpenAI,Web3,区块链,Solana,以太坊,TypeScript,全栈开发,跨平台开发,云原生,Docker,Kubernetes,开发工具,资源导航,天渺studio' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'author', content: '天渺studio' },
         { name: 'robots', content: 'index, follow' },
+        { name: 'revisit-after', content: '7 days' },
 
         // Open Graph（Facebook/微信等社交平台分享）
-        { property: 'og:title', content: '星途导航 - 发现精彩网站' },
-        { property: 'og:description', content: '星途导航，精心挑选的高质量网站导航，助你高效工作与生活。' },
+        { property: 'og:title', content: '基米导航 - Go 前后端 跨平台 Web3 AI 开发者资源导航' },
+        { property: 'og:description', content: '精选 Go、Node.js、Bun、Rust 后端生态，React、Vue 前端框架，uni-app、React Native、Flutter 跨平台，OpenAI、DeepSeek AI 服务，Web3 区块链开发工具，Docker 云原生部署一站直达。' },
         { property: 'og:url', content: 'https://tianmiao.site' },
         { property: 'og:type', content: 'website' },
         { property: 'og:image', content: 'https://s21.ax1x.com/2024/12/22/pAXtJat.jpg' },
+        { property: 'og:locale', content: 'zh_CN' },
+        { property: 'og:site_name', content: '基米导航' },
 
         // Twitter Card（Twitter 分享）
-        { name: 'twitter:card', content: 'summary' },
-        { name: 'twitter:title', content: '星途导航 - 发现精彩网站' },
-        { name: 'twitter:description', content: '星途导航，精心挑选的高质量网站导航，助你高效工作与生活。' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: '基米导航 - Go 前后端 跨平台 Web3 AI 开发者资源导航' },
+        { name: 'twitter:description', content: '精选 Go、Node.js、Bun、Rust 后端生态，React、Vue 前端框架，uni-app、React Native、Flutter 跨平台，Web3 区块链，AI 服务，云原生部署一站式导航。' },
         { name: 'twitter:image', content: 'https://s21.ax1x.com/2024/12/22/pAXtJat.jpg' }
       ],
 
@@ -243,9 +246,13 @@ export default defineNuxtConfig({
         // { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
         { rel: 'apple-touch-icon', href: '/favicon-192x192.png' },
         // RSS 订阅
-        { rel: 'alternate', type: 'application/rss+xml', title: '星途导航 RSS', href: 'https://blog.tianmiao.site/feed.xml' },
+        { rel: 'alternate', type: 'application/rss+xml', title: '基米导航 RSS', href: 'https://blog.tianmiao.site/feed.xml' },
         // 作者链接
-        { rel: 'author', href: 'https://tianmiao.site' }
+        { rel: 'author', href: 'https://tianmiao.site' },
+        // 规范 URL（避免重复内容）
+        { rel: 'canonical', href: 'https://tianmiao.site' },
+        // Sitemap
+        { rel: 'sitemap', type: 'application/xml', title: 'Sitemap', href: '/sitemap.xml' }
       ],
 
       // 关键 CSS 内联 - 防止 FOUC
@@ -260,6 +267,33 @@ export default defineNuxtConfig({
             [v-cloak] { display: none !important; }
           `,
           type: 'text/css'
+        }
+      ],
+
+      // JSON-LD 结构化数据（搜索引擎富摘要）
+      script: [
+        {
+          type: 'application/ld+json',
+          children: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            name: '基米导航',
+            url: 'https://tianmiao.site',
+            description: '精选开发者技术栈导航，Go、Node.js、Bun、Rust 后端生态，React、Vue、Angular、Svelte 前端框架，uni-app、React Native、Flutter 跨平台开发，AI 服务、Web3 区块链、云原生部署一站式资源汇聚。',
+            author: {
+              '@type': 'Person',
+              name: '天渺studio'
+            },
+            inLanguage: ['zh-CN', 'en'],
+            potentialAction: {
+              '@type': 'SearchAction',
+              target: {
+                '@type': 'EntryPoint',
+                urlTemplate: 'https://tianmiao.site/search?q={search_term_string}'
+              },
+              'query-input': 'required name=search_term_string'
+            }
+          })
         }
       ]
     }

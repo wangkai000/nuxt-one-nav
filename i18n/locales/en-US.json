@@ -1,13 +1,13 @@
 {
   "app": {
-    "name": "StarNav"
+    "name": "JimiNav"
   },
   "nav": {
     "home": "Home",
     "author": "Author",
     "search": "Search",
     "searchPlaceholder": "Search navigation...",
-    "bookmark": "Bookmark StarNav",
+    "bookmark": "Bookmark JimiNav",
     "shortcut": "Shortcut",
     "submit": "Submit Site",
     "about": "About",
@@ -20,8 +20,8 @@
     "noResults": "No Results"
   },
   "footer": {
-    "copyright": "StarNav",
-    "slogan": "Carefully curated high-quality website navigation",
+    "copyright": "JimiNav",
+    "slogan": "Curated high-quality website navigation for dev tools, AI services & cloud platforms",
     "madeWith": "Made with",
     "and": "and",
     "built": "Built with"
@@ -54,12 +54,12 @@
     "copyLink": "Copy Link",
     "related": "Related Sites",
     "uncategorized": "Uncategorized",
-    "pageTitle": "{title} - StarNav",
+    "pageTitle": "{title} - JimiNav",
     "notFoundTitle": "Not Found"
   },
   "about": {
     "features": "Features",
-    "feature1": "Carefully curated high-quality website navigation",
+    "feature1": "Curated high-quality website navigation for dev tools, AI services & cloud platforms",
     "feature2": "Search & Filter",
     "feature3": "Dark Mode Support",
     "feature4": "Built with Nuxt 4",
@@ -69,10 +69,10 @@
     "openSourceDesc": "This project is fully open source. Star and contributions are welcome."
   },
   "seo": {
-    "title": "StarNav - Discover Great Websites",
-    "description": "StarNav, carefully curated high-quality website navigation for efficient work and life",
-    "keywords": "web navigation,website directory,StarNav,useful tools,dev resources,AI tools",
-    "aboutTitle": "About - StarNav",
-    "aboutDescription": "About StarNav - Discover Great Websites"
+    "title": "JimiNav - Discover Quality Websites",
+    "description": "JimiNav, curated high-quality website navigation for dev tools, AI services & cloud platforms",
+    "keywords": "JimiNav,web navigation,dev tools,AI directory,cloud platforms,useful websites",
+    "aboutTitle": "About - JimiNav",
+    "aboutDescription": "About JimiNav - Discover Quality Websites"
   }
 }

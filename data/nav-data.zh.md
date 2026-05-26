@@ -1,4 +1,4 @@
-# 星途导航 导航数据
+# 基米导航 导航数据
 
 > 由 nav-data.generated.json 自动生成
 
@@ -294,6 +294,19 @@
 - [mysql2](https://github.com/sidorares/node-mysql2) - mysql2 是 MySQL 的 Node.js 客户端，支持预处理语句和连接池，比 mysql 模块更快。 | icon: https://github.com/favicon.ico | tags: Node.js, MySQL, 数据库, 客户端
 - [ioredis](https://github.com/luin/ioredis) - ioredis 是高性能的 Redis 客户端，支持集群、哨兵、管道和 Lua 脚本。 | icon: https://github.com/favicon.ico | tags: Node.js, Redis, 缓存, 客户端
 
+## 消息队列/通信
+> id: nodejs-queue | icon: mdi:message-outline
+
+- [BullMQ](https://bullmq.io/) - BullMQ 是 Node.js 最流行的 Redis 驱动消息队列，支持延迟任务、重复任务、优先级队列和工作流编排，适合微服务和后台任务调度。 | icon: https://bullmq.io/favicon.ico | tags: Node.js, 消息队列, Redis, 任务调度, 微服务
+- [RabbitMQ](https://www.rabbitmq.com/) - RabbitMQ 是开源消息代理，支持 AMQP、MQTT、STOMP 协议和多种消息模式，企业级消息队列解决方案。 | icon: https://www.rabbitmq.com/favicon.ico | tags: 消息队列, RabbitMQ, AMQP, MQTT, 企业级, 微服务
+- [Apache Kafka](https://kafka.apache.org/) - Kafka 是 Apache 开源分布式事件流平台，高吞吐、持久化，用于实时数据管道和流处理。 | icon: https://kafka.apache.org/favicon.ico | tags: 消息队列, Kafka, 流处理, 事件流, 高吞吐, 分布式
+- [NATS](https://nats.io/) - NATS 是高性能云原生消息系统，极低延迟，支持发布/订阅、请求/回复和 JetStream 持久化。 | icon: https://nats.io/favicon.ico | tags: 消息队列, NATS, 云原生, 高性能, 边缘计算
+- [MQTT.js](https://github.com/mqttjs/MQTT.js) - MQTT.js 是 Node.js 的 MQTT 协议客户端，适用于 IoT 物联网设备和轻量级消息推送场景。 | icon: https://github.com/favicon.ico | tags: Node.js, MQTT, IoT, 物联网, 消息推送
+- [Socket.io](https://socket.io/) - Socket.IO 是 Node.js 实时双向通信库，支持 WebSocket 和长轮询降级，适用于聊天、协作、实时通知。 | icon: https://socket.io/favicon.ico | tags: Node.js, WebSocket, 实时通信, 双向, 事件驱动
+- [uWebSockets.js](https://github.com/uNetworking/uWebSockets.js) - uWebSockets.js 是 Node.js 的超高性能 WebSocket 和 HTTP 服务器，C++ 底层实现，延迟极低。 | icon: https://github.com/favicon.ico | tags: Node.js, WebSocket, 高性能, C++, 实时
+- [GraphQL Yoga](https://the-guild.dev/graphql/yoga-server) - GraphQL Yoga 是跨运行时的 GraphQL 服务端框架，支持 Node.js、Bun、Deno、Cloudflare Workers，提供订阅和 SSE 实时能力。 | icon: https://the-guild.dev/favicon.ico | tags: Node.js, GraphQL, API, 实时, 跨运行时
+- [gRPC-Node](https://grpc.io/docs/languages/node/) - gRPC Node.js 是 Google 高性能 RPC 框架的 Node.js 实现，基于 HTTP/2 和 Protocol Buffers，适用于微服务间通信。 | icon: https://grpc.io/favicon.ico | tags: Node.js, gRPC, RPC, HTTP2, 微服务, Protocol Buffers
+
 # Go生态
 > id: go-ecosystem | icon: logos:go
 
@@ -421,8 +434,14 @@
 # Bun生态
 > id: bun-ecosystem | icon: logos:bun
 
+## Bun运行时
+> id: bun-runtime | icon: logos:bun
+
 - [Bun](https://bun.sh/) - Bun 是快速的 JavaScript 运行时、打包器、测试运行器和包管理器。 | icon: https://bun.sh/favicon.ico | tags: Bun, 运行时, 打包器, JavaScript
 - [Elysia](https://elysiajs.com/) - Elysia 是符合人体工程学的 Bun Web 框架，专注于类型安全和性能。 | icon: https://elysiajs.com/favicon.ico | tags: Node.js, Bun, 高性能, TypeScript
+- [Hono](https://hono.dev/) - Hono 是 ultrafast 的 Web 框架，支持 Cloudflare Workers、Deno、Bun 等边缘运行时。 | icon: https://hono.dev/favicon.ico | tags: Node.js, 边缘计算, 高性能, TypeScript, Bun
+- [Bun SQLite](https://bun.sh/docs/api/sqlite) - Bun 内置 SQLite 支持，零配置直接在 Bun 运行时中使用高性能 SQLite 数据库。 | icon: https://bun.sh/favicon.ico | tags: Bun, SQLite, 数据库, 内置
+- [Bun FFI](https://bun.sh/docs/api/ffi) - Bun FFI 提供高吞吐的 Rust/C++/Zig 原生扩展开发接口，无需绑定层。 | icon: https://bun.sh/favicon.ico | tags: Bun, FFI, Rust, C++, 原生扩展
 
 # 实用工具
 > id: tools | icon: fluent-emoji:toolbox

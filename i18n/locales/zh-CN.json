@@ -1,13 +1,13 @@
 {
   "app": {
-    "name": "星途导航"
+    "name": "基米导航"
   },
   "nav": {
     "home": "首页",
     "author": "作者",
     "search": "搜索导航",
     "searchPlaceholder": "搜索导航...",
-    "bookmark": "欢迎收藏星途导航",
+    "bookmark": "欢迎收藏基米导航",
     "shortcut": "快捷键",
     "submit": "网站提交",
     "about": "关于导航",
@@ -20,8 +20,8 @@
     "noResults": "无数据"
   },
   "footer": {
-    "copyright": "星途导航",
-    "slogan": "精心挑选的高质量网站导航",
+    "copyright": "基米导航",
+    "slogan": "精选高质量网站导航，开发工具、AI 服务、云平台一站直达",
     "madeWith": "用",
     "and": "和",
     "built": "构建"
@@ -54,12 +54,12 @@
     "copyLink": "复制链接",
     "related": "同分类推荐",
     "uncategorized": "未分类",
-    "pageTitle": "{title} - 星途导航",
+    "pageTitle": "{title} - 基米导航",
     "notFoundTitle": "未找到"
   },
   "about": {
     "features": "特色功能",
-    "feature1": "精心挑选的高质量网站导航",
+    "feature1": "精选高质量网站导航，开发工具、AI 服务、云平台一站直达",
     "feature2": "搜索与筛选",
     "feature3": "深色模式支持",
     "feature4": "基于 Nuxt 4 构建",
@@ -69,10 +69,10 @@
     "openSourceDesc": "本项目完全开源，欢迎 Star 和贡献代码。"
   },
   "seo": {
-    "title": "星途导航 - 发现精彩网站",
-    "description": "星途导航，精心挑选的高质量网站导航，助你高效工作与生活",
-    "keywords": "资源导航,网站导航,星途导航,导航站点,实用工具,开发资源,AI工具",
-    "aboutTitle": "关于 - 星途导航",
-    "aboutDescription": "关于星途导航 - 发现精彩网站"
+    "title": "基米导航 - 发现优质网站",
+    "description": "基米导航，精选高质量网站导航，开发工具、AI 服务、云平台一站直达",
+    "keywords": "基米导航,网站导航,开发工具,AI导航,云平台,实用网站,资源导航",
+    "aboutTitle": "关于 - 基米导航",
+    "aboutDescription": "关于基米导航 - 发现优质网站"
   }
 }
