@@ -14,7 +14,7 @@
               <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
             </svg>
           </div>
-          <span v-show="!collapsed" class="text-base font-bold text-gray-900 dark:text-white">{{ $t('app.name') }}</span>
+          <span v-show="!collapsed" class="text-base font-bold text-gray-900 dark:text-white">基米导航</span>
         </a>
       </div>
 
@@ -73,13 +73,13 @@
           <el-menu-item index="submit" @click="openSubmit">
             <Icon icon="fluent-emoji:plus" style="width: 20px; height: 20px; min-width: 20px; min-height: 20px; margin-right: 12px;" />
             <template #title>
-              <span>{{ $t('nav.submit') }}</span>
+              <span>网站提交</span>
             </template>
           </el-menu-item>
           <el-menu-item index="about" @click="openAbout">
             <Icon icon="fluent-emoji:information" style="width: 20px; height: 20px; min-width: 20px; min-height: 20px; margin-right: 12px;" />
             <template #title>
-              <span>{{ $t('nav.about') }}</span>
+              <span>关于导航</span>
             </template>
           </el-menu-item>
         </el-menu>

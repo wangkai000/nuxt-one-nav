@@ -27,56 +27,8 @@ export default defineNuxtConfig({
   modules: [
     '@element-plus/nuxt',      // Element Plus Vue 3 组件库
     '@nuxtjs/color-mode',      // 暗色模式支持
-    '@nuxtjs/i18n',            // 国际化支持
     '@vite-pwa/nuxt'          // PWA 支持
   ],
-
-  // ========== i18n 国际化配置 ==========
-  i18n: {
-    // 默认语言
-    defaultLocale: 'zh',
-    // 支持的语言列表（使用短代码用于 URL）
-    locales: [
-      {
-        code: 'zh',
-        name: '中文',
-        file: 'zh-CN.json'
-      },
-      {
-        code: 'en',
-        name: 'English',
-        file: 'en-US.json'
-      }
-    ],
-    // 语言文件目录
-    langDir: 'locales/',
-    // 使用 vue-i18n 配置文件（使用相对项目根目录的路径）
-    vueI18n: '~/i18n/config.ts',
-    // 禁用优化翻译指令警告
-    bundle: {
-      optimizeTranslationDirective: false
-    },
-    // 检测浏览器语言
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_locale',
-      redirectOn: 'root'
-    },
-    // 策略: prefix — 所有语言都有前缀 /zh/ 和 /en/
-    strategy: 'prefix',
-    // 自定义路由路径
-    customRoutes: 'config',
-    pages: {
-      'index.vue': {
-        'zh-CN': '/',
-        'en-US': '/'
-      },
-      'about.vue': {
-        'zh-CN': '/about',
-        'en-US': '/about'
-      }
-    },
-  },
 
   // ========== PWA 配置 ==========
   pwa: {
@@ -284,7 +236,7 @@ export default defineNuxtConfig({
               '@type': 'Person',
               name: '天渺studio'
             },
-            inLanguage: ['zh-CN', 'en'],
+            inLanguage: 'zh-CN',
             potentialAction: {
               '@type': 'SearchAction',
               target: {

@@ -26,7 +26,7 @@
       <!-- 桌面端导航 -->
       <nav class="hidden xl:flex items-center gap-1">
         <!-- 收缩/展开侧边栏按钮 -->
-        <el-button text @click="toggleSidebar" :title="collapsed ? $t('nav.expand') : $t('nav.collapse')">
+        <el-button text @click="toggleSidebar" :title="collapsed ? '展开' : '收起'">
           <!-- 使用更简洁的折叠图标 -->
           <svg v-if="collapsed" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M4 6h16M4 12h16M4 18h16" />
@@ -38,7 +38,7 @@
 
         <el-button text @click="refreshPage">
           <Icon icon="fluent-emoji:house" class="w-4 h-4 mr-1" />
-          {{ $t('nav.home') }}
+          首页
         </el-button>
         <a
           href="https://tianmiao.site/"
@@ -48,7 +48,7 @@
           style="text-decoration: none;"
         >
           <Icon icon="fluent-emoji:technologist" class="w-4 h-4 mr-1" />
-          {{ $t('nav.author') }}
+          作者
         </a>
 
       </nav>
@@ -65,7 +65,7 @@
           <input
             v-model="searchInput"
             type="search"
-            :placeholder="$t('nav.searchPlaceholder')"
+            placeholder="搜索导航站..."
             class="w-36 lg:w-46 h-9 pl-9 pr-4 text-sm rounded-full border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50 text-gray-900 dark:text-gray-100 placeholder:text-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
             @input="handleInput"
             @search="handleSearchClear"
@@ -76,7 +76,7 @@
 
       <!-- 收藏提示（仅桌面端显示） -->
       <div class="hidden lg:flex items-center text-xs text-gray-500 dark:text-gray-400 mr-2">
-        <span>{{ $t('nav.bookmark') }}</span>
+        <span>收藏本站</span>
         <span class="mx-1 text-gray-300">|</span>
         <kbd class="px-1.5 py-0.5 bg-gray-100 dark:bg-gray-800 rounded text-gray-600 dark:text-gray-300 font-mono">Ctrl</kbd>
         <span class="mx-1">(</span>
@@ -86,35 +86,6 @@
         <kbd class="px-1.5 py-0.5 bg-gray-100 dark:bg-gray-800 rounded text-gray-600 dark:text-gray-300 font-mono">D</kbd>
       </div>
 
-      <!-- 语言切换 -->
-      <div class="flex items-center">
-        <el-dropdown trigger="click" @command="handleLangChange">
-          <button
-            class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-            :title="$t('lang.switch')"
-          >
-            <Icon icon="mdi:translate" class="w-5 h-5 text-gray-600 dark:text-gray-400" />
-          </button>
-          <template #dropdown>
-            <el-dropdown-menu>
-              <el-dropdown-item command="zh" :disabled="locale === 'zh'">
-                <span class="flex items-center gap-2">
-                  <span class="text-sm"></span>
-                  <span>{{ $t('lang.zh') }}</span>
-                </span>
-              </el-dropdown-item>
-              <el-dropdown-item command="en" :disabled="locale === 'en'">
-                <span class="flex items-center gap-2">
-                  <span class="text-sm"></span>
-                  <span>{{ $t('lang.en') }}</span>
-                </span>
-              </el-dropdown-item>
-            </el-dropdown-menu>
-          </template>
-        </el-dropdown>
-      </div>
-
-      
     </div>
   </el-header>
 </template>
@@ -123,18 +94,8 @@
 import { Icon } from '@iconify/vue'
 import { useDebounceFn } from '@vueuse/core'
 
-const { locale, setLocale } = useI18n()
-const switchLocalePath = useSwitchLocalePath()
-
 const emit = defineEmits(['toggle-mobile-menu'])
 const { query, setQuery, clear } = useSearch()
-
-// 切换语言
-const handleLangChange = async (lang: string) => {
-  await setLocale(lang)
-  // 使用 Nuxt navigateTo 跳转到对应语言路径，重新加载导航数据
-  navigateTo(switchLocalePath(lang))
-}
 
 // 侧边栏折叠状态
 const collapsed = useState<boolean>('sidebar-collapsed', () => false)

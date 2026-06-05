@@ -20,7 +20,7 @@
               <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
             </svg>
           </div>
-          <span class="text-base font-bold text-gray-900 dark:text-white">{{ $t('app.name') }}</span>
+          <span class="text-base font-bold text-gray-900 dark:text-white">基米导航</span>
         </div>
       </template>
 
@@ -67,14 +67,14 @@
               class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer text-gray-700 dark:text-gray-300"
             >
               <Icon icon="fluent-emoji:plus" class="w-5 h-5 mr-3" />
-              <span>{{ $t('nav.submit') }}</span>
+              <span>提交网站</span>
             </div>
             <div
               @click="openAbout"
               class="flex items-center px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer text-gray-700 dark:text-gray-300"
             >
               <Icon icon="fluent-emoji:information" class="w-5 h-5 mr-3" />
-              <span>{{ $t('nav.about') }}</span>
+              <span>关于</span>
             </div>
           </div>
         </div>

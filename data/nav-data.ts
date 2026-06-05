@@ -3,30 +3,17 @@ import type { NavItem, Category } from '~/types/nav'
 
 export type { NavItem, Category }
 
-// 动态导入对应语言的数据
-const loadNavDataForLocale = async (locale: string) => {
-  try {
-    if (locale === 'en') {
-      const module = await import('./nav-data.en.generated.json')
-      return module.default || module
-    }
-  } catch (e) {
-    console.warn('Failed to load English data, falling back to Chinese')
-  }
-  // 默认加载中文
-  const module = await import('./nav-data.zh.generated.json')
-  return module.default || module
-}
+// 加载中文导航数据
+import zhData from './nav-data.zh.generated.json'
 
 // 响应式数据 composable
 export const useNavData = () => {
   const navData = useState<NavItem[]>('nav-data', () => [])
   const categories = useState<Category[]>('nav-categories', () => [])
 
-  const initNavData = async (locale: string) => {
-    const data = await loadNavDataForLocale(locale)
-    navData.value = data.sites as NavItem[]
-    categories.value = data.categories as Category[]
+  const initNavData = () => {
+    navData.value = zhData.sites as NavItem[]
+    categories.value = zhData.categories as Category[]
   }
 
   const getLeafCategories = computed(() =>

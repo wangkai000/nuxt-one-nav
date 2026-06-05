@@ -11,14 +11,14 @@
               <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" class="logo-polygon"/>
             </svg>
           </div>
-          <div class="logo-text">{{ $t('app.name') }}</div>
+          <div class="logo-text">基米导航</div>
         </div>
         <!-- 进度条 -->
         <div class="progress-bar">
           <div class="progress-fill"></div>
         </div>
         <!-- 加载文字 -->
-        <div class="loading-text">{{ $t('loading.text') }}</div>
+        <div class="loading-text">加载中...</div>
       </div>
     </div>
 
@@ -54,15 +54,9 @@ onMounted(() => {
   }, 5000)
 })
 
-// 初始化导航数据（根据当前语言）
+// 初始化导航数据
 const { initNavData } = useNavData()
-const { locale: currentLocale } = useI18n()
-await initNavData(currentLocale.value)
-
-// 监听语言切换，重新加载导航数据
-watch(currentLocale, async (newLocale) => {
-  await initNavData(newLocale)
-})
+initNavData()
 
 // Element Plus 暗色模式支持
 const colorMode = useColorMode()

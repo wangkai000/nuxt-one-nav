@@ -12,7 +12,7 @@
       </div>
       <!-- 加载文字 -->
       <p class="text-gray-600 dark:text-gray-400 text-sm font-medium">
-        {{ $t('loading.text') }}
+        加载中...
       </p>
     </div>
   </div>

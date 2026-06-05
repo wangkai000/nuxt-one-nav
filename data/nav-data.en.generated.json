@@ -2,7 +2,7 @@
   "meta": {
     "name": "StarNav Navigation Data",
     "version": "2.0.0",
-    "lastUpdated": "2026-05-26",
+    "lastUpdated": "2026-06-05",
     "description": "Navigation data for Nuxt 4 site (Markdown data source)",
     "totalSites": 279,
     "totalCategories": 15

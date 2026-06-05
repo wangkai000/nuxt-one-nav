@@ -8,7 +8,7 @@
       <!-- 内容 -->
       <div class="relative px-8 py-12 md:py-16">
         <h1 class="inline px-4 py-2 rounded-lg bg-white/90 dark:bg-[#1a1a2e]/90 text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-          {{ $t('nav.about') }} - {{ $t('footer.copyright') }}
+          关于导航 - 基米导航
         </h1>
       </div>
     </div>
@@ -17,39 +17,39 @@
     <div class="bg-white/60 dark:bg-[#1e293b]/60 backdrop-blur-[2px] rounded-2xl border border-gray-200 dark:border-gray-800 p-8">
       <div class="max-w-2xl mx-auto space-y-6 text-gray-700 dark:text-gray-300">
         <p class="text-lg leading-relaxed">
-          {{ $t('footer.slogan') }}
+          精选高质量网站导航，开发工具、AI 服务、云平台一站直达
         </p>
 
         <div class="border-t border-gray-200 dark:border-gray-700 pt-6 space-y-4">
-          <h2 class="text-xl font-bold text-gray-900 dark:text-white">{{ $t('about.features') }}</h2>
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white">特色功能</h2>
           <ul class="space-y-3">
             <li class="flex items-start gap-3">
               <span class="text-blue-500 mt-1">•</span>
-              <span>{{ $t('about.feature1') }}</span>
+              <span>精选高质量网站导航，开发工具、AI 服务、云平台一站直达</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-blue-500 mt-1">•</span>
-              <span>{{ $t('about.feature2') }}</span>
+              <span>搜索与筛选</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-blue-500 mt-1">•</span>
-              <span>{{ $t('about.feature3') }}</span>
+              <span>深色模式支持</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-blue-500 mt-1">•</span>
-              <span>{{ $t('about.feature4') }}</span>
+              <span>基于 Nuxt 4 构建</span>
             </li>
           </ul>
         </div>
 
         <div class="border-t border-gray-200 dark:border-gray-700 pt-6 space-y-4">
-          <h2 class="text-xl font-bold text-gray-900 dark:text-white">{{ $t('about.contact') }}</h2>
-          <p>{{ $t('about.contactDesc') }}</p>
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white">联系方式</h2>
+          <p>欢迎联系交换友链。</p>
         </div>
 
         <div class="border-t border-gray-200 dark:border-gray-700 pt-6 space-y-4">
-          <h2 class="text-xl font-bold text-gray-900 dark:text-white">{{ $t('about.openSource') }}</h2>
-          <p>{{ $t('about.openSourceDesc') }}</p>
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white">开源项目</h2>
+          <p>本项目完全开源，欢迎 Star 和贡献代码。</p>
           <div class="flex flex-wrap gap-4">
             <a
               href="https://github.com/wangkai000/nuxt-one-nav"
@@ -79,9 +79,8 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
 useHead({
-  title: () => t('seo.aboutTitle'),
-  meta: [{ name: 'description', content: () => t('seo.aboutDescription') }]
+  title: '关于 - 基米导航',
+  meta: [{ name: 'description', content: '关于基米导航 - 发现优质网站' }]
 })
 </script>
