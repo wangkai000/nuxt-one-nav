@@ -11,9 +11,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 const rootDir = resolve(__dirname, '..')
 
 // 支持的语言列表
-const lang = (process.env.SITE_LANG || 'zh').trim()
 const languages = [
-  { code: lang, file: `nav-data.${lang}.md`, out: `nav-data.${lang}.generated.json` }
+  { code: 'zh', file: 'nav-data.zh.md', out: 'nav-data.zh.generated.json' }
 ]
 
 let hasError = false

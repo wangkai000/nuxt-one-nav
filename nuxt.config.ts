@@ -1,8 +1,7 @@
 // Nuxt 4 配置文件
 // 文档: https://nuxt.com.cn/docs/configuration/configuration-reference
 
-const lang = (process.env.SITE_LANG || 'zh').trim()
-const siteConfig = await import(`./config/site.${lang}`).then(m => m.default)
+const siteConfig = await import('./config/site.zh').then(m => m.default)
 
 export default defineNuxtConfig({
   // 兼容日期，用于确保 Nuxt 版本兼容性
@@ -19,7 +18,7 @@ export default defineNuxtConfig({
   // ========== 运行时配置 ==========
   runtimeConfig: {
     public: {
-      lang,
+      lang: 'zh',
       siteConfig
     }
   },
@@ -174,7 +173,7 @@ export default defineNuxtConfig({
       title: siteConfig.title,
 
       // HTML 标签属性（动态语言由 i18n 处理）
-      htmlAttrs: { lang: lang === 'zh' ? 'zh-CN' : 'en' },
+      htmlAttrs: { lang: 'zh-CN' },
 
       // Meta 标签（SEO 和社交分享）
       meta: [
@@ -192,7 +191,7 @@ export default defineNuxtConfig({
         { property: 'og:url', content: 'https://tianmiao.site' },
         { property: 'og:type', content: 'website' },
         { property: 'og:image', content: 'https://s21.ax1x.com/2024/12/22/pAXtJat.jpg' },
-        { property: 'og:locale', content: lang === 'zh' ? 'zh_CN' : 'en_US' },
+        { property: 'og:locale', content: 'zh_CN' },
         { property: 'og:site_name', content: siteConfig.title },
 
         // Twitter Card（Twitter 分享）
@@ -247,7 +246,7 @@ export default defineNuxtConfig({
               '@type': 'Person',
               name: '天渺studio'
             },
-            inLanguage: lang === 'zh' ? 'zh-CN' : 'en',
+            inLanguage: 'zh-CN',
             potentialAction: {
               '@type': 'SearchAction',
               target: {
@@ -289,7 +288,7 @@ export default defineNuxtConfig({
   // 仅在 SSR/SSG 模式下生效
   nitro: {
     output: {
-      dir: `.output/${lang}`
+      dir: '.output/public'
     },
     prerender: {
       // 预渲染失败时不中断构建（可能有一些 SSR 警告但仍生成静态文件）
