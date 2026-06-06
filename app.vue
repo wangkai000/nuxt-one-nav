@@ -11,7 +11,7 @@
               <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" class="logo-polygon"/>
             </svg>
           </div>
-          <div class="logo-text">基米导航</div>
+          <div class="logo-text">{{ config.title }}</div>
         </div>
         <!-- 进度条 -->
         <div class="progress-bar">
@@ -33,6 +33,9 @@
 
 <script setup lang="ts">
 import { useNavData } from '~/data/nav-data'
+
+const config = useRuntimeConfig().public.siteConfig
+
 // 控制初始加载遮罩
 const isLoaded = ref(false)
 

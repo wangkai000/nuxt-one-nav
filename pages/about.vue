@@ -8,7 +8,7 @@
       <!-- 内容 -->
       <div class="relative px-8 py-12 md:py-16">
         <h1 class="inline px-4 py-2 rounded-lg bg-white/90 dark:bg-[#1a1a2e]/90 text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-          关于导航 - 基米导航
+          {{ config.nav.about }} - {{ config.title }}
         </h1>
       </div>
     </div>
@@ -79,8 +79,10 @@
 </template>
 
 <script setup lang="ts">
+const config = useRuntimeConfig().public.siteConfig
+
 useHead({
-  title: '关于 - 基米导航',
-  meta: [{ name: 'description', content: '关于基米导航 - 发现优质网站' }]
+  title: `${config.nav.about} - ${config.title}`,
+  meta: [{ name: 'description', content: `${config.nav.about} ${config.title} - ${config.description}` }]
 })
 </script>

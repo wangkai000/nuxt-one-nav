@@ -9,7 +9,9 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "generate": "npm run generate:zh && npm run generate:en",
+    "generate:zh": "set SITE_LANG=zh && nuxt generate",
+    "generate:en": "set SITE_LANG=en && nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "prepare": "nuxt prepare",

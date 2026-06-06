@@ -38,7 +38,7 @@
 
         <el-button text @click="refreshPage">
           <Icon icon="fluent-emoji:house" class="w-4 h-4 mr-1" />
-          首页
+          {{ config.nav.home }}
         </el-button>
         <a
           href="https://tianmiao.site/"
@@ -48,7 +48,7 @@
           style="text-decoration: none;"
         >
           <Icon icon="fluent-emoji:technologist" class="w-4 h-4 mr-1" />
-          作者
+          {{ config.nav.author }}
         </a>
 
       </nav>
@@ -65,7 +65,7 @@
           <input
             v-model="searchInput"
             type="search"
-            placeholder="搜索导航站..."
+            :placeholder="config.nav.searchPlaceholder"
             class="w-36 lg:w-46 h-9 pl-9 pr-4 text-sm rounded-full border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50 text-gray-900 dark:text-gray-100 placeholder:text-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
             @input="handleInput"
             @search="handleSearchClear"
@@ -76,7 +76,7 @@
 
       <!-- 收藏提示（仅桌面端显示） -->
       <div class="hidden lg:flex items-center text-xs text-gray-500 dark:text-gray-400 mr-2">
-        <span>收藏本站</span>
+        <span>{{ config.nav.bookmark }}</span>
         <span class="mx-1 text-gray-300">|</span>
         <kbd class="px-1.5 py-0.5 bg-gray-100 dark:bg-gray-800 rounded text-gray-600 dark:text-gray-300 font-mono">Ctrl</kbd>
         <span class="mx-1">(</span>
@@ -93,6 +93,8 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
 import { useDebounceFn } from '@vueuse/core'
+
+const config = useRuntimeConfig().public.siteConfig
 
 const emit = defineEmits(['toggle-mobile-menu'])
 const { query, setQuery, clear } = useSearch()

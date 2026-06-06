@@ -1,0 +1,5186 @@
+{
+  "meta": {
+    "name": "StarNav Navigation Data",
+    "version": "2.0.0",
+    "lastUpdated": "2026-06-06",
+    "description": "Navigation data for Nuxt 4 site (Markdown data source)",
+    "totalSites": 335,
+    "totalCategories": 16
+  },
+  "categories": [
+    {
+      "id": "all",
+      "name": "Webmaster's Picks",
+      "icon": "fluent-emoji:star",
+      "count": 1
+    },
+    {
+      "id": "ai",
+      "name": "AI Tools",
+      "icon": "fluent-emoji:robot",
+      "children": [
+        {
+          "id": "ai-nav",
+          "name": "AI Navigation",
+          "icon": "fluent-emoji:compass",
+          "count": 9,
+          "parentId": "ai"
+        },
+        {
+          "id": "ai-writing",
+          "name": "AI Writing",
+          "icon": "fluent-emoji:pen",
+          "count": 3,
+          "parentId": "ai"
+        },
+        {
+          "id": "ai-framework",
+          "name": "AI Development Frameworks",
+          "icon": "fluent-emoji:building-construction",
+          "count": 4,
+          "parentId": "ai"
+        },
+        {
+          "id": "ai-skill",
+          "name": "AI Skills",
+          "icon": "fluent-emoji:flexed-biceps",
+          "count": 1,
+          "parentId": "ai"
+        },
+        {
+          "id": "ai-local",
+          "name": "AI Local Runtime",
+          "icon": "mdi:desktop-classic",
+          "count": 5,
+          "parentId": "ai"
+        },
+        {
+          "id": "ai-visual",
+          "name": "AI Visual Platforms",
+          "icon": "fluent-emoji:artist-palette",
+          "count": 2,
+          "parentId": "ai"
+        },
+        {
+          "id": "ai-content",
+          "name": "AI Content Generation",
+          "icon": "fluent-emoji:artist",
+          "count": 10,
+          "parentId": "ai"
+        },
+        {
+          "id": "ai-agent",
+          "name": "AI Assistants / Agents",
+          "icon": "fluent-emoji:robot",
+          "count": 2,
+          "parentId": "ai"
+        }
+      ],
+      "count": 36
+    },
+    {
+      "id": "web3",
+      "name": "Web3",
+      "icon": "logos:ethereum",
+      "children": [
+        {
+          "id": "web3-info",
+          "name": "Web3 News",
+          "icon": "logos:ethereum",
+          "count": 20,
+          "parentId": "web3"
+        },
+        {
+          "id": "web3-lib",
+          "name": "Web3 Libraries",
+          "icon": "logos:metamask-icon",
+          "count": 13,
+          "parentId": "web3"
+        },
+        {
+          "id": "web3-framework",
+          "name": "Web3 Contract Frameworks",
+          "icon": "logos:solidity",
+          "count": 7,
+          "parentId": "web3"
+        },
+        {
+          "id": "web3-lang",
+          "name": "Web3 Contract Languages",
+          "icon": "vscode-icons:file-type-solidity",
+          "count": 8,
+          "parentId": "web3"
+        }
+      ],
+      "count": 48
+    },
+    {
+      "id": "frontend",
+      "name": "Frontend Ecosystem",
+      "icon": "logos:javascript",
+      "children": [
+        {
+          "id": "frontend-react",
+          "name": "React Ecosystem",
+          "icon": "logos:react",
+          "count": 9,
+          "parentId": "frontend"
+        },
+        {
+          "id": "frontend-vue",
+          "name": "Vue Ecosystem",
+          "icon": "logos:vue",
+          "count": 5,
+          "parentId": "frontend"
+        },
+        {
+          "id": "frontend-other",
+          "name": "Other Frameworks",
+          "icon": "logos:svelte-icon",
+          "count": 10,
+          "parentId": "frontend"
+        },
+        {
+          "id": "frontend-ui-lib",
+          "name": "UI Component Libraries",
+          "icon": "logos:storybook-icon",
+          "count": 15,
+          "parentId": "frontend"
+        },
+        {
+          "id": "frontend-css",
+          "name": "CSS Frameworks",
+          "icon": "logos:tailwindcss-icon",
+          "count": 2,
+          "parentId": "frontend"
+        },
+        {
+          "id": "frontend-build",
+          "name": "Build Tools",
+          "icon": "logos:vitejs",
+          "count": 7,
+          "parentId": "frontend"
+        },
+        {
+          "id": "frontend-webgl",
+          "name": "WebGL 3D",
+          "icon": "logos:threejs",
+          "count": 2,
+          "parentId": "frontend"
+        },
+        {
+          "id": "frontend-ai",
+          "name": "AI Dev Libraries",
+          "icon": "fluent-emoji:robot",
+          "count": 7,
+          "parentId": "frontend"
+        },
+        {
+          "id": "frontend-webgis",
+          "name": "WebGIS Mapping",
+          "icon": "fluent-emoji:world-map",
+          "count": 10,
+          "parentId": "frontend"
+        }
+      ],
+      "count": 67
+    },
+    {
+      "id": "nodejs",
+      "name": "Node.js Frameworks",
+      "icon": "logos:nodejs-icon",
+      "children": [
+        {
+          "id": "nodejs-web",
+          "name": "Web Frameworks",
+          "icon": "logos:nodejs-icon",
+          "count": 7,
+          "parentId": "nodejs"
+        },
+        {
+          "id": "nodejs-threads",
+          "name": "Multithreading / Concurrency",
+          "icon": "logos:nodejs-icon",
+          "count": 5,
+          "parentId": "nodejs"
+        },
+        {
+          "id": "nodejs-database",
+          "name": "Database / ORM",
+          "icon": "mdi:database",
+          "count": 11,
+          "parentId": "nodejs"
+        },
+        {
+          "id": "nodejs-queue",
+          "name": "Message Queues / Communication",
+          "icon": "mdi:message-outline",
+          "count": 9,
+          "parentId": "nodejs"
+        }
+      ],
+      "count": 32
+    },
+    {
+      "id": "go-ecosystem",
+      "name": "Go Ecosystem",
+      "icon": "logos:go",
+      "count": 12
+    },
+    {
+      "id": "cloud",
+      "name": "Cloud Platforms",
+      "icon": "fluent-emoji:cloud",
+      "children": [
+        {
+          "id": "cloud-hosting",
+          "name": "Frontend Deployment Platforms",
+          "icon": "fluent-emoji:rocket",
+          "count": 8,
+          "parentId": "cloud"
+        },
+        {
+          "id": "cloud-major",
+          "name": "Major Cloud Providers",
+          "icon": "fluent-emoji:globe-showing-americas",
+          "count": 9,
+          "parentId": "cloud"
+        },
+        {
+          "id": "cloud-serverless",
+          "name": "Serverless / Edge Functions",
+          "icon": "fluent-emoji:cloud-with-lightning",
+          "count": 7,
+          "parentId": "cloud"
+        },
+        {
+          "id": "cloud-automation",
+          "name": "Workflow Automation",
+          "icon": "fluent-emoji:repeat-button",
+          "count": 3,
+          "parentId": "cloud"
+        },
+        {
+          "id": "cloud-baas",
+          "name": "BaaS (Backend as a Service)",
+          "icon": "fluent-emoji:floppy-disk",
+          "count": 3,
+          "parentId": "cloud"
+        },
+        {
+          "id": "cloud-cdn",
+          "name": "CDN & DNS & Domains",
+          "icon": "fluent-emoji:globe-with-meridians",
+          "count": 5,
+          "parentId": "cloud"
+        },
+        {
+          "id": "cloud-database",
+          "name": "Database Services",
+          "icon": "fluent-emoji:floppy-disk",
+          "count": 7,
+          "parentId": "cloud"
+        },
+        {
+          "id": "cloud-container",
+          "name": "Containers & Kubernetes",
+          "icon": "fluent-emoji:package",
+          "count": 9,
+          "parentId": "cloud"
+        }
+      ],
+      "count": 51
+    },
+    {
+      "id": "mobile",
+      "name": "Mobile Development",
+      "icon": "fluent-emoji:mobile-phone",
+      "count": 8
+    },
+    {
+      "id": "desktop",
+      "name": "Desktop Apps",
+      "icon": "fluent-emoji:laptop",
+      "count": 6
+    },
+    {
+      "id": "bun-ecosystem",
+      "name": "Bun Ecosystem",
+      "icon": "logos:bun",
+      "children": [
+        {
+          "id": "bun-runtime",
+          "name": "Bun Runtime",
+          "icon": "logos:bun",
+          "count": 5,
+          "parentId": "bun-ecosystem"
+        }
+      ],
+      "count": 5
+    },
+    {
+      "id": "tools",
+      "name": "Utility Tools",
+      "icon": "fluent-emoji:toolbox",
+      "count": 5
+    },
+    {
+      "id": "resources",
+      "name": "Resource Navigation",
+      "icon": "fluent-emoji:world-map",
+      "count": 26
+    },
+    {
+      "id": "game-engines",
+      "name": "Game Engines",
+      "icon": "fluent-emoji:video-game",
+      "count": 12
+    },
+    {
+      "id": "3d-modeling",
+      "name": "3D Modeling",
+      "icon": "fluent-emoji:artist-palette",
+      "count": 13
+    },
+    {
+      "id": "games",
+      "name": "Game Communities",
+      "icon": "fluent-emoji:joystick",
+      "count": 7
+    },
+    {
+      "id": "community",
+      "name": "Developer & Designer Communities",
+      "icon": "fluent-emoji:people-hugging",
+      "count": 6
+    }
+  ],
+  "sites": [
+    {
+      "id": "天渺studio",
+      "title": "天渺studio",
+      "description": "Tianmiao Studio's personal site & blog",
+      "url": "https://tianmiao.site",
+      "icon": "https://s21.ax1x.com/2024/12/22/pAXtJat.jpg",
+      "tags": [
+        "个人博客",
+        "日志"
+      ],
+      "category": "all",
+      "order": 1
+    },
+    {
+      "id": "发现ai",
+      "title": "发现AI",
+      "description": "Covers NLP, image recognition, data analysis and more, providing industry trend reports and tutorials with a clean interface and precise search.",
+      "url": "https://www.faxianai.com/",
+      "icon": "https://www.faxianai.com/favicon.ico",
+      "tags": [
+        "AI",
+        "导航"
+      ],
+      "category": "ai-nav",
+      "order": 2
+    },
+    {
+      "id": "toolify-ai",
+      "title": "Toolify.ai",
+      "description": "The world's largest AI tool library (18,000+ tools), featuring smart recommendations, user ratings, and automated updates for timeliness.",
+      "url": "https://www.toolify.ai/",
+      "icon": "https://www.toolify.ai/favicon.ico",
+      "tags": [
+        "AI",
+        "导航"
+      ],
+      "category": "ai-nav",
+      "order": 3
+    },
+    {
+      "id": "ai工具集",
+      "title": "AI工具集",
+      "description": "A well-curated AI tool collection site",
+      "url": "https://ai-bot.cn/",
+      "icon": "https://ai-bot.cn/wp-content/uploads/2023/03/ai-bot-square-logo.png",
+      "tags": [
+        "AI",
+        "导航"
+      ],
+      "category": "ai-nav",
+      "order": 4
+    },
+    {
+      "id": "aigc工具导航",
+      "title": "AIGC工具导航",
+      "description": "AIGC navigation, a comprehensive generative AI tool directory platform with the most complete categorization.",
+      "url": "https://www.aigc.cn/",
+      "icon": "https://www.aigc.cn/wp-content/uploads/2025/06/aigc-icon.png",
+      "tags": [
+        "AI",
+        "导航"
+      ],
+      "category": "ai-nav",
+      "order": 5
+    },
+    {
+      "id": "智能工具导航",
+      "title": "智能工具导航",
+      "description": "Smart tool navigation, a curated directory of popular AI tools from China and abroad.",
+      "url": "https://www.coderutil.com",
+      "icon": "https://www.coderutil.com/favicon.ico",
+      "tags": [
+        "AI",
+        "导航"
+      ],
+      "category": "ai-nav",
+      "order": 6
+    },
+    {
+      "id": "aitop100大赛平台",
+      "title": "AITOP100大赛平台",
+      "description": "AITOP100 competition platform, focused on AI tool navigation and AI competition news",
+      "url": "https://www.aitop100.cn",
+      "icon": "https://www.aitop100.cn/favicon.ico",
+      "tags": [
+        "AI",
+        "导航"
+      ],
+      "category": "ai-nav",
+      "order": 7
+    },
+    {
+      "id": "非猪ai导航",
+      "title": "非猪AI导航",
+      "description": "Curates and recommends 30,000+ AI website navigation sites from China and abroad, covering writing, image, audio, video, and coding tools to help you stay ahead.",
+      "url": "https://feizhuke.com/",
+      "icon": "https://feizhuke.com/zhulogo1.png",
+      "tags": [
+        "AI",
+        "导航"
+      ],
+      "category": "ai-nav",
+      "order": 8
+    },
+    {
+      "id": "hugging-face",
+      "title": "Hugging Face",
+      "description": "Hugging Face is an AI community platform offering models, datasets, and Spaces hosting.",
+      "url": "https://huggingface.co/",
+      "icon": "https://huggingface.co/favicon.ico",
+      "tags": [
+        "AI",
+        "社区",
+        "模型",
+        "数据集"
+      ],
+      "category": "ai-nav",
+      "order": 9
+    },
+    {
+      "id": "aihub",
+      "title": "AIHub",
+      "description": "AIHub curates 1,600+ quality AI tools across multiple categories, helping users quickly find suitable AI products.",
+      "url": "https://www.aihub.cn/",
+      "icon": "https://www.aihub.cn/favicon.ico",
+      "tags": [
+        "AI",
+        "导航"
+      ],
+      "category": "ai-nav",
+      "order": 10
+    },
+    {
+      "id": "youmind-ai-创作智能体",
+      "title": "YouMind - AI 创作智能体",
+      "description": "YouMind is an innovative creative agent that harnesses generative AI to transform diverse materials into inspired creations.",
+      "url": "https://youmind.com/",
+      "icon": "https://youmind.com/static/assets/favicon.ico",
+      "tags": [
+        "AI",
+        "资源"
+      ],
+      "category": "ai-writing",
+      "order": 11
+    },
+    {
+      "id": "笔灵ai",
+      "title": "笔灵AI",
+      "description": "AI-powered writing tool for quickly generating various documents, articles, and content",
+      "url": "https://ibiling.cn/",
+      "icon": "https://ibiling.cn/favicon.ico",
+      "tags": [
+        "AI",
+        "写作"
+      ],
+      "category": "ai-writing",
+      "order": 12
+    },
+    {
+      "id": "蛙蛙写作",
+      "title": "蛙蛙写作",
+      "description": "AI novel writing assistant, helping creators boost writing efficiency and inspiration",
+      "url": "https://wawawriter.com/",
+      "icon": "https://wawawriter.com/app/favicon.ico",
+      "tags": [
+        "AI",
+        "写作"
+      ],
+      "category": "ai-writing",
+      "order": 13
+    },
+    {
+      "id": "langchain",
+      "title": "LangChain",
+      "description": "LangChain is the leading framework for building AI applications, supporting Python and JavaScript with chaining, memory, and agent capabilities.",
+      "url": "https://www.langchain.com/",
+      "icon": "https://www.langchain.com/favicon.ico",
+      "tags": [
+        "AI",
+        "框架",
+        "Python",
+        "JavaScript",
+        "LLM"
+      ],
+      "category": "ai-framework",
+      "order": 14
+    },
+    {
+      "id": "langgraph",
+      "title": "LangGraph",
+      "description": "LangGraph is a graph workflow framework in the LangChain ecosystem for building stateful, multi-actor AI applications.",
+      "url": "https://langchain-ai.github.io/langgraph/",
+      "icon": "https://langchain-ai.github.io/langgraph/favicon.ico",
+      "tags": [
+        "AI",
+        "框架",
+        "工作流",
+        "Agent"
+      ],
+      "category": "ai-framework",
+      "order": 15
+    },
+    {
+      "id": "llamaindex",
+      "title": "LlamaIndex",
+      "description": "LlamaIndex is a data framework for building LLM applications, supporting data connection, indexing, and querying.",
+      "url": "https://www.llamaindex.ai/",
+      "icon": "https://www.llamaindex.ai/favicon.ico",
+      "tags": [
+        "AI",
+        "框架",
+        "RAG",
+        "数据"
+      ],
+      "category": "ai-framework",
+      "order": 16
+    },
+    {
+      "id": "transformers",
+      "title": "Transformers",
+      "description": "Hugging Face Transformers is the most popular pre-trained model library, supporting PyTorch, TensorFlow, and JAX.",
+      "url": "https://github.com/huggingface/transformers",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "AI",
+        "库",
+        "PyTorch",
+        "深度学习"
+      ],
+      "category": "ai-framework",
+      "order": 17
+    },
+    {
+      "id": "superpowers",
+      "title": "Superpowers",
+      "description": "Superpowers is a skill framework for AI coding assistants, providing TDD, code review, and sub-agent-driven systematic development workflows for Claude Code, Cursor, and more.",
+      "url": "https://github.com/obra/superpowers",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "AI",
+        "开发",
+        "框架",
+        "TDD",
+        "开源"
+      ],
+      "category": "ai-skill",
+      "order": 18
+    },
+    {
+      "id": "ollama",
+      "title": "Ollama",
+      "description": "Ollama is a local LLM runtime tool, supporting one-click deployment of models like Llama, Mistral, and Gemma.",
+      "url": "https://ollama.com/",
+      "icon": "https://ollama.com/favicon.ico",
+      "tags": [
+        "AI",
+        "本地模型",
+        "LLM"
+      ],
+      "category": "ai-local",
+      "order": 19
+    },
+    {
+      "id": "open-webui",
+      "title": "Open WebUI",
+      "description": "Open WebUI is an open-source self-hosted AI chat interface, compatible with Ollama and OpenAI API.",
+      "url": "https://openwebui.com/",
+      "icon": "https://openwebui.com/favicon.ico",
+      "tags": [
+        "AI",
+        "开源",
+        "聊天",
+        "自托管"
+      ],
+      "category": "ai-local",
+      "order": 20
+    },
+    {
+      "id": "localgpt",
+      "title": "LocalGPT",
+      "description": "LocalGPT is a fully localized RAG application built with LlamaIndex and LangChain.",
+      "url": "https://github.com/PromtEngineer/localGPT",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "AI",
+        "开源",
+        "RAG",
+        "本地"
+      ],
+      "category": "ai-local",
+      "order": 21
+    },
+    {
+      "id": "privategpt",
+      "title": "PrivateGPT",
+      "description": "PrivateGPT is a private document Q&A system supporting local LLMs.",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "AI",
+        "开源",
+        "RAG",
+        "私有化"
+      ],
+      "category": "ai-local",
+      "order": 22
+    },
+    {
+      "id": "llama-cpp",
+      "title": "llama.cpp",
+      "description": "llama.cpp is a pure C/C++ LLM inference engine supporting quantized models for efficient execution without a GPU.",
+      "url": "https://github.com/ggerganov/llama.cpp",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "AI",
+        "本地模型",
+        "LLM",
+        "推理",
+        "量化"
+      ],
+      "category": "ai-local",
+      "order": 23
+    },
+    {
+      "id": "dify",
+      "title": "Dify",
+      "description": "Dify is an open-source LLM application development platform for visually building AI applications.",
+      "url": "https://dify.ai/",
+      "icon": "https://dify.ai/favicon.ico",
+      "tags": [
+        "AI",
+        "开源",
+        "平台",
+        "可视化"
+      ],
+      "category": "ai-visual",
+      "order": 24
+    },
+    {
+      "id": "n8n",
+      "title": "n8n",
+      "description": "n8n is an open-source workflow automation platform supporting visual workflow creation with 400+ service integrations.",
+      "url": "https://n8n.io/",
+      "icon": "https://n8n.io/favicon.ico",
+      "tags": [
+        "AI",
+        "开源",
+        "工作流",
+        "自动化",
+        "无代码"
+      ],
+      "category": "ai-visual",
+      "order": 25
+    },
+    {
+      "id": "holopix",
+      "title": "HoloPix",
+      "description": "HoloPix - AI-powered 3D photo and video creation platform",
+      "url": "https://www.holopix.cn/",
+      "icon": "https://www.holopix.cn/favicon.ico",
+      "tags": [
+        "AI",
+        "图像",
+        "视频",
+        "3D",
+        "内容生成"
+      ],
+      "category": "ai-content",
+      "order": 26
+    },
+    {
+      "id": "taptap-ai-maker",
+      "title": "TapTap AI Maker",
+      "description": "TapTap Maker is a zero-barrier AI game creation agent designed for game enthusiasts. Chat to create, publish upon completion.",
+      "url": "https://maker.taptap.cn/",
+      "icon": "https://maker.taptap.cn/taptap-maker-logo.svg",
+      "tags": [
+        "AI",
+        "游戏",
+        "开发",
+        "游戏开发引擎"
+      ],
+      "category": "ai-content",
+      "order": 27
+    },
+    {
+      "id": "midjourney",
+      "title": "Midjourney",
+      "description": "Midjourney is a top-tier AI image generation tool, creating exquisite artwork from text descriptions.",
+      "url": "https://www.midjourney.com/",
+      "icon": "https://www.midjourney.com/favicon.ico",
+      "tags": [
+        "AI",
+        "图像",
+        "艺术",
+        "内容生成"
+      ],
+      "category": "ai-content",
+      "order": 28
+    },
+    {
+      "id": "stable-diffusion",
+      "title": "Stable Diffusion",
+      "description": "Stable Diffusion is an open-source AI image generation model, supporting local deployment and custom training.",
+      "url": "https://stability.ai/",
+      "icon": "https://stability.ai/favicon.ico",
+      "tags": [
+        "AI",
+        "图像",
+        "开源",
+        "模型"
+      ],
+      "category": "ai-content",
+      "order": 29
+    },
+    {
+      "id": "runway",
+      "title": "Runway",
+      "description": "Runway is an AI video generation platform supporting text-to-video, image animation, and more.",
+      "url": "https://runwayml.com/",
+      "icon": "https://runwayml.com/favicon.ico",
+      "tags": [
+        "AI",
+        "视频",
+        "内容生成"
+      ],
+      "category": "ai-content",
+      "order": 30
+    },
+    {
+      "id": "suno",
+      "title": "Suno",
+      "description": "Suno is an AI music generation platform that creates complete songs from text descriptions.",
+      "url": "https://suno.ai/",
+      "icon": "https://suno.ai/favicon.ico",
+      "tags": [
+        "AI",
+        "音乐",
+        "内容生成"
+      ],
+      "category": "ai-content",
+      "order": 31
+    },
+    {
+      "id": "comfyui",
+      "title": "ComfyUI",
+      "description": "ComfyUI is the most popular node-based Stable Diffusion workflow engine, supporting custom node extensions with a rich community workflow ecosystem.",
+      "url": "https://github.com/comfyanonymous/ComfyUI",
+      "icon": "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/master/web/assets/favicon.ico",
+      "tags": [
+        "AI",
+        "ComfyUI",
+        "工作流",
+        "Stable Diffusion"
+      ],
+      "category": "ai-content",
+      "order": 32
+    },
+    {
+      "id": "comfyui工作流合集-comfyworkflows",
+      "title": "ComfyUI工作流合集 - Comfyworkflows",
+      "description": "A ComfyUI workflow community with a vast collection of user-shared workflow templates, supporting search and category browsing.",
+      "url": "https://comfyworkflows.com/",
+      "icon": "https://comfyworkflows.com/favicon.ico",
+      "tags": [
+        "AI",
+        "ComfyUI",
+        "工作流",
+        "社区"
+      ],
+      "category": "ai-content",
+      "order": 33
+    },
+    {
+      "id": "openart-comfyui-workflows",
+      "title": "OpenArt ComfyUI Workflows",
+      "description": "OpenArt offers a large selection of curated ComfyUI workflows that can be run online or downloaded, suitable for all skill levels.",
+      "url": "https://openart.ai/workflows",
+      "icon": "https://openart.ai/favicon.ico",
+      "tags": [
+        "AI",
+        "ComfyUI",
+        "工作流",
+        "在线运行"
+      ],
+      "category": "ai-content",
+      "order": 34
+    },
+    {
+      "id": "civitai",
+      "title": "Civitai",
+      "description": "Civitai is the largest AI model and workflow sharing community, offering a vast collection of Stable Diffusion models, LoRAs, and ComfyUI workflows.",
+      "url": "https://civitai.com/",
+      "icon": "https://civitai.com/favicon.ico",
+      "tags": [
+        "AI",
+        "模型",
+        "工作流",
+        "社区",
+        "Stable Diffusion"
+      ],
+      "category": "ai-content",
+      "order": 35
+    },
+    {
+      "id": "hermes-agent",
+      "title": "Hermes Agent",
+      "description": "Hermes Agent is an intelligent assistant that grows with you, offering rich features and automation tools including persistent memory, file-aware context, browser automation, and voice conversation.",
+      "url": "https://hermes-agent.nousresearch.com/",
+      "icon": "https://hermes-agent.nousresearch.com/icon.png",
+      "tags": [
+        "AI",
+        "助手",
+        "Agent",
+        "自动化"
+      ],
+      "category": "ai-agent",
+      "order": 36
+    },
+    {
+      "id": "opencode",
+      "title": "OpenCode",
+      "description": "OpenCode is an open-source AI coding assistant supporting multi-agent modes (build/plan), LSP smart hints, compatible with Claude/OpenAI/local models.",
+      "url": "https://github.com/anomalyco/opencode",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "AI",
+        "编程",
+        "开源",
+        "编码助手"
+      ],
+      "category": "ai-agent",
+      "order": 37
+    },
+    {
+      "id": "panews数据导航",
+      "title": "PANews数据导航",
+      "description": "PANews Data Navigator is an essential tool in the blockchain and Web3.0 space, providing rich on-chain data and related resources.",
+      "url": "https://www.panewslab.com",
+      "icon": "https://image.panewslab.com/images/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 38
+    },
+    {
+      "id": "web3导航",
+      "title": "Web3导航",
+      "description": "A well-curated Web3 resource collection platform",
+      "url": "https://www.d1dns.com/",
+      "icon": "https://www.d1dns.com/assets/images/favicon.png",
+      "tags": [
+        "Web3.0",
+        "导航"
+      ],
+      "category": "web3-info",
+      "order": 39
+    },
+    {
+      "id": "openbuild",
+      "title": "OpenBuild",
+      "description": "OpenBuild is an open-source community focused on the Web3 developer ecosystem, bridging Web2 and Web3 technologies.",
+      "url": "https://openbuild.xyz/",
+      "icon": "https://openbuild.xyz/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 40
+    },
+    {
+      "id": "深潮techflow",
+      "title": "深潮techflow",
+      "description": "TechFlow is the most distinctive blockchain and cryptocurrency in-depth media platform in the Chinese-speaking world.",
+      "url": "https://www.techflowpost.com/",
+      "icon": "https://upload.techflowpost.com/upload/images/20230331/2023033111502613443948.png",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 41
+    },
+    {
+      "id": "dejob",
+      "title": "Dejob",
+      "description": "Dejob — the most powerful way to build your Web3 career.",
+      "url": "https://dejob.top/",
+      "icon": "https://dejob.top/logo.svg",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 42
+    },
+    {
+      "id": "web3-career",
+      "title": "Web3 Career",
+      "description": "Web3 Career",
+      "url": "https://web3.career/",
+      "icon": "https://web3.career/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 43
+    },
+    {
+      "id": "block-beats",
+      "title": "Block beats",
+      "description": "BlockBeats, a professional Crypto, Web3, and NFT research and news platform.",
+      "url": "https://www.theblockbeats.info/",
+      "icon": "https://image.blockbeats.cn/icon/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 44
+    },
+    {
+      "id": "crypto-bubbles",
+      "title": "Crypto Bubbles",
+      "description": "Crypto Bubbles is a visualization tool focused on cryptocurrency market data.",
+      "url": "https://cryptobubbles.net",
+      "icon": "https://cryptobubbles.net/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 45
+    },
+    {
+      "id": "登链社区-web3-开发者社区",
+      "title": "登链社区 - Web3 开发者社区",
+      "description": "The go-to Chinese blockchain technology blog, Q&A community, and video learning platform for systematic blockchain education.",
+      "url": "https://learnblockchain.cn/",
+      "icon": "https://learnblockchain.cn/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 46
+    },
+    {
+      "id": "区块链网址导航",
+      "title": "区块链网址导航",
+      "description": "Curates the best blockchain, wallet, and exchange websites worldwide.",
+      "url": "https://www.coinnavs.com/",
+      "icon": "https://www.coinnavs.com/wp-content/uploads/2024/05/1c0fc288cf6678d-32x32.png",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 47
+    },
+    {
+      "id": "foresight-news",
+      "title": "Foresight News",
+      "description": "FN Featured — Foresight News",
+      "url": "https://foresightnews.pro",
+      "icon": "https://foresightnews.pro/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 48
+    },
+    {
+      "id": "链捕手chaincatcher",
+      "title": "链捕手ChainCatcher",
+      "description": "ChainCatcher — a professional blockchain technology research and news platform.",
+      "url": "https://www.chaincatcher.com",
+      "icon": "https://www.chaincatcher.com/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 49
+    },
+    {
+      "id": "星球日报",
+      "title": "星球日报",
+      "description": "Odaily Planet Daily",
+      "url": "https://www.odaily.news/",
+      "icon": "https://www.odaily.news/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 50
+    },
+    {
+      "id": "decrypt",
+      "title": "Decrypt",
+      "description": "Decrypt: AI, Bitcoin, Culture, Gaming, and Crypto News.",
+      "url": "https://decrypt.co/",
+      "icon": "https://decrypt.co/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 51
+    },
+    {
+      "id": "coindesk",
+      "title": "CoinDesk",
+      "description": "The authoritative comprehensive platform for cryptocurrency and blockchain.",
+      "url": "https://www.coindesk.com",
+      "icon": "https://www.coindesk.com/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 52
+    },
+    {
+      "id": "bankless",
+      "title": "Bankless",
+      "description": "Helping users understand and immerse in the decentralized finance world, breaking free from traditional banking.",
+      "url": "https://www.bankless.com",
+      "icon": "https://www.bankless.com/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 53
+    },
+    {
+      "id": "pcweb3",
+      "title": "Pcweb3",
+      "description": "WEB3 directory master list",
+      "url": "https://www.pcweb3.com/",
+      "icon": "https://www.pcweb3.com/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 54
+    },
+    {
+      "id": "remote3",
+      "title": "Remote3",
+      "description": "WEB3 industry job board",
+      "url": "https://www.remote3.co",
+      "icon": "https://www.remote3.co/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 55
+    },
+    {
+      "id": "conflux-network",
+      "title": "Conflux Network",
+      "description": "Conflux is a high-performance Layer 1 public blockchain focused on providing reliable, efficient infrastructure for Web3.",
+      "url": "https://confluxnetwork.org/",
+      "icon": "https://confluxnetwork.org/favicon.ico",
+      "tags": [
+        "Web3.0"
+      ],
+      "category": "web3-info",
+      "order": 56
+    },
+    {
+      "id": "polyomarket",
+      "title": "Polyomarket",
+      "description": "A blockchain-based event prediction market platform.",
+      "url": "https://polyomarket.com/",
+      "icon": "https://polyomarket.com/favicon.ico",
+      "tags": [
+        "Web3.0",
+        "预测市场"
+      ],
+      "category": "web3-info",
+      "order": 57
+    },
+    {
+      "id": "rainbowkit",
+      "title": "RainbowKit",
+      "description": "RainbowKit is the best way to connect wallets, focused on user experience and developer experience.",
+      "url": "https://www.rainbowkit.com/",
+      "icon": "https://www.rainbowkit.com/favicon.ico",
+      "tags": [
+        "Web3",
+        "UI库",
+        "React"
+      ],
+      "category": "web3-lib",
+      "order": 58
+    },
+    {
+      "id": "connectkit",
+      "title": "ConnectKit",
+      "description": "ConnectKit is a React component library for connecting wallets, focused on elegant design.",
+      "url": "https://docs.family.co/connectkit",
+      "icon": "https://docs.family.co/favicon.ico",
+      "tags": [
+        "Web3",
+        "UI库",
+        "React"
+      ],
+      "category": "web3-lib",
+      "order": 59
+    },
+    {
+      "id": "web3modal",
+      "title": "Web3Modal",
+      "description": "Web3Modal is a simple yet powerful Web3 wallet connection library supporting multiple wallets.",
+      "url": "https://web3modal.com/",
+      "icon": "https://web3modal.com/favicon.ico",
+      "tags": [
+        "Web3",
+        "UI库"
+      ],
+      "category": "web3-lib",
+      "order": 60
+    },
+    {
+      "id": "thirdweb",
+      "title": "ThirdWeb",
+      "description": "ThirdWeb provides a complete Web3 development toolkit including smart contract deployment, NFT minting, and more.",
+      "url": "https://thirdweb.com/",
+      "icon": "https://thirdweb.com/favicon.ico",
+      "tags": [
+        "Web3",
+        "UI库",
+        "开发工具"
+      ],
+      "category": "web3-lib",
+      "order": 61
+    },
+    {
+      "id": "alchemy-ui",
+      "title": "Alchemy UI",
+      "description": "Alchemy provides Web3 development tools and APIs supporting NFT, DeFi, and other application development.",
+      "url": "https://www.alchemy.com/",
+      "icon": "https://www.alchemy.com/favicon.ico",
+      "tags": [
+        "Web3",
+        "UI库",
+        "API"
+      ],
+      "category": "web3-lib",
+      "order": 62
+    },
+    {
+      "id": "moralis",
+      "title": "Moralis",
+      "description": "Moralis is the ultimate Web3 development platform, providing real-time blockchain data and user management.",
+      "url": "https://moralis.io/",
+      "icon": "https://moralis.io/favicon.ico",
+      "tags": [
+        "Web3",
+        "UI库",
+        "后端"
+      ],
+      "category": "web3-lib",
+      "order": 63
+    },
+    {
+      "id": "wagmi",
+      "title": "Wagmi",
+      "description": "Wagmi is a set of React Hooks for interacting with the Ethereum blockchain.",
+      "url": "https://wagmi.sh/",
+      "icon": "https://wagmi.sh/favicon.ico",
+      "tags": [
+        "Web3",
+        "React",
+        "Hooks"
+      ],
+      "category": "web3-lib",
+      "order": 64
+    },
+    {
+      "id": "viem",
+      "title": "Viem",
+      "description": "Viem is a type-safe Ethereum interface for interacting with EVM chains.",
+      "url": "https://viem.sh/",
+      "icon": "https://viem.sh/favicon.ico",
+      "tags": [
+        "Web3",
+        "TypeScript",
+        "库"
+      ],
+      "category": "web3-lib",
+      "order": 65
+    },
+    {
+      "id": "ethers-js",
+      "title": "Ethers.js",
+      "description": "Ethers.js is a complete and compact Ethereum library for blockchain interaction.",
+      "url": "https://ethers.org/",
+      "icon": "https://ethers.org/favicon.ico",
+      "tags": [
+        "Web3",
+        "JavaScript",
+        "库"
+      ],
+      "category": "web3-lib",
+      "order": 66
+    },
+    {
+      "id": "web3-js",
+      "title": "Web3.js",
+      "description": "Web3.js is the Ethereum JavaScript API for communicating with Ethereum nodes.",
+      "url": "https://web3js.org/",
+      "icon": "https://web3js.org/favicon.ico",
+      "tags": [
+        "Web3",
+        "JavaScript",
+        "库"
+      ],
+      "category": "web3-lib",
+      "order": 67
+    },
+    {
+      "id": "usedapp",
+      "title": "useDApp",
+      "description": "useDApp is a React framework for building Ethereum DApps.",
+      "url": "https://usedapp.io/",
+      "icon": "https://usedapp.io/favicon.ico",
+      "tags": [
+        "Web3",
+        "React",
+        "框架"
+      ],
+      "category": "web3-lib",
+      "order": 68
+    },
+    {
+      "id": "particle-network",
+      "title": "Particle Network",
+      "description": "Particle Network is a complete Web3 infrastructure providing Wallet-as-a-Service.",
+      "url": "https://particle.network/",
+      "icon": "https://particle.network/favicon.ico",
+      "tags": [
+        "Web3",
+        "钱包",
+        "基础设施"
+      ],
+      "category": "web3-lib",
+      "order": 69
+    },
+    {
+      "id": "ant-design-web3",
+      "title": "Ant Design Web3",
+      "description": "Ant Design Web3 is the Web3 component library from Ant Design, providing high-quality Web3 UI components.",
+      "url": "https://web3.ant.design/",
+      "icon": "https://web3.ant.design/favicon.ico",
+      "tags": [
+        "Web3",
+        "UI库",
+        "React",
+        "Ant Design"
+      ],
+      "category": "web3-lib",
+      "order": 70
+    },
+    {
+      "id": "hardhat",
+      "title": "Hardhat",
+      "description": "Hardhat is an Ethereum development environment for compiling, deploying, testing, and debugging smart contracts.",
+      "url": "https://hardhat.org/",
+      "icon": "https://hardhat.org/favicon.ico",
+      "tags": [
+        "智能合约",
+        "以太坊",
+        "开发工具"
+      ],
+      "category": "web3-framework",
+      "order": 71
+    },
+    {
+      "id": "foundry",
+      "title": "Foundry",
+      "description": "Foundry is a blazing-fast, portable and modular toolkit for Ethereum development.",
+      "url": "https://book.getfoundry.sh/",
+      "icon": "https://book.getfoundry.sh/favicon.ico",
+      "tags": [
+        "智能合约",
+        "以太坊",
+        "Rust",
+        "测试"
+      ],
+      "category": "web3-framework",
+      "order": 72
+    },
+    {
+      "id": "truffle",
+      "title": "Truffle",
+      "description": "Truffle is a smart contract development framework, testing framework, and asset pipeline for Ethereum.",
+      "url": "https://trufflesuite.com/",
+      "icon": "https://trufflesuite.com/favicon.ico",
+      "tags": [
+        "智能合约",
+        "以太坊",
+        "开发框架"
+      ],
+      "category": "web3-framework",
+      "order": 73
+    },
+    {
+      "id": "brownie",
+      "title": "Brownie",
+      "description": "Brownie is a Python-based Ethereum smart contract development and testing framework.",
+      "url": "https://eth-brownie.readthedocs.io/",
+      "icon": "https://eth-brownie.readthedocs.io/favicon.ico",
+      "tags": [
+        "智能合约",
+        "以太坊",
+        "Python"
+      ],
+      "category": "web3-framework",
+      "order": 74
+    },
+    {
+      "id": "apeworx",
+      "title": "ApeWorX",
+      "description": "ApeWorX is a Python framework for Ethereum smart contract development, testing, and deployment.",
+      "url": "https://docs.apeworx.io/",
+      "icon": "https://docs.apeworx.io/favicon.ico",
+      "tags": [
+        "智能合约",
+        "以太坊",
+        "Python"
+      ],
+      "category": "web3-framework",
+      "order": 75
+    },
+    {
+      "id": "anchor",
+      "title": "Anchor",
+      "description": "Anchor is the Sealevel runtime framework for Solana, enabling fast and secure smart contract development.",
+      "url": "https://www.anchor-lang.com/",
+      "icon": "https://www.anchor-lang.com/favicon.ico",
+      "tags": [
+        "智能合约",
+        "Solana",
+        "Rust"
+      ],
+      "category": "web3-framework",
+      "order": 76
+    },
+    {
+      "id": "cairo",
+      "title": "Cairo",
+      "description": "Cairo is the smart contract language and framework for StarkNet, used for building provable computation.",
+      "url": "https://www.cairo-lang.org/",
+      "icon": "https://www.cairo-lang.org/favicon.ico",
+      "tags": [
+        "智能合约",
+        "StarkNet",
+        "语言"
+      ],
+      "category": "web3-framework",
+      "order": 77
+    },
+    {
+      "id": "solidity",
+      "title": "Solidity",
+      "description": "Solidity is an object-oriented, high-level language for writing smart contracts, the primary language of Ethereum.",
+      "url": "https://soliditylang.org/",
+      "icon": "https://soliditylang.org/favicon.ico",
+      "tags": [
+        "智能合约",
+        "语言",
+        "以太坊"
+      ],
+      "category": "web3-lang",
+      "order": 78
+    },
+    {
+      "id": "vyper",
+      "title": "Vyper",
+      "description": "Vyper is a contract-oriented, Pythonic programming language targeting the Ethereum Virtual Machine (EVM).",
+      "url": "https://vyper.readthedocs.io/",
+      "icon": "https://vyper.readthedocs.io/favicon.ico",
+      "tags": [
+        "智能合约",
+        "语言",
+        "以太坊",
+        "Python"
+      ],
+      "category": "web3-lang",
+      "order": 79
+    },
+    {
+      "id": "rust-solana",
+      "title": "Rust (Solana)",
+      "description": "Rust is the main development language for the Solana blockchain, used for writing high-performance smart contracts.",
+      "url": "https://www.rust-lang.org/",
+      "icon": "https://www.rust-lang.org/favicon.ico",
+      "tags": [
+        "智能合约",
+        "语言",
+        "Solana",
+        "Rust"
+      ],
+      "category": "web3-lang",
+      "order": 80
+    },
+    {
+      "id": "move",
+      "title": "Move",
+      "description": "Move is a smart contract language developed for the Diem blockchain, now used by Aptos and Sui.",
+      "url": "https://move-language.github.io/move/",
+      "icon": "https://move-language.github.io/favicon.ico",
+      "tags": [
+        "智能合约",
+        "语言",
+        "Aptos",
+        "Sui"
+      ],
+      "category": "web3-lang",
+      "order": 81
+    },
+    {
+      "id": "cairo-lang",
+      "title": "Cairo Lang",
+      "description": "Cairo is a Turing-complete language for StarkNet, used to write provable StarkNet contracts.",
+      "url": "https://cairo-lang.org/",
+      "icon": "https://cairo-lang.org/favicon.ico",
+      "tags": [
+        "智能合约",
+        "语言",
+        "StarkNet"
+      ],
+      "category": "web3-lang",
+      "order": 82
+    },
+    {
+      "id": "fe",
+      "title": "Fe",
+      "description": "Fe is a high-level smart contract language for Ethereum, inspired by Rust and Python.",
+      "url": "https://fe-lang.org/",
+      "icon": "https://fe-lang.org/favicon.ico",
+      "tags": [
+        "智能合约",
+        "语言",
+        "以太坊",
+        "Rust"
+      ],
+      "category": "web3-lang",
+      "order": 83
+    },
+    {
+      "id": "yul",
+      "title": "Yul",
+      "description": "Yul is an intermediate language for Solidity, used for optimization and direct EVM control.",
+      "url": "https://docs.soliditylang.org/en/latest/yul.html",
+      "icon": "https://soliditylang.org/favicon.ico",
+      "tags": [
+        "智能合约",
+        "语言",
+        "以太坊",
+        "底层"
+      ],
+      "category": "web3-lang",
+      "order": 84
+    },
+    {
+      "id": "huff",
+      "title": "Huff",
+      "description": "Huff is a low-level language for writing highly optimized EVM assembly.",
+      "url": "https://docs.huff.sh/",
+      "icon": "https://docs.huff.sh/favicon.ico",
+      "tags": [
+        "智能合约",
+        "语言",
+        "以太坊",
+        "汇编"
+      ],
+      "category": "web3-lang",
+      "order": 85
+    },
+    {
+      "id": "react",
+      "title": "React",
+      "description": "React is a JavaScript library for building user interfaces, developed by Facebook.",
+      "url": "https://react.dev/",
+      "icon": "https://react.dev/favicon.ico",
+      "tags": [
+        "前端框架",
+        "React",
+        "JavaScript"
+      ],
+      "category": "frontend-react",
+      "order": 86
+    },
+    {
+      "id": "next-js",
+      "title": "Next.js",
+      "description": "Next.js is a full-stack React framework providing server-side rendering, static generation, and more.",
+      "url": "https://nextjs.org/",
+      "icon": "https://nextjs.org/favicon.ico",
+      "tags": [
+        "前端框架",
+        "React",
+        "全栈"
+      ],
+      "category": "frontend-react",
+      "order": 87
+    },
+    {
+      "id": "remix",
+      "title": "Remix",
+      "description": "Remix is a full-stack web framework focused on web standards and modern user experience.",
+      "url": "https://remix.run/",
+      "icon": "https://remix.run/favicon.ico",
+      "tags": [
+        "前端框架",
+        "React",
+        "全栈"
+      ],
+      "category": "frontend-react",
+      "order": 88
+    },
+    {
+      "id": "gatsby",
+      "title": "Gatsby",
+      "description": "Gatsby is a React static site generator focused on performance and SEO.",
+      "url": "https://www.gatsbyjs.com/",
+      "icon": "https://www.gatsbyjs.com/favicon.ico",
+      "tags": [
+        "前端框架",
+        "React",
+        "静态站点"
+      ],
+      "category": "frontend-react",
+      "order": 89
+    },
+    {
+      "id": "react-router",
+      "title": "React Router",
+      "description": "React Router is the standard routing library for React, supporting declarative route definitions.",
+      "url": "https://reactrouter.com/",
+      "icon": "https://reactrouter.com/favicon.ico",
+      "tags": [
+        "前端框架",
+        "React",
+        "路由"
+      ],
+      "category": "frontend-react",
+      "order": 90
+    },
+    {
+      "id": "tanstack-query",
+      "title": "TanStack Query",
+      "description": "TanStack Query is a powerful asynchronous state management library for React, Vue, and other frameworks.",
+      "url": "https://tanstack.com/query",
+      "icon": "https://tanstack.com/favicon.ico",
+      "tags": [
+        "前端框架",
+        "React",
+        "状态管理"
+      ],
+      "category": "frontend-react",
+      "order": 91
+    },
+    {
+      "id": "zustand",
+      "title": "Zustand",
+      "description": "Zustand is a small, fast, and scalable state management solution.",
+      "url": "https://zustand-demo.pmnd.rs/",
+      "icon": "https://zustand-demo.pmnd.rs/favicon.ico",
+      "tags": [
+        "前端框架",
+        "React",
+        "状态管理"
+      ],
+      "category": "frontend-react",
+      "order": 92
+    },
+    {
+      "id": "jotai",
+      "title": "Jotai",
+      "description": "Jotai is an atomic state management library for React, based on the atomic design pattern.",
+      "url": "https://jotai.org/",
+      "icon": "https://jotai.org/favicon.ico",
+      "tags": [
+        "前端框架",
+        "React",
+        "状态管理"
+      ],
+      "category": "frontend-react",
+      "order": 93
+    },
+    {
+      "id": "recoil",
+      "title": "Recoil",
+      "description": "Recoil is a React state management library from Facebook for building high-performance applications.",
+      "url": "https://recoiljs.org/",
+      "icon": "https://recoiljs.org/favicon.ico",
+      "tags": [
+        "前端框架",
+        "React",
+        "状态管理"
+      ],
+      "category": "frontend-react",
+      "order": 94
+    },
+    {
+      "id": "vue-js",
+      "title": "Vue.js",
+      "description": "Vue.js is a progressive JavaScript framework — approachable, versatile, and performant.",
+      "url": "https://vuejs.org/",
+      "icon": "https://vuejs.org/favicon.ico",
+      "tags": [
+        "前端框架",
+        "Vue",
+        "JavaScript"
+      ],
+      "category": "frontend-vue",
+      "order": 95
+    },
+    {
+      "id": "nuxt",
+      "title": "Nuxt",
+      "description": "Nuxt is a full-stack Vue framework providing server-side rendering, static generation, and more.",
+      "url": "https://nuxt.com/",
+      "icon": "https://nuxt.com/favicon.ico",
+      "tags": [
+        "前端框架",
+        "Vue",
+        "全栈"
+      ],
+      "category": "frontend-vue",
+      "order": 96
+    },
+    {
+      "id": "pinia",
+      "title": "Pinia",
+      "description": "Pinia is the official Vue state management library — type-safe and easy to use.",
+      "url": "https://pinia.vuejs.org/",
+      "icon": "https://pinia.vuejs.org/favicon.ico",
+      "tags": [
+        "前端框架",
+        "Vue",
+        "状态管理"
+      ],
+      "category": "frontend-vue",
+      "order": 97
+    },
+    {
+      "id": "vueuse",
+      "title": "VueUse",
+      "description": "VueUse is a collection of Vue composables providing commonly used utility functions.",
+      "url": "https://vueuse.org/",
+      "icon": "https://vueuse.org/favicon.ico",
+      "tags": [
+        "前端框架",
+        "Vue",
+        "工具库"
+      ],
+      "category": "frontend-vue",
+      "order": 98
+    },
+    {
+      "id": "vitepress",
+      "title": "VitePress",
+      "description": "VitePress is a Vue-powered static site generator, ideal for documentation and blogs.",
+      "url": "https://vitepress.dev/",
+      "icon": "https://vitepress.dev/favicon.ico",
+      "tags": [
+        "前端框架",
+        "Vue",
+        "静态站点"
+      ],
+      "category": "frontend-vue",
+      "order": 99
+    },
+    {
+      "id": "svelte",
+      "title": "Svelte",
+      "description": "Svelte is a compile-time framework that compiles components into highly efficient JavaScript code.",
+      "url": "https://svelte.dev/",
+      "icon": "https://svelte.dev/favicon.ico",
+      "tags": [
+        "前端框架",
+        "编译时",
+        "JavaScript"
+      ],
+      "category": "frontend-other",
+      "order": 100
+    },
+    {
+      "id": "sveltekit",
+      "title": "SvelteKit",
+      "description": "SvelteKit is the full-stack Svelte framework providing server-side rendering and routing.",
+      "url": "https://kit.svelte.dev/",
+      "icon": "https://kit.svelte.dev/favicon.ico",
+      "tags": [
+        "前端框架",
+        "Svelte",
+        "全栈"
+      ],
+      "category": "frontend-other",
+      "order": 101
+    },
+    {
+      "id": "angular",
+      "title": "Angular",
+      "description": "Angular is a complete frontend framework developed by Google, ideal for large enterprise applications.",
+      "url": "https://angular.io/",
+      "icon": "https://angular.io/favicon.ico",
+      "tags": [
+        "前端框架",
+        "TypeScript",
+        "企业级"
+      ],
+      "category": "frontend-other",
+      "order": 102
+    },
+    {
+      "id": "solidjs",
+      "title": "SolidJS",
+      "description": "SolidJS is a declarative, efficient, and flexible JavaScript library — React-like but without a virtual DOM.",
+      "url": "https://www.solidjs.com/",
+      "icon": "https://www.solidjs.com/favicon.ico",
+      "tags": [
+        "前端框架",
+        "响应式",
+        "JavaScript"
+      ],
+      "category": "frontend-other",
+      "order": 103
+    },
+    {
+      "id": "preact",
+      "title": "Preact",
+      "description": "Preact is a lightweight alternative to React, only 3KB in size.",
+      "url": "https://preactjs.com/",
+      "icon": "https://preactjs.com/favicon.ico",
+      "tags": [
+        "前端框架",
+        "React",
+        "轻量级"
+      ],
+      "category": "frontend-other",
+      "order": 104
+    },
+    {
+      "id": "alpine-js",
+      "title": "Alpine.js",
+      "description": "Alpine.js is a lightweight JavaScript framework — the JavaScript equivalent of Tailwind CSS.",
+      "url": "https://alpinejs.dev/",
+      "icon": "https://alpinejs.dev/favicon.ico",
+      "tags": [
+        "前端框架",
+        "轻量级",
+        "JavaScript"
+      ],
+      "category": "frontend-other",
+      "order": 105
+    },
+    {
+      "id": "lit",
+      "title": "Lit",
+      "description": "Lit is a lightweight Web Components library developed by Google.",
+      "url": "https://lit.dev/",
+      "icon": "https://lit.dev/favicon.ico",
+      "tags": [
+        "前端框架",
+        "Web Components"
+      ],
+      "category": "frontend-other",
+      "order": 106
+    },
+    {
+      "id": "astro",
+      "title": "Astro",
+      "description": "Astro is a content-driven static site generator supporting multiple frontend frameworks.",
+      "url": "https://astro.build/",
+      "icon": "https://astro.build/favicon.ico",
+      "tags": [
+        "前端框架",
+        "静态站点",
+        "多框架"
+      ],
+      "category": "frontend-other",
+      "order": 107
+    },
+    {
+      "id": "qwik",
+      "title": "Qwik",
+      "description": "Qwik is a framework focused on instant loading, delivering fast startup regardless of application size.",
+      "url": "https://qwik.dev/",
+      "icon": "https://qwik.dev/favicon.ico",
+      "tags": [
+        "前端框架",
+        "性能",
+        "即时加载"
+      ],
+      "category": "frontend-other",
+      "order": 108
+    },
+    {
+      "id": "fresh",
+      "title": "Fresh",
+      "description": "Fresh is a Deno web framework based on Preact and the Islands architecture.",
+      "url": "https://fresh.deno.dev/",
+      "icon": "https://fresh.deno.dev/favicon.ico",
+      "tags": [
+        "前端框架",
+        "Deno",
+        "Preact"
+      ],
+      "category": "frontend-other",
+      "order": 109
+    },
+    {
+      "id": "uiverse-ui",
+      "title": "Uiverse UI",
+      "description": "uiverse.io is a community-driven open-source UI component library platform with a vast collection of ready-to-use UI components.",
+      "url": "https://uiverse.io/",
+      "icon": "https://uiverse.io/android-chrome-512x512.png",
+      "tags": [
+        "UI组件库"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 110
+    },
+    {
+      "id": "inspira-ui",
+      "title": "Inspira UI",
+      "description": "Inspira UI is an innovator in the Vue 3 ecosystem, combining design aesthetics with technical depth.",
+      "url": "https://inspira-ui.com/",
+      "icon": "https://uiverse.io/android-chrome-512x512.png",
+      "tags": [
+        "UI组件库"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 111
+    },
+    {
+      "id": "pixel-ui",
+      "title": "Pixel-ui",
+      "description": "A Vue 3 pixel-style UI library built with CSS features.",
+      "url": "https://maomentai817.github.io/pixel-ui",
+      "icon": "https://maomentai817.github.io/pixel-ui/images/homelogo.png",
+      "tags": [
+        "UI组件库"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 112
+    },
+    {
+      "id": "headless-ui",
+      "title": "Headless UI",
+      "description": "Headless UI represents a new paradigm in modern UI development, separating interaction logic from visual presentation.",
+      "url": "https://headlessui.com/",
+      "icon": "https://headlessui.com/favicon.ico",
+      "tags": [
+        "UI组件库"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 113
+    },
+    {
+      "id": "reactbits",
+      "title": "ReactBits",
+      "description": "A React animation UI component library.",
+      "url": "https://reactbits.dev/",
+      "icon": "https://reactbits.dev/favicon.ico",
+      "tags": [
+        "UI组件库"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 114
+    },
+    {
+      "id": "21st-dev",
+      "title": "21st.dev",
+      "description": "Discover, share, and craft UI components — a platform providing high-quality UI components and design resources.",
+      "url": "https://21st.dev",
+      "icon": "https://21st.dev/favicon.ico",
+      "tags": [
+        "UI组件库"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 115
+    },
+    {
+      "id": "magic-ui",
+      "title": "Magic UI",
+      "description": "A very cool UI library",
+      "url": "https://magicui.design/",
+      "icon": "https://magicui.design/favicon.ico",
+      "tags": [
+        "UI组件库"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 116
+    },
+    {
+      "id": "8bitui",
+      "title": "8bitUI",
+      "description": "A pixel-style UI library",
+      "url": "https://www.8bitcn.com/",
+      "icon": "https://www.8bitcn.com/favicon.ico",
+      "tags": [
+        "UI组件库"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 117
+    },
+    {
+      "id": "pxlkit",
+      "title": "PXLKit",
+      "description": "PXLKit is a pixel UI component library",
+      "url": "https://pxlkit.xyz/",
+      "icon": "https://pxlkit.xyz/favicon.svg",
+      "tags": [
+        "UI组件库",
+        "像素"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 118
+    },
+    {
+      "id": "bootstrap",
+      "title": "Bootstrap",
+      "description": "Bootstrap is the most popular HTML, CSS, and JS framework for building responsive websites.",
+      "url": "https://getbootstrap.com/",
+      "icon": "https://getbootstrap.com/favicon.ico",
+      "tags": [
+        "UI组件库",
+        "CSS框架",
+        "响应式"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 119
+    },
+    {
+      "id": "chakra-ui",
+      "title": "Chakra UI",
+      "description": "Chakra UI is a simple, modular, and accessible component library for React.",
+      "url": "https://chakra-ui.com/",
+      "icon": "https://chakra-ui.com/favicon.ico",
+      "tags": [
+        "UI组件库",
+        "React",
+        "组件库"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 120
+    },
+    {
+      "id": "mantine",
+      "title": "Mantine",
+      "description": "Mantine is a fully featured React component library with 100+ components.",
+      "url": "https://mantine.dev/",
+      "icon": "https://mantine.dev/favicon.ico",
+      "tags": [
+        "UI组件库",
+        "React",
+        "组件库"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 121
+    },
+    {
+      "id": "ant-design",
+      "title": "Ant Design",
+      "description": "Ant Design is an enterprise-class UI design language and React component library.",
+      "url": "https://ant.design/",
+      "icon": "https://ant.design/favicon.ico",
+      "tags": [
+        "UI组件库",
+        "React",
+        "企业级"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 122
+    },
+    {
+      "id": "element-plus",
+      "title": "Element Plus",
+      "description": "Element Plus is a Vue 3 component library for building desktop applications.",
+      "url": "https://element-plus.org/",
+      "icon": "https://element-plus.org/favicon.ico",
+      "tags": [
+        "UI组件库",
+        "Vue",
+        "组件库"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 123
+    },
+    {
+      "id": "shadcnui",
+      "title": "shadcn/ui",
+      "description": "shadcn/ui is a collection of copy-and-paste components built on Tailwind CSS.",
+      "url": "https://ui.shadcn.com/",
+      "icon": "https://ui.shadcn.com/favicon.ico",
+      "tags": [
+        "UI组件库",
+        "React",
+        "Tailwind"
+      ],
+      "category": "frontend-ui-lib",
+      "order": 124
+    },
+    {
+      "id": "tailwind-css",
+      "title": "Tailwind CSS",
+      "description": "Tailwind CSS is a utility-first CSS framework providing low-level utility classes.",
+      "url": "https://tailwindcss.com/",
+      "icon": "https://tailwindcss.com/favicon.ico",
+      "tags": [
+        "CSS框架",
+        "实用优先"
+      ],
+      "category": "frontend-css",
+      "order": 125
+    },
+    {
+      "id": "bulma",
+      "title": "Bulma",
+      "description": "Bulma is a modern CSS framework based on Flexbox, requiring no JavaScript.",
+      "url": "https://bulma.io/",
+      "icon": "https://bulma.io/favicon.ico",
+      "tags": [
+        "CSS框架",
+        "Flexbox"
+      ],
+      "category": "frontend-css",
+      "order": 126
+    },
+    {
+      "id": "vite",
+      "title": "Vite",
+      "description": "Vite is the next-generation frontend build tool, delivering a lightning-fast development experience.",
+      "url": "https://vitejs.dev/",
+      "icon": "https://vitejs.dev/favicon.ico",
+      "tags": [
+        "构建工具",
+        "开发服务器"
+      ],
+      "category": "frontend-build",
+      "order": 127
+    },
+    {
+      "id": "webpack",
+      "title": "Webpack",
+      "description": "Webpack is a static module bundler and the standard for modern frontend development.",
+      "url": "https://webpack.js.org/",
+      "icon": "https://webpack.js.org/favicon.ico",
+      "tags": [
+        "构建工具",
+        "打包"
+      ],
+      "category": "frontend-build",
+      "order": 128
+    },
+    {
+      "id": "rollup",
+      "title": "Rollup",
+      "description": "Rollup is a JavaScript module bundler, ideal for library development.",
+      "url": "https://rollupjs.org/",
+      "icon": "https://rollupjs.org/favicon.ico",
+      "tags": [
+        "构建工具",
+        "打包"
+      ],
+      "category": "frontend-build",
+      "order": 129
+    },
+    {
+      "id": "esbuild",
+      "title": "esbuild",
+      "description": "esbuild is an extremely fast JavaScript bundler, 10-100x faster than Webpack.",
+      "url": "https://esbuild.github.io/",
+      "icon": "https://esbuild.github.io/favicon.svg",
+      "tags": [
+        "构建工具",
+        "打包"
+      ],
+      "category": "frontend-build",
+      "order": 130
+    },
+    {
+      "id": "turbopack",
+      "title": "Turbopack",
+      "description": "Turbopack is the successor to Webpack, developed by Vercel, with blazing speed.",
+      "url": "https://turbo.build/pack",
+      "icon": "https://turbo.build/favicon.ico",
+      "tags": [
+        "构建工具",
+        "打包"
+      ],
+      "category": "frontend-build",
+      "order": 131
+    },
+    {
+      "id": "parcel",
+      "title": "Parcel",
+      "description": "Parcel is a zero-configuration web application bundler, ready to use out of the box.",
+      "url": "https://parceljs.org/",
+      "icon": "https://parceljs.org/favicon.ico",
+      "tags": [
+        "构建工具",
+        "打包"
+      ],
+      "category": "frontend-build",
+      "order": 132
+    },
+    {
+      "id": "rspack",
+      "title": "Rspack",
+      "description": "Rspack is a high-performance Rust-based web build tool compatible with the Webpack ecosystem.",
+      "url": "https://www.rspack.dev/",
+      "icon": "https://www.rspack.dev/favicon.ico",
+      "tags": [
+        "构建工具",
+        "打包",
+        "Rust"
+      ],
+      "category": "frontend-build",
+      "order": 133
+    },
+    {
+      "id": "three-js",
+      "title": "Three.js",
+      "description": "Three.js is the most popular WebGL 3D graphics library, providing rich 3D rendering capabilities and a convenient API.",
+      "url": "https://threejs.org/",
+      "icon": "https://threejs.org/favicon.ico",
+      "tags": [
+        "WebGL",
+        "3D",
+        "图形",
+        "渲染"
+      ],
+      "category": "frontend-webgl",
+      "order": 134
+    },
+    {
+      "id": "babylon-js",
+      "title": "Babylon.js",
+      "description": "Babylon.js is a powerful WebGL 3D engine with game-grade rendering and a complete toolchain.",
+      "url": "https://www.babylonjs.com/",
+      "icon": "https://www.babylonjs.com/favicon.ico",
+      "tags": [
+        "WebGL",
+        "3D",
+        "图形",
+        "游戏引擎"
+      ],
+      "category": "frontend-webgl",
+      "order": 135
+    },
+    {
+      "id": "langchain-js",
+      "title": "LangChain.js",
+      "description": "LangChain.js is the JavaScript/TypeScript version of LangChain for building AI applications.",
+      "url": "https://js.langchain.com/",
+      "icon": "https://js.langchain.com/favicon.ico",
+      "tags": [
+        "AI",
+        "框架",
+        "JavaScript",
+        "TypeScript",
+        "LLM"
+      ],
+      "category": "frontend-ai",
+      "order": 136
+    },
+    {
+      "id": "transformers-js",
+      "title": "Transformers.js",
+      "description": "Transformers.js is a Hugging Face JavaScript library for running pre-trained models in the browser.",
+      "url": "https://huggingface.co/docs/transformers.js",
+      "icon": "https://huggingface.co/favicon.ico",
+      "tags": [
+        "AI",
+        "浏览器",
+        "模型推理",
+        "Hugging Face"
+      ],
+      "category": "frontend-ai",
+      "order": 137
+    },
+    {
+      "id": "vercel-ai-sdk",
+      "title": "Vercel AI SDK",
+      "description": "Vercel AI SDK is a toolkit for building AI applications, supporting Next.js, React, Vue, and more.",
+      "url": "https://sdk.vercel.ai/",
+      "icon": "https://sdk.vercel.ai/favicon.ico",
+      "tags": [
+        "AI",
+        "SDK",
+        "Next.js",
+        "Vercel"
+      ],
+      "category": "frontend-ai",
+      "order": 138
+    },
+    {
+      "id": "openai-node-js-sdk",
+      "title": "OpenAI Node.js SDK",
+      "description": "The official OpenAI Node.js SDK for calling GPT, DALL·E, and other APIs.",
+      "url": "https://github.com/openai/openai-node",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "AI",
+        "SDK",
+        "OpenAI",
+        "Node.js"
+      ],
+      "category": "frontend-ai",
+      "order": 139
+    },
+    {
+      "id": "anthropic-sdk-for-js",
+      "title": "Anthropic SDK for JS",
+      "description": "The official Anthropic TypeScript SDK for calling the Claude API.",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "AI",
+        "SDK",
+        "Claude",
+        "TypeScript"
+      ],
+      "category": "frontend-ai",
+      "order": 140
+    },
+    {
+      "id": "langgraph-js",
+      "title": "LangGraph.js",
+      "description": "The JavaScript version of LangGraph for building stateful AI applications.",
+      "url": "https://github.com/langchain-ai/langgraphjs",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "AI",
+        "框架",
+        "工作流",
+        "Agent"
+      ],
+      "category": "frontend-ai",
+      "order": 141
+    },
+    {
+      "id": "ml5-js",
+      "title": "ml5.js",
+      "description": "ml5.js is a friendly machine learning library built on TensorFlow.js, providing concise APIs for image classification, pose detection, text generation, and more — designed for creative coding and beginners.",
+      "url": "https://ml5js.org/",
+      "icon": "https://ml5js.org/favicon.ico",
+      "tags": [
+        "AI",
+        "浏览器",
+        "机器学习",
+        "TensorFlow.js",
+        "创意编码"
+      ],
+      "category": "frontend-ai",
+      "order": 142
+    },
+    {
+      "id": "leaflet",
+      "title": "Leaflet",
+      "description": "Leaflet is the most popular open-source JavaScript mapping library — lightweight, mobile-friendly, and used by GitHub, Flickr, and others.",
+      "url": "https://leafletjs.com/",
+      "icon": "https://leafletjs.com/favicon.ico",
+      "tags": [
+        "WebGIS",
+        "地图",
+        "开源",
+        "轻量级"
+      ],
+      "category": "frontend-webgis",
+      "order": 143
+    },
+    {
+      "id": "mapbox-gl-js",
+      "title": "Mapbox GL JS",
+      "description": "Mapbox GL JS is a powerful vector map rendering library supporting custom styles, 3D terrain, and real-time data visualization.",
+      "url": "https://www.mapbox.com/mapbox-gljs",
+      "icon": "https://www.mapbox.com/favicon.ico",
+      "tags": [
+        "WebGIS",
+        "地图",
+        "矢量",
+        "3D"
+      ],
+      "category": "frontend-webgis",
+      "order": 144
+    },
+    {
+      "id": "openlayers",
+      "title": "OpenLayers",
+      "description": "OpenLayers is a powerful WebGIS library supporting OGC standards and WMS/WFS services, suitable for enterprise GIS applications.",
+      "url": "https://openlayers.org/",
+      "icon": "https://openlayers.org/favicon.ico",
+      "tags": [
+        "WebGIS",
+        "地图",
+        "OGC",
+        "企业级"
+      ],
+      "category": "frontend-webgis",
+      "order": 145
+    },
+    {
+      "id": "cesium",
+      "title": "Cesium",
+      "description": "Cesium is the world's leading 3D globe and map platform, supporting time-dynamic data, terrain, and building visualization.",
+      "url": "https://cesium.com/platform/cesiumjs/",
+      "icon": "https://cesium.com/favicon.ico",
+      "tags": [
+        "WebGIS",
+        "3D",
+        "地球",
+        "可视化"
+      ],
+      "category": "frontend-webgis",
+      "order": 146
+    },
+    {
+      "id": "maplibre-gl-js",
+      "title": "MapLibre GL JS",
+      "description": "MapLibre GL JS is the open-source fork of Mapbox GL JS — free, fully featured, and no API key required.",
+      "url": "https://maplibre.org/maplibre-gl-js/docs/",
+      "icon": "https://maplibre.org/favicon.ico",
+      "tags": [
+        "WebGIS",
+        "地图",
+        "开源",
+        "矢量"
+      ],
+      "category": "frontend-webgis",
+      "order": 147
+    },
+    {
+      "id": "deck-gl",
+      "title": "Deck.gl",
+      "description": "Deck.gl is Uber's open-source geospatial data visualization library, supporting large-scale data rendering and 3D visualization.",
+      "url": "https://deck.gl/",
+      "icon": "https://deck.gl/favicon.ico",
+      "tags": [
+        "WebGIS",
+        "可视化",
+        "3D",
+        "大数据"
+      ],
+      "category": "frontend-webgis",
+      "order": 148
+    },
+    {
+      "id": "turf-js",
+      "title": "Turf.js",
+      "description": "Turf.js is a geospatial analysis library providing spatial operations, coordinate transformations, distance calculations, and more.",
+      "url": "https://turfjs.org/",
+      "icon": "https://turfjs.org/favicon.ico",
+      "tags": [
+        "WebGIS",
+        "空间分析",
+        "地理计算"
+      ],
+      "category": "frontend-webgis",
+      "order": 149
+    },
+    {
+      "id": "arcgis-api-for-javascript",
+      "title": "ArcGIS API for JavaScript",
+      "description": "ArcGIS API is ESRI's official JavaScript API, providing full GIS capabilities and map services.",
+      "url": "https://developers.arcgis.com/javascript/latest/",
+      "icon": "https://developers.arcgis.com/favicon.ico",
+      "tags": [
+        "WebGIS",
+        "ArcGIS",
+        "企业级",
+        "ESRI"
+      ],
+      "category": "frontend-webgis",
+      "order": 150
+    },
+    {
+      "id": "高德地图-js-api",
+      "title": "高德地图 JS API",
+      "description": "Amap JavaScript API is a leading mapping service in China, supporting 2D/3D maps and route planning.",
+      "url": "https://lbs.amap.com/api/javascript-api-v2/summary",
+      "icon": "https://lbs.amap.com/favicon.ico",
+      "tags": [
+        "WebGIS",
+        "地图",
+        "国内",
+        "高德"
+      ],
+      "category": "frontend-webgis",
+      "order": 151
+    },
+    {
+      "id": "百度地图-js-api",
+      "title": "百度地图 JS API",
+      "description": "Baidu Maps JavaScript API provides map display, geolocation, and route planning services with WebGL rendering.",
+      "url": "https://lbsyun.baidu.com/index.php?title=jspopularGL",
+      "icon": "https://lbsyun.baidu.com/favicon.ico",
+      "tags": [
+        "WebGIS",
+        "地图",
+        "国内",
+        "百度"
+      ],
+      "category": "frontend-webgis",
+      "order": 152
+    },
+    {
+      "id": "express-js",
+      "title": "Express.js",
+      "description": "Express is a fast, unopinionated, minimalist Node.js web framework — the most popular Node.js framework.",
+      "url": "https://expressjs.com/",
+      "icon": "https://expressjs.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "后端框架",
+        "Web"
+      ],
+      "category": "nodejs-web",
+      "order": 153
+    },
+    {
+      "id": "koa",
+      "title": "Koa",
+      "description": "Koa is a next-generation web framework built by the original Express team, based on async/await.",
+      "url": "https://koajs.com/",
+      "icon": "https://koajs.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "后端框架",
+        "Web"
+      ],
+      "category": "nodejs-web",
+      "order": 154
+    },
+    {
+      "id": "fastify",
+      "title": "Fastify",
+      "description": "Fastify is a fast and low-overhead web framework focused on delivering the best developer experience.",
+      "url": "https://www.fastify.io/",
+      "icon": "https://www.fastify.io/favicon.ico",
+      "tags": [
+        "Node.js",
+        "后端框架",
+        "高性能"
+      ],
+      "category": "nodejs-web",
+      "order": 155
+    },
+    {
+      "id": "nestjs",
+      "title": "NestJS",
+      "description": "NestJS is a framework for building efficient, scalable Node.js server-side applications.",
+      "url": "https://nestjs.com/",
+      "icon": "https://nestjs.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "后端框架",
+        "TypeScript",
+        "企业级"
+      ],
+      "category": "nodejs-web",
+      "order": 156
+    },
+    {
+      "id": "hono",
+      "title": "Hono",
+      "description": "Hono is an ultrafast web framework supporting Cloudflare Workers, Deno, Bun, and other edge runtimes.",
+      "url": "https://hono.dev/",
+      "icon": "https://hono.dev/favicon.ico",
+      "tags": [
+        "Node.js",
+        "边缘计算",
+        "高性能",
+        "TypeScript"
+      ],
+      "category": "nodejs-web",
+      "order": 157
+    },
+    {
+      "id": "adonisjs",
+      "title": "AdonisJS",
+      "description": "AdonisJS is a fully featured Node.js web framework inspired by Laravel.",
+      "url": "https://adonisjs.com/",
+      "icon": "https://adonisjs.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "后端框架",
+        "MVC",
+        "全栈"
+      ],
+      "category": "nodejs-web",
+      "order": 158
+    },
+    {
+      "id": "trpc",
+      "title": "tRPC",
+      "description": "tRPC is an end-to-end type-safe API framework with no code generation required.",
+      "url": "https://trpc.io/",
+      "icon": "https://trpc.io/favicon.ico",
+      "tags": [
+        "Node.js",
+        "API",
+        "TypeScript",
+        "全栈"
+      ],
+      "category": "nodejs-web",
+      "order": 159
+    },
+    {
+      "id": "piscina",
+      "title": "Piscina",
+      "description": "Piscina.js is a high-performance Node.js thread pool library for effortless parallel processing of CPU-intensive tasks, maximizing CPU utilization.",
+      "url": "https://piscinajs.dev/",
+      "icon": "https://piscinajs.dev/favicon.ico",
+      "tags": [
+        "Node.js",
+        "多线程",
+        "线程池",
+        "性能优化"
+      ],
+      "category": "nodejs-threads",
+      "order": 160
+    },
+    {
+      "id": "workerpool",
+      "title": "workerpool",
+      "description": "workerpool is a lightweight Node.js thread pool implementation for executing time-consuming computation tasks in worker threads.",
+      "url": "https://www.npmjs.com/package/workerpool",
+      "icon": "https://www.npmjs.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "多线程",
+        "线程池",
+        "Worker"
+      ],
+      "category": "nodejs-threads",
+      "order": 161
+    },
+    {
+      "id": "threads-js",
+      "title": "threads.js",
+      "description": "threads.js is a multithreading library for Node.js and the browser, simplifying the use of Web Workers and Worker Threads.",
+      "url": "https://threads.js.org/",
+      "icon": "https://threads.js.org/favicon.ico",
+      "tags": [
+        "Node.js",
+        "多线程",
+        "Web Workers",
+        "并发"
+      ],
+      "category": "nodejs-threads",
+      "order": 162
+    },
+    {
+      "id": "tinypool",
+      "title": "tinypool",
+      "description": "tinypool is a lightweight, general-purpose thread pool for Node.js built on worker_threads, supporting task queuing and parallel execution.",
+      "url": "https://github.com/piscinajs/tinypool",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "多线程",
+        "线程池",
+        "轻量级"
+      ],
+      "category": "nodejs-threads",
+      "order": 163
+    },
+    {
+      "id": "wa-sqlite",
+      "title": "wa-sqlite",
+      "description": "wa-sqlite is a high-performance compiled version of SQLite supporting WebAssembly and Web Workers for efficient in-browser execution.",
+      "url": "https://wa-sqlite.github.io/",
+      "icon": "https://wa-sqlite.github.io/favicon.ico",
+      "tags": [
+        "SQLite",
+        "WebAssembly",
+        "Web Workers",
+        "数据库"
+      ],
+      "category": "nodejs-threads",
+      "order": 164
+    },
+    {
+      "id": "prisma",
+      "title": "Prisma",
+      "description": "Prisma is the next-generation Node.js/TypeScript ORM providing type-safe database access for PostgreSQL, MySQL, SQLite, and more.",
+      "url": "https://www.prisma.io/",
+      "icon": "https://www.prisma.io/favicon.ico",
+      "tags": [
+        "Node.js",
+        "ORM",
+        "TypeScript",
+        "数据库"
+      ],
+      "category": "nodejs-database",
+      "order": 165
+    },
+    {
+      "id": "typeorm",
+      "title": "TypeORM",
+      "description": "TypeORM is an ORM supporting TypeScript and JavaScript, with Active Record and Data Mapper patterns.",
+      "url": "https://typeorm.io/",
+      "icon": "https://typeorm.io/favicon.ico",
+      "tags": [
+        "Node.js",
+        "ORM",
+        "TypeScript",
+        "数据库"
+      ],
+      "category": "nodejs-database",
+      "order": 166
+    },
+    {
+      "id": "drizzle-orm",
+      "title": "Drizzle ORM",
+      "description": "Drizzle ORM is a lightweight, type-safe TypeScript ORM focused on performance and developer experience.",
+      "url": "https://orm.drizzle.team/",
+      "icon": "https://orm.drizzle.team/favicon.ico",
+      "tags": [
+        "Node.js",
+        "ORM",
+        "TypeScript",
+        "数据库"
+      ],
+      "category": "nodejs-database",
+      "order": 167
+    },
+    {
+      "id": "mikroorm",
+      "title": "MikroORM",
+      "description": "MikroORM is a TypeScript ORM based on the Data Mapper and Unit of Work patterns, supporting MongoDB and SQL databases.",
+      "url": "https://mikro-orm.io/",
+      "icon": "https://mikro-orm.io/favicon.ico",
+      "tags": [
+        "Node.js",
+        "ORM",
+        "TypeScript",
+        "MongoDB"
+      ],
+      "category": "nodejs-database",
+      "order": 168
+    },
+    {
+      "id": "mongoose",
+      "title": "Mongoose",
+      "description": "Mongoose is a MongoDB object modeling tool providing schema validation and type casting.",
+      "url": "https://mongoosejs.com/",
+      "icon": "https://mongoosejs.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "ODM",
+        "MongoDB",
+        "数据库"
+      ],
+      "category": "nodejs-database",
+      "order": 169
+    },
+    {
+      "id": "sequelize",
+      "title": "Sequelize",
+      "description": "Sequelize is a promise-based Node.js ORM supporting PostgreSQL, MySQL, MariaDB, SQLite, and more.",
+      "url": "https://sequelize.org/",
+      "icon": "https://sequelize.org/favicon.ico",
+      "tags": [
+        "Node.js",
+        "ORM",
+        "数据库",
+        "SQL"
+      ],
+      "category": "nodejs-database",
+      "order": 170
+    },
+    {
+      "id": "knex-js",
+      "title": "Knex.js",
+      "description": "Knex.js is a SQL query builder supporting chaining and transactions, compatible with multiple databases.",
+      "url": "https://knexjs.org/",
+      "icon": "https://knexjs.org/favicon.ico",
+      "tags": [
+        "Node.js",
+        "SQL",
+        "查询构建器",
+        "数据库"
+      ],
+      "category": "nodejs-database",
+      "order": 171
+    },
+    {
+      "id": "better-sqlite3",
+      "title": "better-sqlite3",
+      "description": "better-sqlite3 is a high-performance SQLite3 binding with a synchronous API, faster than node-sqlite3.",
+      "url": "https://github.com/WiseLibs/better-sqlite3",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "SQLite",
+        "数据库",
+        "高性能"
+      ],
+      "category": "nodejs-database",
+      "order": 172
+    },
+    {
+      "id": "node-postgres",
+      "title": "node-postgres",
+      "description": "node-postgres (pg) is a Node.js client for PostgreSQL, supporting connection pooling and prepared statements.",
+      "url": "https://node-postgres.com/",
+      "icon": "https://node-postgres.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "PostgreSQL",
+        "数据库",
+        "客户端"
+      ],
+      "category": "nodejs-database",
+      "order": 173
+    },
+    {
+      "id": "mysql2",
+      "title": "mysql2",
+      "description": "mysql2 is a Node.js client for MySQL supporting prepared statements and connection pooling, faster than the mysql module.",
+      "url": "https://github.com/sidorares/node-mysql2",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "MySQL",
+        "数据库",
+        "客户端"
+      ],
+      "category": "nodejs-database",
+      "order": 174
+    },
+    {
+      "id": "ioredis",
+      "title": "ioredis",
+      "description": "ioredis is a high-performance Redis client supporting clusters, sentinel, pipelines, and Lua scripts.",
+      "url": "https://github.com/luin/ioredis",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "Redis",
+        "缓存",
+        "客户端"
+      ],
+      "category": "nodejs-database",
+      "order": 175
+    },
+    {
+      "id": "bullmq",
+      "title": "BullMQ",
+      "description": "BullMQ is Node.js's most popular Redis-driven message queue, supporting delayed jobs, repeatable jobs, priority queues, and workflow orchestration — ideal for microservices and background task scheduling.",
+      "url": "https://bullmq.io/",
+      "icon": "https://bullmq.io/favicon.ico",
+      "tags": [
+        "Node.js",
+        "消息队列",
+        "Redis",
+        "任务调度",
+        "微服务"
+      ],
+      "category": "nodejs-queue",
+      "order": 176
+    },
+    {
+      "id": "rabbitmq",
+      "title": "RabbitMQ",
+      "description": "RabbitMQ is an open-source message broker supporting AMQP, MQTT, and STOMP protocols with multiple messaging patterns — an enterprise-grade message queue solution.",
+      "url": "https://www.rabbitmq.com/",
+      "icon": "https://www.rabbitmq.com/favicon.ico",
+      "tags": [
+        "消息队列",
+        "RabbitMQ",
+        "AMQP",
+        "MQTT",
+        "企业级",
+        "微服务"
+      ],
+      "category": "nodejs-queue",
+      "order": 177
+    },
+    {
+      "id": "apache-kafka",
+      "title": "Apache Kafka",
+      "description": "Kafka is Apache's open-source distributed event streaming platform — high throughput, durable, used for real-time data pipelines and stream processing.",
+      "url": "https://kafka.apache.org/",
+      "icon": "https://kafka.apache.org/favicon.ico",
+      "tags": [
+        "消息队列",
+        "Kafka",
+        "流处理",
+        "事件流",
+        "高吞吐",
+        "分布式"
+      ],
+      "category": "nodejs-queue",
+      "order": 178
+    },
+    {
+      "id": "nats",
+      "title": "NATS",
+      "description": "NATS is a high-performance cloud-native messaging system with ultra-low latency, supporting pub/sub, request/reply, and JetStream persistence.",
+      "url": "https://nats.io/",
+      "icon": "https://nats.io/favicon.ico",
+      "tags": [
+        "消息队列",
+        "NATS",
+        "云原生",
+        "高性能",
+        "边缘计算"
+      ],
+      "category": "nodejs-queue",
+      "order": 179
+    },
+    {
+      "id": "mqtt-js",
+      "title": "MQTT.js",
+      "description": "MQTT.js is a Node.js MQTT protocol client, suitable for IoT devices and lightweight message push scenarios.",
+      "url": "https://github.com/mqttjs/MQTT.js",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "MQTT",
+        "IoT",
+        "物联网",
+        "消息推送"
+      ],
+      "category": "nodejs-queue",
+      "order": 180
+    },
+    {
+      "id": "socket-io",
+      "title": "Socket.io",
+      "description": "Socket.IO is a Node.js real-time bidirectional communication library, supporting WebSocket with long-polling fallback — ideal for chat, collaboration, and real-time notifications.",
+      "url": "https://socket.io/",
+      "icon": "https://socket.io/favicon.ico",
+      "tags": [
+        "Node.js",
+        "WebSocket",
+        "实时通信",
+        "双向",
+        "事件驱动"
+      ],
+      "category": "nodejs-queue",
+      "order": 181
+    },
+    {
+      "id": "uwebsockets-js",
+      "title": "uWebSockets.js",
+      "description": "uWebSockets.js is an ultra-high-performance WebSocket and HTTP server for Node.js with a C++ core, achieving extremely low latency.",
+      "url": "https://github.com/uNetworking/uWebSockets.js",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "WebSocket",
+        "高性能",
+        "C++",
+        "实时"
+      ],
+      "category": "nodejs-queue",
+      "order": 182
+    },
+    {
+      "id": "graphql-yoga",
+      "title": "GraphQL Yoga",
+      "description": "GraphQL Yoga is a cross-runtime GraphQL server framework supporting Node.js, Bun, Deno, and Cloudflare Workers with subscriptions and SSE real-time capabilities.",
+      "url": "https://the-guild.dev/graphql/yoga-server",
+      "icon": "https://the-guild.dev/favicon.ico",
+      "tags": [
+        "Node.js",
+        "GraphQL",
+        "API",
+        "实时",
+        "跨运行时"
+      ],
+      "category": "nodejs-queue",
+      "order": 183
+    },
+    {
+      "id": "grpc-node",
+      "title": "gRPC-Node",
+      "description": "gRPC Node.js is the Node.js implementation of Google's high-performance RPC framework, based on HTTP/2 and Protocol Buffers — ideal for microservice communication.",
+      "url": "https://grpc.io/docs/languages/node/",
+      "icon": "https://grpc.io/favicon.ico",
+      "tags": [
+        "Node.js",
+        "gRPC",
+        "RPC",
+        "HTTP2",
+        "微服务",
+        "Protocol Buffers"
+      ],
+      "category": "nodejs-queue",
+      "order": 184
+    },
+    {
+      "id": "go",
+      "title": "Go",
+      "description": "Go is an open-source programming language developed by Google, known for its simplicity, efficiency, and concurrency support.",
+      "url": "https://go.dev/",
+      "icon": "https://go.dev/favicon.ico",
+      "tags": [
+        "Go",
+        "编程语言",
+        "Google",
+        "并发"
+      ],
+      "category": "go-ecosystem",
+      "order": 185
+    },
+    {
+      "id": "gin",
+      "title": "Gin",
+      "description": "Gin is the most popular Go web framework, known for high performance and lightweight design, supporting middleware and route grouping.",
+      "url": "https://gin-gonic.com/",
+      "icon": "https://gin-gonic.com/favicon.ico",
+      "tags": [
+        "Go",
+        "Web框架",
+        "高性能",
+        "REST API"
+      ],
+      "category": "go-ecosystem",
+      "order": 186
+    },
+    {
+      "id": "gorm",
+      "title": "GORM",
+      "description": "GORM is the most popular ORM library in the Go ecosystem, supporting associations, transactions, hooks, and more.",
+      "url": "https://gorm.io/",
+      "icon": "https://gorm.io/favicon.ico",
+      "tags": [
+        "Go",
+        "ORM",
+        "数据库",
+        "SQL"
+      ],
+      "category": "go-ecosystem",
+      "order": 187
+    },
+    {
+      "id": "echo",
+      "title": "Echo",
+      "description": "Echo is a high-performance, minimalist Go web framework with optimized routing and middleware.",
+      "url": "https://echo.labstack.com/",
+      "icon": "https://echo.labstack.com/favicon.ico",
+      "tags": [
+        "Go",
+        "Web框架",
+        "高性能",
+        "轻量级"
+      ],
+      "category": "go-ecosystem",
+      "order": 188
+    },
+    {
+      "id": "fiber",
+      "title": "Fiber",
+      "description": "Fiber is an Express-inspired Go web framework known for extreme performance and low memory footprint.",
+      "url": "https://gofiber.io/",
+      "icon": "https://gofiber.io/favicon.ico",
+      "tags": [
+        "Go",
+        "Web框架",
+        "高性能",
+        "Express风格"
+      ],
+      "category": "go-ecosystem",
+      "order": 189
+    },
+    {
+      "id": "chi",
+      "title": "Chi",
+      "description": "Chi is a lightweight Go HTTP router supporting middleware and context propagation, compatible with net/http.",
+      "url": "https://go-chi.io/",
+      "icon": "https://go-chi.io/favicon.ico",
+      "tags": [
+        "Go",
+        "Router",
+        "HTTP",
+        "轻量级"
+      ],
+      "category": "go-ecosystem",
+      "order": 190
+    },
+    {
+      "id": "buffalo",
+      "title": "Buffalo",
+      "description": "Buffalo is a full-stack Go web development framework providing a complete front-to-back solution.",
+      "url": "https://gobuffalo.io/",
+      "icon": "https://gobuffalo.io/favicon.ico",
+      "tags": [
+        "Go",
+        "全栈",
+        "Web框架",
+        "MVC"
+      ],
+      "category": "go-ecosystem",
+      "order": 191
+    },
+    {
+      "id": "zap",
+      "title": "zap",
+      "description": "zap is Uber's open-source high-performance Go logging library, 10x faster than the standard library.",
+      "url": "https://github.com/uber-go/zap",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "Go",
+        "日志",
+        "性能",
+        "Uber"
+      ],
+      "category": "go-ecosystem",
+      "order": 192
+    },
+    {
+      "id": "cobra",
+      "title": "Cobra",
+      "description": "Cobra is the most popular Go CLI application framework, used by Docker, Kubernetes, and other projects.",
+      "url": "https://cobra.dev/",
+      "icon": "https://cobra.dev/favicon.ico",
+      "tags": [
+        "Go",
+        "CLI",
+        "命令行",
+        "Docker"
+      ],
+      "category": "go-ecosystem",
+      "order": 193
+    },
+    {
+      "id": "go-redis",
+      "title": "go-redis",
+      "description": "go-redis is the most popular Go Redis client, supporting connection pooling, pipelines, and transactions.",
+      "url": "https://redis.uptrace.dev/",
+      "icon": "https://redis.uptrace.dev/favicon.ico",
+      "tags": [
+        "Go",
+        "Redis",
+        "缓存",
+        "客户端"
+      ],
+      "category": "go-ecosystem",
+      "order": 194
+    },
+    {
+      "id": "grpc",
+      "title": "gRPC",
+      "description": "gRPC is Google's open-source high-performance RPC framework supporting multiple languages and Protocol Buffers.",
+      "url": "https://grpc.io/",
+      "icon": "https://grpc.io/favicon.ico",
+      "tags": [
+        "Go",
+        "RPC",
+        "Google",
+        "Protocol Buffers"
+      ],
+      "category": "go-ecosystem",
+      "order": 195
+    },
+    {
+      "id": "wanderlost",
+      "title": "Wanderlost",
+      "description": "Wanderlost is a 2025 Go generics utility library providing type-safe collection operations.",
+      "url": "https://github.com/wanderlost/wanderlost",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "Go",
+        "泛型",
+        "工具库",
+        "2025"
+      ],
+      "category": "go-ecosystem",
+      "order": 196
+    },
+    {
+      "id": "vercel",
+      "title": "Vercel",
+      "description": "Vercel is the world's leading frontend cloud platform, supporting zero-config deployment for Next.js, Nuxt, SvelteKit, and more, with global edge network acceleration and built-in CI/CD.",
+      "url": "https://vercel.com/",
+      "icon": "https://vercel.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "前端",
+        "部署",
+        "Serverless",
+        "JAMstack"
+      ],
+      "category": "cloud-hosting",
+      "order": 197
+    },
+    {
+      "id": "netlify",
+      "title": "Netlify",
+      "description": "Netlify is a well-known JAMstack frontend cloud platform supporting static site deployment, Serverless Functions, form handling, and A/B testing with a free tier.",
+      "url": "https://www.netlify.com/",
+      "icon": "https://www.netlify.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "前端",
+        "部署",
+        "Serverless",
+        "JAMstack"
+      ],
+      "category": "cloud-hosting",
+      "order": 198
+    },
+    {
+      "id": "cloudflare-pages",
+      "title": "Cloudflare Pages",
+      "description": "Cloudflare Pages is a JAMstack deployment platform built on Cloudflare's global network, seamlessly integrated with Cloudflare Workers for lightning-fast global distribution.",
+      "url": "https://pages.cloudflare.com/",
+      "icon": "https://pages.cloudflare.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "前端",
+        "部署",
+        "CDN",
+        "Edge"
+      ],
+      "category": "cloud-hosting",
+      "order": 199
+    },
+    {
+      "id": "render",
+      "title": "Render",
+      "description": "Render is a full-stack cloud platform supporting static sites, Serverless Functions, persistent services, and Cron Jobs with a free tier.",
+      "url": "https://render.com/",
+      "icon": "https://render.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "前端",
+        "后端",
+        "Serverless",
+        "部署"
+      ],
+      "category": "cloud-hosting",
+      "order": 200
+    },
+    {
+      "id": "railway",
+      "title": "Railway",
+      "description": "Railway is a modern developer cloud platform supporting direct deployment of Node.js, Python, Go, and more with usage-based billing and a clean interface.",
+      "url": "https://railway.app/",
+      "icon": "https://railway.app/favicon.ico",
+      "tags": [
+        "云平台",
+        "部署",
+        "Serverless",
+        "数据库",
+        "付费"
+      ],
+      "category": "cloud-hosting",
+      "order": 201
+    },
+    {
+      "id": "fly-io",
+      "title": "Fly.io",
+      "description": "Fly.io is a platform for deploying apps to global edge nodes, supporting Docker containers and multiple languages, focused on low-latency experiences.",
+      "url": "https://fly.io/",
+      "icon": "https://fly.io/favicon.ico",
+      "tags": [
+        "云平台",
+        "边缘计算",
+        "Docker",
+        "部署",
+        "全球"
+      ],
+      "category": "cloud-hosting",
+      "order": 202
+    },
+    {
+      "id": "replit",
+      "title": "Replit",
+      "description": "Replit is a browser-based development + deployment platform supporting 50+ languages with one-click website and app deployment, equipped with an AI coding assistant.",
+      "url": "https://replit.com/",
+      "icon": "https://replit.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "IDE",
+        "部署",
+        "Serverless",
+        "在线开发"
+      ],
+      "category": "cloud-hosting",
+      "order": 203
+    },
+    {
+      "id": "stackblitz",
+      "title": "StackBlitz",
+      "description": "StackBlitz is a browser-based online IDE powered by WebContainer technology, running Node.js, Vite, and more directly in the browser without a local environment.",
+      "url": "https://stackblitz.com/",
+      "icon": "https://stackblitz.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "IDE",
+        "在线",
+        "WebContainer",
+        "前端"
+      ],
+      "category": "cloud-hosting",
+      "order": 204
+    },
+    {
+      "id": "aws-amazon-web-services",
+      "title": "AWS (Amazon Web Services)",
+      "description": "AWS is the world's largest cloud platform, offering 200+ services including compute, storage, database, and AI/ML — the most comprehensive ecosystem.",
+      "url": "https://aws.amazon.com/",
+      "icon": "https://aws.amazon.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "云服务商",
+        "基础设施",
+        "AWS"
+      ],
+      "category": "cloud-major",
+      "order": 205
+    },
+    {
+      "id": "google-cloud-platform",
+      "title": "Google Cloud Platform",
+      "description": "Google Cloud is Google's cloud platform with significant advantages in AI/ML, Kubernetes, and big data, led by BigQuery and the TensorFlow ecosystem.",
+      "url": "https://cloud.google.com/",
+      "icon": "https://cloud.google.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "云服务商",
+        "AI",
+        "Kubernetes",
+        "GCP"
+      ],
+      "category": "cloud-major",
+      "order": 206
+    },
+    {
+      "id": "microsoft-azure",
+      "title": "Microsoft Azure",
+      "description": "Azure is Microsoft's enterprise cloud platform, deeply integrated with Windows, Office 365, and M365, with industry-leading hybrid cloud capabilities.",
+      "url": "https://azure.microsoft.com/",
+      "icon": "https://azure.microsoft.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "云服务商",
+        "企业级",
+        "混合云",
+        "Microsoft"
+      ],
+      "category": "cloud-major",
+      "order": 207
+    },
+    {
+      "id": "腾讯云国际版",
+      "title": "腾讯云国际版",
+      "description": "Tencent Cloud International serves global developers with cloud servers, CDN, game cloud, and video solutions, with dense node coverage in the Asia-Pacific region.",
+      "url": "https://www.tencentcloud.com/",
+      "icon": "https://www.tencentcloud.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "云服务商",
+        "国内",
+        "腾讯",
+        "亚太"
+      ],
+      "category": "cloud-major",
+      "order": 208
+    },
+    {
+      "id": "阿里云国际版",
+      "title": "阿里云国际版",
+      "description": "Alibaba Cloud International is the world's third-largest cloud provider, offering elastic computing, database, storage, and CDN services, leading in Asia-Pacific and Middle Eastern markets.",
+      "url": "https://www.alibabacloud.com/",
+      "icon": "https://www.alibabacloud.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "云服务商",
+        "国内",
+        "阿里",
+        "亚太"
+      ],
+      "category": "cloud-major",
+      "order": 209
+    },
+    {
+      "id": "digitalocean",
+      "title": "DigitalOcean",
+      "description": "DigitalOcean is a simple cloud platform for developers and SMBs, known for high cost-effectiveness and ease of use, with popular Droplets cloud servers.",
+      "url": "https://www.digitalocean.com/",
+      "icon": "https://www.digitalocean.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "云服务商",
+        "VPS",
+        "开发者友好",
+        "简单"
+      ],
+      "category": "cloud-major",
+      "order": 210
+    },
+    {
+      "id": "linode-akamai",
+      "title": "Linode (Akamai)",
+      "description": "Linode, now part of Akamai, is a veteran VPS cloud provider known for stability, high performance, and excellent documentation, now integrated into the Akamai edge cloud network.",
+      "url": "https://www.linode.com/",
+      "icon": "https://www.linode.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "云服务商",
+        "VPS",
+        "Linux",
+        "Akamai"
+      ],
+      "category": "cloud-major",
+      "order": 211
+    },
+    {
+      "id": "oracle-cloud",
+      "title": "Oracle Cloud",
+      "description": "Oracle Cloud offers powerful database and SaaS services with a cost-effective Always Free tier, ideal for running Oracle database workloads.",
+      "url": "https://www.oracle.com/cloud/",
+      "icon": "https://www.oracle.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "云服务商",
+        "数据库",
+        "Oracle",
+        "免费套餐"
+      ],
+      "category": "cloud-major",
+      "order": 212
+    },
+    {
+      "id": "华为云",
+      "title": "华为云",
+      "description": "Huawei Cloud is Huawei's public cloud brand, offering enterprise-grade services including compute, storage, database, AI, and containers with deep Kunpeng and HarmonyOS ecosystem integration.",
+      "url": "https://www.huaweicloud.com/",
+      "icon": "https://www.huaweicloud.com/favicon.ico",
+      "tags": [
+        "云平台",
+        "云服务商",
+        "企业级",
+        "华为",
+        "混合云",
+        "国内"
+      ],
+      "category": "cloud-major",
+      "order": 213
+    },
+    {
+      "id": "cloudflare-workers",
+      "title": "Cloudflare Workers",
+      "description": "Cloudflare Workers is a Serverless platform running on Cloudflare edge nodes, known for ultra-low latency and global distribution, powered by V8 Isolates technology.",
+      "url": "https://workers.cloudflare.com/",
+      "icon": "https://workers.cloudflare.com/favicon.ico",
+      "tags": [
+        "Serverless",
+        "边缘计算",
+        "Cloudflare",
+        "极速",
+        "无服务器"
+      ],
+      "category": "cloud-serverless",
+      "order": 214
+    },
+    {
+      "id": "vercel-functions",
+      "title": "Vercel Functions",
+      "description": "Vercel Functions are Serverless Functions on the Vercel platform, seamlessly integrated with Next.js and frontend deployment out of the box.",
+      "url": "https://vercel.com/docs/functions",
+      "icon": "https://vercel.com/favicon.ico",
+      "tags": [
+        "Serverless",
+        "Vercel",
+        "前端",
+        "无服务器",
+        "函数"
+      ],
+      "category": "cloud-serverless",
+      "order": 215
+    },
+    {
+      "id": "aws-lambda",
+      "title": "AWS Lambda",
+      "description": "AWS Lambda is AWS's pioneering Serverless service, billed per execution and duration, deeply integrated with the AWS ecosystem.",
+      "url": "https://aws.amazon.com/lambda/",
+      "icon": "https://aws.amazon.com/favicon.ico",
+      "tags": [
+        "Serverless",
+        "AWS",
+        "无服务器",
+        "Lambda",
+        "函数"
+      ],
+      "category": "cloud-serverless",
+      "order": 216
+    },
+    {
+      "id": "azure-functions",
+      "title": "Azure Functions",
+      "description": "Azure Functions is Microsoft's Serverless service, deeply integrated with Azure services, supporting multiple triggers and workflow orchestration.",
+      "url": "https://azure.microsoft.com/products/functions",
+      "icon": "https://azure.microsoft.com/favicon.ico",
+      "tags": [
+        "Serverless",
+        "Azure",
+        "无服务器",
+        "Microsoft",
+        "函数"
+      ],
+      "category": "cloud-serverless",
+      "order": 217
+    },
+    {
+      "id": "google-cloud-functions",
+      "title": "Google Cloud Functions",
+      "description": "Google Cloud Functions is GCP's Serverless function service supporting Node.js, Python, Go, and more, deeply integrated with the GCP ecosystem.",
+      "url": "https://cloud.google.com/functions",
+      "icon": "https://cloud.google.com/favicon.ico",
+      "tags": [
+        "Serverless",
+        "Google Cloud",
+        "无服务器",
+        "函数",
+        "GCP"
+      ],
+      "category": "cloud-serverless",
+      "order": 218
+    },
+    {
+      "id": "阿里云函数计算-fc",
+      "title": "阿里云函数计算 FC",
+      "description": "Alibaba Cloud Function Compute (FC) is Alibaba Cloud's Serverless computing service supporting Node.js, Python, PHP, and more, deeply integrated with the Alibaba Cloud ecosystem.",
+      "url": "https://www.aliyun.com/product/fc",
+      "icon": "https://www.aliyun.com/favicon.ico",
+      "tags": [
+        "Serverless",
+        "阿里云",
+        "无服务器",
+        "函数",
+        "国内"
+      ],
+      "category": "cloud-serverless",
+      "order": 219
+    },
+    {
+      "id": "腾讯云云函数-scf",
+      "title": "腾讯云云函数 SCF",
+      "description": "Tencent Cloud Serverless Cloud Function (SCF) is Tencent Cloud's Serverless computing service supporting online editing, trigger configuration, and WeChat ecosystem integration.",
+      "url": "https://cloud.tencent.com/product/scf",
+      "icon": "https://cloud.tencent.com/favicon.ico",
+      "tags": [
+        "Serverless",
+        "腾讯云",
+        "无服务器",
+        "函数",
+        "国内"
+      ],
+      "category": "cloud-serverless",
+      "order": 220
+    },
+    {
+      "id": "zapier",
+      "title": "Zapier",
+      "description": "Zapier is the most popular online workflow automation platform, connecting 6,000+ apps for code-free cross-service automation — a personal productivity powerhouse.",
+      "url": "https://zapier.com/",
+      "icon": "https://zapier.com/favicon.ico",
+      "tags": [
+        "工作流自动化",
+        "无代码",
+        "SaaS集成",
+        "效率",
+        "自动化"
+      ],
+      "category": "cloud-automation",
+      "order": 221
+    },
+    {
+      "id": "make-formerly-integromat",
+      "title": "Make (formerly Integromat)",
+      "description": "Make is a powerful visual workflow automation platform, more flexible than Zapier, supporting complex data transformations, iterations, and parallel task orchestration.",
+      "url": "https://www.make.com/",
+      "icon": "https://www.make.com/favicon.ico",
+      "tags": [
+        "工作流自动化",
+        "无代码",
+        "自动化",
+        "可视化",
+        "集成"
+      ],
+      "category": "cloud-automation",
+      "order": 222
+    },
+    {
+      "id": "ifttt",
+      "title": "IFTTT",
+      "description": "IFTTT is a veteran automation platform connecting IoT devices and web services with \"if this, then that\" logic — simple and easy to use.",
+      "url": "https://ifttt.com/",
+      "icon": "https://ifttt.com/favicon.ico",
+      "tags": [
+        "工作流自动化",
+        "物联网",
+        "Webhooks",
+        "自动化",
+        "IoT"
+      ],
+      "category": "cloud-automation",
+      "order": 223
+    },
+    {
+      "id": "firebase",
+      "title": "Firebase",
+      "description": "Firebase is Google's BaaS platform offering real-time database, authentication, hosting, Cloud Messaging, and more — the top choice for mobile development.",
+      "url": "https://firebase.google.com/",
+      "icon": "https://firebase.google.com/favicon.ico",
+      "tags": [
+        "BaaS",
+        "Google",
+        "移动",
+        "实时数据库",
+        "认证"
+      ],
+      "category": "cloud-baas",
+      "order": 224
+    },
+    {
+      "id": "supabase",
+      "title": "Supabase",
+      "description": "Supabase is an open-source Firebase alternative built on PostgreSQL, offering real-time database, authentication, storage, and Edge Functions.",
+      "url": "https://supabase.com/",
+      "icon": "https://supabase.com/favicon.ico",
+      "tags": [
+        "BaaS",
+        "开源",
+        "PostgreSQL",
+        "实时数据库",
+        "Firebase替代"
+      ],
+      "category": "cloud-baas",
+      "order": 225
+    },
+    {
+      "id": "airtable",
+      "title": "Airtable",
+      "description": "Airtable is a BaaS platform combining spreadsheets and databases, flexibly customizable with views, automation, and workflows — ideal as a lightweight backend.",
+      "url": "https://airtable.com/",
+      "icon": "https://airtable.com/favicon.ico",
+      "tags": [
+        "BaaS",
+        "数据库",
+        "低代码",
+        "后台",
+        "在线表格"
+      ],
+      "category": "cloud-baas",
+      "order": 226
+    },
+    {
+      "id": "fastly",
+      "title": "Fastly",
+      "description": "Fastly is a high-performance CDN and edge computing platform known for real-time configuration push and VCL programmability.",
+      "url": "https://www.fastly.com/",
+      "icon": "https://www.fastly.com/favicon.ico",
+      "tags": [
+        "CDN",
+        "边缘计算",
+        "高性能",
+        "可编程",
+        "VCL"
+      ],
+      "category": "cloud-cdn",
+      "order": 227
+    },
+    {
+      "id": "akamai",
+      "title": "Akamai",
+      "description": "Akamai is the world's largest CDN provider, dominant in the enterprise market with the largest bandwidth and coverage footprint.",
+      "url": "https://www.akamai.com/",
+      "icon": "https://www.akamai.com/favicon.ico",
+      "tags": [
+        "CDN",
+        "企业级",
+        "全球",
+        "DNS",
+        "安全"
+      ],
+      "category": "cloud-cdn",
+      "order": 228
+    },
+    {
+      "id": "cloudflare-registrar",
+      "title": "Cloudflare Registrar",
+      "description": "Cloudflare Registrar is Cloudflare's domain registration service with free WHOIS privacy protection and no hidden transfer or renewal fees.",
+      "url": "https://www.cloudflare.com/products/registrar/",
+      "icon": "https://www.cloudflare.com/favicon.ico",
+      "tags": [
+        "域名",
+        "DNS",
+        "Cloudflare",
+        "隐私",
+        "注册"
+      ],
+      "category": "cloud-cdn",
+      "order": 229
+    },
+    {
+      "id": "namecheap",
+      "title": "Namecheap",
+      "description": "Namecheap is a globally renowned domain registrar with affordable pricing, a user-friendly interface, free privacy protection, and domain marketplace.",
+      "url": "https://www.namecheap.com/",
+      "icon": "https://www.namecheap.com/favicon.ico",
+      "tags": [
+        "域名",
+        "注册",
+        "隐私",
+        "交易",
+        "Namecheap"
+      ],
+      "category": "cloud-cdn",
+      "order": 230
+    },
+    {
+      "id": "godaddy",
+      "title": "GoDaddy",
+      "description": "GoDaddy is the world's largest domain registrar, offering one-stop services including domain trading, web hosting, and business email.",
+      "url": "https://www.godaddy.com/",
+      "icon": "https://www.godaddy.com/favicon.ico",
+      "tags": [
+        "域名",
+        "注册",
+        "主机",
+        "企业邮箱",
+        "DNS"
+      ],
+      "category": "cloud-cdn",
+      "order": 231
+    },
+    {
+      "id": "planetscale",
+      "title": "PlanetScale",
+      "description": "PlanetScale is a serverless MySQL database platform offering branching, hot reload, and non-blocking schema changes.",
+      "url": "https://planetscale.com/",
+      "icon": "https://planetscale.com/favicon.ico",
+      "tags": [
+        "数据库",
+        "MySQL",
+        "Serverless",
+        "分支",
+        "Vitess"
+      ],
+      "category": "cloud-database",
+      "order": 232
+    },
+    {
+      "id": "neon",
+      "title": "Neon",
+      "description": "Neon is an open-source serverless PostgreSQL database supporting branching, scale-to-zero, and auto-scaling with usage-based billing.",
+      "url": "https://neon.tech/",
+      "icon": "https://neon.tech/favicon.ico",
+      "tags": [
+        "数据库",
+        "PostgreSQL",
+        "Serverless",
+        "分支",
+        "开源"
+      ],
+      "category": "cloud-database",
+      "order": 233
+    },
+    {
+      "id": "mongodb-atlas",
+      "title": "MongoDB Atlas",
+      "description": "MongoDB Atlas is the official MongoDB cloud service offering fully managed MongoDB databases with global multi-region deployment.",
+      "url": "https://www.mongodb.com/atlas",
+      "icon": "https://www.mongodb.com/favicon.ico",
+      "tags": [
+        "数据库",
+        "MongoDB",
+        "NoSQL",
+        "云服务",
+        "全球"
+      ],
+      "category": "cloud-database",
+      "order": 234
+    },
+    {
+      "id": "redis-cloud",
+      "title": "Redis Cloud",
+      "description": "Redis Cloud is the official Redis cloud service offering fully managed Redis cache and database across multiple cloud providers.",
+      "url": "https://redis.com/redis-cloud/cloud-overview/",
+      "icon": "https://redis.com/favicon.ico",
+      "tags": [
+        "数据库",
+        "Redis",
+        "缓存",
+        "云服务",
+        "托管"
+      ],
+      "category": "cloud-database",
+      "order": 235
+    },
+    {
+      "id": "upstash",
+      "title": "Upstash",
+      "description": "Upstash is a Serverless-first Redis and Kafka service, billed per request with REST API support, deeply integrated with Vercel/Cloudflare.",
+      "url": "https://upstash.com/",
+      "icon": "https://upstash.com/favicon.ico",
+      "tags": [
+        "数据库",
+        "Redis",
+        "Serverless",
+        "Kafka",
+        "边缘计算"
+      ],
+      "category": "cloud-database",
+      "order": 236
+    },
+    {
+      "id": "腾讯云数据库-cdb",
+      "title": "腾讯云数据库 CDB",
+      "description": "Tencent Cloud Database (CDB) offers fully managed MySQL, PostgreSQL, MongoDB, Redis, and other database engines with automatic backup and read-write splitting.",
+      "url": "https://cloud.tencent.com/product/cdb",
+      "icon": "https://cloud.tencent.com/favicon.ico",
+      "tags": [
+        "数据库",
+        "腾讯云",
+        "MySQL",
+        "PostgreSQL",
+        "托管",
+        "国内"
+      ],
+      "category": "cloud-database",
+      "order": 237
+    },
+    {
+      "id": "阿里云云数据库-rds",
+      "title": "阿里云云数据库 RDS",
+      "description": "Alibaba Cloud Relational Database Service (RDS) offers MySQL, SQL Server, PostgreSQL, PPAS, and other engines with automatic backup and elastic scaling.",
+      "url": "https://www.aliyun.com/product/rds",
+      "icon": "https://www.aliyun.com/favicon.ico",
+      "tags": [
+        "数据库",
+        "阿里云",
+        "MySQL",
+        "PostgreSQL",
+        "托管",
+        "国内"
+      ],
+      "category": "cloud-database",
+      "order": 238
+    },
+    {
+      "id": "docker-hub",
+      "title": "Docker Hub",
+      "description": "Docker Hub is the world's largest container image registry, offering official images, team management, and automated build services.",
+      "url": "https://hub.docker.com/",
+      "icon": "https://hub.docker.com/favicon.ico",
+      "tags": [
+        "容器",
+        "Docker",
+        "镜像仓库",
+        "CI/CD",
+        "镜像"
+      ],
+      "category": "cloud-container",
+      "order": 239
+    },
+    {
+      "id": "github-container-registry",
+      "title": "GitHub Container Registry",
+      "description": "GitHub Container Registry is GitHub's container image hosting service, deeply integrated with GitHub Actions and repositories.",
+      "url": "https://github.com/features/packages",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "容器",
+        "GitHub",
+        "镜像仓库",
+        "CI/CD",
+        "镜像"
+      ],
+      "category": "cloud-container",
+      "order": 240
+    },
+    {
+      "id": "amazon-ecr",
+      "title": "Amazon ECR",
+      "description": "Amazon ECR is AWS's fully managed container image registry service, seamlessly integrated with ECS and EKS, highly available.",
+      "url": "https://aws.amazon.com/ecr/",
+      "icon": "https://aws.amazon.com/favicon.ico",
+      "tags": [
+        "容器",
+        "AWS",
+        "镜像仓库",
+        "ECS",
+        "EKS"
+      ],
+      "category": "cloud-container",
+      "order": 241
+    },
+    {
+      "id": "github-actions",
+      "title": "GitHub Actions",
+      "description": "GitHub Actions is GitHub's CI/CD and automation platform supporting container builds, cloud deployment, and custom workflows.",
+      "url": "https://github.com/features/actions",
+      "icon": "https://github.com/features/actions/favicon.ico",
+      "tags": [
+        "CI/CD",
+        "GitHub",
+        "自动化",
+        "容器",
+        "持续集成"
+      ],
+      "category": "cloud-container",
+      "order": 242
+    },
+    {
+      "id": "gitlab-cicd",
+      "title": "GitLab CI/CD",
+      "description": "GitLab CI/CD is GitLab's built-in CI/CD platform, deeply integrated with GitLab repositories, container registry, and Kubernetes.",
+      "url": "https://docs.gitlab.com/ee/ci/",
+      "icon": "https://about.gitlab.com/favicon.ico",
+      "tags": [
+        "CI/CD",
+        "GitLab",
+        "自动化",
+        "容器",
+        "持续集成"
+      ],
+      "category": "cloud-container",
+      "order": 243
+    },
+    {
+      "id": "argo-cd",
+      "title": "Argo CD",
+      "description": "Argo CD is a declarative GitOps continuous delivery tool for Kubernetes, using Git as the single source of truth for automated deployment.",
+      "url": "https://argoproj.github.io/cd/",
+      "icon": "https://argoproj.github.io/favicon.ico",
+      "tags": [
+        "Kubernetes",
+        "GitOps",
+        "持续部署",
+        "自动化",
+        "容器"
+      ],
+      "category": "cloud-container",
+      "order": 244
+    },
+    {
+      "id": "rancher",
+      "title": "Rancher",
+      "description": "Rancher is a Kubernetes management platform simplifying multi-cluster deployment and management with an intuitive Web UI.",
+      "url": "https://www.rancher.com/",
+      "icon": "https://www.rancher.com/favicon.ico",
+      "tags": [
+        "Kubernetes",
+        "管理",
+        "平台",
+        "多集群",
+        "Rancher"
+      ],
+      "category": "cloud-container",
+      "order": 245
+    },
+    {
+      "id": "腾讯云容器服务-tke",
+      "title": "腾讯云容器服务 TKE",
+      "description": "Tencent Cloud Kubernetes Engine (TKE) is a fully managed Kubernetes service supporting one-click deployment, elastic scaling, and canary releases, deeply integrated with the Tencent Cloud ecosystem.",
+      "url": "https://cloud.tencent.com/product/tke",
+      "icon": "https://cloud.tencent.com/favicon.ico",
+      "tags": [
+        "容器",
+        "Kubernetes",
+        "腾讯云",
+        "托管K8s",
+        "容器服务",
+        "国内"
+      ],
+      "category": "cloud-container",
+      "order": 246
+    },
+    {
+      "id": "阿里云容器服务-ack",
+      "title": "阿里云容器服务 ACK",
+      "description": "Alibaba Cloud Container Service for Kubernetes (ACK) is Alibaba Cloud's fully managed Kubernetes service supporting Docker container management, Auto Scaling, and log monitoring.",
+      "url": "https://www.aliyun.com/product/ack",
+      "icon": "https://www.aliyun.com/favicon.ico",
+      "tags": [
+        "容器",
+        "Kubernetes",
+        "阿里云",
+        "托管K8s",
+        "容器服务",
+        "国内"
+      ],
+      "category": "cloud-container",
+      "order": 247
+    },
+    {
+      "id": "flutter",
+      "title": "Flutter",
+      "description": "Flutter is Google's open-source cross-platform UI framework using the Dart language, building iOS and Android apps from a single codebase.",
+      "url": "https://flutter.dev/",
+      "icon": "https://flutter.dev/favicon.ico",
+      "tags": [
+        "移动开发",
+        "跨平台",
+        "UI框架",
+        "Google"
+      ],
+      "category": "mobile",
+      "order": 248
+    },
+    {
+      "id": "react-native",
+      "title": "React Native",
+      "description": "React Native is Facebook's open-source cross-platform mobile development framework, building native apps with JavaScript/TypeScript.",
+      "url": "https://reactnative.dev/",
+      "icon": "https://reactnative.dev/favicon.ico",
+      "tags": [
+        "移动开发",
+        "跨平台",
+        "React",
+        "JavaScript"
+      ],
+      "category": "mobile",
+      "order": 249
+    },
+    {
+      "id": "uni-app",
+      "title": "uni-app",
+      "description": "uni-app is DCloud's cross-platform development framework using Vue.js syntax, compiling one codebase to iOS, Android, H5, and more.",
+      "url": "https://uniapp.dcloud.net.cn/",
+      "icon": "https://uniapp.dcloud.net.cn/favicon.ico",
+      "tags": [
+        "移动开发",
+        "跨平台",
+        "Vue",
+        "微信小程序"
+      ],
+      "category": "mobile",
+      "order": 250
+    },
+    {
+      "id": "capacitor",
+      "title": "Capacitor",
+      "description": "Capacitor is the Ionic team's open-source cross-platform native container for building iOS, Android, and desktop apps with web technologies.",
+      "url": "https://capacitorjs.com/",
+      "icon": "https://capacitorjs.com/favicon.ico",
+      "tags": [
+        "移动开发",
+        "跨平台",
+        "Web技术",
+        "原生容器"
+      ],
+      "category": "mobile",
+      "order": 251
+    },
+    {
+      "id": "ionic",
+      "title": "Ionic",
+      "description": "Ionic is a powerful cross-platform mobile development framework based on Web Components, providing beautiful UI components.",
+      "url": "https://ionicframework.com/",
+      "icon": "https://ionicframework.com/favicon.ico",
+      "tags": [
+        "移动开发",
+        "跨平台",
+        "Web Components",
+        "UI框架"
+      ],
+      "category": "mobile",
+      "order": 252
+    },
+    {
+      "id": "expo",
+      "title": "Expo",
+      "description": "Expo is a React Native development toolchain providing a one-stop service for development, building, and deployment, simplifying the RN workflow.",
+      "url": "https://expo.dev/",
+      "icon": "https://expo.dev/favicon.ico",
+      "tags": [
+        "React Native",
+        "开发工具",
+        "移动开发",
+        "TypeScript"
+      ],
+      "category": "mobile",
+      "order": 253
+    },
+    {
+      "id": "nativescript",
+      "title": "NativeScript",
+      "description": "NativeScript is an open-source cross-platform framework for building native iOS and Android apps with Angular, Vue, or TypeScript.",
+      "url": "https://nativescript.org/",
+      "icon": "https://nativescript.org/favicon.ico",
+      "tags": [
+        "移动开发",
+        "跨平台",
+        "Angular",
+        "Vue"
+      ],
+      "category": "mobile",
+      "order": 254
+    },
+    {
+      "id": "taro",
+      "title": "Taro",
+      "description": "Taro is JD.com's open-source cross-platform development framework using React/Vue syntax, compiling one codebase to WeChat Mini Programs, H5, React Native, and more.",
+      "url": "https://taro.jd.com/",
+      "icon": "https://taro.jd.com/favicon.ico",
+      "tags": [
+        "移动开发",
+        "跨平台",
+        "React",
+        "微信小程序"
+      ],
+      "category": "mobile",
+      "order": 255
+    },
+    {
+      "id": "electron",
+      "title": "Electron",
+      "description": "Electron is GitHub's open-source cross-platform desktop app framework, building Windows, macOS, and Linux apps with web technologies (HTML/CSS/JS).",
+      "url": "https://electronjs.org/",
+      "icon": "https://electronjs.org/favicon.ico",
+      "tags": [
+        "桌面应用",
+        "跨平台",
+        "Web技术",
+        "GitHub"
+      ],
+      "category": "desktop",
+      "order": 256
+    },
+    {
+      "id": "tauri",
+      "title": "Tauri",
+      "description": "Tauri is a Rust-powered lightweight cross-platform app framework — smaller and faster than Electron — supporting Windows, macOS, Linux, and mobile.",
+      "url": "https://tauri.app/",
+      "icon": "https://tauri.app/favicon.ico",
+      "tags": [
+        "桌面应用",
+        "跨平台",
+        "Rust",
+        "轻量级"
+      ],
+      "category": "desktop",
+      "order": 257
+    },
+    {
+      "id": "neutralino",
+      "title": "Neutralino",
+      "description": "Neutralino is a lightweight cross-platform desktop app framework, only about 1MB in size, rendering with the system WebView.",
+      "url": "https://neutralino.js.org/",
+      "icon": "https://neutralino.js.org/favicon.ico",
+      "tags": [
+        "桌面应用",
+        "跨平台",
+        "轻量级",
+        "Web技术"
+      ],
+      "category": "desktop",
+      "order": 258
+    },
+    {
+      "id": "nw-js",
+      "title": "NW.js",
+      "description": "NW.js is a cross-platform desktop app framework based on Chromium and Node.js, with direct Node.js module and system API access.",
+      "url": "https://nwjs.io/",
+      "icon": "https://nwjs.io/favicon.ico",
+      "tags": [
+        "桌面应用",
+        "跨平台",
+        "Chromium",
+        "Node.js"
+      ],
+      "category": "desktop",
+      "order": 259
+    },
+    {
+      "id": "pywebview",
+      "title": "pywebview",
+      "description": "pywebview is a lightweight cross-platform desktop app framework for building native GUI apps with a Python backend and web frontend.",
+      "url": "https://pywebview.flowrl.com/",
+      "icon": "https://pywebview.flowrl.com/favicon.ico",
+      "tags": [
+        "桌面应用",
+        "Python",
+        "跨平台",
+        "GUI"
+      ],
+      "category": "desktop",
+      "order": 260
+    },
+    {
+      "id": "quasar",
+      "title": "Quasar",
+      "description": "Quasar is a Vue.js-based cross-platform framework for building SPA, PWA, desktop, and mobile apps from a single codebase.",
+      "url": "https://quasar.dev/",
+      "icon": "https://quasar.dev/favicon.ico",
+      "tags": [
+        "跨平台",
+        "Vue",
+        "桌面应用",
+        "移动应用"
+      ],
+      "category": "desktop",
+      "order": 261
+    },
+    {
+      "id": "bun",
+      "title": "Bun",
+      "description": "Bun is a fast JavaScript runtime, bundler, test runner, and package manager all in one.",
+      "url": "https://bun.sh/",
+      "icon": "https://bun.sh/favicon.ico",
+      "tags": [
+        "Bun",
+        "运行时",
+        "打包器",
+        "JavaScript"
+      ],
+      "category": "bun-runtime",
+      "order": 262
+    },
+    {
+      "id": "elysia",
+      "title": "Elysia",
+      "description": "Elysia is an ergonomic Bun web framework focused on type safety and performance.",
+      "url": "https://elysiajs.com/",
+      "icon": "https://elysiajs.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "Bun",
+        "高性能",
+        "TypeScript"
+      ],
+      "category": "bun-runtime",
+      "order": 263
+    },
+    {
+      "id": "hono",
+      "title": "Hono",
+      "description": "Hono is an ultrafast web framework supporting Cloudflare Workers, Deno, Bun, and other edge runtimes.",
+      "url": "https://hono.dev/",
+      "icon": "https://hono.dev/favicon.ico",
+      "tags": [
+        "Node.js",
+        "边缘计算",
+        "高性能",
+        "TypeScript",
+        "Bun"
+      ],
+      "category": "bun-runtime",
+      "order": 264
+    },
+    {
+      "id": "bun-sqlite",
+      "title": "Bun SQLite",
+      "description": "Bun's built-in SQLite support — zero-config, high-performance SQLite database directly within the Bun runtime.",
+      "url": "https://bun.sh/docs/api/sqlite",
+      "icon": "https://bun.sh/favicon.ico",
+      "tags": [
+        "Bun",
+        "SQLite",
+        "数据库",
+        "内置"
+      ],
+      "category": "bun-runtime",
+      "order": 265
+    },
+    {
+      "id": "bun-ffi",
+      "title": "Bun FFI",
+      "description": "Bun FFI provides high-throughput native extension development interfaces for Rust, C++, and Zig without binding layers.",
+      "url": "https://bun.sh/docs/api/ffi",
+      "icon": "https://bun.sh/favicon.ico",
+      "tags": [
+        "Bun",
+        "FFI",
+        "Rust",
+        "C++",
+        "原生扩展"
+      ],
+      "category": "bun-runtime",
+      "order": 266
+    },
+    {
+      "id": "在线压缩图片工具整合",
+      "title": "在线压缩图片（工具整合）",
+      "description": "docsmall.com is an online document processing tool designed and developed by INTERVAL.",
+      "url": "https://docsmall.com/image-compress",
+      "icon": "https://docsmall.com/_nuxt/icon-convert-to-jpg.Dca2FYe2.png",
+      "tags": [
+        "Tool",
+        "图片"
+      ],
+      "category": "tools",
+      "order": 267
+    },
+    {
+      "id": "photopea",
+      "title": "Photopea",
+      "description": "This online Photoshop alternative was developed by Czech programmer Ivan Kutskir in 2013 and has been evolving for over a decade.",
+      "url": "https://www.photopea.com/",
+      "icon": "https://www.photopea.com/promo/icon512.png",
+      "tags": [
+        "Tool"
+      ],
+      "category": "tools",
+      "order": 268
+    },
+    {
+      "id": "draw-io",
+      "title": "Draw.io",
+      "description": "A free open-source online diagramming tool ideal for flowcharts, org charts, network topology diagrams, and more.",
+      "url": "https://www.drawio.com/",
+      "icon": "https://www.drawio.com/favicon.ico",
+      "tags": [
+        "Tool"
+      ],
+      "category": "tools",
+      "order": 269
+    },
+    {
+      "id": "mnggiflab",
+      "title": "Mnggiflab",
+      "description": "MNGGIFLAB — online GIF creation, video to GIF, GIF editing, GIF compositing, GIF compression, and screen recording to GIF",
+      "url": "https://www.mnggiflab.com/",
+      "icon": "https://mnggiflab.com/img/logo/logo-icon.png",
+      "tags": [
+        "Tool",
+        "图片"
+      ],
+      "category": "tools",
+      "order": 270
+    },
+    {
+      "id": "limgx",
+      "title": "LimgX",
+      "description": "Free online image compression and format conversion tool. Local processing protects privacy, supports JPG, PNG, and WebP format conversion.",
+      "url": "https://limgx.com/",
+      "icon": "https://limgx.com/favicon.ico",
+      "tags": [
+        "Tool",
+        "图片"
+      ],
+      "category": "tools",
+      "order": 271
+    },
+    {
+      "id": "开源精选",
+      "title": "开源精选",
+      "description": "A navigation site focused on curating quality open-source tools.",
+      "url": "https://www.ossnav.com",
+      "icon": "https://www.ossnav.com/wp-content/uploads/2024/11/1732557264-open-64.png",
+      "tags": [
+        "开源",
+        "导航"
+      ],
+      "category": "resources",
+      "order": 272
+    },
+    {
+      "id": "tbox导航",
+      "title": "Tbox导航",
+      "description": "Tbox Navigation is a site that aggregates a large collection of quality online tools.",
+      "url": "https://www.tboxn.com/",
+      "icon": "https://tboxn.com/wp-content/uploads/2022/03/cropped-tboxlogo512.png",
+      "tags": [
+        "Tool",
+        "导航"
+      ],
+      "category": "resources",
+      "order": 273
+    },
+    {
+      "id": "awwwards",
+      "title": "Awwwards",
+      "description": "Awwwards is an international platform dedicated to recognizing and showcasing the world's best web design, often called the Oscars of web design.",
+      "url": "https://www.awwwards.com/",
+      "icon": "https://assets.awwwards.com/assets/images/favicon-safari.svg",
+      "tags": [
+        "资源"
+      ],
+      "category": "resources",
+      "order": 274
+    },
+    {
+      "id": "dribbble",
+      "title": "Dribbble",
+      "description": "Dribbble is a global design community with basketball-themed elements and an invite-only model, focused on UI/UX design and related fields.",
+      "url": "https://dribbble.com/",
+      "icon": "https://cdn.dribbble.com/assets/dribbble-vector-ball-c75e531ccee3110d0ee5ae951fd1d0a65d2ff25d3c0577757ea7e8d8e3e75db4.svg",
+      "tags": [
+        "资源",
+        "社区",
+        "设计"
+      ],
+      "category": "resources",
+      "order": 275
+    },
+    {
+      "id": "template0",
+      "title": "Template0",
+      "description": "A very well-known website template site.",
+      "url": "https://template0.com/",
+      "icon": "https://template0.com/favicon.ico",
+      "tags": [
+        "资源"
+      ],
+      "category": "resources",
+      "order": 276
+    },
+    {
+      "id": "htmlrev",
+      "title": "HtmlRev",
+      "description": "Another very well-known website template site.",
+      "url": "https://htmlrev.com/",
+      "icon": "https://htmlrev.com/images/favicon.png",
+      "tags": [
+        "资源"
+      ],
+      "category": "resources",
+      "order": 277
+    },
+    {
+      "id": "cssloaders",
+      "title": "CssLoaders",
+      "description": "A collection of CSS transition animation effects",
+      "url": "https://css-loaders.com/",
+      "icon": "https://css-loaders.com/fav.png",
+      "tags": [
+        "资源"
+      ],
+      "category": "resources",
+      "order": 278
+    },
+    {
+      "id": "navnav",
+      "title": "Navnav",
+      "description": "A site collecting a large number of navigation bar effects.",
+      "url": "https://thuvien.org/navnav",
+      "icon": "https://thuvien.org/favicon.png",
+      "tags": [
+        "资源",
+        "导航"
+      ],
+      "category": "resources",
+      "order": 279
+    },
+    {
+      "id": "a-template",
+      "title": "A template",
+      "description": "Free WebSite Templates with A Template.",
+      "url": "https://atemplate.com/",
+      "icon": "https://atemplate.com/favicon.ico",
+      "tags": [
+        "资源"
+      ],
+      "category": "resources",
+      "order": 280
+    },
+    {
+      "id": "免费api",
+      "title": "免费API",
+      "description": "A collection site for free APIs, free interfaces, and free services.",
+      "url": "https://api.aa1.cn/",
+      "icon": "https://api.aa1.cn/favicon.ico",
+      "tags": [
+        "资源"
+      ],
+      "category": "resources",
+      "order": 281
+    },
+    {
+      "id": "topindie-dev",
+      "title": "TopIndie.dev",
+      "description": "TopIndie.dev is the hub for indie developers to discover, showcase, and explore innovative projects.",
+      "url": "https://topindie.dev/",
+      "icon": "https://topindie.dev/assets/image/favicon.ico",
+      "tags": [
+        "资源",
+        "独立开发"
+      ],
+      "category": "resources",
+      "order": 282
+    },
+    {
+      "id": "idea-haber",
+      "title": "Idea haber",
+      "description": "A great English product idea collection platform, perfect for indie developers seeking inspiration.",
+      "url": "https://ideaharbor.xyz",
+      "icon": "https://ideaharbor.xyz/favicon.ico",
+      "tags": [
+        "资源",
+        "社区"
+      ],
+      "category": "resources",
+      "order": 283
+    },
+    {
+      "id": "优设网",
+      "title": "优设网",
+      "description": "A leading professional designer platform in China, aggregating design tutorials, industry news, and portfolio showcases.",
+      "url": "https://www.uisdc.com/",
+      "icon": "https://www.uisdc.com/favicon.ico",
+      "tags": [
+        "资源",
+        "社区",
+        "设计"
+      ],
+      "category": "resources",
+      "order": 284
+    },
+    {
+      "id": "办公人导航",
+      "title": "办公人导航",
+      "description": "A practical office-life navigation website.",
+      "url": "https://www.bgrdh.com/",
+      "icon": "https://www.bgrdh.com/wp-content/uploads/2022/11/20221119185003612150.png",
+      "tags": [
+        "导航",
+        "资源"
+      ],
+      "category": "resources",
+      "order": 285
+    },
+    {
+      "id": "fuun-fun",
+      "title": "fuun.fun",
+      "description": "Curator of fun and quirky websites",
+      "url": "https://fuun.fun/",
+      "icon": "https://fuun.fun/favicon.ico",
+      "tags": [
+        "资源",
+        "娱乐"
+      ],
+      "category": "resources",
+      "order": 286
+    },
+    {
+      "id": "白嫖站",
+      "title": "白嫖站",
+      "description": "Freebie resources",
+      "url": "https://baipiao.top/",
+      "icon": "https://baipiao.top/favicon.ico",
+      "tags": [
+        "导航"
+      ],
+      "category": "resources",
+      "order": 287
+    },
+    {
+      "id": "loot-drop",
+      "title": "Loot Drop",
+      "description": "Loot Drop is a failed startup case library with 1,100+ shutdown company case studies and recovery plans — learn entrepreneurship from failure.",
+      "url": "https://www.loot-drop.io/",
+      "icon": "https://www.loot-drop.io/favicon.ico",
+      "tags": [
+        "创业",
+        "案例库",
+        "资源",
+        "独立开发"
+      ],
+      "category": "resources",
+      "order": 288
+    },
+    {
+      "id": "mobbin",
+      "title": "Mobbin",
+      "description": "Discover real-world design inspiration — a site curating design inspiration from 1,400+ apps.",
+      "url": "https://mobbin.com",
+      "icon": "https://mobbin.com/favicon.ico",
+      "tags": [
+        "资源",
+        "社区",
+        "设计"
+      ],
+      "category": "resources",
+      "order": 289
+    },
+    {
+      "id": "refero",
+      "title": "Refero",
+      "description": "A design research guide, the largest web and iOS UI/UX design inspiration library.",
+      "url": "https://refero.design/",
+      "icon": "https://refero.design/favicon.ico",
+      "tags": [
+        "资源",
+        "社区",
+        "设计"
+      ],
+      "category": "resources",
+      "order": 290
+    },
+    {
+      "id": "creght",
+      "title": "Creght",
+      "description": "A designer-friendly website builder",
+      "url": "https://www.creght.com/",
+      "icon": "https://fsu.creght.com/project/mVnidfGADfS/lZLMxdMuGEY__logo_(1).png?w=768&fmt=webp",
+      "tags": [
+        "资源",
+        "建站",
+        "设计"
+      ],
+      "category": "resources",
+      "order": 291
+    },
+    {
+      "id": "iconfinder",
+      "title": "Iconfinder",
+      "description": "A professional icon resource site to inspire your designs.",
+      "url": "https://www.iconfinder.com/",
+      "icon": "https://www.iconfinder.com/favicon.ico",
+      "tags": [
+        "资源",
+        "图标",
+        "设计"
+      ],
+      "category": "resources",
+      "order": 292
+    },
+    {
+      "id": "makemepulse",
+      "title": "MakemePulse",
+      "description": "MakeMePulse 2019 creative website collection, featuring the world's best web design works — each a visual masterpiece.",
+      "url": "https://2019.makemepulse.com/",
+      "icon": "https://2019.makemepulse.com/favicon.ico",
+      "tags": [
+        "设计",
+        "资源"
+      ],
+      "category": "resources",
+      "order": 293
+    },
+    {
+      "id": "mek-txt",
+      "title": "MEK.txt",
+      "description": "MEK.txt Mek Gallery is a retro-style resource sharing website",
+      "url": "https://www.mek.gallery/",
+      "icon": "https://framerusercontent.com/images/GgGZEpdp0k0EuePiSwgr1d2jRtA.svg",
+      "tags": [
+        "像素",
+        "资源"
+      ],
+      "category": "resources",
+      "order": 294
+    },
+    {
+      "id": "kenney",
+      "title": "Kenney",
+      "description": "A free game asset collection offering consistently styled 2D sprites, 3D models, UI elements, and sound effects.",
+      "url": "https://www.kenney.nl/",
+      "icon": "https://www.kenney.nl/favicon.ico",
+      "tags": [
+        "游戏素材",
+        "资源",
+        "2D",
+        "3D"
+      ],
+      "category": "resources",
+      "order": 295
+    },
+    {
+      "id": "svg-repo",
+      "title": "SVG Repo",
+      "description": "A free SVG icon library with 500,000+ vector icons, supporting direct download and code copying.",
+      "url": "https://www.svgrepo.com/",
+      "icon": "https://www.svgrepo.com/favicon.ico",
+      "tags": [
+        "图标",
+        "SVG",
+        "设计",
+        "UI"
+      ],
+      "category": "resources",
+      "order": 296
+    },
+    {
+      "id": "pixabay",
+      "title": "Pixabay",
+      "description": "One of the world's largest free asset platforms, offering images, videos, music, and sound effects.",
+      "url": "https://pixabay.com/",
+      "icon": "https://pixabay.com/favicon.ico",
+      "tags": [
+        "素材",
+        "音乐",
+        "音效",
+        "图片"
+      ],
+      "category": "resources",
+      "order": 297
+    },
+    {
+      "id": "cocos-creator",
+      "title": "Cocos Creator",
+      "description": "Cocos has become a benchmark for global general-purpose engines through its open-source free model, extreme lightweight design, and Chinese developer ecosystem.",
+      "url": "https://www.cocos.com/creator",
+      "icon": "https://www.cocos.com/favicon.ico",
+      "tags": [
+        "游戏引擎",
+        "2D",
+        "3D",
+        "跨平台"
+      ],
+      "category": "game-engines",
+      "order": 298
+    },
+    {
+      "id": "lp平台",
+      "title": "LP平台",
+      "description": "An interesting text game platform, for those who still love text-based games.",
+      "url": "https://avgjs.dev/",
+      "icon": "https://avgjs.dev/favicon.ico",
+      "tags": [
+        "游戏引擎",
+        "文字游戏",
+        "AVG"
+      ],
+      "category": "game-engines",
+      "order": 299
+    },
+    {
+      "id": "adv-js",
+      "title": "ADV.js",
+      "description": "A future-oriented, frontend-first ADV text adventure game engine.",
+      "url": "https://advjs.org/",
+      "icon": "https://advjs.org/favicon.ico",
+      "tags": [
+        "游戏引擎",
+        "文字游戏",
+        "AVG"
+      ],
+      "category": "game-engines",
+      "order": 300
+    },
+    {
+      "id": "renpy",
+      "title": "Ren'Py",
+      "description": "Ren'Py is an open-source visual novel engine for creating interactive story games.",
+      "url": "https://www.renpy.org/",
+      "icon": "https://www.renpy.org/favicon.ico",
+      "tags": [
+        "游戏引擎",
+        "视觉小说",
+        "开源"
+      ],
+      "category": "game-engines",
+      "order": 301
+    },
+    {
+      "id": "gamemaker",
+      "title": "GameMaker",
+      "description": "GameMaker has become the gold standard for indie games with its low barrier to entry and high-performance 2D development.",
+      "url": "https://gamemaker.io/",
+      "icon": "https://gamemaker.io/favicon.ico",
+      "tags": [
+        "游戏引擎",
+        "2D",
+        "独立游戏"
+      ],
+      "category": "game-engines",
+      "order": 302
+    },
+    {
+      "id": "rpg-maker",
+      "title": "RPG Maker",
+      "description": "RPG Maker is both a tool and a cornerstone of the creator ecosystem.",
+      "url": "https://www.rpgmakerweb.com/",
+      "icon": "https://www.rpgmakerweb.com/favicon.ico",
+      "tags": [
+        "游戏引擎",
+        "RPG",
+        "独立游戏"
+      ],
+      "category": "game-engines",
+      "order": 303
+    },
+    {
+      "id": "gamecreator",
+      "title": "GameCreator",
+      "description": "A game creation tool supporting visual programming and TypeScript.",
+      "url": "https://gamecreator.cn/",
+      "icon": "https://gamecreator.cn/favicon.ico",
+      "tags": [
+        "游戏引擎",
+        "可视化",
+        "TypeScript"
+      ],
+      "category": "game-engines",
+      "order": 304
+    },
+    {
+      "id": "星火编辑器",
+      "title": "星火编辑器",
+      "description": "The best UGC game engine, with 500+ games launched on TapTap and Steam.",
+      "url": "https://www.spark-editor.com/",
+      "icon": "https://www.spark-editor.com/favicon.ico",
+      "tags": [
+        "游戏引擎",
+        "UGC",
+        "TapTap"
+      ],
+      "category": "game-engines",
+      "order": 305
+    },
+    {
+      "id": "gdevelop",
+      "title": "GDevelop",
+      "description": "GDevelop is the only open-source engine with an intuitive, efficient zero-code approach.",
+      "url": "https://gdevelop.io/",
+      "icon": "https://gdevelop.io/favicon.ico",
+      "tags": [
+        "游戏引擎",
+        "开源",
+        "零代码"
+      ],
+      "category": "game-engines",
+      "order": 306
+    },
+    {
+      "id": "pixijs",
+      "title": "PixiJS",
+      "description": "PixiJS is a fast 2D WebGL rendering engine for games, interactive media, and visualization.",
+      "url": "https://pixijs.com/",
+      "icon": "https://pixijs.com/favicon.ico",
+      "tags": [
+        "WebGL",
+        "2D",
+        "图形",
+        "渲染"
+      ],
+      "category": "game-engines",
+      "order": 307
+    },
+    {
+      "id": "phaser",
+      "title": "Phaser",
+      "description": "Phaser is a fast, free HTML5 2D game framework for building cross-platform web games.",
+      "url": "https://phaser.io/",
+      "icon": "https://phaser.io/favicon.ico",
+      "tags": [
+        "WebGL",
+        "2D",
+        "游戏引擎",
+        "HTML5"
+      ],
+      "category": "game-engines",
+      "order": 308
+    },
+    {
+      "id": "godot-engine",
+      "title": "Godot Engine",
+      "description": "Godot is an open-source 2D/3D game engine — lightweight yet feature-complete.",
+      "url": "https://godotengine.org/",
+      "icon": "https://godotengine.org/favicon.ico",
+      "tags": [
+        "游戏引擎",
+        "开源",
+        "2D",
+        "3D"
+      ],
+      "category": "game-engines",
+      "order": 309
+    },
+    {
+      "id": "blender",
+      "title": "Blender",
+      "description": "Blender is an open-source 3D creation suite supporting the full workflow of modeling, sculpting, animation, rendering, and video editing.",
+      "url": "https://www.blender.org/",
+      "icon": "https://www.blender.org/wp-content/themes/btheme/assets/images/favicon/favicon-32x32.png",
+      "tags": [
+        "3D建模",
+        "开源",
+        "动画",
+        "渲染"
+      ],
+      "category": "3d-modeling",
+      "order": 310
+    },
+    {
+      "id": "sketchfab",
+      "title": "Sketchfab",
+      "description": "Sketchfab is the world's leading 3D model publishing and collaboration platform, supporting glTF/WebGL real-time preview and embedded sharing.",
+      "url": "https://sketchfab.com/",
+      "icon": "https://sketchfab.com/favicon.ico",
+      "tags": [
+        "3D模型",
+        "在线平台",
+        "协作",
+        "WebGL"
+      ],
+      "category": "3d-modeling",
+      "order": 311
+    },
+    {
+      "id": "51建模网",
+      "title": "51建模网",
+      "description": "A professional domestic 3D model asset download platform offering a vast collection of high-quality 3D resources.",
+      "url": "https://www.51jianmo.com/",
+      "icon": "https://www.51jianmo.com/favicon.ico",
+      "tags": [
+        "3D模型",
+        "素材",
+        "国内"
+      ],
+      "category": "3d-modeling",
+      "order": 312
+    },
+    {
+      "id": "cinema-4d",
+      "title": "Cinema 4D",
+      "description": "Cinema 4D is a professional 3D modeling, animation, and rendering software known for its ease of use and powerful MoGraph module.",
+      "url": "https://www.maxon.net/en/cinema-4d",
+      "icon": "https://www.maxon.net/favicon.ico",
+      "tags": [
+        "3D建模",
+        "动画",
+        "渲染",
+        "视觉设计"
+      ],
+      "category": "3d-modeling",
+      "order": 313
+    },
+    {
+      "id": "spline",
+      "title": "Spline",
+      "description": "Spline is a web-based 3D design tool for creating interactive 3D scenes with zero barriers, supporting export as React/Vue components.",
+      "url": "https://spline.design/",
+      "icon": "https://spline.design/favicon.ico",
+      "tags": [
+        "3D设计",
+        "Web",
+        "低代码",
+        "交互式"
+      ],
+      "category": "3d-modeling",
+      "order": 314
+    },
+    {
+      "id": "three-js-editor",
+      "title": "Three.js Editor",
+      "description": "The official Three.js online editor for creating and editing 3D scenes, adjusting materials and lighting directly in the browser.",
+      "url": "https://threejs.org/editor/",
+      "icon": "https://threejs.org/favicon.ico",
+      "tags": [
+        "WebGL",
+        "3D",
+        "在线编辑器",
+        "Three.js"
+      ],
+      "category": "3d-modeling",
+      "order": 315
+    },
+    {
+      "id": "playcanvas",
+      "title": "PlayCanvas",
+      "description": "PlayCanvas is an open-source WebGL 3D game engine and editor supporting real-time collaboration and one-click publishing.",
+      "url": "https://playcanvas.com/",
+      "icon": "https://playcanvas.com/favicon.ico",
+      "tags": [
+        "WebGL",
+        "3D",
+        "游戏引擎",
+        "在线编辑器"
+      ],
+      "category": "3d-modeling",
+      "order": 316
+    },
+    {
+      "id": "sketchup",
+      "title": "SketchUp",
+      "description": "SketchUp is an intuitive, easy-to-use 3D modeling tool widely used in architecture, interior design, and urban planning.",
+      "url": "https://www.sketchup.com/",
+      "icon": "https://www.sketchup.com/favicon.ico",
+      "tags": [
+        "3D建模",
+        "建筑",
+        "室内设计"
+      ],
+      "category": "3d-modeling",
+      "order": 317
+    },
+    {
+      "id": "maya",
+      "title": "Maya",
+      "description": "Maya is Autodesk's flagship 3D animation and modeling software, the industry standard for film and game production.",
+      "url": "https://www.autodesk.com/products/maya",
+      "icon": "https://www.autodesk.com/favicon.ico",
+      "tags": [
+        "3D建模",
+        "动画",
+        "影视",
+        "工业标准"
+      ],
+      "category": "3d-modeling",
+      "order": 318
+    },
+    {
+      "id": "blocks",
+      "title": "Blocks",
+      "description": "VR Blocks is Google's VR 3D modeling tool for intuitively creating 3D models with gestures in virtual reality.",
+      "url": "https://www.with.in/products/blocks",
+      "icon": "https://www.with.in/favicon.ico",
+      "tags": [
+        "VR",
+        "3D建模",
+        "Google"
+      ],
+      "category": "3d-modeling",
+      "order": 319
+    },
+    {
+      "id": "vectary",
+      "title": "Vectary",
+      "description": "Vectary is a browser-based 3D design platform supporting AR preview and interactive 3D scene embedding in web pages.",
+      "url": "https://www.vectary.com/",
+      "icon": "https://www.vectary.com/favicon.ico",
+      "tags": [
+        "3D设计",
+        "AR",
+        "Web",
+        "低代码"
+      ],
+      "category": "3d-modeling",
+      "order": 320
+    },
+    {
+      "id": "mixamo",
+      "title": "Mixamo",
+      "description": "Adobe's free character animation platform — one-click rigging and motion library application for 3D models.",
+      "url": "https://www.mixamo.com/",
+      "icon": "https://www.mixamo.com/favicon.ico",
+      "tags": [
+        "3D建模",
+        "动画",
+        "骨骼绑定",
+        "Adobe"
+      ],
+      "category": "3d-modeling",
+      "order": 321
+    },
+    {
+      "id": "quixel-megascans",
+      "title": "Quixel Megascans",
+      "description": "The world's largest 2D/3D scanned asset library, offering photorealistic textures and models.",
+      "url": "https://quixel.com/",
+      "icon": "https://quixel.com/favicon.ico",
+      "tags": [
+        "3D模型",
+        "素材",
+        "纹理",
+        "扫描"
+      ],
+      "category": "3d-modeling",
+      "order": 322
+    },
+    {
+      "id": "itch-io",
+      "title": "Itch.io",
+      "description": "Founded in 2013, providing indie developers with an open space for unmoderated publishing, free pricing, and custom page design.",
+      "url": "https://itch.io/",
+      "icon": "https://static.itch.io/images/logo-black-new.svg",
+      "tags": [
+        "独立开发",
+        "社区",
+        "游戏"
+      ],
+      "category": "games",
+      "order": 323
+    },
+    {
+      "id": "独立精神-indienova-独立游戏",
+      "title": "独立精神 | indienova 独立游戏",
+      "description": "Indienova has become the ecological cornerstone of China's indie game scene through its dual-track model of technical empowerment and cultural curation.",
+      "url": "https://indienova.com/",
+      "icon": "https://static.indienova.com/assets/images/logos/indienova_new@2x.png",
+      "tags": [
+        "社区",
+        "游戏"
+      ],
+      "category": "games",
+      "order": 324
+    },
+    {
+      "id": "游戏开发资源整合集",
+      "title": "游戏开发资源整合集",
+      "description": "JundaJun's game development resource collection",
+      "url": "https://jundagame.top/",
+      "icon": "https://jundagame.top/logo/jundajun.png",
+      "tags": [
+        "游戏",
+        "导航"
+      ],
+      "category": "games",
+      "order": 325
+    },
+    {
+      "id": "retro-games",
+      "title": "retro-games",
+      "description": "A retro gaming nostalgia platform",
+      "url": "https://www.retrogames.onl",
+      "icon": "https://www.retrogames.onl/favicon.ico",
+      "tags": [
+        "游戏"
+      ],
+      "category": "games",
+      "order": 326
+    },
+    {
+      "id": "retrogames",
+      "title": "RetroGames",
+      "description": "A retro gaming nostalgia platform",
+      "url": "https://retro-games.org/",
+      "icon": "https://retro-games.org/favicon.ico",
+      "tags": [
+        "游戏"
+      ],
+      "category": "games",
+      "order": 327
+    },
+    {
+      "id": "game-ui-database",
+      "title": "Game UI Database",
+      "description": "A database focused on game UI design, providing rich design resources.",
+      "url": "https://www.gameuidatabase.com/",
+      "icon": "https://www.gameuidatabase.com/favicon.ico",
+      "tags": [
+        "游戏",
+        "UI",
+        "设计"
+      ],
+      "category": "games",
+      "order": 328
+    },
+    {
+      "id": "interface-in-game",
+      "title": "Interface in Game",
+      "description": "A site built for GUI designers, offering the latest design trends and tips.",
+      "url": "https://interfaceingame.com/",
+      "icon": "https://interfaceingame.com/favicon.ico",
+      "tags": [
+        "游戏",
+        "GUI",
+        "设计"
+      ],
+      "category": "games",
+      "order": 329
+    },
+    {
+      "id": "product-hunt",
+      "title": "Product hunt",
+      "description": "Product Hunt is a leading global product discovery platform.",
+      "url": "https://www.producthunt.com/",
+      "icon": "https://www.producthunt.com/favicon.ico",
+      "tags": [
+        "社区",
+        "独立开发"
+      ],
+      "category": "community",
+      "order": 330
+    },
+    {
+      "id": "nodejs中文网",
+      "title": "Nodejs中文网",
+      "description": "Well-translated and curated Chinese Node.js documentation",
+      "url": "https://dev.nodejs.cn/",
+      "icon": "https://dev.nodejs.cn/favicon.ico",
+      "tags": [
+        "社区",
+        "文档"
+      ],
+      "category": "community",
+      "order": 331
+    },
+    {
+      "id": "看雪论坛",
+      "title": "看雪论坛",
+      "description": "Focused on software security and technical exchange, providing a platform for security technology enthusiasts.",
+      "url": "https://www.kanxue.com/",
+      "icon": "https://www.kanxue.com/view/img/favicon.ico",
+      "tags": [
+        "网络安全",
+        "社区"
+      ],
+      "category": "community",
+      "order": 332
+    },
+    {
+      "id": "hack-forums",
+      "title": "Hack Forums",
+      "description": "A well-known cybersecurity technical forum suitable for white-hat, black-hat communities, and developers.",
+      "url": "https://hackforums.net/",
+      "icon": "https://www.hackforums.net/view/img/favicon.ico",
+      "tags": [
+        "网络安全",
+        "社区"
+      ],
+      "category": "community",
+      "order": 333
+    },
+    {
+      "id": "behance",
+      "title": "Behance",
+      "description": "A world-renowned design community showcasing creative works from designers.",
+      "url": "https://www.behance.net/",
+      "icon": "https://www.behance.net/favicon.ico",
+      "tags": [
+        "设计",
+        "社区"
+      ],
+      "category": "community",
+      "order": 334
+    },
+    {
+      "id": "ui中国",
+      "title": "UI中国",
+      "description": "A well-known Chinese designer community providing UI design, interaction design, UX, and professional design resources.",
+      "url": "https://www.ui.cn/",
+      "icon": "https://www.ui.cn/favicon.ico",
+      "tags": [
+        "设计",
+        "UI",
+        "社区"
+      ],
+      "category": "community",
+      "order": 335
+    }
+  ]
+}

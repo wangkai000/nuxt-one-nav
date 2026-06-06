@@ -73,13 +73,13 @@
           <el-menu-item index="submit" @click="openSubmit">
             <Icon icon="fluent-emoji:plus" style="width: 20px; height: 20px; min-width: 20px; min-height: 20px; margin-right: 12px;" />
             <template #title>
-              <span>网站提交</span>
+              <span>{{ config.nav.submit }}</span>
             </template>
           </el-menu-item>
           <el-menu-item index="about" @click="openAbout">
             <Icon icon="fluent-emoji:information" style="width: 20px; height: 20px; min-width: 20px; min-height: 20px; margin-right: 12px;" />
             <template #title>
-              <span>关于导航</span>
+              <span>{{ config.nav.about }}</span>
             </template>
           </el-menu-item>
         </el-menu>
@@ -91,6 +91,8 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
 import { useNavData } from '~/data/nav-data'
+
+const config = useRuntimeConfig().public.siteConfig
 
 const { categories } = useNavData()
 

@@ -11,7 +11,7 @@
           class="flex items-center gap-1 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
         >
           <Icon icon="mdi:arrow-left" class="w-4 h-4" />
-          <span>{{ $t('detail.navHome') }}</span>
+          <span>{{ config.detail.navHome }}</span>
         </button>
         <Icon icon="mdi:chevron-right" class="w-4 h-4 text-gray-300 dark:text-gray-600" />
         <button
@@ -37,8 +37,8 @@
       <!-- 未找到 -->
       <div v-if="!navItem" class="flex flex-col items-center justify-center py-24 text-gray-500">
         <Icon icon="mdi:alert-circle-outline" class="w-16 h-16 mb-4 opacity-50" />
-        <p class="text-lg">{{ $t('detail.notFound') }}</p>
-        <button @click="goBack" class="mt-4 text-blue-600 hover:underline">{{ $t('detail.backHome') }}</button>
+        <p class="text-lg">{{ config.detail.notFound }}</p>
+        <button @click="goBack" class="mt-4 text-blue-600 hover:underline">{{ config.detail.backHome }}</button>
       </div>
 
       <template v-else>
@@ -95,7 +95,7 @@
               class="flex items-center justify-center gap-2 w-full px-5 py-3 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-semibold rounded-xl transition-colors shadow-sm"
             >
               <Icon icon="mdi:open-in-new" class="w-5 h-5" />
-              <span>{{ $t('detail.visitSite') }}</span>
+              <span>{{ config.detail.visitSite }}</span>
             </a>
 
             <!-- 链接复制 -->
@@ -104,7 +104,7 @@
               class="flex items-center justify-center gap-2 w-full px-5 py-2.5 border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-700 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium rounded-xl transition-colors"
             >
               <Icon :icon="urlCopied ? 'mdi:check' : 'mdi:content-copy'" class="w-4 h-4" />
-              <span class="text-sm">{{ urlCopied ? $t('detail.copied') : $t('detail.copyLink') }}</span>
+              <span class="text-sm">{{ urlCopied ? config.detail.copied : config.detail.copyLink }}</span>
             </button>
 
             <!-- URL展示 -->
@@ -119,7 +119,7 @@
         <div v-if="relatedItems.length > 0" class="bg-white dark:bg-[#252547] rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm">
           <div class="flex items-center gap-3 mb-4">
             <Icon :icon="categoryIcon" class="w-5 h-5 text-gray-400" />
-            <h2 class="text-base font-bold text-gray-900 dark:text-white">{{ $t('detail.related') }}</h2>
+            <h2 class="text-base font-bold text-gray-900 dark:text-white">{{ config.detail.related }}</h2>
             <span class="text-sm text-gray-500">({{ relatedItems.length }})</span>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
@@ -167,10 +167,11 @@ import { useNavData } from '~/data/nav-data'
 import { categoryIconMap, domainIconMap, tagIconRules, getFallbackIcon } from '~/utils/icon-maps'
 import type { NavItem, Category } from '~/types/nav'
 
+const config = useRuntimeConfig().public.siteConfig
+
 const { navData, getCategoryById } = useNavData()
 const route = useRoute()
 const router = useRouter()
-const { t } = useI18n()
 
 // ─── 数据 ───────────────────────────────────────────────
 const itemId = computed(() => route.params.id as string)
@@ -202,7 +203,7 @@ const childCategory = computed<Category | null>(() => {
   return null
 })
 
-const categoryName = computed(() => categoryInfo.value?.name || t('detail.uncategorized'))
+const categoryName = computed(() => categoryInfo.value?.name || config.detail.uncategorized)
 const categoryIcon = computed(() => categoryInfo.value?.icon || 'mdi:folder-outline')
 
 // ─── 相关推荐（同分类）──────────────────────────────────
@@ -296,6 +297,6 @@ const fallbackIcon = computed(() => {
 
 // ─── SEO ───────────────────────────────────────────────
 useHead({
-  title: computed(() => navItem.value ? t('detail.pageTitle', { title: navItem.value.title }) : t('detail.notFoundTitle')),
+  title: computed(() => navItem.value ? config.detail.pageTitle.replace('{title}', navItem.value.title) : config.detail.notFoundTitle),
 })
 </script>
