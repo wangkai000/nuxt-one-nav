@@ -4,7 +4,7 @@ import type { NavItem, Category } from '~/types/nav'
 export type { NavItem, Category }
 
 // 加载中文导航数据
-import zhData from './nav-data.zh.generated.json'
+import navDataJson from './nav-data.generated.json'
 
 // 响应式数据 composable
 export const useNavData = () => {
@@ -12,8 +12,8 @@ export const useNavData = () => {
   const categories = useState<Category[]>('nav-categories', () => [])
 
   const initNavData = () => {
-    navData.value = zhData.sites as NavItem[]
-    categories.value = zhData.categories as Category[]
+    navData.value = navDataJson.sites as NavItem[]
+    categories.value = navDataJson.categories as Category[]
   }
 
   const getLeafCategories = computed(() =>
