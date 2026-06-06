@@ -288,7 +288,7 @@ export default defineNuxtConfig({
   // 仅在 SSR/SSG 模式下生效
   nitro: {
     output: {
-      dir: '.output/public'
+      dir: '.output'
     },
     prerender: {
       // 预渲染失败时不中断构建（可能有一些 SSR 警告但仍生成静态文件）
