@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "lastUpdated": "2026-06-06",
     "description": "基于 Nuxt 4 的导航站数据（Markdown 数据源）",
-    "totalSites": 330,
+    "totalSites": 335,
     "totalCategories": 16
   },
   "categories": [
@@ -328,7 +328,7 @@
       "id": "resources",
       "name": "资源导航",
       "icon": "fluent-emoji:world-map",
-      "count": 23
+      "count": 26
     },
     {
       "id": "game-engines",
@@ -340,7 +340,7 @@
       "id": "3d-modeling",
       "name": "3D 建模",
       "icon": "fluent-emoji:artist-palette",
-      "count": 11
+      "count": 13
     },
     {
       "id": "games",
@@ -4603,6 +4603,51 @@
       "order": 294
     },
     {
+      "id": "kenney",
+      "title": "Kenney",
+      "description": "免费游戏素材合集，提供风格统一的 2D 精灵、3D 模型、UI 元素和音效。",
+      "url": "https://www.kenney.nl/",
+      "icon": "https://www.kenney.nl/favicon.ico",
+      "tags": [
+        "游戏素材",
+        "资源",
+        "2D",
+        "3D"
+      ],
+      "category": "resources",
+      "order": 295
+    },
+    {
+      "id": "svg-repo",
+      "title": "SVG Repo",
+      "description": "免费 SVG 图标库，收录 50 万+ 矢量图标，支持直接下载和代码复制。",
+      "url": "https://www.svgrepo.com/",
+      "icon": "https://www.svgrepo.com/favicon.ico",
+      "tags": [
+        "图标",
+        "SVG",
+        "设计",
+        "UI"
+      ],
+      "category": "resources",
+      "order": 296
+    },
+    {
+      "id": "pixabay",
+      "title": "Pixabay",
+      "description": "全球最大的免费素材平台之一，提供图片、视频、音乐和音效。",
+      "url": "https://pixabay.com/",
+      "icon": "https://pixabay.com/favicon.ico",
+      "tags": [
+        "素材",
+        "音乐",
+        "音效",
+        "图片"
+      ],
+      "category": "resources",
+      "order": 297
+    },
+    {
       "id": "cocos-creator",
       "title": "Cocos Creator",
       "description": "Cocos 凭借开源免费策略、极致轻量化和中国开发者生态，成为全球化通用引擎标杆。",
@@ -4615,7 +4660,7 @@
         "跨平台"
       ],
       "category": "game-engines",
-      "order": 295
+      "order": 298
     },
     {
       "id": "lp平台",
@@ -4629,7 +4674,7 @@
         "AVG"
       ],
       "category": "game-engines",
-      "order": 296
+      "order": 299
     },
     {
       "id": "adv-js",
@@ -4643,7 +4688,7 @@
         "AVG"
       ],
       "category": "game-engines",
-      "order": 297
+      "order": 300
     },
     {
       "id": "renpy",
@@ -4657,7 +4702,7 @@
         "开源"
       ],
       "category": "game-engines",
-      "order": 298
+      "order": 301
     },
     {
       "id": "gamemaker",
@@ -4671,7 +4716,7 @@
         "独立游戏"
       ],
       "category": "game-engines",
-      "order": 299
+      "order": 302
     },
     {
       "id": "rpg-maker",
@@ -4685,7 +4730,7 @@
         "独立游戏"
       ],
       "category": "game-engines",
-      "order": 300
+      "order": 303
     },
     {
       "id": "gamecreator",
@@ -4699,7 +4744,7 @@
         "TypeScript"
       ],
       "category": "game-engines",
-      "order": 301
+      "order": 304
     },
     {
       "id": "星火编辑器",
@@ -4713,7 +4758,7 @@
         "TapTap"
       ],
       "category": "game-engines",
-      "order": 302
+      "order": 305
     },
     {
       "id": "gdevelop",
@@ -4727,7 +4772,7 @@
         "零代码"
       ],
       "category": "game-engines",
-      "order": 303
+      "order": 306
     },
     {
       "id": "pixijs",
@@ -4742,7 +4787,7 @@
         "渲染"
       ],
       "category": "game-engines",
-      "order": 304
+      "order": 307
     },
     {
       "id": "phaser",
@@ -4757,7 +4802,7 @@
         "HTML5"
       ],
       "category": "game-engines",
-      "order": 305
+      "order": 308
     },
     {
       "id": "godot-engine",
@@ -4772,7 +4817,7 @@
         "3D"
       ],
       "category": "game-engines",
-      "order": 306
+      "order": 309
     },
     {
       "id": "blender",
@@ -4787,7 +4832,7 @@
         "渲染"
       ],
       "category": "3d-modeling",
-      "order": 307
+      "order": 310
     },
     {
       "id": "sketchfab",
@@ -4802,7 +4847,7 @@
         "WebGL"
       ],
       "category": "3d-modeling",
-      "order": 308
+      "order": 311
     },
     {
       "id": "51建模网",
@@ -4816,7 +4861,7 @@
         "国内"
       ],
       "category": "3d-modeling",
-      "order": 309
+      "order": 312
     },
     {
       "id": "cinema-4d",
@@ -4831,7 +4876,7 @@
         "视觉设计"
       ],
       "category": "3d-modeling",
-      "order": 310
+      "order": 313
     },
     {
       "id": "spline",
@@ -4846,7 +4891,7 @@
         "交互式"
       ],
       "category": "3d-modeling",
-      "order": 311
+      "order": 314
     },
     {
       "id": "three-js-editor",
@@ -4861,7 +4906,7 @@
         "Three.js"
       ],
       "category": "3d-modeling",
-      "order": 312
+      "order": 315
     },
     {
       "id": "playcanvas",
@@ -4876,7 +4921,7 @@
         "在线编辑器"
       ],
       "category": "3d-modeling",
-      "order": 313
+      "order": 316
     },
     {
       "id": "sketchup",
@@ -4890,7 +4935,7 @@
         "室内设计"
       ],
       "category": "3d-modeling",
-      "order": 314
+      "order": 317
     },
     {
       "id": "maya",
@@ -4905,7 +4950,7 @@
         "工业标准"
       ],
       "category": "3d-modeling",
-      "order": 315
+      "order": 318
     },
     {
       "id": "blocks",
@@ -4919,7 +4964,7 @@
         "Google"
       ],
       "category": "3d-modeling",
-      "order": 316
+      "order": 319
     },
     {
       "id": "vectary",
@@ -4934,7 +4979,37 @@
         "低代码"
       ],
       "category": "3d-modeling",
-      "order": 317
+      "order": 320
+    },
+    {
+      "id": "mixamo",
+      "title": "Mixamo",
+      "description": "Adobe 旗下免费角色动画平台，一键为 3D 模型绑定骨骼并应用动作库。",
+      "url": "https://www.mixamo.com/",
+      "icon": "https://www.mixamo.com/favicon.ico",
+      "tags": [
+        "3D建模",
+        "动画",
+        "骨骼绑定",
+        "Adobe"
+      ],
+      "category": "3d-modeling",
+      "order": 321
+    },
+    {
+      "id": "quixel-megascans",
+      "title": "Quixel Megascans",
+      "description": "全球最大的 2D/3D 扫描资产库，提供照片级真实纹理和模型。",
+      "url": "https://quixel.com/",
+      "icon": "https://quixel.com/favicon.ico",
+      "tags": [
+        "3D模型",
+        "素材",
+        "纹理",
+        "扫描"
+      ],
+      "category": "3d-modeling",
+      "order": 322
     },
     {
       "id": "itch-io",
@@ -4948,7 +5023,7 @@
         "游戏"
       ],
       "category": "games",
-      "order": 318
+      "order": 323
     },
     {
       "id": "独立精神-indienova-独立游戏",
@@ -4961,7 +5036,7 @@
         "游戏"
       ],
       "category": "games",
-      "order": 319
+      "order": 324
     },
     {
       "id": "游戏开发资源整合集",
@@ -4974,7 +5049,7 @@
         "导航"
       ],
       "category": "games",
-      "order": 320
+      "order": 325
     },
     {
       "id": "retro-games",
@@ -4986,7 +5061,7 @@
         "游戏"
       ],
       "category": "games",
-      "order": 321
+      "order": 326
     },
     {
       "id": "retrogames",
@@ -4998,7 +5073,7 @@
         "游戏"
       ],
       "category": "games",
-      "order": 322
+      "order": 327
     },
     {
       "id": "game-ui-database",
@@ -5012,7 +5087,7 @@
         "设计"
       ],
       "category": "games",
-      "order": 323
+      "order": 328
     },
     {
       "id": "interface-in-game",
@@ -5026,7 +5101,7 @@
         "设计"
       ],
       "category": "games",
-      "order": 324
+      "order": 329
     },
     {
       "id": "product-hunt",
@@ -5039,7 +5114,7 @@
         "独立开发"
       ],
       "category": "community",
-      "order": 325
+      "order": 330
     },
     {
       "id": "nodejs中文网",
@@ -5052,7 +5127,7 @@
         "文档"
       ],
       "category": "community",
-      "order": 326
+      "order": 331
     },
     {
       "id": "看雪论坛",
@@ -5065,7 +5140,7 @@
         "社区"
       ],
       "category": "community",
-      "order": 327
+      "order": 332
     },
     {
       "id": "hack-forums",
@@ -5078,7 +5153,7 @@
         "社区"
       ],
       "category": "community",
-      "order": 328
+      "order": 333
     },
     {
       "id": "behance",
@@ -5091,7 +5166,7 @@
         "社区"
       ],
       "category": "community",
-      "order": 329
+      "order": 334
     },
     {
       "id": "ui中国",
@@ -5105,7 +5180,7 @@
         "社区"
       ],
       "category": "community",
-      "order": 330
+      "order": 335
     }
   ]
 }

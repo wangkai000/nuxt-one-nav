@@ -1,4 +1,4 @@
-# 基米导航 导航数据
+﻿# 基米导航 导航数据
 
 > 由 nav-data.generated.json 自动生成
 
@@ -478,6 +478,9 @@
 - [Iconfinder](https://www.iconfinder.com/) - 专业的icon素材网站，为你的设计提供灵感。 | icon: https://www.iconfinder.com/favicon.ico | tags: 资源, 图标, 设计
 - [MakemePulse](https://2019.makemepulse.com/) - MakeMePulse 2019 创意网站合集，汇聚全球顶尖网页设计作品，每个都是艺术品级别的视觉盛宴。 | icon: https://2019.makemepulse.com/favicon.ico | tags: 设计, 资源
 - [MEK.txt](https://www.mek.gallery/) - MEK.txt Mek Gallery 是一个复古风格的资源分享网站 | icon: https://framerusercontent.com/images/GgGZEpdp0k0EuePiSwgr1d2jRtA.svg | tags: 像素, 资源
+- [Kenney](https://www.kenney.nl/) - 免费游戏素材合集，提供风格统一的 2D 精灵、3D 模型、UI 元素和音效。 | icon: https://www.kenney.nl/favicon.ico | tags: 游戏素材, 资源, 2D, 3D
+- [SVG Repo](https://www.svgrepo.com/) - 免费 SVG 图标库，收录 50 万+ 矢量图标，支持直接下载和代码复制。 | icon: https://www.svgrepo.com/favicon.ico | tags: 图标, SVG, 设计, UI
+- [Pixabay](https://pixabay.com/) - 全球最大的免费素材平台之一，提供图片、视频、音乐和音效。 | icon: https://pixabay.com/favicon.ico | tags: 素材, 音乐, 音效, 图片
 
 # 游戏引擎
 > id: game-engines | icon: fluent-emoji:video-game
@@ -509,6 +512,8 @@
 - [Maya](https://www.autodesk.com/products/maya) - Maya 是 Autodesk 旗舰级 3D 动画和建模软件，影视和游戏行业的工业标准工具。 | icon: https://www.autodesk.com/favicon.ico | tags: 3D建模, 动画, 影视, 工业标准
 - [Blocks](https://www.with.in/products/blocks) - VR Blocks 是 Google 的 VR 3D 建模工具，在虚拟现实中用手势直观创建 3D 模型。 | icon: https://www.with.in/favicon.ico | tags: VR, 3D建模, Google
 - [Vectary](https://www.vectary.com/) - Vectary 是基于浏览器的 3D 设计平台，支持 AR 预览和交互式 3D 场景嵌入网页。 | icon: https://www.vectary.com/favicon.ico | tags: 3D设计, AR, Web, 低代码
+- [Mixamo](https://www.mixamo.com/) - Adobe 旗下免费角色动画平台，一键为 3D 模型绑定骨骼并应用动作库。 | icon: https://www.mixamo.com/favicon.ico | tags: 3D建模, 动画, 骨骼绑定, Adobe
+- [Quixel Megascans](https://quixel.com/) - 全球最大的 2D/3D 扫描资产库，提供照片级真实纹理和模型。 | icon: https://quixel.com/favicon.ico | tags: 3D模型, 素材, 纹理, 扫描
 
 # 游戏社区
 > id: games | icon: fluent-emoji:joystick
