@@ -266,6 +266,7 @@ export default defineNuxtConfig({
   // ========== 构建钩子：MD → JSON ==========
   hooks: {
     'build:before'() {
+      if (process.env.NODE_ENV !== 'production') return
       const { execSync } = require('child_process')
       const { resolve } = require('path')
       const script = resolve(__dirname, 'scripts/build-nav-data.mjs')
