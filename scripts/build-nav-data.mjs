@@ -12,8 +12,7 @@ const rootDir = resolve(__dirname, '..')
 
 // 支持的语言列表
 const languages = [
-  { code: 'zh', file: 'nav-data.zh.md', out: 'nav-data.zh.generated.json' },
-  { code: 'en', file: 'nav-data.en.md', out: 'nav-data.en.generated.json' }
+  { code: 'zh', file: 'nav-data.zh.md', out: 'nav-data.zh.generated.json' }
 ]
 
 let hasError = false
