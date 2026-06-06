@@ -4,8 +4,8 @@
     "version": "2.0.0",
     "lastUpdated": "2026-06-06",
     "description": "基于 Nuxt 4 的导航站数据（Markdown 数据源）",
-    "totalSites": 335,
-    "totalCategories": 16
+    "totalSites": 350,
+    "totalCategories": 17
   },
   "categories": [
     {
@@ -353,6 +353,12 @@
       "name": "开发者&设计师社区",
       "icon": "fluent-emoji:people-hugging",
       "count": 6
+    },
+    {
+      "id": "indie-dev",
+      "name": "独立开发者",
+      "icon": "fluent-emoji:rocket",
+      "count": 15
     }
   ],
   "sites": [
@@ -5181,6 +5187,126 @@
       ],
       "category": "community",
       "order": 335
+    },
+    {
+      "id": "pieter-levels",
+      "title": "Pieter Levels",
+      "description": "数字游民先驱，Nomad List 和 Remote OK 创始人，一年启动12个项目的传奇独立开发者。",
+      "url": "https://levels.io/",
+      "category": "indie-dev",
+      "order": 336
+    },
+    {
+      "id": "marc-lou",
+      "title": "Marc Lou",
+      "description": "独立开发者与创业者，以快速构建 SaaS 产品而闻名，活跃于 X/Twitter 分享开发心得。",
+      "url": "https://marclou.com/",
+      "category": "indie-dev",
+      "order": 337
+    },
+    {
+      "id": "sindre-sorhus",
+      "title": "Sindre Sorhus",
+      "description": "开源传奇，npm 上发布了超过1000个包，包括 alfred、awesome 列表等知名项目。",
+      "url": "https://sindresorhus.com/",
+      "category": "indie-dev",
+      "order": 338
+    },
+    {
+      "id": "danny-postma",
+      "title": "Danny Postma",
+      "description": "AI 独立开发者，HeadshotPro 和 ProfilePicture.AI 创始人，专注 AI 驱动的 SaaS 产品。",
+      "url": "https://dannypostma.com/",
+      "category": "indie-dev",
+      "order": 339
+    },
+    {
+      "id": "tony-dinh",
+      "title": "Tony Dinh",
+      "description": "越南独立开发者，DevUtils 和 Black Magic 创始人，以实用工具型 SaaS 产品闻名。",
+      "url": "https://tonydinh.com/",
+      "category": "indie-dev",
+      "order": 340
+    },
+    {
+      "id": "lucas-pope",
+      "title": "Lucas Pope",
+      "description": "《请出示证件》(Papers, Please) 和《奥伯拉丁的回归》创作者，以独特的叙事和视觉风格著称。",
+      "url": "https://dukope.com/",
+      "category": "indie-dev",
+      "order": 341
+    },
+    {
+      "id": "damon-chen",
+      "title": "Damon Chen",
+      "description": "独立开发者，PDF.ai 创始人，专注 AI 与生产力工具结合的 SaaS 产品。",
+      "url": "https://damonchen.com/",
+      "category": "indie-dev",
+      "order": 342
+    },
+    {
+      "id": "joar-jakobsson",
+      "title": "Joar Jakobsson",
+      "description": "《雨世界》(Rain World) 创作者，瑞典视觉设计师与独立游戏开发者，构建了独特的后工业生态系统生存游戏。",
+      "url": "https://www.joarportfolio.com/",
+      "category": "indie-dev",
+      "order": 343
+    },
+    {
+      "id": "eric-barone-concernedape",
+      "title": "Eric Barone (ConcernedApe)",
+      "description": "《星露谷物语》(Stardew Valley) 独立开发者，一人包揽编程、美术、音乐，打造了现象级农场模拟游戏。",
+      "url": "https://www.stardewvalley.net/",
+      "category": "indie-dev",
+      "order": 344
+    },
+    {
+      "id": "toby-fox",
+      "title": "Toby Fox",
+      "description": "《Undertale》《Deltarune》创作者，以独特的叙事、音乐和打破第四面墙的设计而闻名。",
+      "url": "https://toby.fangamer.com/",
+      "category": "indie-dev",
+      "order": 345
+    },
+    {
+      "id": "edmund-mcmillen",
+      "title": "Edmund McMillen",
+      "description": "《以撒的结合》《超级食肉男孩》创作者，以其黑暗、怪诞的艺术风格和 Roguelike 设计闻名。",
+      "url": "https://edmundm.com/",
+      "category": "indie-dev",
+      "order": 346
+    },
+    {
+      "id": "daniel-mullins",
+      "title": "Daniel Mullins",
+      "description": "《邪恶冥刻》(Inscryption)《小马岛》(Pony Island) 创作者，擅长打破游戏类型的元叙事设计。",
+      "url": "https://www.danielmullinsgames.com/",
+      "category": "indie-dev",
+      "order": 347
+    },
+    {
+      "id": "derek-yu",
+      "title": "Derek Yu",
+      "description": "《洞穴探险》(Spelunky) 系列创作者，Roguelike 平台跳跃游戏的先驱，影响了一代独立游戏设计。",
+      "url": "https://www.derekyu.com/",
+      "category": "indie-dev",
+      "order": 348
+    },
+    {
+      "id": "月光蟑螂",
+      "title": "月光蟑螂",
+      "description": "《烟火》《三伏》《黑森町绮谭》创作者，中式悬疑惊悚解谜游戏的代表人物，一人包揽美术、编剧、策划。",
+      "url": "https://space.bilibili.com/2911655/dynamic",
+      "category": "indie-dev",
+      "order": 349
+    },
+    {
+      "id": "史悲",
+      "title": "史悲",
+      "description": "《迷失岛》系列创作者，以手绘美术风格和谜题设计著称的独立游戏开发者。",
+      "url": "https://space.bilibili.com/3729210/dynamic",
+      "category": "indie-dev",
+      "order": 350
     }
   ]
 }

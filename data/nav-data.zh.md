@@ -1,3 +1,14 @@
+---
+AIGC:
+    Label: "1"
+    ContentProducer: 001191440300708461136T1XGW3
+    ProduceID: deb41470e897a7a16a351c642e8e69cb_83c742d061e611f19f62525400d9a7a1
+    ReservedCode1: cdCp8YvvCmltOQH8RtVy33Mn1bzxKjqIQ0CMsPpVD+1oYG3Dz6nFYNvqAwzMmm9e2ciKAvBn22+hvbm9mefOV+MSC5670BKyEqEHMJjif8fyCVp3zVsUsEvlAHC/JR5zJXm9GFWK224k1KAL/JjqDj8R86aLExXrzw5nDu2cV/s177xRpKSgmzINrQs=
+    ContentPropagator: 001191440300708461136T1XGW3
+    PropagateID: deb41470e897a7a16a351c642e8e69cb_83c742d061e611f19f62525400d9a7a1
+    ReservedCode2: cdCp8YvvCmltOQH8RtVy33Mn1bzxKjqIQ0CMsPpVD+1oYG3Dz6nFYNvqAwzMmm9e2ciKAvBn22+hvbm9mefOV+MSC5670BKyEqEHMJjif8fyCVp3zVsUsEvlAHC/JR5zJXm9GFWK224k1KAL/JjqDj8R86aLExXrzw5nDu2cV/s177xRpKSgmzINrQs=
+---
+
 ﻿# 基米导航 导航数据
 
 > 由 nav-data.generated.json 自动生成
@@ -535,3 +546,23 @@
 - [Behance](https://www.behance.net/) - 全球著名的设计社区，展示设计师的创意作品 | icon: https://www.behance.net/favicon.ico | tags: 设计, 社区
 - [UI中国](https://www.ui.cn/) - 国内知名设计师社区，提供UI设计、交互设计、用户体验等专业设计资源。 | icon: https://www.ui.cn/favicon.ico | tags: 设计, UI, 社区
 
+# 独立开发者
+> id: indie-dev | icon: fluent-emoji:rocket
+
+- [Pieter Levels](https://levels.io/) - 数字游民先驱，Nomad List 和 Remote OK 创始人，一年启动12个项目的传奇独立开发者。
+- [Marc Lou](https://marclou.com/) - 独立开发者与创业者，以快速构建 SaaS 产品而闻名，活跃于 X/Twitter 分享开发心得。
+- [Sindre Sorhus](https://sindresorhus.com/) - 开源传奇，npm 上发布了超过1000个包，包括 alfred、awesome 列表等知名项目。
+- [Danny Postma](https://dannypostma.com/) - AI 独立开发者，HeadshotPro 和 ProfilePicture.AI 创始人，专注 AI 驱动的 SaaS 产品。
+- [Tony Dinh](https://tonydinh.com/) - 越南独立开发者，DevUtils 和 Black Magic 创始人，以实用工具型 SaaS 产品闻名。
+- [Lucas Pope](https://dukope.com/) - 《请出示证件》(Papers, Please) 和《奥伯拉丁的回归》创作者，以独特的叙事和视觉风格著称。
+- [Damon Chen](https://damonchen.com/) - 独立开发者，PDF.ai 创始人，专注 AI 与生产力工具结合的 SaaS 产品。
+- [Joar Jakobsson](https://www.joarportfolio.com/) - 《雨世界》(Rain World) 创作者，瑞典视觉设计师与独立游戏开发者，构建了独特的后工业生态系统生存游戏。
+- [Eric Barone (ConcernedApe)](https://www.stardewvalley.net/) - 《星露谷物语》(Stardew Valley) 独立开发者，一人包揽编程、美术、音乐，打造了现象级农场模拟游戏。
+- [Toby Fox](https://toby.fangamer.com/) - 《Undertale》《Deltarune》创作者，以独特的叙事、音乐和打破第四面墙的设计而闻名。
+- [Edmund McMillen](https://edmundm.com/) - 《以撒的结合》《超级食肉男孩》创作者，以其黑暗、怪诞的艺术风格和 Roguelike 设计闻名。
+- [Daniel Mullins](https://www.danielmullinsgames.com/) - 《邪恶冥刻》(Inscryption)《小马岛》(Pony Island) 创作者，擅长打破游戏类型的元叙事设计。
+- [Derek Yu](https://www.derekyu.com/) - 《洞穴探险》(Spelunky) 系列创作者，Roguelike 平台跳跃游戏的先驱，影响了一代独立游戏设计。
+- [月光蟑螂](https://space.bilibili.com/2911655/dynamic) - 《烟火》《三伏》《黑森町绮谭》创作者，中式悬疑惊悚解谜游戏的代表人物，一人包揽美术、编剧、策划。
+- [史悲](https://space.bilibili.com/3729210/dynamic) - 《迷失岛》系列创作者，以手绘美术风格和谜题设计著称的独立游戏开发者。
+
+*（内容由AI生成，仅供参考）*
