@@ -1,6 +1,6 @@
-﻿# 星途导航
+﻿# 基米导航
 
-[中文](./README.md) | [English](./README_en.md)
+**简体中文** | [English](./README_en.md)
 
 基于 **Nuxt 4 + TypeScript + Element Plus + Tailwind CSS** 的纯静态导航站。数据源使用 Markdown 格式管理，构建时自动生成离线 JSON，无需数据库。
 

@@ -1,6 +1,6 @@
-# Xingtong Navigation Site
+# Jimi Navigation Site
 
-[中文](./README.md) | [English](./README_en.md)
+[简体中文](./README.md) | **English**
 
 A pure static navigation site built with **Nuxt 4 + TypeScript + Element Plus + Tailwind CSS**. Data is managed in Markdown format and automatically generates offline JSON during build - no database required.
 
