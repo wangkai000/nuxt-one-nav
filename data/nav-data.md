@@ -50,6 +50,8 @@ AIGC:
 - [LangGraph](https://langchain-ai.github.io/langgraph/) - LangGraph 是 LangChain 生态的图工作流框架，用于构建有状态的、多角色的 AI 应用。 | icon: https://langchain-ai.github.io/langgraph/favicon.ico | tags: AI, 框架, 工作流, Agent
 - [LlamaIndex](https://www.llamaindex.ai/) - LlamaIndex 是数据框架，用于构建 LLM 应用，支持数据连接、索引和查询。 | icon: https://www.llamaindex.ai/favicon.ico | tags: AI, 框架, RAG, 数据
 - [Transformers](https://github.com/huggingface/transformers) - Hugging Face Transformers 是最流行的预训练模型库，支持 PyTorch、TensorFlow、JAX。 | icon: https://github.com/favicon.ico | tags: AI, 库, PyTorch, 深度学习
+- [Pi](https://github.com/earendil-works/pi) - Pi 是开源 AI Agent 工具套件，包含编码 Agent CLI、统一多模型 API、TUI/Web UI，54k+ Stars。 | icon: https://github.com/favicon.ico | tags: AI, Agent, TypeScript, CLI, 开源
+- [Mastra](https://mastra.ai/) - Mastra 是 Gatsby 团队打造的 TypeScript Agent 框架，支持 Agent、Workflow、Memory、RAG、Evals，生产级 AI 应用首选。 | icon: https://mastra.ai/favicon.ico | tags: AI, Agent, TypeScript, 框架, Gatsby
 
 ## AI Skill
 > id: ai-skill | icon: fluent-emoji:flexed-biceps
@@ -266,74 +268,6 @@ AIGC:
 - [高德地图 JS API](https://lbs.amap.com/api/javascript-api-v2/summary) - 高德地图 JavaScript API 是国内主流地图服务，支持 2D/3D 地图、路径规划等功能。 | icon: https://lbs.amap.com/favicon.ico | tags: WebGIS, 地图, 国内, 高德
 - [百度地图 JS API](https://lbsyun.baidu.com/index.php?title=jspopularGL) - 百度地图 JavaScript API 提供地图展示、定位、路径规划等服务，支持 WebGL 渲染。 | icon: https://lbsyun.baidu.com/favicon.ico | tags: WebGIS, 地图, 国内, 百度
 
-# Node.js框架
-> id: nodejs | icon: logos:nodejs-icon
-
-
-## Web框架
-> id: nodejs-web | icon: logos:nodejs-icon
-
-- [Express.js](https://expressjs.com/) - Express 是快速、开放、极简的 Node.js Web 框架，是最流行的 Node.js 框架。 | icon: https://expressjs.com/favicon.ico | tags: Node.js, 后端框架, Web
-- [Koa](https://koajs.com/) - Koa 是由 Express 原班人马打造的下一代 Web 框架，基于 async/await。 | icon: https://koajs.com/favicon.ico | tags: Node.js, 后端框架, Web
-- [Fastify](https://www.fastify.io/) - Fastify 是快速且低开销的 Web 框架，专注于提供最佳开发体验。 | icon: https://www.fastify.io/favicon.ico | tags: Node.js, 后端框架, 高性能
-- [NestJS](https://nestjs.com/) - NestJS 是用于构建高效、可扩展的 Node.js 服务器端应用的框架。 | icon: https://nestjs.com/favicon.ico | tags: Node.js, 后端框架, TypeScript, 企业级
-- [Hono](https://hono.dev/) - Hono 是 ultrafast 的 Web 框架，支持 Cloudflare Workers、Deno、Bun 等边缘运行时。 | icon: https://hono.dev/favicon.ico | tags: Node.js, 边缘计算, 高性能, TypeScript
-- [AdonisJS](https://adonisjs.com/) - AdonisJS 是功能齐全的 Node.js Web 框架，灵感来自 Laravel。 | icon: https://adonisjs.com/favicon.ico | tags: Node.js, 后端框架, MVC, 全栈
-- [tRPC](https://trpc.io/) - tRPC 是端到端类型安全的 API 框架，无需代码生成。 | icon: https://trpc.io/favicon.ico | tags: Node.js, API, TypeScript, 全栈
-
-## 多线程/并发
-> id: nodejs-threads | icon: logos:nodejs-icon
-
-- [Piscina](https://piscinajs.dev/) - Piscina.js 是高性能的 Node.js 线程池库，轻松实现 CPU 密集型任务的并行处理，最大化 CPU 利用率。 | icon: https://piscinajs.dev/favicon.ico | tags: Node.js, 多线程, 线程池, 性能优化
-- [workerpool](https://www.npmjs.com/package/workerpool) - workerpool 是一个轻量级的 Node.js 线程池实现，用于在 worker 线程中执行耗时的计算任务。 | icon: https://www.npmjs.com/favicon.ico | tags: Node.js, 多线程, 线程池, Worker
-- [threads.js](https://threads.js.org/) - threads.js 是 Node.js 和浏览器的多线程库，简化了 Web Workers 和 Worker Threads 的使用。 | icon: https://threads.js.org/favicon.ico | tags: Node.js, 多线程, Web Workers, 并发
-- [tinypool](https://github.com/piscinajs/tinypool) - tinypool 是 Node.js 的轻量级通用线程池，基于 worker_threads 构建，支持任务队列和并行执行。 | icon: https://github.com/favicon.ico | tags: Node.js, 多线程, 线程池, 轻量级
-- [wa-sqlite](https://wa-sqlite.github.io/) - wa-sqlite 是高性能的 SQLite 编译版本，支持 WebAssembly 和 Web Workers，可在浏览器中高效运行。 | icon: https://wa-sqlite.github.io/favicon.ico | tags: SQLite, WebAssembly, Web Workers, 数据库
-
-## 数据库/ORM
-> id: nodejs-database | icon: mdi:database
-
-- [Prisma](https://www.prisma.io/) - Prisma 是下一代 Node.js/TypeScript ORM，提供类型安全的数据库访问，支持 PostgreSQL、MySQL、SQLite 等。 | icon: https://www.prisma.io/favicon.ico | tags: Node.js, ORM, TypeScript, 数据库
-- [TypeORM](https://typeorm.io/) - TypeORM 是支持 TypeScript 和 JavaScript 的 ORM，支持 Active Record 和 Data Mapper 模式。 | icon: https://typeorm.io/favicon.ico | tags: Node.js, ORM, TypeScript, 数据库
-- [Drizzle ORM](https://orm.drizzle.team/) - Drizzle ORM 是轻量级、类型安全的 TypeScript ORM，专注于性能和开发者体验。 | icon: https://orm.drizzle.team/favicon.ico | tags: Node.js, ORM, TypeScript, 数据库
-- [MikroORM](https://mikro-orm.io/) - MikroORM 是基于 Data Mapper、Unit of Work 模式的 TypeScript ORM，支持 MongoDB 和 SQL 数据库。 | icon: https://mikro-orm.io/favicon.ico | tags: Node.js, ORM, TypeScript, MongoDB
-- [Mongoose](https://mongoosejs.com/) - Mongoose 是 MongoDB 的对象模型工具，提供模式验证和类型转换。 | icon: https://mongoosejs.com/favicon.ico | tags: Node.js, ODM, MongoDB, 数据库
-- [Sequelize](https://sequelize.org/) - Sequelize 是基于 Promise 的 Node.js ORM，支持 PostgreSQL、MySQL、MariaDB、SQLite 等。 | icon: https://sequelize.org/favicon.ico | tags: Node.js, ORM, 数据库, SQL
-- [Knex.js](https://knexjs.org/) - Knex.js 是 SQL 查询构建器，支持链式调用和事务，兼容多种数据库。 | icon: https://knexjs.org/favicon.ico | tags: Node.js, SQL, 查询构建器, 数据库
-- [better-sqlite3](https://github.com/WiseLibs/better-sqlite3) - better-sqlite3 是高性能的 SQLite3 绑定，同步 API 设计，比 node-sqlite3 更快。 | icon: https://github.com/favicon.ico | tags: Node.js, SQLite, 数据库, 高性能
-- [node-postgres](https://node-postgres.com/) - node-postgres (pg) 是 PostgreSQL 的 Node.js 客户端，支持连接池和预处理语句。 | icon: https://node-postgres.com/favicon.ico | tags: Node.js, PostgreSQL, 数据库, 客户端
-- [mysql2](https://github.com/sidorares/node-mysql2) - mysql2 是 MySQL 的 Node.js 客户端，支持预处理语句和连接池，比 mysql 模块更快。 | icon: https://github.com/favicon.ico | tags: Node.js, MySQL, 数据库, 客户端
-- [ioredis](https://github.com/luin/ioredis) - ioredis 是高性能的 Redis 客户端，支持集群、哨兵、管道和 Lua 脚本。 | icon: https://github.com/favicon.ico | tags: Node.js, Redis, 缓存, 客户端
-
-## 消息队列/通信
-> id: nodejs-queue | icon: mdi:message-outline
-
-- [BullMQ](https://bullmq.io/) - BullMQ 是 Node.js 最流行的 Redis 驱动消息队列，支持延迟任务、重复任务、优先级队列和工作流编排，适合微服务和后台任务调度。 | icon: https://bullmq.io/favicon.ico | tags: Node.js, 消息队列, Redis, 任务调度, 微服务
-- [RabbitMQ](https://www.rabbitmq.com/) - RabbitMQ 是开源消息代理，支持 AMQP、MQTT、STOMP 协议和多种消息模式，企业级消息队列解决方案。 | icon: https://www.rabbitmq.com/favicon.ico | tags: 消息队列, RabbitMQ, AMQP, MQTT, 企业级, 微服务
-- [Apache Kafka](https://kafka.apache.org/) - Kafka 是 Apache 开源分布式事件流平台，高吞吐、持久化，用于实时数据管道和流处理。 | icon: https://kafka.apache.org/favicon.ico | tags: 消息队列, Kafka, 流处理, 事件流, 高吞吐, 分布式
-- [NATS](https://nats.io/) - NATS 是高性能云原生消息系统，极低延迟，支持发布/订阅、请求/回复和 JetStream 持久化。 | icon: https://nats.io/favicon.ico | tags: 消息队列, NATS, 云原生, 高性能, 边缘计算
-- [MQTT.js](https://github.com/mqttjs/MQTT.js) - MQTT.js 是 Node.js 的 MQTT 协议客户端，适用于 IoT 物联网设备和轻量级消息推送场景。 | icon: https://github.com/favicon.ico | tags: Node.js, MQTT, IoT, 物联网, 消息推送
-- [Socket.io](https://socket.io/) - Socket.IO 是 Node.js 实时双向通信库，支持 WebSocket 和长轮询降级，适用于聊天、协作、实时通知。 | icon: https://socket.io/favicon.ico | tags: Node.js, WebSocket, 实时通信, 双向, 事件驱动
-- [uWebSockets.js](https://github.com/uNetworking/uWebSockets.js) - uWebSockets.js 是 Node.js 的超高性能 WebSocket 和 HTTP 服务器，C++ 底层实现，延迟极低。 | icon: https://github.com/favicon.ico | tags: Node.js, WebSocket, 高性能, C++, 实时
-- [GraphQL Yoga](https://the-guild.dev/graphql/yoga-server) - GraphQL Yoga 是跨运行时的 GraphQL 服务端框架，支持 Node.js、Bun、Deno、Cloudflare Workers，提供订阅和 SSE 实时能力。 | icon: https://the-guild.dev/favicon.ico | tags: Node.js, GraphQL, API, 实时, 跨运行时
-- [gRPC-Node](https://grpc.io/docs/languages/node/) - gRPC Node.js 是 Google 高性能 RPC 框架的 Node.js 实现，基于 HTTP/2 和 Protocol Buffers，适用于微服务间通信。 | icon: https://grpc.io/favicon.ico | tags: Node.js, gRPC, RPC, HTTP2, 微服务, Protocol Buffers
-
-# Go生态
-> id: go-ecosystem | icon: logos:go
-
-- [Go](https://go.dev/) - Go 是 Google 开发的开源编程语言，以简洁、高效、并发支持著称。 | icon: https://go.dev/favicon.ico | tags: Go, 编程语言, Google, 并发
-- [Gin](https://gin-gonic.com/) - Gin 是最流行的 Go Web 框架，以高性能和轻量级著称，支持中间件和路由分组。 | icon: https://gin-gonic.com/favicon.ico | tags: Go, Web框架, 高性能, REST API
-- [GORM](https://gorm.io/) - GORM 是 Go 生态最流行的 ORM 库，支持关联、事务、钩子等高级功能。 | icon: https://gorm.io/favicon.ico | tags: Go, ORM, 数据库, SQL
-- [Echo](https://echo.labstack.com/) - Echo 是高性能、简洁的 Go Web 框架，优化了路由和中间件性能。 | icon: https://echo.labstack.com/favicon.ico | tags: Go, Web框架, 高性能, 轻量级
-- [Fiber](https://gofiber.io/) - Fiber 是受 Express 启发的 Go Web 框架，以极致性能和低内存占用著称。 | icon: https://gofiber.io/favicon.ico | tags: Go, Web框架, 高性能, Express风格
-- [Chi](https://go-chi.io/) - Chi 是轻量级的 Go HTTP router，支持中间件和上下文传递，兼容 net/http。 | icon: https://go-chi.io/favicon.ico | tags: Go, Router, HTTP, 轻量级
-- [Buffalo](https://gobuffalo.io/) - Buffalo 是 Go 全栈 Web 开发框架，提供从前端到后端的完整解决方案。 | icon: https://gobuffalo.io/favicon.ico | tags: Go, 全栈, Web框架, MVC
-- [zap](https://github.com/uber-go/zap) - zap 是 Uber 开源的高性能 Go 日志库，比标准库快 10 倍。 | icon: https://github.com/favicon.ico | tags: Go, 日志, 性能, Uber
-- [Cobra](https://cobra.dev/) - Cobra 是 Go 最流行的 CLI 应用框架，被 Docker、Kubernetes 等项目使用。 | icon: https://cobra.dev/favicon.ico | tags: Go, CLI, 命令行, Docker
-- [go-redis](https://redis.uptrace.dev/) - go-redis 是 Go 最流行的 Redis 客户端，支持连接池、管道、事务等。 | icon: https://redis.uptrace.dev/favicon.ico | tags: Go, Redis, 缓存, 客户端
-- [gRPC](https://grpc.io/) - gRPC 是 Google 开源的高性能 RPC 框架，支持多语言和 Protocol Buffers。 | icon: https://grpc.io/favicon.ico | tags: Go, RPC, Google, Protocol Buffers
-- [Wanderlost](https://github.com/wanderlost/wanderlost) - Wanderlost 是 2025 年新发布的 Go 泛型工具库，提供类型安全的集合操作。 | icon: https://github.com/favicon.ico | tags: Go, 泛型, 工具库, 2025
-
 # 云平台
 > id: cloud | icon: fluent-emoji:cloud
 
@@ -423,14 +357,34 @@ AIGC:
 # 移动开发
 > id: mobile | icon: fluent-emoji:mobile-phone
 
+## 跨平台
+> id: mobile-cross | icon: fluent-emoji:mobile-phone
+
 - [Flutter](https://flutter.dev/) - Flutter 是 Google 开源的跨平台 UI 框架，使用 Dart 语言，一套代码同时构建 iOS 和 Android 应用。 | icon: https://flutter.dev/favicon.ico | tags: 移动开发, 跨平台, UI框架, Google
 - [React Native](https://reactnative.dev/) - React Native 是 Facebook 开源的跨平台移动开发框架，使用 JavaScript/TypeScript 构建原生应用。 | icon: https://reactnative.dev/favicon.ico | tags: 移动开发, 跨平台, React, JavaScript
-- [uni-app](https://uniapp.dcloud.net.cn/) - uni-app 是 DCloud 推出的跨平台开发框架，使用 Vue.js 语法，一套代码编译到 iOS、Android、H5 等平台。 | icon: https://uniapp.dcloud.net.cn/favicon.ico | tags: 移动开发, 跨平台, Vue, 微信小程序
+- [uni-app](https://uniapp.dcloud.net.cn/) - 都说一套代码多端运行，实际多端报错，但考虑到微信小程序生态兼容性，仍是跨端首选。 | icon: https://uniapp.dcloud.net.cn/favicon.ico | tags: 移动开发, 跨平台, Vue, 微信小程序
 - [Capacitor](https://capacitorjs.com/) - Capacitor 是 Ionic 团队开源的跨平台原生容器，使用 Web 技术构建 iOS、Android 和桌面应用。 | icon: https://capacitorjs.com/favicon.ico | tags: 移动开发, 跨平台, Web技术, 原生容器
-- [Ionic](https://ionicframework.com/) - Ionic 是强大的跨平台移动开发框架，基于 Web Components，提供美观的 UI 组件。 | icon: https://ionicframework.com/favicon.ico | tags: 移动开发, 跨平台, Web Components, UI框架
+- [Cordova](https://cordova.apache.org/) - 跨平台混合开发的时代记忆。WebView + 插件桥接原生的鼻祖级方案，当年 PhoneGap/Cordova 几乎就是「把网页变成 App」的代名词，如今虽已淡出主流，但不少老项目的底层仍是它。 | icon: https://cordova.apache.org/favicon.ico | tags: 移动开发, 跨平台, WebView, 混合开发
+- [Ionic](https://ionicframework.com/) - 不推荐。多年混合跨平台开发真实踩坑经历：项目规模上来后性能瓶颈明显，最终只能从 Android 原生层入手优化，得不偿失。 | icon: https://ionicframework.com/favicon.ico | tags: 移动开发, 跨平台, Web Components, UI框架
 - [Expo](https://expo.dev/) - Expo 是 React Native 开发工具链，提供开发、构建、部署一站式服务，简化 RN 开发流程。 | icon: https://expo.dev/favicon.ico | tags: React Native, 开发工具, 移动开发, TypeScript
 - [NativeScript](https://nativescript.org/) - NativeScript 是开源的跨平台框架，使用 Angular、Vue 或 TypeScript 构建原生 iOS 和 Android 应用。 | icon: https://nativescript.org/favicon.ico | tags: 移动开发, 跨平台, Angular, Vue
 - [Taro](https://taro.jd.com/) - Taro 是京东开源的跨平台开发框架，使用 React/Vue 语法，一套代码编译到微信小程序、H5、React Native 等多端。 | icon: https://taro.jd.com/favicon.ico | tags: 移动开发, 跨平台, React, 微信小程序
+
+## Android
+> id: mobile-android | icon: logos:android-icon
+
+- [Jetpack Compose](https://developer.android.com/compose) - Android 官方现代原生 UI 工具包，声明式 Kotlin API，告别 XML 布局。 | icon: https://developer.android.com/favicon.ico | tags: Android, UI, Jetpack, Kotlin
+- [Material Design 3](https://m3.material.io/) - Google 最新设计语言，提供动态配色、组件库和设计规范。 | icon: https://m3.material.io/favicon.ico | tags: Android, 设计, Material, UI
+- [Kotlin](https://kotlinlang.org/) - Android 官方首选编程语言，简洁、安全、与 Java 互操作。 | icon: https://kotlinlang.org/favicon.ico | tags: Android, 语言, Kotlin
+- [Android Studio](https://developer.android.com/studio) - 官方 Android IDE，集成模拟器、性能分析、布局编辑器。 | icon: https://developer.android.com/favicon.ico | tags: Android, IDE, 开发工具
+
+## iOS
+> id: mobile-ios | icon: logos:apple
+
+- [SwiftUI](https://developer.apple.com/xcode/swiftui/) - Apple 官方声明式 UI 框架，跨所有 Apple 平台共享代码。 | icon: https://developer.apple.com/favicon.ico | tags: iOS, Swift, UI, 声明式
+- [UIKit](https://developer.apple.com/documentation/uikit) - iOS 经典命令式 UI 框架，组件丰富、生态成熟，覆盖所有底层能力。 | icon: https://developer.apple.com/favicon.ico | tags: iOS, UIKit, UI, 经典
+- [Swift](https://www.swift.org/) - Apple 官方编程语言，现代化、安全、高性能。 | icon: https://www.swift.org/favicon.ico | tags: iOS, Swift, 语言
+- [Xcode](https://developer.apple.com/xcode/) - Apple 官方 IDE，集成 Interface Builder、Instruments、Simulator。 | icon: https://developer.apple.com/favicon.ico | tags: iOS, IDE, 开发工具
 
 # 桌面应用
 > id: desktop | icon: fluent-emoji:laptop
@@ -442,17 +396,100 @@ AIGC:
 - [pywebview](https://pywebview.flowrl.com/) - pywebview 是轻量级跨平台桌面应用框架，使用 Python 后端和 Web 前端构建原生 GUI 应用。 | icon: https://pywebview.flowrl.com/favicon.ico | tags: 桌面应用, Python, 跨平台, GUI
 - [Quasar](https://quasar.dev/) - Quasar 是基于 Vue.js 的跨平台框架，一套代码同时构建 SPA、PWA、桌面应用和移动端应用。 | icon: https://quasar.dev/favicon.ico | tags: 跨平台, Vue, 桌面应用, 移动应用
 
-# Bun生态
-> id: bun-ecosystem | icon: logos:bun
+# 后端生态
+> id: backend | icon: fluent-emoji:control-knobs
 
-## Bun运行时
-> id: bun-runtime | icon: logos:bun
+## Node.js
+> id: nodejs | icon: logos:nodejs-icon
+
+- [Express.js](https://expressjs.com/) - Express 是快速、开放、极简的 Node.js Web 框架，是最流行的 Node.js 框架。 | icon: https://expressjs.com/favicon.ico | tags: Node.js, 后端框架, Web
+- [Koa](https://koajs.com/) - Koa 是由 Express 原班人马打造的下一代 Web 框架，基于 async/await。 | icon: https://koajs.com/favicon.ico | tags: Node.js, 后端框架, Web
+- [Fastify](https://www.fastify.io/) - Fastify 是快速且低开销的 Web 框架，专注于提供最佳开发体验。 | icon: https://www.fastify.io/favicon.ico | tags: Node.js, 后端框架, 高性能
+- [NestJS](https://nestjs.com/) - NestJS 是用于构建高效、可扩展的 Node.js 服务器端应用的框架。 | icon: https://nestjs.com/favicon.ico | tags: Node.js, 后端框架, TypeScript, 企业级
+- [Hono](https://hono.dev/) - Hono 是 ultrafast 的 Web 框架，支持 Cloudflare Workers、Deno、Bun 等边缘运行时。 | icon: https://hono.dev/favicon.ico | tags: Node.js, 边缘计算, 高性能, TypeScript
+- [AdonisJS](https://adonisjs.com/) - AdonisJS 是功能齐全的 Node.js Web 框架，灵感来自 Laravel。 | icon: https://adonisjs.com/favicon.ico | tags: Node.js, 后端框架, MVC, 全栈
+- [tRPC](https://trpc.io/) - tRPC 是端到端类型安全的 API 框架，无需代码生成。 | icon: https://trpc.io/favicon.ico | tags: Node.js, API, TypeScript, 全栈
+- [Piscina](https://piscinajs.dev/) - Piscina.js 是高性能的 Node.js 线程池库，轻松实现 CPU 密集型任务的并行处理，最大化 CPU 利用率。 | icon: https://piscinajs.dev/favicon.ico | tags: Node.js, 多线程, 线程池, 性能优化
+- [workerpool](https://www.npmjs.com/package/workerpool) - workerpool 是一个轻量级的 Node.js 线程池实现，用于在 worker 线程中执行耗时的计算任务。 | icon: https://www.npmjs.com/favicon.ico | tags: Node.js, 多线程, 线程池, Worker
+- [threads.js](https://threads.js.org/) - threads.js 是 Node.js 和浏览器的多线程库，简化了 Web Workers 和 Worker Threads 的使用。 | icon: https://threads.js.org/favicon.ico | tags: Node.js, 多线程, Web Workers, 并发
+- [tinypool](https://github.com/piscinajs/tinypool) - tinypool 是 Node.js 的轻量级通用线程池，基于 worker_threads 构建，支持任务队列和并行执行。 | icon: https://github.com/favicon.ico | tags: Node.js, 多线程, 线程池, 轻量级
+- [wa-sqlite](https://wa-sqlite.github.io/) - wa-sqlite 是高性能的 SQLite 编译版本，支持 WebAssembly 和 Web Workers，可在浏览器中高效运行。 | icon: https://wa-sqlite.github.io/favicon.ico | tags: SQLite, WebAssembly, Web Workers, 数据库
+- [Prisma](https://www.prisma.io/) - Prisma 是下一代 Node.js/TypeScript ORM，提供类型安全的数据库访问，支持 PostgreSQL、MySQL、SQLite 等。 | icon: https://www.prisma.io/favicon.ico | tags: Node.js, ORM, TypeScript, 数据库
+- [TypeORM](https://typeorm.io/) - TypeORM 是支持 TypeScript 和 JavaScript 的 ORM，支持 Active Record 和 Data Mapper 模式。 | icon: https://typeorm.io/favicon.ico | tags: Node.js, ORM, TypeScript, 数据库
+- [Drizzle ORM](https://orm.drizzle.team/) - Drizzle ORM 是轻量级、类型安全的 TypeScript ORM，专注于性能和开发者体验。 | icon: https://orm.drizzle.team/favicon.ico | tags: Node.js, ORM, TypeScript, 数据库
+- [MikroORM](https://mikro-orm.io/) - MikroORM 是基于 Data Mapper、Unit of Work 模式的 TypeScript ORM，支持 MongoDB 和 SQL 数据库。 | icon: https://mikro-orm.io/favicon.ico | tags: Node.js, ORM, TypeScript, MongoDB
+- [Mongoose](https://mongoosejs.com/) - Mongoose 是 MongoDB 的对象模型工具，提供模式验证和类型转换。 | icon: https://mongoosejs.com/favicon.ico | tags: Node.js, ODM, MongoDB, 数据库
+- [Sequelize](https://sequelize.org/) - Sequelize 是基于 Promise 的 Node.js ORM，支持 PostgreSQL、MySQL、MariaDB、SQLite 等。 | icon: https://sequelize.org/favicon.ico | tags: Node.js, ORM, 数据库, SQL
+- [Knex.js](https://knexjs.org/) - Knex.js 是 SQL 查询构建器，支持链式调用和事务，兼容多种数据库。 | icon: https://knexjs.org/favicon.ico | tags: Node.js, SQL, 查询构建器, 数据库
+- [better-sqlite3](https://github.com/WiseLibs/better-sqlite3) - better-sqlite3 是高性能的 SQLite3 绑定，同步 API 设计，比 node-sqlite3 更快。 | icon: https://github.com/favicon.ico | tags: Node.js, SQLite, 数据库, 高性能
+- [node-postgres](https://node-postgres.com/) - node-postgres (pg) 是 PostgreSQL 的 Node.js 客户端，支持连接池和预处理语句。 | icon: https://node-postgres.com/favicon.ico | tags: Node.js, PostgreSQL, 数据库, 客户端
+- [mysql2](https://github.com/sidorares/node-mysql2) - mysql2 是 MySQL 的 Node.js 客户端，支持预处理语句和连接池，比 mysql 模块更快。 | icon: https://github.com/favicon.ico | tags: Node.js, MySQL, 数据库, 客户端
+- [ioredis](https://github.com/luin/ioredis) - ioredis 是高性能的 Redis 客户端，支持集群、哨兵、管道和 Lua 脚本。 | icon: https://github.com/favicon.ico | tags: Node.js, Redis, 缓存, 客户端
+- [BullMQ](https://bullmq.io/) - BullMQ 是 Node.js 最流行的 Redis 驱动消息队列，支持延迟任务、重复任务、优先级队列和工作流编排，适合微服务和后台任务调度。 | icon: https://bullmq.io/favicon.ico | tags: Node.js, 消息队列, Redis, 任务调度, 微服务
+- [RabbitMQ](https://www.rabbitmq.com/) - RabbitMQ 是开源消息代理，支持 AMQP、MQTT、STOMP 协议和多种消息模式，企业级消息队列解决方案。 | icon: https://www.rabbitmq.com/favicon.ico | tags: 消息队列, RabbitMQ, AMQP, MQTT, 企业级, 微服务
+- [Apache Kafka](https://kafka.apache.org/) - Kafka 是 Apache 开源分布式事件流平台，高吞吐、持久化，用于实时数据管道和流处理。 | icon: https://kafka.apache.org/favicon.ico | tags: 消息队列, Kafka, 流处理, 事件流, 高吞吐, 分布式
+- [NATS](https://nats.io/) - NATS 是高性能云原生消息系统，极低延迟，支持发布/订阅、请求/回复和 JetStream 持久化。 | icon: https://nats.io/favicon.ico | tags: 消息队列, NATS, 云原生, 高性能, 边缘计算
+- [MQTT.js](https://github.com/mqttjs/MQTT.js) - MQTT.js 是 Node.js 的 MQTT 协议客户端，适用于 IoT 物联网设备和轻量级消息推送场景。 | icon: https://github.com/favicon.ico | tags: Node.js, MQTT, IoT, 物联网, 消息推送
+- [Socket.io](https://socket.io/) - Socket.IO 是 Node.js 实时双向通信库，支持 WebSocket 和长轮询降级，适用于聊天、协作、实时通知。 | icon: https://socket.io/favicon.ico | tags: Node.js, WebSocket, 实时通信, 双向, 事件驱动
+- [uWebSockets.js](https://github.com/uNetworking/uWebSockets.js) - uWebSockets.js 是 Node.js 的超高性能 WebSocket 和 HTTP 服务器，C++ 底层实现，延迟极低。 | icon: https://github.com/favicon.ico | tags: Node.js, WebSocket, 高性能, C++, 实时
+- [GraphQL Yoga](https://the-guild.dev/graphql/yoga-server) - GraphQL Yoga 是跨运行时的 GraphQL 服务端框架，支持 Node.js、Bun、Deno、Cloudflare Workers，提供订阅和 SSE 实时能力。 | icon: https://the-guild.dev/favicon.ico | tags: Node.js, GraphQL, API, 实时, 跨运行时
+- [gRPC-Node](https://grpc.io/docs/languages/node/) - gRPC Node.js 是 Google 高性能 RPC 框架的 Node.js 实现，基于 HTTP/2 和 Protocol Buffers，适用于微服务间通信。 | icon: https://grpc.io/favicon.ico | tags: Node.js, gRPC, RPC, HTTP2, 微服务, Protocol Buffers
+
+## Bun
+> id: bun-ecosystem | icon: logos:bun
 
 - [Bun](https://bun.sh/) - Bun 是快速的 JavaScript 运行时、打包器、测试运行器和包管理器。 | icon: https://bun.sh/favicon.ico | tags: Bun, 运行时, 打包器, JavaScript
 - [Elysia](https://elysiajs.com/) - Elysia 是符合人体工程学的 Bun Web 框架，专注于类型安全和性能。 | icon: https://elysiajs.com/favicon.ico | tags: Node.js, Bun, 高性能, TypeScript
 - [Hono](https://hono.dev/) - Hono 是 ultrafast 的 Web 框架，支持 Cloudflare Workers、Deno、Bun 等边缘运行时。 | icon: https://hono.dev/favicon.ico | tags: Node.js, 边缘计算, 高性能, TypeScript, Bun
 - [Bun SQLite](https://bun.sh/docs/api/sqlite) - Bun 内置 SQLite 支持，零配置直接在 Bun 运行时中使用高性能 SQLite 数据库。 | icon: https://bun.sh/favicon.ico | tags: Bun, SQLite, 数据库, 内置
 - [Bun FFI](https://bun.sh/docs/api/ffi) - Bun FFI 提供高吞吐的 Rust/C++/Zig 原生扩展开发接口，无需绑定层。 | icon: https://bun.sh/favicon.ico | tags: Bun, FFI, Rust, C++, 原生扩展
+## Go
+> id: backend-go | icon: logos:go
+
+- [Go](https://go.dev/) - Go 是 Google 开发的开源编程语言，以简洁、高效、并发支持著称。 | icon: https://go.dev/favicon.ico | tags: Go, 编程语言, Google, 并发
+- [Gin](https://gin-gonic.com/) - Gin 是最流行的 Go Web 框架，以高性能和轻量级著称，支持中间件和路由分组。 | icon: https://gin-gonic.com/favicon.ico | tags: Go, Web框架, 高性能, REST API
+- [GORM](https://gorm.io/) - GORM 是 Go 生态最流行的 ORM 库，支持关联、事务、钩子等高级功能。 | icon: https://gorm.io/favicon.ico | tags: Go, ORM, 数据库, SQL
+- [Echo](https://echo.labstack.com/) - Echo 是高性能、简洁的 Go Web 框架，优化了路由和中间件性能。 | icon: https://echo.labstack.com/favicon.ico | tags: Go, Web框架, 高性能, 轻量级
+- [Fiber](https://gofiber.io/) - Fiber 是受 Express 启发的 Go Web 框架，以极致性能和低内存占用著称。 | icon: https://gofiber.io/favicon.ico | tags: Go, Web框架, 高性能, Express风格
+- [Chi](https://go-chi.io/) - Chi 是轻量级的 Go HTTP router，支持中间件和上下文传递，兼容 net/http。 | icon: https://go-chi.io/favicon.ico | tags: Go, Router, HTTP, 轻量级
+- [Buffalo](https://gobuffalo.io/) - Buffalo 是 Go 全栈 Web 开发框架，提供从前端到后端的完整解决方案。 | icon: https://gobuffalo.io/favicon.ico | tags: Go, 全栈, Web框架, MVC
+- [zap](https://github.com/uber-go/zap) - zap 是 Uber 开源的高性能 Go 日志库，比标准库快 10 倍。 | icon: https://github.com/favicon.ico | tags: Go, 日志, 性能, Uber
+- [Cobra](https://cobra.dev/) - Cobra 是 Go 最流行的 CLI 应用框架，被 Docker、Kubernetes 等项目使用。 | icon: https://cobra.dev/favicon.ico | tags: Go, CLI, 命令行, Docker
+- [go-redis](https://redis.uptrace.dev/) - go-redis 是 Go 最流行的 Redis 客户端，支持连接池、管道、事务等。 | icon: https://redis.uptrace.dev/favicon.ico | tags: Go, Redis, 缓存, 客户端
+- [gRPC](https://grpc.io/) - gRPC 是 Google 开源的高性能 RPC 框架，支持多语言和 Protocol Buffers。 | icon: https://grpc.io/favicon.ico | tags: Go, RPC, Google, Protocol Buffers
+- [Wanderlost](https://github.com/wanderlost/wanderlost) - Wanderlost 是 2025 年新发布的 Go 泛型工具库，提供类型安全的集合操作。 | icon: https://github.com/favicon.ico | tags: Go, 泛型, 工具库, 2025
+
+## PHP
+> id: backend-php | icon: logos:php
+
+- [ThinkPHP](https://www.thinkphp.cn/) - 国内最流行的 PHP 开发框架，简单易用，文档丰富，适合快速开发中小型项目。 | icon: https://www.thinkphp.cn/favicon.ico | tags: PHP, 框架
+- [Laravel](https://laravel.com/) - 全球最受欢迎的 PHP 框架之一，提供优雅的 ORM、Artisan 命令行工具、Blade 模板引擎。 | icon: https://laravel.com/favicon.ico | tags: PHP, 框架
+- [Symfony](https://symfony.com/) - 企业级 PHP 框架，模块化设计，被 Laravel 等众多框架依赖其底层组件。 | icon: https://symfony.com/favicon.ico | tags: PHP, 框架, 企业级
+- [CodeIgniter](https://codeigniter.com/) - 轻量级 PHP 框架，几乎零配置，性能优异，适合小型项目快速启动。 | icon: https://codeigniter.com/favicon.ico | tags: PHP, 框架, 轻量
+- [Yii](https://www.yiiframework.com/) - 高性能 PHP 框架，Gii 代码生成器和 ActiveRecord 是其亮点。 | icon: https://www.yiiframework.com/favicon.ico | tags: PHP, 框架, 高性能
+- [phpMyAdmin](https://www.phpmyadmin.net/) - 全球最流行的 MySQL/MariaDB 数据库管理工具，Web 界面操作数据库。 | icon: https://www.phpmyadmin.net/favicon.ico | tags: PHP, 数据库, 管理工具
+- [Swoole](https://www.swoole.com/) - PHP 高性能协程网络通信引擎，支持 HTTP/TCP/WebSocket 服务器。 | icon: https://www.swoole.com/favicon.ico | tags: PHP, 协程, 高性能
+- [Slim](https://www.slimframework.com/) - PHP 微框架，路由为核心，适合构建 API 和小型 Web 应用。 | icon: https://www.slimframework.com/favicon.ico | tags: PHP, 微框架, API
+
+## Dart
+> id: backend-dart | icon: logos:dart
+
+- [Shelf](https://github.com/dart-lang/shelf) - Dart 官方 Web 服务器中间件库，提供中间件和路由基础能力，轻量且可组合。 | icon: https://github.com/favicon.ico | tags: Dart, 后端, 服务器
+- [Serverpod](https://serverpod.dev/) - Dart 全栈服务器框架，支持代码生成、ORM、WebSocket，专为 Flutter 全栈项目设计。 | icon: https://serverpod.dev/favicon.ico | tags: Dart, 后端, 全栈, Flutter
+- [Alfred](https://github.com/rknell/alfred) - 轻量级 Dart 后端框架，受 Express.js 启发，路由简洁，适合快速 API 开发。 | icon: https://github.com/favicon.ico | tags: Dart, 后端, API
+- [Angel3](https://github.com/dart-backend/angel) - Dart 全功能后端框架，支持 GraphQL、ORM、JWT 认证等企业级特性。 | icon: https://github.com/favicon.ico | tags: Dart, 后端, 全栈, GraphQL
+
+## Java
+> id: backend-java | icon: logos:java
+
+- [若依 (RuoYi)](https://ruoyi.vip/) - 国内最流行的 Java EE 快速开发平台，前后端分离，内置权限管理、代码生成、定时任务等功能，企业级后台开发首选。 | icon: https://ruoyi.vip/favicon.ico | tags: Java, 框架, 后台管理系统, 快速开发
+- [Spring Boot](https://spring.io/projects/spring-boot) - Spring 生态的核心框架，约定优于配置，快速搭建独立的生产级 Java 应用。 | icon: https://spring.io/favicon.ico | tags: Java, 框架, Spring, 微服务
+- [Spring Cloud](https://spring.io/projects/spring-cloud) - 分布式微服务解决方案，提供服务发现、配置管理、负载均衡、熔断等能力。 | icon: https://spring.io/favicon.ico | tags: Java, 框架, 微服务, 分布式
+- [MyBatis-Plus](https://baomidou.com/) - MyBatis 增强工具，在 MyBatis 基础上只做增强不做改变，简化 CRUD 开发。 | icon: https://baomidou.com/favicon.ico | tags: Java, ORM, MyBatis, 持久层
+- [JFinal](https://jfinal.com/) - 国产轻量级 Java Web 框架，极速开发，ActiveRecord + MVC 架构，代码量少。 | icon: https://jfinal.com/favicon.ico | tags: Java, 框架, 轻量级, 国产
+- [Hutool](https://hutool.cn/) - Java 工具类库，封装了文件、日期、加密、HTTP 等常用工具方法，大幅减少代码量。 | icon: https://hutool.cn/favicon.ico | tags: Java, 工具库
+- [Maven](https://maven.apache.org/) - Java 项目构建和依赖管理标准工具，POM 模型定义项目结构和依赖关系。 | icon: https://maven.apache.org/favicon.ico | tags: Java, 构建工具, 依赖管理
+- [Gradle](https://gradle.org/) - 现代化构建工具，基于 Groovy/Kotlin DSL，性能优异，Android 官方构建工具。 | icon: https://gradle.org/favicon.ico | tags: Java, 构建工具, DSL
 
 # 实用工具
 > id: tools | icon: fluent-emoji:toolbox
@@ -545,6 +582,7 @@ AIGC:
 - [Hack Forums](https://hackforums.net/) - 是一个知名的网络安全技术论坛，适合黑白客群体和开发人员。 | icon: https://www.hackforums.net/view/img/favicon.ico | tags: 网络安全, 社区
 - [Behance](https://www.behance.net/) - 全球著名的设计社区，展示设计师的创意作品 | icon: https://www.behance.net/favicon.ico | tags: 设计, 社区
 - [UI中国](https://www.ui.cn/) - 国内知名设计师社区，提供UI设计、交互设计、用户体验等专业设计资源。 | icon: https://www.ui.cn/favicon.ico | tags: 设计, UI, 社区
+- [MoonBit](https://www.moonbitlang.com/) - 面向云原生和边缘计算的现代化编程语言，由张宏波团队开发，编译速度快、类型安全。 | icon: https://www.moonbitlang.com/favicon.ico | tags: 编程语言, 云原生
 
 # 独立开发者
 > id: indie-dev | icon: fluent-emoji:rocket
