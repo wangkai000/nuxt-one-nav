@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── 基础 ─── */
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  @apply text-gray-700 dark:text-gray-300;
+}
+
+/* ─── 暗色模式切换过渡 ─── */
+/* 注意：不给 html 加 background-color transition，因为暗色切换会触发全局 repaint
+   并且 dark mode 切换是瞬间完成的，过渡动画肉眼几乎不可感知但渲染开销却不小 */
+html {
+  color-scheme: light;
+}
+html.dark {
+  color-scheme: dark;
+}
+
+/* ─── 滚动条 ─── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(156, 163, 175, 0.5); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(156, 163, 175, 0.8); }
+
+/* ─── 隐藏滚动条 ─── */
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+
+/* ─── One Nav 风格背景 ─── */
+.bg-onenav {
+  background-color: #f5f5f7;
+}
+.dark .bg-onenav {
+  background-color: #1a1a2e;
+}
+
+/* ─── 侧边栏背景 ─── */
+.bg-sidebar {
+  background-color: #ffffff;
+}
+.dark .bg-sidebar {
+  background-color: #16162a;
+}
+
+/* ─── Hero 背景图片（深色模式自动切换）─── */
+/* 使用 background-attachment: fixed 避免滚动时持续 repaint */
+.hero-wallpaper {
+  background-image: url('/images/light.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  will-change: transform; /* 将背景提升到合成层，减少重绘 */
+}
+.dark .hero-wallpaper {
+  background-image: url('/images/night.jpg');
+}
+
+/* ─── 内容区域渐变背景 ─── */
+/* 使用 fixed 伪元素，让渐变更滚动无关，避免持续 repaint */
+.grid-bg {
+  position: relative;
+  background: transparent !important;
+}
+.grid-bg::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(135deg, #e0f2fe 0%, #c7d2fe 50%, #e9d5ff 100%);
+  pointer-events: none;
+}
+.dark .grid-bg::before {
+  background: linear-gradient(135deg, #1e293b 0%, #312e81 50%, #1e1b4b 100%);
+}
+
+
+
+/* ─── Element Plus 菜单深色模式覆盖 ─── */
+/* 覆盖 Element Plus 默认的深色菜单背景色，使用项目主题色 #16162a */
+.dark .el-menu--dark,
+.dark .el-menu {
+  background-color: #16162a !important;
+}
+
+.dark .el-menu--dark .el-menu-item,
+.dark .el-menu--dark .el-sub-menu__title,
+.dark .el-menu .el-menu-item,
+.dark .el-menu .el-sub-menu__title {
+  color: #d1d5db;
+}
+
+.dark .el-menu--dark .el-menu-item:hover,
+.dark .el-menu--dark .el-sub-menu__title:hover,
+.dark .el-menu .el-menu-item:hover,
+.dark .el-menu .el-sub-menu__title:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark .el-menu--dark .el-menu-item.is-active,
+.dark .el-menu .el-menu-item.is-active {
+  color: #3b82f6 !important;
+  background-color: rgba(59, 130, 246, 0.15) !important;
+}
+
+.dark .el-sub-menu .el-menu {
+  background-color: #16162a !important;
+}
+
+/* 覆盖 Element Plus drawer 抽屉深色模式 */
+.dark .el-drawer {
+  background-color: #16162a !important;
+}
+
+/* 覆盖 Element Plus sub-menu 弹出菜单 */
+.dark .el-menu--horizontal .el-menu--popup,
+.dark .el-menu--vertical .el-menu--popup {
+  background-color: #16162a !important;
+}
+
+.dark .el-menu--horizontal .el-menu--popup .el-menu-item,
+.dark .el-menu--vertical .el-menu--popup .el-menu-item {
+  color: #d1d5db;
+  background-color: #16162a !important;
+}
+
+.dark .el-menu--horizontal .el-menu--popup .el-menu-item:hover,
+.dark .el-menu--vertical .el-menu--popup .el-menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}

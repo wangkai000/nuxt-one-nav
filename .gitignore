@@ -1,0 +1,15 @@
+# 项目根目录 .gitignore
+
+.nuxt
+.output/cache
+.output/server
+.output/nitro.json
+dist
+node_modules
+.env
+*.log
+.DS_Store
+output/
+
+# 构建产物（由 nav-data.md 自动生成）
+data/nav-data.generated.json
