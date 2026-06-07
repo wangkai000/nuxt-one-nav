@@ -268,6 +268,16 @@ AIGC:
 - [高德地图 JS API](https://lbs.amap.com/api/javascript-api-v2/summary) - 高德地图 JavaScript API 是国内主流地图服务，支持 2D/3D 地图、路径规划等功能。 | icon: https://lbs.amap.com/favicon.ico | tags: WebGIS, 地图, 国内, 高德
 - [百度地图 JS API](https://lbsyun.baidu.com/index.php?title=jspopularGL) - 百度地图 JavaScript API 提供地图展示、定位、路径规划等服务，支持 WebGL 渲染。 | icon: https://lbsyun.baidu.com/favicon.ico | tags: WebGIS, 地图, 国内, 百度
 
+## 游戏/工具库
+> id: frontend-game | icon: fluent-emoji:joystick
+
+- [rot.js](https://rot.js.org/) - rot.js 是纯 JS Roguelike 游戏开发工具库，提供地图生成、FOV 视野计算、路径寻路等算法。 | icon: https://rot.js.org/favicon.ico | tags: 游戏库, Roguelike, JavaScript, 地图生成
+- [KaBoom.js](https://kaboomjs.com/) - KaBoom.js 是轻松上手的 JS 游戏编程库，内置物理引擎、碰撞检测和丰富 API。 | icon: https://kaboomjs.com/favicon.ico | tags: 游戏库, JavaScript, 2D, 物理
+- [melonJS](https://melonjs.org/) - melonJS 是轻量级 HTML5 2D 游戏引擎，支持碰撞检测、精灵动画和物理效果。 | icon: https://melonjs.org/favicon.ico | tags: 游戏引擎, JavaScript, 2D, HTML5
+- [Excalibur.js](https://excaliburjs.com/) - Excalibur.js 是 TypeScript 驱动的 2D 游戏引擎，API 友好，适合快速原型开发。 | icon: https://excaliburjs.com/favicon.ico | tags: 游戏引擎, TypeScript, 2D, 跨平台
+- [LittleJS](https://littlejsengine.com/) - LittleJS 是极致轻量的 JS 2D 游戏引擎，体积 < 10KB，适合 Game Jam 和小游戏。 | icon: https://littlejsengine.com/favicon.ico | tags: 游戏引擎, JavaScript, 轻量级, 2D
+- [Kontra.js](https://straker.github.io/kontra/) - Kontra.js 是极简 JS 游戏微库，专注于 Sprite 渲染和简单游戏循环。 | icon: https://straker.github.io/kontra/favicon.ico | tags: 游戏库, JavaScript, 微库, 2D
+
 # 云平台
 > id: cloud | icon: fluent-emoji:cloud
 
@@ -443,6 +453,27 @@ AIGC:
 - [Hono](https://hono.dev/) - Hono 是 ultrafast 的 Web 框架，支持 Cloudflare Workers、Deno、Bun 等边缘运行时。 | icon: https://hono.dev/favicon.ico | tags: Node.js, 边缘计算, 高性能, TypeScript, Bun
 - [Bun SQLite](https://bun.sh/docs/api/sqlite) - Bun 内置 SQLite 支持，零配置直接在 Bun 运行时中使用高性能 SQLite 数据库。 | icon: https://bun.sh/favicon.ico | tags: Bun, SQLite, 数据库, 内置
 - [Bun FFI](https://bun.sh/docs/api/ffi) - Bun FFI 提供高吞吐的 Rust/C++/Zig 原生扩展开发接口，无需绑定层。 | icon: https://bun.sh/favicon.ico | tags: Bun, FFI, Rust, C++, 原生扩展
+
+## Python
+> id: python | icon: logos:python
+
+### 后端框架
+
+- [Django](https://www.djangoproject.com/) - Django 是 Python 全栈 Web 框架，内置 ORM、认证、Admin，适合快速构建复杂应用。 | icon: https://www.djangoproject.com/favicon.ico | tags: Python, 后端框架, 全栈, ORM
+- [Flask](https://flask.palletsprojects.com/) - Flask 是轻量级 Python Web 微框架，灵活可扩展，适合 API 和小型应用。 | icon: https://flask.palletsprojects.com/favicon.ico | tags: Python, 后端框架, 微框架, API
+- [FastAPI](https://fastapi.tiangolo.com/) - FastAPI 是高性能 Python Web 框架，基于 Starlette 和 Pydantic，自动生成 OpenAPI 文档。 | icon: https://fastapi.tiangolo.com/favicon.ico | tags: Python, 后端框架, 高性能, OpenAPI
+- [Tornado](https://www.tornadoweb.org/) - Tornado 是 Python 异步网络框架，原生支持 WebSocket 和长连接，适合实时应用。 | icon: https://www.tornadoweb.org/favicon.ico | tags: Python, 后端框架, 异步, WebSocket
+- [Sanic](https://sanic.dev/) - Sanic 是 Python 异步 Web 框架，类 Flask API 设计，uvloop 驱动的极致性能。 | icon: https://sanic.dev/favicon.ico | tags: Python, 后端框架, 异步, 高性能
+- [Pyramid](https://trypyramid.com/) - Pyramid 是灵活的 Python Web 框架，从微框架到大型应用均可胜任，适合渐进式项目。 | icon: https://trypyramid.com/favicon.ico | tags: Python, 后端框架, 灵活, 渐进式
+
+### 爬虫/网络请求
+
+- [Scrapy](https://scrapy.org/) - Scrapy 是 Python 最流行的爬虫框架，支持异步、中间件、管道和数据导出。 | icon: https://scrapy.org/favicon.ico | tags: Python, 爬虫, 异步, 数据采集
+- [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) - Beautiful Soup 是 Python HTML/XML 解析库，配合 requests 使用，简单易上手的爬虫利器。 | icon: https://www.crummy.com/favicon.ico | tags: Python, 爬虫, HTML解析, 数据采集
+- [Playwright Python](https://playwright.dev/python/) - Playwright Python 是微软开源的浏览器自动化工具，支持 Chromium/Firefox/WebKit，适合动态页面爬取。 | icon: https://playwright.dev/favicon.ico | tags: Python, 爬虫, 浏览器自动化, 微软
+- [Selenium Python](https://selenium-python.readthedocs.io/) - Selenium Python 是老牌浏览器自动化框架，生态成熟，支持多种浏览器和分布式测试。 | icon: https://selenium-python.readthedocs.io/favicon.ico | tags: Python, 爬虫, 浏览器自动化, 测试
+- [Requests](https://docs.python-requests.org/) - Requests 是 Python 最流行的 HTTP 库，API 简洁优雅，HTTP 请求的首选工具。 | icon: https://docs.python-requests.org/favicon.ico | tags: Python, HTTP, 网络请求, 客户端
+
 ## Go
 > id: backend-go | icon: logos:go
 
@@ -545,6 +576,8 @@ AIGC:
 - [PixiJS](https://pixijs.com/) - PixiJS 是快速的 2D WebGL 渲染引擎，适用于游戏、交互式媒体和可视化。 | icon: https://pixijs.com/favicon.ico | tags: WebGL, 2D, 图形, 渲染
 - [Phaser](https://phaser.io/) - Phaser 是快速、免费的 HTML5 2D 游戏框架，适合制作跨平台网页游戏。 | icon: https://phaser.io/favicon.ico | tags: WebGL, 2D, 游戏引擎, HTML5
 - [Godot Engine](https://godotengine.org/) - Godot 是开源的 2D/3D 游戏引擎，轻量且功能完整。 | icon: https://godotengine.org/favicon.ico | tags: 游戏引擎, 开源, 2D, 3D
+- [Ocelot](https://github.com/geoffb/ocelot) - 极简 HTML5 2D 引擎，<30KB，Entity/Component/Tweening | icon: https://github.com/favicon.ico | tags: 游戏引擎, HTML5, 2D, 极简
+- [Ga](https://github.com/kittykatattack/ga) - 超小 HTML5 游戏引擎（6.5KB），游戏循环/精灵/粒子 | icon: https://github.com/favicon.ico | tags: 游戏引擎, HTML5, 2D, 极简
 
 # 3D 建模
 > id: 3d-modeling | icon: fluent-emoji:artist-palette
