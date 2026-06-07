@@ -172,7 +172,7 @@ export default defineNuxtConfig({
       // HTML 标题
       title: siteConfig.title,
 
-      // HTML 标签属性（动态语言由 i18n 处理）
+      // HTML 标签属性
       htmlAttrs: { lang: 'zh-CN' },
 
       // Meta 标签（SEO 和社交分享）

@@ -69,9 +69,6 @@ importers:
       eslint-plugin-vue:
         specifier: ^9.30.0
         version: 9.33.0(eslint@9.39.4(jiti@2.7.0))
-      exsolve:
-        specifier: ^1.0.8
-        version: 1.0.8
       prettier:
         specifier: ^3.3.0
         version: 3.8.3

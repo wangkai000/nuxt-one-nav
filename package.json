@@ -43,7 +43,6 @@
         "autoprefixer": "^10.4.19",
         "eslint": "^9.0.0",
         "eslint-plugin-vue": "^9.30.0",
-        "exsolve": "^1.0.8",
         "prettier": "^3.3.0",
         "stylelint": "^16.8.0",
         "stylelint-config-standard": "^36.0.1",
