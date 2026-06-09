@@ -104,6 +104,18 @@ data/nav-data.generated.json
 
 ---
 
+## 迭代记录
+
+| 版本 | 时间 | 变更 |
+|------|------|------|
+| v1.0 | 2024-12 | 项目初始化，Nuxt 4 + Element Plus + Tailwind CSS |
+| v1.1 | 2025-01 | 添加 PWA 支持（`@vite-pwa/nuxt`） |
+| v1.2 | 2025-03 | 添加暗色模式（`@nuxtjs/color-mode`） |
+| v1.3 | 2025-05 | 添加搜索快捷键（⌘K / Ctrl+K） |
+| v1.4 | 2025-06 | 添加 AI 项目文档（AGENTS.md · RULES.md · MEMORY.md） |
+
+---
+
 ## 技术约束
 
 - **Node.js >= 22.13.0**
