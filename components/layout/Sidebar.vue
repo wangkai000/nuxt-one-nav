@@ -99,23 +99,29 @@ const { categories } = useNavData()
 const { activeCategory, selectCategory, preloadCategory } = useSearch()
 const collapsed = useState<boolean>('sidebar-collapsed', () => false)
 
+// 获取实际滚动容器（el-main，不是 window）
+const getScrollContainer = (): HTMLElement | null => {
+  return document.querySelector('.el-main')
+}
+
 // 滚动到指定元素（返回 Promise，配合 async/await 精确控制时序）
+// 关键修复：不再用两次 smooth scrollIntoView 互相中断，
+// 改用 instant 快速到位 + 300ms 后 smooth 微调（避免 Chromium 的 smooth 中断 bug）
 const scrollToElement = (id: string): Promise<boolean> => {
   return new Promise((resolve) => {
     const tryScroll = (retriesLeft: number) => {
       const element = document.getElementById(id)
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-        // 关键：延迟校正。因为其他 InViewRender 可能还没渲染完，
-        // 布局还在变化，第一次 scrollIntoView 的位置大概率不准。
-        // 等 400ms 让所有懒加载内容展开稳定后再校正一次。
+        // 第一步：instant 瞬间到位（避免内容渲染中高度变化导致偏移）
+        element.scrollIntoView({ behavior: 'instant', block: 'start' })
+        // 第二步：300ms 后 smooth 微调（此时 InViewRender 内容已渲染完成）
         setTimeout(() => {
           const el = document.getElementById(id)
           if (el) {
             el.scrollIntoView({ behavior: 'smooth', block: 'start' })
           }
           resolve(true)
-        }, 400)
+        }, 300)
         return
       }
       if (retriesLeft > 0) {
@@ -144,10 +150,13 @@ const handleSelect = async (index: string) => {
   // 确保目标分类的 InViewRender 被强制渲染
   preloadCategory(index, categories.value)
   await nextTick()
+  // 双 nextTick：确保二级分类的子 div 也渲染完成（在 InViewRender slot 内）
+  await nextTick()
 
   const found = await scrollToElement(`category-${index}`)
   if (!found) {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    // 回退：滚动实际容器（el-main），不是 window（window 无溢出，scrollTo 是空操作）
+    getScrollContainer()?.scrollTo({ top: 0, behavior: 'smooth' })
   }
 }
 
