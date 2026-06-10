@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "lastUpdated": "2026-06-10",
     "description": "基于 Nuxt 4 的导航站数据（Markdown 数据源）",
-    "totalSites": 404,
+    "totalSites": 405,
     "totalCategories": 15
   },
   "categories": [
@@ -170,9 +170,16 @@
         },
         {
           "id": "frontend-ai",
-          "name": "AI开发库",
+          "name": "前端 AI 推理库",
           "icon": "fluent-emoji:robot",
-          "count": 7,
+          "count": 5,
+          "parentId": "frontend"
+        },
+        {
+          "id": "frontend-ai-sdk",
+          "name": "AI SDK / API 客户端",
+          "icon": "fluent-emoji:gear",
+          "count": 3,
           "parentId": "frontend"
         },
         {
@@ -190,7 +197,7 @@
           "parentId": "frontend"
         }
       ],
-      "count": 73
+      "count": 74
     },
     {
       "id": "cloud",
@@ -2324,25 +2331,9 @@
       "order": 140
     },
     {
-      "id": "langchain-js",
-      "title": "LangChain.js",
-      "description": "LangChain.js 是 LangChain 的 JavaScript/TypeScript 版本，用于构建 AI 应用。",
-      "url": "https://js.langchain.com/",
-      "icon": "https://js.langchain.com/favicon.ico",
-      "tags": [
-        "AI",
-        "框架",
-        "JavaScript",
-        "TypeScript",
-        "LLM"
-      ],
-      "category": "frontend-ai",
-      "order": 141
-    },
-    {
       "id": "transformers-js",
       "title": "Transformers.js",
-      "description": "Transformers.js 是 Hugging Face 的 JavaScript 库，在浏览器中运行预训练模型。",
+      "description": "Transformers.js 是 Hugging Face 的 JavaScript 库，在浏览器中直接运行预训练模型，无需后端。",
       "url": "https://huggingface.co/docs/transformers.js",
       "icon": "https://huggingface.co/favicon.ico",
       "tags": [
@@ -2352,72 +2343,27 @@
         "Hugging Face"
       ],
       "category": "frontend-ai",
+      "order": 141
+    },
+    {
+      "id": "tensorflow-js",
+      "title": "TensorFlow.js",
+      "description": "TensorFlow.js 是 Google 的浏览器端机器学习库，支持模型训练与推理。",
+      "url": "https://www.tensorflow.org/js",
+      "icon": "https://www.tensorflow.org/favicon.ico",
+      "tags": [
+        "AI",
+        "浏览器",
+        "机器学习",
+        "Google"
+      ],
+      "category": "frontend-ai",
       "order": 142
-    },
-    {
-      "id": "vercel-ai-sdk",
-      "title": "Vercel AI SDK",
-      "description": "Vercel AI SDK 是构建 AI 应用的工具包，支持 Next.js、React、Vue 等。",
-      "url": "https://sdk.vercel.ai/",
-      "icon": "https://sdk.vercel.ai/favicon.ico",
-      "tags": [
-        "AI",
-        "SDK",
-        "Next.js",
-        "Vercel"
-      ],
-      "category": "frontend-ai",
-      "order": 143
-    },
-    {
-      "id": "openai-node-js-sdk",
-      "title": "OpenAI Node.js SDK",
-      "description": "OpenAI 官方 Node.js SDK，用于调用 GPT、DALL·E 等 API。",
-      "url": "https://github.com/openai/openai-node",
-      "icon": "https://github.com/favicon.ico",
-      "tags": [
-        "AI",
-        "SDK",
-        "OpenAI",
-        "Node.js"
-      ],
-      "category": "frontend-ai",
-      "order": 144
-    },
-    {
-      "id": "anthropic-sdk-for-js",
-      "title": "Anthropic SDK for JS",
-      "description": "Anthropic 官方 TypeScript SDK，用于调用 Claude API。",
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript",
-      "icon": "https://github.com/favicon.ico",
-      "tags": [
-        "AI",
-        "SDK",
-        "Claude",
-        "TypeScript"
-      ],
-      "category": "frontend-ai",
-      "order": 145
-    },
-    {
-      "id": "langgraph-js",
-      "title": "LangGraph.js",
-      "description": "LangGraph 的 JavaScript 版本，用于构建有状态的 AI 应用。",
-      "url": "https://github.com/langchain-ai/langgraphjs",
-      "icon": "https://github.com/favicon.ico",
-      "tags": [
-        "AI",
-        "框架",
-        "工作流",
-        "Agent"
-      ],
-      "category": "frontend-ai",
-      "order": 146
     },
     {
       "id": "ml5-js",
       "title": "ml5.js",
-      "description": "ml5.js 是基于 TensorFlow.js 的友好机器学习库，提供简洁 API 实现图像分类、姿态检测、文本生成等 AI 功能，面向创意编码和初学者。",
+      "description": "ml5.js 是基于 TensorFlow.js 的友好机器学习库，面向创意编码和初学者，提供图像分类、姿态检测等简洁 API。",
       "url": "https://ml5js.org/",
       "icon": "https://ml5js.org/favicon.ico",
       "tags": [
@@ -2428,7 +2374,84 @@
         "创意编码"
       ],
       "category": "frontend-ai",
+      "order": 143
+    },
+    {
+      "id": "onnx-runtime-web",
+      "title": "ONNX Runtime Web",
+      "description": "ONNX Runtime Web 支持在浏览器中运行 ONNX 格式的机器学习模型，跨框架兼容。",
+      "url": "https://onnxruntime.ai/docs/get-started/with-javascript/web.html",
+      "icon": "https://onnxruntime.ai/favicon.ico",
+      "tags": [
+        "AI",
+        "浏览器",
+        "模型推理",
+        "ONNX",
+        "跨框架"
+      ],
+      "category": "frontend-ai",
+      "order": 144
+    },
+    {
+      "id": "mediapipe",
+      "title": "MediaPipe",
+      "description": "Google MediaPipe 是跨平台机器学习解决方案，提供浏览器端的人脸检测、手势识别、姿态估计等预训练模型。",
+      "url": "https://developers.google.com/mediapipe",
+      "icon": "https://developers.google.com/favicon.ico",
+      "tags": [
+        "AI",
+        "浏览器",
+        "计算机视觉",
+        "Google",
+        "实时"
+      ],
+      "category": "frontend-ai",
+      "order": 145
+    },
+    {
+      "id": "vercel-ai-sdk",
+      "title": "Vercel AI SDK",
+      "description": "Vercel AI SDK 是构建 AI 应用的工具包，支持流式响应、工具调用和 React/Vue/Svelte 集成。",
+      "url": "https://sdk.vercel.ai/",
+      "icon": "https://sdk.vercel.ai/favicon.ico",
+      "tags": [
+        "AI",
+        "SDK",
+        "流式响应",
+        "Vercel"
+      ],
+      "category": "frontend-ai-sdk",
+      "order": 146
+    },
+    {
+      "id": "openai-node-js-sdk",
+      "title": "OpenAI Node.js SDK",
+      "description": "OpenAI 官方 Node.js SDK，支持 GPT、DALL·E、Whisper 等 API。",
+      "url": "https://github.com/openai/openai-node",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "AI",
+        "SDK",
+        "OpenAI",
+        "Node.js"
+      ],
+      "category": "frontend-ai-sdk",
       "order": 147
+    },
+    {
+      "id": "anthropic-sdk-for-js",
+      "title": "Anthropic SDK for JS",
+      "description": "Anthropic 官方 TypeScript SDK，支持 Claude API 和流式响应。",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "AI",
+        "SDK",
+        "Claude",
+        "TypeScript"
+      ],
+      "category": "frontend-ai-sdk",
+      "order": 148
     },
     {
       "id": "leaflet",
@@ -2443,7 +2466,7 @@
         "轻量级"
       ],
       "category": "frontend-webgis",
-      "order": 148
+      "order": 149
     },
     {
       "id": "mapbox-gl-js",
@@ -2458,7 +2481,7 @@
         "3D"
       ],
       "category": "frontend-webgis",
-      "order": 149
+      "order": 150
     },
     {
       "id": "openlayers",
@@ -2473,7 +2496,7 @@
         "企业级"
       ],
       "category": "frontend-webgis",
-      "order": 150
+      "order": 151
     },
     {
       "id": "cesium",
@@ -2488,7 +2511,7 @@
         "可视化"
       ],
       "category": "frontend-webgis",
-      "order": 151
+      "order": 152
     },
     {
       "id": "maplibre-gl-js",
@@ -2503,7 +2526,7 @@
         "矢量"
       ],
       "category": "frontend-webgis",
-      "order": 152
+      "order": 153
     },
     {
       "id": "deck-gl",
@@ -2518,7 +2541,7 @@
         "大数据"
       ],
       "category": "frontend-webgis",
-      "order": 153
+      "order": 154
     },
     {
       "id": "turf-js",
@@ -2532,7 +2555,7 @@
         "地理计算"
       ],
       "category": "frontend-webgis",
-      "order": 154
+      "order": 155
     },
     {
       "id": "arcgis-api-for-javascript",
@@ -2547,7 +2570,7 @@
         "ESRI"
       ],
       "category": "frontend-webgis",
-      "order": 155
+      "order": 156
     },
     {
       "id": "高德地图-js-api",
@@ -2562,7 +2585,7 @@
         "高德"
       ],
       "category": "frontend-webgis",
-      "order": 156
+      "order": 157
     },
     {
       "id": "百度地图-js-api",
@@ -2577,7 +2600,7 @@
         "百度"
       ],
       "category": "frontend-webgis",
-      "order": 157
+      "order": 158
     },
     {
       "id": "rot-js",
@@ -2592,7 +2615,7 @@
         "地图生成"
       ],
       "category": "frontend-game",
-      "order": 158
+      "order": 159
     },
     {
       "id": "kaboom-js",
@@ -2607,7 +2630,7 @@
         "物理"
       ],
       "category": "frontend-game",
-      "order": 159
+      "order": 160
     },
     {
       "id": "melonjs",
@@ -2622,7 +2645,7 @@
         "HTML5"
       ],
       "category": "frontend-game",
-      "order": 160
+      "order": 161
     },
     {
       "id": "excalibur-js",
@@ -2637,7 +2660,7 @@
         "跨平台"
       ],
       "category": "frontend-game",
-      "order": 161
+      "order": 162
     },
     {
       "id": "littlejs",
@@ -2652,7 +2675,7 @@
         "2D"
       ],
       "category": "frontend-game",
-      "order": 162
+      "order": 163
     },
     {
       "id": "kontra-js",
@@ -2667,7 +2690,7 @@
         "2D"
       ],
       "category": "frontend-game",
-      "order": 163
+      "order": 164
     },
     {
       "id": "vercel",
@@ -2683,7 +2706,7 @@
         "JAMstack"
       ],
       "category": "cloud-hosting",
-      "order": 164
+      "order": 165
     },
     {
       "id": "netlify",
@@ -2699,7 +2722,7 @@
         "JAMstack"
       ],
       "category": "cloud-hosting",
-      "order": 165
+      "order": 166
     },
     {
       "id": "cloudflare-pages",
@@ -2715,7 +2738,7 @@
         "Edge"
       ],
       "category": "cloud-hosting",
-      "order": 166
+      "order": 167
     },
     {
       "id": "render",
@@ -2731,7 +2754,7 @@
         "部署"
       ],
       "category": "cloud-hosting",
-      "order": 167
+      "order": 168
     },
     {
       "id": "railway",
@@ -2747,7 +2770,7 @@
         "付费"
       ],
       "category": "cloud-hosting",
-      "order": 168
+      "order": 169
     },
     {
       "id": "fly-io",
@@ -2763,7 +2786,7 @@
         "全球"
       ],
       "category": "cloud-hosting",
-      "order": 169
+      "order": 170
     },
     {
       "id": "replit",
@@ -2779,7 +2802,7 @@
         "在线开发"
       ],
       "category": "cloud-hosting",
-      "order": 170
+      "order": 171
     },
     {
       "id": "stackblitz",
@@ -2795,7 +2818,7 @@
         "前端"
       ],
       "category": "cloud-hosting",
-      "order": 171
+      "order": 172
     },
     {
       "id": "aws-amazon-web-services",
@@ -2810,7 +2833,7 @@
         "AWS"
       ],
       "category": "cloud-major",
-      "order": 172
+      "order": 173
     },
     {
       "id": "google-cloud-platform",
@@ -2826,7 +2849,7 @@
         "GCP"
       ],
       "category": "cloud-major",
-      "order": 173
+      "order": 174
     },
     {
       "id": "microsoft-azure",
@@ -2842,7 +2865,7 @@
         "Microsoft"
       ],
       "category": "cloud-major",
-      "order": 174
+      "order": 175
     },
     {
       "id": "腾讯云国际版",
@@ -2858,7 +2881,7 @@
         "亚太"
       ],
       "category": "cloud-major",
-      "order": 175
+      "order": 176
     },
     {
       "id": "阿里云国际版",
@@ -2874,7 +2897,7 @@
         "亚太"
       ],
       "category": "cloud-major",
-      "order": 176
+      "order": 177
     },
     {
       "id": "digitalocean",
@@ -2890,7 +2913,7 @@
         "简单"
       ],
       "category": "cloud-major",
-      "order": 177
+      "order": 178
     },
     {
       "id": "linode-akamai",
@@ -2906,7 +2929,7 @@
         "Akamai"
       ],
       "category": "cloud-major",
-      "order": 178
+      "order": 179
     },
     {
       "id": "oracle-cloud",
@@ -2922,7 +2945,7 @@
         "免费套餐"
       ],
       "category": "cloud-major",
-      "order": 179
+      "order": 180
     },
     {
       "id": "华为云",
@@ -2939,7 +2962,7 @@
         "国内"
       ],
       "category": "cloud-major",
-      "order": 180
+      "order": 181
     },
     {
       "id": "cloudflare-workers",
@@ -2955,7 +2978,7 @@
         "无服务器"
       ],
       "category": "cloud-serverless",
-      "order": 181
+      "order": 182
     },
     {
       "id": "vercel-functions",
@@ -2971,7 +2994,7 @@
         "函数"
       ],
       "category": "cloud-serverless",
-      "order": 182
+      "order": 183
     },
     {
       "id": "aws-lambda",
@@ -2987,7 +3010,7 @@
         "函数"
       ],
       "category": "cloud-serverless",
-      "order": 183
+      "order": 184
     },
     {
       "id": "azure-functions",
@@ -3003,7 +3026,7 @@
         "函数"
       ],
       "category": "cloud-serverless",
-      "order": 184
+      "order": 185
     },
     {
       "id": "google-cloud-functions",
@@ -3019,7 +3042,7 @@
         "GCP"
       ],
       "category": "cloud-serverless",
-      "order": 185
+      "order": 186
     },
     {
       "id": "阿里云函数计算-fc",
@@ -3035,7 +3058,7 @@
         "国内"
       ],
       "category": "cloud-serverless",
-      "order": 186
+      "order": 187
     },
     {
       "id": "腾讯云云函数-scf",
@@ -3051,7 +3074,7 @@
         "国内"
       ],
       "category": "cloud-serverless",
-      "order": 187
+      "order": 188
     },
     {
       "id": "zapier",
@@ -3067,7 +3090,7 @@
         "自动化"
       ],
       "category": "cloud-automation",
-      "order": 188
+      "order": 189
     },
     {
       "id": "make-formerly-integromat",
@@ -3083,7 +3106,7 @@
         "集成"
       ],
       "category": "cloud-automation",
-      "order": 189
+      "order": 190
     },
     {
       "id": "ifttt",
@@ -3099,7 +3122,7 @@
         "IoT"
       ],
       "category": "cloud-automation",
-      "order": 190
+      "order": 191
     },
     {
       "id": "firebase",
@@ -3115,7 +3138,7 @@
         "认证"
       ],
       "category": "cloud-baas",
-      "order": 191
+      "order": 192
     },
     {
       "id": "supabase",
@@ -3131,7 +3154,7 @@
         "Firebase替代"
       ],
       "category": "cloud-baas",
-      "order": 192
+      "order": 193
     },
     {
       "id": "airtable",
@@ -3147,7 +3170,7 @@
         "在线表格"
       ],
       "category": "cloud-baas",
-      "order": 193
+      "order": 194
     },
     {
       "id": "fastly",
@@ -3163,7 +3186,7 @@
         "VCL"
       ],
       "category": "cloud-cdn",
-      "order": 194
+      "order": 195
     },
     {
       "id": "akamai",
@@ -3179,7 +3202,7 @@
         "安全"
       ],
       "category": "cloud-cdn",
-      "order": 195
+      "order": 196
     },
     {
       "id": "cloudflare-registrar",
@@ -3195,7 +3218,7 @@
         "注册"
       ],
       "category": "cloud-cdn",
-      "order": 196
+      "order": 197
     },
     {
       "id": "namecheap",
@@ -3211,7 +3234,7 @@
         "Namecheap"
       ],
       "category": "cloud-cdn",
-      "order": 197
+      "order": 198
     },
     {
       "id": "godaddy",
@@ -3227,7 +3250,7 @@
         "DNS"
       ],
       "category": "cloud-cdn",
-      "order": 198
+      "order": 199
     },
     {
       "id": "planetscale",
@@ -3243,7 +3266,7 @@
         "Vitess"
       ],
       "category": "cloud-database",
-      "order": 199
+      "order": 200
     },
     {
       "id": "neon",
@@ -3259,7 +3282,7 @@
         "开源"
       ],
       "category": "cloud-database",
-      "order": 200
+      "order": 201
     },
     {
       "id": "mongodb-atlas",
@@ -3275,7 +3298,7 @@
         "全球"
       ],
       "category": "cloud-database",
-      "order": 201
+      "order": 202
     },
     {
       "id": "redis-cloud",
@@ -3291,7 +3314,7 @@
         "托管"
       ],
       "category": "cloud-database",
-      "order": 202
+      "order": 203
     },
     {
       "id": "upstash",
@@ -3307,7 +3330,7 @@
         "边缘计算"
       ],
       "category": "cloud-database",
-      "order": 203
+      "order": 204
     },
     {
       "id": "腾讯云数据库-cdb",
@@ -3324,7 +3347,7 @@
         "国内"
       ],
       "category": "cloud-database",
-      "order": 204
+      "order": 205
     },
     {
       "id": "阿里云云数据库-rds",
@@ -3341,7 +3364,7 @@
         "国内"
       ],
       "category": "cloud-database",
-      "order": 205
+      "order": 206
     },
     {
       "id": "docker-hub",
@@ -3357,7 +3380,7 @@
         "镜像"
       ],
       "category": "cloud-container",
-      "order": 206
+      "order": 207
     },
     {
       "id": "github-container-registry",
@@ -3373,7 +3396,7 @@
         "镜像"
       ],
       "category": "cloud-container",
-      "order": 207
+      "order": 208
     },
     {
       "id": "amazon-ecr",
@@ -3389,7 +3412,7 @@
         "EKS"
       ],
       "category": "cloud-container",
-      "order": 208
+      "order": 209
     },
     {
       "id": "github-actions",
@@ -3405,7 +3428,7 @@
         "持续集成"
       ],
       "category": "cloud-container",
-      "order": 209
+      "order": 210
     },
     {
       "id": "gitlab-cicd",
@@ -3421,7 +3444,7 @@
         "持续集成"
       ],
       "category": "cloud-container",
-      "order": 210
+      "order": 211
     },
     {
       "id": "argo-cd",
@@ -3437,7 +3460,7 @@
         "容器"
       ],
       "category": "cloud-container",
-      "order": 211
+      "order": 212
     },
     {
       "id": "rancher",
@@ -3453,7 +3476,7 @@
         "Rancher"
       ],
       "category": "cloud-container",
-      "order": 212
+      "order": 213
     },
     {
       "id": "腾讯云容器服务-tke",
@@ -3470,7 +3493,7 @@
         "国内"
       ],
       "category": "cloud-container",
-      "order": 213
+      "order": 214
     },
     {
       "id": "阿里云容器服务-ack",
@@ -3487,7 +3510,7 @@
         "国内"
       ],
       "category": "cloud-container",
-      "order": 214
+      "order": 215
     },
     {
       "id": "flutter",
@@ -3502,7 +3525,7 @@
         "Google"
       ],
       "category": "mobile-cross",
-      "order": 215
+      "order": 216
     },
     {
       "id": "react-native",
@@ -3517,7 +3540,7 @@
         "JavaScript"
       ],
       "category": "mobile-cross",
-      "order": 216
+      "order": 217
     },
     {
       "id": "uni-app",
@@ -3532,7 +3555,7 @@
         "微信小程序"
       ],
       "category": "mobile-cross",
-      "order": 217
+      "order": 218
     },
     {
       "id": "capacitor",
@@ -3547,7 +3570,7 @@
         "原生容器"
       ],
       "category": "mobile-cross",
-      "order": 218
+      "order": 219
     },
     {
       "id": "cordova",
@@ -3562,7 +3585,7 @@
         "混合开发"
       ],
       "category": "mobile-cross",
-      "order": 219
+      "order": 220
     },
     {
       "id": "ionic",
@@ -3577,7 +3600,7 @@
         "UI框架"
       ],
       "category": "mobile-cross",
-      "order": 220
+      "order": 221
     },
     {
       "id": "expo",
@@ -3592,7 +3615,7 @@
         "TypeScript"
       ],
       "category": "mobile-cross",
-      "order": 221
+      "order": 222
     },
     {
       "id": "nativescript",
@@ -3607,7 +3630,7 @@
         "Vue"
       ],
       "category": "mobile-cross",
-      "order": 222
+      "order": 223
     },
     {
       "id": "taro",
@@ -3622,7 +3645,7 @@
         "微信小程序"
       ],
       "category": "mobile-cross",
-      "order": 223
+      "order": 224
     },
     {
       "id": "jetpack-compose",
@@ -3637,7 +3660,7 @@
         "Kotlin"
       ],
       "category": "mobile-android",
-      "order": 224
+      "order": 225
     },
     {
       "id": "material-design-3",
@@ -3652,7 +3675,7 @@
         "UI"
       ],
       "category": "mobile-android",
-      "order": 225
+      "order": 226
     },
     {
       "id": "kotlin",
@@ -3666,7 +3689,7 @@
         "Kotlin"
       ],
       "category": "mobile-android",
-      "order": 226
+      "order": 227
     },
     {
       "id": "android-studio",
@@ -3680,7 +3703,7 @@
         "开发工具"
       ],
       "category": "mobile-android",
-      "order": 227
+      "order": 228
     },
     {
       "id": "swiftui",
@@ -3695,7 +3718,7 @@
         "声明式"
       ],
       "category": "mobile-ios",
-      "order": 228
+      "order": 229
     },
     {
       "id": "uikit",
@@ -3710,7 +3733,7 @@
         "经典"
       ],
       "category": "mobile-ios",
-      "order": 229
+      "order": 230
     },
     {
       "id": "swift",
@@ -3724,7 +3747,7 @@
         "语言"
       ],
       "category": "mobile-ios",
-      "order": 230
+      "order": 231
     },
     {
       "id": "xcode",
@@ -3738,7 +3761,7 @@
         "开发工具"
       ],
       "category": "mobile-ios",
-      "order": 231
+      "order": 232
     },
     {
       "id": "electron",
@@ -3753,7 +3776,7 @@
         "GitHub"
       ],
       "category": "desktop",
-      "order": 232
+      "order": 233
     },
     {
       "id": "tauri",
@@ -3768,7 +3791,7 @@
         "轻量级"
       ],
       "category": "desktop",
-      "order": 233
+      "order": 234
     },
     {
       "id": "neutralino",
@@ -3783,7 +3806,7 @@
         "Web技术"
       ],
       "category": "desktop",
-      "order": 234
+      "order": 235
     },
     {
       "id": "nw-js",
@@ -3798,7 +3821,7 @@
         "Node.js"
       ],
       "category": "desktop",
-      "order": 235
+      "order": 236
     },
     {
       "id": "pywebview",
@@ -3813,7 +3836,7 @@
         "GUI"
       ],
       "category": "desktop",
-      "order": 236
+      "order": 237
     },
     {
       "id": "quasar",
@@ -3828,7 +3851,7 @@
         "移动应用"
       ],
       "category": "desktop",
-      "order": 237
+      "order": 238
     },
     {
       "id": "express-js",
@@ -3842,7 +3865,7 @@
         "Web"
       ],
       "category": "nodejs",
-      "order": 238
+      "order": 239
     },
     {
       "id": "koa",
@@ -3856,7 +3879,7 @@
         "Web"
       ],
       "category": "nodejs",
-      "order": 239
+      "order": 240
     },
     {
       "id": "fastify",
@@ -3870,7 +3893,7 @@
         "高性能"
       ],
       "category": "nodejs",
-      "order": 240
+      "order": 241
     },
     {
       "id": "nestjs",
@@ -3885,7 +3908,7 @@
         "企业级"
       ],
       "category": "nodejs",
-      "order": 241
+      "order": 242
     },
     {
       "id": "hono",
@@ -3900,7 +3923,7 @@
         "TypeScript"
       ],
       "category": "nodejs",
-      "order": 242
+      "order": 243
     },
     {
       "id": "adonisjs",
@@ -3915,7 +3938,7 @@
         "全栈"
       ],
       "category": "nodejs",
-      "order": 243
+      "order": 244
     },
     {
       "id": "trpc",
@@ -3930,7 +3953,7 @@
         "全栈"
       ],
       "category": "nodejs",
-      "order": 244
+      "order": 245
     },
     {
       "id": "piscina",
@@ -3945,7 +3968,7 @@
         "性能优化"
       ],
       "category": "nodejs",
-      "order": 245
+      "order": 246
     },
     {
       "id": "workerpool",
@@ -3960,7 +3983,7 @@
         "Worker"
       ],
       "category": "nodejs",
-      "order": 246
+      "order": 247
     },
     {
       "id": "threads-js",
@@ -3975,7 +3998,7 @@
         "并发"
       ],
       "category": "nodejs",
-      "order": 247
+      "order": 248
     },
     {
       "id": "tinypool",
@@ -3990,7 +4013,7 @@
         "轻量级"
       ],
       "category": "nodejs",
-      "order": 248
+      "order": 249
     },
     {
       "id": "wa-sqlite",
@@ -4005,7 +4028,7 @@
         "数据库"
       ],
       "category": "nodejs",
-      "order": 249
+      "order": 250
     },
     {
       "id": "prisma",
@@ -4020,7 +4043,7 @@
         "数据库"
       ],
       "category": "nodejs",
-      "order": 250
+      "order": 251
     },
     {
       "id": "typeorm",
@@ -4035,7 +4058,7 @@
         "数据库"
       ],
       "category": "nodejs",
-      "order": 251
+      "order": 252
     },
     {
       "id": "drizzle-orm",
@@ -4050,7 +4073,7 @@
         "数据库"
       ],
       "category": "nodejs",
-      "order": 252
+      "order": 253
     },
     {
       "id": "mikroorm",
@@ -4065,7 +4088,7 @@
         "MongoDB"
       ],
       "category": "nodejs",
-      "order": 253
+      "order": 254
     },
     {
       "id": "mongoose",
@@ -4080,7 +4103,7 @@
         "数据库"
       ],
       "category": "nodejs",
-      "order": 254
+      "order": 255
     },
     {
       "id": "sequelize",
@@ -4095,7 +4118,7 @@
         "SQL"
       ],
       "category": "nodejs",
-      "order": 255
+      "order": 256
     },
     {
       "id": "knex-js",
@@ -4110,7 +4133,7 @@
         "数据库"
       ],
       "category": "nodejs",
-      "order": 256
+      "order": 257
     },
     {
       "id": "better-sqlite3",
@@ -4125,7 +4148,7 @@
         "高性能"
       ],
       "category": "nodejs",
-      "order": 257
+      "order": 258
     },
     {
       "id": "node-postgres",
@@ -4140,7 +4163,7 @@
         "客户端"
       ],
       "category": "nodejs",
-      "order": 258
+      "order": 259
     },
     {
       "id": "mysql2",
@@ -4155,7 +4178,7 @@
         "客户端"
       ],
       "category": "nodejs",
-      "order": 259
+      "order": 260
     },
     {
       "id": "ioredis",
@@ -4170,7 +4193,7 @@
         "客户端"
       ],
       "category": "nodejs",
-      "order": 260
+      "order": 261
     },
     {
       "id": "bullmq",
@@ -4186,7 +4209,7 @@
         "微服务"
       ],
       "category": "nodejs",
-      "order": 261
+      "order": 262
     },
     {
       "id": "rabbitmq",
@@ -4203,7 +4226,7 @@
         "微服务"
       ],
       "category": "nodejs",
-      "order": 262
+      "order": 263
     },
     {
       "id": "apache-kafka",
@@ -4220,7 +4243,7 @@
         "分布式"
       ],
       "category": "nodejs",
-      "order": 263
+      "order": 264
     },
     {
       "id": "nats",
@@ -4236,7 +4259,7 @@
         "边缘计算"
       ],
       "category": "nodejs",
-      "order": 264
+      "order": 265
     },
     {
       "id": "mqtt-js",
@@ -4252,7 +4275,7 @@
         "消息推送"
       ],
       "category": "nodejs",
-      "order": 265
+      "order": 266
     },
     {
       "id": "socket-io",
@@ -4268,7 +4291,7 @@
         "事件驱动"
       ],
       "category": "nodejs",
-      "order": 266
+      "order": 267
     },
     {
       "id": "uwebsockets-js",
@@ -4284,7 +4307,7 @@
         "实时"
       ],
       "category": "nodejs",
-      "order": 267
+      "order": 268
     },
     {
       "id": "graphql-yoga",
@@ -4300,7 +4323,7 @@
         "跨运行时"
       ],
       "category": "nodejs",
-      "order": 268
+      "order": 269
     },
     {
       "id": "grpc-node",
@@ -4317,7 +4340,7 @@
         "Protocol Buffers"
       ],
       "category": "nodejs",
-      "order": 269
+      "order": 270
     },
     {
       "id": "bun",
@@ -4332,7 +4355,7 @@
         "JavaScript"
       ],
       "category": "bun-ecosystem",
-      "order": 270
+      "order": 271
     },
     {
       "id": "elysia",
@@ -4347,7 +4370,7 @@
         "TypeScript"
       ],
       "category": "bun-ecosystem",
-      "order": 271
+      "order": 272
     },
     {
       "id": "hono",
@@ -4363,7 +4386,7 @@
         "Bun"
       ],
       "category": "bun-ecosystem",
-      "order": 272
+      "order": 273
     },
     {
       "id": "bun-sqlite",
@@ -4378,7 +4401,7 @@
         "内置"
       ],
       "category": "bun-ecosystem",
-      "order": 273
+      "order": 274
     },
     {
       "id": "bun-ffi",
@@ -4394,7 +4417,7 @@
         "原生扩展"
       ],
       "category": "bun-ecosystem",
-      "order": 274
+      "order": 275
     },
     {
       "id": "django",
@@ -4409,7 +4432,7 @@
         "ORM"
       ],
       "category": "python",
-      "order": 275
+      "order": 276
     },
     {
       "id": "flask",
@@ -4424,7 +4447,7 @@
         "API"
       ],
       "category": "python",
-      "order": 276
+      "order": 277
     },
     {
       "id": "fastapi",
@@ -4439,7 +4462,7 @@
         "OpenAPI"
       ],
       "category": "python",
-      "order": 277
+      "order": 278
     },
     {
       "id": "tornado",
@@ -4454,7 +4477,7 @@
         "WebSocket"
       ],
       "category": "python",
-      "order": 278
+      "order": 279
     },
     {
       "id": "sanic",
@@ -4469,7 +4492,7 @@
         "高性能"
       ],
       "category": "python",
-      "order": 279
+      "order": 280
     },
     {
       "id": "pyramid",
@@ -4484,7 +4507,7 @@
         "渐进式"
       ],
       "category": "python",
-      "order": 280
+      "order": 281
     },
     {
       "id": "scrapy",
@@ -4499,7 +4522,7 @@
         "数据采集"
       ],
       "category": "python",
-      "order": 281
+      "order": 282
     },
     {
       "id": "beautiful-soup",
@@ -4514,7 +4537,7 @@
         "数据采集"
       ],
       "category": "python",
-      "order": 282
+      "order": 283
     },
     {
       "id": "playwright-python",
@@ -4529,7 +4552,7 @@
         "微软"
       ],
       "category": "python",
-      "order": 283
+      "order": 284
     },
     {
       "id": "selenium-python",
@@ -4544,7 +4567,7 @@
         "测试"
       ],
       "category": "python",
-      "order": 284
+      "order": 285
     },
     {
       "id": "requests",
@@ -4559,7 +4582,7 @@
         "客户端"
       ],
       "category": "python",
-      "order": 285
+      "order": 286
     },
     {
       "id": "go",
@@ -4574,7 +4597,7 @@
         "并发"
       ],
       "category": "backend-go",
-      "order": 286
+      "order": 287
     },
     {
       "id": "gin",
@@ -4589,7 +4612,7 @@
         "REST API"
       ],
       "category": "backend-go",
-      "order": 287
+      "order": 288
     },
     {
       "id": "gorm",
@@ -4604,7 +4627,7 @@
         "SQL"
       ],
       "category": "backend-go",
-      "order": 288
+      "order": 289
     },
     {
       "id": "echo",
@@ -4619,7 +4642,7 @@
         "轻量级"
       ],
       "category": "backend-go",
-      "order": 289
+      "order": 290
     },
     {
       "id": "fiber",
@@ -4634,7 +4657,7 @@
         "Express风格"
       ],
       "category": "backend-go",
-      "order": 290
+      "order": 291
     },
     {
       "id": "chi",
@@ -4649,7 +4672,7 @@
         "轻量级"
       ],
       "category": "backend-go",
-      "order": 291
+      "order": 292
     },
     {
       "id": "buffalo",
@@ -4664,7 +4687,7 @@
         "MVC"
       ],
       "category": "backend-go",
-      "order": 292
+      "order": 293
     },
     {
       "id": "zap",
@@ -4679,7 +4702,7 @@
         "Uber"
       ],
       "category": "backend-go",
-      "order": 293
+      "order": 294
     },
     {
       "id": "cobra",
@@ -4694,7 +4717,7 @@
         "Docker"
       ],
       "category": "backend-go",
-      "order": 294
+      "order": 295
     },
     {
       "id": "go-redis",
@@ -4709,7 +4732,7 @@
         "客户端"
       ],
       "category": "backend-go",
-      "order": 295
+      "order": 296
     },
     {
       "id": "grpc",
@@ -4724,7 +4747,7 @@
         "Protocol Buffers"
       ],
       "category": "backend-go",
-      "order": 296
+      "order": 297
     },
     {
       "id": "wanderlost",
@@ -4739,7 +4762,7 @@
         "2025"
       ],
       "category": "backend-go",
-      "order": 297
+      "order": 298
     },
     {
       "id": "thinkphp",
@@ -4752,7 +4775,7 @@
         "框架"
       ],
       "category": "backend-php",
-      "order": 298
+      "order": 299
     },
     {
       "id": "laravel",
@@ -4765,7 +4788,7 @@
         "框架"
       ],
       "category": "backend-php",
-      "order": 299
+      "order": 300
     },
     {
       "id": "symfony",
@@ -4779,7 +4802,7 @@
         "企业级"
       ],
       "category": "backend-php",
-      "order": 300
+      "order": 301
     },
     {
       "id": "codeigniter",
@@ -4793,7 +4816,7 @@
         "轻量"
       ],
       "category": "backend-php",
-      "order": 301
+      "order": 302
     },
     {
       "id": "yii",
@@ -4807,7 +4830,7 @@
         "高性能"
       ],
       "category": "backend-php",
-      "order": 302
+      "order": 303
     },
     {
       "id": "phpmyadmin",
@@ -4821,7 +4844,7 @@
         "管理工具"
       ],
       "category": "backend-php",
-      "order": 303
+      "order": 304
     },
     {
       "id": "swoole",
@@ -4835,7 +4858,7 @@
         "高性能"
       ],
       "category": "backend-php",
-      "order": 304
+      "order": 305
     },
     {
       "id": "slim",
@@ -4849,7 +4872,7 @@
         "API"
       ],
       "category": "backend-php",
-      "order": 305
+      "order": 306
     },
     {
       "id": "shelf",
@@ -4863,7 +4886,7 @@
         "服务器"
       ],
       "category": "backend-dart",
-      "order": 306
+      "order": 307
     },
     {
       "id": "serverpod",
@@ -4878,7 +4901,7 @@
         "Flutter"
       ],
       "category": "backend-dart",
-      "order": 307
+      "order": 308
     },
     {
       "id": "alfred",
@@ -4892,7 +4915,7 @@
         "API"
       ],
       "category": "backend-dart",
-      "order": 308
+      "order": 309
     },
     {
       "id": "angel3",
@@ -4907,7 +4930,7 @@
         "GraphQL"
       ],
       "category": "backend-dart",
-      "order": 309
+      "order": 310
     },
     {
       "id": "若依-ruoyi",
@@ -4922,7 +4945,7 @@
         "快速开发"
       ],
       "category": "backend-java",
-      "order": 310
+      "order": 311
     },
     {
       "id": "spring-boot",
@@ -4937,7 +4960,7 @@
         "微服务"
       ],
       "category": "backend-java",
-      "order": 311
+      "order": 312
     },
     {
       "id": "spring-cloud",
@@ -4952,7 +4975,7 @@
         "分布式"
       ],
       "category": "backend-java",
-      "order": 312
+      "order": 313
     },
     {
       "id": "mybatis-plus",
@@ -4967,7 +4990,7 @@
         "持久层"
       ],
       "category": "backend-java",
-      "order": 313
+      "order": 314
     },
     {
       "id": "jfinal",
@@ -4982,7 +5005,7 @@
         "国产"
       ],
       "category": "backend-java",
-      "order": 314
+      "order": 315
     },
     {
       "id": "hutool",
@@ -4995,7 +5018,7 @@
         "工具库"
       ],
       "category": "backend-java",
-      "order": 315
+      "order": 316
     },
     {
       "id": "maven",
@@ -5009,7 +5032,7 @@
         "依赖管理"
       ],
       "category": "backend-java",
-      "order": 316
+      "order": 317
     },
     {
       "id": "gradle",
@@ -5023,7 +5046,7 @@
         "DSL"
       ],
       "category": "backend-java",
-      "order": 317
+      "order": 318
     },
     {
       "id": "在线压缩图片工具整合",
@@ -5036,7 +5059,7 @@
         "图片"
       ],
       "category": "tools",
-      "order": 318
+      "order": 319
     },
     {
       "id": "photopea",
@@ -5048,7 +5071,7 @@
         "Tool"
       ],
       "category": "tools",
-      "order": 319
+      "order": 320
     },
     {
       "id": "draw-io",
@@ -5060,7 +5083,7 @@
         "Tool"
       ],
       "category": "tools",
-      "order": 320
+      "order": 321
     },
     {
       "id": "mnggiflab",
@@ -5073,7 +5096,7 @@
         "图片"
       ],
       "category": "tools",
-      "order": 321
+      "order": 322
     },
     {
       "id": "limgx",
@@ -5086,7 +5109,7 @@
         "图片"
       ],
       "category": "tools",
-      "order": 322
+      "order": 323
     },
     {
       "id": "开源精选",
@@ -5099,7 +5122,7 @@
         "导航"
       ],
       "category": "resources",
-      "order": 323
+      "order": 324
     },
     {
       "id": "tbox导航",
@@ -5112,7 +5135,7 @@
         "导航"
       ],
       "category": "resources",
-      "order": 324
+      "order": 325
     },
     {
       "id": "awwwards",
@@ -5124,7 +5147,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 325
+      "order": 326
     },
     {
       "id": "dribbble",
@@ -5138,7 +5161,7 @@
         "设计"
       ],
       "category": "resources",
-      "order": 326
+      "order": 327
     },
     {
       "id": "template0",
@@ -5150,7 +5173,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 327
+      "order": 328
     },
     {
       "id": "htmlrev",
@@ -5162,7 +5185,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 328
+      "order": 329
     },
     {
       "id": "cssloaders",
@@ -5174,7 +5197,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 329
+      "order": 330
     },
     {
       "id": "navnav",
@@ -5187,7 +5210,7 @@
         "导航"
       ],
       "category": "resources",
-      "order": 330
+      "order": 331
     },
     {
       "id": "a-template",
@@ -5199,7 +5222,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 331
+      "order": 332
     },
     {
       "id": "免费api",
@@ -5211,7 +5234,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 332
+      "order": 333
     },
     {
       "id": "topindie-dev",
@@ -5224,7 +5247,7 @@
         "独立开发"
       ],
       "category": "resources",
-      "order": 333
+      "order": 334
     },
     {
       "id": "idea-haber",
@@ -5237,7 +5260,7 @@
         "社区"
       ],
       "category": "resources",
-      "order": 334
+      "order": 335
     },
     {
       "id": "优设网",
@@ -5251,7 +5274,7 @@
         "设计"
       ],
       "category": "resources",
-      "order": 335
+      "order": 336
     },
     {
       "id": "办公人导航",
@@ -5264,7 +5287,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 336
+      "order": 337
     },
     {
       "id": "fuun-fun",
@@ -5277,7 +5300,7 @@
         "娱乐"
       ],
       "category": "resources",
-      "order": 337
+      "order": 338
     },
     {
       "id": "白嫖站",
@@ -5289,7 +5312,7 @@
         "导航"
       ],
       "category": "resources",
-      "order": 338
+      "order": 339
     },
     {
       "id": "loot-drop",
@@ -5304,7 +5327,7 @@
         "独立开发"
       ],
       "category": "resources",
-      "order": 339
+      "order": 340
     },
     {
       "id": "mobbin",
@@ -5318,7 +5341,7 @@
         "设计"
       ],
       "category": "resources",
-      "order": 340
+      "order": 341
     },
     {
       "id": "refero",
@@ -5332,7 +5355,7 @@
         "设计"
       ],
       "category": "resources",
-      "order": 341
+      "order": 342
     },
     {
       "id": "creght",
@@ -5346,7 +5369,7 @@
         "设计"
       ],
       "category": "resources",
-      "order": 342
+      "order": 343
     },
     {
       "id": "iconfinder",
@@ -5360,7 +5383,7 @@
         "设计"
       ],
       "category": "resources",
-      "order": 343
+      "order": 344
     },
     {
       "id": "makemepulse",
@@ -5373,7 +5396,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 344
+      "order": 345
     },
     {
       "id": "mek-txt",
@@ -5386,7 +5409,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 345
+      "order": 346
     },
     {
       "id": "kenney",
@@ -5401,7 +5424,7 @@
         "3D"
       ],
       "category": "resources",
-      "order": 346
+      "order": 347
     },
     {
       "id": "svg-repo",
@@ -5416,7 +5439,7 @@
         "UI"
       ],
       "category": "resources",
-      "order": 347
+      "order": 348
     },
     {
       "id": "pixabay",
@@ -5431,7 +5454,7 @@
         "图片"
       ],
       "category": "resources",
-      "order": 348
+      "order": 349
     },
     {
       "id": "cocos-creator",
@@ -5446,7 +5469,7 @@
         "跨平台"
       ],
       "category": "game-engines",
-      "order": 349
+      "order": 350
     },
     {
       "id": "lp平台",
@@ -5460,7 +5483,7 @@
         "AVG"
       ],
       "category": "game-engines",
-      "order": 350
+      "order": 351
     },
     {
       "id": "adv-js",
@@ -5474,7 +5497,7 @@
         "AVG"
       ],
       "category": "game-engines",
-      "order": 351
+      "order": 352
     },
     {
       "id": "renpy",
@@ -5488,7 +5511,7 @@
         "开源"
       ],
       "category": "game-engines",
-      "order": 352
+      "order": 353
     },
     {
       "id": "gamemaker",
@@ -5502,7 +5525,7 @@
         "独立游戏"
       ],
       "category": "game-engines",
-      "order": 353
+      "order": 354
     },
     {
       "id": "rpg-maker",
@@ -5516,7 +5539,7 @@
         "独立游戏"
       ],
       "category": "game-engines",
-      "order": 354
+      "order": 355
     },
     {
       "id": "gamecreator",
@@ -5530,7 +5553,7 @@
         "TypeScript"
       ],
       "category": "game-engines",
-      "order": 355
+      "order": 356
     },
     {
       "id": "星火编辑器",
@@ -5544,7 +5567,7 @@
         "TapTap"
       ],
       "category": "game-engines",
-      "order": 356
+      "order": 357
     },
     {
       "id": "gdevelop",
@@ -5558,7 +5581,7 @@
         "零代码"
       ],
       "category": "game-engines",
-      "order": 357
+      "order": 358
     },
     {
       "id": "pixijs",
@@ -5573,7 +5596,7 @@
         "渲染"
       ],
       "category": "game-engines",
-      "order": 358
+      "order": 359
     },
     {
       "id": "phaser",
@@ -5588,7 +5611,7 @@
         "HTML5"
       ],
       "category": "game-engines",
-      "order": 359
+      "order": 360
     },
     {
       "id": "godot-engine",
@@ -5603,7 +5626,7 @@
         "3D"
       ],
       "category": "game-engines",
-      "order": 360
+      "order": 361
     },
     {
       "id": "ocelot",
@@ -5618,7 +5641,7 @@
         "极简"
       ],
       "category": "game-engines",
-      "order": 361
+      "order": 362
     },
     {
       "id": "ga",
@@ -5633,7 +5656,7 @@
         "极简"
       ],
       "category": "game-engines",
-      "order": 362
+      "order": 363
     },
     {
       "id": "blender",
@@ -5648,7 +5671,7 @@
         "渲染"
       ],
       "category": "3d-modeling",
-      "order": 363
+      "order": 364
     },
     {
       "id": "sketchfab",
@@ -5663,7 +5686,7 @@
         "WebGL"
       ],
       "category": "3d-modeling",
-      "order": 364
+      "order": 365
     },
     {
       "id": "51建模网",
@@ -5677,7 +5700,7 @@
         "国内"
       ],
       "category": "3d-modeling",
-      "order": 365
+      "order": 366
     },
     {
       "id": "cinema-4d",
@@ -5692,7 +5715,7 @@
         "视觉设计"
       ],
       "category": "3d-modeling",
-      "order": 366
+      "order": 367
     },
     {
       "id": "spline",
@@ -5707,7 +5730,7 @@
         "交互式"
       ],
       "category": "3d-modeling",
-      "order": 367
+      "order": 368
     },
     {
       "id": "three-js-editor",
@@ -5722,7 +5745,7 @@
         "Three.js"
       ],
       "category": "3d-modeling",
-      "order": 368
+      "order": 369
     },
     {
       "id": "playcanvas",
@@ -5737,7 +5760,7 @@
         "在线编辑器"
       ],
       "category": "3d-modeling",
-      "order": 369
+      "order": 370
     },
     {
       "id": "sketchup",
@@ -5751,7 +5774,7 @@
         "室内设计"
       ],
       "category": "3d-modeling",
-      "order": 370
+      "order": 371
     },
     {
       "id": "maya",
@@ -5766,7 +5789,7 @@
         "工业标准"
       ],
       "category": "3d-modeling",
-      "order": 371
+      "order": 372
     },
     {
       "id": "blocks",
@@ -5780,7 +5803,7 @@
         "Google"
       ],
       "category": "3d-modeling",
-      "order": 372
+      "order": 373
     },
     {
       "id": "vectary",
@@ -5795,7 +5818,7 @@
         "低代码"
       ],
       "category": "3d-modeling",
-      "order": 373
+      "order": 374
     },
     {
       "id": "mixamo",
@@ -5810,7 +5833,7 @@
         "Adobe"
       ],
       "category": "3d-modeling",
-      "order": 374
+      "order": 375
     },
     {
       "id": "quixel-megascans",
@@ -5825,7 +5848,7 @@
         "扫描"
       ],
       "category": "3d-modeling",
-      "order": 375
+      "order": 376
     },
     {
       "id": "itch-io",
@@ -5839,7 +5862,7 @@
         "游戏"
       ],
       "category": "games",
-      "order": 376
+      "order": 377
     },
     {
       "id": "独立精神-indienova-独立游戏",
@@ -5852,7 +5875,7 @@
         "游戏"
       ],
       "category": "games",
-      "order": 377
+      "order": 378
     },
     {
       "id": "游戏开发资源整合集",
@@ -5865,7 +5888,7 @@
         "导航"
       ],
       "category": "games",
-      "order": 378
+      "order": 379
     },
     {
       "id": "retro-games",
@@ -5877,7 +5900,7 @@
         "游戏"
       ],
       "category": "games",
-      "order": 379
+      "order": 380
     },
     {
       "id": "retrogames",
@@ -5889,7 +5912,7 @@
         "游戏"
       ],
       "category": "games",
-      "order": 380
+      "order": 381
     },
     {
       "id": "game-ui-database",
@@ -5903,7 +5926,7 @@
         "设计"
       ],
       "category": "games",
-      "order": 381
+      "order": 382
     },
     {
       "id": "interface-in-game",
@@ -5917,7 +5940,7 @@
         "设计"
       ],
       "category": "games",
-      "order": 382
+      "order": 383
     },
     {
       "id": "product-hunt",
@@ -5930,7 +5953,7 @@
         "独立开发"
       ],
       "category": "community",
-      "order": 383
+      "order": 384
     },
     {
       "id": "nodejs中文网",
@@ -5943,7 +5966,7 @@
         "文档"
       ],
       "category": "community",
-      "order": 384
+      "order": 385
     },
     {
       "id": "看雪论坛",
@@ -5956,7 +5979,7 @@
         "社区"
       ],
       "category": "community",
-      "order": 385
+      "order": 386
     },
     {
       "id": "hack-forums",
@@ -5969,7 +5992,7 @@
         "社区"
       ],
       "category": "community",
-      "order": 386
+      "order": 387
     },
     {
       "id": "behance",
@@ -5982,7 +6005,7 @@
         "社区"
       ],
       "category": "community",
-      "order": 387
+      "order": 388
     },
     {
       "id": "ui中国",
@@ -5996,7 +6019,7 @@
         "社区"
       ],
       "category": "community",
-      "order": 388
+      "order": 389
     },
     {
       "id": "moonbit",
@@ -6009,7 +6032,7 @@
         "云原生"
       ],
       "category": "community",
-      "order": 389
+      "order": 390
     },
     {
       "id": "pieter-levels",
@@ -6017,7 +6040,7 @@
       "description": "数字游民先驱，Nomad List 和 Remote OK 创始人，一年启动12个项目的传奇独立开发者。",
       "url": "https://levels.io/",
       "category": "indie-dev",
-      "order": 390
+      "order": 391
     },
     {
       "id": "marc-lou",
@@ -6025,7 +6048,7 @@
       "description": "独立开发者与创业者，以快速构建 SaaS 产品而闻名，活跃于 X/Twitter 分享开发心得。",
       "url": "https://marclou.com/",
       "category": "indie-dev",
-      "order": 391
+      "order": 392
     },
     {
       "id": "sindre-sorhus",
@@ -6033,7 +6056,7 @@
       "description": "开源传奇，npm 上发布了超过1000个包，包括 alfred、awesome 列表等知名项目。",
       "url": "https://sindresorhus.com/",
       "category": "indie-dev",
-      "order": 392
+      "order": 393
     },
     {
       "id": "danny-postma",
@@ -6041,7 +6064,7 @@
       "description": "AI 独立开发者，HeadshotPro 和 ProfilePicture.AI 创始人，专注 AI 驱动的 SaaS 产品。",
       "url": "https://dannypostma.com/",
       "category": "indie-dev",
-      "order": 393
+      "order": 394
     },
     {
       "id": "tony-dinh",
@@ -6049,7 +6072,7 @@
       "description": "越南独立开发者，DevUtils 和 Black Magic 创始人，以实用工具型 SaaS 产品闻名。",
       "url": "https://tonydinh.com/",
       "category": "indie-dev",
-      "order": 394
+      "order": 395
     },
     {
       "id": "lucas-pope",
@@ -6057,7 +6080,7 @@
       "description": "《请出示证件》(Papers, Please) 和《奥伯拉丁的回归》创作者，以独特的叙事和视觉风格著称。",
       "url": "https://dukope.com/",
       "category": "indie-dev",
-      "order": 395
+      "order": 396
     },
     {
       "id": "damon-chen",
@@ -6065,7 +6088,7 @@
       "description": "独立开发者，PDF.ai 创始人，专注 AI 与生产力工具结合的 SaaS 产品。",
       "url": "https://damonchen.com/",
       "category": "indie-dev",
-      "order": 396
+      "order": 397
     },
     {
       "id": "joar-jakobsson",
@@ -6073,7 +6096,7 @@
       "description": "《雨世界》(Rain World) 创作者，瑞典视觉设计师与独立游戏开发者，构建了独特的后工业生态系统生存游戏。",
       "url": "https://www.joarportfolio.com/",
       "category": "indie-dev",
-      "order": 397
+      "order": 398
     },
     {
       "id": "eric-barone-concernedape",
@@ -6081,7 +6104,7 @@
       "description": "《星露谷物语》(Stardew Valley) 独立开发者，一人包揽编程、美术、音乐，打造了现象级农场模拟游戏。",
       "url": "https://www.stardewvalley.net/",
       "category": "indie-dev",
-      "order": 398
+      "order": 399
     },
     {
       "id": "toby-fox",
@@ -6089,7 +6112,7 @@
       "description": "《Undertale》《Deltarune》创作者，以独特的叙事、音乐和打破第四面墙的设计而闻名。",
       "url": "https://toby.fangamer.com/",
       "category": "indie-dev",
-      "order": 399
+      "order": 400
     },
     {
       "id": "edmund-mcmillen",
@@ -6097,7 +6120,7 @@
       "description": "《以撒的结合》《超级食肉男孩》创作者，以其黑暗、怪诞的艺术风格和 Roguelike 设计闻名。",
       "url": "https://edmundm.com/",
       "category": "indie-dev",
-      "order": 400
+      "order": 401
     },
     {
       "id": "daniel-mullins",
@@ -6105,7 +6128,7 @@
       "description": "《邪恶冥刻》(Inscryption)《小马岛》(Pony Island) 创作者，擅长打破游戏类型的元叙事设计。",
       "url": "https://www.danielmullinsgames.com/",
       "category": "indie-dev",
-      "order": 401
+      "order": 402
     },
     {
       "id": "derek-yu",
@@ -6113,7 +6136,7 @@
       "description": "《洞穴探险》(Spelunky) 系列创作者，Roguelike 平台跳跃游戏的先驱，影响了一代独立游戏设计。",
       "url": "https://www.derekyu.com/",
       "category": "indie-dev",
-      "order": 402
+      "order": 403
     },
     {
       "id": "月光蟑螂",
@@ -6121,7 +6144,7 @@
       "description": "《烟火》《三伏》《黑森町绮谭》创作者，中式悬疑惊悚解谜游戏的代表人物，一人包揽美术、编剧、策划。",
       "url": "https://space.bilibili.com/2911655/dynamic",
       "category": "indie-dev",
-      "order": 403
+      "order": 404
     },
     {
       "id": "史悲",
@@ -6129,7 +6152,7 @@
       "description": "《迷失岛》系列创作者，以手绘美术风格和谜题设计著称的独立游戏开发者。",
       "url": "https://space.bilibili.com/3729210/dynamic",
       "category": "indie-dev",
-      "order": 404
+      "order": 405
     }
   ]
 }

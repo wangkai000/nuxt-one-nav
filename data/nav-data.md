@@ -246,16 +246,21 @@ AIGC:
 - [Three.js](https://threejs.org/) - Three.js 是最流行的 WebGL 3D 图形库，提供丰富的 3D 渲染功能和便捷的 API。 | icon: https://threejs.org/favicon.ico | tags: WebGL, 3D, 图形, 渲染
 - [Babylon.js](https://www.babylonjs.com/) - Babylon.js 是功能强大的 WebGL 3D 引擎，提供游戏级渲染能力和完整的工具链。 | icon: https://www.babylonjs.com/favicon.ico | tags: WebGL, 3D, 图形, 游戏引擎
 
-## AI开发库
+## 前端 AI 推理库
 > id: frontend-ai | icon: fluent-emoji:robot
 
-- [LangChain.js](https://js.langchain.com/) - LangChain.js 是 LangChain 的 JavaScript/TypeScript 版本，用于构建 AI 应用。 | icon: https://js.langchain.com/favicon.ico | tags: AI, 框架, JavaScript, TypeScript, LLM
-- [Transformers.js](https://huggingface.co/docs/transformers.js) - Transformers.js 是 Hugging Face 的 JavaScript 库，在浏览器中运行预训练模型。 | icon: https://huggingface.co/favicon.ico | tags: AI, 浏览器, 模型推理, Hugging Face
-- [Vercel AI SDK](https://sdk.vercel.ai/) - Vercel AI SDK 是构建 AI 应用的工具包，支持 Next.js、React、Vue 等。 | icon: https://sdk.vercel.ai/favicon.ico | tags: AI, SDK, Next.js, Vercel
-- [OpenAI Node.js SDK](https://github.com/openai/openai-node) - OpenAI 官方 Node.js SDK，用于调用 GPT、DALL·E 等 API。 | icon: https://github.com/favicon.ico | tags: AI, SDK, OpenAI, Node.js
-- [Anthropic SDK for JS](https://github.com/anthropics/anthropic-sdk-typescript) - Anthropic 官方 TypeScript SDK，用于调用 Claude API。 | icon: https://github.com/favicon.ico | tags: AI, SDK, Claude, TypeScript
-- [LangGraph.js](https://github.com/langchain-ai/langgraphjs) - LangGraph 的 JavaScript 版本，用于构建有状态的 AI 应用。 | icon: https://github.com/favicon.ico | tags: AI, 框架, 工作流, Agent
-- [ml5.js](https://ml5js.org/) - ml5.js 是基于 TensorFlow.js 的友好机器学习库，提供简洁 API 实现图像分类、姿态检测、文本生成等 AI 功能，面向创意编码和初学者。 | icon: https://ml5js.org/favicon.ico | tags: AI, 浏览器, 机器学习, TensorFlow.js, 创意编码
+- [Transformers.js](https://huggingface.co/docs/transformers.js) - Transformers.js 是 Hugging Face 的 JavaScript 库，在浏览器中直接运行预训练模型，无需后端。 | icon: https://huggingface.co/favicon.ico | tags: AI, 浏览器, 模型推理, Hugging Face
+- [TensorFlow.js](https://www.tensorflow.org/js) - TensorFlow.js 是 Google 的浏览器端机器学习库，支持模型训练与推理。 | icon: https://www.tensorflow.org/favicon.ico | tags: AI, 浏览器, 机器学习, Google
+- [ml5.js](https://ml5js.org/) - ml5.js 是基于 TensorFlow.js 的友好机器学习库，面向创意编码和初学者，提供图像分类、姿态检测等简洁 API。 | icon: https://ml5js.org/favicon.ico | tags: AI, 浏览器, 机器学习, TensorFlow.js, 创意编码
+- [ONNX Runtime Web](https://onnxruntime.ai/docs/get-started/with-javascript/web.html) - ONNX Runtime Web 支持在浏览器中运行 ONNX 格式的机器学习模型，跨框架兼容。 | icon: https://onnxruntime.ai/favicon.ico | tags: AI, 浏览器, 模型推理, ONNX, 跨框架
+- [MediaPipe](https://developers.google.com/mediapipe) - Google MediaPipe 是跨平台机器学习解决方案，提供浏览器端的人脸检测、手势识别、姿态估计等预训练模型。 | icon: https://developers.google.com/favicon.ico | tags: AI, 浏览器, 计算机视觉, Google, 实时
+
+## AI SDK / API 客户端
+> id: frontend-ai-sdk | icon: fluent-emoji:gear
+
+- [Vercel AI SDK](https://sdk.vercel.ai/) - Vercel AI SDK 是构建 AI 应用的工具包，支持流式响应、工具调用和 React/Vue/Svelte 集成。 | icon: https://sdk.vercel.ai/favicon.ico | tags: AI, SDK, 流式响应, Vercel
+- [OpenAI Node.js SDK](https://github.com/openai/openai-node) - OpenAI 官方 Node.js SDK，支持 GPT、DALL·E、Whisper 等 API。 | icon: https://github.com/favicon.ico | tags: AI, SDK, OpenAI, Node.js
+- [Anthropic SDK for JS](https://github.com/anthropics/anthropic-sdk-typescript) - Anthropic 官方 TypeScript SDK，支持 Claude API 和流式响应。 | icon: https://github.com/favicon.ico | tags: AI, SDK, Claude, TypeScript
 
 ## WebGIS 地图
 > id: frontend-webgis | icon: fluent-emoji:world-map
