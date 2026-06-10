@@ -1,7 +1,7 @@
 // Nuxt 4 配置文件
 // 文档: https://nuxt.com.cn/docs/configuration/configuration-reference
 
-const siteConfig = await import('./config/site.zh').then(m => m.default)
+const siteConfig = await import('./config/site.config').then(m => m.default)
 
 export default defineNuxtConfig({
   // 兼容日期，用于确保 Nuxt 版本兼容性
