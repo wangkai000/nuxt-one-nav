@@ -20,7 +20,7 @@ AIGC:
 
 - [天渺studio](https://tianmiao.site) - 天渺工作室的小站&日志记录 | icon: https://s21.ax1x.com/2024/12/22/pAXtJat.jpg | tags: 个人博客, 日志
 
-# AI 工具
+# AI
 > id: ai | icon: fluent-emoji:robot
 
 ## AI导航

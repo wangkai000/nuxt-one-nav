@@ -112,7 +112,7 @@ const config = useRuntimeConfig().public.siteConfig
 
 const { categories } = useNavData()
 
-const { activeCategory, selectCategory } = useSearch()
+const { activeCategory, selectCategory, preloadCategory } = useSearch()
 const mobileMenuVisible = ref(false)
 
 const colorMode = useColorMode()
@@ -124,33 +124,49 @@ const toggleTheme = () => {
 const handleMenuSelect = async (index: string) => {
   const route = useRoute()
 
+  mobileMenuVisible.value = false
+
   // 如果不在首页，先跳转回首页
   if (route.path !== '/') {
     selectCategory(index)
-    mobileMenuVisible.value = false
+    // 预加载目标分类，确保导航后 InViewRender 已渲染
+    preloadCategory(index, categories.value)
     await navigateTo('/')
-    // 等待页面渲染完成后滚动
-    nextTick(() => {
-      const element = document.getElementById(`category-${index}`)
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      } else {
-        window.scrollTo({ top: 0, behavior: 'smooth' })
-      }
-    })
-    return
   }
 
   selectCategory(index)
-  mobileMenuVisible.value = false
-  // 等待抽屉关闭后滚动
-  nextTick(() => {
-    const element = document.getElementById(`category-${index}`)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    } else {
-      window.scrollTo({ top: 0, behavior: 'smooth' })
+  // 确保目标分类的 InViewRender 被强制渲染
+  preloadCategory(index, categories.value)
+  await nextTick()
+
+  const found = await scrollToCategory(`category-${index}`)
+  if (!found) {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+}
+
+// 带重试 + 布局稳定校正的滚动
+const scrollToCategory = (id: string): Promise<boolean> => {
+  return new Promise((resolve) => {
+    const tryScroll = (retriesLeft: number) => {
+      const element = document.getElementById(id)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        // 延迟校正：等 InViewRender 懒加载内容展开稳定后再校一次
+        setTimeout(() => {
+          const el = document.getElementById(id)
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+          resolve(true)
+        }, 400)
+        return
+      }
+      if (retriesLeft > 0) {
+        setTimeout(() => tryScroll(retriesLeft - 1), 100)
+      } else {
+        resolve(false)
+      }
     }
+    tryScroll(20)
   })
 }
 
