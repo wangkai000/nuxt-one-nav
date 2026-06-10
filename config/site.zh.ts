@@ -5,9 +5,16 @@ export default {
     home: '首页',
     author: '作者',
     searchPlaceholder: '搜索导航站...',
+    searchResults: '搜索结果',
+    noResults: '未找到相关站点',
     bookmark: '收藏本站',
     submit: '提交网站',
-    about: '关于'
+    about: '关于',
+    friendshipLinks: '友情链接'
+  },
+  theme: {
+    switchToLight: '切换浅色模式',
+    switchToDark: '切换深色模式'
   },
   footer: {
     copyright: '基米导航 版权所有'

@@ -4,7 +4,7 @@
     <template v-if="query && query.trim()">
       <div>
         <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
-          <span>{{ $t('nav.searchResults') }}</span>
+          <span>{{ config.nav.searchResults }}</span>
           <span class="text-sm font-normal text-gray-500">({{ filteredItems.length }})</span>
         </h2>
         <div v-if="filteredItems.length > 0" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
@@ -12,7 +12,7 @@
         </div>
         <div v-else class="flex flex-col items-center justify-center py-16 text-gray-500">
           <Icon name="mdi:magnify" class="w-12 h-12 mb-3 opacity-50" />
-          <p>{{ $t('nav.noResults') }}</p>
+          <p>{{ config.nav.noResults }}</p>
         </div>
       </div>
     </template>
@@ -76,6 +76,8 @@
 import { Icon } from '@iconify/vue'
 import { useNavData } from '~/data/nav-data'
 import type { NavItem, Category } from '~/types/nav'
+
+const config = useRuntimeConfig().public.siteConfig
 
 const { navData, categories, getLeafCategories, getCategoryById } = useNavData()
 

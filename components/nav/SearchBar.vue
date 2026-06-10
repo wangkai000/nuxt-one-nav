@@ -8,7 +8,7 @@
       ref="inputRef"
       v-model="localQuery"
       type="search"
-      :placeholder="$t('nav.searchPlaceholder')"
+      :placeholder="config.nav.searchPlaceholder"
       class="w-48 h-9 pl-10 pr-4 text-sm rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder:text-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all"
       @input="onInput"
       @search="onSearchClear"
@@ -19,6 +19,8 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
 import { useDebounceFn } from '@vueuse/core'
+
+const config = useRuntimeConfig().public.siteConfig
 
 const { setQuery } = useSearch()
 const inputRef = ref<HTMLInputElement | null>(null)

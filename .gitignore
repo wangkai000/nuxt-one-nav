@@ -1,9 +1,7 @@
 # 项目根目录 .gitignore
 
 .nuxt
-.output/cache
-.output/server
-.output/nitro.json
+.output
 dist
 node_modules
 .env
