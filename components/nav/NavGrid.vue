@@ -81,7 +81,7 @@ const config = useRuntimeConfig().public.siteConfig
 
 const { navData, categories, getLeafCategories, getCategoryById } = useNavData()
 
-const { query, activeCategory } = useSearch()
+const { query, activeCategory, preloadedIds } = useSearch()
 
 // mdi:xxx 转换为 @iconify/vue 格式
 const getIconName = (icon: string): string => {
@@ -107,10 +107,7 @@ const otherCategoriesOnly = computed(() =>
   categoriesWithItems.value.filter(cat => cat.id !== 'all')
 )
 
-// 预加载状态：侧边栏点击分类时，强制加载对应的父分类区块
-const preloadedIds = ref<Set<string>>(new Set(['all']))
-
-// 监听侧边栏分类切换
+// 监听侧边栏分类切换 — immediate:true 确保导航回来的场景也能触发
 watch(activeCategory, (newCat) => {
   if (!newCat || newCat === 'all') return
   // 找到新选中分类所属的父分类ID
@@ -118,16 +115,20 @@ watch(activeCategory, (newCat) => {
     if (cat.children && cat.children.length > 0) {
       const childIds = cat.children.map(c => c.id)
       if (childIds.includes(newCat)) {
-        preloadedIds.value = new Set([...preloadedIds.value, cat.id])
+        if (!preloadedIds.value.has(cat.id)) {
+          preloadedIds.value = new Set([...preloadedIds.value, cat.id])
+        }
         return
       }
     }
     if (cat.id === newCat) {
-      preloadedIds.value = new Set([...preloadedIds.value, cat.id])
+      if (!preloadedIds.value.has(cat.id)) {
+        preloadedIds.value = new Set([...preloadedIds.value, cat.id])
+      }
       return
     }
   }
-})
+}, { immediate: true })
 
 // 按分类分组的网站
 const categoriesWithItems = computed(() => {

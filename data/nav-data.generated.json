@@ -16,7 +16,7 @@
     },
     {
       "id": "ai",
-      "name": "AI 工具",
+      "name": "AI",
       "icon": "fluent-emoji:robot",
       "children": [
         {
