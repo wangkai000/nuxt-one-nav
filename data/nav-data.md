@@ -52,6 +52,9 @@ AIGC:
 - [Transformers](https://github.com/huggingface/transformers) - Hugging Face Transformers 是最流行的预训练模型库，支持 PyTorch、TensorFlow、JAX。 | icon: https://github.com/favicon.ico | tags: AI, 库, PyTorch, 深度学习
 - [Pi](https://github.com/earendil-works/pi) - Pi 是开源 AI Agent 工具套件，包含编码 Agent CLI、统一多模型 API、TUI/Web UI，54k+ Stars。 | icon: https://github.com/favicon.ico | tags: AI, Agent, TypeScript, CLI, 开源
 - [Mastra](https://mastra.ai/) - Mastra 是 Gatsby 团队打造的 TypeScript Agent 框架，支持 Agent、Workflow、Memory、RAG、Evals，生产级 AI 应用首选。 | icon: https://mastra.ai/favicon.ico | tags: AI, Agent, TypeScript, 框架, Gatsby
+- [AutoGen](https://github.com/microsoft/autogen) - Microsoft 开源的多 Agent 协作框架，支持对话编程、代码生成、工具调用，适合构建复杂 AI 工作流。 | icon: https://github.com/favicon.ico | tags: AI, Agent, Python, 微软, 开源
+- [CrewAI](https://www.crewai.com/) - CrewAI 是角色驱动的多 Agent 编排框架，让 AI Agent 像团队一样协作完成任务。 | icon: https://www.crewai.com/favicon.ico | tags: AI, Agent, Python, 编排, 自动化
+- [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) - OpenAI 官方 Agents SDK，简化 Agent 开发，内置工具调用、Guardrails、Tracing。 | icon: https://github.com/favicon.ico | tags: AI, Agent, Python, OpenAI, SDK
 
 ## AI Skill
 > id: ai-skill | icon: fluent-emoji:flexed-biceps
