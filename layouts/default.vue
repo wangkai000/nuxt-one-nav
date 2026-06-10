@@ -138,11 +138,17 @@ const handleMenuSelect = async (index: string) => {
   // 确保目标分类的 InViewRender 被强制渲染
   preloadCategory(index, categories.value)
   await nextTick()
+  await nextTick()
 
   const found = await scrollToCategory(`category-${index}`)
   if (!found) {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    document.querySelector('.el-main')?.scrollTo({ top: 0, behavior: 'smooth' })
   }
+}
+
+// 获取实际滚动容器
+const getScrollContainer = (): HTMLElement | null => {
+  return document.querySelector('.el-main')
 }
 
 // 带重试 + 布局稳定校正的滚动
@@ -151,13 +157,16 @@ const scrollToCategory = (id: string): Promise<boolean> => {
     const tryScroll = (retriesLeft: number) => {
       const element = document.getElementById(id)
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-        // 延迟校正：等 InViewRender 懒加载内容展开稳定后再校一次
+        // instant 瞬间到位，避免 smooth 中断 bug
+        element.scrollIntoView({ behavior: 'instant', block: 'start' })
+        // 300ms 后 smooth 微调
         setTimeout(() => {
           const el = document.getElementById(id)
-          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+          if (el) {
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+          }
           resolve(true)
-        }, 400)
+        }, 300)
         return
       }
       if (retriesLeft > 0) {
