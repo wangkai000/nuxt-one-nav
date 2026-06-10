@@ -5,10 +5,11 @@
 export const useSearch = () => {
   const query = useState<string>('search-query', () => '')
   const activeCategory = useState<string>('active-category', () => 'all')
-  const expandedCategories = useState<Set<string>>('expanded-categories', () => new Set(['ai', 'dev']))
+  const expandedCategories = useState<string[]>('expanded-categories', () => ['ai', 'dev'])
 
-  // 预加载的 InViewRender 分类 ID（用于侧边栏点击时强制渲染，持久化避免导航时丢失）
-  const preloadedIds = useState<Set<string>>('preloaded-ids', () => new Set(['all']))
+  // 预加载的 InViewRender 分类 ID（用于侧边栏点击时强制渲染）
+  // ⚠️ 必须用数组不能用 Set，因为 SSG 序列化 Set → {} 会导致 hydration 后失效
+  const preloadedIds = useState<string[]>('preloaded-ids', () => ['all'])
 
   const setQuery = (value: string) => {
     query.value = value
@@ -25,8 +26,8 @@ export const useSearch = () => {
    */
   const preloadCategory = (categoryId: string, categories: any[]): string | null => {
     if (!categoryId || categoryId === 'all') {
-      if (!preloadedIds.value.has('all')) {
-        preloadedIds.value = new Set([...preloadedIds.value, 'all'])
+      if (!preloadedIds.value.includes('all')) {
+        preloadedIds.value = [...preloadedIds.value, 'all']
       }
       return 'all'
     }
@@ -36,16 +37,16 @@ export const useSearch = () => {
       if (cat.children && cat.children.length > 0) {
         const childIds = cat.children.map((c: any) => c.id)
         if (childIds.includes(categoryId)) {
-          if (!preloadedIds.value.has(cat.id)) {
-            preloadedIds.value = new Set([...preloadedIds.value, cat.id])
+          if (!preloadedIds.value.includes(cat.id)) {
+            preloadedIds.value = [...preloadedIds.value, cat.id]
           }
           return cat.id
         }
       }
       // 无子分类的一级分类：直接预加载自身
       if (cat.id === categoryId) {
-        if (!preloadedIds.value.has(cat.id)) {
-          preloadedIds.value = new Set([...preloadedIds.value, cat.id])
+        if (!preloadedIds.value.includes(cat.id)) {
+          preloadedIds.value = [...preloadedIds.value, cat.id]
         }
         return cat.id
       }
@@ -55,18 +56,19 @@ export const useSearch = () => {
 
   // 切换分类展开/折叠
   const toggleCategory = (categoryId: string) => {
-    const newSet = new Set(expandedCategories.value)
-    if (newSet.has(categoryId)) {
-      newSet.delete(categoryId)
+    const arr = [...expandedCategories.value]
+    const idx = arr.indexOf(categoryId)
+    if (idx > -1) {
+      arr.splice(idx, 1)
     } else {
-      newSet.add(categoryId)
+      arr.push(categoryId)
     }
-    expandedCategories.value = newSet
+    expandedCategories.value = arr
   }
 
   // 检查分类是否展开
   const isCategoryExpanded = (categoryId: string) => {
-    return expandedCategories.value.has(categoryId)
+    return expandedCategories.value.includes(categoryId)
   }
 
   const clear = () => {
