@@ -1,0 +1,5 @@
+﻿# https://tianmiao.site
+User-agent: *
+Allow: /
+
+Sitemap: https://tianmiao.site/sitemap.xml

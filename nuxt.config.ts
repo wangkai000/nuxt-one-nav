@@ -37,7 +37,8 @@ export default defineNuxtConfig({
   modules: [
     '@element-plus/nuxt',      // Element Plus Vue 3 组件库
     '@nuxtjs/color-mode',      // 暗色模式支持
-    '@vite-pwa/nuxt'          // PWA 支持
+    '@vite-pwa/nuxt',           // PWA 支持
+    '@nuxtjs/sitemap'           // 自动生成 sitemap.xml + robots.txt
   ],
 
   // ========== PWA 配置 ==========
@@ -147,6 +148,22 @@ export default defineNuxtConfig({
       pathPrefix: false
     }
   ],
+
+  // ========== Site 配置（sitemap 需要） ==========
+  site: {
+    url: 'https://tianmiao.site'
+  },
+
+  // ========== Sitemap 配置 ==========
+  sitemap: {
+    gzip: true,
+    exclude: ['/200.html', '/404.html', '/_payload.json'],
+    defaults: {
+      changefreq: 'weekly',
+      priority: 0.8,
+      lastmod: new Date().toISOString()
+    }
+  },
 
   // ========== 暗色模式配置 ==========
   colorMode: {
