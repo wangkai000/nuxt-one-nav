@@ -40,7 +40,7 @@
         :item-count="cat.items.length"
         :columns="6"
         rootClass="scroll-mt-20"
-        :force-visible="preloadedIds.has(cat.id)"
+        :force-visible="preloadedIds.includes(cat.id)"
       >
         <!-- 分类标题 -->
         <div class="flex items-center gap-3 mb-4">
@@ -113,15 +113,15 @@ watch(activeCategory, (newCat) => {
     if (cat.children && cat.children.length > 0) {
       const childIds = cat.children.map(c => c.id)
       if (childIds.includes(newCat)) {
-        if (!preloadedIds.value.has(cat.id)) {
-          preloadedIds.value = new Set([...preloadedIds.value, cat.id])
+        if (!preloadedIds.value.includes(cat.id)) {
+          preloadedIds.value = [...preloadedIds.value, cat.id]
         }
         return
       }
     }
     if (cat.id === newCat) {
-      if (!preloadedIds.value.has(cat.id)) {
-        preloadedIds.value = new Set([...preloadedIds.value, cat.id])
+      if (!preloadedIds.value.includes(cat.id)) {
+        preloadedIds.value = [...preloadedIds.value, cat.id]
       }
       return
     }
