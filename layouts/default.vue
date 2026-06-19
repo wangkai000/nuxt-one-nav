@@ -89,6 +89,27 @@
       </el-header>
 
       <el-main class="!p-0 flex-1 overflow-auto">
+        <!-- ================================================================ -->
+        <!-- 📢 Google AdSense 广告 - 第2步：广告展示位 -->
+        <!-- 位置：页面顶部，header 下方，内容区上方，每个页面都展示 -->
+        <!-- ⚠️ 当前为 AMP 广告代码（仅 AMP 页面有效） -->
+        <!-- 替换方法：把 <amp-ad> 换成 <ins class="adsbygoogle"> + <script>push</script> -->
+        <!-- 广告单元：data-ad-client="ca-pub-8443348887610609" data-ad-slot="9955442294" -->
+        <!-- ================================================================ -->
+        <div class="px-4 pt-4 sm:px-6 sm:pt-6 lg:px-8 lg:pt-8">
+          <div class="max-w-screen-2xl mx-auto flex justify-center">
+            <amp-ad width="100vw" height="320"
+             type="adsense"
+             data-ad-client="ca-pub-8443348887610609"
+             data-ad-slot="9955442294"
+             data-auto-format="rspv"
+             data-full-width="">
+             <div overflow=""></div>
+            </amp-ad>
+          </div>
+        </div>
+        <!-- ================================================================ -->
+
         <!-- 内容 -->
         <main class="pt-4 px-4 sm:pt-6 sm:px-6 lg:pt-8 lg:px-8">
           <slot />

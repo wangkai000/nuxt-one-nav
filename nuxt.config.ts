@@ -249,8 +249,19 @@ export default defineNuxtConfig({
         }
       ],
 
-      // JSON-LD 结构化数据（搜索引擎富摘要）
+      // ================================================================
+      // 📢 Google AdSense 广告 - 第1步：加载广告库脚本
+      // 位置：<head> 标签内，全局生效
+      // ⚠️ 当前为 AMP 代码，需替换为常规 AdSense 代码才能生效
+      // 替换方法：删掉下面这个 script，换成：
+      //   { async: true, src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?...' }
+      // ================================================================
       script: [
+        {
+          async: true,
+          'custom-element': 'amp-ad',
+          src: 'https://cdn.ampproject.org/v0/amp-ad-0.1.js'
+        },
         {
           type: 'application/ld+json',
           children: JSON.stringify({
