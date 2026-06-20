@@ -18,11 +18,21 @@
 
     <!-- 导航网格 -->
     <NavGrid />
+
+    <!-- Google AdSense ③ 底部 -->
+    <div v-if="adsense?.enabled && adsense.slots.bottom" class="flex justify-center pt-8 pb-4">
+      <ins class="adsbygoogle"
+       style="display:inline-block;width:300px;height:250px"
+       :data-ad-client="adsense.client"
+       :data-ad-slot="adsense.slots.bottom" />
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const config = useRuntimeConfig().public.siteConfig
+const runtimeConfig = useRuntimeConfig()
+const config = runtimeConfig.public.siteConfig
+const adsense = computed(() => (runtimeConfig.public as any).adsense)
 
 useHead({
   title: config.title,

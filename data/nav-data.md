@@ -644,4 +644,9 @@ AIGC:
 - [月光蟑螂](https://space.bilibili.com/2911655/dynamic) - 《烟火》《三伏》《黑森町绮谭》创作者，中式悬疑惊悚解谜游戏的代表人物，一人包揽美术、编剧、策划。
 - [史悲](https://space.bilibili.com/3729210/dynamic) - 《迷失岛》系列创作者，以手绘美术风格和谜题设计著称的独立游戏开发者。
 
+# 实用工具
+> id: utility | icon: fluent-emoji:toolbox
+
+- [基米便签](https://jimi-notes.tianmiao.site) - 由天渺studio开发的一款轻便便签 | icon: fluent-emoji:memo | tags: 工具, 便签, 天渺
+
 *（内容由AI生成，仅供参考）*

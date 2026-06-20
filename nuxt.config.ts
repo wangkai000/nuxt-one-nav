@@ -15,17 +15,52 @@ export default defineNuxtConfig({
   // 关闭 Nuxt DevTools（生产环境建议关闭）
   devtools: { enabled: false },
 
-  // 本地开发服务器（配合 SwitchHosts: 127.0.0.1 nav.tianmiao.site）
+  // 本地开发服务器
   devServer: {
-    host: 'nav.tianmiao.site',
     port: 3000
   },
+
+  // TODO: 线上域名本地调试（需先配置 SwitchHosts: 127.0.0.1 nav.tianmiao.site）
+  // devServer: {
+  //   host: 'nav.tianmiao.site',
+  //   port: 3000
+  // },
 
   // ========== 运行时配置 ==========
   runtimeConfig: {
     public: {
       lang: 'zh',
-      siteConfig
+      siteConfig,
+
+      // ================================================================
+      // 🔵 Google AdSense 广告配置
+      // ────────────────────────────────────────
+      // 说明：此项目是导航站模板，预留 AdSense 广告位方便他人替换。
+      //
+      // 使用方法：
+      //   1. 将 enabled 改为 true
+      //   2. 将 client 替换为你自己的 ca-pub-XXXX 账号码
+      //   3. 将 slots 下的 top/mid/bottom 替换为你创建的广告单元 ID
+      //   4. 不需要某个位置的广告？把对应的 slot 留空即可
+      //   5. 要完全关闭广告？enabled 设为 false
+      //
+      // 注意：
+      //   - client = 你的 AdSense 发布商 ID（在 AdSense 后台 → 账号 → 设置 查看）
+      //   - slot   = 广告单元 ID（在 AdSense 后台 → 广告 → 按广告单元 创建后获取）
+      //   - 每个位置一个广告单元（项目共 3 个：顶部横幅、内容穿插、底部）
+      //   - SSG 静态导出后配置固化，无法运行时切换
+      //
+      // 默认值：已填入模板作者的 AdSense 信息，fork 后请替换为你自己的
+      // ================================================================
+      adsense: {
+        enabled: true,                                // 总开关：false 关闭全部广告
+        client: 'ca-pub-8443348887610609',            // 你的 AdSense 发布商 ID
+        slots: {
+          top: '9955442294',     // ① 顶部横幅（自适应）
+          mid: '8486749275',     // ② 内容区穿插（300x250）
+          bottom: '9608259253'   // ③ 页面底部（300x250）
+        }
+      }
     }
   },
 
@@ -255,19 +290,7 @@ export default defineNuxtConfig({
         }
       ],
 
-      // ================================================================
-      // 📢 Google AdSense 广告 - 第1步：加载广告库脚本
-      // 位置：<head> 标签内，全局生效
-      // ⚠️ 当前为 AMP 代码，需替换为常规 AdSense 代码才能生效
-      // 替换方法：删掉下面这个 script，换成：
-      //   { async: true, src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?...' }
-      // ================================================================
       script: [
-        {
-          async: true,
-          'custom-element': 'amp-ad',
-          src: 'https://cdn.ampproject.org/v0/amp-ad-0.1.js'
-        },
         {
           type: 'application/ld+json',
           children: JSON.stringify({
@@ -322,7 +345,7 @@ export default defineNuxtConfig({
   // 仅在 SSR/SSG 模式下生效
   nitro: {
     output: {
-      dir: '.output'
+      dir: 'output'
     },
     prerender: {
       // 预渲染失败时不中断构建（可能有一些 SSR 警告但仍生成静态文件）

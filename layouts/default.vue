@@ -82,33 +82,24 @@
     </el-drawer>
 
     <!-- 主内容区 -->
-    <el-container class="flex flex-col grid-bg">
+    <el-container class="flex flex-col grid-bg !overflow-hidden">
       <!-- 顶部栏 -->
       <el-header class="!h-14 !p-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-[#16162a]">
         <AppHeader @toggle-mobile-menu="mobileMenuVisible = true" />
       </el-header>
 
       <el-main class="!p-0 flex-1 overflow-auto">
-        <!-- ================================================================ -->
-        <!-- 📢 Google AdSense 广告 - 第2步：广告展示位 -->
-        <!-- 位置：页面顶部，header 下方，内容区上方，每个页面都展示 -->
-        <!-- ⚠️ 当前为 AMP 广告代码（仅 AMP 页面有效） -->
-        <!-- 替换方法：把 <amp-ad> 换成 <ins class="adsbygoogle"> + <script>push</script> -->
-        <!-- 广告单元：data-ad-client="ca-pub-8443348887610609" data-ad-slot="9955442294" -->
-        <!-- ================================================================ -->
-        <div class="px-4 pt-4 sm:px-6 sm:pt-6 lg:px-8 lg:pt-8">
-          <div class="max-w-screen-2xl mx-auto flex justify-center">
-            <amp-ad width="100vw" height="320"
-             type="adsense"
-             data-ad-client="ca-pub-8443348887610609"
-             data-ad-slot="9955442294"
-             data-auto-format="rspv"
-             data-full-width="">
-             <div overflow=""></div>
-            </amp-ad>
+        <!-- Google AdSense ① 顶部横幅 -->
+        <div v-if="adsense?.enabled && adsense.slots.top" class="px-4 pt-4 sm:px-6 sm:pt-6 lg:px-8 lg:pt-8">
+          <div class="max-w-screen-2xl mx-auto">
+            <ins class="adsbygoogle"
+             style="display:block"
+             :data-ad-client="adsense.client"
+             :data-ad-slot="adsense.slots.top"
+             data-ad-format="auto"
+             data-full-width-responsive="true" />
           </div>
         </div>
-        <!-- ================================================================ -->
 
         <!-- 内容 -->
         <main class="pt-4 px-4 sm:pt-6 sm:px-6 lg:pt-8 lg:px-8">
@@ -129,7 +120,20 @@
 import { Icon } from '@iconify/vue'
 import { useNavData } from '~/data/nav-data'
 
-const config = useRuntimeConfig().public.siteConfig
+const runtimeConfig = useRuntimeConfig()
+const config = runtimeConfig.public.siteConfig
+const adsense = computed(() => (runtimeConfig.public as any).adsense)
+
+// 动态注入 AdSense 广告库脚本（仅在 enabled=true 时加载）
+if (import.meta.client && adsense.value?.enabled && adsense.value?.client) {
+  useHead({
+    script: [{
+      async: true,
+      src: `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsense.value.client}`,
+      crossorigin: 'anonymous'
+    }]
+  })
+}
 
 const { categories } = useNavData()
 
@@ -167,24 +171,25 @@ const handleMenuSelect = async (index: string) => {
   }
 }
 
-// 获取实际滚动容器
-const getScrollContainer = (): HTMLElement | null => {
-  return document.querySelector('.el-main')
-}
-
-// 带重试 + 布局稳定校正的滚动
+// 带重试 + 直接操作 .el-main 滚动（不依赖 scrollIntoView 自动选容器）
 const scrollToCategory = (id: string): Promise<boolean> => {
   return new Promise((resolve) => {
     const tryScroll = (retriesLeft: number) => {
+      const container = document.querySelector('.el-main') as HTMLElement | null
       const element = document.getElementById(id)
-      if (element) {
-        // instant 瞬间到位，避免 smooth 中断 bug
-        element.scrollIntoView({ behavior: 'instant', block: 'start' })
-        // 300ms 后 smooth 微调
+      if (element && container) {
+        const containerRect = container.getBoundingClientRect()
+        const elementRect = element.getBoundingClientRect()
+        const targetTop = container.scrollTop + elementRect.top - containerRect.top - 20
+        container.scrollTo({ top: targetTop, behavior: 'instant' as ScrollBehavior })
         setTimeout(() => {
           const el = document.getElementById(id)
-          if (el) {
-            el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+          const c = document.querySelector('.el-main') as HTMLElement | null
+          if (el && c) {
+            const cRect = c.getBoundingClientRect()
+            const eRect = el.getBoundingClientRect()
+            const tt = c.scrollTop + eRect.top - cRect.top - 20
+            c.scrollTo({ top: tt, behavior: 'smooth' })
           }
           resolve(true)
         }, 300)
@@ -211,6 +216,14 @@ const openAbout = () => {
   mobileMenuVisible.value = false
   navigateTo('/about')
 }
+
+// 激活 AdSense 广告
+onMounted(() => {
+  if (adsense.value?.enabled) {
+    ;(window as any).adsbygoogle = (window as any).adsbygoogle || []
+    ;(window as any).adsbygoogle.push({})
+  }
+})
 </script>
 
 <style scoped>

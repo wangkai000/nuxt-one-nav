@@ -4,8 +4,8 @@
     "version": "2.0.0",
     "lastUpdated": "2026-06-20",
     "description": "基于 Nuxt 4 的导航站数据（Markdown 数据源）",
-    "totalSites": 405,
-    "totalCategories": 15
+    "totalSites": 406,
+    "totalCategories": 16
   },
   "categories": [
     {
@@ -396,6 +396,12 @@
       "name": "独立开发者",
       "icon": "fluent-emoji:rocket",
       "count": 15
+    },
+    {
+      "id": "utility",
+      "name": "实用工具",
+      "icon": "fluent-emoji:toolbox",
+      "count": 1
     }
   ],
   "sites": [
@@ -6153,6 +6159,20 @@
       "url": "https://space.bilibili.com/3729210/dynamic",
       "category": "indie-dev",
       "order": 405
+    },
+    {
+      "id": "基米便签",
+      "title": "基米便签",
+      "description": "由天渺studio开发的一款轻便便签",
+      "url": "https://jimi-notes.tianmiao.site",
+      "icon": "fluent-emoji:memo",
+      "tags": [
+        "工具",
+        "便签",
+        "天渺"
+      ],
+      "category": "utility",
+      "order": 406
     }
   ]
 }
