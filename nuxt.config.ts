@@ -15,6 +15,12 @@ export default defineNuxtConfig({
   // 关闭 Nuxt DevTools（生产环境建议关闭）
   devtools: { enabled: false },
 
+  // 本地开发服务器（配合 SwitchHosts: 127.0.0.1 nav.tianmiao.site）
+  devServer: {
+    host: 'nav.tianmiao.site',
+    port: 3000
+  },
+
   // ========== 运行时配置 ==========
   runtimeConfig: {
     public: {
