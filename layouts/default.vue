@@ -89,18 +89,6 @@
       </el-header>
 
       <el-main class="!p-0 flex-1 overflow-auto">
-        <!-- Google AdSense ① 顶部横幅 -->
-        <div v-if="adsense?.enabled && adsense.slots.top" class="px-4 pt-4 sm:px-6 sm:pt-6 lg:px-8 lg:pt-8">
-          <div class="max-w-screen-2xl mx-auto">
-            <ins class="adsbygoogle"
-             style="display:block"
-             :data-ad-client="adsense.client"
-             :data-ad-slot="adsense.slots.top"
-             data-ad-format="auto"
-             data-full-width-responsive="true" />
-          </div>
-        </div>
-
         <!-- 内容 -->
         <main class="pt-4 px-4 sm:pt-6 sm:px-6 lg:pt-8 lg:px-8">
           <slot />

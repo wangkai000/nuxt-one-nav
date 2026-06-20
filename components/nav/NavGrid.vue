@@ -32,14 +32,6 @@
         </div>
       </div>
 
-      <!-- Google AdSense ② 内容中穿插 300x250 -->
-      <div v-if="adsense?.enabled && adsense.slots.mid" class="flex justify-center py-4">
-        <ins class="adsbygoogle"
-         style="display:inline-block;width:300px;height:250px"
-         :data-ad-client="adsense.client"
-         :data-ad-slot="adsense.slots.mid" />
-      </div>
-
       <!-- 其他分类懒加载 -->
       <InViewRender
         v-for="cat in otherCategoriesOnly"
@@ -88,7 +80,6 @@ import type { NavItem, Category } from '~/types/nav'
 const config = useRuntimeConfig().public.siteConfig
 
 const { navData, categories, getLeafCategories, getCategoryById } = useNavData()
-const adsense = computed(() => (useRuntimeConfig().public as any).adsense)
 
 const { query, activeCategory, preloadedIds } = useSearch()
 

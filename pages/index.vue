@@ -16,8 +16,26 @@
       </div>
     </div>
 
+    <!-- Google AdSense ① 顶部横幅（Hero 下方） -->
+    <div v-if="adsense?.enabled && adsense.slots.top" class="mb-8">
+      <ins class="adsbygoogle"
+       style="display:block"
+       :data-ad-client="adsense.client"
+       :data-ad-slot="adsense.slots.top"
+       data-ad-format="auto"
+       data-full-width-responsive="true" />
+    </div>
+
     <!-- 导航网格 -->
     <NavGrid />
+
+    <!-- Google AdSense ② 中段 -->
+    <div v-if="adsense?.enabled && adsense.slots.mid" class="flex justify-center pt-8">
+      <ins class="adsbygoogle"
+       style="display:inline-block;width:300px;height:250px"
+       :data-ad-client="adsense.client"
+       :data-ad-slot="adsense.slots.mid" />
+    </div>
 
     <!-- Google AdSense ③ 底部 -->
     <div v-if="adsense?.enabled && adsense.slots.bottom" class="flex justify-center pt-8 pb-4">
