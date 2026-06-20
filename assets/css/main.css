@@ -34,11 +34,40 @@ html.dark {
   color-scheme: dark;
 }
 
-/* ─── 滚动条 ─── */
-::-webkit-scrollbar { width: 6px; height: 6px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: rgba(156, 163, 175, 0.5); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: rgba(156, 163, 175, 0.8); }
+/* ─── 滚动条（Webkit） ─── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  transition: width 0.2s ease, height 0.2s ease;
+}
+::-webkit-scrollbar:hover {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.35);
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  min-height: 40px;
+  transition: background 0.2s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(107, 114, 128, 0.65);
+}
+::-webkit-scrollbar-thumb:active {
+  background: rgba(75, 85, 99, 0.8);
+}
+
+/* ─── 滚动条（Firefox） ─── */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(156, 163, 175, 0.35) transparent;
+}
 
 /* ─── 隐藏滚动条 ─── */
 .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
