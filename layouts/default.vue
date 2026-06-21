@@ -1,7 +1,7 @@
 <template>
-  <el-container class="h-screen">
-    <!-- 桌面端侧边栏（隐藏移动端） -->
-    <Sidebar class="hidden xl:flex" />
+  <div class="h-screen">
+    <!-- 桌面端侧边栏（隐藏移动端） fixed 定位，永远不会跟着滚动 -->
+    <Sidebar class="hidden xl:flex fixed left-0 top-0 h-screen z-40" />
 
     <!-- 移动端抽屉菜单 -->
     <el-drawer
@@ -81,10 +81,13 @@
       </div>
     </el-drawer>
 
-    <!-- 主内容区 -->
-    <el-container class="flex flex-col grid-bg !overflow-hidden">
+    <!-- 主内容区（用 margin-left 给 fixed 侧栏让位） -->
+    <div
+      class="h-full flex flex-col grid-bg transition-[margin] duration-300"
+      :style="{ marginLeft: sidebarCollapsed ? '64px' : '220px' }"
+    >
       <!-- 顶部栏 -->
-      <el-header class="!h-14 !p-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-[#16162a]">
+      <el-header class="!h-14 !p-0 flex-shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-[#16162a]">
         <AppHeader @toggle-mobile-menu="mobileMenuVisible = true" />
       </el-header>
 
@@ -100,8 +103,8 @@
 
       <!-- 浮动操作按钮：深色模式切换 + 返回顶部 -->
       <FloatingActions />
-    </el-container>
-  </el-container>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -122,6 +125,8 @@ if (import.meta.client && adsense.value?.enabled && adsense.value?.client) {
     }]
   })
 }
+
+const sidebarCollapsed = useState<boolean>('sidebar-collapsed', () => false)
 
 const { categories } = useNavData()
 
@@ -159,25 +164,24 @@ const handleMenuSelect = async (index: string) => {
   }
 }
 
-// 带重试 + 直接操作 .el-main 滚动（不依赖 scrollIntoView 自动选容器）
+// 获取实际滚动容器
+const getScrollContainer = (): HTMLElement | null => {
+  return document.querySelector('.el-main')
+}
+
+// 带重试 + 布局稳定校正的滚动
 const scrollToCategory = (id: string): Promise<boolean> => {
   return new Promise((resolve) => {
     const tryScroll = (retriesLeft: number) => {
-      const container = document.querySelector('.el-main') as HTMLElement | null
       const element = document.getElementById(id)
-      if (element && container) {
-        const containerRect = container.getBoundingClientRect()
-        const elementRect = element.getBoundingClientRect()
-        const targetTop = container.scrollTop + elementRect.top - containerRect.top - 20
-        container.scrollTo({ top: targetTop, behavior: 'instant' as ScrollBehavior })
+      if (element) {
+        // instant 瞬间到位，避免 smooth 中断 bug
+        element.scrollIntoView({ behavior: 'instant', block: 'start' })
+        // 300ms 后 smooth 微调
         setTimeout(() => {
           const el = document.getElementById(id)
-          const c = document.querySelector('.el-main') as HTMLElement | null
-          if (el && c) {
-            const cRect = c.getBoundingClientRect()
-            const eRect = el.getBoundingClientRect()
-            const tt = c.scrollTop + eRect.top - cRect.top - 20
-            c.scrollTo({ top: tt, behavior: 'smooth' })
+          if (el) {
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' })
           }
           resolve(true)
         }, 300)
@@ -204,14 +208,6 @@ const openAbout = () => {
   mobileMenuVisible.value = false
   navigateTo('/about')
 }
-
-// 激活 AdSense 广告
-onMounted(() => {
-  if (adsense.value?.enabled) {
-    ;(window as any).adsbygoogle = (window as any).adsbygoogle || []
-    ;(window as any).adsbygoogle.push({})
-  }
-})
 </script>
 
 <style scoped>

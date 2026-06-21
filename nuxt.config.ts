@@ -56,9 +56,9 @@ export default defineNuxtConfig({
         enabled: true,                                // 总开关：false 关闭全部广告
         client: 'ca-pub-8443348887610609',            // 你的 AdSense 发布商 ID
         slots: {
-          top: '9955442294',     // ① 顶部横幅（自适应）
-          mid: '8486749275',     // ② 内容区穿插（300x250）
-          bottom: '9608259253'   // ③ 页面底部（300x250）
+          top: '9955442294',     // ① 顶部横幅
+          mid: '8486749275',     // ② 内容区穿插
+          bottom: '9608259253'   // ③ 页面底部
         }
       }
     }

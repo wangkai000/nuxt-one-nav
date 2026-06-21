@@ -643,6 +643,7 @@ AIGC:
 - [Derek Yu](https://www.derekyu.com/) - 《洞穴探险》(Spelunky) 系列创作者，Roguelike 平台跳跃游戏的先驱，影响了一代独立游戏设计。
 - [月光蟑螂](https://space.bilibili.com/2911655/dynamic) - 《烟火》《三伏》《黑森町绮谭》创作者，中式悬疑惊悚解谜游戏的代表人物，一人包揽美术、编剧、策划。
 - [史悲](https://space.bilibili.com/3729210/dynamic) - 《迷失岛》系列创作者，以手绘美术风格和谜题设计著称的独立游戏开发者。
+- [刘美工](https://space.bilibili.com/341473111) - 镜界，HAAK（勇敢的哈克）游戏开发者
 
 # 实用工具
 > id: utility | icon: fluent-emoji:toolbox

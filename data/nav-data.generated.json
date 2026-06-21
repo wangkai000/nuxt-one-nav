@@ -2,9 +2,9 @@
   "meta": {
     "name": "星途导航 导航数据",
     "version": "2.0.0",
-    "lastUpdated": "2026-06-20",
+    "lastUpdated": "2026-06-21",
     "description": "基于 Nuxt 4 的导航站数据（Markdown 数据源）",
-    "totalSites": 406,
+    "totalSites": 407,
     "totalCategories": 16
   },
   "categories": [
@@ -395,7 +395,7 @@
       "id": "indie-dev",
       "name": "独立开发者",
       "icon": "fluent-emoji:rocket",
-      "count": 15
+      "count": 16
     },
     {
       "id": "utility",
@@ -6161,6 +6161,14 @@
       "order": 405
     },
     {
+      "id": "刘美工",
+      "title": "刘美工",
+      "description": "镜界，HAAK（勇敢的哈克）游戏开发者",
+      "url": "https://space.bilibili.com/341473111",
+      "category": "indie-dev",
+      "order": 406
+    },
+    {
       "id": "基米便签",
       "title": "基米便签",
       "description": "由天渺studio开发的一款轻便便签",
@@ -6172,7 +6180,7 @@
         "天渺"
       ],
       "category": "utility",
-      "order": 406
+      "order": 407
     }
   ]
 }
