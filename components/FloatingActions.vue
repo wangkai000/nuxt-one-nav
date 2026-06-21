@@ -4,7 +4,7 @@
     <Transition name="fade-slide">
       <button
         @click="toggleTheme"
-        class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 flex items-center justify-center hover:shadow-xl hover:-translate-y-1 transition-all duration-200"
+        class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 flex items-center justify-center hover:shadow-xl hover:-translate-y-1 transition-[transform,box-shadow] duration-200"
         :title="isDark ? '浅色' : '深色'"
       >
         <!-- 新的图标：使用更现代的太阳/月亮切换图标 -->
@@ -30,12 +30,12 @@
       <button
         v-if="showBackToTop"
         @click="scrollToTop"
-        class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 flex items-center justify-center hover:shadow-xl hover:-translate-y-1 transition-all duration-200"
+        class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 flex items-center justify-center hover:shadow-xl hover:-translate-y-1 transition-[transform,box-shadow] duration-200"
         title="返回顶部"
       >
-        <!-- 新的返回顶部图标：更简洁的箭头 -->
-        <svg class="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="m18 15-6-6-6 6" />
+        <!-- 新的返回顶部图标：向上箭头（居中对齐） -->
+        <svg class="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m6 15 6-6 6 6" />
         </svg>
       </button>
     </Transition>
@@ -59,16 +59,18 @@ const getScrollContainer = () => {
   return window
 }
 
+// 记录当前监听的滚动容器
+let scrollContainerEl: Element | null = null
+
 // 监听滚动
 const handleScroll = () => {
-  const container = getScrollContainer()
-  let scrollTop = 0
-
-  if (container === window) {
-    scrollTop = window.scrollY
-  } else {
-    scrollTop = (container as Element).scrollTop
-  }
+  const elMain = document.querySelector('.el-main') as HTMLElement | null
+  // 取所有可能滚动容器的最大值，避免因容器判断错误导致按钮不显示
+  const scrollTop = Math.max(
+    elMain?.scrollTop || 0,
+    window.scrollY || 0,
+    document.documentElement.scrollTop || 0
+  )
 
   // 滚动超过 300px 显示按钮
   showBackToTop.value = scrollTop > 300
@@ -76,23 +78,29 @@ const handleScroll = () => {
 
 // 返回顶部
 const scrollToTop = () => {
-  const container = getScrollContainer()
-
-  if (container === window) {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+  // 先尝试滚动 el-main，如果不行就滚动 window
+  const elMain = document.querySelector('.el-main') as HTMLElement | null
+  if (elMain && elMain.scrollTop > 0) {
+    elMain.scrollTo({ top: 0, behavior: 'smooth' })
   } else {
-    container.scrollTo({ top: 0, behavior: 'smooth' })
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 }
 
 onMounted(() => {
-  const container = getScrollContainer()
-  container.addEventListener('scroll', handleScroll, { passive: true })
-  handleScroll() // 初始检查
+  // 同时监听 el-main 和 window 的滚动，避免容器判断错误导致按钮不显示
+  scrollContainerEl = document.querySelector('.el-main')
+  scrollContainerEl?.addEventListener('scroll', handleScroll, { passive: true })
+  window.addEventListener('scroll', handleScroll, { passive: true })
 
-  onUnmounted(() => {
-    container.removeEventListener('scroll', handleScroll)
-  })
+  // 初始检查
+  handleScroll()
+})
+
+onUnmounted(() => {
+  scrollContainerEl?.removeEventListener('scroll', handleScroll)
+  window.removeEventListener('scroll', handleScroll)
+  scrollContainerEl = null
 })
 </script>
 
