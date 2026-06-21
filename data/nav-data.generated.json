@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "lastUpdated": "2026-06-21",
     "description": "基于 Nuxt 4 的导航站数据（Markdown 数据源）",
-    "totalSites": 410,
+    "totalSites": 407,
     "totalCategories": 16
   },
   "categories": [
@@ -23,7 +23,7 @@
           "id": "ai-nav",
           "name": "AI导航",
           "icon": "fluent-emoji:compass",
-          "count": 11,
+          "count": 9,
           "parentId": "ai"
         },
         {
@@ -6181,36 +6181,6 @@
       ],
       "category": "utility",
       "order": 407
-    },
-    {
-      "id": "listofapi",
-      "title": "ListOfAPI",
-      "description": "中文大模型中转站集合网站，收录国内各类大模型 API 中转服务",
-      "url": "https://listofapi.com",
-      "icon": "https://listofapi.com/favicon.ico",
-      "tags": [
-        "AI",
-        "中转站",
-        "API",
-        "大模型"
-      ],
-      "category": "ai-nav",
-      "order": 408
-    },
-    {
-      "id": "panshi-relay-check",
-      "title": "磐石中转检测",
-      "description": "检测 API 中转站上游是否被偷换成便宜模型，基于行为指纹识破降价/降智嫌疑",
-      "url": "https://panshi.io/zh/relay-check/",
-      "icon": "https://panshi.io/favicon.ico",
-      "tags": [
-        "AI",
-        "中转站",
-        "检测",
-        "工具"
-      ],
-      "category": "ai-nav",
-      "order": 409
     }
   ]
 }
