@@ -35,6 +35,8 @@ AIGC:
 - [非猪AI导航](https://feizhuke.com/) - 为你收集整理推荐超过3万+国内外人工智能网址导航网站，文字写作、图片、音频、视频、代码等各种高效工具，让你遍览人工智能服务，先人一步，畅享未来！飞起来！ | icon: https://feizhuke.com/zhulogo1.png | tags: AI, 导航
 - [Hugging Face](https://huggingface.co/) - Hugging Face 是 AI 社区平台，提供模型、数据集和 Spaces 托管。 | icon: https://huggingface.co/favicon.ico | tags: AI, 社区, 模型, 数据集
 - [AIHub](https://www.aihub.cn/) - AIHub 收录了国内外 1600+ 优质 AI 工具，覆盖多个分类，帮助用户快速找到合适的 AI 产品。 | icon: https://www.aihub.cn/favicon.ico | tags: AI, 导航
+- [ListOfAPI](https://listofapi.com) - 中文大模型中转站集合网站，收录国内各类大模型 API 中转服务。 | icon: https://listofapi.com/favicon.ico | tags: AI, 中转站, API, 大模型
+- [磐石中转检测](https://panshi.io/zh/relay-check/) - 检测 API 中转站上游是否被偷换成便宜模型，基于行为指纹识破降价/降智嫌疑。 | icon: https://panshi.io/favicon.ico | tags: AI, 中转站, 检测, 工具
 
 ## AI写作
 > id: ai-writing | icon: fluent-emoji:pen
@@ -56,10 +58,11 @@ AIGC:
 - [CrewAI](https://www.crewai.com/) - CrewAI 是角色驱动的多 Agent 编排框架，让 AI Agent 像团队一样协作完成任务。 | icon: https://www.crewai.com/favicon.ico | tags: AI, Agent, Python, 编排, 自动化
 - [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) - OpenAI 官方 Agents SDK，简化 Agent 开发，内置工具调用、Guardrails、Tracing。 | icon: https://github.com/favicon.ico | tags: AI, Agent, Python, OpenAI, SDK
 
-## AI Skill
+## AI Skill/Prompt
 > id: ai-skill | icon: fluent-emoji:flexed-biceps
 
 - [Superpowers](https://github.com/obra/superpowers) - Superpowers 是 AI 编程助手的技能框架，为 Claude Code、Cursor 等提供 TDD、代码审查、子代理驱动的系统化开发流程。 | icon: https://github.com/favicon.ico | tags: AI, 开发, 框架, TDD, 开源
+- [Ponytail](https://github.com/AnandChowdhary/ponytail) - Ponytail 是 AI Agent 代码精简插件，自动检测并移除项目中未被引用的冗余代码，保持代码库整洁。 | icon: https://github.com/favicon.ico | tags: AI, 开发, 代码清理, 开源
 
 
 ## AI本地运行
