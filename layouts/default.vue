@@ -81,8 +81,8 @@
       </div>
     </el-drawer>
 
-    <!-- 主内容区（桌面端用 margin-left 给 fixed 侧栏让位，移动端 margin 归零） -->
-    <div
+<!-- 主内容区（桌面端用 margin-left 给 fixed 侧栏让位，移动端 margin 归零） -->
+    <el-container
       class="h-full flex flex-col grid-bg transition-[margin] duration-300"
       :style="{ marginLeft: isDesktop ? (sidebarCollapsed ? '64px' : '220px') : '0' }"
     >
@@ -100,10 +100,7 @@
         <!-- 底部 -->
         <AppFooter />
       </el-main>
-
-      <!-- 浮动操作按钮：深色模式切换 + 返回顶部 -->
-      <FloatingActions />
-    </div>
+    </el-container>
   </div>
 </template>
 
