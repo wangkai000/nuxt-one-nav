@@ -1,8 +1,6 @@
 <template>
-  <!-- 顶部导航栏 -->
-  <el-header
-    class="h-14 px-4 flex items-center justify-between"
-  >
+  <!-- 顶部导航栏内容（由外层 el-header 包裹，此处不再重复 el-header） -->
+  <div class="h-full w-full px-4 flex items-center justify-between">
     <!-- 左侧 -->
     <div class="flex items-center gap-4">
       <!-- 汉堡菜单按钮（移动端） -->
@@ -87,7 +85,7 @@
       </div>
 
     </div>
-  </el-header>
+  </div>
 </template>
 
 <script setup lang="ts">

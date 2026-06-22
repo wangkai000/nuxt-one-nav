@@ -83,15 +83,21 @@
 
 <!-- 主内容区（桌面端用 margin-left 给 fixed 侧栏让位，移动端 margin 归零） -->
     <el-container
-      class="h-full flex flex-col grid-bg transition-[margin] duration-300"
+      class="h-full flex flex-col grid-bg overflow-hidden transition-[margin] duration-300"
       :style="{ marginLeft: isDesktop ? (sidebarCollapsed ? '64px' : '220px') : '0' }"
     >
-      <!-- 顶部栏 -->
-      <el-header class="!h-14 !p-0 flex-shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-[#16162a]">
+      <!-- 顶部栏（fixed 固定到顶部） -->
+      <el-header
+        class="!h-14 !p-0 flex-shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-[#16162a] fixed top-0 z-30"
+        :style="{ left: isDesktop ? (sidebarCollapsed ? '64px' : '220px') : '0', right: '0' }"
+      >
         <AppHeader @toggle-mobile-menu="mobileMenuVisible = true" />
       </el-header>
 
-      <el-main class="!p-0 flex-1 overflow-auto">
+      <!-- 用占位 div 把 el-main 往下推 -->
+      <div class="h-14 flex-shrink-0"></div>
+
+      <el-main class="!p-0 flex-1 min-h-0 overflow-y-auto">
         <!-- 内容 -->
         <main class="pt-4 px-4 sm:pt-6 sm:px-6 lg:pt-8 lg:px-8">
           <slot />
