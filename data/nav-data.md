@@ -541,6 +541,7 @@ AIGC:
 - [Draw.io](https://www.drawio.com/) - 一款开源免费的在线图表绘制工具，适合绘制流程图、组织结构图、网络拓扑图等多种图表。 | icon: https://www.drawio.com/favicon.ico | tags: Tool
 - [Mnggiflab](https://www.mnggiflab.com/) - MNGGIFLAB-在线gif制作,视频转gif,gif编辑,gif合成,gif压缩,录屏gif | icon: https://mnggiflab.com/img/logo/logo-icon.png | tags: Tool, 图片
 - [LimgX](https://limgx.com/) - 免费在线图片压缩与格式转换工具。本地处理保护隐私，支持JPG、PNG、WebP格式转换。 | icon: https://limgx.com/favicon.ico | tags: Tool, 图片
+- [基米便签](https://jimi-notes.tianmiao.site) - 由天渺studio开发的一款轻便便签 | icon: fluent-emoji:memo | tags: 工具, 便签, 天渺
 
 # 资源导航
 > id: resources | icon: fluent-emoji:world-map
@@ -647,10 +648,5 @@ AIGC:
 - [月光蟑螂](https://space.bilibili.com/2911655/dynamic) - 《烟火》《三伏》《黑森町绮谭》创作者，中式悬疑惊悚解谜游戏的代表人物，一人包揽美术、编剧、策划。
 - [史悲](https://space.bilibili.com/3729210/dynamic) - 《迷失岛》系列创作者，以手绘美术风格和谜题设计著称的独立游戏开发者。
 - [刘美工](https://space.bilibili.com/341473111) - 镜界，HAAK（勇敢的哈克）游戏开发者
-
-# 实用工具
-> id: utility | icon: fluent-emoji:toolbox
-
-- [基米便签](https://jimi-notes.tianmiao.site) - 由天渺studio开发的一款轻便便签 | icon: fluent-emoji:memo | tags: 工具, 便签, 天渺
 
 *（内容由AI生成，仅供参考）*

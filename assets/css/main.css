@@ -90,14 +90,23 @@ html.dark {
 }
 
 /* ─── Hero 背景图片（深色模式自动切换）─── */
-/* 使用 background-attachment: fixed 避免滚动时持续 repaint */
+/* 桌面端使用 background-attachment: fixed（提升到合成层，减少重绘） */
+/* iOS Safari 不支持 fixed，回退到 scroll */
 .hero-wallpaper {
   background-image: url('/images/light.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  will-change: transform; /* 将背景提升到合成层，减少重绘 */
+  background-attachment: scroll;
+}
+
+@supports (background-attachment: fixed) {
+  @media (min-width: 768px) {
+    .hero-wallpaper {
+      background-attachment: fixed;
+      will-change: transform;
+    }
+  }
 }
 .dark .hero-wallpaper {
   background-image: url('/images/night.jpg');

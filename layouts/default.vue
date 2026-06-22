@@ -81,10 +81,10 @@
       </div>
     </el-drawer>
 
-    <!-- 主内容区（用 margin-left 给 fixed 侧栏让位） -->
+    <!-- 主内容区（桌面端用 margin-left 给 fixed 侧栏让位，移动端 margin 归零） -->
     <div
       class="h-full flex flex-col grid-bg transition-[margin] duration-300"
-      :style="{ marginLeft: sidebarCollapsed ? '64px' : '220px' }"
+      :style="{ marginLeft: isDesktop ? (sidebarCollapsed ? '64px' : '220px') : '0' }"
     >
       <!-- 顶部栏 -->
       <el-header class="!h-14 !p-0 flex-shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-[#16162a]">
@@ -109,6 +109,7 @@
 
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
+import { useMediaQuery } from '@vueuse/core'
 import { useNavData } from '~/data/nav-data'
 
 const runtimeConfig = useRuntimeConfig()
@@ -127,6 +128,9 @@ if (import.meta.client && adsense.value?.enabled && adsense.value?.client) {
 }
 
 const sidebarCollapsed = useState<boolean>('sidebar-collapsed', () => false)
+
+// 判断是否桌面端（≥1280px，对应 Sidebar 的 xl:flex 断点）
+const isDesktop = useMediaQuery('(min-width: 1280px)')
 
 const { categories } = useNavData()
 
