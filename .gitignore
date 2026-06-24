@@ -3,6 +3,7 @@
 .nuxt
 .output
 dist
+output
 node_modules
 .env
 *.log
