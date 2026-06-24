@@ -96,23 +96,42 @@ const config = useRuntimeConfig().public.siteConfig
 
 const { categories } = useNavData()
 
-const { activeCategory, selectCategory } = useSearch()
+const { activeCategory, selectCategory, preloadCategory } = useSearch()
 const collapsed = useState<boolean>('sidebar-collapsed', () => false)
 
-// 滚动到指定元素（带重试机制）
-const scrollToElement = (id: string, maxRetries = 5, delay = 100) => {
-  const tryScroll = (retriesLeft: number) => {
-    const element = document.getElementById(id)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      return true
+// 获取实际滚动容器（el-main，不是 window）
+const getScrollContainer = (): HTMLElement | null => {
+  return document.querySelector('.el-main')
+}
+
+// 滚动到指定元素（返回 Promise，配合 async/await 精确控制时序）
+// 关键修复：不再用两次 smooth scrollIntoView 互相中断，
+// 改用 instant 快速到位 + 300ms 后 smooth 微调（避免 Chromium 的 smooth 中断 bug）
+const scrollToElement = (id: string): Promise<boolean> => {
+  return new Promise((resolve) => {
+    const tryScroll = (retriesLeft: number) => {
+      const element = document.getElementById(id)
+      if (element) {
+        // 第一步：instant 瞬间到位（避免内容渲染中高度变化导致偏移）
+        element.scrollIntoView({ behavior: 'instant', block: 'start' })
+        // 第二步：300ms 后 smooth 微调（此时 InViewRender 内容已渲染完成）
+        setTimeout(() => {
+          const el = document.getElementById(id)
+          if (el) {
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+          }
+          resolve(true)
+        }, 300)
+        return
+      }
+      if (retriesLeft > 0) {
+        setTimeout(() => tryScroll(retriesLeft - 1), 100)
+      } else {
+        resolve(false)
+      }
     }
-    if (retriesLeft > 0) {
-      setTimeout(() => tryScroll(retriesLeft - 1), delay)
-    }
-    return false
-  }
-  return tryScroll(maxRetries)
+    tryScroll(20) // 2s 超时
+  })
 }
 
 // 处理菜单选择
@@ -122,24 +141,23 @@ const handleSelect = async (index: string) => {
   // 如果不在首页，先跳转回首页
   if (route.path !== '/') {
     selectCategory(index)
+    // 预加载目标分类，确保导航后 InViewRender 已渲染
+    preloadCategory(index, categories.value)
     await navigateTo('/')
-    // 等待页面渲染完成后滚动
-    nextTick(() => {
-      scrollToElement(`category-${index}`)
-    })
-    return
   }
 
   selectCategory(index)
+  // 确保目标分类的 InViewRender 被强制渲染
+  preloadCategory(index, categories.value)
+  await nextTick()
+  // 双 nextTick：确保二级分类的子 div 也渲染完成（在 InViewRender slot 内）
+  await nextTick()
 
-  // 查找目标元素并滚动（带重试，处理懒加载延迟）
-  nextTick(() => {
-    const found = scrollToElement(`category-${index}`)
-    if (!found) {
-      // 如果找不到对应元素（比如首页），滚动到顶部
-      window.scrollTo({ top: 0, behavior: 'smooth' })
-    }
-  })
+  const found = await scrollToElement(`category-${index}`)
+  if (!found) {
+    // 回退：滚动实际容器（el-main），不是 window（window 无溢出，scrollTo 是空操作）
+    getScrollContainer()?.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 }
 
 // 打开网站提交

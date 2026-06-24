@@ -4,7 +4,7 @@
     <template v-if="query && query.trim()">
       <div>
         <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
-          <span>{{ $t('nav.searchResults') }}</span>
+          <span>{{ config.nav.searchResults }}</span>
           <span class="text-sm font-normal text-gray-500">({{ filteredItems.length }})</span>
         </h2>
         <div v-if="filteredItems.length > 0" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
@@ -12,7 +12,7 @@
         </div>
         <div v-else class="flex flex-col items-center justify-center py-16 text-gray-500">
           <Icon name="mdi:magnify" class="w-12 h-12 mb-3 opacity-50" />
-          <p>{{ $t('nav.noResults') }}</p>
+          <p>{{ config.nav.noResults }}</p>
         </div>
       </div>
     </template>
@@ -40,7 +40,7 @@
         :item-count="cat.items.length"
         :columns="6"
         rootClass="scroll-mt-20"
-        :force-visible="preloadedIds.has(cat.id)"
+        :force-visible="preloadedIds.includes(cat.id)"
       >
         <!-- 分类标题 -->
         <div class="flex items-center gap-3 mb-4">
@@ -77,9 +77,11 @@ import { Icon } from '@iconify/vue'
 import { useNavData } from '~/data/nav-data'
 import type { NavItem, Category } from '~/types/nav'
 
+const config = useRuntimeConfig().public.siteConfig
+
 const { navData, categories, getLeafCategories, getCategoryById } = useNavData()
 
-const { query, activeCategory } = useSearch()
+const { query, activeCategory, preloadedIds } = useSearch()
 
 // mdi:xxx 转换为 @iconify/vue 格式
 const getIconName = (icon: string): string => {
@@ -105,10 +107,7 @@ const otherCategoriesOnly = computed(() =>
   categoriesWithItems.value.filter(cat => cat.id !== 'all')
 )
 
-// 预加载状态：侧边栏点击分类时，强制加载对应的父分类区块
-const preloadedIds = ref<Set<string>>(new Set(['all']))
-
-// 监听侧边栏分类切换
+// 监听侧边栏分类切换 — immediate:true 确保导航回来的场景也能触发
 watch(activeCategory, (newCat) => {
   if (!newCat || newCat === 'all') return
   // 找到新选中分类所属的父分类ID
@@ -116,16 +115,20 @@ watch(activeCategory, (newCat) => {
     if (cat.children && cat.children.length > 0) {
       const childIds = cat.children.map(c => c.id)
       if (childIds.includes(newCat)) {
-        preloadedIds.value = new Set([...preloadedIds.value, cat.id])
+        if (!preloadedIds.value.includes(cat.id)) {
+          preloadedIds.value = [...preloadedIds.value, cat.id]
+        }
         return
       }
     }
     if (cat.id === newCat) {
-      preloadedIds.value = new Set([...preloadedIds.value, cat.id])
+      if (!preloadedIds.value.includes(cat.id)) {
+        preloadedIds.value = [...preloadedIds.value, cat.id]
+      }
       return
     }
   }
-})
+}, { immediate: true })
 
 // 按分类分组的网站
 const categoriesWithItems = computed(() => {

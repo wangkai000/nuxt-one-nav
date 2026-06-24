@@ -1,8 +1,6 @@
 <template>
-  <!-- 顶部导航栏 -->
-  <el-header
-    class="h-14 px-4 flex items-center justify-between"
-  >
+  <!-- 顶部导航栏内容（由外层 el-header 包裹，此处不再重复 el-header） -->
+  <div class="h-full w-full px-4 flex items-center justify-between">
     <!-- 左侧 -->
     <div class="flex items-center gap-4">
       <!-- 汉堡菜单按钮（移动端） -->
@@ -13,7 +11,7 @@
         <Icon icon="mdi:menu" class="w-5 h-5 text-gray-600 dark:text-gray-400" />
       </button>
 
-      <!-- Logo（仅移动端显示图标，不显示文字） -->
+      <!-- Logo（仅移动端显示，桌面端侧栏已有 Logo） -->
       <a href="/" class="xl:hidden flex items-center">
         <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
           <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -87,7 +85,7 @@
       </div>
 
     </div>
-  </el-header>
+  </div>
 </template>
 
 <script setup lang="ts">

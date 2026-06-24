@@ -57,9 +57,8 @@ onMounted(() => {
   }, 5000)
 })
 
-// 初始化导航数据
-const { initNavData } = useNavData()
-initNavData()
+// 使用 useNavData 确保导航数据已初始化（composable 内部惰性加载）
+useNavData()
 
 // Element Plus 暗色模式支持
 const colorMode = useColorMode()

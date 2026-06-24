@@ -1,8 +1,7 @@
 // Nuxt 4 配置文件
 // 文档: https://nuxt.com.cn/docs/configuration/configuration-reference
 
-const lang = (process.env.SITE_LANG || 'zh').trim()
-const siteConfig = await import(`./config/site.${lang}`).then(m => m.default)
+const siteConfig = await import('./config/site.config').then(m => m.default)
 
 export default defineNuxtConfig({
   // 兼容日期，用于确保 Nuxt 版本兼容性
@@ -16,11 +15,52 @@ export default defineNuxtConfig({
   // 关闭 Nuxt DevTools（生产环境建议关闭）
   devtools: { enabled: false },
 
+  // 本地开发服务器
+  devServer: {
+    port: 3000
+  },
+
+  // TODO: 线上域名本地调试（需先配置 SwitchHosts: 127.0.0.1 nav.tianmiao.site）
+  // devServer: {
+  //   host: 'nav.tianmiao.site',
+  //   port: 3000
+  // },
+
   // ========== 运行时配置 ==========
   runtimeConfig: {
     public: {
-      lang,
-      siteConfig
+      lang: 'zh',
+      siteConfig,
+
+      // ================================================================
+      // 🔵 Google AdSense 广告配置
+      // ────────────────────────────────────────
+      // 说明：此项目是导航站模板，预留 AdSense 广告位方便他人替换。
+      //
+      // 使用方法：
+      //   1. 将 enabled 改为 true
+      //   2. 将 client 替换为你自己的 ca-pub-XXXX 账号码
+      //   3. 将 slots 下的 top/mid/bottom 替换为你创建的广告单元 ID
+      //   4. 不需要某个位置的广告？把对应的 slot 留空即可
+      //   5. 要完全关闭广告？enabled 设为 false
+      //
+      // 注意：
+      //   - client = 你的 AdSense 发布商 ID（在 AdSense 后台 → 账号 → 设置 查看）
+      //   - slot   = 广告单元 ID（在 AdSense 后台 → 广告 → 按广告单元 创建后获取）
+      //   - 每个位置一个广告单元（项目共 3 个：顶部横幅、内容穿插、底部）
+      //   - SSG 静态导出后配置固化，无法运行时切换
+      //
+      // 默认值：已填入模板作者的 AdSense 信息，fork 后请替换为你自己的
+      // ================================================================
+      adsense: {
+        enabled: true,                                // 总开关：false 关闭全部广告
+        client: 'ca-pub-8443348887610609',            // 你的 AdSense 发布商 ID
+        slots: {
+          top: '9955442294',     // ① 顶部横幅
+          mid: '8486749275',     // ② 内容区穿插
+          bottom: '9608259253'   // ③ 页面底部
+        }
+      }
     }
   },
 
@@ -38,7 +78,8 @@ export default defineNuxtConfig({
   modules: [
     '@element-plus/nuxt',      // Element Plus Vue 3 组件库
     '@nuxtjs/color-mode',      // 暗色模式支持
-    '@vite-pwa/nuxt'          // PWA 支持
+    '@vite-pwa/nuxt',           // PWA 支持
+    '@nuxtjs/sitemap'           // 自动生成 sitemap.xml + robots.txt
   ],
 
   // ========== PWA 配置 ==========
@@ -149,6 +190,22 @@ export default defineNuxtConfig({
     }
   ],
 
+  // ========== Site 配置（sitemap 需要） ==========
+  site: {
+    url: 'https://tianmiao.site'
+  },
+
+  // ========== Sitemap 配置 ==========
+  sitemap: {
+    gzip: true,
+    exclude: ['/200.html', '/404.html', '/_payload.json'],
+    defaults: {
+      changefreq: 'weekly',
+      priority: 0.8,
+      lastmod: new Date().toISOString()
+    }
+  },
+
   // ========== 暗色模式配置 ==========
   colorMode: {
     // 暗色 class 后缀（空字符串表示直接使用 'dark'）
@@ -173,8 +230,8 @@ export default defineNuxtConfig({
       // HTML 标题
       title: siteConfig.title,
 
-      // HTML 标签属性（动态语言由 i18n 处理）
-      htmlAttrs: { lang: lang === 'zh' ? 'zh-CN' : 'en' },
+      // HTML 标签属性
+      htmlAttrs: { lang: 'zh-CN' },
 
       // Meta 标签（SEO 和社交分享）
       meta: [
@@ -192,7 +249,7 @@ export default defineNuxtConfig({
         { property: 'og:url', content: 'https://tianmiao.site' },
         { property: 'og:type', content: 'website' },
         { property: 'og:image', content: 'https://s21.ax1x.com/2024/12/22/pAXtJat.jpg' },
-        { property: 'og:locale', content: lang === 'zh' ? 'zh_CN' : 'en_US' },
+        { property: 'og:locale', content: 'zh_CN' },
         { property: 'og:site_name', content: siteConfig.title },
 
         // Twitter Card（Twitter 分享）
@@ -233,7 +290,6 @@ export default defineNuxtConfig({
         }
       ],
 
-      // JSON-LD 结构化数据（搜索引擎富摘要）
       script: [
         {
           type: 'application/ld+json',
@@ -247,7 +303,7 @@ export default defineNuxtConfig({
               '@type': 'Person',
               name: '天渺studio'
             },
-            inLanguage: lang === 'zh' ? 'zh-CN' : 'en',
+            inLanguage: 'zh-CN',
             potentialAction: {
               '@type': 'SearchAction',
               target: {
@@ -289,7 +345,7 @@ export default defineNuxtConfig({
   // 仅在 SSR/SSG 模式下生效
   nitro: {
     output: {
-      dir: `.output/${lang}`
+      dir: 'output'
     },
     prerender: {
       // 预渲染失败时不中断构建（可能有一些 SSR 警告但仍生成静态文件）

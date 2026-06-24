@@ -16,13 +16,41 @@
       </div>
     </div>
 
+    <!-- Google AdSense ① 顶部横幅 -->
+    <AdSlot
+      v-if="adsense?.enabled"
+      :client="adsense.client"
+      :slot="adsense.slots.top"
+      class="mb-8"
+    />
+
     <!-- 导航网格 -->
     <NavGrid />
+
+    <!-- Google AdSense ② 中段 -->
+    <AdSlot
+      v-if="adsense?.enabled"
+      :client="adsense.client"
+      :slot="adsense.slots.mid"
+      centered
+      class="pt-8"
+    />
+
+    <!-- Google AdSense ③ 底部 -->
+    <AdSlot
+      v-if="adsense?.enabled"
+      :client="adsense.client"
+      :slot="adsense.slots.bottom"
+      centered
+      class="pt-8 pb-4"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
-const config = useRuntimeConfig().public.siteConfig
+const runtimeConfig = useRuntimeConfig()
+const config = runtimeConfig.public.siteConfig
+const adsense = computed(() => (runtimeConfig.public as any).adsense)
 
 useHead({
   title: config.title,

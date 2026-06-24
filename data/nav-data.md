@@ -1,4 +1,15 @@
-# 基米导航 导航数据
+---
+AIGC:
+    Label: "1"
+    ContentProducer: 001191440300708461136T1XGW3
+    ProduceID: deb41470e897a7a16a351c642e8e69cb_83c742d061e611f19f62525400d9a7a1
+    ReservedCode1: cdCp8YvvCmltOQH8RtVy33Mn1bzxKjqIQ0CMsPpVD+1oYG3Dz6nFYNvqAwzMmm9e2ciKAvBn22+hvbm9mefOV+MSC5670BKyEqEHMJjif8fyCVp3zVsUsEvlAHC/JR5zJXm9GFWK224k1KAL/JjqDj8R86aLExXrzw5nDu2cV/s177xRpKSgmzINrQs=
+    ContentPropagator: 001191440300708461136T1XGW3
+    PropagateID: deb41470e897a7a16a351c642e8e69cb_83c742d061e611f19f62525400d9a7a1
+    ReservedCode2: cdCp8YvvCmltOQH8RtVy33Mn1bzxKjqIQ0CMsPpVD+1oYG3Dz6nFYNvqAwzMmm9e2ciKAvBn22+hvbm9mefOV+MSC5670BKyEqEHMJjif8fyCVp3zVsUsEvlAHC/JR5zJXm9GFWK224k1KAL/JjqDj8R86aLExXrzw5nDu2cV/s177xRpKSgmzINrQs=
+---
+
+﻿# 基米导航 导航数据
 
 > 由 nav-data.generated.json 自动生成
 
@@ -9,7 +20,7 @@
 
 - [天渺studio](https://tianmiao.site) - 天渺工作室的小站&日志记录 | icon: https://s21.ax1x.com/2024/12/22/pAXtJat.jpg | tags: 个人博客, 日志
 
-# AI 工具
+# AI
 > id: ai | icon: fluent-emoji:robot
 
 ## AI导航
@@ -24,6 +35,8 @@
 - [非猪AI导航](https://feizhuke.com/) - 为你收集整理推荐超过3万+国内外人工智能网址导航网站，文字写作、图片、音频、视频、代码等各种高效工具，让你遍览人工智能服务，先人一步，畅享未来！飞起来！ | icon: https://feizhuke.com/zhulogo1.png | tags: AI, 导航
 - [Hugging Face](https://huggingface.co/) - Hugging Face 是 AI 社区平台，提供模型、数据集和 Spaces 托管。 | icon: https://huggingface.co/favicon.ico | tags: AI, 社区, 模型, 数据集
 - [AIHub](https://www.aihub.cn/) - AIHub 收录了国内外 1600+ 优质 AI 工具，覆盖多个分类，帮助用户快速找到合适的 AI 产品。 | icon: https://www.aihub.cn/favicon.ico | tags: AI, 导航
+- [ListOfAPI](https://listofapi.com) - 中文大模型中转站集合网站，收录国内各类大模型 API 中转服务。 | icon: https://listofapi.com/favicon.ico | tags: AI, 中转站, API, 大模型
+- [磐石中转检测](https://panshi.io/zh/relay-check/) - 检测 API 中转站上游是否被偷换成便宜模型，基于行为指纹识破降价/降智嫌疑。 | icon: https://panshi.io/favicon.ico | tags: AI, 中转站, 检测, 工具
 
 ## AI写作
 > id: ai-writing | icon: fluent-emoji:pen
@@ -39,11 +52,17 @@
 - [LangGraph](https://langchain-ai.github.io/langgraph/) - LangGraph 是 LangChain 生态的图工作流框架，用于构建有状态的、多角色的 AI 应用。 | icon: https://langchain-ai.github.io/langgraph/favicon.ico | tags: AI, 框架, 工作流, Agent
 - [LlamaIndex](https://www.llamaindex.ai/) - LlamaIndex 是数据框架，用于构建 LLM 应用，支持数据连接、索引和查询。 | icon: https://www.llamaindex.ai/favicon.ico | tags: AI, 框架, RAG, 数据
 - [Transformers](https://github.com/huggingface/transformers) - Hugging Face Transformers 是最流行的预训练模型库，支持 PyTorch、TensorFlow、JAX。 | icon: https://github.com/favicon.ico | tags: AI, 库, PyTorch, 深度学习
+- [Pi](https://github.com/earendil-works/pi) - Pi 是开源 AI Agent 工具套件，包含编码 Agent CLI、统一多模型 API、TUI/Web UI，54k+ Stars。 | icon: https://github.com/favicon.ico | tags: AI, Agent, TypeScript, CLI, 开源
+- [Mastra](https://mastra.ai/) - Mastra 是 Gatsby 团队打造的 TypeScript Agent 框架，支持 Agent、Workflow、Memory、RAG、Evals，生产级 AI 应用首选。 | icon: https://mastra.ai/favicon.ico | tags: AI, Agent, TypeScript, 框架, Gatsby
+- [AutoGen](https://github.com/microsoft/autogen) - Microsoft 开源的多 Agent 协作框架，支持对话编程、代码生成、工具调用，适合构建复杂 AI 工作流。 | icon: https://github.com/favicon.ico | tags: AI, Agent, Python, 微软, 开源
+- [CrewAI](https://www.crewai.com/) - CrewAI 是角色驱动的多 Agent 编排框架，让 AI Agent 像团队一样协作完成任务。 | icon: https://www.crewai.com/favicon.ico | tags: AI, Agent, Python, 编排, 自动化
+- [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) - OpenAI 官方 Agents SDK，简化 Agent 开发，内置工具调用、Guardrails、Tracing。 | icon: https://github.com/favicon.ico | tags: AI, Agent, Python, OpenAI, SDK
 
-## AI Skill
+## AI Skill/Prompt
 > id: ai-skill | icon: fluent-emoji:flexed-biceps
 
 - [Superpowers](https://github.com/obra/superpowers) - Superpowers 是 AI 编程助手的技能框架，为 Claude Code、Cursor 等提供 TDD、代码审查、子代理驱动的系统化开发流程。 | icon: https://github.com/favicon.ico | tags: AI, 开发, 框架, TDD, 开源
+- [Ponytail](https://github.com/AnandChowdhary/ponytail) - Ponytail 是 AI Agent 代码精简插件，自动检测并移除项目中未被引用的冗余代码，保持代码库整洁。 | icon: https://github.com/favicon.ico | tags: AI, 开发, 代码清理, 开源
 
 
 ## AI本地运行
@@ -230,16 +249,21 @@
 - [Three.js](https://threejs.org/) - Three.js 是最流行的 WebGL 3D 图形库，提供丰富的 3D 渲染功能和便捷的 API。 | icon: https://threejs.org/favicon.ico | tags: WebGL, 3D, 图形, 渲染
 - [Babylon.js](https://www.babylonjs.com/) - Babylon.js 是功能强大的 WebGL 3D 引擎，提供游戏级渲染能力和完整的工具链。 | icon: https://www.babylonjs.com/favicon.ico | tags: WebGL, 3D, 图形, 游戏引擎
 
-## AI开发库
+## 前端 AI 推理库
 > id: frontend-ai | icon: fluent-emoji:robot
 
-- [LangChain.js](https://js.langchain.com/) - LangChain.js 是 LangChain 的 JavaScript/TypeScript 版本，用于构建 AI 应用。 | icon: https://js.langchain.com/favicon.ico | tags: AI, 框架, JavaScript, TypeScript, LLM
-- [Transformers.js](https://huggingface.co/docs/transformers.js) - Transformers.js 是 Hugging Face 的 JavaScript 库，在浏览器中运行预训练模型。 | icon: https://huggingface.co/favicon.ico | tags: AI, 浏览器, 模型推理, Hugging Face
-- [Vercel AI SDK](https://sdk.vercel.ai/) - Vercel AI SDK 是构建 AI 应用的工具包，支持 Next.js、React、Vue 等。 | icon: https://sdk.vercel.ai/favicon.ico | tags: AI, SDK, Next.js, Vercel
-- [OpenAI Node.js SDK](https://github.com/openai/openai-node) - OpenAI 官方 Node.js SDK，用于调用 GPT、DALL·E 等 API。 | icon: https://github.com/favicon.ico | tags: AI, SDK, OpenAI, Node.js
-- [Anthropic SDK for JS](https://github.com/anthropics/anthropic-sdk-typescript) - Anthropic 官方 TypeScript SDK，用于调用 Claude API。 | icon: https://github.com/favicon.ico | tags: AI, SDK, Claude, TypeScript
-- [LangGraph.js](https://github.com/langchain-ai/langgraphjs) - LangGraph 的 JavaScript 版本，用于构建有状态的 AI 应用。 | icon: https://github.com/favicon.ico | tags: AI, 框架, 工作流, Agent
-- [ml5.js](https://ml5js.org/) - ml5.js 是基于 TensorFlow.js 的友好机器学习库，提供简洁 API 实现图像分类、姿态检测、文本生成等 AI 功能，面向创意编码和初学者。 | icon: https://ml5js.org/favicon.ico | tags: AI, 浏览器, 机器学习, TensorFlow.js, 创意编码
+- [Transformers.js](https://huggingface.co/docs/transformers.js) - Transformers.js 是 Hugging Face 的 JavaScript 库，在浏览器中直接运行预训练模型，无需后端。 | icon: https://huggingface.co/favicon.ico | tags: AI, 浏览器, 模型推理, Hugging Face
+- [TensorFlow.js](https://www.tensorflow.org/js) - TensorFlow.js 是 Google 的浏览器端机器学习库，支持模型训练与推理。 | icon: https://www.tensorflow.org/favicon.ico | tags: AI, 浏览器, 机器学习, Google
+- [ml5.js](https://ml5js.org/) - ml5.js 是基于 TensorFlow.js 的友好机器学习库，面向创意编码和初学者，提供图像分类、姿态检测等简洁 API。 | icon: https://ml5js.org/favicon.ico | tags: AI, 浏览器, 机器学习, TensorFlow.js, 创意编码
+- [ONNX Runtime Web](https://onnxruntime.ai/docs/get-started/with-javascript/web.html) - ONNX Runtime Web 支持在浏览器中运行 ONNX 格式的机器学习模型，跨框架兼容。 | icon: https://onnxruntime.ai/favicon.ico | tags: AI, 浏览器, 模型推理, ONNX, 跨框架
+- [MediaPipe](https://developers.google.com/mediapipe) - Google MediaPipe 是跨平台机器学习解决方案，提供浏览器端的人脸检测、手势识别、姿态估计等预训练模型。 | icon: https://developers.google.com/favicon.ico | tags: AI, 浏览器, 计算机视觉, Google, 实时
+
+## AI SDK / API 客户端
+> id: frontend-ai-sdk | icon: fluent-emoji:gear
+
+- [Vercel AI SDK](https://sdk.vercel.ai/) - Vercel AI SDK 是构建 AI 应用的工具包，支持流式响应、工具调用和 React/Vue/Svelte 集成。 | icon: https://sdk.vercel.ai/favicon.ico | tags: AI, SDK, 流式响应, Vercel
+- [OpenAI Node.js SDK](https://github.com/openai/openai-node) - OpenAI 官方 Node.js SDK，支持 GPT、DALL·E、Whisper 等 API。 | icon: https://github.com/favicon.ico | tags: AI, SDK, OpenAI, Node.js
+- [Anthropic SDK for JS](https://github.com/anthropics/anthropic-sdk-typescript) - Anthropic 官方 TypeScript SDK，支持 Claude API 和流式响应。 | icon: https://github.com/favicon.ico | tags: AI, SDK, Claude, TypeScript
 
 ## WebGIS 地图
 > id: frontend-webgis | icon: fluent-emoji:world-map
@@ -255,12 +279,149 @@
 - [高德地图 JS API](https://lbs.amap.com/api/javascript-api-v2/summary) - 高德地图 JavaScript API 是国内主流地图服务，支持 2D/3D 地图、路径规划等功能。 | icon: https://lbs.amap.com/favicon.ico | tags: WebGIS, 地图, 国内, 高德
 - [百度地图 JS API](https://lbsyun.baidu.com/index.php?title=jspopularGL) - 百度地图 JavaScript API 提供地图展示、定位、路径规划等服务，支持 WebGL 渲染。 | icon: https://lbsyun.baidu.com/favicon.ico | tags: WebGIS, 地图, 国内, 百度
 
-# Node.js框架
+## 游戏/工具库
+> id: frontend-game | icon: fluent-emoji:joystick
+
+- [rot.js](https://rot.js.org/) - rot.js 是纯 JS Roguelike 游戏开发工具库，提供地图生成、FOV 视野计算、路径寻路等算法。 | icon: https://rot.js.org/favicon.ico | tags: 游戏库, Roguelike, JavaScript, 地图生成
+- [KaBoom.js](https://kaboomjs.com/) - KaBoom.js 是轻松上手的 JS 游戏编程库，内置物理引擎、碰撞检测和丰富 API。 | icon: https://kaboomjs.com/favicon.ico | tags: 游戏库, JavaScript, 2D, 物理
+- [melonJS](https://melonjs.org/) - melonJS 是轻量级 HTML5 2D 游戏引擎，支持碰撞检测、精灵动画和物理效果。 | icon: https://melonjs.org/favicon.ico | tags: 游戏引擎, JavaScript, 2D, HTML5
+- [Excalibur.js](https://excaliburjs.com/) - Excalibur.js 是 TypeScript 驱动的 2D 游戏引擎，API 友好，适合快速原型开发。 | icon: https://excaliburjs.com/favicon.ico | tags: 游戏引擎, TypeScript, 2D, 跨平台
+- [LittleJS](https://littlejsengine.com/) - LittleJS 是极致轻量的 JS 2D 游戏引擎，体积 < 10KB，适合 Game Jam 和小游戏。 | icon: https://littlejsengine.com/favicon.ico | tags: 游戏引擎, JavaScript, 轻量级, 2D
+- [Kontra.js](https://straker.github.io/kontra/) - Kontra.js 是极简 JS 游戏微库，专注于 Sprite 渲染和简单游戏循环。 | icon: https://straker.github.io/kontra/favicon.ico | tags: 游戏库, JavaScript, 微库, 2D
+
+# 云平台
+> id: cloud | icon: fluent-emoji:cloud
+
+## 前端部署平台
+> id: cloud-hosting | icon: fluent-emoji:rocket
+
+- [Vercel](https://vercel.com/) - Vercel 是全球领先的前端云平台，支持 Next.js、Nuxt、SvelteKit 等框架的零配置部署，全球边缘网络加速，CI/CD 集成开箱即用。 | icon: https://vercel.com/favicon.ico | tags: 云平台, 前端, 部署, Serverless, JAMstack
+- [Netlify](https://www.netlify.com/) - Netlify 是知名的 JAMstack 前端云平台，支持静态站点部署、Serverless Functions、表单处理和 A/B 测试，提供免费套餐。 | icon: https://www.netlify.com/favicon.ico | tags: 云平台, 前端, 部署, Serverless, JAMstack
+- [Cloudflare Pages](https://pages.cloudflare.com/) - Cloudflare Pages 是基于 Cloudflare 全球网络的 JAMstack 部署平台，与 Cloudflare Workers 无缝集成，极速全球分发。 | icon: https://pages.cloudflare.com/favicon.ico | tags: 云平台, 前端, 部署, CDN, Edge
+- [Render](https://render.com/) - Render 是全栈云平台，支持静态站点、Serverless Functions、持久化服务和 Cron Jobs，提供免费套餐。 | icon: https://render.com/favicon.ico | tags: 云平台, 前端, 后端, Serverless, 部署
+- [Railway](https://railway.app/) - Railway 是现代开发者云平台，支持 Node.js、Python、Go 等语言的直接部署，按使用量计费，界面简洁。 | icon: https://railway.app/favicon.ico | tags: 云平台, 部署, Serverless, 数据库, 付费
+- [Fly.io](https://fly.io/) - Fly.io 是将应用部署到全球边缘节点的平台，支持 Docker 容器和多种语言，主打低延迟体验。 | icon: https://fly.io/favicon.ico | tags: 云平台, 边缘计算, Docker, 部署, 全球
+- [Replit](https://replit.com/) - Replit 是浏览器内置开发+部署平台，支持 50+ 语言，一键部署网站和应用，配备 AI 编程助手。 | icon: https://replit.com/favicon.ico | tags: 云平台, IDE, 部署, Serverless, 在线开发
+- [StackBlitz](https://stackblitz.com/) - StackBlitz 是浏览器内在线 IDE，基于 WebContainer 技术可直接在浏览器中运行 Node.js、Vite 等，无需本地环境。 | icon: https://stackblitz.com/favicon.ico | tags: 云平台, IDE, 在线, WebContainer, 前端
+
+## 主流云服务商
+> id: cloud-major | icon: fluent-emoji:globe-showing-americas
+
+- [AWS (Amazon Web Services)](https://aws.amazon.com/) - AWS 是全球最大的云服务平台，提供计算、存储、数据库、AI/ML 等 200+ 服务，生态最完善。 | icon: https://aws.amazon.com/favicon.ico | tags: 云平台, 云服务商, 基础设施, AWS
+- [Google Cloud Platform](https://cloud.google.com/) - Google Cloud 是 Google 的云服务平台，在 AI/ML、Kubernetes、大数据领域优势显著，BigQuery 和 TensorFlow 生态领先。 | icon: https://cloud.google.com/favicon.ico | tags: 云平台, 云服务商, AI, Kubernetes, GCP
+- [Microsoft Azure](https://azure.microsoft.com/) - Azure 是 Microsoft 的企业级云平台，与 Windows、Office 365、M365 深度集成，混合云能力业界领先。 | icon: https://azure.microsoft.com/favicon.ico | tags: 云平台, 云服务商, 企业级, 混合云, Microsoft
+- [腾讯云国际版](https://www.tencentcloud.com/) - 腾讯云国际版面向全球开发者，提供云服务器、CDN、游戏云、视频解决方案，亚太地区节点丰富。 | icon: https://www.tencentcloud.com/favicon.ico | tags: 云平台, 云服务商, 国内, 腾讯, 亚太
+- [阿里云国际版](https://www.alibabacloud.com/) - 阿里云国际版是全球第三大云服务商，提供弹性计算、数据库、存储、CDN 等服务，亚太和中东市场领先。 | icon: https://www.alibabacloud.com/favicon.ico | tags: 云平台, 云服务商, 国内, 阿里, 亚太
+- [DigitalOcean](https://www.digitalocean.com/) - DigitalOcean 是面向开发者和 SMB 的简单云平台，以高性价比和易用性著称，Droplets 云服务器广受欢迎。 | icon: https://www.digitalocean.com/favicon.ico | tags: 云平台, 云服务商, VPS, 开发者友好, 简单
+- [Linode (Akamai)](https://www.linode.com/) - Linode 现属于 Akamai，是老牌 VPS 云服务商，以稳定、高性能和出色文档著称，现加入 Akamai 边缘云网络。 | icon: https://www.linode.com/favicon.ico | tags: 云平台, 云服务商, VPS, Linux, Akamai
+- [Oracle Cloud](https://www.oracle.com/cloud/) - Oracle Cloud 提供强大的数据库和 SaaS 服务，Always Free 永久免费套餐性价比高，适合运行 Oracle 数据库工作负载。 | icon: https://www.oracle.com/favicon.ico | tags: 云平台, 云服务商, 数据库, Oracle, 免费套餐
+- [华为云](https://www.huaweicloud.com/) - 华为云是华为公有云品牌，提供计算、存储、数据库、AI、容器等企业级云服务，鲲鹏芯片和鸿蒙生态深度集成。 | icon: https://www.huaweicloud.com/favicon.ico | tags: 云平台, 云服务商, 企业级, 华为, 混合云, 国内
+
+## Serverless / Edge Functions
+> id: cloud-serverless | icon: fluent-emoji:cloud-with-lightning
+
+- [Cloudflare Workers](https://workers.cloudflare.com/) - Cloudflare Workers 是在 Cloudflare 边缘节点运行的 Serverless 平台，以超低延迟和全球分布著称，支持 V8 Isolates 技术。 | icon: https://workers.cloudflare.com/favicon.ico | tags: Serverless, 边缘计算, Cloudflare, 极速, 无服务器
+- [Vercel Functions](https://vercel.com/docs/functions) - Vercel Functions 是 Vercel 平台的 Serverless Functions，与 Next.js 和前端部署无缝集成，开箱即用。 | icon: https://vercel.com/favicon.ico | tags: Serverless, Vercel, 前端, 无服务器, 函数
+- [AWS Lambda](https://aws.amazon.com/lambda/) - AWS Lambda 是 AWS 的开创性 Serverless 服务，按执行次数和时长计费，深度集成 AWS 生态。 | icon: https://aws.amazon.com/favicon.ico | tags: Serverless, AWS, 无服务器, Lambda, 函数
+- [Azure Functions](https://azure.microsoft.com/products/functions) - Azure Functions 是 Microsoft 的 Serverless 服务，深度集成 Azure 服务，支持多种触发器和工作流编排。 | icon: https://azure.microsoft.com/favicon.ico | tags: Serverless, Azure, 无服务器, Microsoft, 函数
+- [Google Cloud Functions](https://cloud.google.com/functions) - Google Cloud Functions 是 GCP 的 Serverless 函数服务，支持 Node.js、Python、Go 等语言，与 GCP 生态深度集成。 | icon: https://cloud.google.com/favicon.ico | tags: Serverless, Google Cloud, 无服务器, 函数, GCP
+- [阿里云函数计算 FC](https://www.aliyun.com/product/fc) - 阿里云函数计算（FC）是阿里云的 Serverless 计算服务，支持 Node.js、Python、PHP 等语言，与阿里云生态深度集成。 | icon: https://www.aliyun.com/favicon.ico | tags: Serverless, 阿里云, 无服务器, 函数, 国内
+- [腾讯云云函数 SCF](https://cloud.tencent.com/product/scf) - 腾讯云云函数（SCF）是腾讯云的 Serverless 计算服务，支持在线编辑、触发器配置和微信生态集成。 | icon: https://cloud.tencent.com/favicon.ico | tags: Serverless, 腾讯云, 无服务器, 函数, 国内
+
+## 工作流自动化
+> id: cloud-automation | icon: fluent-emoji:repeat-button
+
+- [Zapier](https://zapier.com/) - Zapier 是最流行的在线工作流自动化平台，连接 6000+ 应用，无需代码即可实现跨服务自动化，是个人效率神器。 | icon: https://zapier.com/favicon.ico | tags: 工作流自动化, 无代码, SaaS集成, 效率, 自动化
+- [Make (formerly Integromat)](https://www.make.com/) - Make 是强大的可视化工作流自动化平台，比 Zapier 更灵活，支持复杂的数据转换、迭代和并行任务编排。 | icon: https://www.make.com/favicon.ico | tags: 工作流自动化, 无代码, 自动化, 可视化, 集成
+- [IFTTT](https://ifttt.com/) - IFTTT 是老牌自动化平台，以「如果这个、那么那个」逻辑连接物联网设备和 Web 服务，简洁易用。 | icon: https://ifttt.com/favicon.ico | tags: 工作流自动化, 物联网, Webhooks, 自动化, IoT
+
+## BaaS (后端即服务)
+> id: cloud-baas | icon: fluent-emoji:floppy-disk
+
+- [Firebase](https://firebase.google.com/) - Firebase 是 Google 的 BaaS 平台，提供实时数据库、认证、托管、Cloud Messaging 等服务，移动端开发首选。 | icon: https://firebase.google.com/favicon.ico | tags: BaaS, Google, 移动, 实时数据库, 认证
+- [Supabase](https://supabase.com/) - Supabase 是开源的 Firebase 替代品，基于 PostgreSQL，提供实时数据库、认证、存储、Edge Functions。 | icon: https://supabase.com/favicon.ico | tags: BaaS, 开源, PostgreSQL, 实时数据库, Firebase替代
+- [Airtable](https://airtable.com/) - Airtable 是结合电子表格和数据库的 BaaS 平台，灵活可定制，支持视图、自动化和工作流，适合作为轻量级后台。 | icon: https://airtable.com/favicon.ico | tags: BaaS, 数据库, 低代码, 后台, 在线表格
+
+## CDN & DNS & 域名
+> id: cloud-cdn | icon: fluent-emoji:globe-with-meridians
+
+- [Fastly](https://www.fastly.com/) - Fastly 是高性能 CDN 和边缘计算平台，以实时配置推送和 VCL 可编程能力著称。 | icon: https://www.fastly.com/favicon.ico | tags: CDN, 边缘计算, 高性能, 可编程, VCL
+- [Akamai](https://www.akamai.com/) - Akamai 是全球最大 CDN 服务商，在企业级市场占主导地位，拥有最大带宽和覆盖范围。 | icon: https://www.akamai.com/favicon.ico | tags: CDN, 企业级, 全球, DNS, 安全
+- [Cloudflare Registrar](https://www.cloudflare.com/products/registrar/) - Cloudflare Registrar 是由 Cloudflare 提供的域名注册服务，域名隐私保护无额外收费，转入转出无隐藏费用。 | icon: https://www.cloudflare.com/favicon.ico | tags: 域名, DNS, Cloudflare, 隐私, 注册
+- [Namecheap](https://www.namecheap.com/) - Namecheap 是全球知名域名注册商，价格实惠，界面友好，隐私保护免费，支持一口价域名交易。 | icon: https://www.namecheap.com/favicon.ico | tags: 域名, 注册, 隐私, 交易, Namecheap
+- [GoDaddy](https://www.godaddy.com/) - GoDaddy 是全球最大的域名注册商，提供域名交易、虚拟主机、企业邮箱等一站式服务。 | icon: https://www.godaddy.com/favicon.ico | tags: 域名, 注册, 主机, 企业邮箱, DNS
+
+## 数据库服务
+> id: cloud-database | icon: fluent-emoji:floppy-disk
+
+- [PlanetScale](https://planetscale.com/) - PlanetScale 是基于 MySQL 的无服务器数据库平台，提供分支、热重载和非阻塞 schema 变更能力。 | icon: https://planetscale.com/favicon.ico | tags: 数据库, MySQL, Serverless, 分支, Vitess
+- [Neon](https://neon.tech/) - Neon 是开源的 Serverless PostgreSQL 数据库，支持分支、 scale-to-zero 和自动缩放，按使用量计费。 | icon: https://neon.tech/favicon.ico | tags: 数据库, PostgreSQL, Serverless, 分支, 开源
+- [MongoDB Atlas](https://www.mongodb.com/atlas) - MongoDB Atlas 是 MongoDB 官方云服务，提供完全托管的 MongoDB 数据库，支持全球多区域部署。 | icon: https://www.mongodb.com/favicon.ico | tags: 数据库, MongoDB, NoSQL, 云服务, 全球
+- [Redis Cloud](https://redis.com/redis-cloud/cloud-overview/) - Redis Cloud 是 Redis 官方云服务，提供完全托管的 Redis 缓存和数据库，支持多种云服务商。 | icon: https://redis.com/favicon.ico | tags: 数据库, Redis, 缓存, 云服务, 托管
+- [Upstash](https://upstash.com/) - Upstash 是面向 Serverless 的 Redis 和 Kafka 服务，按请求计费，支持 REST API，与 Vercel/Cloudflare 深度集成。 | icon: https://upstash.com/favicon.ico | tags: 数据库, Redis, Serverless, Kafka, 边缘计算
+- [腾讯云数据库 CDB](https://cloud.tencent.com/product/cdb) - 腾讯云数据库（CDB）提供 MySQL、PostgreSQL、MongoDB、Redis 等多种数据库引擎的完全托管服务，支持自动备份和读写分离。 | icon: https://cloud.tencent.com/favicon.ico | tags: 数据库, 腾讯云, MySQL, PostgreSQL, 托管, 国内
+- [阿里云云数据库 RDS](https://www.aliyun.com/product/rds) - 阿里云关系型数据库服务（RDS）提供 MySQL、SQL Server、PostgreSQL、PPAS 等引擎，支持自动备份和弹性伸缩。 | icon: https://www.aliyun.com/favicon.ico | tags: 数据库, 阿里云, MySQL, PostgreSQL, 托管, 国内
+
+## 容器与 Kubernetes
+> id: cloud-container | icon: fluent-emoji:package
+
+- [Docker Hub](https://hub.docker.com/) - Docker Hub 是全球最大的容器镜像仓库，提供官方镜像、团队管理和自动化构建服务。 | icon: https://hub.docker.com/favicon.ico | tags: 容器, Docker, 镜像仓库, CI/CD, 镜像
+- [GitHub Container Registry](https://github.com/features/packages) - GitHub Container Registry 是 GitHub 的容器镜像托管服务，与 GitHub Actions 和仓库深度集成。 | icon: https://github.com/favicon.ico | tags: 容器, GitHub, 镜像仓库, CI/CD, 镜像
+- [Amazon ECR](https://aws.amazon.com/ecr/) - Amazon ECR 是 AWS 的完全托管容器镜像注册服务，与 ECS 和 EKS 无缝集成，高可用。 | icon: https://aws.amazon.com/favicon.ico | tags: 容器, AWS, 镜像仓库, ECS, EKS
+- [GitHub Actions](https://github.com/features/actions) - GitHub Actions 是 GitHub 的 CI/CD 和自动化平台，支持容器构建、云部署和自定义工作流。 | icon: https://github.com/features/actions/favicon.ico | tags: CI/CD, GitHub, 自动化, 容器, 持续集成
+- [GitLab CI/CD](https://docs.gitlab.com/ee/ci/) - GitLab CI/CD 是 GitLab 内置的 CI/CD 平台，与 GitLab 仓库、容器镜像仓库和 Kubernetes 深度集成。 | icon: https://about.gitlab.com/favicon.ico | tags: CI/CD, GitLab, 自动化, 容器, 持续集成
+- [Argo CD](https://argoproj.github.io/cd/) - Argo CD 是 Kubernetes 的声明式 GitOps 持续交付工具，以 Git 为单一真相来源实现自动化部署。 | icon: https://argoproj.github.io/favicon.ico | tags: Kubernetes, GitOps, 持续部署, 自动化, 容器
+- [Rancher](https://www.rancher.com/) - Rancher 是 Kubernetes 管理平台，简化多集群部署和管理，提供直观的 Web UI。 | icon: https://www.rancher.com/favicon.ico | tags: Kubernetes, 管理, 平台, 多集群, Rancher
+- [腾讯云容器服务 TKE](https://cloud.tencent.com/product/tke) - 腾讯云容器服务（TKE）是完全托管的 Kubernetes 服务，支持一键部署、弹性伸缩和灰度发布，与腾讯云生态深度集成。 | icon: https://cloud.tencent.com/favicon.ico | tags: 容器, Kubernetes, 腾讯云, 托管K8s, 容器服务, 国内
+- [阿里云容器服务 ACK](https://www.aliyun.com/product/ack) - 阿里云容器服务（ACK）是阿里云的完全托管 Kubernetes 服务，支持 Docker 容器管理、Auto Scaling 和日志监控。 | icon: https://www.aliyun.com/favicon.ico | tags: 容器, Kubernetes, 阿里云, 托管K8s, 容器服务, 国内
+
+# 移动开发
+> id: mobile | icon: fluent-emoji:mobile-phone
+
+## 跨平台
+> id: mobile-cross | icon: fluent-emoji:mobile-phone
+
+- [Flutter](https://flutter.dev/) - Flutter 是 Google 开源的跨平台 UI 框架，使用 Dart 语言，一套代码同时构建 iOS 和 Android 应用。 | icon: https://flutter.dev/favicon.ico | tags: 移动开发, 跨平台, UI框架, Google
+- [React Native](https://reactnative.dev/) - React Native 是 Facebook 开源的跨平台移动开发框架，使用 JavaScript/TypeScript 构建原生应用。 | icon: https://reactnative.dev/favicon.ico | tags: 移动开发, 跨平台, React, JavaScript
+- [uni-app](https://uniapp.dcloud.net.cn/) - 都说一套代码多端运行，实际多端报错，但考虑到微信小程序生态兼容性，仍是跨端首选。 | icon: https://uniapp.dcloud.net.cn/favicon.ico | tags: 移动开发, 跨平台, Vue, 微信小程序
+- [Capacitor](https://capacitorjs.com/) - Capacitor 是 Ionic 团队开源的跨平台原生容器，使用 Web 技术构建 iOS、Android 和桌面应用。 | icon: https://capacitorjs.com/favicon.ico | tags: 移动开发, 跨平台, Web技术, 原生容器
+- [Cordova](https://cordova.apache.org/) - 跨平台混合开发的时代记忆。WebView + 插件桥接原生的鼻祖级方案，当年 PhoneGap/Cordova 几乎就是「把网页变成 App」的代名词，如今虽已淡出主流，但不少老项目的底层仍是它。 | icon: https://cordova.apache.org/favicon.ico | tags: 移动开发, 跨平台, WebView, 混合开发
+- [Ionic](https://ionicframework.com/) - 不推荐。多年混合跨平台开发真实踩坑经历：项目规模上来后性能瓶颈明显，最终只能从 Android 原生层入手优化，得不偿失。 | icon: https://ionicframework.com/favicon.ico | tags: 移动开发, 跨平台, Web Components, UI框架
+- [Expo](https://expo.dev/) - Expo 是 React Native 开发工具链，提供开发、构建、部署一站式服务，简化 RN 开发流程。 | icon: https://expo.dev/favicon.ico | tags: React Native, 开发工具, 移动开发, TypeScript
+- [NativeScript](https://nativescript.org/) - NativeScript 是开源的跨平台框架，使用 Angular、Vue 或 TypeScript 构建原生 iOS 和 Android 应用。 | icon: https://nativescript.org/favicon.ico | tags: 移动开发, 跨平台, Angular, Vue
+- [Taro](https://taro.jd.com/) - Taro 是京东开源的跨平台开发框架，使用 React/Vue 语法，一套代码编译到微信小程序、H5、React Native 等多端。 | icon: https://taro.jd.com/favicon.ico | tags: 移动开发, 跨平台, React, 微信小程序
+
+## Android
+> id: mobile-android | icon: logos:android-icon
+
+- [Jetpack Compose](https://developer.android.com/compose) - Android 官方现代原生 UI 工具包，声明式 Kotlin API，告别 XML 布局。 | icon: https://developer.android.com/favicon.ico | tags: Android, UI, Jetpack, Kotlin
+- [Material Design 3](https://m3.material.io/) - Google 最新设计语言，提供动态配色、组件库和设计规范。 | icon: https://m3.material.io/favicon.ico | tags: Android, 设计, Material, UI
+- [Kotlin](https://kotlinlang.org/) - Android 官方首选编程语言，简洁、安全、与 Java 互操作。 | icon: https://kotlinlang.org/favicon.ico | tags: Android, 语言, Kotlin
+- [Android Studio](https://developer.android.com/studio) - 官方 Android IDE，集成模拟器、性能分析、布局编辑器。 | icon: https://developer.android.com/favicon.ico | tags: Android, IDE, 开发工具
+
+## iOS
+> id: mobile-ios | icon: logos:apple
+
+- [SwiftUI](https://developer.apple.com/xcode/swiftui/) - Apple 官方声明式 UI 框架，跨所有 Apple 平台共享代码。 | icon: https://developer.apple.com/favicon.ico | tags: iOS, Swift, UI, 声明式
+- [UIKit](https://developer.apple.com/documentation/uikit) - iOS 经典命令式 UI 框架，组件丰富、生态成熟，覆盖所有底层能力。 | icon: https://developer.apple.com/favicon.ico | tags: iOS, UIKit, UI, 经典
+- [Swift](https://www.swift.org/) - Apple 官方编程语言，现代化、安全、高性能。 | icon: https://www.swift.org/favicon.ico | tags: iOS, Swift, 语言
+- [Xcode](https://developer.apple.com/xcode/) - Apple 官方 IDE，集成 Interface Builder、Instruments、Simulator。 | icon: https://developer.apple.com/favicon.ico | tags: iOS, IDE, 开发工具
+
+# 桌面应用
+> id: desktop | icon: fluent-emoji:laptop
+
+- [Electron](https://electronjs.org/) - Electron 是 GitHub 开源的跨平台桌面应用框架，使用 Web 技术（HTML/CSS/JS）构建 Windows、macOS、Linux 应用。 | icon: https://electronjs.org/favicon.ico | tags: 桌面应用, 跨平台, Web技术, GitHub
+- [Tauri](https://tauri.app/) - Tauri 是 Rust 编写的轻量级跨平台应用框架，比 Electron 更小更快，支持 Windows、macOS、Linux、移动端。 | icon: https://tauri.app/favicon.ico | tags: 桌面应用, 跨平台, Rust, 轻量级
+- [Neutralino](https://neutralino.js.org/) - Neutralino 是轻量级跨平台桌面应用框架，体积仅 1MB 左右，使用系统 WebView 渲染。 | icon: https://neutralino.js.org/favicon.ico | tags: 桌面应用, 跨平台, 轻量级, Web技术
+- [NW.js](https://nwjs.io/) - NW.js 是基于 Chromium 和 Node.js 的跨平台桌面应用框架，直接调用 Node.js 模块，支持系统 API。 | icon: https://nwjs.io/favicon.ico | tags: 桌面应用, 跨平台, Chromium, Node.js
+- [pywebview](https://pywebview.flowrl.com/) - pywebview 是轻量级跨平台桌面应用框架，使用 Python 后端和 Web 前端构建原生 GUI 应用。 | icon: https://pywebview.flowrl.com/favicon.ico | tags: 桌面应用, Python, 跨平台, GUI
+- [Quasar](https://quasar.dev/) - Quasar 是基于 Vue.js 的跨平台框架，一套代码同时构建 SPA、PWA、桌面应用和移动端应用。 | icon: https://quasar.dev/favicon.ico | tags: 跨平台, Vue, 桌面应用, 移动应用
+
+# 后端生态
+> id: backend | icon: fluent-emoji:control-knobs
+
+## Node.js
 > id: nodejs | icon: logos:nodejs-icon
-
-
-## Web框架
-> id: nodejs-web | icon: logos:nodejs-icon
 
 - [Express.js](https://expressjs.com/) - Express 是快速、开放、极简的 Node.js Web 框架，是最流行的 Node.js 框架。 | icon: https://expressjs.com/favicon.ico | tags: Node.js, 后端框架, Web
 - [Koa](https://koajs.com/) - Koa 是由 Express 原班人马打造的下一代 Web 框架，基于 async/await。 | icon: https://koajs.com/favicon.ico | tags: Node.js, 后端框架, Web
@@ -269,19 +430,11 @@
 - [Hono](https://hono.dev/) - Hono 是 ultrafast 的 Web 框架，支持 Cloudflare Workers、Deno、Bun 等边缘运行时。 | icon: https://hono.dev/favicon.ico | tags: Node.js, 边缘计算, 高性能, TypeScript
 - [AdonisJS](https://adonisjs.com/) - AdonisJS 是功能齐全的 Node.js Web 框架，灵感来自 Laravel。 | icon: https://adonisjs.com/favicon.ico | tags: Node.js, 后端框架, MVC, 全栈
 - [tRPC](https://trpc.io/) - tRPC 是端到端类型安全的 API 框架，无需代码生成。 | icon: https://trpc.io/favicon.ico | tags: Node.js, API, TypeScript, 全栈
-
-## 多线程/并发
-> id: nodejs-threads | icon: logos:nodejs-icon
-
 - [Piscina](https://piscinajs.dev/) - Piscina.js 是高性能的 Node.js 线程池库，轻松实现 CPU 密集型任务的并行处理，最大化 CPU 利用率。 | icon: https://piscinajs.dev/favicon.ico | tags: Node.js, 多线程, 线程池, 性能优化
 - [workerpool](https://www.npmjs.com/package/workerpool) - workerpool 是一个轻量级的 Node.js 线程池实现，用于在 worker 线程中执行耗时的计算任务。 | icon: https://www.npmjs.com/favicon.ico | tags: Node.js, 多线程, 线程池, Worker
 - [threads.js](https://threads.js.org/) - threads.js 是 Node.js 和浏览器的多线程库，简化了 Web Workers 和 Worker Threads 的使用。 | icon: https://threads.js.org/favicon.ico | tags: Node.js, 多线程, Web Workers, 并发
 - [tinypool](https://github.com/piscinajs/tinypool) - tinypool 是 Node.js 的轻量级通用线程池，基于 worker_threads 构建，支持任务队列和并行执行。 | icon: https://github.com/favicon.ico | tags: Node.js, 多线程, 线程池, 轻量级
 - [wa-sqlite](https://wa-sqlite.github.io/) - wa-sqlite 是高性能的 SQLite 编译版本，支持 WebAssembly 和 Web Workers，可在浏览器中高效运行。 | icon: https://wa-sqlite.github.io/favicon.ico | tags: SQLite, WebAssembly, Web Workers, 数据库
-
-## 数据库/ORM
-> id: nodejs-database | icon: mdi:database
-
 - [Prisma](https://www.prisma.io/) - Prisma 是下一代 Node.js/TypeScript ORM，提供类型安全的数据库访问，支持 PostgreSQL、MySQL、SQLite 等。 | icon: https://www.prisma.io/favicon.ico | tags: Node.js, ORM, TypeScript, 数据库
 - [TypeORM](https://typeorm.io/) - TypeORM 是支持 TypeScript 和 JavaScript 的 ORM，支持 Active Record 和 Data Mapper 模式。 | icon: https://typeorm.io/favicon.ico | tags: Node.js, ORM, TypeScript, 数据库
 - [Drizzle ORM](https://orm.drizzle.team/) - Drizzle ORM 是轻量级、类型安全的 TypeScript ORM，专注于性能和开发者体验。 | icon: https://orm.drizzle.team/favicon.ico | tags: Node.js, ORM, TypeScript, 数据库
@@ -293,9 +446,47 @@
 - [node-postgres](https://node-postgres.com/) - node-postgres (pg) 是 PostgreSQL 的 Node.js 客户端，支持连接池和预处理语句。 | icon: https://node-postgres.com/favicon.ico | tags: Node.js, PostgreSQL, 数据库, 客户端
 - [mysql2](https://github.com/sidorares/node-mysql2) - mysql2 是 MySQL 的 Node.js 客户端，支持预处理语句和连接池，比 mysql 模块更快。 | icon: https://github.com/favicon.ico | tags: Node.js, MySQL, 数据库, 客户端
 - [ioredis](https://github.com/luin/ioredis) - ioredis 是高性能的 Redis 客户端，支持集群、哨兵、管道和 Lua 脚本。 | icon: https://github.com/favicon.ico | tags: Node.js, Redis, 缓存, 客户端
+- [BullMQ](https://bullmq.io/) - BullMQ 是 Node.js 最流行的 Redis 驱动消息队列，支持延迟任务、重复任务、优先级队列和工作流编排，适合微服务和后台任务调度。 | icon: https://bullmq.io/favicon.ico | tags: Node.js, 消息队列, Redis, 任务调度, 微服务
+- [RabbitMQ](https://www.rabbitmq.com/) - RabbitMQ 是开源消息代理，支持 AMQP、MQTT、STOMP 协议和多种消息模式，企业级消息队列解决方案。 | icon: https://www.rabbitmq.com/favicon.ico | tags: 消息队列, RabbitMQ, AMQP, MQTT, 企业级, 微服务
+- [Apache Kafka](https://kafka.apache.org/) - Kafka 是 Apache 开源分布式事件流平台，高吞吐、持久化，用于实时数据管道和流处理。 | icon: https://kafka.apache.org/favicon.ico | tags: 消息队列, Kafka, 流处理, 事件流, 高吞吐, 分布式
+- [NATS](https://nats.io/) - NATS 是高性能云原生消息系统，极低延迟，支持发布/订阅、请求/回复和 JetStream 持久化。 | icon: https://nats.io/favicon.ico | tags: 消息队列, NATS, 云原生, 高性能, 边缘计算
+- [MQTT.js](https://github.com/mqttjs/MQTT.js) - MQTT.js 是 Node.js 的 MQTT 协议客户端，适用于 IoT 物联网设备和轻量级消息推送场景。 | icon: https://github.com/favicon.ico | tags: Node.js, MQTT, IoT, 物联网, 消息推送
+- [Socket.io](https://socket.io/) - Socket.IO 是 Node.js 实时双向通信库，支持 WebSocket 和长轮询降级，适用于聊天、协作、实时通知。 | icon: https://socket.io/favicon.ico | tags: Node.js, WebSocket, 实时通信, 双向, 事件驱动
+- [uWebSockets.js](https://github.com/uNetworking/uWebSockets.js) - uWebSockets.js 是 Node.js 的超高性能 WebSocket 和 HTTP 服务器，C++ 底层实现，延迟极低。 | icon: https://github.com/favicon.ico | tags: Node.js, WebSocket, 高性能, C++, 实时
+- [GraphQL Yoga](https://the-guild.dev/graphql/yoga-server) - GraphQL Yoga 是跨运行时的 GraphQL 服务端框架，支持 Node.js、Bun、Deno、Cloudflare Workers，提供订阅和 SSE 实时能力。 | icon: https://the-guild.dev/favicon.ico | tags: Node.js, GraphQL, API, 实时, 跨运行时
+- [gRPC-Node](https://grpc.io/docs/languages/node/) - gRPC Node.js 是 Google 高性能 RPC 框架的 Node.js 实现，基于 HTTP/2 和 Protocol Buffers，适用于微服务间通信。 | icon: https://grpc.io/favicon.ico | tags: Node.js, gRPC, RPC, HTTP2, 微服务, Protocol Buffers
 
-# Go生态
-> id: go-ecosystem | icon: logos:go
+## Bun
+> id: bun-ecosystem | icon: logos:bun
+
+- [Bun](https://bun.sh/) - Bun 是快速的 JavaScript 运行时、打包器、测试运行器和包管理器。 | icon: https://bun.sh/favicon.ico | tags: Bun, 运行时, 打包器, JavaScript
+- [Elysia](https://elysiajs.com/) - Elysia 是符合人体工程学的 Bun Web 框架，专注于类型安全和性能。 | icon: https://elysiajs.com/favicon.ico | tags: Node.js, Bun, 高性能, TypeScript
+- [Hono](https://hono.dev/) - Hono 是 ultrafast 的 Web 框架，支持 Cloudflare Workers、Deno、Bun 等边缘运行时。 | icon: https://hono.dev/favicon.ico | tags: Node.js, 边缘计算, 高性能, TypeScript, Bun
+- [Bun SQLite](https://bun.sh/docs/api/sqlite) - Bun 内置 SQLite 支持，零配置直接在 Bun 运行时中使用高性能 SQLite 数据库。 | icon: https://bun.sh/favicon.ico | tags: Bun, SQLite, 数据库, 内置
+- [Bun FFI](https://bun.sh/docs/api/ffi) - Bun FFI 提供高吞吐的 Rust/C++/Zig 原生扩展开发接口，无需绑定层。 | icon: https://bun.sh/favicon.ico | tags: Bun, FFI, Rust, C++, 原生扩展
+
+## Python
+> id: python | icon: logos:python
+
+### 后端框架
+
+- [Django](https://www.djangoproject.com/) - Django 是 Python 全栈 Web 框架，内置 ORM、认证、Admin，适合快速构建复杂应用。 | icon: https://www.djangoproject.com/favicon.ico | tags: Python, 后端框架, 全栈, ORM
+- [Flask](https://flask.palletsprojects.com/) - Flask 是轻量级 Python Web 微框架，灵活可扩展，适合 API 和小型应用。 | icon: https://flask.palletsprojects.com/favicon.ico | tags: Python, 后端框架, 微框架, API
+- [FastAPI](https://fastapi.tiangolo.com/) - FastAPI 是高性能 Python Web 框架，基于 Starlette 和 Pydantic，自动生成 OpenAPI 文档。 | icon: https://fastapi.tiangolo.com/favicon.ico | tags: Python, 后端框架, 高性能, OpenAPI
+- [Tornado](https://www.tornadoweb.org/) - Tornado 是 Python 异步网络框架，原生支持 WebSocket 和长连接，适合实时应用。 | icon: https://www.tornadoweb.org/favicon.ico | tags: Python, 后端框架, 异步, WebSocket
+- [Sanic](https://sanic.dev/) - Sanic 是 Python 异步 Web 框架，类 Flask API 设计，uvloop 驱动的极致性能。 | icon: https://sanic.dev/favicon.ico | tags: Python, 后端框架, 异步, 高性能
+- [Pyramid](https://trypyramid.com/) - Pyramid 是灵活的 Python Web 框架，从微框架到大型应用均可胜任，适合渐进式项目。 | icon: https://trypyramid.com/favicon.ico | tags: Python, 后端框架, 灵活, 渐进式
+
+### 爬虫/网络请求
+
+- [Scrapy](https://scrapy.org/) - Scrapy 是 Python 最流行的爬虫框架，支持异步、中间件、管道和数据导出。 | icon: https://scrapy.org/favicon.ico | tags: Python, 爬虫, 异步, 数据采集
+- [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) - Beautiful Soup 是 Python HTML/XML 解析库，配合 requests 使用，简单易上手的爬虫利器。 | icon: https://www.crummy.com/favicon.ico | tags: Python, 爬虫, HTML解析, 数据采集
+- [Playwright Python](https://playwright.dev/python/) - Playwright Python 是微软开源的浏览器自动化工具，支持 Chromium/Firefox/WebKit，适合动态页面爬取。 | icon: https://playwright.dev/favicon.ico | tags: Python, 爬虫, 浏览器自动化, 微软
+- [Selenium Python](https://selenium-python.readthedocs.io/) - Selenium Python 是老牌浏览器自动化框架，生态成熟，支持多种浏览器和分布式测试。 | icon: https://selenium-python.readthedocs.io/favicon.ico | tags: Python, 爬虫, 浏览器自动化, 测试
+- [Requests](https://docs.python-requests.org/) - Requests 是 Python 最流行的 HTTP 库，API 简洁优雅，HTTP 请求的首选工具。 | icon: https://docs.python-requests.org/favicon.ico | tags: Python, HTTP, 网络请求, 客户端
+
+## Go
+> id: backend-go | icon: logos:go
 
 - [Go](https://go.dev/) - Go 是 Google 开发的开源编程语言，以简洁、高效、并发支持著称。 | icon: https://go.dev/favicon.ico | tags: Go, 编程语言, Google, 并发
 - [Gin](https://gin-gonic.com/) - Gin 是最流行的 Go Web 框架，以高性能和轻量级著称，支持中间件和路由分组。 | icon: https://gin-gonic.com/favicon.ico | tags: Go, Web框架, 高性能, REST API
@@ -310,33 +501,37 @@
 - [gRPC](https://grpc.io/) - gRPC 是 Google 开源的高性能 RPC 框架，支持多语言和 Protocol Buffers。 | icon: https://grpc.io/favicon.ico | tags: Go, RPC, Google, Protocol Buffers
 - [Wanderlost](https://github.com/wanderlost/wanderlost) - Wanderlost 是 2025 年新发布的 Go 泛型工具库，提供类型安全的集合操作。 | icon: https://github.com/favicon.ico | tags: Go, 泛型, 工具库, 2025
 
-# 移动开发
-> id: mobile | icon: fluent-emoji:mobile-phone
+## PHP
+> id: backend-php | icon: logos:php
 
-- [Flutter](https://flutter.dev/) - Flutter 是 Google 开源的跨平台 UI 框架，使用 Dart 语言，一套代码同时构建 iOS 和 Android 应用。 | icon: https://flutter.dev/favicon.ico | tags: 移动开发, 跨平台, UI框架, Google
-- [React Native](https://reactnative.dev/) - React Native 是 Facebook 开源的跨平台移动开发框架，使用 JavaScript/TypeScript 构建原生应用。 | icon: https://reactnative.dev/favicon.ico | tags: 移动开发, 跨平台, React, JavaScript
-- [uni-app](https://uniapp.dcloud.net.cn/) - uni-app 是 DCloud 推出的跨平台开发框架，使用 Vue.js 语法，一套代码编译到 iOS、Android、H5 等平台。 | icon: https://uniapp.dcloud.net.cn/favicon.ico | tags: 移动开发, 跨平台, Vue, 微信小程序
-- [Capacitor](https://capacitorjs.com/) - Capacitor 是 Ionic 团队开源的跨平台原生容器，使用 Web 技术构建 iOS、Android 和桌面应用。 | icon: https://capacitorjs.com/favicon.ico | tags: 移动开发, 跨平台, Web技术, 原生容器
-- [Ionic](https://ionicframework.com/) - Ionic 是强大的跨平台移动开发框架，基于 Web Components，提供美观的 UI 组件。 | icon: https://ionicframework.com/favicon.ico | tags: 移动开发, 跨平台, Web Components, UI框架
-- [Expo](https://expo.dev/) - Expo 是 React Native 开发工具链，提供开发、构建、部署一站式服务，简化 RN 开发流程。 | icon: https://expo.dev/favicon.ico | tags: React Native, 开发工具, 移动开发, TypeScript
-- [NativeScript](https://nativescript.org/) - NativeScript 是开源的跨平台框架，使用 Angular、Vue 或 TypeScript 构建原生 iOS 和 Android 应用。 | icon: https://nativescript.org/favicon.ico | tags: 移动开发, 跨平台, Angular, Vue
-- [Taro](https://taro.jd.com/) - Taro 是京东开源的跨平台开发框架，使用 React/Vue 语法，一套代码编译到微信小程序、H5、React Native 等多端。 | icon: https://taro.jd.com/favicon.ico | tags: 移动开发, 跨平台, React, 微信小程序
+- [ThinkPHP](https://www.thinkphp.cn/) - 国内最流行的 PHP 开发框架，简单易用，文档丰富，适合快速开发中小型项目。 | icon: https://www.thinkphp.cn/favicon.ico | tags: PHP, 框架
+- [Laravel](https://laravel.com/) - 全球最受欢迎的 PHP 框架之一，提供优雅的 ORM、Artisan 命令行工具、Blade 模板引擎。 | icon: https://laravel.com/favicon.ico | tags: PHP, 框架
+- [Symfony](https://symfony.com/) - 企业级 PHP 框架，模块化设计，被 Laravel 等众多框架依赖其底层组件。 | icon: https://symfony.com/favicon.ico | tags: PHP, 框架, 企业级
+- [CodeIgniter](https://codeigniter.com/) - 轻量级 PHP 框架，几乎零配置，性能优异，适合小型项目快速启动。 | icon: https://codeigniter.com/favicon.ico | tags: PHP, 框架, 轻量
+- [Yii](https://www.yiiframework.com/) - 高性能 PHP 框架，Gii 代码生成器和 ActiveRecord 是其亮点。 | icon: https://www.yiiframework.com/favicon.ico | tags: PHP, 框架, 高性能
+- [phpMyAdmin](https://www.phpmyadmin.net/) - 全球最流行的 MySQL/MariaDB 数据库管理工具，Web 界面操作数据库。 | icon: https://www.phpmyadmin.net/favicon.ico | tags: PHP, 数据库, 管理工具
+- [Swoole](https://www.swoole.com/) - PHP 高性能协程网络通信引擎，支持 HTTP/TCP/WebSocket 服务器。 | icon: https://www.swoole.com/favicon.ico | tags: PHP, 协程, 高性能
+- [Slim](https://www.slimframework.com/) - PHP 微框架，路由为核心，适合构建 API 和小型 Web 应用。 | icon: https://www.slimframework.com/favicon.ico | tags: PHP, 微框架, API
 
-# 桌面应用
-> id: desktop | icon: fluent-emoji:laptop
+## Dart
+> id: backend-dart | icon: logos:dart
 
-- [Electron](https://electronjs.org/) - Electron 是 GitHub 开源的跨平台桌面应用框架，使用 Web 技术（HTML/CSS/JS）构建 Windows、macOS、Linux 应用。 | icon: https://electronjs.org/favicon.ico | tags: 桌面应用, 跨平台, Web技术, GitHub
-- [Tauri](https://tauri.app/) - Tauri 是 Rust 编写的轻量级跨平台应用框架，比 Electron 更小更快，支持 Windows、macOS、Linux、移动端。 | icon: https://tauri.app/favicon.ico | tags: 桌面应用, 跨平台, Rust, 轻量级
-- [Neutralino](https://neutralino.js.org/) - Neutralino 是轻量级跨平台桌面应用框架，体积仅 1MB 左右，使用系统 WebView 渲染。 | icon: https://neutralino.js.org/favicon.ico | tags: 桌面应用, 跨平台, 轻量级, Web技术
-- [NW.js](https://nwjs.io/) - NW.js 是基于 Chromium 和 Node.js 的跨平台桌面应用框架，直接调用 Node.js 模块，支持系统 API。 | icon: https://nwjs.io/favicon.ico | tags: 桌面应用, 跨平台, Chromium, Node.js
-- [pywebview](https://pywebview.flowrl.com/) - pywebview 是轻量级跨平台桌面应用框架，使用 Python 后端和 Web 前端构建原生 GUI 应用。 | icon: https://pywebview.flowrl.com/favicon.ico | tags: 桌面应用, Python, 跨平台, GUI
-- [Quasar](https://quasar.dev/) - Quasar 是基于 Vue.js 的跨平台框架，一套代码同时构建 SPA、PWA、桌面应用和移动端应用。 | icon: https://quasar.dev/favicon.ico | tags: 跨平台, Vue, 桌面应用, 移动应用
+- [Shelf](https://github.com/dart-lang/shelf) - Dart 官方 Web 服务器中间件库，提供中间件和路由基础能力，轻量且可组合。 | icon: https://github.com/favicon.ico | tags: Dart, 后端, 服务器
+- [Serverpod](https://serverpod.dev/) - Dart 全栈服务器框架，支持代码生成、ORM、WebSocket，专为 Flutter 全栈项目设计。 | icon: https://serverpod.dev/favicon.ico | tags: Dart, 后端, 全栈, Flutter
+- [Alfred](https://github.com/rknell/alfred) - 轻量级 Dart 后端框架，受 Express.js 启发，路由简洁，适合快速 API 开发。 | icon: https://github.com/favicon.ico | tags: Dart, 后端, API
+- [Angel3](https://github.com/dart-backend/angel) - Dart 全功能后端框架，支持 GraphQL、ORM、JWT 认证等企业级特性。 | icon: https://github.com/favicon.ico | tags: Dart, 后端, 全栈, GraphQL
 
-# Bun生态
-> id: bun-ecosystem | icon: logos:bun
+## Java
+> id: backend-java | icon: logos:java
 
-- [Bun](https://bun.sh/) - Bun 是快速的 JavaScript 运行时、打包器、测试运行器和包管理器。 | icon: https://bun.sh/favicon.ico | tags: Bun, 运行时, 打包器, JavaScript
-- [Elysia](https://elysiajs.com/) - Elysia 是符合人体工程学的 Bun Web 框架，专注于类型安全和性能。 | icon: https://elysiajs.com/favicon.ico | tags: Node.js, Bun, 高性能, TypeScript
+- [若依 (RuoYi)](https://ruoyi.vip/) - 国内最流行的 Java EE 快速开发平台，前后端分离，内置权限管理、代码生成、定时任务等功能，企业级后台开发首选。 | icon: https://ruoyi.vip/favicon.ico | tags: Java, 框架, 后台管理系统, 快速开发
+- [Spring Boot](https://spring.io/projects/spring-boot) - Spring 生态的核心框架，约定优于配置，快速搭建独立的生产级 Java 应用。 | icon: https://spring.io/favicon.ico | tags: Java, 框架, Spring, 微服务
+- [Spring Cloud](https://spring.io/projects/spring-cloud) - 分布式微服务解决方案，提供服务发现、配置管理、负载均衡、熔断等能力。 | icon: https://spring.io/favicon.ico | tags: Java, 框架, 微服务, 分布式
+- [MyBatis-Plus](https://baomidou.com/) - MyBatis 增强工具，在 MyBatis 基础上只做增强不做改变，简化 CRUD 开发。 | icon: https://baomidou.com/favicon.ico | tags: Java, ORM, MyBatis, 持久层
+- [JFinal](https://jfinal.com/) - 国产轻量级 Java Web 框架，极速开发，ActiveRecord + MVC 架构，代码量少。 | icon: https://jfinal.com/favicon.ico | tags: Java, 框架, 轻量级, 国产
+- [Hutool](https://hutool.cn/) - Java 工具类库，封装了文件、日期、加密、HTTP 等常用工具方法，大幅减少代码量。 | icon: https://hutool.cn/favicon.ico | tags: Java, 工具库
+- [Maven](https://maven.apache.org/) - Java 项目构建和依赖管理标准工具，POM 模型定义项目结构和依赖关系。 | icon: https://maven.apache.org/favicon.ico | tags: Java, 构建工具, 依赖管理
+- [Gradle](https://gradle.org/) - 现代化构建工具，基于 Groovy/Kotlin DSL，性能优异，Android 官方构建工具。 | icon: https://gradle.org/favicon.ico | tags: Java, 构建工具, DSL
 
 # 实用工具
 > id: tools | icon: fluent-emoji:toolbox
@@ -346,6 +541,7 @@
 - [Draw.io](https://www.drawio.com/) - 一款开源免费的在线图表绘制工具，适合绘制流程图、组织结构图、网络拓扑图等多种图表。 | icon: https://www.drawio.com/favicon.ico | tags: Tool
 - [Mnggiflab](https://www.mnggiflab.com/) - MNGGIFLAB-在线gif制作,视频转gif,gif编辑,gif合成,gif压缩,录屏gif | icon: https://mnggiflab.com/img/logo/logo-icon.png | tags: Tool, 图片
 - [LimgX](https://limgx.com/) - 免费在线图片压缩与格式转换工具。本地处理保护隐私，支持JPG、PNG、WebP格式转换。 | icon: https://limgx.com/favicon.ico | tags: Tool, 图片
+- [基米便签](https://jimi-notes.tianmiao.site) - 由天渺studio开发的一款轻便便签 | icon: fluent-emoji:memo | tags: 工具, 便签, 天渺
 
 # 资源导航
 > id: resources | icon: fluent-emoji:world-map
@@ -373,6 +569,9 @@
 - [Iconfinder](https://www.iconfinder.com/) - 专业的icon素材网站，为你的设计提供灵感。 | icon: https://www.iconfinder.com/favicon.ico | tags: 资源, 图标, 设计
 - [MakemePulse](https://2019.makemepulse.com/) - MakeMePulse 2019 创意网站合集，汇聚全球顶尖网页设计作品，每个都是艺术品级别的视觉盛宴。 | icon: https://2019.makemepulse.com/favicon.ico | tags: 设计, 资源
 - [MEK.txt](https://www.mek.gallery/) - MEK.txt Mek Gallery 是一个复古风格的资源分享网站 | icon: https://framerusercontent.com/images/GgGZEpdp0k0EuePiSwgr1d2jRtA.svg | tags: 像素, 资源
+- [Kenney](https://www.kenney.nl/) - 免费游戏素材合集，提供风格统一的 2D 精灵、3D 模型、UI 元素和音效。 | icon: https://www.kenney.nl/favicon.ico | tags: 游戏素材, 资源, 2D, 3D
+- [SVG Repo](https://www.svgrepo.com/) - 免费 SVG 图标库，收录 50 万+ 矢量图标，支持直接下载和代码复制。 | icon: https://www.svgrepo.com/favicon.ico | tags: 图标, SVG, 设计, UI
+- [Pixabay](https://pixabay.com/) - 全球最大的免费素材平台之一，提供图片、视频、音乐和音效。 | icon: https://pixabay.com/favicon.ico | tags: 素材, 音乐, 音效, 图片
 
 # 游戏引擎
 > id: game-engines | icon: fluent-emoji:video-game
@@ -389,6 +588,8 @@
 - [PixiJS](https://pixijs.com/) - PixiJS 是快速的 2D WebGL 渲染引擎，适用于游戏、交互式媒体和可视化。 | icon: https://pixijs.com/favicon.ico | tags: WebGL, 2D, 图形, 渲染
 - [Phaser](https://phaser.io/) - Phaser 是快速、免费的 HTML5 2D 游戏框架，适合制作跨平台网页游戏。 | icon: https://phaser.io/favicon.ico | tags: WebGL, 2D, 游戏引擎, HTML5
 - [Godot Engine](https://godotengine.org/) - Godot 是开源的 2D/3D 游戏引擎，轻量且功能完整。 | icon: https://godotengine.org/favicon.ico | tags: 游戏引擎, 开源, 2D, 3D
+- [Ocelot](https://github.com/geoffb/ocelot) - 极简 HTML5 2D 引擎，<30KB，Entity/Component/Tweening | icon: https://github.com/favicon.ico | tags: 游戏引擎, HTML5, 2D, 极简
+- [Ga](https://github.com/kittykatattack/ga) - 超小 HTML5 游戏引擎（6.5KB），游戏循环/精灵/粒子 | icon: https://github.com/favicon.ico | tags: 游戏引擎, HTML5, 2D, 极简
 
 # 3D 建模
 > id: 3d-modeling | icon: fluent-emoji:artist-palette
@@ -404,6 +605,8 @@
 - [Maya](https://www.autodesk.com/products/maya) - Maya 是 Autodesk 旗舰级 3D 动画和建模软件，影视和游戏行业的工业标准工具。 | icon: https://www.autodesk.com/favicon.ico | tags: 3D建模, 动画, 影视, 工业标准
 - [Blocks](https://www.with.in/products/blocks) - VR Blocks 是 Google 的 VR 3D 建模工具，在虚拟现实中用手势直观创建 3D 模型。 | icon: https://www.with.in/favicon.ico | tags: VR, 3D建模, Google
 - [Vectary](https://www.vectary.com/) - Vectary 是基于浏览器的 3D 设计平台，支持 AR 预览和交互式 3D 场景嵌入网页。 | icon: https://www.vectary.com/favicon.ico | tags: 3D设计, AR, Web, 低代码
+- [Mixamo](https://www.mixamo.com/) - Adobe 旗下免费角色动画平台，一键为 3D 模型绑定骨骼并应用动作库。 | icon: https://www.mixamo.com/favicon.ico | tags: 3D建模, 动画, 骨骼绑定, Adobe
+- [Quixel Megascans](https://quixel.com/) - 全球最大的 2D/3D 扫描资产库，提供照片级真实纹理和模型。 | icon: https://quixel.com/favicon.ico | tags: 3D模型, 素材, 纹理, 扫描
 
 # 游戏社区
 > id: games | icon: fluent-emoji:joystick
@@ -424,4 +627,26 @@
 - [Hack Forums](https://hackforums.net/) - 是一个知名的网络安全技术论坛，适合黑白客群体和开发人员。 | icon: https://www.hackforums.net/view/img/favicon.ico | tags: 网络安全, 社区
 - [Behance](https://www.behance.net/) - 全球著名的设计社区，展示设计师的创意作品 | icon: https://www.behance.net/favicon.ico | tags: 设计, 社区
 - [UI中国](https://www.ui.cn/) - 国内知名设计师社区，提供UI设计、交互设计、用户体验等专业设计资源。 | icon: https://www.ui.cn/favicon.ico | tags: 设计, UI, 社区
+- [MoonBit](https://www.moonbitlang.com/) - 面向云原生和边缘计算的现代化编程语言，由张宏波团队开发，编译速度快、类型安全。 | icon: https://www.moonbitlang.com/favicon.ico | tags: 编程语言, 云原生
 
+# 独立开发者
+> id: indie-dev | icon: fluent-emoji:rocket
+
+- [Pieter Levels](https://levels.io/) - 数字游民先驱，Nomad List 和 Remote OK 创始人，一年启动12个项目的传奇独立开发者。
+- [Marc Lou](https://marclou.com/) - 独立开发者与创业者，以快速构建 SaaS 产品而闻名，活跃于 X/Twitter 分享开发心得。
+- [Sindre Sorhus](https://sindresorhus.com/) - 开源传奇，npm 上发布了超过1000个包，包括 alfred、awesome 列表等知名项目。
+- [Danny Postma](https://dannypostma.com/) - AI 独立开发者，HeadshotPro 和 ProfilePicture.AI 创始人，专注 AI 驱动的 SaaS 产品。
+- [Tony Dinh](https://tonydinh.com/) - 越南独立开发者，DevUtils 和 Black Magic 创始人，以实用工具型 SaaS 产品闻名。
+- [Lucas Pope](https://dukope.com/) - 《请出示证件》(Papers, Please) 和《奥伯拉丁的回归》创作者，以独特的叙事和视觉风格著称。
+- [Damon Chen](https://damonchen.com/) - 独立开发者，PDF.ai 创始人，专注 AI 与生产力工具结合的 SaaS 产品。
+- [Joar Jakobsson](https://www.joarportfolio.com/) - 《雨世界》(Rain World) 创作者，瑞典视觉设计师与独立游戏开发者，构建了独特的后工业生态系统生存游戏。
+- [Eric Barone (ConcernedApe)](https://www.stardewvalley.net/) - 《星露谷物语》(Stardew Valley) 独立开发者，一人包揽编程、美术、音乐，打造了现象级农场模拟游戏。
+- [Toby Fox](https://toby.fangamer.com/) - 《Undertale》《Deltarune》创作者，以独特的叙事、音乐和打破第四面墙的设计而闻名。
+- [Edmund McMillen](https://edmundm.com/) - 《以撒的结合》《超级食肉男孩》创作者，以其黑暗、怪诞的艺术风格和 Roguelike 设计闻名。
+- [Daniel Mullins](https://www.danielmullinsgames.com/) - 《邪恶冥刻》(Inscryption)《小马岛》(Pony Island) 创作者，擅长打破游戏类型的元叙事设计。
+- [Derek Yu](https://www.derekyu.com/) - 《洞穴探险》(Spelunky) 系列创作者，Roguelike 平台跳跃游戏的先驱，影响了一代独立游戏设计。
+- [月光蟑螂](https://space.bilibili.com/2911655/dynamic) - 《烟火》《三伏》《黑森町绮谭》创作者，中式悬疑惊悚解谜游戏的代表人物，一人包揽美术、编剧、策划。
+- [史悲](https://space.bilibili.com/3729210/dynamic) - 《迷失岛》系列创作者，以手绘美术风格和谜题设计著称的独立游戏开发者。
+- [刘美工](https://space.bilibili.com/341473111) - 镜界，HAAK（勇敢的哈克）游戏开发者
+
+*（内容由AI生成，仅供参考）*

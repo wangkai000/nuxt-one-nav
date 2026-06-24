@@ -11,9 +11,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 const rootDir = resolve(__dirname, '..')
 
 // 支持的语言列表
-const lang = (process.env.SITE_LANG || 'zh').trim()
 const languages = [
-  { code: lang, file: `nav-data.${lang}.md`, out: `nav-data.${lang}.generated.json` }
+  { code: 'default', file: 'nav-data.md', out: 'nav-data.generated.json' }
 ]
 
 let hasError = false
@@ -33,12 +32,10 @@ for (const lang of languages) {
 
   const result = {
     meta: {
-      name: lang.code === 'zh' ? '星途导航 导航数据' : 'StarNav Navigation Data',
+      name: '星途导航 导航数据',
       version: '2.0.0',
       lastUpdated: new Date().toISOString().split('T')[0],
-      description: lang.code === 'zh'
-        ? '基于 Nuxt 4 的导航站数据（Markdown 数据源）'
-        : 'Navigation data for Nuxt 4 site (Markdown data source)',
+      description: '基于 Nuxt 4 的导航站数据（Markdown 数据源）',
       totalSites: sites.length,
       totalCategories: categories.length
     },

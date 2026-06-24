@@ -1,7 +1,7 @@
 <template>
-  <el-container class="h-screen">
-    <!-- 桌面端侧边栏（隐藏移动端） -->
-    <Sidebar class="hidden xl:flex" />
+  <div class="h-screen">
+    <!-- 桌面端侧边栏（隐藏移动端） fixed 定位，永远不会跟着滚动 -->
+    <Sidebar class="hidden xl:flex fixed left-0 top-0 h-screen z-20" />
 
     <!-- 移动端抽屉菜单 -->
     <el-drawer
@@ -81,14 +81,23 @@
       </div>
     </el-drawer>
 
-    <!-- 主内容区 -->
-    <el-container class="flex flex-col grid-bg">
-      <!-- 顶部栏 -->
-      <el-header class="!h-14 !p-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-[#16162a]">
+<!-- 主内容区 -->
+    <el-container
+      class="h-full flex flex-col grid-bg overflow-hidden"
+      :class="sidebarCollapsed ? 'xl:ml-[64px]' : 'xl:ml-[220px]'"
+    >
+      <!-- 顶部栏（fixed 固定到顶部，纯 CSS 对齐） -->
+      <el-header
+        class="!h-14 !p-0 flex-shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-[#16162a] fixed top-0 z-50 header-fixed"
+        :class="sidebarCollapsed ? 'collapsed' : ''"
+      >
         <AppHeader @toggle-mobile-menu="mobileMenuVisible = true" />
       </el-header>
 
-      <el-main class="!p-0 flex-1 overflow-auto">
+      <!-- 用占位 div 把 el-main 往下推 -->
+      <div class="h-14 flex-shrink-0"></div>
+
+      <el-main class="!p-0 flex-1 min-h-0 overflow-y-auto">
         <!-- 内容 -->
         <main class="pt-4 px-4 sm:pt-6 sm:px-6 lg:pt-8 lg:px-8">
           <slot />
@@ -97,22 +106,41 @@
         <!-- 底部 -->
         <AppFooter />
       </el-main>
-
-      <!-- 浮动操作按钮：深色模式切换 + 返回顶部 -->
-      <FloatingActions />
     </el-container>
-  </el-container>
+
+    <!-- 浮动按钮（深色模式切换 + 返回顶部） -->
+    <FloatingActions />
+  </div>
 </template>
 
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
+import { useMediaQuery } from '@vueuse/core'
 import { useNavData } from '~/data/nav-data'
 
-const config = useRuntimeConfig().public.siteConfig
+const runtimeConfig = useRuntimeConfig()
+const config = runtimeConfig.public.siteConfig
+const adsense = computed(() => (runtimeConfig.public as any).adsense)
+
+// 动态注入 AdSense 广告库脚本（仅在 enabled=true 时加载）
+if (import.meta.client && adsense.value?.enabled && adsense.value?.client) {
+  useHead({
+    script: [{
+      async: true,
+      src: `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsense.value.client}`,
+      crossorigin: 'anonymous'
+    }]
+  })
+}
+
+const sidebarCollapsed = useState<boolean>('sidebar-collapsed', () => false)
+
+// 判断是否桌面端（≥1280px，对应 Sidebar 的 xl:flex 断点）
+const isDesktop = useMediaQuery('(min-width: 1280px)')
 
 const { categories } = useNavData()
 
-const { activeCategory, selectCategory } = useSearch()
+const { activeCategory, selectCategory, preloadCategory } = useSearch()
 const mobileMenuVisible = ref(false)
 
 const colorMode = useColorMode()
@@ -124,33 +152,58 @@ const toggleTheme = () => {
 const handleMenuSelect = async (index: string) => {
   const route = useRoute()
 
+  mobileMenuVisible.value = false
+
   // 如果不在首页，先跳转回首页
   if (route.path !== '/') {
     selectCategory(index)
-    mobileMenuVisible.value = false
+    // 预加载目标分类，确保导航后 InViewRender 已渲染
+    preloadCategory(index, categories.value)
     await navigateTo('/')
-    // 等待页面渲染完成后滚动
-    nextTick(() => {
-      const element = document.getElementById(`category-${index}`)
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      } else {
-        window.scrollTo({ top: 0, behavior: 'smooth' })
-      }
-    })
-    return
   }
 
   selectCategory(index)
-  mobileMenuVisible.value = false
-  // 等待抽屉关闭后滚动
-  nextTick(() => {
-    const element = document.getElementById(`category-${index}`)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    } else {
-      window.scrollTo({ top: 0, behavior: 'smooth' })
+  // 确保目标分类的 InViewRender 被强制渲染
+  preloadCategory(index, categories.value)
+  await nextTick()
+  await nextTick()
+
+  const found = await scrollToCategory(`category-${index}`)
+  if (!found) {
+    document.querySelector('.el-main')?.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+}
+
+// 获取实际滚动容器
+const getScrollContainer = (): HTMLElement | null => {
+  return document.querySelector('.el-main')
+}
+
+// 带重试 + 布局稳定校正的滚动
+const scrollToCategory = (id: string): Promise<boolean> => {
+  return new Promise((resolve) => {
+    const tryScroll = (retriesLeft: number) => {
+      const element = document.getElementById(id)
+      if (element) {
+        // instant 瞬间到位，避免 smooth 中断 bug
+        element.scrollIntoView({ behavior: 'instant', block: 'start' })
+        // 300ms 后 smooth 微调
+        setTimeout(() => {
+          const el = document.getElementById(id)
+          if (el) {
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+          }
+          resolve(true)
+        }, 300)
+        return
+      }
+      if (retriesLeft > 0) {
+        setTimeout(() => tryScroll(retriesLeft - 1), 100)
+      } else {
+        resolve(false)
+      }
     }
+    tryScroll(20)
   })
 }
 

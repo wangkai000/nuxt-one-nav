@@ -14,8 +14,17 @@ body {
 }
 
 /* ─── 暗色模式切换过渡 ─── */
-/* 注意：不给 html 加 background-color transition，因为暗色切换会触发全局 repaint
-   并且 dark mode 切换是瞬间完成的，过渡动画肉眼几乎不可感知但渲染开销却不小 */
+/* 在 body 和主要背景元素上加 transition，暗色切换时背景/文字/边框平滑过渡 */
+body,
+.el-menu,
+.el-menu-item,
+.el-sub-menu__title,
+.el-drawer,
+.grid-bg::before,
+.hero-wallpaper {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, background-image 0.3s ease;
+}
+
 html {
   color-scheme: light;
 }
@@ -23,11 +32,40 @@ html.dark {
   color-scheme: dark;
 }
 
-/* ─── 滚动条 ─── */
-::-webkit-scrollbar { width: 6px; height: 6px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: rgba(156, 163, 175, 0.5); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: rgba(156, 163, 175, 0.8); }
+/* ─── 滚动条（Webkit） ─── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  transition: width 0.2s ease, height 0.2s ease;
+}
+::-webkit-scrollbar:hover {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.35);
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  min-height: 40px;
+  transition: background 0.2s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(107, 114, 128, 0.65);
+}
+::-webkit-scrollbar-thumb:active {
+  background: rgba(75, 85, 99, 0.8);
+}
+
+/* ─── 滚动条（Firefox） ─── */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(156, 163, 175, 0.35) transparent;
+}
 
 /* ─── 隐藏滚动条 ─── */
 .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
@@ -50,14 +88,23 @@ html.dark {
 }
 
 /* ─── Hero 背景图片（深色模式自动切换）─── */
-/* 使用 background-attachment: fixed 避免滚动时持续 repaint */
+/* 桌面端使用 background-attachment: fixed（提升到合成层，减少重绘） */
+/* iOS Safari 不支持 fixed，回退到 scroll */
 .hero-wallpaper {
   background-image: url('/images/light.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  will-change: transform; /* 将背景提升到合成层，减少重绘 */
+  background-attachment: scroll;
+}
+
+@supports (background-attachment: fixed) {
+  @media (min-width: 768px) {
+    .hero-wallpaper {
+      background-attachment: fixed;
+      will-change: transform;
+    }
+  }
 }
 .dark .hero-wallpaper {
   background-image: url('/images/night.jpg');
@@ -134,4 +181,17 @@ html.dark {
 .dark .el-menu--horizontal .el-menu--popup .el-menu-item:hover,
 .dark .el-menu--vertical .el-menu--popup .el-menu-item:hover {
   background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* ─── Header 对齐（纯 CSS，避免 SSR 跳变） ─── */
+/* 桌面端 header 和主内容区左对齐 */
+@media (min-width: 1280px) {
+  .header-fixed {
+    left: 220px !important;
+    width: calc(100% - 220px) !important;
+  }
+  .header-fixed.collapsed {
+    left: 64px !important;
+    width: calc(100% - 64px) !important;
+  }
 }

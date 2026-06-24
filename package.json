@@ -1,54 +1,54 @@
 {
-  "name": "one-nav-ssg",
-  "version": "1.0.0",
-  "private": true,
-  "license": "MIT",
-  "engines": {
-    "node": ">=22.13.0"
-  },
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "npm run generate:zh && npm run generate:en",
-    "generate:zh": "set SITE_LANG=zh && nuxt generate",
-    "generate:en": "set SITE_LANG=en && nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "prepare": "nuxt prepare",
-    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.json",
-    "lint:fix": "eslint . --fix --ext .vue,.js,.ts,.jsx,.tsx,.json",
-    "format": "prettier --write \"**/*.{vue,js,ts,jsx,tsx,css,scss,json,md}\"",
-    "format:check": "prettier --check \"**/*.{vue,js,ts,jsx,tsx,css,scss,json,md}\"",
-    "typecheck": "nuxt typecheck",
-    "clean": "rm -rf .nuxt .output dist node_modules/.cache"
-  },
-  "dependencies": {
-    "@element-plus/icons-vue": "^2.3.1",
-    "@element-plus/nuxt": "^1.1.0",
-    "@iconify-json/mdi": "^1.2.3",
-    "@iconify-json/simple-icons": "^1.2.76",
-    "@iconify/vue": "^4.1.2",
-    "@nuxtjs/color-mode": "^3.5.0",
-    "@nuxtjs/tailwindcss": "^6.12.0",
-    "@vueuse/core": "^14.2.1",
-    "element-plus": "^2.9.0",
-    "nuxt": "^4.4.2",
-    "sharp": "^0.34.5",
-    "vue": "^3.5.0",
-    "vue-router": "^4.4.0"
-  },
-  "devDependencies": {
-    "@nuxt/eslint": "^0.6.0",
-    "@typescript-eslint/eslint-plugin": "^8.0.0",
-    "@typescript-eslint/parser": "^8.0.0",
-    "@vite-pwa/nuxt": "^0.10.0",
-    "autoprefixer": "^10.4.19",
-    "eslint": "^9.0.0",
-    "eslint-plugin-vue": "^9.30.0",
-    "prettier": "^3.3.0",
-    "stylelint": "^16.8.0",
-    "stylelint-config-standard": "^36.0.1",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5.7.0"
-  }
+    "name": "one-nav-ssg",
+    "version": "1.0.0",
+    "private": true,
+    "license": "MIT",
+    "engines": {
+        "node": ">=22.13.0"
+    },
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare",
+        "prepare": "nuxt prepare",
+        "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.json",
+        "lint:fix": "eslint . --fix --ext .vue,.js,.ts,.jsx,.tsx,.json",
+        "format": "prettier --write \"**/*.{vue,js,ts,jsx,tsx,css,scss,json,md}\"",
+        "format:check": "prettier --check \"**/*.{vue,js,ts,jsx,tsx,css,scss,json,md}\"",
+        "typecheck": "nuxt typecheck",
+        "clean": "rm -rf .nuxt .output dist node_modules/.cache"
+    },
+    "dependencies": {
+        "@element-plus/icons-vue": "^2.3.1",
+        "@element-plus/nuxt": "^1.1.0",
+        "@iconify-json/mdi": "^1.2.3",
+        "@iconify-json/simple-icons": "^1.2.76",
+        "@iconify/vue": "^4.1.2",
+        "@nuxtjs/color-mode": "^3.5.0",
+        "@nuxtjs/tailwindcss": "^6.12.0",
+        "@vueuse/core": "^14.2.1",
+        "element-plus": "^2.9.0",
+        "nuxt": "^4.4.2",
+        "sharp": "^0.34.5",
+        "vue": "^3.5.0",
+        "vue-router": "^4.4.0"
+    },
+    "devDependencies": {
+        "@nuxt/cli": "^3.35.2",
+        "@nuxt/eslint": "^0.6.0",
+        "@nuxtjs/sitemap": "^8.1.0",
+        "@typescript-eslint/eslint-plugin": "^8.0.0",
+        "@typescript-eslint/parser": "^8.0.0",
+        "@vite-pwa/nuxt": "^0.10.0",
+        "autoprefixer": "^10.4.19",
+        "eslint": "^9.0.0",
+        "eslint-plugin-vue": "^9.30.0",
+        "prettier": "^3.3.0",
+        "stylelint": "^16.8.0",
+        "stylelint-config-standard": "^36.0.1",
+        "tailwindcss": "^3.4.17",
+        "typescript": "^5.7.0"
+    }
 }
