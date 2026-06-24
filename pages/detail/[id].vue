@@ -164,7 +164,8 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
 import { useNavData } from '~/data/nav-data'
-import { categoryIconMap, domainIconMap, tagIconRules, getFallbackIcon } from '~/utils/icon-maps'
+import { getFallbackIcon } from '~/utils/icon-maps'
+import { getFaviconFromUrl, getIconUrl } from '~/utils/favicon'
 import type { NavItem, Category } from '~/types/nav'
 
 const config = useRuntimeConfig().public.siteConfig

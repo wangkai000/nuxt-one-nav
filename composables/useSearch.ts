@@ -5,7 +5,6 @@
 export const useSearch = () => {
   const query = useState<string>('search-query', () => '')
   const activeCategory = useState<string>('active-category', () => 'all')
-  const expandedCategories = useState<string[]>('expanded-categories', () => ['ai', 'dev'])
 
   // 预加载的 InViewRender 分类 ID（用于侧边栏点击时强制渲染）
   // ⚠️ 必须用数组不能用 Set，因为 SSG 序列化 Set → {} 会导致 hydration 后失效
@@ -54,23 +53,6 @@ export const useSearch = () => {
     return null
   }
 
-  // 切换分类展开/折叠
-  const toggleCategory = (categoryId: string) => {
-    const arr = [...expandedCategories.value]
-    const idx = arr.indexOf(categoryId)
-    if (idx > -1) {
-      arr.splice(idx, 1)
-    } else {
-      arr.push(categoryId)
-    }
-    expandedCategories.value = arr
-  }
-
-  // 检查分类是否展开
-  const isCategoryExpanded = (categoryId: string) => {
-    return expandedCategories.value.includes(categoryId)
-  }
-
   const clear = () => {
     query.value = ''
     activeCategory.value = 'all'
@@ -79,13 +61,10 @@ export const useSearch = () => {
   return {
     query,
     activeCategory,
-    expandedCategories,
     preloadedIds,
     setQuery,
     selectCategory,
     preloadCategory,
-    toggleCategory,
-    isCategoryExpanded,
     clear
   }
 }

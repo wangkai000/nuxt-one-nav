@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen">
     <!-- 桌面端侧边栏（隐藏移动端） fixed 定位，永远不会跟着滚动 -->
-    <Sidebar class="hidden xl:flex fixed left-0 top-0 h-screen z-40" />
+    <Sidebar class="hidden xl:flex fixed left-0 top-0 h-screen z-20" />
 
     <!-- 移动端抽屉菜单 -->
     <el-drawer
@@ -81,15 +81,15 @@
       </div>
     </el-drawer>
 
-<!-- 主内容区（桌面端用 margin-left 给 fixed 侧栏让位，移动端 margin 归零） -->
+<!-- 主内容区 -->
     <el-container
-      class="h-full flex flex-col grid-bg overflow-hidden transition-[margin] duration-300"
-      :style="{ marginLeft: isDesktop ? (sidebarCollapsed ? '64px' : '220px') : '0' }"
+      class="h-full flex flex-col grid-bg overflow-hidden"
+      :class="sidebarCollapsed ? 'xl:ml-[64px]' : 'xl:ml-[220px]'"
     >
-      <!-- 顶部栏（fixed 固定到顶部） -->
+      <!-- 顶部栏（fixed 固定到顶部，纯 CSS 对齐） -->
       <el-header
-        class="!h-14 !p-0 flex-shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-[#16162a] fixed top-0 z-30"
-        :style="{ left: isDesktop ? (sidebarCollapsed ? '64px' : '220px') : '0', right: '0' }"
+        class="!h-14 !p-0 flex-shrink-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-[#16162a] fixed top-0 z-50 header-fixed"
+        :class="sidebarCollapsed ? 'collapsed' : ''"
       >
         <AppHeader @toggle-mobile-menu="mobileMenuVisible = true" />
       </el-header>
@@ -107,6 +107,9 @@
         <AppFooter />
       </el-main>
     </el-container>
+
+    <!-- 浮动按钮（深色模式切换 + 返回顶部） -->
+    <FloatingActions />
   </div>
 </template>
 

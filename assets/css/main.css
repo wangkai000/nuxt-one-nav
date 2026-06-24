@@ -16,8 +16,6 @@ body {
 /* ─── 暗色模式切换过渡 ─── */
 /* 在 body 和主要背景元素上加 transition，暗色切换时背景/文字/边框平滑过渡 */
 body,
-.bg-onenav,
-.bg-sidebar,
 .el-menu,
 .el-menu-item,
 .el-sub-menu__title,
@@ -183,4 +181,17 @@ html.dark {
 .dark .el-menu--horizontal .el-menu--popup .el-menu-item:hover,
 .dark .el-menu--vertical .el-menu--popup .el-menu-item:hover {
   background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* ─── Header 对齐（纯 CSS，避免 SSR 跳变） ─── */
+/* 桌面端 header 和主内容区左对齐 */
+@media (min-width: 1280px) {
+  .header-fixed {
+    left: 220px !important;
+    width: calc(100% - 220px) !important;
+  }
+  .header-fixed.collapsed {
+    left: 64px !important;
+    width: calc(100% - 64px) !important;
+  }
 }
