@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen flex">
+  <div class="h-full flex">
     <!-- 侧边栏 -->
     <el-aside
       :width="collapsed ? '64px' : '220px'"

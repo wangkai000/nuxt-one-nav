@@ -1,7 +1,7 @@
 <template>
-  <div class="h-screen">
+  <div class="h-screen-safe">
     <!-- 桌面端侧边栏（隐藏移动端） fixed 定位，永远不会跟着滚动 -->
-    <Sidebar class="hidden xl:flex fixed left-0 top-0 h-screen z-20" />
+    <Sidebar class="hidden xl:flex fixed left-0 top-0 h-screen-safe z-20" />
 
     <!-- 移动端抽屉菜单 -->
     <el-drawer
@@ -11,26 +11,27 @@
       size="280px"
       class="!bg-white dark:!bg-[#16162a]"
       :z-index="2000"
+      :style="{ height: '100dvh' }"
     >
       <template #header>
-        <div class="flex items-center gap-2">
-          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+        <div class="flex items-center gap-2 px-1">
+          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center flex-shrink-0">
             <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <circle cx="12" cy="12" r="10"/>
               <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
             </svg>
           </div>
-          <span class="text-base font-bold text-gray-900 dark:text-white">{{ config.title }}</span>
+          <span class="text-base font-bold text-gray-900 dark:text-white truncate">{{ config.title }}</span>
         </div>
       </template>
 
       <!-- 抽屉内容区域 -->
-      <div class="h-full flex flex-col">
+      <div class="h-full flex flex-col safe-area-bottom">
         <!-- 分类菜单 -->
-        <div class="flex-1 overflow-y-auto px-2">
+        <div class="flex-1 overflow-y-auto overscroll-contain px-2 no-scrollbar">
           <el-menu
             :default-active="activeCategory"
-            class="border-r-0"
+            class="border-r-0 mobile-drawer-menu"
             @select="handleMenuSelect"
           >
             <template v-for="cat in categories" :key="cat.id">
@@ -115,7 +116,6 @@
 
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
-import { useMediaQuery } from '@vueuse/core'
 import { useNavData } from '~/data/nav-data'
 
 const runtimeConfig = useRuntimeConfig()
@@ -135,9 +135,6 @@ if (import.meta.client && adsense.value?.enabled && adsense.value?.client) {
 
 const sidebarCollapsed = useState<boolean>('sidebar-collapsed', () => false)
 
-// 判断是否桌面端（≥1280px，对应 Sidebar 的 xl:flex 断点）
-const isDesktop = useMediaQuery('(min-width: 1280px)')
-
 const { categories } = useNavData()
 
 const { activeCategory, selectCategory, preloadCategory } = useSearch()
@@ -152,6 +149,7 @@ const toggleTheme = () => {
 const handleMenuSelect = async (index: string) => {
   const route = useRoute()
 
+  // 先关闭抽屉（触发 300ms 关闭动画）
   mobileMenuVisible.value = false
 
   // 如果不在首页，先跳转回首页
@@ -167,6 +165,9 @@ const handleMenuSelect = async (index: string) => {
   preloadCategory(index, categories.value)
   await nextTick()
   await nextTick()
+
+  // 等待抽屉关闭动画完成后再滚动，避免视觉跳变
+  await new Promise(resolve => setTimeout(resolve, 350))
 
   const found = await scrollToCategory(`category-${index}`)
   if (!found) {
@@ -222,7 +223,7 @@ const openAbout = () => {
 
 <style scoped>
 :deep(.el-drawer) {
-  height: 100vh !important;
+  height: 100dvh !important;
 }
 
 :deep(.el-menu-item),
@@ -244,5 +245,67 @@ const openAbout = () => {
   white-space: normal !important;
   word-break: break-word !important;
   line-height: 1.4 !important;
+}
+
+/* ─── 移动端抽屉菜单优化 ─── */
+
+/* 隐藏抽屉内嵌滚动条（由外层 overflow-y-auto 统一控制） */
+.mobile-drawer-menu :deep(.el-scrollbar__bar) {
+  display: none !important;
+}
+
+/* 抽屉内菜单项间距增大，提升触控体验 */
+.mobile-drawer-menu :deep(.el-menu-item),
+.mobile-drawer-menu :deep(.el-sub-menu__title) {
+  min-height: 48px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  border-radius: 8px;
+  margin: 2px 4px;
+}
+
+/* 隐藏 el-menu 内部自带滚动条（避免双重滚动） */
+.mobile-drawer-menu :deep(.el-scrollbar) {
+  overflow: visible !important;
+}
+
+/* 抽屉底部区域安全区 padding */
+:deep(.el-drawer__body) {
+  padding: 0 !important;
+  padding-bottom: env(safe-area-inset-bottom, 16px) !important;
+  overflow: hidden;
+}
+
+/* 去掉 drawer header 默认 padding，由内部元素控制 */
+:deep(.el-drawer__header) {
+  padding: 12px 16px 0 16px !important;
+  margin-bottom: 0 !important;
+}
+
+/* 禁止全局滚动条（只能翻动抽屉内部） */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* 桌面端菜单恢复原始样式（不应用抽屉修改） */
+@media (min-width: 1280px) {
+  :deep(.el-menu-item),
+  :deep(.el-sub-menu__title) {
+    min-height: 48px !important;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  /* 桌面端 header 和 drawer 相关样式恢复 */
+  :deep(.el-drawer__header) {
+    padding: var(--el-drawer-padding-primary) !important;
+    margin-bottom: 0 !important;
+  }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed right-4 sm:right-6 bottom-16 sm:bottom-20 z-50 flex flex-col items-center gap-3">
+  <div class="fixed right-4 sm:right-6 bottom-16 sm:bottom-20 z-50 flex flex-col items-center gap-3 safe-area-bottom" style="padding-bottom: env(safe-area-inset-bottom, 0px);">
     <!-- 深色模式切换按钮 -->
     <Transition name="fade-slide">
       <button
