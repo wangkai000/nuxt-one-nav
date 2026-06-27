@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "lastUpdated": "2026-06-27",
     "description": "基于 Nuxt 4 的导航站数据（Markdown 数据源）",
-    "totalSites": 417,
+    "totalSites": 418,
     "totalCategories": 15
   },
   "categories": [
@@ -402,7 +402,7 @@
       "id": "indie-dev",
       "name": "独立开发者",
       "icon": "fluent-emoji:rocket",
-      "count": 16
+      "count": 17
     }
   ],
   "sites": [
@@ -6335,6 +6335,14 @@
       "url": "https://space.bilibili.com/341473111",
       "category": "indie-dev",
       "order": 417
+    },
+    {
+      "id": "648游戏工作室",
+      "title": "648游戏工作室",
+      "description": "《中国式网游》开发者，一人从2018年业余开发，讽刺国产氪金网游的独立游戏，Steam销量突破40万份。",
+      "url": "https://space.bilibili.com/451603319",
+      "category": "indie-dev",
+      "order": 418
     }
   ]
 }
