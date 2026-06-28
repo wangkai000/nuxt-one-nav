@@ -452,6 +452,8 @@ AIGC:
 - [NATS](https://nats.io/) - NATS 是高性能云原生消息系统，极低延迟，支持发布/订阅、请求/回复和 JetStream 持久化。 | icon: https://nats.io/favicon.ico | tags: 消息队列, NATS, 云原生, 高性能, 边缘计算
 - [MQTT.js](https://github.com/mqttjs/MQTT.js) - MQTT.js 是 Node.js 的 MQTT 协议客户端，适用于 IoT 物联网设备和轻量级消息推送场景。 | icon: https://github.com/favicon.ico | tags: Node.js, MQTT, IoT, 物联网, 消息推送
 - [Socket.io](https://socket.io/) - Socket.IO 是 Node.js 实时双向通信库，支持 WebSocket 和长轮询降级，适用于聊天、协作、实时通知。 | icon: https://socket.io/favicon.ico | tags: Node.js, WebSocket, 实时通信, 双向, 事件驱动
+- [Colyseus](https://colyseus.io/) - Node.js 多人在线游戏服务器框架，WebSocket 通信，支持自动状态同步、房间管理和匹配系统，生态活跃。 | icon: https://colyseus.io/favicon.ico | tags: Node.js, 游戏服务器, 多人, WebSocket, 实时
+- [Pomelo](https://github.com/NetEase/pomelo) - 网易开源的基于 Node.js 的高性能分布式游戏服务器框架，支持 MMO 场景分区和实时通信。 | icon: https://github.com/favicon.ico | tags: Node.js, 游戏服务器, 网易, 分布式, 实时
 - [uWebSockets.js](https://github.com/uNetworking/uWebSockets.js) - uWebSockets.js 是 Node.js 的超高性能 WebSocket 和 HTTP 服务器，C++ 底层实现，延迟极低。 | icon: https://github.com/favicon.ico | tags: Node.js, WebSocket, 高性能, C++, 实时
 - [GraphQL Yoga](https://the-guild.dev/graphql/yoga-server) - GraphQL Yoga 是跨运行时的 GraphQL 服务端框架，支持 Node.js、Bun、Deno、Cloudflare Workers，提供订阅和 SSE 实时能力。 | icon: https://the-guild.dev/favicon.ico | tags: Node.js, GraphQL, API, 实时, 跨运行时
 - [gRPC-Node](https://grpc.io/docs/languages/node/) - gRPC Node.js 是 Google 高性能 RPC 框架的 Node.js 实现，基于 HTTP/2 和 Protocol Buffers，适用于微服务间通信。 | icon: https://grpc.io/favicon.ico | tags: Node.js, gRPC, RPC, HTTP2, 微服务, Protocol Buffers
@@ -500,6 +502,7 @@ AIGC:
 - [go-redis](https://redis.uptrace.dev/) - go-redis 是 Go 最流行的 Redis 客户端，支持连接池、管道、事务等。 | icon: https://redis.uptrace.dev/favicon.ico | tags: Go, Redis, 缓存, 客户端
 - [gRPC](https://grpc.io/) - gRPC 是 Google 开源的高性能 RPC 框架，支持多语言和 Protocol Buffers。 | icon: https://grpc.io/favicon.ico | tags: Go, RPC, Google, Protocol Buffers
 - [Wanderlost](https://github.com/wanderlost/wanderlost) - Wanderlost 是 2025 年新发布的 Go 泛型工具库，提供类型安全的集合操作。 | icon: https://github.com/favicon.ico | tags: Go, 泛型, 工具库, 2025
+- [Nakama](https://heroiclabs.com/nakama/) - 开源游戏后端服务器框架（Go + Lua），提供社交功能、排行榜、匹配、群组、存储和实时多人支持。 | icon: https://heroiclabs.com/favicon.ico | tags: Go, 游戏服务器, 多人, 排行榜, 社交
 
 ## PHP
 > id: backend-php | icon: logos:php
@@ -512,6 +515,14 @@ AIGC:
 - [phpMyAdmin](https://www.phpmyadmin.net/) - 全球最流行的 MySQL/MariaDB 数据库管理工具，Web 界面操作数据库。 | icon: https://www.phpmyadmin.net/favicon.ico | tags: PHP, 数据库, 管理工具
 - [Swoole](https://www.swoole.com/) - PHP 高性能协程网络通信引擎，支持 HTTP/TCP/WebSocket 服务器。 | icon: https://www.swoole.com/favicon.ico | tags: PHP, 协程, 高性能
 - [Slim](https://www.slimframework.com/) - PHP 微框架，路由为核心，适合构建 API 和小型 Web 应用。 | icon: https://www.slimframework.com/favicon.ico | tags: PHP, 微框架, API
+
+## CMS
+> id: backend-cms | icon: fluent-emoji:card-file-box
+
+- [WordPress](https://wordpress.org/) - 全球市场份额最高的 CMS 建站系统，拥有极其丰富的插件和主题生态，适合博客、企业站到电商全场景。 | icon: https://wordpress.org/favicon.ico | tags: CMS, 建站, PHP
+- [EmDash](https://emdashcms.com/) - Cloudflare 推出的开源 CMS，由 Astro 6.0 驱动，被誉为"WordPress 的精神继承者"，无服务器架构运行在边缘平台。 | icon: https://emdashcms.com/brand/favicon.svg | tags: CMS, Cloudflare, Astro, 无服务器
+- [Halo](https://halo.run/) - 国产强大的开源建站工具，基于 Java / Spring Boot 构建，支持博客、知识库、企业官网、商城等多种站点类型。 | icon: https://halo.run/favicon.ico | tags: CMS, Java, 建站, 国产, Spring Boot
+- [Strapi](https://strapi.io/) - 领先的开源无头 CMS（Headless CMS），基于 Node.js / TypeScript，可自由设计数据模型、生成 API，支持任意前端框架。 | icon: https://strapi.io/favicon.ico | tags: CMS, Node.js, TypeScript, 无头CMS
 
 ## Dart
 > id: backend-dart | icon: logos:dart
@@ -648,5 +659,6 @@ AIGC:
 - [月光蟑螂](https://space.bilibili.com/2911655/dynamic) - 《烟火》《三伏》《黑森町绮谭》创作者，中式悬疑惊悚解谜游戏的代表人物，一人包揽美术、编剧、策划。
 - [史悲](https://space.bilibili.com/3729210/dynamic) - 《迷失岛》系列创作者，以手绘美术风格和谜题设计著称的独立游戏开发者。
 - [刘美工](https://space.bilibili.com/341473111) - 镜界，HAAK（勇敢的哈克）游戏开发者
+- [648游戏工作室](https://space.bilibili.com/451603319) - 《中国式网游》开发者，一人从2018年业余开发，讽刺国产氪金网游的独立游戏，Steam销量突破40万份。
 
 *（内容由AI生成，仅供参考）*

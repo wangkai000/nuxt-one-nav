@@ -2,9 +2,9 @@
   "meta": {
     "name": "星途导航 导航数据",
     "version": "2.0.0",
-    "lastUpdated": "2026-06-24",
+    "lastUpdated": "2026-06-27",
     "description": "基于 Nuxt 4 的导航站数据（Markdown 数据源）",
-    "totalSites": 410,
+    "totalSites": 418,
     "totalCategories": 15
   },
   "categories": [
@@ -307,7 +307,7 @@
           "id": "nodejs",
           "name": "Node.js",
           "icon": "logos:nodejs-icon",
-          "count": 32,
+          "count": 34,
           "parentId": "backend"
         },
         {
@@ -328,7 +328,7 @@
           "id": "backend-go",
           "name": "Go",
           "icon": "logos:go",
-          "count": 12,
+          "count": 13,
           "parentId": "backend"
         },
         {
@@ -336,6 +336,13 @@
           "name": "PHP",
           "icon": "logos:php",
           "count": 8,
+          "parentId": "backend"
+        },
+        {
+          "id": "backend-cms",
+          "name": "CMS",
+          "icon": "fluent-emoji:card-file-box",
+          "count": 4,
           "parentId": "backend"
         },
         {
@@ -353,7 +360,7 @@
           "parentId": "backend"
         }
       ],
-      "count": 80
+      "count": 87
     },
     {
       "id": "tools",
@@ -395,7 +402,7 @@
       "id": "indie-dev",
       "name": "独立开发者",
       "icon": "fluent-emoji:rocket",
-      "count": 16
+      "count": 17
     }
   ],
   "sites": [
@@ -4339,6 +4346,38 @@
       "order": 270
     },
     {
+      "id": "colyseus",
+      "title": "Colyseus",
+      "description": "Node.js 多人在线游戏服务器框架，WebSocket 通信，支持自动状态同步、房间管理和匹配系统，生态活跃。",
+      "url": "https://colyseus.io/",
+      "icon": "https://colyseus.io/favicon.ico",
+      "tags": [
+        "Node.js",
+        "游戏服务器",
+        "多人",
+        "WebSocket",
+        "实时"
+      ],
+      "category": "nodejs",
+      "order": 271
+    },
+    {
+      "id": "pomelo",
+      "title": "Pomelo",
+      "description": "网易开源的基于 Node.js 的高性能分布式游戏服务器框架，支持 MMO 场景分区和实时通信。",
+      "url": "https://github.com/NetEase/pomelo",
+      "icon": "https://github.com/favicon.ico",
+      "tags": [
+        "Node.js",
+        "游戏服务器",
+        "网易",
+        "分布式",
+        "实时"
+      ],
+      "category": "nodejs",
+      "order": 272
+    },
+    {
       "id": "uwebsockets-js",
       "title": "uWebSockets.js",
       "description": "uWebSockets.js 是 Node.js 的超高性能 WebSocket 和 HTTP 服务器，C++ 底层实现，延迟极低。",
@@ -4352,7 +4391,7 @@
         "实时"
       ],
       "category": "nodejs",
-      "order": 271
+      "order": 273
     },
     {
       "id": "graphql-yoga",
@@ -4368,7 +4407,7 @@
         "跨运行时"
       ],
       "category": "nodejs",
-      "order": 272
+      "order": 274
     },
     {
       "id": "grpc-node",
@@ -4385,7 +4424,7 @@
         "Protocol Buffers"
       ],
       "category": "nodejs",
-      "order": 273
+      "order": 275
     },
     {
       "id": "bun",
@@ -4400,7 +4439,7 @@
         "JavaScript"
       ],
       "category": "bun-ecosystem",
-      "order": 274
+      "order": 276
     },
     {
       "id": "elysia",
@@ -4415,7 +4454,7 @@
         "TypeScript"
       ],
       "category": "bun-ecosystem",
-      "order": 275
+      "order": 277
     },
     {
       "id": "hono",
@@ -4431,7 +4470,7 @@
         "Bun"
       ],
       "category": "bun-ecosystem",
-      "order": 276
+      "order": 278
     },
     {
       "id": "bun-sqlite",
@@ -4446,7 +4485,7 @@
         "内置"
       ],
       "category": "bun-ecosystem",
-      "order": 277
+      "order": 279
     },
     {
       "id": "bun-ffi",
@@ -4462,7 +4501,7 @@
         "原生扩展"
       ],
       "category": "bun-ecosystem",
-      "order": 278
+      "order": 280
     },
     {
       "id": "django",
@@ -4477,7 +4516,7 @@
         "ORM"
       ],
       "category": "python",
-      "order": 279
+      "order": 281
     },
     {
       "id": "flask",
@@ -4492,7 +4531,7 @@
         "API"
       ],
       "category": "python",
-      "order": 280
+      "order": 282
     },
     {
       "id": "fastapi",
@@ -4507,7 +4546,7 @@
         "OpenAPI"
       ],
       "category": "python",
-      "order": 281
+      "order": 283
     },
     {
       "id": "tornado",
@@ -4522,7 +4561,7 @@
         "WebSocket"
       ],
       "category": "python",
-      "order": 282
+      "order": 284
     },
     {
       "id": "sanic",
@@ -4537,7 +4576,7 @@
         "高性能"
       ],
       "category": "python",
-      "order": 283
+      "order": 285
     },
     {
       "id": "pyramid",
@@ -4552,7 +4591,7 @@
         "渐进式"
       ],
       "category": "python",
-      "order": 284
+      "order": 286
     },
     {
       "id": "scrapy",
@@ -4567,7 +4606,7 @@
         "数据采集"
       ],
       "category": "python",
-      "order": 285
+      "order": 287
     },
     {
       "id": "beautiful-soup",
@@ -4582,7 +4621,7 @@
         "数据采集"
       ],
       "category": "python",
-      "order": 286
+      "order": 288
     },
     {
       "id": "playwright-python",
@@ -4597,7 +4636,7 @@
         "微软"
       ],
       "category": "python",
-      "order": 287
+      "order": 289
     },
     {
       "id": "selenium-python",
@@ -4612,7 +4651,7 @@
         "测试"
       ],
       "category": "python",
-      "order": 288
+      "order": 290
     },
     {
       "id": "requests",
@@ -4627,7 +4666,7 @@
         "客户端"
       ],
       "category": "python",
-      "order": 289
+      "order": 291
     },
     {
       "id": "go",
@@ -4642,7 +4681,7 @@
         "并发"
       ],
       "category": "backend-go",
-      "order": 290
+      "order": 292
     },
     {
       "id": "gin",
@@ -4657,7 +4696,7 @@
         "REST API"
       ],
       "category": "backend-go",
-      "order": 291
+      "order": 293
     },
     {
       "id": "gorm",
@@ -4672,7 +4711,7 @@
         "SQL"
       ],
       "category": "backend-go",
-      "order": 292
+      "order": 294
     },
     {
       "id": "echo",
@@ -4687,7 +4726,7 @@
         "轻量级"
       ],
       "category": "backend-go",
-      "order": 293
+      "order": 295
     },
     {
       "id": "fiber",
@@ -4702,7 +4741,7 @@
         "Express风格"
       ],
       "category": "backend-go",
-      "order": 294
+      "order": 296
     },
     {
       "id": "chi",
@@ -4717,7 +4756,7 @@
         "轻量级"
       ],
       "category": "backend-go",
-      "order": 295
+      "order": 297
     },
     {
       "id": "buffalo",
@@ -4732,7 +4771,7 @@
         "MVC"
       ],
       "category": "backend-go",
-      "order": 296
+      "order": 298
     },
     {
       "id": "zap",
@@ -4747,7 +4786,7 @@
         "Uber"
       ],
       "category": "backend-go",
-      "order": 297
+      "order": 299
     },
     {
       "id": "cobra",
@@ -4762,7 +4801,7 @@
         "Docker"
       ],
       "category": "backend-go",
-      "order": 298
+      "order": 300
     },
     {
       "id": "go-redis",
@@ -4777,7 +4816,7 @@
         "客户端"
       ],
       "category": "backend-go",
-      "order": 299
+      "order": 301
     },
     {
       "id": "grpc",
@@ -4792,7 +4831,7 @@
         "Protocol Buffers"
       ],
       "category": "backend-go",
-      "order": 300
+      "order": 302
     },
     {
       "id": "wanderlost",
@@ -4807,7 +4846,23 @@
         "2025"
       ],
       "category": "backend-go",
-      "order": 301
+      "order": 303
+    },
+    {
+      "id": "nakama",
+      "title": "Nakama",
+      "description": "开源游戏后端服务器框架（Go + Lua），提供社交功能、排行榜、匹配、群组、存储和实时多人支持。",
+      "url": "https://heroiclabs.com/nakama/",
+      "icon": "https://heroiclabs.com/favicon.ico",
+      "tags": [
+        "Go",
+        "游戏服务器",
+        "多人",
+        "排行榜",
+        "社交"
+      ],
+      "category": "backend-go",
+      "order": 304
     },
     {
       "id": "thinkphp",
@@ -4820,7 +4875,7 @@
         "框架"
       ],
       "category": "backend-php",
-      "order": 302
+      "order": 305
     },
     {
       "id": "laravel",
@@ -4833,7 +4888,7 @@
         "框架"
       ],
       "category": "backend-php",
-      "order": 303
+      "order": 306
     },
     {
       "id": "symfony",
@@ -4847,7 +4902,7 @@
         "企业级"
       ],
       "category": "backend-php",
-      "order": 304
+      "order": 307
     },
     {
       "id": "codeigniter",
@@ -4861,7 +4916,7 @@
         "轻量"
       ],
       "category": "backend-php",
-      "order": 305
+      "order": 308
     },
     {
       "id": "yii",
@@ -4875,7 +4930,7 @@
         "高性能"
       ],
       "category": "backend-php",
-      "order": 306
+      "order": 309
     },
     {
       "id": "phpmyadmin",
@@ -4889,7 +4944,7 @@
         "管理工具"
       ],
       "category": "backend-php",
-      "order": 307
+      "order": 310
     },
     {
       "id": "swoole",
@@ -4903,7 +4958,7 @@
         "高性能"
       ],
       "category": "backend-php",
-      "order": 308
+      "order": 311
     },
     {
       "id": "slim",
@@ -4917,7 +4972,67 @@
         "API"
       ],
       "category": "backend-php",
-      "order": 309
+      "order": 312
+    },
+    {
+      "id": "wordpress",
+      "title": "WordPress",
+      "description": "全球市场份额最高的 CMS 建站系统，拥有极其丰富的插件和主题生态，适合博客、企业站到电商全场景。",
+      "url": "https://wordpress.org/",
+      "icon": "https://wordpress.org/favicon.ico",
+      "tags": [
+        "CMS",
+        "建站",
+        "PHP"
+      ],
+      "category": "backend-cms",
+      "order": 313
+    },
+    {
+      "id": "emdash",
+      "title": "EmDash",
+      "description": "Cloudflare 推出的开源 CMS，由 Astro 6.0 驱动，被誉为\"WordPress 的精神继承者\"，无服务器架构运行在边缘平台。",
+      "url": "https://emdashcms.com/",
+      "icon": "https://emdashcms.com/brand/favicon.svg",
+      "tags": [
+        "CMS",
+        "Cloudflare",
+        "Astro",
+        "无服务器"
+      ],
+      "category": "backend-cms",
+      "order": 314
+    },
+    {
+      "id": "halo",
+      "title": "Halo",
+      "description": "国产强大的开源建站工具，基于 Java / Spring Boot 构建，支持博客、知识库、企业官网、商城等多种站点类型。",
+      "url": "https://halo.run/",
+      "icon": "https://halo.run/favicon.ico",
+      "tags": [
+        "CMS",
+        "Java",
+        "建站",
+        "国产",
+        "Spring Boot"
+      ],
+      "category": "backend-cms",
+      "order": 315
+    },
+    {
+      "id": "strapi",
+      "title": "Strapi",
+      "description": "领先的开源无头 CMS（Headless CMS），基于 Node.js / TypeScript，可自由设计数据模型、生成 API，支持任意前端框架。",
+      "url": "https://strapi.io/",
+      "icon": "https://strapi.io/favicon.ico",
+      "tags": [
+        "CMS",
+        "Node.js",
+        "TypeScript",
+        "无头CMS"
+      ],
+      "category": "backend-cms",
+      "order": 316
     },
     {
       "id": "shelf",
@@ -4931,7 +5046,7 @@
         "服务器"
       ],
       "category": "backend-dart",
-      "order": 310
+      "order": 317
     },
     {
       "id": "serverpod",
@@ -4946,7 +5061,7 @@
         "Flutter"
       ],
       "category": "backend-dart",
-      "order": 311
+      "order": 318
     },
     {
       "id": "alfred",
@@ -4960,7 +5075,7 @@
         "API"
       ],
       "category": "backend-dart",
-      "order": 312
+      "order": 319
     },
     {
       "id": "angel3",
@@ -4975,7 +5090,7 @@
         "GraphQL"
       ],
       "category": "backend-dart",
-      "order": 313
+      "order": 320
     },
     {
       "id": "若依-ruoyi",
@@ -4990,7 +5105,7 @@
         "快速开发"
       ],
       "category": "backend-java",
-      "order": 314
+      "order": 321
     },
     {
       "id": "spring-boot",
@@ -5005,7 +5120,7 @@
         "微服务"
       ],
       "category": "backend-java",
-      "order": 315
+      "order": 322
     },
     {
       "id": "spring-cloud",
@@ -5020,7 +5135,7 @@
         "分布式"
       ],
       "category": "backend-java",
-      "order": 316
+      "order": 323
     },
     {
       "id": "mybatis-plus",
@@ -5035,7 +5150,7 @@
         "持久层"
       ],
       "category": "backend-java",
-      "order": 317
+      "order": 324
     },
     {
       "id": "jfinal",
@@ -5050,7 +5165,7 @@
         "国产"
       ],
       "category": "backend-java",
-      "order": 318
+      "order": 325
     },
     {
       "id": "hutool",
@@ -5063,7 +5178,7 @@
         "工具库"
       ],
       "category": "backend-java",
-      "order": 319
+      "order": 326
     },
     {
       "id": "maven",
@@ -5077,7 +5192,7 @@
         "依赖管理"
       ],
       "category": "backend-java",
-      "order": 320
+      "order": 327
     },
     {
       "id": "gradle",
@@ -5091,7 +5206,7 @@
         "DSL"
       ],
       "category": "backend-java",
-      "order": 321
+      "order": 328
     },
     {
       "id": "在线压缩图片工具整合",
@@ -5104,7 +5219,7 @@
         "图片"
       ],
       "category": "tools",
-      "order": 322
+      "order": 329
     },
     {
       "id": "photopea",
@@ -5116,7 +5231,7 @@
         "Tool"
       ],
       "category": "tools",
-      "order": 323
+      "order": 330
     },
     {
       "id": "draw-io",
@@ -5128,7 +5243,7 @@
         "Tool"
       ],
       "category": "tools",
-      "order": 324
+      "order": 331
     },
     {
       "id": "mnggiflab",
@@ -5141,7 +5256,7 @@
         "图片"
       ],
       "category": "tools",
-      "order": 325
+      "order": 332
     },
     {
       "id": "limgx",
@@ -5154,7 +5269,7 @@
         "图片"
       ],
       "category": "tools",
-      "order": 326
+      "order": 333
     },
     {
       "id": "基米便签",
@@ -5168,7 +5283,7 @@
         "天渺"
       ],
       "category": "tools",
-      "order": 327
+      "order": 334
     },
     {
       "id": "开源精选",
@@ -5181,7 +5296,7 @@
         "导航"
       ],
       "category": "resources",
-      "order": 328
+      "order": 335
     },
     {
       "id": "tbox导航",
@@ -5194,7 +5309,7 @@
         "导航"
       ],
       "category": "resources",
-      "order": 329
+      "order": 336
     },
     {
       "id": "awwwards",
@@ -5206,7 +5321,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 330
+      "order": 337
     },
     {
       "id": "dribbble",
@@ -5220,7 +5335,7 @@
         "设计"
       ],
       "category": "resources",
-      "order": 331
+      "order": 338
     },
     {
       "id": "template0",
@@ -5232,7 +5347,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 332
+      "order": 339
     },
     {
       "id": "htmlrev",
@@ -5244,7 +5359,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 333
+      "order": 340
     },
     {
       "id": "cssloaders",
@@ -5256,7 +5371,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 334
+      "order": 341
     },
     {
       "id": "navnav",
@@ -5269,7 +5384,7 @@
         "导航"
       ],
       "category": "resources",
-      "order": 335
+      "order": 342
     },
     {
       "id": "a-template",
@@ -5281,7 +5396,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 336
+      "order": 343
     },
     {
       "id": "免费api",
@@ -5293,7 +5408,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 337
+      "order": 344
     },
     {
       "id": "topindie-dev",
@@ -5306,7 +5421,7 @@
         "独立开发"
       ],
       "category": "resources",
-      "order": 338
+      "order": 345
     },
     {
       "id": "idea-haber",
@@ -5319,7 +5434,7 @@
         "社区"
       ],
       "category": "resources",
-      "order": 339
+      "order": 346
     },
     {
       "id": "优设网",
@@ -5333,7 +5448,7 @@
         "设计"
       ],
       "category": "resources",
-      "order": 340
+      "order": 347
     },
     {
       "id": "办公人导航",
@@ -5346,7 +5461,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 341
+      "order": 348
     },
     {
       "id": "fuun-fun",
@@ -5359,7 +5474,7 @@
         "娱乐"
       ],
       "category": "resources",
-      "order": 342
+      "order": 349
     },
     {
       "id": "白嫖站",
@@ -5371,7 +5486,7 @@
         "导航"
       ],
       "category": "resources",
-      "order": 343
+      "order": 350
     },
     {
       "id": "loot-drop",
@@ -5386,7 +5501,7 @@
         "独立开发"
       ],
       "category": "resources",
-      "order": 344
+      "order": 351
     },
     {
       "id": "mobbin",
@@ -5400,7 +5515,7 @@
         "设计"
       ],
       "category": "resources",
-      "order": 345
+      "order": 352
     },
     {
       "id": "refero",
@@ -5414,7 +5529,7 @@
         "设计"
       ],
       "category": "resources",
-      "order": 346
+      "order": 353
     },
     {
       "id": "creght",
@@ -5428,7 +5543,7 @@
         "设计"
       ],
       "category": "resources",
-      "order": 347
+      "order": 354
     },
     {
       "id": "iconfinder",
@@ -5442,7 +5557,7 @@
         "设计"
       ],
       "category": "resources",
-      "order": 348
+      "order": 355
     },
     {
       "id": "makemepulse",
@@ -5455,7 +5570,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 349
+      "order": 356
     },
     {
       "id": "mek-txt",
@@ -5468,7 +5583,7 @@
         "资源"
       ],
       "category": "resources",
-      "order": 350
+      "order": 357
     },
     {
       "id": "kenney",
@@ -5483,7 +5598,7 @@
         "3D"
       ],
       "category": "resources",
-      "order": 351
+      "order": 358
     },
     {
       "id": "svg-repo",
@@ -5498,7 +5613,7 @@
         "UI"
       ],
       "category": "resources",
-      "order": 352
+      "order": 359
     },
     {
       "id": "pixabay",
@@ -5513,7 +5628,7 @@
         "图片"
       ],
       "category": "resources",
-      "order": 353
+      "order": 360
     },
     {
       "id": "cocos-creator",
@@ -5528,7 +5643,7 @@
         "跨平台"
       ],
       "category": "game-engines",
-      "order": 354
+      "order": 361
     },
     {
       "id": "lp平台",
@@ -5542,7 +5657,7 @@
         "AVG"
       ],
       "category": "game-engines",
-      "order": 355
+      "order": 362
     },
     {
       "id": "adv-js",
@@ -5556,7 +5671,7 @@
         "AVG"
       ],
       "category": "game-engines",
-      "order": 356
+      "order": 363
     },
     {
       "id": "renpy",
@@ -5570,7 +5685,7 @@
         "开源"
       ],
       "category": "game-engines",
-      "order": 357
+      "order": 364
     },
     {
       "id": "gamemaker",
@@ -5584,7 +5699,7 @@
         "独立游戏"
       ],
       "category": "game-engines",
-      "order": 358
+      "order": 365
     },
     {
       "id": "rpg-maker",
@@ -5598,7 +5713,7 @@
         "独立游戏"
       ],
       "category": "game-engines",
-      "order": 359
+      "order": 366
     },
     {
       "id": "gamecreator",
@@ -5612,7 +5727,7 @@
         "TypeScript"
       ],
       "category": "game-engines",
-      "order": 360
+      "order": 367
     },
     {
       "id": "星火编辑器",
@@ -5626,7 +5741,7 @@
         "TapTap"
       ],
       "category": "game-engines",
-      "order": 361
+      "order": 368
     },
     {
       "id": "gdevelop",
@@ -5640,7 +5755,7 @@
         "零代码"
       ],
       "category": "game-engines",
-      "order": 362
+      "order": 369
     },
     {
       "id": "pixijs",
@@ -5655,7 +5770,7 @@
         "渲染"
       ],
       "category": "game-engines",
-      "order": 363
+      "order": 370
     },
     {
       "id": "phaser",
@@ -5670,7 +5785,7 @@
         "HTML5"
       ],
       "category": "game-engines",
-      "order": 364
+      "order": 371
     },
     {
       "id": "godot-engine",
@@ -5685,7 +5800,7 @@
         "3D"
       ],
       "category": "game-engines",
-      "order": 365
+      "order": 372
     },
     {
       "id": "ocelot",
@@ -5700,7 +5815,7 @@
         "极简"
       ],
       "category": "game-engines",
-      "order": 366
+      "order": 373
     },
     {
       "id": "ga",
@@ -5715,7 +5830,7 @@
         "极简"
       ],
       "category": "game-engines",
-      "order": 367
+      "order": 374
     },
     {
       "id": "blender",
@@ -5730,7 +5845,7 @@
         "渲染"
       ],
       "category": "3d-modeling",
-      "order": 368
+      "order": 375
     },
     {
       "id": "sketchfab",
@@ -5745,7 +5860,7 @@
         "WebGL"
       ],
       "category": "3d-modeling",
-      "order": 369
+      "order": 376
     },
     {
       "id": "51建模网",
@@ -5759,7 +5874,7 @@
         "国内"
       ],
       "category": "3d-modeling",
-      "order": 370
+      "order": 377
     },
     {
       "id": "cinema-4d",
@@ -5774,7 +5889,7 @@
         "视觉设计"
       ],
       "category": "3d-modeling",
-      "order": 371
+      "order": 378
     },
     {
       "id": "spline",
@@ -5789,7 +5904,7 @@
         "交互式"
       ],
       "category": "3d-modeling",
-      "order": 372
+      "order": 379
     },
     {
       "id": "three-js-editor",
@@ -5804,7 +5919,7 @@
         "Three.js"
       ],
       "category": "3d-modeling",
-      "order": 373
+      "order": 380
     },
     {
       "id": "playcanvas",
@@ -5819,7 +5934,7 @@
         "在线编辑器"
       ],
       "category": "3d-modeling",
-      "order": 374
+      "order": 381
     },
     {
       "id": "sketchup",
@@ -5833,7 +5948,7 @@
         "室内设计"
       ],
       "category": "3d-modeling",
-      "order": 375
+      "order": 382
     },
     {
       "id": "maya",
@@ -5848,7 +5963,7 @@
         "工业标准"
       ],
       "category": "3d-modeling",
-      "order": 376
+      "order": 383
     },
     {
       "id": "blocks",
@@ -5862,7 +5977,7 @@
         "Google"
       ],
       "category": "3d-modeling",
-      "order": 377
+      "order": 384
     },
     {
       "id": "vectary",
@@ -5877,7 +5992,7 @@
         "低代码"
       ],
       "category": "3d-modeling",
-      "order": 378
+      "order": 385
     },
     {
       "id": "mixamo",
@@ -5892,7 +6007,7 @@
         "Adobe"
       ],
       "category": "3d-modeling",
-      "order": 379
+      "order": 386
     },
     {
       "id": "quixel-megascans",
@@ -5907,7 +6022,7 @@
         "扫描"
       ],
       "category": "3d-modeling",
-      "order": 380
+      "order": 387
     },
     {
       "id": "itch-io",
@@ -5921,7 +6036,7 @@
         "游戏"
       ],
       "category": "games",
-      "order": 381
+      "order": 388
     },
     {
       "id": "独立精神-indienova-独立游戏",
@@ -5934,7 +6049,7 @@
         "游戏"
       ],
       "category": "games",
-      "order": 382
+      "order": 389
     },
     {
       "id": "游戏开发资源整合集",
@@ -5947,7 +6062,7 @@
         "导航"
       ],
       "category": "games",
-      "order": 383
+      "order": 390
     },
     {
       "id": "retro-games",
@@ -5959,7 +6074,7 @@
         "游戏"
       ],
       "category": "games",
-      "order": 384
+      "order": 391
     },
     {
       "id": "retrogames",
@@ -5971,7 +6086,7 @@
         "游戏"
       ],
       "category": "games",
-      "order": 385
+      "order": 392
     },
     {
       "id": "game-ui-database",
@@ -5985,7 +6100,7 @@
         "设计"
       ],
       "category": "games",
-      "order": 386
+      "order": 393
     },
     {
       "id": "interface-in-game",
@@ -5999,7 +6114,7 @@
         "设计"
       ],
       "category": "games",
-      "order": 387
+      "order": 394
     },
     {
       "id": "product-hunt",
@@ -6012,7 +6127,7 @@
         "独立开发"
       ],
       "category": "community",
-      "order": 388
+      "order": 395
     },
     {
       "id": "nodejs中文网",
@@ -6025,7 +6140,7 @@
         "文档"
       ],
       "category": "community",
-      "order": 389
+      "order": 396
     },
     {
       "id": "看雪论坛",
@@ -6038,7 +6153,7 @@
         "社区"
       ],
       "category": "community",
-      "order": 390
+      "order": 397
     },
     {
       "id": "hack-forums",
@@ -6051,7 +6166,7 @@
         "社区"
       ],
       "category": "community",
-      "order": 391
+      "order": 398
     },
     {
       "id": "behance",
@@ -6064,7 +6179,7 @@
         "社区"
       ],
       "category": "community",
-      "order": 392
+      "order": 399
     },
     {
       "id": "ui中国",
@@ -6078,7 +6193,7 @@
         "社区"
       ],
       "category": "community",
-      "order": 393
+      "order": 400
     },
     {
       "id": "moonbit",
@@ -6091,7 +6206,7 @@
         "云原生"
       ],
       "category": "community",
-      "order": 394
+      "order": 401
     },
     {
       "id": "pieter-levels",
@@ -6099,7 +6214,7 @@
       "description": "数字游民先驱，Nomad List 和 Remote OK 创始人，一年启动12个项目的传奇独立开发者。",
       "url": "https://levels.io/",
       "category": "indie-dev",
-      "order": 395
+      "order": 402
     },
     {
       "id": "marc-lou",
@@ -6107,7 +6222,7 @@
       "description": "独立开发者与创业者，以快速构建 SaaS 产品而闻名，活跃于 X/Twitter 分享开发心得。",
       "url": "https://marclou.com/",
       "category": "indie-dev",
-      "order": 396
+      "order": 403
     },
     {
       "id": "sindre-sorhus",
@@ -6115,7 +6230,7 @@
       "description": "开源传奇，npm 上发布了超过1000个包，包括 alfred、awesome 列表等知名项目。",
       "url": "https://sindresorhus.com/",
       "category": "indie-dev",
-      "order": 397
+      "order": 404
     },
     {
       "id": "danny-postma",
@@ -6123,7 +6238,7 @@
       "description": "AI 独立开发者，HeadshotPro 和 ProfilePicture.AI 创始人，专注 AI 驱动的 SaaS 产品。",
       "url": "https://dannypostma.com/",
       "category": "indie-dev",
-      "order": 398
+      "order": 405
     },
     {
       "id": "tony-dinh",
@@ -6131,7 +6246,7 @@
       "description": "越南独立开发者，DevUtils 和 Black Magic 创始人，以实用工具型 SaaS 产品闻名。",
       "url": "https://tonydinh.com/",
       "category": "indie-dev",
-      "order": 399
+      "order": 406
     },
     {
       "id": "lucas-pope",
@@ -6139,7 +6254,7 @@
       "description": "《请出示证件》(Papers, Please) 和《奥伯拉丁的回归》创作者，以独特的叙事和视觉风格著称。",
       "url": "https://dukope.com/",
       "category": "indie-dev",
-      "order": 400
+      "order": 407
     },
     {
       "id": "damon-chen",
@@ -6147,7 +6262,7 @@
       "description": "独立开发者，PDF.ai 创始人，专注 AI 与生产力工具结合的 SaaS 产品。",
       "url": "https://damonchen.com/",
       "category": "indie-dev",
-      "order": 401
+      "order": 408
     },
     {
       "id": "joar-jakobsson",
@@ -6155,7 +6270,7 @@
       "description": "《雨世界》(Rain World) 创作者，瑞典视觉设计师与独立游戏开发者，构建了独特的后工业生态系统生存游戏。",
       "url": "https://www.joarportfolio.com/",
       "category": "indie-dev",
-      "order": 402
+      "order": 409
     },
     {
       "id": "eric-barone-concernedape",
@@ -6163,7 +6278,7 @@
       "description": "《星露谷物语》(Stardew Valley) 独立开发者，一人包揽编程、美术、音乐，打造了现象级农场模拟游戏。",
       "url": "https://www.stardewvalley.net/",
       "category": "indie-dev",
-      "order": 403
+      "order": 410
     },
     {
       "id": "toby-fox",
@@ -6171,7 +6286,7 @@
       "description": "《Undertale》《Deltarune》创作者，以独特的叙事、音乐和打破第四面墙的设计而闻名。",
       "url": "https://toby.fangamer.com/",
       "category": "indie-dev",
-      "order": 404
+      "order": 411
     },
     {
       "id": "edmund-mcmillen",
@@ -6179,7 +6294,7 @@
       "description": "《以撒的结合》《超级食肉男孩》创作者，以其黑暗、怪诞的艺术风格和 Roguelike 设计闻名。",
       "url": "https://edmundm.com/",
       "category": "indie-dev",
-      "order": 405
+      "order": 412
     },
     {
       "id": "daniel-mullins",
@@ -6187,7 +6302,7 @@
       "description": "《邪恶冥刻》(Inscryption)《小马岛》(Pony Island) 创作者，擅长打破游戏类型的元叙事设计。",
       "url": "https://www.danielmullinsgames.com/",
       "category": "indie-dev",
-      "order": 406
+      "order": 413
     },
     {
       "id": "derek-yu",
@@ -6195,7 +6310,7 @@
       "description": "《洞穴探险》(Spelunky) 系列创作者，Roguelike 平台跳跃游戏的先驱，影响了一代独立游戏设计。",
       "url": "https://www.derekyu.com/",
       "category": "indie-dev",
-      "order": 407
+      "order": 414
     },
     {
       "id": "月光蟑螂",
@@ -6203,7 +6318,7 @@
       "description": "《烟火》《三伏》《黑森町绮谭》创作者，中式悬疑惊悚解谜游戏的代表人物，一人包揽美术、编剧、策划。",
       "url": "https://space.bilibili.com/2911655/dynamic",
       "category": "indie-dev",
-      "order": 408
+      "order": 415
     },
     {
       "id": "史悲",
@@ -6211,7 +6326,7 @@
       "description": "《迷失岛》系列创作者，以手绘美术风格和谜题设计著称的独立游戏开发者。",
       "url": "https://space.bilibili.com/3729210/dynamic",
       "category": "indie-dev",
-      "order": 409
+      "order": 416
     },
     {
       "id": "刘美工",
@@ -6219,7 +6334,15 @@
       "description": "镜界，HAAK（勇敢的哈克）游戏开发者",
       "url": "https://space.bilibili.com/341473111",
       "category": "indie-dev",
-      "order": 410
+      "order": 417
+    },
+    {
+      "id": "648游戏工作室",
+      "title": "648游戏工作室",
+      "description": "《中国式网游》开发者，一人从2018年业余开发，讽刺国产氪金网游的独立游戏，Steam销量突破40万份。",
+      "url": "https://space.bilibili.com/451603319",
+      "category": "indie-dev",
+      "order": 418
     }
   ]
 }

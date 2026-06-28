@@ -58,7 +58,11 @@ html.dark #initial-loader {
 .justify-center { justify-content: center; }
 .flex-1 { flex: 1 1 0%; }
 .h-screen { height: 100vh; }
+.h-screen-safe { height: 100vh; }
 .w-full { width: 100%; }
+
+/* 安全区兼容 */
+.safe-area-bottom { padding-bottom: 0; }
 
 /* 文字基础 */
 .text-center { text-align: center; }
