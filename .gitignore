@@ -2,6 +2,7 @@
 
 .nuxt
 .output
+output
 dist
 node_modules
 .env
